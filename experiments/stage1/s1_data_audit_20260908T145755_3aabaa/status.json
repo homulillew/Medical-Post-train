@@ -1,3 +1,11 @@
 {
-  "status": "UNKNOWN"
+  "status": "PASS",
+  "recorded_at": "2026-09-08T16:23:03.365002+00:00",
+  "original_worker_end_time": null,
+  "original_exit_code": null,
+  "basis": "Original retained summary reports PASS; all original artifact manifest file hashes independently verified now. No worker status file was emitted by this early audit script.",
+  "original_summary_sha256": "7226ff184dea9d40a82c46ee27ce24aaefb30e8df8e94ffab6993770cd86e344",
+  "original_artifact_manifest_sha256": "36e4856f3018d13bc94734f14e7d014a10e5f03c92539c7f88945ab31d9f6e94",
+  "original_artifacts_verified": 2,
+  "note": "Retrospective status reconciliation, not reconstructed runtime timestamps. Prior UNKNOWN index snapshots retained."
 }

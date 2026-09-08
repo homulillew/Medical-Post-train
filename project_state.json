@@ -5,20 +5,31 @@
   "stage_verifier_implemented": true,
   "stages": {
     "1": {
-      "status": "FULL_RUNNING",
+      "status": "DONE",
       "run_ids": [
         "s1_data_20260908T144854_bac3a7",
         "s1_smoke_20260908T145244_1af07b",
         "s1_pilot_20260908T150104_71a69a",
-        "s1_formal_20260908T152119_60040b"
+        "s1_formal_20260908T152119_60040b",
+        "s1_evaluation_20260908T175526_8cfbc0",
+        "s1_memory_20260908T151118_dfaed6",
+        "s1_data_audit_20260908T145755_3aabaa",
+        "s1_source_reasoning_20260908T160619_58be7b",
+        "s1_data_20260908T144417_418b80"
       ],
       "progress": {
-        "train_examples": 10096,
-        "coverage_fraction": 0.5048
+        "train_examples": 20000,
+        "coverage_fraction": 1.0
       },
-      "verification_receipt": null,
-      "stage_report": null,
-      "interview_story": null
+      "verification_receipt": {
+        "path": "experiments/stage1/verification-final.json",
+        "sha256": "50e3d0cc543f2707e8ec758b6ae3f66d07a952c65f690355fae7453ad14e107e",
+        "verifier_commit": "1b06f9124b7b3d11d353fde12070c7ec56754c81",
+        "contract_sha256": "8ba60bd2e724fbbb74e26f4ef677eb6c6d51eaafcba6eb3bcb0b2eb588a51f24",
+        "result": "PASS"
+      },
+      "stage_report": "docs/stage_reports/01_medical_sft.md",
+      "interview_story": "docs/stage_reports/01_medical_sft.md"
     },
     "2": {
       "status": "NOT_STARTED",

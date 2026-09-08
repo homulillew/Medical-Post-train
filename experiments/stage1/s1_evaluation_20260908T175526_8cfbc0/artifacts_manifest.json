@@ -1,0 +1,42 @@
+[
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s1_evaluation_20260908T175526_8cfbc0/identity_base_negative.json",
+    "sha256": "77118e80238a49772014e70464f6714ef0ab03409fa7a5ba5f28a0128d6ff8fb",
+    "bytes": 22381
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s1_evaluation_20260908T175526_8cfbc0/sft_1024.jsonl",
+    "sha256": "7db471706dfa7e39adafd2a56ee7fff3bce05d0a07ad97b6be686adcc8d524e6",
+    "bytes": 262822
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s1_evaluation_20260908T175526_8cfbc0/prompts.json",
+    "sha256": "f303e1cac2b3969d7fddf7fa82edcc0d8496679297f888fa952b35aa3ed4524e",
+    "bytes": 152197
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s1_evaluation_20260908T175526_8cfbc0/identity_sft.json",
+    "sha256": "130d70c366b5912b665f91a0c1c2e74e44e1fda968a2c810745cf5f46747e361",
+    "bytes": 22903
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s1_evaluation_20260908T175526_8cfbc0/base_1024.jsonl",
+    "sha256": "df0aa3f6e4d4e8e481fd7c0aadf7ec6691c5c2b6f54b20bf2246830ab5a3b09b",
+    "bytes": 640045
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s1_evaluation_20260908T175526_8cfbc0/identity_sft_repeat.json",
+    "sha256": "130d70c366b5912b665f91a0c1c2e74e44e1fda968a2c810745cf5f46747e361",
+    "bytes": 22903
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s1_evaluation_20260908T175526_8cfbc0/identity_base.json",
+    "sha256": "77118e80238a49772014e70464f6714ef0ab03409fa7a5ba5f28a0128d6ff8fb",
+    "bytes": 22381
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s1_evaluation_20260908T175526_8cfbc0/vllm_args.json",
+    "sha256": "d5f5d376747bc3985afc183656cb1c480b412ab3bd0f5edef318af689331b103",
+    "bytes": 510
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "stage": 1,
+  "evaluation_run": "s1_evaluation_20260908T175526_8cfbc0",
+  "prompt_count": 50,
+  "outputs_redecoded_and_remeasured": 100,
+  "checks": [
+    "native prompt tokenization",
+    "output IDs reproduce raw text through native prompt-prefilled DecodeStream",
+    "all format/length/repetition measurements recomputed",
+    "source aggregates recomputed"
+  ],
+  "one_shot_decode_differences": [
+    {
+      "sample_id": "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:97326",
+      "model": "base",
+      "cap": 1024,
+      "finish_reason": "length",
+      "one_shot_suffix": "**：  \n     - 预防压疮：定期翻身、使用气垫床。  \n     - �",
+      "native_incremental_suffix": "发症**：  \n     - 预防压疮：定期翻身、使用气垫床。  \n     -"
+    }
+  ],
+  "decoding_source": "Installed vLLM 0.24 FastIncrementalDetokenizer: tokenizers.decoders.DecodeStream(ids=prompt_token_ids, skip_special_tokens=True)",
+  "previous_failure": "experiments/stage1/generation_audit_attempt1.json",
+  "script_sha256": "a06b1d9378439acf7834afadaaf936f499984f4960a25d32878ebc3785302ae1",
+  "sources": {
+    "/data/WSH/medical-post-train-artifacts/runs/s1_evaluation_20260908T175526_8cfbc0/prompts.json": "f303e1cac2b3969d7fddf7fa82edcc0d8496679297f888fa952b35aa3ed4524e",
+    "experiments/stage1/s1_evaluation_20260908T175526_8cfbc0/summary.json": "8ae7cba4fcb12832cde83e28e146314e1f0cb93beacc5778c704269983797a09",
+    "/data/WSH/medical-post-train-artifacts/runs/s1_evaluation_20260908T175526_8cfbc0/base_1024.jsonl": "df0aa3f6e4d4e8e481fd7c0aadf7ec6691c5c2b6f54b20bf2246830ab5a3b09b",
+    "/data/WSH/medical-post-train-artifacts/runs/s1_evaluation_20260908T175526_8cfbc0/sft_1024.jsonl": "7db471706dfa7e39adafd2a56ee7fff3bce05d0a07ad97b6be686adcc8d524e6"
+  }
+}

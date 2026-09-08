@@ -80,3 +80,13 @@ checkpoint每100updates或900秒安全边界，保留所有便携adapter与完�
 处置：保留已冻结的数据和正式基线，报告这一限制，不中途删除单条样本或把事后新规则拼进既有epoch；也不把此数据称作“已验证医学推理正确”的训练集。未来事实质量筛查属于新数据版本和新run的对照探索。此发现不构成临床能力提升的证据。
 
 同一只读图统计发现 medical-o1 与 Huatuo 之间直接重复边为0；已检出的是各自内部重复及与benchmark的跨集边。报告不可凭空声称两种SFT源之间移除了若干近重复。跨benchmark的489条SFT成员排除包含连通簇传递关系，不能简单等同于直接边数。
+
+## O-021：最终配对行为及解码核验边界
+
+2026-09-09 CST。正式20k一轮结束，run `s1_formal_20260908T152119_60040b`；评估 `s1_evaluation_20260908T175526_8cfbc0`。固定两源各25条val、同prompt、temperature0.6/top_p1/top_k-1、cap1024。SFT的50条think/answer全部闭合、0截断；medical-o125条均有reasoning，Huatuo25条均为空think。Base49/50截断、38/50 think闭合，没有target要求的answer标签；Base无标签正文不能被解释成语义答案为空。
+
+SFT平均总长346.22、reasoning150.62tokens（o1 reasoning301.24、Huatuo0），Base总长1020.46、reasoning684.78。满足预先冻结的SFT闭合/截断触发条件，因此未执行2048补充条件；没有证据比较1024与2048下的医学准确性。下一阶段优先测试1024，但必须在考试train-only profiling中重新测分布。
+
+首次额外raw-generation audit假设一次性tokenizer.decode与vLLM最终字符串完全相同，遇到一条length-stop输出末尾UTF-8字节未完成而失败。原脚本和FAIL receipt保留。读取本机vLLM0.24的FastIncrementalDetokenizer后，改用同一prompt-prefilled `tokenizers.decoders.DecodeStream`逐token回放；100/100原始文本精确复现，格式/长度/重复及source聚合均重算一致。不是删除乱码后放宽断言，raw输出和token IDs没有改变。
+
+人工阅读还发现格式完整但与源参考内容分歧的药物问答（S1-MANUAL-002），以及更短回答未覆盖所问具体病例证据（S1-MANUAL-004）。它们不能归为经临床审定的Base→SFT回归，但足以限制“格式更好=内容更正确”的解释。已保存正例、负例、未测范围与原始配对文本。

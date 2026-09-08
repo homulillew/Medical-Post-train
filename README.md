@@ -7,16 +7,24 @@ A docs-first, evidence-driven project for full post-training of a medical LLM on
 Stage 0 has real Qwen3-8B BF16 LoRA, checkpoint/resume, native verl FSDP2/GSPO,
 and vLLM adapter/sleep evidence. The accepted rollout configuration explicitly
 uses native sampling and batch invariance after default LoRA numerical failures.
-Stage 1–6 remain **NOT_STARTED**; no formal training or test evaluation has run.
+Stage 1 is **DONE**: Qwen3-8B BF16 + r32/alpha64 LoRA trained on all 20,000 unique
+examples for one epoch, with 100% coverage and all ten verifier gates passing.
+Stage 2–6 remain **NOT_STARTED**.
+No examination test scoring has run. Current stage status is recorded in
+[`project_state.json`](project_state.json).
 
 - [Stage 0 report](docs/stage_reports/00_runtime_compatibility.md)
+- [Stage 1 report and interview evidence](docs/stage_reports/01_medical_sft.md)
+- [Stage 1 verification receipt](experiments/stage1/verification-final.json)
+- [Fixed SFT initialization and hashes](experiments/stage1/initialization_manifest.json)
 - [Runtime installation and CLI](env/README.md)
 - [Selected evidence](experiments/stage0/selected_runs.json)
 - [Failed and successful run inventory](experiments/stage0/run_inventory.json)
 - [Measured and conditional compute budget](docs/implementation/COMPUTE_BUDGET.md)
 
-Run `python scripts/verify_stage0.py --bulk-hashes` in the analysis runtime to
-check local evidence. Bulk models/checkpoints/raw responses are outside Git;
+The Stage 0 validator applies to its historical stage-isolation checkpoint;
+its archived PASS receipt is retained. Use the Stage 1 verifier below for current
+SFT evidence. Bulk models/checkpoints/raw responses are outside Git;
 their manifests retain exact paths, sizes and hashes. A clone alone does not
 restore those local artifacts.
 
@@ -92,7 +100,13 @@ This checks the takeover documents, initial state, and contract invariants; it d
 ## Current execution
 
 Stage 0 runtime compatibility is [VERIFIED](docs/stage_reports/00_runtime_compatibility.md).
-Stage 1 real data preparation and training are implemented; current progress is authoritative in
+Stage 1 medical SFT is **DONE**. The complete 1,000-example validation NLL changed
+from 2.055825 to 1.346031; 50 fixed validation prompts all produced closed SFT
+think/answer blocks with no truncation at cap1024. These are source-validation
+loss and structural measurements, not medical accuracy. Source reasoning errors
+and generated-answer disagreements remain documented in the report.
+
+Current progress is authoritative in
 [`project_state.json`](project_state.json), with explicit runs in
 [`experiments/stage1/selected_runs.json`](experiments/stage1/selected_runs.json).
 Stage 2–6 have not started. Historical planning/Stage 0 validators intentionally check their original stage-isolation boundaries; their archived receipts are preserved.

@@ -1,0 +1,42 @@
+{
+  "stage": 1,
+  "run_id": "s1_formal_20260908T152119_60040b",
+  "selection": "Final full-budget checkpoint, fixed before training; no best-validation or test-based selection",
+  "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s1_formal_20260908T152119_60040b/checkpoints/final/adapter",
+  "adapter_sha256": "1601e97891e51940bd4b575d8811a77d8278cbeb296c044b7004e41da6d9ea64",
+  "base_model": "Qwen/Qwen3-8B",
+  "base_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "tokenizer_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "lora_rank": 32,
+  "lora_alpha": 64,
+  "lora_targets": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj"
+  ],
+  "dtype": "bfloat16 base / float32 LoRA",
+  "files": [
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s1_formal_20260908T152119_60040b/checkpoints/final/adapter/README.md",
+      "sha256": "69f3aa1fb067ef986745d9470eced45cc83c7657395eb2c40755ace7fd476c57",
+      "bytes": 5344
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s1_formal_20260908T152119_60040b/checkpoints/final/adapter/adapter_config.json",
+      "sha256": "3bfe5c6ab4d7e404bd00810ebef63f46d58c492dea164aa253b4d87a031e5e30",
+      "bytes": 1123
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s1_formal_20260908T152119_60040b/checkpoints/final/adapter/adapter_model.safetensors",
+      "sha256": "1601e97891e51940bd4b575d8811a77d8278cbeb296c044b7004e41da6d9ea64",
+      "bytes": 349243752
+    }
+  ],
+  "recorded_at": "2026-09-08T17:55:07.390624+00:00",
+  "file_permissions": "Adapter files set read-only; integrity is enforced by content hashes",
+  "future_comparison": "Vanilla GSPO and Dynamic GSPO must start from this same artifact; training future adapters must not overwrite these files"
+}

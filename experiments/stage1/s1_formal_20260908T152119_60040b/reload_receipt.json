@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "run_id": "s1_formal_20260908T152119_60040b",
+  "run_class": "FORMAL",
+  "check": "fresh_process_real_adapter_identity_and_generation",
+  "adapter_sha256": "1601e97891e51940bd4b575d8811a77d8278cbeb296c044b7004e41da6d9ea64",
+  "trainable_digest": "28442948aafedad1c673aad7faaaa51c41b03884501569549544b86badf6cd1f",
+  "identity_logit_max_delta": 21.8125,
+  "generation_count": 4,
+  "format_valid_count": 4,
+  "eos_terminated_count": 4,
+  "generations_path": "/data/WSH/medical-post-train-artifacts/runs/s1_formal_20260908T152119_60040b/reload_generation/generations.jsonl",
+  "generations_sha256": "5cc6a1cb2ab69e0b8aabe4bd3f78fe2a74aa22511c30279dbe48c8ab1b127c5a",
+  "elapsed_seconds": 91.78361270204186
+}

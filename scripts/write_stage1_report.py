@@ -42,7 +42,9 @@ def main():
     generation_audit = read(index / 'generation_audit.json')
     assert generation_audit['status'] == 'PASS'
     review_path = index / 'manual_case_review.md'
-    manual_review = review_path.read_text()
+    manual_review = review_path.read_text().replace(
+        '(manual_cases.json)', '(../../experiments/stage1/manual_cases.json)').replace(
+        '# Stage 1 实际案例复核', '### 人工复核记录')
     assert len(manual_review) > 500 and selected['evaluation'] in manual_review
     cases = read(index / 'case_coverage.json')
     calibration = read(index / 'compute_calibration.json')

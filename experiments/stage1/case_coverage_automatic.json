@@ -1,0 +1,446 @@
+{
+  "stage": 1,
+  "formal_run": "s1_formal_20260908T152119_60040b",
+  "evaluation_run": "s1_evaluation_20260908T175526_8cfbc0",
+  "analysis_script_sha256": "3d23c156ecc287168dabb2374c4bc769c1adb506c4448043bfa9f3499974b6f6",
+  "created_at": "2026-09-08T18:02:08.084537+00:00",
+  "diagnostic_thresholds": {
+    "shorter_length_ratio": 0.65,
+    "near_empty_answer_tokens": 3,
+    "huatuo_long_reasoning_tokens": 512,
+    "repetition_count": 3
+  },
+  "category_counts": {
+    "paired_format_improvement": 50,
+    "paired_shorter_structured_output": 50,
+    "paired_closed_reasoning_and_answer": 25,
+    "generation_missing_think_close": 12,
+    "generation_missing_answer_close": 50,
+    "format_anomaly": 50,
+    "generation_repetition": 1
+  },
+  "count_scope": "Counts over prompt-condition pairs; multiple categories may label the same prompt. Retain first three per subtype in frozen prompt order.",
+  "cases": [
+    {
+      "case_id": "S1-GEN-001",
+      "category": "GOOD_CASE",
+      "subtype": "paired_format_improvement",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-GEN-002",
+      "category": "GOOD_CASE",
+      "subtype": "paired_shorter_structured_output",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-GEN-003",
+      "category": "GOOD_CASE",
+      "subtype": "paired_closed_reasoning_and_answer",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-GEN-004",
+      "category": "BAD_CASE",
+      "subtype": "generation_missing_think_close",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-GEN-005",
+      "category": "BAD_CASE",
+      "subtype": "generation_missing_answer_close",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-GEN-006",
+      "category": "BAD_CASE",
+      "subtype": "format_anomaly",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-GEN-007",
+      "category": "GOOD_CASE",
+      "subtype": "paired_format_improvement",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-GEN-008",
+      "category": "GOOD_CASE",
+      "subtype": "paired_shorter_structured_output",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-GEN-009",
+      "category": "GOOD_CASE",
+      "subtype": "paired_closed_reasoning_and_answer",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-GEN-010",
+      "category": "BAD_CASE",
+      "subtype": "generation_missing_answer_close",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-GEN-011",
+      "category": "BAD_CASE",
+      "subtype": "format_anomaly",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-GEN-012",
+      "category": "GOOD_CASE",
+      "subtype": "paired_format_improvement",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-GEN-013",
+      "category": "GOOD_CASE",
+      "subtype": "paired_shorter_structured_output",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-GEN-014",
+      "category": "GOOD_CASE",
+      "subtype": "paired_closed_reasoning_and_answer",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-GEN-015",
+      "category": "BAD_CASE",
+      "subtype": "generation_missing_think_close",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-GEN-016",
+      "category": "BAD_CASE",
+      "subtype": "generation_missing_answer_close",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-GEN-017",
+      "category": "BAD_CASE",
+      "subtype": "format_anomaly",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-GEN-018",
+      "category": "BAD_CASE",
+      "subtype": "generation_missing_think_close",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-GEN-019",
+      "category": "BAD_CASE",
+      "subtype": "generation_repetition",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-LOSS-0001",
+      "category": "SYSTEM_CASE",
+      "subtype": "high_loss_batch",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-LOSS-0005",
+      "category": "SYSTEM_CASE",
+      "subtype": "high_loss_batch",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-LOSS-0006",
+      "category": "SYSTEM_CASE",
+      "subtype": "high_loss_batch",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-DATA-001",
+      "category": "BAD_CASE",
+      "subtype": "encoding_corruption",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-DATA-002",
+      "category": "BAD_CASE",
+      "subtype": "benchmark_cluster_overlap",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-DATA-003",
+      "category": "BAD_CASE",
+      "subtype": "sft_duplicate_cluster",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-DATA-004",
+      "category": "BAD_CASE",
+      "subtype": "encoding_corruption",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-DATA-005",
+      "category": "BAD_CASE",
+      "subtype": "extreme_repetition",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-DATA-006",
+      "category": "BAD_CASE",
+      "subtype": "benchmark_cluster_overlap",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-DATA-007",
+      "category": "BAD_CASE",
+      "subtype": "sft_duplicate_cluster",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-DATA-008",
+      "category": "BAD_CASE",
+      "subtype": "overlength_source_answer_truncation_risk",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-DATA-009",
+      "category": "BAD_CASE",
+      "subtype": "overlength_source_answer_truncation_risk",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-DATA-010",
+      "category": "BAD_CASE",
+      "subtype": "overlength_source_answer_truncation_risk",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-SOURCE-REASONING-001",
+      "category": "BAD_CASE",
+      "subtype": "selected_source_reasoning_arithmetic_inconsistency",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-SMOKE-001",
+      "category": "BAD_CASE",
+      "subtype": "smoke_greedy_format_or_length_failure",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-SMOKE-002",
+      "category": "BAD_CASE",
+      "subtype": "smoke_greedy_format_or_length_failure",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-SMOKE-003",
+      "category": "BAD_CASE",
+      "subtype": "smoke_greedy_format_or_length_failure",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    },
+    {
+      "case_id": "S1-SMOKE-004",
+      "category": "BAD_CASE",
+      "subtype": "smoke_greedy_format_or_length_failure",
+      "path": "experiments/stage1/case_coverage_cases.json"
+    }
+  ],
+  "not_observed": [
+    {
+      "subtype": "paired_format_regression",
+      "scope": "Completed paired validation conditions",
+      "status": "NOT_OBSERVED"
+    },
+    {
+      "subtype": "paired_truncation_regression",
+      "scope": "Completed paired validation conditions",
+      "status": "NOT_OBSERVED"
+    },
+    {
+      "subtype": "empty_or_near_empty_tagged_answer",
+      "scope": "Completed paired validation conditions",
+      "status": "NOT_OBSERVED"
+    },
+    {
+      "subtype": "huatuo_long_reasoning_over512",
+      "scope": "Completed paired validation conditions",
+      "status": "NOT_OBSERVED"
+    },
+    {
+      "subtype": "medical_o1_no_reasoning",
+      "scope": "Completed paired validation conditions",
+      "status": "NOT_OBSERVED"
+    },
+    {
+      "subtype": "direct_medical_o1_huatuo_duplicate_edge",
+      "status": "NOT_OBSERVED",
+      "scope": "Frozen full duplicate graph; benchmark-to-SFT edges do exist"
+    },
+    {
+      "subtype": "selected_example_over_cap_or_answer_truncation",
+      "status": "NOT_OBSERVED",
+      "scope": "All 21000 native encodings checked"
+    },
+    {
+      "subtype": "assistant_mask_failure_in_final_pipeline",
+      "status": "NOT_OBSERVED",
+      "scope": "Native tokenizer fixtures and full selected-data retokenization; historical fixture failures are retained in development logs"
+    }
+  ],
+  "not_assessed": [
+    {
+      "subtype": "clinically_adjudicated_improvement_or_regression",
+      "status": "NOT_ASSESSED",
+      "scope": "No expert clinical adjudication in Stage 1"
+    },
+    {
+      "subtype": "mixed_group_boundary_case",
+      "status": "NOT_ASSESSED",
+      "scope": "Group rollout belongs to later stages"
+    }
+  ],
+  "training_diagnostics": {
+    "loss_min": 0.8239461068342623,
+    "loss_max": 2.1631938815957303,
+    "first50_mean": 1.6590163633790382,
+    "last50_mean": 1.3300409047926471,
+    "descriptive_high_loss_threshold": 2.027649276443615,
+    "high_loss_batches": 7,
+    "threshold_scope": "Retrospective Q3+3*IQR across the epoch; not a stability or early-stop criterion",
+    "highest_loss_batches": [
+      {
+        "timestamp": "2026-09-08T15:24:24.429064+00:00",
+        "attempt": "attempt_001",
+        "event": "update",
+        "global_step": 9,
+        "sample_cursor": 144,
+        "coverage_fraction": 0.0072,
+        "loss": 2.1631938815957303,
+        "grad_norm": 1.2895526885986328,
+        "learning_rate": 2.105263157894737e-05,
+        "next_learning_rate": 2.368421052631579e-05,
+        "examples": 16,
+        "sample_ids": [
+          "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:41573",
+          "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:53457",
+          "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:5397",
+          "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:11661",
+          "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:113095",
+          "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:66256",
+          "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:19940",
+          "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:117860",
+          "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:17366",
+          "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:8304",
+          "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:77410",
+          "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:15964",
+          "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:18714",
+          "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:2920",
+          "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:13064",
+          "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:337"
+        ],
+        "processed_tokens": 7533,
+        "supervised_tokens": 6383,
+        "padded_tokens": 8408,
+        "update_seconds": 6.8791001830250025,
+        "tokens_per_second": 1095.0560101724602,
+        "nvml_peak_bytes": 28472639488,
+        "allocated_peak_bytes": 25577351168,
+        "reserved_peak_bytes": 27369930752,
+        "remaining_at_peak_bytes": 19833159680,
+        "total_bytes": 48305799168
+      },
+      {
+        "timestamp": "2026-09-08T15:23:32.763367+00:00",
+        "attempt": "attempt_001",
+        "event": "update",
+        "global_step": 1,
+        "sample_cursor": 16,
+        "coverage_fraction": 0.0008,
+        "loss": 2.1265975656861955,
+        "grad_norm": 1.2417984008789062,
+        "learning_rate": 0.0,
+        "next_learning_rate": 2.631578947368421e-06,
+        "examples": 16,
+        "sample_ids": [
+          "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:19409",
+          "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:7370",
+          "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:110125",
+          "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:4350",
+          "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:55055",
+          "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:25714",
+          "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:7043",
+          "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:137194",
+          "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:17031",
+          "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:101270",
+          "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:114287",
+          "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:134812",
+          "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:17923",
+          "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:1596",
+          "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:30935",
+          "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:102363"
+        ],
+        "processed_tokens": 6951,
+        "supervised_tokens": 5924,
+        "padded_tokens": 7976,
+        "update_seconds": 6.294746815692633,
+        "tokens_per_second": 1104.254103226415,
+        "nvml_peak_bytes": 26585202688,
+        "allocated_peak_bytes": 23580095488,
+        "reserved_peak_bytes": 25482493952,
+        "remaining_at_peak_bytes": 21720596480,
+        "total_bytes": 48305799168
+      },
+      {
+        "timestamp": "2026-09-08T15:24:17.534086+00:00",
+        "attempt": "attempt_001",
+        "event": "update",
+        "global_step": 8,
+        "sample_cursor": 128,
+        "coverage_fraction": 0.0064,
+        "loss": 2.116970014696212,
+        "grad_norm": 1.1730214357376099,
+        "learning_rate": 1.8421052631578947e-05,
+        "next_learning_rate": 2.105263157894737e-05,
+        "examples": 16,
+        "sample_ids": [
+          "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:50273",
+          "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:5282",
+          "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:19221",
+          "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:10674",
+          "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:10937",
+          "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:7045",
+          "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:38606",
+          "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:98814",
+          "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:15217",
+          "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:17077",
+          "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:38204",
+          "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:1613",
+          "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:5264",
+          "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:12963",
+          "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:7511",
+          "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:7323"
+        ],
+        "processed_tokens": 8081,
+        "supervised_tokens": 6918,
+        "padded_tokens": 9196,
+        "update_seconds": 7.905831063166261,
+        "tokens_per_second": 1022.156928909076,
+        "nvml_peak_bytes": 28472639488,
+        "allocated_peak_bytes": 25577351168,
+        "reserved_peak_bytes": 27369930752,
+        "remaining_at_peak_bytes": 19833159680,
+        "total_bytes": 48305799168
+      }
+    ],
+    "attribution": "Loss is measured per effective batch of 16; no per-example loss is inferred."
+  },
+  "source_hashes": {
+    "/data/WSH/medical-post-train-artifacts/data/stage1/s1_data_audit_20260908T145755_3aabaa/rejections_resolved.jsonl": "cf49823190afed03a234b02df0d8e30b123acc863a33ffd9fdd2c5124df08be0",
+    "/data/WSH/medical-post-train-artifacts/runs/s1_evaluation_20260908T175526_8cfbc0/base_1024.jsonl": "df0aa3f6e4d4e8e481fd7c0aadf7ec6691c5c2b6f54b20bf2246830ab5a3b09b",
+    "/data/WSH/medical-post-train-artifacts/runs/s1_evaluation_20260908T175526_8cfbc0/sft_1024.jsonl": "7db471706dfa7e39adafd2a56ee7fff3bce05d0a07ad97b6be686adcc8d524e6",
+    "/data/WSH/medical-post-train-artifacts/runs/s1_formal_20260908T152119_60040b/canonical_metrics.jsonl": "490b4ec2e7d2a0d09490bf34a64d00f60724c33acb77c3cfdcbc757f2e57d5bc",
+    "/data/WSH/medical-post-train-artifacts/runs/s1_smoke_20260908T145244_1af07b/reload_generation/generations.jsonl": "50cbe97d4fa579abcc56cc7887623a978413a168f42322677fd2cb97287df4f0",
+    "experiments/stage1/s1_data_audit_20260908T145755_3aabaa/cases.json": "09cf4b5e4d1abb4b8d5ec2af0ffe70635fa48672a1d618e6a6950ec7cf58301c",
+    "experiments/stage1/s1_source_reasoning_20260908T160619_58be7b/cases.json": "758746868804e7a844407fc2f97fc5a148398745a67d1ee78905b7d2368e63d9"
+  },
+  "manual_review": "Pending separate review record; automatic extraction does not establish medical correctness."
+}

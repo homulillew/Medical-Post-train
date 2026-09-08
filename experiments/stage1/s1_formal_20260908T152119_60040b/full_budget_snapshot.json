@@ -1,0 +1,10 @@
+{
+  "recorded_at": "2026-09-08T17:55:07.391577+00:00",
+  "run_status": "FULL_BUDGET_REACHED",
+  "unique_examples": 20000,
+  "coverage_fraction": 1.0,
+  "processed_tokens": 9168530,
+  "supervised_tokens": 7741165,
+  "summary_sha256": "ca1fd4506e983e2d081d777866713590f4ca16e25da461e55f45c1fa25836399",
+  "pending": "Independent reload, paired generation, report and global verifier; Stage 1 not DONE yet"
+}

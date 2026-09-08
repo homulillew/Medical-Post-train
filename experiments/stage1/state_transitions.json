@@ -25,5 +25,39 @@
     "run_id": "s1_formal_20260908T152119_60040b",
     "evidence": "Independent fresh-base FORMAL process started after clean frozen commit f591a9e; full planned 20000-example epoch",
     "formal_progress": 0
+  },
+  {
+    "from_status": "FULL_RUNNING",
+    "to_status": "FULL_PASS",
+    "run_id": "s1_formal_20260908T152119_60040b",
+    "timestamp": "2026-09-08T18:11:28.060418+00:00",
+    "evidence": "Full 20000 unique examples / one epoch, final 1000 validation, immutable adapter + independent HF reload, 50 paired prompts and 100 raw generations redecoded/remeasured; reports and global verification follow",
+    "formal_progress": 20000
+  },
+  {
+    "from_status": "FULL_PASS",
+    "to_status": "VERIFIED",
+    "timestamp": "2026-09-08T18:18:16.905286+00:00",
+    "verification_receipt": {
+      "path": "experiments/stage1/verification-final.json",
+      "sha256": "50e3d0cc543f2707e8ec758b6ae3f66d07a952c65f690355fae7453ad14e107e",
+      "verifier_commit": "1b06f9124b7b3d11d353fde12070c7ec56754c81",
+      "contract_sha256": "8ba60bd2e724fbbb74e26f4ef677eb6c6d51eaafcba6eb3bcb0b2eb588a51f24",
+      "result": "PASS"
+    },
+    "formal_progress": 20000
+  },
+  {
+    "from_status": "VERIFIED",
+    "to_status": "DONE",
+    "timestamp": "2026-09-08T18:18:16.906482+00:00",
+    "evidence": [
+      "docs/stage_reports/01_medical_sft.md",
+      "docs/RESUME_EVIDENCE.md",
+      "experiments/stage1/case_coverage.json",
+      "docs/implementation/COMPUTE_BUDGET.md"
+    ],
+    "verification_receipt_sha256": "50e3d0cc543f2707e8ec758b6ae3f66d07a952c65f690355fae7453ad14e107e",
+    "formal_progress": 20000
   }
 ]

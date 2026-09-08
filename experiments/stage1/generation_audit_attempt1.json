@@ -1,0 +1,15 @@
+{
+  "status": "FAIL",
+  "stage": 1,
+  "evaluation_run": "s1_evaluation_20260908T175526_8cfbc0",
+  "recorded_at": "2026-09-08T18:04:32.017295+00:00",
+  "script_sha256": "019d1b878f5d4eeb7e7f1caa85bac52a0fa7b46346690ed8276e360aa4f1c7fd",
+  "script_archive": "/data/WSH/medical-post-train-artifacts/runs/s1_evaluation_20260908T175526_8cfbc0/generation_audit_initial.py",
+  "command": [
+    ".venv-train/bin/python",
+    "scripts/audit_stage1_generation.py"
+  ],
+  "error": "AssertionError: ('huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:97326', 'text-token mismatch')",
+  "observation": "One Base 1024-token length-stop output: one-shot tokenizer.decode adds a trailing space and replacement character; stored vLLM incremental text does not emit incomplete UTF-8. Other 99 outputs match one-shot decoding.",
+  "resolution": "Pending exact native incremental decoder replay; raw output/token IDs and metrics unchanged."
+}

@@ -1,0 +1,242 @@
+{
+  "run_id": "s1_evaluation_20260908T175526_8cfbc0",
+  "status": "PASS",
+  "prompt_count": 50,
+  "limits": [
+    1024
+  ],
+  "results": {
+    "base_1024": {
+      "all": {
+        "count": 50,
+        "think_closed_fraction": 0.76,
+        "answer_closed_fraction": 0.0,
+        "format_valid_fraction": 0.0,
+        "empty_answer_fraction": 0.0,
+        "truncated_fraction": 0.98,
+        "total_tokens": {
+          "mean": 1020.46,
+          "p50": 1024.0,
+          "p90": 1024.0,
+          "p95": 1024.0,
+          "max": 1024,
+          "total": 51023
+        },
+        "reasoning_tokens": {
+          "mean": 684.78,
+          "p50": 647.0,
+          "p90": 1022.0,
+          "p95": 1022.0,
+          "max": 1022,
+          "total": 34239
+        },
+        "answer_tokens": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p90": 0.0,
+          "p95": 0.0,
+          "max": 0,
+          "total": 0
+        },
+        "reasoning_present_fraction": 1.0,
+        "repetition_ge3_fraction": 0.02
+      },
+      "medical_o1": {
+        "count": 25,
+        "think_closed_fraction": 0.56,
+        "answer_closed_fraction": 0.0,
+        "format_valid_fraction": 0.0,
+        "empty_answer_fraction": 0.0,
+        "truncated_fraction": 0.96,
+        "total_tokens": {
+          "mean": 1016.92,
+          "p50": 1024.0,
+          "p90": 1024.0,
+          "p95": 1024.0,
+          "max": 1024,
+          "total": 25423
+        },
+        "reasoning_tokens": {
+          "mean": 863.68,
+          "p50": 923.0,
+          "p90": 1022.0,
+          "p95": 1022.0,
+          "max": 1022,
+          "total": 21592
+        },
+        "answer_tokens": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p90": 0.0,
+          "p95": 0.0,
+          "max": 0,
+          "total": 0
+        },
+        "reasoning_present_fraction": 1.0,
+        "repetition_ge3_fraction": 0.0
+      },
+      "huatuo": {
+        "count": 25,
+        "think_closed_fraction": 0.96,
+        "answer_closed_fraction": 0.0,
+        "format_valid_fraction": 0.0,
+        "empty_answer_fraction": 0.0,
+        "truncated_fraction": 1.0,
+        "total_tokens": {
+          "mean": 1024.0,
+          "p50": 1024.0,
+          "p90": 1024.0,
+          "p95": 1024.0,
+          "max": 1024,
+          "total": 25600
+        },
+        "reasoning_tokens": {
+          "mean": 505.88,
+          "p50": 448.0,
+          "p90": 746.4000000000002,
+          "p95": 854.3999999999999,
+          "max": 1022,
+          "total": 12647
+        },
+        "answer_tokens": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p90": 0.0,
+          "p95": 0.0,
+          "max": 0,
+          "total": 0
+        },
+        "reasoning_present_fraction": 1.0,
+        "repetition_ge3_fraction": 0.04
+      }
+    },
+    "sft_1024": {
+      "all": {
+        "count": 50,
+        "think_closed_fraction": 1.0,
+        "answer_closed_fraction": 1.0,
+        "format_valid_fraction": 1.0,
+        "empty_answer_fraction": 0.0,
+        "truncated_fraction": 0.0,
+        "total_tokens": {
+          "mean": 346.22,
+          "p50": 324.5,
+          "p90": 472.1,
+          "p95": 498.7999999999999,
+          "max": 635,
+          "total": 17311
+        },
+        "reasoning_tokens": {
+          "mean": 150.62,
+          "p50": 114.0,
+          "p90": 337.0,
+          "p95": 349.5,
+          "max": 485,
+          "total": 7531
+        },
+        "answer_tokens": {
+          "mean": 185.6,
+          "p50": 196.0,
+          "p90": 294.2,
+          "p95": 306.29999999999995,
+          "max": 321,
+          "total": 9280
+        },
+        "reasoning_present_fraction": 0.5,
+        "repetition_ge3_fraction": 0.0
+      },
+      "medical_o1": {
+        "count": 25,
+        "think_closed_fraction": 1.0,
+        "answer_closed_fraction": 1.0,
+        "format_valid_fraction": 1.0,
+        "empty_answer_fraction": 0.0,
+        "truncated_fraction": 0.0,
+        "total_tokens": {
+          "mean": 426.88,
+          "p50": 404.0,
+          "p90": 500.6,
+          "p95": 596.5999999999997,
+          "max": 635,
+          "total": 10672
+        },
+        "reasoning_tokens": {
+          "mean": 301.24,
+          "p50": 301.0,
+          "p90": 350.0,
+          "p95": 377.19999999999993,
+          "max": 485,
+          "total": 7531
+        },
+        "answer_tokens": {
+          "mean": 115.64,
+          "p50": 107.0,
+          "p90": 158.0,
+          "p95": 192.3999999999999,
+          "max": 242,
+          "total": 2891
+        },
+        "reasoning_present_fraction": 1.0,
+        "repetition_ge3_fraction": 0.0
+      },
+      "huatuo": {
+        "count": 25,
+        "think_closed_fraction": 1.0,
+        "answer_closed_fraction": 1.0,
+        "format_valid_fraction": 1.0,
+        "empty_answer_fraction": 0.0,
+        "truncated_fraction": 0.0,
+        "total_tokens": {
+          "mean": 265.56,
+          "p50": 269.0,
+          "p90": 316.6,
+          "p95": 321.4,
+          "max": 331,
+          "total": 6639
+        },
+        "reasoning_tokens": {
+          "mean": 0.0,
+          "p50": 0.0,
+          "p90": 0.0,
+          "p95": 0.0,
+          "max": 0,
+          "total": 0
+        },
+        "answer_tokens": {
+          "mean": 255.56,
+          "p50": 259.0,
+          "p90": 306.6,
+          "p95": 310.6,
+          "max": 321,
+          "total": 6389
+        },
+        "reasoning_present_fraction": 0.0,
+        "repetition_ge3_fraction": 0.0
+      }
+    }
+  },
+  "timings": {
+    "base_1024": {
+      "seconds": 153.8042916757986,
+      "generated_tokens": 51023,
+      "output_tokens_per_second": 331.7397677533635
+    },
+    "sft_1024": {
+      "seconds": 100.64131650840864,
+      "generated_tokens": 17311,
+      "output_tokens_per_second": 172.00689140978852
+    }
+  },
+  "cold_load_seconds": 16.483679867815226,
+  "wall_seconds": 274.4390078340657,
+  "identity": {
+    "adapter_sha256": "1601e97891e51940bd4b575d8811a77d8278cbeb296c044b7004e41da6d9ea64",
+    "base_sft_prompt_logprob_delta": 10.518176078796387,
+    "repeat_sft_prompt_logprob_error": 0.0
+  },
+  "nvml_peak_bytes": 31412846592,
+  "allocated_peak_bytes": 0,
+  "reserved_peak_bytes": 0,
+  "remaining_at_peak_bytes": 16892952576,
+  "total_bytes": 48305799168
+}

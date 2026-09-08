@@ -76,3 +76,15 @@
 | R23 P2（新增） | OPEN：原始CoT事实/算术噪声 | 最长选中CoT row14099把3.9921875+4写成9.9921875，推理与末尾结论也不一致。结构清洗与去重没有审定推理正确性；保留原冻结baseline及精确算术反例。最长样本不是随机质量抽样，错误率未知；未来数据事实筛查必须另立版本/run，不能事后改写此epoch |
 
 R23不被包装成已修复：原样本实际保留在训练数据中。后续报告只能声明完成领域SFT及实测格式/长度行为，不能凭loss下降声明医学事实质量已经提高。R07长度风险将在最终50条配对生成中进一步测量，仍需下一阶段考试train-only profiling验证迁移。
+
+### Stage 1 全量与生成结束后的补充
+
+正式20k/1epoch已实际完成，完整1000条验证NLL为2.055825→1.346031；R01在本次SFT配置下MITIGATED，NVML峰值37.188GiB、峰值余量7.800GiB，未发生OOM。不能将该显存数字直接用于后续同时持有actor/rollout状态的GSPO循环。
+
+R04在最终adapter上继续MITIGATED：HF新进程重载digest一致，Base/adapter logits最大差21.8125；vLLM Base/SFT prompt-logprob最大差10.518176，SFT重复差0，真实adapter身份可核验。
+
+R07在本次开放QA验证范围内MITIGATED：固定50条SFT在1024 cap下全部think/answer闭合且0截断，o1均有非空reasoning、Huatuo均为空think。2048未触发也未测；考试train-only profiling与正式shared generation freeze仍是后续gate。
+
+R17的实测锚点为formal worker2.537h、更新吞吐1074.84 total tokens/s、post-SFT生成均长346.22和LoRA172.01 output tokens/s。后续工作情景约124.52h含已完成SFT，仍依赖acceptance和任务长度迁移等假设；不是已执行的项目总耗时。
+
+R23和R20仍OPEN：实际SFT格式完整的药物回答与源参考不同，且没有专家审定；不能把格式100%或loss下降当作医学准确率提升。一个UTF-8截断边界还揭示一次性decode与原生增量decode不同；首次额外audit失败保留，按原生DecodeStream复核100条输出后通过，raw生成未改写。

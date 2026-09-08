@@ -121,3 +121,37 @@ realistic情景下Vanilla生成约5.12M output tokens，Dynamic约14.63M（未�
 ### Unknown
 
 post-SFT长度、真实医学数据packing效率、自然mixed acceptance、正式LoRA长窗口decode、完整Ray循环/optimizer/checkpoint开销、正式validation表现、systemd重启和外部备份时延。1024仍未达到闭合阈值，若共同提高到2048须重新预算。严格worst-case仍无有限上界；不能因预计多天运行而缩减20k/5000/G4合同。
+
+
+## Stage 1 完整实测校准（2026-09-09 CST）
+
+本节来自正式run `s1_formal_20260908T152119_60040b` 和同50条heldout配对评估 `s1_evaluation_20260908T175526_8cfbc0`。上文Stage0估计保留为历史规划。可复算公式、输入和source SHA见 [Stage1 calibration](../../experiments/stage1/compute_calibration.json)，完整阶段结果见 [Stage1报告](../stage_reports/01_medical_sft.md)。
+
+### Measured
+
+完整20,000例、9,168,530 total /7,741,165 supervised tokens；平均458.4265 total tokens/例。正式更新计时8530.12s，吞吐1074.84 total tokens/s；formal worker计时2.537h，NVML峰值37.188GiB。独立重载和配对生成另计；含smoke/pilot/allocator诊断/各次重载/最终生成的互不重叠已计时GPU占用阶段，合计下界2.966h，缺失的早期pilot尾部开销没有补0或反推完整wall。
+
+在max_response1024、temperature0.6/top_p1/top_k-1下，SFT的50条回答全部think/answer闭合，0截断，平均output346.22、reasoning150.62tokens；o1 reasoning301.24、Huatuo0。SFT实际生成17,311tokens/100.6413s=172.01 output tokens/s，含批次prefill/调度，不是单请求TPOT。Base为49/50截断、平均output1020.46；没有answer标签不等于无语义答案。
+
+预先协议只在SFT closure<95%或truncation>5%时追加双方2048，本次未触发。因此1024是下一阶段优先测试候选，不能声称完成了1024对2048的实测优劣比较，也没有把Stage0的考试题长度诊断与本次开放QA当作同一分布。
+
+### Estimated：维持原合同的条件性占用小时
+
+| 工作 | optimistic h | working h | adverse h |
+| --- | ---: | ---: | ---: |
+| stage1_measured_worker | 2.54 | 2.54 | 2.54 |
+| stage2 | 1.64 | 2.68 | 6.04 |
+| stage3 | 0.65 | 1.96 | 15.46 |
+| vanilla | 21.12 | 36.29 | 92.99 |
+| dynamic | 25.53 | 61.21 | 364.72 |
+| stage5 | 10.90 | 17.84 | 40.13 |
+| stage6 | 0.50 | 2.00 | 8.00 |
+| 合计 | 62.87 | 124.52 | 529.88 |
+
+表中只有Stage1 worker为完成后的实测；其他项目仍是假设情景。输出均长346.22由开放SFT-val迁移到考试任务，prompt仍假设384tokens；decode采用实测LoRA窗口的1.5/1/0.5倍。mixed acceptance仍为0.65/0.35/0.10；actor/old-logprob、10/25/60s切换和1.10/1.20/1.35 overhead均为假设。20k、5000 groups、G4与原625-update规划均未缩减，D-014 mini=4的额外更新成本仍未采纳。
+
+工作情景由Stage0约339.95h改为约124.52h，主要是替换了SFT实际token分布、post-SFT开放QA长度和更长LoRA生成窗口的吞吐锚点。这不是同一benchmark上的训练/解码加速实验，也不证明Dynamic降低生成成本。working条件下Dynamic仍比Vanilla估计耗时更长；生成放大由未知的自然mixed acceptance主导。
+
+### Unknown
+
+真实CMExam post-SFT响应分布、自然all-correct/mixed/all-wrong比例、完整Ray/GSPO actor和old-logprob吞吐、切换峰值、长期验证与外部备份。格式50/50通过不能填补医学正确性；源CoT算术错误与生成参考分歧已记录。下一阶段必须在train-only profiling中实测这些未知量。acceptance趋近0时严格最坏成本仍无有限上界，不能据此缩减正式组预算。

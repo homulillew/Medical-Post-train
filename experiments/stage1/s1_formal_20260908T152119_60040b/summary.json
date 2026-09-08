@@ -1,0 +1,349 @@
+{
+  "run_id": "s1_formal_20260908T152119_60040b",
+  "run_class": "FORMAL",
+  "status": "FULL_BUDGET_REACHED",
+  "examples": 20000,
+  "unique_examples": 20000,
+  "global_step": 1250,
+  "coverage_fraction": 1.0,
+  "epoch": 1,
+  "processed_tokens": 9168530,
+  "supervised_tokens": 7741165,
+  "update_seconds": 8530.117967443075,
+  "effective_tokens_per_update_second": 1074.8421106242088,
+  "attempt_wall_seconds": 9134.081241636071,
+  "final_checkpoint": "/data/WSH/medical-post-train-artifacts/runs/s1_formal_20260908T152119_60040b/checkpoints/final",
+  "final_adapter": "/data/WSH/medical-post-train-artifacts/runs/s1_formal_20260908T152119_60040b/checkpoints/final/adapter",
+  "adapter_sha256": "1601e97891e51940bd4b575d8811a77d8278cbeb296c044b7004e41da6d9ea64",
+  "initial_trainable_digest": "a410690ea233c095d47ea4a83c3083fd201080d13370c3f0307cea80fb3065c4",
+  "final_trainable_digest": "28442948aafedad1c673aad7faaaa51c41b03884501569549544b86badf6cd1f",
+  "validation": [
+    {
+      "timestamp": "2026-09-08T15:23:26.451813+00:00",
+      "attempt": "attempt_001",
+      "event": "validation",
+      "global_step": 0,
+      "scope": "initial",
+      "loss": 2.055824687919066,
+      "examples": 1000,
+      "supervised_tokens": 385092,
+      "seconds": 114.38777290470898,
+      "by_source": {
+        "medical_o1": {
+          "loss": 2.385599785430738,
+          "tokens": 246602,
+          "examples": 500
+        },
+        "huatuo": {
+          "loss": 1.4686111808313824,
+          "tokens": 138490,
+          "examples": 500
+        }
+      }
+    },
+    {
+      "timestamp": "2026-09-08T15:35:02.979619+00:00",
+      "attempt": "attempt_001",
+      "event": "validation",
+      "global_step": 100,
+      "scope": "monitor",
+      "loss": 1.4138949381496217,
+      "examples": 128,
+      "supervised_tokens": 48808,
+      "seconds": 15.676946965046227,
+      "by_source": {
+        "medical_o1": {
+          "loss": 1.772526108472542,
+          "tokens": 31382,
+          "examples": 64
+        },
+        "huatuo": {
+          "loss": 0.7680460120005407,
+          "tokens": 17426,
+          "examples": 64
+        }
+      }
+    },
+    {
+      "timestamp": "2026-09-08T15:46:52.920713+00:00",
+      "attempt": "attempt_001",
+      "event": "validation",
+      "global_step": 200,
+      "scope": "monitor",
+      "loss": 1.3898883627963015,
+      "examples": 128,
+      "supervised_tokens": 48808,
+      "seconds": 15.695561917033046,
+      "by_source": {
+        "medical_o1": {
+          "loss": 1.751531039819109,
+          "tokens": 31382,
+          "examples": 64
+        },
+        "huatuo": {
+          "loss": 0.7386160977710665,
+          "tokens": 17426,
+          "examples": 64
+        }
+      }
+    },
+    {
+      "timestamp": "2026-09-08T15:58:41.610193+00:00",
+      "attempt": "attempt_001",
+      "event": "validation",
+      "global_step": 300,
+      "scope": "monitor",
+      "loss": 1.3768157434604429,
+      "examples": 128,
+      "supervised_tokens": 48808,
+      "seconds": 15.718427450861782,
+      "by_source": {
+        "medical_o1": {
+          "loss": 1.743548989421315,
+          "tokens": 31382,
+          "examples": 64
+        },
+        "huatuo": {
+          "loss": 0.7163760140478358,
+          "tokens": 17426,
+          "examples": 64
+        }
+      }
+    },
+    {
+      "timestamp": "2026-09-08T16:10:36.459451+00:00",
+      "attempt": "attempt_001",
+      "event": "validation",
+      "global_step": 400,
+      "scope": "monitor",
+      "loss": 1.3669230414341071,
+      "examples": 128,
+      "supervised_tokens": 48808,
+      "seconds": 15.6566865388304,
+      "by_source": {
+        "medical_o1": {
+          "loss": 1.7352503732698656,
+          "tokens": 31382,
+          "examples": 64
+        },
+        "huatuo": {
+          "loss": 0.7036125669896117,
+          "tokens": 17426,
+          "examples": 64
+        }
+      }
+    },
+    {
+      "timestamp": "2026-09-08T16:22:31.217779+00:00",
+      "attempt": "attempt_001",
+      "event": "validation",
+      "global_step": 500,
+      "scope": "monitor",
+      "loss": 1.3593975123286082,
+      "examples": 128,
+      "supervised_tokens": 48808,
+      "seconds": 15.68744982779026,
+      "by_source": {
+        "medical_o1": {
+          "loss": 1.7299148643019093,
+          "tokens": 31382,
+          "examples": 64
+        },
+        "huatuo": {
+          "loss": 0.6921430913699176,
+          "tokens": 17426,
+          "examples": 64
+        }
+      }
+    },
+    {
+      "timestamp": "2026-09-08T16:34:25.146474+00:00",
+      "attempt": "attempt_001",
+      "event": "validation",
+      "global_step": 600,
+      "scope": "monitor",
+      "loss": 1.354173590043684,
+      "examples": 128,
+      "supervised_tokens": 48808,
+      "seconds": 15.676669671665877,
+      "by_source": {
+        "medical_o1": {
+          "loss": 1.7252520662361164,
+          "tokens": 31382,
+          "examples": 64
+        },
+        "huatuo": {
+          "loss": 0.6859086560444349,
+          "tokens": 17426,
+          "examples": 64
+        }
+      }
+    },
+    {
+      "timestamp": "2026-09-08T16:46:23.189024+00:00",
+      "attempt": "attempt_001",
+      "event": "validation",
+      "global_step": 700,
+      "scope": "monitor",
+      "loss": 1.3478161044134271,
+      "examples": 128,
+      "supervised_tokens": 48808,
+      "seconds": 15.658059413079172,
+      "by_source": {
+        "medical_o1": {
+          "loss": 1.7217384495658283,
+          "tokens": 31382,
+          "examples": 64
+        },
+        "huatuo": {
+          "loss": 0.6744297256935454,
+          "tokens": 17426,
+          "examples": 64
+        }
+      }
+    },
+    {
+      "timestamp": "2026-09-08T16:58:18.440019+00:00",
+      "attempt": "attempt_001",
+      "event": "validation",
+      "global_step": 800,
+      "scope": "monitor",
+      "loss": 1.3446612943979273,
+      "examples": 128,
+      "supervised_tokens": 48808,
+      "seconds": 15.682436398230493,
+      "by_source": {
+        "medical_o1": {
+          "loss": 1.7187723446193188,
+          "tokens": 31382,
+          "examples": 64
+        },
+        "huatuo": {
+          "loss": 0.6709350819540095,
+          "tokens": 17426,
+          "examples": 64
+        }
+      }
+    },
+    {
+      "timestamp": "2026-09-08T17:10:11.699305+00:00",
+      "attempt": "attempt_001",
+      "event": "validation",
+      "global_step": 900,
+      "scope": "monitor",
+      "loss": 1.3418011633428009,
+      "examples": 128,
+      "supervised_tokens": 48808,
+      "seconds": 15.67743975436315,
+      "by_source": {
+        "medical_o1": {
+          "loss": 1.7168443929274628,
+          "tokens": 31382,
+          "examples": 64
+        },
+        "huatuo": {
+          "loss": 0.6663962149423722,
+          "tokens": 17426,
+          "examples": 64
+        }
+      }
+    },
+    {
+      "timestamp": "2026-09-08T17:21:52.741300+00:00",
+      "attempt": "attempt_001",
+      "event": "validation",
+      "global_step": 1000,
+      "scope": "monitor",
+      "loss": 1.3386327777857165,
+      "examples": 128,
+      "supervised_tokens": 48808,
+      "seconds": 15.684554527048022,
+      "by_source": {
+        "medical_o1": {
+          "loss": 1.7143238081081777,
+          "tokens": 31382,
+          "examples": 64
+        },
+        "huatuo": {
+          "loss": 0.6620612230066808,
+          "tokens": 17426,
+          "examples": 64
+        }
+      }
+    },
+    {
+      "timestamp": "2026-09-08T17:33:45.973861+00:00",
+      "attempt": "attempt_001",
+      "event": "validation",
+      "global_step": 1100,
+      "scope": "monitor",
+      "loss": 1.3376516044607585,
+      "examples": 128,
+      "supervised_tokens": 48808,
+      "seconds": 15.674133514985442,
+      "by_source": {
+        "medical_o1": {
+          "loss": 1.7137250346691033,
+          "tokens": 31382,
+          "examples": 64
+        },
+        "huatuo": {
+          "loss": 0.660391396335068,
+          "tokens": 17426,
+          "examples": 64
+        }
+      }
+    },
+    {
+      "timestamp": "2026-09-08T17:45:30.307056+00:00",
+      "attempt": "attempt_001",
+      "event": "validation",
+      "global_step": 1200,
+      "scope": "monitor",
+      "loss": 1.3372052404251016,
+      "examples": 128,
+      "supervised_tokens": 48808,
+      "seconds": 15.616465444210917,
+      "by_source": {
+        "medical_o1": {
+          "loss": 1.7134671325506121,
+          "tokens": 31382,
+          "examples": 64
+        },
+        "huatuo": {
+          "loss": 0.6596056364607513,
+          "tokens": 17426,
+          "examples": 64
+        }
+      }
+    },
+    {
+      "timestamp": "2026-09-08T17:53:26.126548+00:00",
+      "attempt": "attempt_001",
+      "event": "validation",
+      "global_step": 1250,
+      "scope": "final",
+      "loss": 1.3460313139133084,
+      "examples": 1000,
+      "supervised_tokens": 385092,
+      "seconds": 125.00005007581785,
+      "by_source": {
+        "medical_o1": {
+          "loss": 1.725178881565423,
+          "tokens": 246602,
+          "examples": 500
+        },
+        "huatuo": {
+          "loss": 0.6709027957665342,
+          "tokens": 138490,
+          "examples": 500
+        }
+      }
+    }
+  ],
+  "nvml_peak_bytes": 39930757120,
+  "allocated_peak_bytes": 31108308480,
+  "reserved_peak_bytes": 33749467136,
+  "remaining_at_peak_bytes": 8375042048,
+  "total_bytes": 48305799168
+}

@@ -1,0 +1,136 @@
+{
+  "analysis_id": "s1_compute_calibration_s1_formal_20260908T152119_60040b",
+  "stage": 1,
+  "classification": "DIAGNOSTIC_ANALYSIS",
+  "measured": {
+    "formal_examples": 20000,
+    "formal_total_tokens": 9168530,
+    "formal_supervised_tokens": 7741165,
+    "formal_update_seconds": 8530.117967443075,
+    "formal_worker_seconds": 9134.081241636071,
+    "formal_update_tokens_per_second": 1074.8421106242088,
+    "formal_peak_nvml_bytes": 39930757120,
+    "post_sft_heldout_mean_response_tokens": 346.22,
+    "post_sft_heldout_decode_tokens_per_second": 172.00689140978852,
+    "post_sft_heldout_response_limit": 1024,
+    "post_sft_answer_closure": 1.0,
+    "post_sft_truncation": 0.0
+  },
+  "observed_stage1_costs": {
+    "nonoverlapping_recorded_seconds": {
+      "smoke_final_attempt_worker": 115.46169912302867,
+      "smoke_fresh_reload_and_greedy": 230.9289077031426,
+      "pilot_final_attempt_worker": 255.96714684274048,
+      "pilot_fresh_reload_and_greedy": 87.62310238182545,
+      "pilot_attempt_001_recorded_phases_lower_bound": 248.65817983727902,
+      "formal_final_attempt_worker": 9134.081241636071,
+      "formal_fresh_reload_and_greedy": 91.78361270204186,
+      "allocator_diagnostic_worker": 237.63030469510704,
+      "paired_generation_worker": 274.4390078340657
+    },
+    "recorded_gpu_occupancy_lower_bound_hours": 2.9657147785431395,
+    "missing_overhead": "Earlier pilot attempt untimed save/digest/exit and process startup/teardown gaps; exact total Stage 1 occupancy is not reconstructed.",
+    "scope": "GPU-owning processes/phases including CPU work within them; not utilization-integrated kernel time. Dataset download/governance/CPU audits excluded."
+  },
+  "estimated_scenarios": {
+    "optimistic": {
+      "classification": "Estimated except completed Stage 1 worker time",
+      "assumptions": {
+        "mean_response_transferred_from_open_ended_validation": 346.22,
+        "mean_prompt_tokens": 384,
+        "decode_tokens_per_second": 258.0103371146828,
+        "mixed_acceptance": 0.65,
+        "actor_tokens_per_second": 1000,
+        "old_logprob_tokens_per_second": 1500,
+        "switch_seconds": 10,
+        "overhead": 1.1,
+        "updates_per_rl_variant": 625
+      },
+      "gpu_hours": {
+        "stage1_measured_worker": 2.537244789343353,
+        "stage2": 1.6400807134703632,
+        "stage3": 0.6459394809975585,
+        "vanilla": 21.116367348011472,
+        "dynamic": 25.53196926889322,
+        "stage5": 10.899566401545668,
+        "stage6": 0.5
+      },
+      "total_gpu_hours": 62.87116800226163
+    },
+    "working": {
+      "classification": "Estimated except completed Stage 1 worker time",
+      "assumptions": {
+        "mean_response_transferred_from_open_ended_validation": 346.22,
+        "mean_prompt_tokens": 384,
+        "decode_tokens_per_second": 172.00689140978852,
+        "mixed_acceptance": 0.35,
+        "actor_tokens_per_second": 700,
+        "old_logprob_tokens_per_second": 1000,
+        "switch_seconds": 25,
+        "overhead": 1.2,
+        "updates_per_rl_variant": 625
+      },
+      "gpu_hours": {
+        "stage1_measured_worker": 2.537244789343353,
+        "stage2": 2.6837684402242297,
+        "stage3": 1.9629849162782942,
+        "vanilla": 36.28966518419193,
+        "dynamic": 61.21037212913121,
+        "stage5": 17.835654111620176,
+        "stage6": 2
+      },
+      "total_gpu_hours": 124.5196895707892
+    },
+    "adverse": {
+      "classification": "Estimated except completed Stage 1 worker time",
+      "assumptions": {
+        "mean_response_transferred_from_open_ended_validation": 346.22,
+        "mean_prompt_tokens": 384,
+        "decode_tokens_per_second": 86.00344570489426,
+        "mixed_acceptance": 0.1,
+        "actor_tokens_per_second": 250,
+        "old_logprob_tokens_per_second": 400,
+        "switch_seconds": 60,
+        "overhead": 1.35,
+        "updates_per_rl_variant": 625
+      },
+      "gpu_hours": {
+        "stage1_measured_worker": 2.537244789343353,
+        "stage2": 6.038478990504518,
+        "stage3": 15.458506215691568,
+        "vanilla": 92.99285023586043,
+        "dynamic": 364.7244048085638,
+        "stage5": 40.130221751145406,
+        "stage6": 8
+      },
+      "total_gpu_hours": 529.8817067911091
+    }
+  },
+  "rl_response_candidate": 1024,
+  "candidate_meets_heldout_closure_trigger": true,
+  "unknown": [
+    "Natural CMExam mixed-group acceptance",
+    "Post-SFT CMExam response distribution; current inputs are open-ended SFT validation",
+    "Formal GSPO actor/old-logprob throughput and Ray switching",
+    "Sustained serving throughput and request latency",
+    "Any extra update cost if later adopting the mini=4 GSPO proposal"
+  ],
+  "sources": {
+    "/data/WSH/medical-post-train-artifacts/runs/s1_formal_20260908T152119_60040b/summary.json": "ca1fd4506e983e2d081d777866713590f4ca16e25da461e55f45c1fa25836399",
+    "experiments/stage1/s1_evaluation_20260908T175526_8cfbc0/summary.json": "8ae7cba4fcb12832cde83e28e146314e1f0cb93beacc5778c704269983797a09",
+    "/data/WSH/medical-post-train-artifacts/runs/s1_smoke_20260908T145244_1af07b/summary.json": "9217e889db9122de04b67da14b9461eec02c13942775ab1f840b8f8d9ae96149",
+    "/data/WSH/medical-post-train-artifacts/runs/s1_smoke_20260908T145244_1af07b/reload_generation/receipt.json": "37e6bca6dc06b3408c6f613c5ab8f1dbea6785d48d7dc03109fd96c9ad25c6e2",
+    "/data/WSH/medical-post-train-artifacts/runs/s1_pilot_20260908T150104_71a69a/summary.json": "2107ca1a99cb82407314216525175773f40b0b0984be7515085c70ac8a575582",
+    "/data/WSH/medical-post-train-artifacts/runs/s1_pilot_20260908T150104_71a69a/reload_generation/receipt.json": "b39de21b48cebc26ed32ec56248a7731cd3a07979e5d88be9579fd86d3c7595a",
+    "/data/WSH/medical-post-train-artifacts/runs/s1_pilot_20260908T150104_71a69a/attempt_001/metrics.jsonl": "b97905052b97cfba5308481c3386a0e38ab7153d5ac1264574670709f2ff4a3e",
+    "/data/WSH/medical-post-train-artifacts/runs/s1_formal_20260908T152119_60040b/reload_generation/receipt.json": "cbe7af67f45a441980b6c7b40a8bb15b6f6f203e31e6b8e1376246dbff68be30",
+    "experiments/stage1/s1_memory_20260908T151118_dfaed6/summary.json": "c78ead5ba12f20aad1fd32e1145b18783e9530c1daab1311e33ba05a1f4d37c4"
+  },
+  "caveats": [
+    "No Stage 2–6 experiment was executed by this analysis.",
+    "SFT wall time is measured to worker completion; separate smoke/pilot/diagnostics/reload/generation costs are reported in the stage report.",
+    "Open-ended validation speed/length transfer to examination rollouts is an estimate.",
+    "Mandatory 20k/5000/G4 budgets and 625-update planning assumption are preserved.",
+    "The strict worst case remains unbounded as mixed acceptance tends to zero."
+  ]
+}

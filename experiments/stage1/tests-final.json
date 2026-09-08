@@ -1,0 +1,11 @@
+{
+  "stage": 1,
+  "check": "repository_pytest_suite",
+  "result": "PASS",
+  "exit_code": 0,
+  "pytest_output_tail": "............                                          [100%]\n31 passed in 5.74s\n",
+  "passed": 31,
+  "reported_seconds": 5.74,
+  "command": ".venv-train/bin/python with analysis site-packages added to sys.path; pytest.main(['tests', '-q'])",
+  "scope": "CPU unit/contract/native-tokenizer/gradient-weighting/negative-verifier tests; full experiment verification is separate"
+}
