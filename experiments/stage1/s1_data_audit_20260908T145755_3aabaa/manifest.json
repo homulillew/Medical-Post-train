@@ -1,0 +1,13 @@
+{
+  "run_id": "s1_data_audit_20260908T145755_3aabaa",
+  "stage": 1,
+  "run_class": "DIAGNOSTIC",
+  "purpose": "Resolve retained duplicate edges and inspect source-length extremes, without changing frozen selection",
+  "source_data_run": "s1_data_20260908T144854_bac3a7",
+  "source_rejections_sha256": "79160bc7ac1317160617307f74f6a2a8797b7637bdd120da2ee035e0b2ea73dc",
+  "script_sha256": "4b31306caa40ff958455669d3004fab0a7c983eceb69b4d5c48b05be909e7328",
+  "command": [
+    "scripts/audit_stage1_cases.py"
+  ],
+  "artifact_root": "/data/WSH/medical-post-train-artifacts/data/stage1/s1_data_audit_20260908T145755_3aabaa"
+}

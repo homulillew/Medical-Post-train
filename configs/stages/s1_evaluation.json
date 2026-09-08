@@ -1,0 +1,23 @@
+{
+  "stage": 1,
+  "run_class": "EVALUATION",
+  "purpose": "Paired Base/final-SFT heldout structure and response-length sanity; no exam accuracy evaluation",
+  "prompts_per_source": 25,
+  "selection": "first 25 frozen validation records of each source, in frozen file order",
+  "prompt_policy": "original user/history messages, native Qwen template; no added format instruction",
+  "enable_thinking": true,
+  "temperature": 0.6,
+  "top_p": 1.0,
+  "top_k": -1,
+  "seed": 42,
+  "primary_response_cap": 1024,
+  "secondary_response_cap": 2048,
+  "secondary_trigger": "final-SFT answer closure below 0.95 or truncation above 0.05 at 1024; repeat both models on all same prompts",
+  "vllm_runner": "v1",
+  "batch_invariant": true,
+  "max_model_len": 4096,
+  "max_num_seqs": 16,
+  "gpu_memory_utilization": 0.65,
+  "enforce_eager": true,
+  "human_review_scope": "format, reasoning presence/length, answer completeness and repetition; no unsupported medical-correctness score"
+}

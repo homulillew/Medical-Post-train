@@ -1,0 +1,12 @@
+[
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/data/stage1/s1_data_20260908T144417_418b80/environment.json",
+    "sha256": "0831b5c140aeba18fcab3ff5cbdd47c2528a9d5c74fa3b32b48e6f358d927381",
+    "bytes": 7848
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/data/stage1/s1_data_20260908T144417_418b80/status.json",
+    "sha256": "d3f2c28e3dd4c82ca9856ea1dd5e55a032e60ab66408f7e58267fe47f319aa01",
+    "bytes": 340
+  }
+]

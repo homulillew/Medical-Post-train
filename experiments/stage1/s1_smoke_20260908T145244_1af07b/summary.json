@@ -1,0 +1,73 @@
+{
+  "run_id": "s1_smoke_20260908T145244_1af07b",
+  "run_class": "SMOKE",
+  "status": "TRAINING_PASS",
+  "examples": 128,
+  "unique_examples": 128,
+  "global_step": 8,
+  "coverage_fraction": 1.0,
+  "epoch": 1,
+  "processed_tokens": 55322,
+  "supervised_tokens": 47262,
+  "update_seconds": 67.22276514722034,
+  "effective_tokens_per_update_second": 822.965254089783,
+  "attempt_wall_seconds": 115.46169912302867,
+  "final_checkpoint": "/data/WSH/medical-post-train-artifacts/runs/s1_smoke_20260908T145244_1af07b/checkpoints/final",
+  "final_adapter": "/data/WSH/medical-post-train-artifacts/runs/s1_smoke_20260908T145244_1af07b/checkpoints/final/adapter",
+  "adapter_sha256": "03675050265e43d6e10a788a562d1026f63c61d879f3dd94e31abbdb00b031e8",
+  "initial_trainable_digest": "a410690ea233c095d47ea4a83c3083fd201080d13370c3f0307cea80fb3065c4",
+  "final_trainable_digest": "48e13a4396aa107651a548088d64634fa1affa00e60835c49085bb67f9daf6da",
+  "validation": [
+    {
+      "timestamp": "2026-09-08T14:53:10.575223+00:00",
+      "attempt": "attempt_001",
+      "event": "validation",
+      "global_step": 0,
+      "scope": "initial",
+      "loss": 2.046164829329748,
+      "examples": 128,
+      "supervised_tokens": 48808,
+      "seconds": 13.33330276561901,
+      "by_source": {
+        "medical_o1": {
+          "loss": 2.367583277139493,
+          "tokens": 31382,
+          "examples": 64
+        },
+        "huatuo": {
+          "loss": 1.4673312628678281,
+          "tokens": 17426,
+          "examples": 64
+        }
+      }
+    },
+    {
+      "timestamp": "2026-09-08T14:54:32.748822+00:00",
+      "attempt": "attempt_001",
+      "event": "validation",
+      "global_step": 8,
+      "scope": "final",
+      "loss": 1.6452929714865283,
+      "examples": 128,
+      "supervised_tokens": 48808,
+      "seconds": 14.824592991732061,
+      "by_source": {
+        "medical_o1": {
+          "loss": 1.9885191410945193,
+          "tokens": 31382,
+          "examples": 64
+        },
+        "huatuo": {
+          "loss": 1.0271864837878035,
+          "tokens": 17426,
+          "examples": 64
+        }
+      }
+    }
+  ],
+  "nvml_peak_bytes": 26188840960,
+  "allocated_peak_bytes": 19801870336,
+  "reserved_peak_bytes": 25088229376,
+  "remaining_at_peak_bytes": 22116958208,
+  "total_bytes": 48305799168
+}

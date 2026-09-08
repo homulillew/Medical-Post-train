@@ -1,0 +1,38 @@
+{
+  "run_id": "s1_source_bootstrap_20260908_001",
+  "run_class": "DIAGNOSTIC",
+  "stage": 1,
+  "started_at": null,
+  "start_time_note": "Not captured before the wrapper existed; never inferred from file mtime",
+  "commands": [
+    ".venv-train/bin/python scripts/prepare_stage1.py (attempts 1 and 2)"
+  ],
+  "failure": "Attempt 1 requested nonexistent CMExam data/test.csv; corrected to pinned official test_with_annotations.csv",
+  "artifacts": [
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage1-download.log",
+      "sha256": "205cc20aa180ead4017619f665a9df60c558e4858b418157fe5d4f24c83ae429",
+      "bytes": 3612
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage1-download-attempt2.log",
+      "sha256": "a68c00b85458253e7a1aeb3cedccf3a9b31c52f3126254f15f48430be5f8a448",
+      "bytes": 2818
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage1-governance-001.log",
+      "sha256": "f37e2a0e79b6e0d9994e61e7db4c9905c2eb0562fad770158c9bd444d5273200",
+      "bytes": 439
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage1-governance-002.log",
+      "sha256": "ac886a33f16ae348f16ea9d7534259ff24f233ce406505d015fca2c63d4fc219",
+      "bytes": 8252
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage1-case-audit.log",
+      "sha256": "f15d93caf93db5fc5837b13862978bb313da068af4f3cbd76e70635a1539b549",
+      "bytes": 3322
+    }
+  ]
+}

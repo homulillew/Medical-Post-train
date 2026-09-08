@@ -72,19 +72,42 @@ Implementation details are deliberately left open to the executing agent. The pr
 
 This project is designed to preserve **negative results, failed hypotheses, bad cases, configuration changes, full raw metrics, and decision rationale**. A scientifically complete negative result is preferable to an incomplete positive-looking demo.
 
-## Implementation handoff — 2026-09-08
+## Historical implementation handoff — 2026-09-08
 
 The repository takeover and execution design is in
 [`docs/implementation/IMPLEMENTATION_PLAN.md`](docs/implementation/IMPLEMENTATION_PLAN.md).
 The audited machine has one **NVIDIA RTX 5880 Ada Generation** with 46,068 MiB visible VRAM.
 The plan includes pinned upstream source references, dependency compatibility risks,
 Stage 1–6 commands and module interfaces, compute scenarios, durable resume, and evidence gates.
-Candidate dependencies have metadata resolution evidence; the training stack is not yet runtime validated.
+At the original takeover commit, dependencies had metadata resolution evidence only.
 
-[`project_state.json`](project_state.json) keeps all six stages **NOT_STARTED**.
+At that takeover checkpoint all six stages were **NOT_STARTED**.
 The only GPU execution in takeover was a tiny BF16 environment diagnostic; no formal training,
 full dataset download, profiling run, or model benchmark was performed.
 Future training commands in the plan are interfaces to implement, not existing executables.
 
 Check these planning artifacts with `python scripts/verify_planning.py` (requires `jsonschema`).
 This checks the takeover documents, initial state, and contract invariants; it does not verify any Stage completion.
+
+## Current execution
+
+Stage 0 runtime compatibility is [VERIFIED](docs/stage_reports/00_runtime_compatibility.md).
+Stage 1 real data preparation and training are implemented; current progress is authoritative in
+[`project_state.json`](project_state.json), with explicit runs in
+[`experiments/stage1/selected_runs.json`](experiments/stage1/selected_runs.json).
+Stage 2–6 have not started. Historical planning/Stage 0 validators intentionally check their original stage-isolation boundaries; their archived receipts are preserved.
+
+Use the independent training environment and real Stage 1 entry points:
+
+```bash
+.venv-train/bin/python scripts/verify_stage1_data.py --run experiments/stage1/s1_data_20260908T144854_bac3a7 --output /tmp/new-data-verification.json
+.venv-train/bin/python scripts/run_stage1.py prepare --config configs/stages/s1_smoke.json
+.venv-train/bin/python scripts/run_stage1.py prepare --config configs/stages/s1_pilot.json
+.venv-train/bin/python scripts/run_stage1.py inspect --run <absolute-bulk-run-directory>
+.venv-train/bin/python scripts/run_stage1.py resume --run <absolute-bulk-run-directory> --checkpoint <verified-checkpoint-directory>
+.venv-train/bin/python scripts/verify_stage.py --stage 1
+```
+
+Each prepare creates a new run and detached worker; resume continues the same run with a new attempt and verified optimizer/scheduler/RNG/sample cursor. Formal preparation additionally requires committed configuration and successful smoke/pilot receipts. Do not relaunch smoke/pilot to resume an existing formal run. The original `mpt sft --mode smoke` remains a **Stage 0 synthetic capacity probe**, not the real medical SFT entry point above.
+
+The frozen 20k corpus, token cache, full metrics, generation outputs and checkpoints live under `/data/WSH/medical-post-train-artifacts/`; Git keeps compact evidence manifests and reports. See [Stage 1 execution design](docs/implementation/STAGE1_EXECUTION.md) and [decisions](docs/implementation/STAGE1_DECISIONS.md).

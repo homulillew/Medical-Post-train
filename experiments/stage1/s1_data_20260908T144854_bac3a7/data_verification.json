@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "run_id": "s1_data_20260908T144854_bac3a7",
+  "checks": [
+    "all artifact/source hashes",
+    "complete question-only benchmark projection",
+    "unique train/validation IDs and clusters",
+    "no benchmark-containing selected cluster",
+    "original source-to-messages parity",
+    "complete labels and supervised EOS",
+    "exact balanced quotas",
+    "recomputed token totals"
+  ],
+  "counts": {
+    "train": {
+      "medical_o1": 10000,
+      "huatuo": 10000
+    },
+    "validation": {
+      "medical_o1": 500,
+      "huatuo": 500
+    }
+  },
+  "token_sums": {
+    "train": {
+      "total_tokens": 9168530,
+      "supervised_tokens": 7741165,
+      "reasoning_tokens": 3160870,
+      "answer_tokens": 4359460
+    },
+    "validation": {
+      "total_tokens": 456624,
+      "supervised_tokens": 385092,
+      "reasoning_tokens": 157956,
+      "answer_tokens": 216095
+    }
+  },
+  "artifact_root": "/data/WSH/medical-post-train-artifacts/data/stage1/s1_data_20260908T144854_bac3a7",
+  "data_manifest_sha256": "9fd7a53d6041db45732363e41055ebc78e2ce1d2cef3525dba448f110d041665",
+  "limitations": [
+    "lexical near-duplicate detection does not prove absence of semantic paraphrases",
+    "two official punctuation-only train questions have no usable lexical content"
+  ]
+}

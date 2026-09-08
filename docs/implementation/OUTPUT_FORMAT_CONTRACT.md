@@ -21,3 +21,5 @@ CMExam parser 允许完整 think + answer 或 answer-only，answer 只可含 A�
 输入中的保留输出标签和 chat control tokens 必须显式拒绝或在数据处理阶段另立可追溯清理记录，不能默默改变 target。长度截断不能留下假闭合答案；Stage 0 capacity sweep 的合成 token batch 只测显存，不被解释为完成 SFT 数据流水线。
 
 rollout 的 prompt 不含 ground truth 或 explanation；选项和回答格式指令属于 prompt。完整 raw text 保留在 artifact 中。格式 reward 和正确性 reward 分开记录。
+
+Stage 1 实测补充：固定 Huatuo 的142,248条记录全部只有一个 human/gpt pair。真实训练中每个 assistant 都保留空 think。多轮单测按 native full template 的实际文本定位所有 assistant span：历史 think 会被上游模板移除，历史 answer/EOS 仍监督；这个差异有明确计数，不把移除的 reasoning 计入监督 tokens。medical-o1 单轮的原始 CoT 与最终答案均完整监督。所有21,000条选中 train/validation 样本均未截断，完整监督 EOS 已逐条核验。

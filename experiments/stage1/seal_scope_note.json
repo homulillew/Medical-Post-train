@@ -1,0 +1,4 @@
+{
+  "note": "The first intermediate seal captured completed training files while pilot reload generation was still in progress. Its artifact snapshot is retained; follow-up logs in that snapshot are partial, not final hash receipts. Final verification uses final_artifacts.json produced after all follow-ups end.",
+  "affected_run": "s1_pilot_20260908T150104_71a69a"
+}

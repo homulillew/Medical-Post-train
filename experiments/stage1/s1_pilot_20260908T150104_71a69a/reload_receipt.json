@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "run_id": "s1_pilot_20260908T150104_71a69a",
+  "run_class": "PILOT",
+  "check": "fresh_process_real_adapter_identity_and_generation",
+  "adapter_sha256": "5575eb45bf12c7ff2517cad9cca07b285bb7d39b80fa2c6d64e21a358a748c26",
+  "trainable_digest": "7aa17e15d59686c721e354a81ff2339e11ac0d34ba9ef804f093b4e3499875e4",
+  "identity_logit_max_delta": 21.5,
+  "generation_count": 4,
+  "format_valid_count": 4,
+  "eos_terminated_count": 4,
+  "generations_path": "/data/WSH/medical-post-train-artifacts/runs/s1_pilot_20260908T150104_71a69a/reload_generation/generations.jsonl",
+  "generations_sha256": "d7c01e58c9443d5b285e6ff3cd4e08931d5b823411a2b7df06f8c63c85a68fda",
+  "elapsed_seconds": 87.62310238182545,
+  "real_data_resume_receipt_sha256": "a27d96ce1052989c5970ee8f66159b339c352066b03857628d4a23d55e57b013"
+}

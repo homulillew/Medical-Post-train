@@ -1,0 +1,17 @@
+[
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s1_memory_20260908T151118_dfaed6/environment.json",
+    "sha256": "7c33b33427cb68cca9d01a30f9f231ddf26204ead92b9d6d14bf0beb9705c3ee",
+    "bytes": 7904
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s1_memory_20260908T151118_dfaed6/metrics.jsonl",
+    "sha256": "9d43ad1a01a08d075056147d0f5987789f8ba543f8a9a9029bfb7ba8667014f6",
+    "bytes": 50601
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s1_memory_20260908T151118_dfaed6/status.json",
+    "sha256": "041dff8cee4c14767a03435eb9f84a05152b2dc00e322d74a702b6f6944a4bdf",
+    "bytes": 23
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "result": "FAIL",
+  "stage": 1,
+  "errors": [
+    "real_pilot_and_process_resume: AssertionError: Missing pilot run",
+    "formal_run_exists: AssertionError: Missing formal run",
+    "paired_heldout_generation_and_length_analysis: AssertionError: Missing evaluation run",
+    "real_report_cases_interview_and_artifact_seal: AssertionError: docs/stage_reports/01_medical_sft.md"
+  ],
+  "gates": {
+    "research_contract_and_stage_isolation": true,
+    "explicit_selected_runs": true,
+    "frozen_balanced_data_and_decontamination": true,
+    "real_smoke_and_reload": true,
+    "real_pilot_and_process_resume": false,
+    "formal_run_exists": false,
+    "paired_heldout_generation_and_length_analysis": false,
+    "real_report_cases_interview_and_artifact_seal": false
+  },
+  "counts": {},
+  "verifier_sha256": "31c8fbf883af83fd200b48c4185b4a8c431d449dcf4147ba0c6357188ad4d0e4",
+  "contract_sha256": "8ba60bd2e724fbbb74e26f4ef677eb6c6d51eaafcba6eb3bcb0b2eb588a51f24",
+  "selected_runs": {
+    "data": "s1_data_20260908T144854_bac3a7",
+    "smoke": "s1_smoke_20260908T145244_1af07b",
+    "pilot": null,
+    "formal": null,
+    "evaluation": null
+  }
+}

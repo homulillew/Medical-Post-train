@@ -1,0 +1,69 @@
+{
+  "sources": [
+    {
+      "source": "medical_o1",
+      "revision": "fc2c9e8a37b38f38da6d449564a8c350b244aef4",
+      "url": "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT/resolve/fc2c9e8a37b38f38da6d449564a8c350b244aef4/medical_o1_sft_Chinese.json",
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage1/raw/medical_o1.json",
+      "sha256": "e64b1426723b63899287236d20e9bbaec9f185e1ce4b24e9b61f610facb4369a",
+      "bytes": 50634791
+    },
+    {
+      "source": "huatuo",
+      "revision": "4077ffaeb123e49b8b8a0283f42957a5570a52ce",
+      "url": "https://huggingface.co/datasets/FreedomIntelligence/HuatuoGPT2-SFT-GPT4-140K/resolve/4077ffaeb123e49b8b8a0283f42957a5570a52ce/HuatuoGPT2-GPT4-SFT-140K.json",
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage1/raw/huatuo.json",
+      "sha256": "8fbd78692ea9b80727c9e94bfd0eaacc283fe03fdec8e7730bdb2bc550a975be",
+      "bytes": 245833100
+    },
+    {
+      "source": "cmb_test",
+      "revision": "935fbc09edf1303d89872b21265ff597f426ac0d",
+      "url": "https://huggingface.co/datasets/FreedomIntelligence/CMB/resolve/935fbc09edf1303d89872b21265ff597f426ac0d/CMB-Exam/CMB-test/CMB-test-choice-question-merge.json",
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage1/raw/cmb_test.json",
+      "sha256": "99e6e858dd1955fe2b27fd1da75a7be8fbf6d27059fdb8cf61bc28383a68129c",
+      "bytes": 6009783
+    },
+    {
+      "source": "cmexam_train",
+      "revision": "fadb22c89beb1b7115dc36460ba792eb96b7b972",
+      "url": "https://raw.githubusercontent.com/williamliujl/CMExam/fadb22c89beb1b7115dc36460ba792eb96b7b972/data/train.csv",
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage1/raw/cmexam_train.csv",
+      "sha256": "3d6ca5e2499c510956534740c95179c483d9d47d2531e39fc5069333ffd23724",
+      "bytes": 40576549
+    },
+    {
+      "source": "cmexam_val",
+      "revision": "fadb22c89beb1b7115dc36460ba792eb96b7b972",
+      "url": "https://raw.githubusercontent.com/williamliujl/CMExam/fadb22c89beb1b7115dc36460ba792eb96b7b972/data/val.csv",
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage1/raw/cmexam_val.csv",
+      "sha256": "58cc9776b2f17fdc3a235ceec9ae153ee3f617703293dda661c6decbffb1f190",
+      "bytes": 5126392
+    },
+    {
+      "source": "cmexam_test",
+      "revision": "fadb22c89beb1b7115dc36460ba792eb96b7b972",
+      "url": "https://raw.githubusercontent.com/williamliujl/CMExam/fadb22c89beb1b7115dc36460ba792eb96b7b972/data/test_with_annotations.csv",
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage1/raw/cmexam_test.csv",
+      "sha256": "e998f69b3f8108bf08bcb8cc9a2a6ed276afeabde6ba3caa3015789b1f6fd407",
+      "bytes": 5857392
+    }
+  ],
+  "exclusion": {
+    "path": "/data/WSH/medical-post-train-artifacts/data/stage1/benchmark_questions.jsonl",
+    "sha256": "f92c7c6ca0895ee03f1d2d9547a1fbb903d292e1f56e8933c67043d3440e6a96",
+    "counts": {
+      "cmb_test": 11200,
+      "cmexam_train": 54497,
+      "cmexam_val": 6811,
+      "cmexam_test": 6811
+    },
+    "fields_accessed": [
+      "Question (CMExam)",
+      "question (CMB)"
+    ],
+    "purpose": "DEDUP_ONLY",
+    "answers_used": false,
+    "difficulty_used": false
+  }
+}

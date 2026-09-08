@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-09-08T15:06:50.064271+00:00",
+  "attempt": "attempt_002",
+  "event": "real_data_resume_parity",
+  "checkpoint": "/data/WSH/medical-post-train-artifacts/runs/s1_pilot_20260908T150104_71a69a/checkpoints/step_000032",
+  "global_step": 33,
+  "sample_cursor": 528,
+  "parameter_max_abs_error": 0.0,
+  "loss_abs_error": 0.0,
+  "same_next_sample_ids": true,
+  "scheduler_equal": true,
+  "reference_parameters_sha256": "f7b7257819e08c78e0670116ba72b208345e2eff2676e6101c6e98d16f56be76"
+}

@@ -1,0 +1,4 @@
+{
+  "status": "FAILED",
+  "traceback": "Traceback (most recent call last):\n  File \"/data/WSH/post-train/scripts/govern_stage1.py\", line 72, in main\n    assert all(texts), 'Empty normalized question requires explicit rejection rule'\n           ^^^^^^^^^^\nAssertionError: Empty normalized question requires explicit rejection rule\n"
+}

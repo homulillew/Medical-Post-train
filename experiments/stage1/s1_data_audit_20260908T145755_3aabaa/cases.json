@@ -1,0 +1,271 @@
+[
+  {
+    "case_id": "S1-DATA-001",
+    "run_id": "s1_data_audit_20260908T145755_3aabaa",
+    "stage": 1,
+    "category": "BAD_CASE",
+    "subtype": "encoding_corruption",
+    "prompt_id": "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:17184",
+    "prompt_excerpt": "一个8岁男孩因发热7天入院，体检表情淡漠，躯干部散在淡红色斑丘疹，颈部淋巴结肿大，肝肋下3厘米，脾肋下2厘米，实验室检查显示白细胞数正�?，中性粒细胞占60％，淋巴细胞34％，异型淋巴细胞8％，ALT和AST分别为70u/L和60u/L，两天前肥达氏试验为阴性。结合这些临床表现和检查结果，该病人最可能的诊断是什么？",
+    "rejection": {
+      "sample_id": "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:17184",
+      "source": "medical_o1",
+      "reason": "encoding_corruption",
+      "matched_target": null,
+      "similarity": null,
+      "cluster_id": null
+    },
+    "observation": "This source record was rejected by the frozen governance rule.",
+    "hypothesis": null,
+    "alternative_explanations": [],
+    "followup": "Retained raw row and rejection/graph evidence; no change to frozen train/validation.",
+    "artifact_refs": [
+      "/data/WSH/medical-post-train-artifacts/data/stage1/s1_data_20260908T144854_bac3a7/rejections.jsonl",
+      "/data/WSH/medical-post-train-artifacts/data/stage1/s1_data_20260908T144854_bac3a7/duplicate_edges.jsonl"
+    ]
+  },
+  {
+    "case_id": "S1-DATA-002",
+    "run_id": "s1_data_audit_20260908T145755_3aabaa",
+    "stage": 1,
+    "category": "BAD_CASE",
+    "subtype": "benchmark_cluster_overlap",
+    "prompt_id": "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:11677",
+    "prompt_excerpt": "G1P0孕37周，骨盆外测量：骶耻外径18.5cm，髂前上嵴间径23cm，坐骨结节间径7.5cm，坐骨结节间径+出口后矢状之和为14cm，肛诊：骶骨板弯曲好，骨盆内聚，坐骨嵴间径约9cm，骶坐切迹可容1+指，胎儿估计3000g，儿头浮，胎心140次/分。入院后行内诊检查；宫口开5cm,宫颈周边轻度水肿，人工破膜，羊水II0粪染，胎心120次/分，此时最适宜的处理是\nA. 即行胎儿电子监护及头皮血PH值测定\nB. 人工破膜+催产素静脉滴注加速产程\nC. 即刻剖宫产术\nD. 肌注杜冷丁100mg\nE. 拟定第二产程助产",
+    "rejection": {
+      "sample_id": "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:11677",
+      "source": "medical_o1",
+      "reason": "benchmark_cluster_overlap",
+      "matched_target": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:51",
+      "similarity": 0.972809667673716,
+      "similarity_scope": "direct_edge; cluster target may be transitive",
+      "matched_edge_target": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:51",
+      "cluster_id": "cluster:48b739585799531dd082ca820bd60795c952f00aecf1aff6a43b7bb37b8b001b"
+    },
+    "observation": "This source record was rejected by the frozen governance rule.",
+    "hypothesis": null,
+    "alternative_explanations": [
+      "Lexical similarity is conservative and may remove related but distinct questions."
+    ],
+    "followup": "Retained raw row and rejection/graph evidence; no change to frozen train/validation.",
+    "artifact_refs": [
+      "/data/WSH/medical-post-train-artifacts/data/stage1/s1_data_20260908T144854_bac3a7/rejections.jsonl",
+      "/data/WSH/medical-post-train-artifacts/data/stage1/s1_data_20260908T144854_bac3a7/duplicate_edges.jsonl"
+    ]
+  },
+  {
+    "case_id": "S1-DATA-003",
+    "run_id": "s1_data_audit_20260908T145755_3aabaa",
+    "stage": 1,
+    "category": "BAD_CASE",
+    "subtype": "sft_duplicate_cluster",
+    "prompt_id": "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:24",
+    "prompt_excerpt": "对于一位32岁的初产妇，孕40周且已进入活跃期10小时，胎位为LOP，宫缩转弱，宫口开大6cm，胎先露在坐骨棘平面上1cm，坐骨棘间距离小于10cm的情况下，应选择什么处理方式？",
+    "rejection": {
+      "sample_id": "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:24",
+      "source": "medical_o1",
+      "reason": "sft_duplicate_cluster",
+      "matched_target": "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:10088",
+      "similarity": null,
+      "similarity_scope": "direct_edge; cluster target may be transitive",
+      "matched_edge_target": null,
+      "cluster_id": "cluster:8ee80a8e439342ee43e538044eace13f14f9aeb7f0b7a355284de3e6ee2c93fe"
+    },
+    "observation": "This source record was rejected by the frozen governance rule.",
+    "hypothesis": null,
+    "alternative_explanations": [
+      "Lexical similarity is conservative and may remove related but distinct questions."
+    ],
+    "followup": "Retained raw row and rejection/graph evidence; no change to frozen train/validation.",
+    "artifact_refs": [
+      "/data/WSH/medical-post-train-artifacts/data/stage1/s1_data_20260908T144854_bac3a7/rejections.jsonl",
+      "/data/WSH/medical-post-train-artifacts/data/stage1/s1_data_20260908T144854_bac3a7/duplicate_edges.jsonl"
+    ]
+  },
+  {
+    "case_id": "S1-DATA-004",
+    "run_id": "s1_data_audit_20260908T145755_3aabaa",
+    "stage": 1,
+    "category": "BAD_CASE",
+    "subtype": "encoding_corruption",
+    "prompt_id": "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:1930",
+    "prompt_excerpt": "烤瓷牙修复，需做根管治疗。5年前做的烤瓷牙冠，前段时间去洗牙时，医生说牙龈发黑开始萎缩，建议我去检查一下，最好换个烤瓷牙冠。11月5日刚去\b北京口腔医院修复科检查，医生说要先做根管治疗，然后再进行修复。\b。",
+    "rejection": {
+      "sample_id": "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:1930",
+      "source": "huatuo",
+      "reason": "encoding_corruption",
+      "matched_target": null,
+      "similarity": null,
+      "cluster_id": null
+    },
+    "observation": "This source record was rejected by the frozen governance rule.",
+    "hypothesis": null,
+    "alternative_explanations": [],
+    "followup": "Retained raw row and rejection/graph evidence; no change to frozen train/validation.",
+    "artifact_refs": [
+      "/data/WSH/medical-post-train-artifacts/data/stage1/s1_data_20260908T144854_bac3a7/rejections.jsonl",
+      "/data/WSH/medical-post-train-artifacts/data/stage1/s1_data_20260908T144854_bac3a7/duplicate_edges.jsonl"
+    ]
+  },
+  {
+    "case_id": "S1-DATA-005",
+    "run_id": "s1_data_audit_20260908T145755_3aabaa",
+    "stage": 1,
+    "category": "BAD_CASE",
+    "subtype": "extreme_repetition",
+    "prompt_id": "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:234",
+    "prompt_excerpt": "恶性淋巴瘤，持续半年以上，鼻腔肿物。鼻塞时轻时重。病理诊断为T细胞淋巴瘤。鼻腔肿物造成鼻塞，鼻粘膜溃烂。第一中心医院病理CD3，CD45RO阳性，CD20，PAX-5.CD56阴性，EVB零星散在阳性，Ki-67阳性细胞约占   30%                                                            开始当鼻腔感染治疗，用抗生素治疗，总是见好但几天后又会重新肿起来.持续有7个月了。",
+    "rejection": {
+      "sample_id": "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:234",
+      "source": "huatuo",
+      "reason": "extreme_repetition",
+      "matched_target": null,
+      "similarity": null,
+      "cluster_id": null
+    },
+    "observation": "This source record was rejected by the frozen governance rule.",
+    "hypothesis": null,
+    "alternative_explanations": [],
+    "followup": "Retained raw row and rejection/graph evidence; no change to frozen train/validation.",
+    "artifact_refs": [
+      "/data/WSH/medical-post-train-artifacts/data/stage1/s1_data_20260908T144854_bac3a7/rejections.jsonl",
+      "/data/WSH/medical-post-train-artifacts/data/stage1/s1_data_20260908T144854_bac3a7/duplicate_edges.jsonl"
+    ]
+  },
+  {
+    "case_id": "S1-DATA-006",
+    "run_id": "s1_data_audit_20260908T145755_3aabaa",
+    "stage": 1,
+    "category": "BAD_CASE",
+    "subtype": "benchmark_cluster_overlap",
+    "prompt_id": "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:92984",
+    "prompt_excerpt": "足月女婴，25天，出生后2周出现身黄，目黄，其色晦暗，持续不退，精神差，吮乳少易吐，尿黄，四肢欠温，腹胀便溏，舌质淡，苔白腻，指纹色淡。其治疗选用什么方法啊！谢谢！",
+    "rejection": {
+      "sample_id": "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:92984",
+      "source": "huatuo",
+      "reason": "benchmark_cluster_overlap",
+      "matched_target": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16761",
+      "similarity": 0.912,
+      "similarity_scope": "direct_edge; cluster target may be transitive",
+      "matched_edge_target": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16761",
+      "cluster_id": "cluster:a3e4caaef00135e07702515a7c97f2c57c93781b5a077dcd3be9409e2c345320"
+    },
+    "observation": "This source record was rejected by the frozen governance rule.",
+    "hypothesis": null,
+    "alternative_explanations": [
+      "Lexical similarity is conservative and may remove related but distinct questions."
+    ],
+    "followup": "Retained raw row and rejection/graph evidence; no change to frozen train/validation.",
+    "artifact_refs": [
+      "/data/WSH/medical-post-train-artifacts/data/stage1/s1_data_20260908T144854_bac3a7/rejections.jsonl",
+      "/data/WSH/medical-post-train-artifacts/data/stage1/s1_data_20260908T144854_bac3a7/duplicate_edges.jsonl"
+    ]
+  },
+  {
+    "case_id": "S1-DATA-007",
+    "run_id": "s1_data_audit_20260908T145755_3aabaa",
+    "stage": 1,
+    "category": "BAD_CASE",
+    "subtype": "sft_duplicate_cluster",
+    "prompt_id": "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:120507",
+    "prompt_excerpt": "医生你好!我这次月经是3月28号来的请问我排卵期是几号,还有怎么推算法?如果月经不正常和白带多会不会影响怀孕呢?谢谢!",
+    "rejection": {
+      "sample_id": "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:120507",
+      "source": "huatuo",
+      "reason": "sft_duplicate_cluster",
+      "matched_target": "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:11",
+      "similarity": 1.0,
+      "similarity_scope": "direct_edge; cluster target may be transitive",
+      "matched_edge_target": "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:11",
+      "cluster_id": "cluster:74653da2b18b235ea6876bf517cdc9ccd220bdbed83ce4d348daf2af8c0ccc1e"
+    },
+    "observation": "This source record was rejected by the frozen governance rule.",
+    "hypothesis": null,
+    "alternative_explanations": [
+      "Lexical similarity is conservative and may remove related but distinct questions."
+    ],
+    "followup": "Retained raw row and rejection/graph evidence; no change to frozen train/validation.",
+    "artifact_refs": [
+      "/data/WSH/medical-post-train-artifacts/data/stage1/s1_data_20260908T144854_bac3a7/rejections.jsonl",
+      "/data/WSH/medical-post-train-artifacts/data/stage1/s1_data_20260908T144854_bac3a7/duplicate_edges.jsonl"
+    ]
+  },
+  {
+    "case_id": "S1-DATA-008",
+    "run_id": "s1_data_audit_20260908T145755_3aabaa",
+    "stage": 1,
+    "category": "BAD_CASE",
+    "subtype": "overlength_source_answer_truncation_risk",
+    "prompt_id": "huatuo:74330",
+    "observation": "Actual full encoding has 2477 tokens. Not a selected train/validation record; hard truncation at 2048 would risk losing target content.",
+    "hypothesis": null,
+    "alternative_explanations": [],
+    "followup": "Reject over-cap candidates before selection; never truncate final answers.",
+    "artifact_refs": [
+      "/data/WSH/medical-post-train-artifacts/data/stage1/s1_data_audit_20260908T145755_3aabaa/length_extremes.jsonl"
+    ],
+    "metrics": {
+      "source": "huatuo",
+      "source_row": 74330,
+      "selection": "five longest source records by serialized character count; diagnostic only",
+      "total_tokens": 2477,
+      "supervised_tokens": 366,
+      "reasoning_tokens": 0,
+      "answer_tokens": 355,
+      "assistant_turns": 1,
+      "native_history_think_blocks_removed": 0
+    }
+  },
+  {
+    "case_id": "S1-DATA-009",
+    "run_id": "s1_data_audit_20260908T145755_3aabaa",
+    "stage": 1,
+    "category": "BAD_CASE",
+    "subtype": "overlength_source_answer_truncation_risk",
+    "prompt_id": "huatuo:10147",
+    "observation": "Actual full encoding has 2200 tokens. Not a selected train/validation record; hard truncation at 2048 would risk losing target content.",
+    "hypothesis": null,
+    "alternative_explanations": [],
+    "followup": "Reject over-cap candidates before selection; never truncate final answers.",
+    "artifact_refs": [
+      "/data/WSH/medical-post-train-artifacts/data/stage1/s1_data_audit_20260908T145755_3aabaa/length_extremes.jsonl"
+    ],
+    "metrics": {
+      "source": "huatuo",
+      "source_row": 10147,
+      "selection": "five longest source records by serialized character count; diagnostic only",
+      "total_tokens": 2200,
+      "supervised_tokens": 397,
+      "reasoning_tokens": 0,
+      "answer_tokens": 386,
+      "assistant_turns": 1,
+      "native_history_think_blocks_removed": 0
+    }
+  },
+  {
+    "case_id": "S1-DATA-010",
+    "run_id": "s1_data_audit_20260908T145755_3aabaa",
+    "stage": 1,
+    "category": "BAD_CASE",
+    "subtype": "overlength_source_answer_truncation_risk",
+    "prompt_id": "huatuo:109334",
+    "observation": "Actual full encoding has 2101 tokens. Not a selected train/validation record; hard truncation at 2048 would risk losing target content.",
+    "hypothesis": null,
+    "alternative_explanations": [],
+    "followup": "Reject over-cap candidates before selection; never truncate final answers.",
+    "artifact_refs": [
+      "/data/WSH/medical-post-train-artifacts/data/stage1/s1_data_audit_20260908T145755_3aabaa/length_extremes.jsonl"
+    ],
+    "metrics": {
+      "source": "huatuo",
+      "source_row": 109334,
+      "selection": "five longest source records by serialized character count; diagnostic only",
+      "total_tokens": 2101,
+      "supervised_tokens": 434,
+      "reasoning_tokens": 0,
+      "answer_tokens": 423,
+      "assistant_turns": 1,
+      "native_history_think_blocks_removed": 0
+    }
+  }
+]

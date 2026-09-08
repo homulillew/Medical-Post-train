@@ -1,0 +1,44 @@
+[
+  {
+    "run_id": "s1_data_20260908T144417_418b80",
+    "run_class": "DIAGNOSTIC",
+    "status": "FAILED",
+    "artifact_root": "/data/WSH/medical-post-train-artifacts/data/stage1/s1_data_20260908T144417_418b80",
+    "files": 2
+  },
+  {
+    "run_id": "s1_data_20260908T144854_bac3a7",
+    "run_class": "DIAGNOSTIC",
+    "status": "PASS",
+    "artifact_root": "/data/WSH/medical-post-train-artifacts/data/stage1/s1_data_20260908T144854_bac3a7",
+    "files": 12
+  },
+  {
+    "run_id": "s1_data_audit_20260908T145755_3aabaa",
+    "run_class": "DIAGNOSTIC",
+    "status": "UNKNOWN",
+    "artifact_root": "/data/WSH/medical-post-train-artifacts/data/stage1/s1_data_audit_20260908T145755_3aabaa",
+    "files": 2
+  },
+  {
+    "run_id": "s1_memory_20260908T151118_dfaed6",
+    "run_class": "DIAGNOSTIC",
+    "status": "PASS",
+    "artifact_root": "/data/WSH/medical-post-train-artifacts/runs/s1_memory_20260908T151118_dfaed6",
+    "files": 3
+  },
+  {
+    "run_id": "s1_pilot_20260908T150104_71a69a",
+    "run_class": "PILOT",
+    "status": "TRAINING_PASS",
+    "artifact_root": "/data/WSH/medical-post-train-artifacts/runs/s1_pilot_20260908T150104_71a69a",
+    "files": 39
+  },
+  {
+    "run_id": "s1_smoke_20260908T145244_1af07b",
+    "run_class": "SMOKE",
+    "status": "TRAINING_PASS",
+    "artifact_root": "/data/WSH/medical-post-train-artifacts/runs/s1_smoke_20260908T145244_1af07b",
+    "files": 25
+  }
+]

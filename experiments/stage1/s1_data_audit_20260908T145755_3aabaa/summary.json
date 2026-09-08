@@ -1,0 +1,129 @@
+{
+  "run_id": "s1_data_audit_20260908T145755_3aabaa",
+  "status": "PASS",
+  "duplicate_edge_counts": {
+    "near_sequence_similarity": 2990,
+    "exact_question": 10803,
+    "near_char5_jaccard": 696
+  },
+  "rejections_resolved": 8403,
+  "case_count": 10,
+  "extremes": [
+    {
+      "source": "medical_o1",
+      "source_row": 5161,
+      "selection": "five longest source records by serialized character count; diagnostic only",
+      "total_tokens": 1295,
+      "supervised_tokens": 1265,
+      "reasoning_tokens": 714,
+      "answer_tokens": 540,
+      "assistant_turns": 1,
+      "native_history_think_blocks_removed": 0
+    },
+    {
+      "source": "medical_o1",
+      "source_row": 984,
+      "selection": "five longest source records by serialized character count; diagnostic only",
+      "total_tokens": 1368,
+      "supervised_tokens": 1227,
+      "reasoning_tokens": 753,
+      "answer_tokens": 463,
+      "assistant_turns": 1,
+      "native_history_think_blocks_removed": 0
+    },
+    {
+      "source": "medical_o1",
+      "source_row": 12392,
+      "selection": "five longest source records by serialized character count; diagnostic only",
+      "total_tokens": 1373,
+      "supervised_tokens": 1324,
+      "reasoning_tokens": 651,
+      "answer_tokens": 662,
+      "assistant_turns": 1,
+      "native_history_think_blocks_removed": 0
+    },
+    {
+      "source": "medical_o1",
+      "source_row": 16962,
+      "selection": "five longest source records by serialized character count; diagnostic only",
+      "total_tokens": 1210,
+      "supervised_tokens": 1162,
+      "reasoning_tokens": 481,
+      "answer_tokens": 670,
+      "assistant_turns": 1,
+      "native_history_think_blocks_removed": 0
+    },
+    {
+      "source": "medical_o1",
+      "source_row": 7327,
+      "selection": "five longest source records by serialized character count; diagnostic only",
+      "total_tokens": 1356,
+      "supervised_tokens": 1233,
+      "reasoning_tokens": 655,
+      "answer_tokens": 567,
+      "assistant_turns": 1,
+      "native_history_think_blocks_removed": 0
+    },
+    {
+      "source": "huatuo",
+      "source_row": 74330,
+      "selection": "five longest source records by serialized character count; diagnostic only",
+      "total_tokens": 2477,
+      "supervised_tokens": 366,
+      "reasoning_tokens": 0,
+      "answer_tokens": 355,
+      "assistant_turns": 1,
+      "native_history_think_blocks_removed": 0
+    },
+    {
+      "source": "huatuo",
+      "source_row": 10147,
+      "selection": "five longest source records by serialized character count; diagnostic only",
+      "total_tokens": 2200,
+      "supervised_tokens": 397,
+      "reasoning_tokens": 0,
+      "answer_tokens": 386,
+      "assistant_turns": 1,
+      "native_history_think_blocks_removed": 0
+    },
+    {
+      "source": "huatuo",
+      "source_row": 109334,
+      "selection": "five longest source records by serialized character count; diagnostic only",
+      "total_tokens": 2101,
+      "supervised_tokens": 434,
+      "reasoning_tokens": 0,
+      "answer_tokens": 423,
+      "assistant_turns": 1,
+      "native_history_think_blocks_removed": 0
+    },
+    {
+      "source": "huatuo",
+      "source_row": 24457,
+      "selection": "five longest source records by serialized character count; diagnostic only",
+      "total_tokens": 2018,
+      "supervised_tokens": 457,
+      "reasoning_tokens": 0,
+      "answer_tokens": 446,
+      "assistant_turns": 1,
+      "native_history_think_blocks_removed": 0
+    },
+    {
+      "source": "huatuo",
+      "source_row": 133,
+      "selection": "five longest source records by serialized character count; diagnostic only",
+      "total_tokens": 1768,
+      "supervised_tokens": 371,
+      "reasoning_tokens": 0,
+      "answer_tokens": 360,
+      "assistant_turns": 1,
+      "native_history_think_blocks_removed": 0
+    }
+  ],
+  "not_observed": [
+    "selected example over cap",
+    "selected final-answer truncation",
+    "real Huatuo multi-turn"
+  ],
+  "frozen_data_changed": false
+}

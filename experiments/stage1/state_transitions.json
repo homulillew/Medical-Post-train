@@ -1,0 +1,22 @@
+[
+  {
+    "from_status": "NOT_STARTED",
+    "to_status": "IMPLEMENTED",
+    "evidence": "Real data pipeline, detached BF16 LoRA trainer, checkpoint/cursor support; 22 tests and data verifier PASS",
+    "formal_progress": 0
+  },
+  {
+    "from_status": "IMPLEMENTED",
+    "to_status": "SMOKE_PASS",
+    "run_id": "s1_smoke_20260908T145244_1af07b",
+    "evidence": "128 examples, 8 updates, finite loss/gradient, adapter delta, fresh-process reload/generation PASS; all four generations hit 1024 cap, retained as negative behavior",
+    "formal_progress": 0
+  },
+  {
+    "from_status": "SMOKE_PASS",
+    "to_status": "PILOT_PASS",
+    "run_id": "s1_pilot_20260908T150104_71a69a",
+    "evidence": "1024 real examples, 64 updates, finite validation, exact real-data process resume, 4/4 reload generations closed; allocator replay and longest-batch diagnostic PASS",
+    "formal_progress": 0
+  }
+]
