@@ -18,5 +18,12 @@
     "run_id": "s1_pilot_20260908T150104_71a69a",
     "evidence": "1024 real examples, 64 updates, finite validation, exact real-data process resume, 4/4 reload generations closed; allocator replay and longest-batch diagnostic PASS",
     "formal_progress": 0
+  },
+  {
+    "from_status": "PILOT_PASS",
+    "to_status": "FULL_RUNNING",
+    "run_id": "s1_formal_20260908T152119_60040b",
+    "evidence": "Independent fresh-base FORMAL process started after clean frozen commit f591a9e; full planned 20000-example epoch",
+    "formal_progress": 0
   }
 ]

@@ -1,15 +1,16 @@
 {
   "schema_version": 1,
-  "phase": "IMPLEMENTATION",
+  "phase": "EXECUTION",
   "contract_sha256": "8ba60bd2e724fbbb74e26f4ef677eb6c6d51eaafcba6eb3bcb0b2eb588a51f24",
   "stage_verifier_implemented": true,
   "stages": {
     "1": {
-      "status": "PILOT_PASS",
+      "status": "FULL_RUNNING",
       "run_ids": [
         "s1_data_20260908T144854_bac3a7",
         "s1_smoke_20260908T145244_1af07b",
-        "s1_pilot_20260908T150104_71a69a"
+        "s1_pilot_20260908T150104_71a69a",
+        "s1_formal_20260908T152119_60040b"
       ],
       "progress": {
         "train_examples": 0,
