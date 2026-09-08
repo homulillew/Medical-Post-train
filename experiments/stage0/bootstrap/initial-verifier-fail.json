@@ -1,0 +1,30 @@
+{
+  "result": "FAIL",
+  "errors": [
+    "Missing docs/stage_reports/00_runtime_compatibility.md",
+    "No explicit selected runs"
+  ],
+  "missing_gates": [
+    "actor_rollout_switch",
+    "adapter_reload",
+    "bf16_load",
+    "checkpoint_resume",
+    "gspo_numeric",
+    "lora_backward",
+    "lora_save",
+    "minibatch_diagnostic",
+    "response_length",
+    "reward_dict",
+    "runtime",
+    "semantic_diagnostic",
+    "snapshot",
+    "template",
+    "verl_fsdp2",
+    "verl_import_compose",
+    "vllm_load",
+    "vllm_lora_identity"
+  ],
+  "gates": {},
+  "runs": []
+}
+

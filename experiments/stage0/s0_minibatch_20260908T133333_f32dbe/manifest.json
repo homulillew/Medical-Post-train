@@ -1,0 +1,32 @@
+{
+  "run_id": "s0_minibatch_20260908T133333_f32dbe",
+  "stage": 0,
+  "run_class": "DIAGNOSTIC",
+  "purpose": "minibatch",
+  "created_at": "2026-09-08T13:33:33.950881+00:00",
+  "planned_budget": {
+    "synthetic_prompts": 8,
+    "group_size": 4,
+    "mini_prompts": [
+      8,
+      4
+    ],
+    "epochs": 1,
+    "total_optimizer_updates": 3,
+    "lr": 1e-05,
+    "temperature": 0.6,
+    "clip_low": 0.0003,
+    "clip_high": 0.0004
+  },
+  "config": {
+    "purpose": "minibatch",
+    "stage": 0,
+    "run_class": "DIAGNOSTIC",
+    "seed": 42,
+    "model": "/data/WSH/medical-post-train-artifacts/models/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218",
+    "artifact_root": "/data/WSH/medical-post-train-artifacts/runs",
+    "adapter": "/data/WSH/medical-post-train-artifacts/runs/s0_lora_20260908T132530_c22c36/attempt_001/adapter_step3",
+    "resume": null,
+    "timeout_seconds": 7200
+  }
+}

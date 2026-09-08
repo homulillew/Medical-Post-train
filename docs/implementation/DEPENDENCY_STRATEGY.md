@@ -50,3 +50,9 @@ SFT 首先采用 Transformers Trainer + PEFT，SDPA 是可用的低复杂度诊�
 MedEmbed small/base/large v0.1 当前可见；候选 small 的 revision 已锁，仅表示可定位，不表示适合中文。中文备选 BGE-M3 revision 已记录，仍属 reward decision proposal。
 
 本次metadata结果：固定verl setup.py的18条install_requires经AST读取，与主候选pins合并，uv无安装解析得到242个packages（Ray2.58.0、tensordict0.10.0、torchdata0.11.0、NCCL2.28.9）。最初直接对git source使用--no-build被拒绝，保留失败原因；替代过程没有执行setup.py或编译扩展。输入/输出SHA与边界见[dependency-resolution.json](evidence/dependency-resolution.json)、[解析候选](evidence/candidate-metadata-resolved.txt)。尚未含flash-attn构建与任何runtime测试，不能据此宣布最终依赖锁定成功。
+
+## Stage 0 installation outcome
+
+The candidate stack is now installed in `.venv-train`, with separate `.venv-analysis`; see [environment manifest](../../env/environment_manifest.json), [rebuild instructions](../../env/README.md), and exact lock files. Core imports, pip check, BF16 CUDA, PEFT backward/reload, native verl FSDP2 and native GSPO have actual run evidence. No standard NCCL override was applied. socksio was added following a real SOCKS ImportError. Native flash-attn remains absent; SFT/FSDP2 explicitly use SDPA. vLLM loads bundled FlashAttention 2 and explicitly uses native sampling to avoid FlashInfer JIT with the system CUDA 12 compiler. Runtime PATH includes the venv's ninja.
+
+A successful import or model load does not close sleep/wake adapter identity: Stage 0 records intermittent output/logprob mismatches, and the final report/selected run determines the accepted boundary checks. V1 and V2 are both present in historical evidence; the final run's execution_environment.json fixes the selected runner. Do not infer a solved bug from a package version.

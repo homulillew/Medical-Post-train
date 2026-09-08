@@ -1,0 +1,20 @@
+{
+  "case_id": "s0_vllm_20260908T133501_7d5a55_probe_failure_509ade",
+  "run_id": "s0_vllm_20260908T133501_7d5a55",
+  "stage": 0,
+  "category": "SYSTEM_CASE",
+  "subtype": "probe_failure",
+  "observation": "sleep/wake changed adapter identity",
+  "hypothesis": null,
+  "alternative_explanations": [],
+  "followup": "See Stage 0 report and linked raw evidence",
+  "reproduction_command": [
+    "/data/WSH/post-train/.venv-train/bin/python",
+    "-m",
+    "medical_posttrain.cli",
+    "worker",
+    "/data/WSH/post-train/experiments/stage0/s0_vllm_20260908T133501_7d5a55/attempt_001"
+  ],
+  "error_type": "AssertionError",
+  "traceback": "Traceback (most recent call last):\n  File \"/data/WSH/post-train/src/medical_posttrain/runtime/__init__.py\", line 94, in worker\n    result = dispatch(ev)\n             ^^^^^^^^^^^^\n  File \"/data/WSH/post-train/src/medical_posttrain/verification/probes.py\", line 39, in dispatch\n    return importlib.import_module('medical_posttrain.verification.'+module).run(ev)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/WSH/post-train/src/medical_posttrain/verification/vllm_probe.py\", line 67, in run\n    assert after['token_ids']==outputs['adapter']['token_ids'],'sleep/wake changed adapter identity'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: sleep/wake changed adapter identity\n"
+}

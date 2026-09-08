@@ -1,0 +1,126 @@
+{
+  "stage": 0,
+  "includes_failed_run_artifacts": true,
+  "files": [
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s0_length_20260908T133647_20874e/attempt_001/outputs_1024.json",
+      "size": 1734782,
+      "sha256": "e88b6f8931be50a52db75684dcaf79b2ea681eac21dcce58a67b8f42c06a7fd0"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s0_length_20260908T133647_20874e/attempt_001/outputs_512.json",
+      "size": 1182149,
+      "sha256": "fdf836c588223bb4f5b12dd0e335ad637782cf18c615eefae923d6b2a5870f15"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s0_lora_20260908T132530_c22c36/attempt_001/adapter_step3/README.md",
+      "size": 5344,
+      "sha256": "69f3aa1fb067ef986745d9470eced45cc83c7657395eb2c40755ace7fd476c57"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s0_lora_20260908T132530_c22c36/attempt_001/adapter_step3/adapter_config.json",
+      "size": 1123,
+      "sha256": "db9cde5f5a0d2127826bfa656cf142f49bf2f373efaa4a3e5f177e773794601a"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s0_lora_20260908T132530_c22c36/attempt_001/adapter_step3/adapter_model.safetensors",
+      "size": 349243752,
+      "sha256": "0fcb54a7f3350cf8f8f0fa2174f66f7cc71cbf03685d3f3d555b0c0a9a31ab85"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s0_lora_20260908T132530_c22c36/attempt_001/checkpoint_step3.pt",
+      "size": 698802205,
+      "sha256": "9899a8f61295a5d71d2edcbc16f9d577c10ef9a86b1ebce7ac090459be5c4903"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s0_lora_20260908T132530_c22c36/attempt_001/identity.pt",
+      "size": 1217706,
+      "sha256": "42c4a0465d1057a45ffae6a7a9ecb14bd54f0d363c9b1d4fbb55e9b3690954ba"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s0_lora_20260908T132530_c22c36/attempt_001/reference.json",
+      "size": 310,
+      "sha256": "f63ed2a525367a68f3a5e4a79c0598490bcd15e7bb43cbd5b3d7417ddf49113f"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s0_lora_20260908T132530_c22c36/attempt_001/reference_step4.pt",
+      "size": 349356351,
+      "sha256": "1cdceccef9f9b1664dabc682c7b8f403307bee6ed288632ffba3397ac0c3d77f"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s0_verl_20260908T133100_897d2d/attempt_001/dist_init",
+      "size": 176,
+      "sha256": "602fc1994ef63fb3fb74bf4523e20656fcc6b6d13467d070f0fe6d66af728b9f"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s0_vllm_20260908T132920_274c59/actor_child/updated_adapter/README.md",
+      "size": 5344,
+      "sha256": "69f3aa1fb067ef986745d9470eced45cc83c7657395eb2c40755ace7fd476c57"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s0_vllm_20260908T132920_274c59/actor_child/updated_adapter/adapter_config.json",
+      "size": 1123,
+      "sha256": "a0dd8a47101831f1dea82779e569b07914323b1107b909d87de762aa13cc7ef6"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s0_vllm_20260908T132920_274c59/actor_child/updated_adapter/adapter_model.safetensors",
+      "size": 349243752,
+      "sha256": "b63df53fbf04d0c8dfb939c619fe8555cae54a3a50b0d9478d2d4fe3e5b0c829"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s0_vllm_20260908T133151_566161/actor_child/updated_adapter/README.md",
+      "size": 5344,
+      "sha256": "69f3aa1fb067ef986745d9470eced45cc83c7657395eb2c40755ace7fd476c57"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s0_vllm_20260908T133151_566161/actor_child/updated_adapter/adapter_config.json",
+      "size": 1123,
+      "sha256": "274c6996fa87aff1fb4311b676580c18025b0dbf05081835f0bef7582059824b"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s0_vllm_20260908T133151_566161/actor_child/updated_adapter/adapter_model.safetensors",
+      "size": 349243752,
+      "sha256": "b63df53fbf04d0c8dfb939c619fe8555cae54a3a50b0d9478d2d4fe3e5b0c829"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s0_vllm_20260908T133501_7d5a55/actor_child/updated_adapter/README.md",
+      "size": 5344,
+      "sha256": "69f3aa1fb067ef986745d9470eced45cc83c7657395eb2c40755ace7fd476c57"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s0_vllm_20260908T133501_7d5a55/actor_child/updated_adapter/adapter_config.json",
+      "size": 1123,
+      "sha256": "917c41bcf2c514c1abddd094c5232be5fedcc2febdc516104acb1647059b5eee"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s0_vllm_20260908T133501_7d5a55/actor_child/updated_adapter/adapter_model.safetensors",
+      "size": 349243752,
+      "sha256": "b63df53fbf04d0c8dfb939c619fe8555cae54a3a50b0d9478d2d4fe3e5b0c829"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s0_vllm_20260908T134647_8251b8/actor_child/updated_adapter/README.md",
+      "size": 5344,
+      "sha256": "69f3aa1fb067ef986745d9470eced45cc83c7657395eb2c40755ace7fd476c57"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s0_vllm_20260908T134647_8251b8/actor_child/updated_adapter/adapter_config.json",
+      "size": 1123,
+      "sha256": "2e3473709f52ad7d9325726438b5692d6788e78efb587e535c162edc8e2d332f"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s0_vllm_20260908T134647_8251b8/actor_child/updated_adapter/adapter_model.safetensors",
+      "size": 349243752,
+      "sha256": "b63df53fbf04d0c8dfb939c619fe8555cae54a3a50b0d9478d2d4fe3e5b0c829"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s0_vllm_20260908T134647_8251b8/attempt_001/batch16_adapter.json",
+      "size": 10995,
+      "sha256": "b2a6a56d263dc65bae2720c9bf9f8a61a21c4b32c260e1cd2ee4477ed28ca707"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s0_vllm_20260908T134647_8251b8/attempt_001/batch16_base.json",
+      "size": 10998,
+      "sha256": "9ffebea0a9c128805aa3fed8a67a828881704cc04512d2f2e845cce71a70a584"
+    }
+  ]
+}

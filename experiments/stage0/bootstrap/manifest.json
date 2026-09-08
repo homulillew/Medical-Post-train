@@ -1,0 +1,26 @@
+{
+  "run_id": "s0_bootstrap_20260908_001",
+  "stage": 0,
+  "run_class": "DIAGNOSTIC",
+  "purpose": "independent runtime installation and official pinned source acquisition",
+  "code_revision_at_start": "d6d1f5f9239a23192de55d56df8d6dd66347c9e2",
+  "status": "COMPLETE",
+  "start_timestamp": null,
+  "limitation": "Initial bootstrap preceded the MVP launcher. Console-only download progress and small import/compose checks were observed in the tool transcript; file logs exist for resolver, installers and recovery. An exact initial wall-clock start was not captured and is not reconstructed as a measurement.",
+  "commands": [
+    "uv venv --python /home/ubuntu/anaconda3/bin/python .venv-train",
+    "uv pip compile env/requirements.in --python-version 3.12 --generate-hashes --output-file env/train.lock",
+    "uv pip sync --python .venv-train/bin/python env/train.lock",
+    "uv build --wheel --out-dir /data/WSH/medical-post-train-artifacts/wheels /tmp/medical-takeover-upstream/verl",
+    "uv pip install --python .venv-train/bin/python --no-deps /data/WSH/medical-post-train-artifacts/wheels/verl-0.9.0-py3-none-any.whl -e .",
+    "uv pip install --python .venv-train/bin/python socksio==1.0.0",
+    "uv venv --python /home/ubuntu/anaconda3/bin/python .venv-analysis",
+    "uv pip sync --python .venv-analysis/bin/python env/analysis.lock",
+    "python scripts/download_qwen_shard.py"
+  ],
+  "model": "Qwen/Qwen3-8B",
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "bulk_root": "/data/WSH/medical-post-train-artifacts",
+  "formal_stages_started": false,
+  "completion_evidence": "s0_snapshot_20260908T132515_ec08e3 and s0_environment_20260908T131415_5a9fed"
+}

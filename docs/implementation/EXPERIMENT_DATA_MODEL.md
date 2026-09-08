@@ -112,3 +112,9 @@ initial mining每类最多20条top/rank +20 reservoir，阶段report选2–5条�
 - Stage Report：verifier已达预算后生成待填写report skeleton，回填全部真实run（含失败）与acceptance table、2–5 cases、局限、30秒/2分钟/深挖；不在本次提前编写阶段成功故事。
 - Interview/Resume Evidence：claims ledger逐条candidate claim→run/artifact/metric path→conditions→verified status。缺Stage证据时“完成20k SFT/GSPO/部署”都不安全。本次最多声明完成规划与环境审计，不声明模型效果。
 - 报告、case、decision之间双向链接，CI查路径与artifact hash；证据缺失时保留MISSING，不回填推测数字。
+
+## Stage 0 review addition: unique prompt exposure
+
+Stage 4 records `generated_unique_prompts`, `accepted_unique_prompts`, `prompt_repeat_histogram`, and `max_prompt_exposure` under `schemas/prompt_exposure.schema.json`. Prompt identity is the immutable train record ID, independent of rollout group UUID; a repeated cyclic draw increments exposure once per prompt group, not four times for G=4. Histograms and maxima have separate generated and accepted views. Rejected/overflow groups count toward generated cost; only groups consumed by an optimizer update count toward accepted effective exposure.
+
+The future Stage 4 verifier must recompute these from raw prompt/group/update lineage: sum(histogram frequencies)=unique prompts; sum(exposure*frequency)=generated or accepted groups; maximum occupied bin=max exposure; accepted unique <= generated unique. Crash attempts retain physical generated cost, while effective accepted lineage excludes rolled-back updates. Report per-window and cumulative distributions for both conditions. No synthetic Stage 0 exposure is backfilled as a formal measurement.

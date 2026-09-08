@@ -1,0 +1,22 @@
+{
+  "purpose": "vllm",
+  "stage": 0,
+  "run_class": "DIAGNOSTIC",
+  "seed": 42,
+  "model": "/data/WSH/medical-post-train-artifacts/models/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218",
+  "artifact_root": "/data/WSH/medical-post-train-artifacts/runs",
+  "adapter": "/data/WSH/medical-post-train-artifacts/runs/s0_lora_20260908T132530_c22c36/attempt_001/adapter_step3",
+  "resume": null,
+  "timeout_seconds": 7200,
+  "diagnostic_contract": {
+    "dtype": "bf16",
+    "tp": 1,
+    "max_model_len": 4096,
+    "max_num_seqs": 16,
+    "memory_utilization": 0.65,
+    "max_tokens": 32,
+    "temperature": 0,
+    "sleep_level": 1,
+    "actor_switch_updates": 1
+  }
+}

@@ -1,0 +1,77 @@
+[
+  {
+    "path": "code.json",
+    "size": 4642,
+    "sha256": "fdfecb75d730dd8b675682d60015203452ae0d6065a4ed255f9626cd1420a503"
+  },
+  {
+    "path": "resolved_config.json",
+    "size": 325,
+    "sha256": "526aecf61afb3d4996f06cb0003471fb34da6f8463825a0f084322f5ed4f2f8e"
+  },
+  {
+    "path": "observations.md",
+    "size": 63,
+    "sha256": "69d2333b94b921a53d293405669b0e3c2a6fc9b74d4ff63b1d113eeb887bedb5"
+  },
+  {
+    "path": "launch.json",
+    "size": 121,
+    "sha256": "0b84b6c23aeaf04c7af75010a3c5243e70939934584486ea1d00f7f12efae478"
+  },
+  {
+    "path": "metrics.jsonl",
+    "size": 853,
+    "sha256": "9821a7391c8f9b5630d8c169fbceafd4c1a56e6c4e9f11ecfbb29b889fe8eb46"
+  },
+  {
+    "path": "environment.json",
+    "size": 7848,
+    "sha256": "0831b5c140aeba18fcab3ff5cbdd47c2528a9d5c74fa3b32b48e6f358d927381"
+  },
+  {
+    "path": "artifacts.jsonl",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "command.json",
+    "size": 191,
+    "sha256": "fd1e83e8faf849be0fe8648123da3c10b08b10f056e8d974db81a29c90913abb"
+  },
+  {
+    "path": "heartbeat.json",
+    "size": 113,
+    "sha256": "ced50ff18c2acfe8a4d0bd44744444838b4d4e32b50ff8941e6854bbe3d9478d"
+  },
+  {
+    "path": "MedEmbed-small-v0.1_snapshot.json",
+    "size": 3346,
+    "sha256": "68c8fc039be89f20adb68b47d96c612206bbb28692e7f7ede1ff8218e55839b0"
+  },
+  {
+    "path": "bge-m3_snapshot.json",
+    "size": 5377,
+    "sha256": "8fba58ed4d9d7dda80a39567e60853451b6093f6f43ed29960aefcc314486b8e"
+  },
+  {
+    "path": "checkpoint_refs.json",
+    "size": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "path": "status.json",
+    "size": 312,
+    "sha256": "fe0a36ca154491d3640682d0c1a62a36b6ae93913d089af4b0d36cc18db1106a"
+  },
+  {
+    "path": "cases/s0_semantic_20260908T131414_ac4354_probe_failure_29c50b.json",
+    "size": 3610,
+    "sha256": "7339b1f1a14511396735d291a1fbf29ce997986a881a103ff3233f0e58cde805"
+  },
+  {
+    "path": "cases/s0_semantic_20260908T131414_ac4354_semantic_contradiction_ranking_4a06d8.json",
+    "size": 61841,
+    "sha256": "655dbe9301710812e91f56d7f9e3b76c988228698cfa1a1194114b8968b5dacc"
+  }
+]

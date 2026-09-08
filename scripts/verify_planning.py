@@ -38,7 +38,7 @@ def main():
     state = read_json("project_state.json")
     validator = Draft202012Validator(read_json("schemas/project_state.schema.json"))
     validator.validate(state)
-    require(state["phase"] == "TAKEOVER_PLANNING", "This checker is for takeover only")
+    require(state["phase"] in {"TAKEOVER_PLANNING", "IMPLEMENTATION"}, "This checker only guards planning and Stage 0 implementation")
     require(not state["stage_verifier_implemented"], "Planning is not Stage verification")
     for stage, entry in state["stages"].items():
         require(entry["status"] == "NOT_STARTED", f"Stage {stage} must remain NOT_STARTED")

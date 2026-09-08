@@ -1,0 +1,122 @@
+{
+  "analysis_id": "s0_compute_calibration_20260908_001",
+  "stage": 0,
+  "classification": "DIAGNOSTIC_ANALYSIS",
+  "measured": {
+    "sft_1024_update_phase_tps": 1541.426066354215,
+    "lora_batch16_output_tps_32_token_window": 114.14469998099946,
+    "base_model_mean_response_at_1024_limit": 751.2109375,
+    "cold_sleep_wake_seconds": 8.73071358492598,
+    "actor_subprocess_seconds_including_load_and_one_backward": 13.603877597022802
+  },
+  "estimated_scenarios": {
+    "optimistic": {
+      "classification": "Estimated",
+      "assumptions": {
+        "shared_response_limit_candidate": 1024,
+        "mean_sft_tokens": 1024,
+        "mean_prompt_tokens": 384,
+        "mean_response_tokens_transferred_from_base_diagnostic": 751.2109375,
+        "lora_decode_tps": 171.2170499714992,
+        "effective_sft_tps": 1233.1408530833721,
+        "actor_tps": 1000,
+        "old_logprob_tps": 1500,
+        "mixed_acceptance": 0.65,
+        "overhead_factor": 1.1,
+        "switch_seconds": 10,
+        "updates_per_variant": 625
+      },
+      "gpu_hours": {
+        "stage1": 5.074665851942781,
+        "stage2": 5.362472379600768,
+        "stage3": 2.111989121811995,
+        "vanilla": 51.95315764092253,
+        "dynamic": 66.39058327830921,
+        "stage5": 35.637650816731814,
+        "stage6": 0.5
+      },
+      "total_gpu_hours": 167.03051908931909
+    },
+    "working": {
+      "classification": "Estimated",
+      "assumptions": {
+        "shared_response_limit_candidate": 1024,
+        "mean_sft_tokens": 1024,
+        "mean_prompt_tokens": 384,
+        "mean_response_tokens_transferred_from_base_diagnostic": 751.2109375,
+        "lora_decode_tps": 114.14469998099946,
+        "effective_sft_tps": 693.6417298593967,
+        "actor_tps": 700,
+        "old_logprob_tps": 1000,
+        "mixed_acceptance": 0.35,
+        "overhead_factor": 1.2,
+        "switch_seconds": 25,
+        "updates_per_variant": 625
+      },
+      "gpu_hours": {
+        "stage1": 9.841776197707212,
+        "stage2": 8.774954802983075,
+        "stage3": 6.418252655896191,
+        "vanilla": 86.55701465430178,
+        "dynamic": 168.03873782485888,
+        "stage5": 58.316155881924765,
+        "stage6": 2
+      },
+      "total_gpu_hours": 339.9468920176719
+    },
+    "adverse": {
+      "classification": "Estimated",
+      "assumptions": {
+        "shared_response_limit_candidate": 1024,
+        "mean_sft_tokens": 1024,
+        "mean_prompt_tokens": 384,
+        "mean_response_tokens_transferred_from_base_diagnostic": 751.2109375,
+        "lora_decode_tps": 57.07234999049973,
+        "effective_sft_tps": 308.28521327084303,
+        "actor_tps": 250,
+        "old_logprob_tps": 400,
+        "mixed_acceptance": 0.1,
+        "overhead_factor": 1.35,
+        "switch_seconds": 60,
+        "updates_per_variant": 625
+      },
+      "gpu_hours": {
+        "stage1": 24.91199600044638,
+        "stage2": 19.74364830671192,
+        "stage3": 50.543739665182514,
+        "vanilla": 211.08445345208975,
+        "dynamic": 1099.5486272541261,
+        "stage5": 131.21135073433075,
+        "stage6": 8
+      },
+      "total_gpu_hours": 1545.0438154128874
+    }
+  },
+  "unknown": [
+    "Post-SFT response distribution",
+    "Natural mixed acceptance",
+    "Long-run LoRA decode throughput and final validation accuracy",
+    "Full Ray actor/rollout scheduling and checkpoint overhead",
+    "Dataset mean length/packing efficiency",
+    "Additional optimizer-update cost if mini_prompts=4 is adopted"
+  ],
+  "sources_metrics_sha256": {
+    "s0_environment_20260908T131415_5a9fed": "1b21e9620ea03065526d2f460b33700f7c7e78c2280e23c83b1aa12d06bc3c04",
+    "s0_snapshot_20260908T132515_ec08e3": "9b3defd08c14ea892469c4d130e035b4fc7675c28b595ff48b1866ab0c5cfc47",
+    "s0_template_20260908T131151_f17286": "555f7d5edb3c064bd240ec10fcf1b1eff1ea2c0305d1e940fe0b43cefa9eb457",
+    "s0_lora_20260908T132530_c22c36": "d2f640b3de225405e4d05d74e8484dd6fdcc0384e181c5e6b663038c8fa23ba6",
+    "s0_reload_20260908T132639_9b0d8f": "f90e60721524b275b0bbf2d6d550b7383c9a879d25e0ec2bd13ece62cf142a64",
+    "s0_vllm_20260908T134647_8251b8": "832cf9a475a05e312e1e4d52c8ae7e1dd743bc1f50243a3983ac3254e891ebcc",
+    "s0_verl_20260908T133100_897d2d": "ca739a8ac178aeae8942688a7653dc1847f20fad8d7f3636b0bf3c24ed458b8a",
+    "s0_numeric_20260908T131331_3f5986": "9ec08890c0e8e58a86a86a646de592a5ade0ad3176b905222b98f31fb5f970eb",
+    "s0_minibatch_20260908T133333_f32dbe": "a96959665399b3b369c632dfa99bb6bc70016d1558f8fa38464cd6fbc1384279",
+    "s0_semantic_20260908T134138_110db5": "906b74feeb17f8657db702eae8d6a6175d05e8b073758398b8adff880a451e01",
+    "s0_length_20260908T133647_20874e": "f6e6c477114a9933bc03fe6fffa52859202f12734810231e011c9565040be1cc"
+  },
+  "caveats": [
+    "512 and 1024 length conditions used the same earlier non-batch-invariant base runtime; final LoRA timing uses batch invariance. This cross-condition transfer is an estimate, not a matched benchmark.",
+    "32-token batch timing includes shape/activation overhead and does not establish steady decode throughput.",
+    "20k/5000/G4 budgets retained. 625 updates assumes the existing 8-prompt setting; D-014 is not adopted.",
+    "Worst-case cost remains unbounded as acceptance tends to zero."
+  ]
+}

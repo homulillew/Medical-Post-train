@@ -1,0 +1,6 @@
+{
+  "status": "FAILED",
+  "reason": "Engine core initialization failed. See root cause above. Failed core proc(s): {}",
+  "ended_at": "2026-09-08T13:28:02.675222+00:00",
+  "elapsed_seconds": 46.259434923995286
+}

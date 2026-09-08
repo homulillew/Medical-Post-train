@@ -1,0 +1,51 @@
+{
+  "gates": {
+    "response_length": true
+  },
+  "conditions": [
+    {
+      "run_id": "s0_length_20260908T133647_20874e",
+      "timestamp": "2026-09-08T13:39:19.973185+00:00",
+      "event": "output_length",
+      "limit": 512,
+      "prompts": 32,
+      "responses": 128,
+      "closure_rate": 0.125,
+      "truncation_rate": 0.875,
+      "format_validity": 0.125,
+      "accuracy": 0.125,
+      "generated_tokens": 64538,
+      "average_output_tokens": 504.203125,
+      "seconds": 125.41255079535767,
+      "output_tokens_per_second": 514.6055924283853,
+      "nvml_peak_bytes": 31387680768,
+      "allocated_peak_bytes": 0,
+      "reserved_peak_bytes": 0,
+      "remaining_at_peak_bytes": 16918118400,
+      "total_bytes": 48305799168
+    },
+    {
+      "run_id": "s0_length_20260908T133647_20874e",
+      "timestamp": "2026-09-08T13:42:35.956175+00:00",
+      "event": "output_length",
+      "limit": 1024,
+      "prompts": 32,
+      "responses": 128,
+      "closure_rate": 0.7734375,
+      "truncation_rate": 0.2265625,
+      "format_validity": 0.6484375,
+      "accuracy": 0.6328125,
+      "generated_tokens": 96155,
+      "average_output_tokens": 751.2109375,
+      "seconds": 195.91945809591562,
+      "output_tokens_per_second": 490.78841343530934,
+      "nvml_peak_bytes": 31745572864,
+      "allocated_peak_bytes": 0,
+      "reserved_peak_bytes": 0,
+      "remaining_at_peak_bytes": 16560226304,
+      "total_bytes": 48305799168
+    }
+  ],
+  "cold_load_seconds": 17.34286041930318,
+  "proposal_1024": true
+}

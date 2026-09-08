@@ -1,0 +1,6 @@
+{
+  "status": "FAILED",
+  "reason": "Template prompt/target boundary mismatch",
+  "ended_at": "2026-09-08T13:10:02.951996+00:00",
+  "elapsed_seconds": 5.361425259150565
+}

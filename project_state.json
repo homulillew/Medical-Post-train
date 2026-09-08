@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "phase": "TAKEOVER_PLANNING",
+  "phase": "IMPLEMENTATION",
   "contract_sha256": "8ba60bd2e724fbbb74e26f4ef677eb6c6d51eaafcba6eb3bcb0b2eb588a51f24",
   "stage_verifier_implemented": false,
   "stages": {
@@ -72,5 +72,11 @@
       "stage_report": null,
       "interview_story": null
     }
+  },
+  "stage0": {
+    "status": "VERIFIED",
+    "stage1_readiness": "READY_FOR_SMOKE",
+    "report": "docs/stage_reports/00_runtime_compatibility.md",
+    "verification_receipt": "experiments/stage0/verification-final.json"
   }
 }

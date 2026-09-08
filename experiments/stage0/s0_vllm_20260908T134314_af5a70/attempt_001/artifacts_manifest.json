@@ -1,0 +1,97 @@
+[
+  {
+    "path": "code.json",
+    "size": 5889,
+    "sha256": "14569995eb0bda57007955bc2de074ff3e89d62c5b6b37fcff4ccd57694f24ad"
+  },
+  {
+    "path": "source.zip",
+    "size": 253342,
+    "sha256": "adc51cfa9a38c95f3a0c19e06883fa57bc8b253d440f2ff87a0e36ac639a416d"
+  },
+  {
+    "path": "resolved_config.json",
+    "size": 687,
+    "sha256": "2c24b89edc40026e2ca1eafd65ac06a5fe7a40ee7fd7361da51680e413728f3a"
+  },
+  {
+    "path": "observations.md",
+    "size": 59,
+    "sha256": "7fc1a8b37ec805eac67d94c0335ccd6e433ebe0b3dd5fc865bc4741810a24b1d"
+  },
+  {
+    "path": "launch.json",
+    "size": 121,
+    "sha256": "ee3f2c105143cef630c332330005abab6733ddb1bd333bd31bdd954c099a1b31"
+  },
+  {
+    "path": "adapter_warm_2.json",
+    "size": 10860,
+    "sha256": "4b02d5d010680f7f9f5e5b8e64d87f388e9a3c3c8da9f839bcef58d394176859"
+  },
+  {
+    "path": "metrics.jsonl",
+    "size": 982,
+    "sha256": "15ed09f7a51436faaf97fa577e6bb865924d0f441bf9e58ed822cb69c0340764"
+  },
+  {
+    "path": "execution_environment.json",
+    "size": 119,
+    "sha256": "a849cebfe9a2aaf6492dd864a9db10455e85fed8139df6c085ef6e2038380bc3"
+  },
+  {
+    "path": "environment.json",
+    "size": 7848,
+    "sha256": "0831b5c140aeba18fcab3ff5cbdd47c2528a9d5c74fa3b32b48e6f358d927381"
+  },
+  {
+    "path": "artifacts.jsonl",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "command.json",
+    "size": 187,
+    "sha256": "9673d0b87da262814f66db9a037980b6e05ab81f5ef7938010aa38b4fb3d3c84"
+  },
+  {
+    "path": "identity_outputs.json",
+    "size": 35546,
+    "sha256": "9f26e19b9f968ca143747f32638e8534e0fb667ffe3dc1709941bf142ddb15ab"
+  },
+  {
+    "path": "heartbeat.json",
+    "size": 113,
+    "sha256": "0aea3b98a39ebc6a34d1b6ce777c4ceccf006c390731ff315eecb73f2b6cd862"
+  },
+  {
+    "path": "vllm_args.json",
+    "size": 508,
+    "sha256": "05c10f38183d2fe356c118b98f0a72537994d133047ece8e9f1413f5a1518187"
+  },
+  {
+    "path": "checkpoint_refs.json",
+    "size": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "path": "status.json",
+    "size": 171,
+    "sha256": "a46f90154916ab247202754c49355f6fc7b2892f518c1fcb765382ba50164e7d"
+  },
+  {
+    "path": "adapter_warm_1.json",
+    "size": 10953,
+    "sha256": "82d8ab3d99c2af3ddd29351f755b752ec2b475a8330a879c48e4a23a7360d592"
+  },
+  {
+    "path": "cases/s0_vllm_20260908T134314_af5a70_probe_failure_f9caaf.json",
+    "size": 1467,
+    "sha256": "b9c3e74ce3cd9c41df00f18f430bef6f758ea4839034c678cf6fb7572a910169"
+  },
+  {
+    "path": "cases/s0_vllm_20260908T134314_af5a70_cold_warm_adapter_mismatch_b74726.json",
+    "size": 24278,
+    "sha256": "1164eab4da2b4567dc4fa0550c37ca926bb8d5827edc842a1f0851ed86ca7b23"
+  }
+]

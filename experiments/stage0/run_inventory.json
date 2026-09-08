@@ -1,0 +1,306 @@
+{
+  "runs": [
+    {
+      "run_id": "s0_environment_20260908T130943_7e8a10",
+      "purpose": "environment",
+      "stage": 0,
+      "run_class": "DIAGNOSTIC",
+      "status": "PASS",
+      "reason": null,
+      "elapsed_seconds": 6.702214026357979,
+      "path": "experiments/stage0/s0_environment_20260908T130943_7e8a10/attempt_001",
+      "cases": []
+    },
+    {
+      "run_id": "s0_environment_20260908T131415_5a9fed",
+      "purpose": "environment",
+      "stage": 0,
+      "run_class": "DIAGNOSTIC",
+      "status": "PASS",
+      "reason": null,
+      "elapsed_seconds": 7.128251738846302,
+      "path": "experiments/stage0/s0_environment_20260908T131415_5a9fed/attempt_001",
+      "cases": []
+    },
+    {
+      "run_id": "s0_length_20260908T133647_20874e",
+      "purpose": "length",
+      "stage": 0,
+      "run_class": "DIAGNOSTIC",
+      "status": "PASS",
+      "reason": null,
+      "elapsed_seconds": 350.2293546642177,
+      "path": "experiments/stage0/s0_length_20260908T133647_20874e/attempt_001",
+      "cases": [
+        "experiments/stage0/s0_length_20260908T133647_20874e/attempt_001/cases/s0_length_20260908T133647_20874e_length_512_9bbbb8.json",
+        "experiments/stage0/s0_length_20260908T133647_20874e/attempt_001/cases/s0_length_20260908T133647_20874e_length_1024_4c3014.json",
+        "experiments/stage0/s0_length_20260908T133647_20874e/attempt_001/cases/s0_length_20260908T133647_20874e_length_512_84cf23.json",
+        "experiments/stage0/s0_length_20260908T133647_20874e/attempt_001/cases/s0_length_20260908T133647_20874e_length_1024_acc4aa.json"
+      ]
+    },
+    {
+      "run_id": "s0_lora_20260908T132530_c22c36",
+      "purpose": "lora",
+      "stage": 0,
+      "run_class": "DIAGNOSTIC",
+      "status": "PASS",
+      "reason": null,
+      "elapsed_seconds": 16.66029535420239,
+      "path": "experiments/stage0/s0_lora_20260908T132530_c22c36/attempt_001",
+      "cases": []
+    },
+    {
+      "run_id": "s0_minibatch_20260908T133333_f32dbe",
+      "purpose": "minibatch",
+      "stage": 0,
+      "run_class": "DIAGNOSTIC",
+      "status": "PASS",
+      "reason": null,
+      "elapsed_seconds": 49.42421439103782,
+      "path": "experiments/stage0/s0_minibatch_20260908T133333_f32dbe/attempt_001",
+      "cases": [
+        "experiments/stage0/s0_minibatch_20260908T133333_f32dbe/attempt_001/cases/s0_minibatch_20260908T133333_f32dbe_gspo_ratio_one_8cdd7c.json",
+        "experiments/stage0/s0_minibatch_20260908T133333_f32dbe/attempt_001/cases/s0_minibatch_20260908T133333_f32dbe_gspo_after_update_1f1096.json",
+        "experiments/stage0/s0_minibatch_20260908T133333_f32dbe/attempt_001/cases/s0_minibatch_20260908T133333_f32dbe_gspo_ratio_one_6f2951.json"
+      ]
+    },
+    {
+      "run_id": "s0_numeric_20260908T130956_c6d6ab",
+      "purpose": "numeric",
+      "stage": 0,
+      "run_class": "DIAGNOSTIC",
+      "status": "FAILED",
+      "reason": "",
+      "elapsed_seconds": 5.1757642650045455,
+      "path": "experiments/stage0/s0_numeric_20260908T130956_c6d6ab/attempt_001",
+      "cases": [
+        "experiments/stage0/s0_numeric_20260908T130956_c6d6ab/attempt_001/cases/s0_numeric_20260908T130956_c6d6ab_probe_failure_744a8e.json"
+      ]
+    },
+    {
+      "run_id": "s0_numeric_20260908T131151_bbfd55",
+      "purpose": "numeric",
+      "stage": 0,
+      "run_class": "DIAGNOSTIC",
+      "status": "FAILED",
+      "reason": "[actor] Please set at least one of 'actor.ppo_micro_batch_size' or 'actor.ppo_micro_batch_size_per_gpu' if use_dynamic_bsz is not enabled.",
+      "elapsed_seconds": 5.565706219989806,
+      "path": "experiments/stage0/s0_numeric_20260908T131151_bbfd55/attempt_001",
+      "cases": [
+        "experiments/stage0/s0_numeric_20260908T131151_bbfd55/attempt_001/cases/s0_numeric_20260908T131151_bbfd55_probe_failure_aee8aa.json"
+      ]
+    },
+    {
+      "run_id": "s0_numeric_20260908T131331_3f5986",
+      "purpose": "numeric",
+      "stage": 0,
+      "run_class": "DIAGNOSTIC",
+      "status": "PASS",
+      "reason": null,
+      "elapsed_seconds": 5.386315259151161,
+      "path": "experiments/stage0/s0_numeric_20260908T131331_3f5986/attempt_001",
+      "cases": []
+    },
+    {
+      "run_id": "s0_reload_20260908T132639_9b0d8f",
+      "purpose": "reload",
+      "stage": 0,
+      "run_class": "DIAGNOSTIC",
+      "status": "PASS",
+      "reason": null,
+      "elapsed_seconds": 11.768977612722665,
+      "path": "experiments/stage0/s0_reload_20260908T132639_9b0d8f/attempt_001",
+      "cases": []
+    },
+    {
+      "run_id": "s0_semantic_20260908T131317_51cc65",
+      "purpose": "semantic",
+      "stage": 0,
+      "run_class": "DIAGNOSTIC",
+      "status": "FAILED",
+      "reason": "Using SOCKS proxy, but the 'socksio' package is not installed. Make sure to install httpx using `pip install httpx[socks]`.",
+      "elapsed_seconds": 5.784560609143227,
+      "path": "experiments/stage0/s0_semantic_20260908T131317_51cc65/attempt_001",
+      "cases": [
+        "experiments/stage0/s0_semantic_20260908T131317_51cc65/attempt_001/cases/s0_semantic_20260908T131317_51cc65_probe_failure_7e2573.json"
+      ]
+    },
+    {
+      "run_id": "s0_semantic_20260908T131414_ac4354",
+      "purpose": "semantic",
+      "stage": 0,
+      "run_class": "DIAGNOSTIC",
+      "status": "FAILED",
+      "reason": "Error no file named model.safetensors, or pytorch_model.bin, found in directory /data/WSH/medical-post-train-artifacts/models/BAAI--bge-m3/5617a9f61b028005a4858fdac845db406aefb181.",
+      "elapsed_seconds": 34.421379623003304,
+      "path": "experiments/stage0/s0_semantic_20260908T131414_ac4354/attempt_001",
+      "cases": [
+        "experiments/stage0/s0_semantic_20260908T131414_ac4354/attempt_001/cases/s0_semantic_20260908T131414_ac4354_probe_failure_29c50b.json",
+        "experiments/stage0/s0_semantic_20260908T131414_ac4354/attempt_001/cases/s0_semantic_20260908T131414_ac4354_semantic_contradiction_ranking_4a06d8.json"
+      ]
+    },
+    {
+      "run_id": "s0_semantic_20260908T131537_c675b8",
+      "purpose": "semantic",
+      "stage": 0,
+      "run_class": "DIAGNOSTIC",
+      "status": "PASS",
+      "reason": null,
+      "elapsed_seconds": 134.19729748694226,
+      "path": "experiments/stage0/s0_semantic_20260908T131537_c675b8/attempt_001",
+      "cases": [
+        "experiments/stage0/s0_semantic_20260908T131537_c675b8/attempt_001/cases/s0_semantic_20260908T131537_c675b8_semantic_contradiction_ranking_6b2de5.json",
+        "experiments/stage0/s0_semantic_20260908T131537_c675b8/attempt_001/cases/s0_semantic_20260908T131537_c675b8_semantic_contradiction_ranking_f94f78.json"
+      ]
+    },
+    {
+      "run_id": "s0_semantic_20260908T134138_110db5",
+      "purpose": "semantic",
+      "stage": 0,
+      "run_class": "DIAGNOSTIC",
+      "status": "PASS",
+      "reason": null,
+      "elapsed_seconds": 26.01505689462647,
+      "path": "experiments/stage0/s0_semantic_20260908T134138_110db5/attempt_001",
+      "cases": [
+        "experiments/stage0/s0_semantic_20260908T134138_110db5/attempt_001/cases/s0_semantic_20260908T134138_110db5_semantic_contradiction_ranking_f854c8.json",
+        "experiments/stage0/s0_semantic_20260908T134138_110db5/attempt_001/cases/s0_semantic_20260908T134138_110db5_semantic_contradiction_ranking_1c21b9.json"
+      ]
+    },
+    {
+      "run_id": "s0_snapshot_20260908T132515_ec08e3",
+      "purpose": "snapshot",
+      "stage": 0,
+      "run_class": "DIAGNOSTIC",
+      "status": "PASS",
+      "reason": null,
+      "elapsed_seconds": 14.206448576878756,
+      "path": "experiments/stage0/s0_snapshot_20260908T132515_ec08e3/attempt_001",
+      "cases": []
+    },
+    {
+      "run_id": "s0_template_20260908T130957_12510c",
+      "purpose": "template",
+      "stage": 0,
+      "run_class": "DIAGNOSTIC",
+      "status": "FAILED",
+      "reason": "Template prompt/target boundary mismatch",
+      "elapsed_seconds": 5.361425259150565,
+      "path": "experiments/stage0/s0_template_20260908T130957_12510c/attempt_001",
+      "cases": [
+        "experiments/stage0/s0_template_20260908T130957_12510c/attempt_001/cases/s0_template_20260908T130957_12510c_probe_failure_0de686.json"
+      ]
+    },
+    {
+      "run_id": "s0_template_20260908T131151_f17286",
+      "purpose": "template",
+      "stage": 0,
+      "run_class": "DIAGNOSTIC",
+      "status": "PASS",
+      "reason": null,
+      "elapsed_seconds": 4.808604445774108,
+      "path": "experiments/stage0/s0_template_20260908T131151_f17286/attempt_001",
+      "cases": []
+    },
+    {
+      "run_id": "s0_verl_20260908T133100_897d2d",
+      "purpose": "verl",
+      "stage": 0,
+      "run_class": "DIAGNOSTIC",
+      "status": "PASS",
+      "reason": null,
+      "elapsed_seconds": 15.219811516813934,
+      "path": "experiments/stage0/s0_verl_20260908T133100_897d2d/attempt_001",
+      "cases": []
+    },
+    {
+      "run_id": "s0_vllm_20260908T132716_35f945",
+      "purpose": "vllm",
+      "stage": 0,
+      "run_class": "DIAGNOSTIC",
+      "status": "FAILED",
+      "reason": "Engine core initialization failed. See root cause above. Failed core proc(s): {}",
+      "elapsed_seconds": 46.259434923995286,
+      "path": "experiments/stage0/s0_vllm_20260908T132716_35f945/attempt_001",
+      "cases": [
+        "experiments/stage0/s0_vllm_20260908T132716_35f945/attempt_001/cases/s0_vllm_20260908T132716_35f945_probe_failure_b76007.json"
+      ]
+    },
+    {
+      "run_id": "s0_vllm_20260908T132920_274c59",
+      "purpose": "vllm",
+      "stage": 0,
+      "run_class": "DIAGNOSTIC",
+      "status": "FAILED",
+      "reason": "sleep/wake changed adapter identity",
+      "elapsed_seconds": 66.91264921799302,
+      "path": "experiments/stage0/s0_vllm_20260908T132920_274c59/attempt_001",
+      "cases": [
+        "experiments/stage0/s0_vllm_20260908T132920_274c59/attempt_001/cases/s0_vllm_20260908T132920_274c59_probe_failure_b2a845.json"
+      ]
+    },
+    {
+      "run_id": "s0_vllm_20260908T133151_566161",
+      "purpose": "vllm",
+      "stage": 0,
+      "run_class": "DIAGNOSTIC",
+      "status": "PASS",
+      "reason": null,
+      "elapsed_seconds": 62.1141311340034,
+      "path": "experiments/stage0/s0_vllm_20260908T133151_566161/attempt_001",
+      "cases": []
+    },
+    {
+      "run_id": "s0_vllm_20260908T133501_7d5a55",
+      "purpose": "vllm",
+      "stage": 0,
+      "run_class": "DIAGNOSTIC",
+      "status": "FAILED",
+      "reason": "sleep/wake changed adapter identity",
+      "elapsed_seconds": 64.19387058075517,
+      "path": "experiments/stage0/s0_vllm_20260908T133501_7d5a55/attempt_001",
+      "cases": [
+        "experiments/stage0/s0_vllm_20260908T133501_7d5a55/attempt_001/cases/s0_vllm_20260908T133501_7d5a55_probe_failure_509ade.json",
+        "experiments/stage0/s0_vllm_20260908T133501_7d5a55/attempt_001/cases/s0_vllm_20260908T133501_7d5a55_sleep_wake_output_mismatch_28fec6.json"
+      ]
+    },
+    {
+      "run_id": "s0_vllm_20260908T134314_af5a70",
+      "purpose": "vllm",
+      "stage": 0,
+      "run_class": "DIAGNOSTIC",
+      "status": "FAILED",
+      "reason": "Adapter is unstable even before sleeping",
+      "elapsed_seconds": 32.84751843381673,
+      "path": "experiments/stage0/s0_vllm_20260908T134314_af5a70/attempt_001",
+      "cases": [
+        "experiments/stage0/s0_vllm_20260908T134314_af5a70/attempt_001/cases/s0_vllm_20260908T134314_af5a70_probe_failure_f9caaf.json",
+        "experiments/stage0/s0_vllm_20260908T134314_af5a70/attempt_001/cases/s0_vllm_20260908T134314_af5a70_cold_warm_adapter_mismatch_b74726.json"
+      ]
+    },
+    {
+      "run_id": "s0_vllm_20260908T134647_8251b8",
+      "purpose": "vllm",
+      "stage": 0,
+      "run_class": "DIAGNOSTIC",
+      "status": "PASS",
+      "reason": null,
+      "elapsed_seconds": 95.09454191522673,
+      "path": "experiments/stage0/s0_vllm_20260908T134647_8251b8/attempt_001",
+      "cases": []
+    },
+    {
+      "run_id": "s0_environment_20260908T135907_d1144c",
+      "purpose": "environment",
+      "stage": 0,
+      "run_class": "DIAGNOSTIC",
+      "status": "PASS",
+      "reason": null,
+      "elapsed_seconds": 6.218888827133924,
+      "path": "experiments/stage0/s0_environment_20260908T135907_d1144c/attempt_001",
+      "cases": []
+    }
+  ],
+  "failed_runs_preserved": 9,
+  "formal_stages_started": false
+}

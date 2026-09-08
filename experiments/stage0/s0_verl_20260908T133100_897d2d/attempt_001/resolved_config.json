@@ -1,0 +1,19 @@
+{
+  "purpose": "verl",
+  "stage": 0,
+  "run_class": "DIAGNOSTIC",
+  "seed": 42,
+  "model": "/data/WSH/medical-post-train-artifacts/models/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218",
+  "artifact_root": "/data/WSH/medical-post-train-artifacts/runs",
+  "adapter": "/data/WSH/medical-post-train-artifacts/runs/s0_lora_20260908T132530_c22c36/attempt_001/adapter_step3",
+  "resume": null,
+  "timeout_seconds": 7200,
+  "diagnostic_contract": {
+    "strategy": "fsdp2",
+    "gpu_count": 1,
+    "sequence": 128,
+    "optimizer_updates": 1,
+    "attention": "sdpa",
+    "remove_padding": false
+  }
+}

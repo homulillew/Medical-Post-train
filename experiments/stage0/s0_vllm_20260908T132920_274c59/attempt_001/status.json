@@ -1,0 +1,6 @@
+{
+  "status": "FAILED",
+  "reason": "sleep/wake changed adapter identity",
+  "ended_at": "2026-09-08T13:30:27.465579+00:00",
+  "elapsed_seconds": 66.91264921799302
+}

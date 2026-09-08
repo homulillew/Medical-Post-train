@@ -27,7 +27,8 @@
       "pattern": "^[0-9a-f]{64}$"
     },
     "stage_verifier_implemented": {
-      "type": "boolean"
+      "type": "boolean",
+      "description": "Formal Stage 1-6 verifier availability; the separate Stage 0 verifier is indexed under stage0."
     },
     "stages": {
       "type": "object",
@@ -1363,6 +1364,69 @@
           ]
         }
       }
+    },
+    "stage0": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "stage1_readiness",
+        "report",
+        "verification_receipt"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "IN_PROGRESS",
+            "VERIFIED",
+            "BLOCKED"
+          ]
+        },
+        "stage1_readiness": {
+          "enum": [
+            "NOT_READY",
+            "READY_FOR_SMOKE"
+          ]
+        },
+        "report": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "verification_receipt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "VERIFIED"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "report": {
+                "type": "string",
+                "minLength": 1
+              },
+              "verification_receipt": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
     }
   }
 }

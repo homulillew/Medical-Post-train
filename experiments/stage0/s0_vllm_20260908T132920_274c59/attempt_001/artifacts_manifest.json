@@ -1,0 +1,102 @@
+[
+  {
+    "path": "code.json",
+    "size": 5687,
+    "sha256": "35d922112736a14ee9b6b68f2ae481853a7bf5e3d53682a5b4bddf7196c2bd2d"
+  },
+  {
+    "path": "source.zip",
+    "size": 251560,
+    "sha256": "aa95a6021ee4993f4c1a3c1845f2fd8d4c0306beaae7c5f0f4c81cd425d2594d"
+  },
+  {
+    "path": "resolved_config.json",
+    "size": 664,
+    "sha256": "0b815462131fc66480a340c056c5aa781c17dfdbe8e7087a6c7a27fa3b05e7c0"
+  },
+  {
+    "path": "observations.md",
+    "size": 59,
+    "sha256": "7fc1a8b37ec805eac67d94c0335ccd6e433ebe0b3dd5fc865bc4741810a24b1d"
+  },
+  {
+    "path": "launch.json",
+    "size": 121,
+    "sha256": "413e00d141623ad82c1ec4cd29d8363658cb9acb61bf3f3657a838bbcd426b31"
+  },
+  {
+    "path": "switch_actor.stdout.log",
+    "size": 876,
+    "sha256": "593aa03057383f006fb9df44ac2ff9cab7f0711c7bd523bae3215272464aafa4"
+  },
+  {
+    "path": "metrics.jsonl",
+    "size": 687,
+    "sha256": "a6e927d92021904321a0cb39495413f9e081607d4d504928ce2c8e7993d5bbaf"
+  },
+  {
+    "path": "execution_environment.json",
+    "size": 84,
+    "sha256": "75eafc2d58da3862561be8d1123a56450b8dfcfbc76ab059a4b3612183f24917"
+  },
+  {
+    "path": "environment.json",
+    "size": 7848,
+    "sha256": "0831b5c140aeba18fcab3ff5cbdd47c2528a9d5c74fa3b32b48e6f358d927381"
+  },
+  {
+    "path": "artifacts.jsonl",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "command.json",
+    "size": 187,
+    "sha256": "c4796de5c6d8e31fa14b1714fd9b4b7578cadd9c1a0b11fc423468edae46d593"
+  },
+  {
+    "path": "identity_outputs.json",
+    "size": 35613,
+    "sha256": "13b4c00656f7c79bfd4306858c8142f67479026fc6e6e56e104212a443e3ec1e"
+  },
+  {
+    "path": "heartbeat.json",
+    "size": 112,
+    "sha256": "ecbfa6452b216835062ffbc98925d27ed4ccbc0f9e385c8aa0428bc52543596c"
+  },
+  {
+    "path": "vllm_args.json",
+    "size": 508,
+    "sha256": "05c10f38183d2fe356c118b98f0a72537994d133047ece8e9f1413f5a1518187"
+  },
+  {
+    "path": "switch_actor.stderr.log",
+    "size": 2010,
+    "sha256": "cad8f2a133736a6925fada62dc6dda96091ad00463b32afe3cb1b77fa77377af"
+  },
+  {
+    "path": "checkpoint_refs.json",
+    "size": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "path": "status.json",
+    "size": 166,
+    "sha256": "6faf2edbc6da96e08ab51c3da3309088a024cb82a78707e1fbdbfe0447ec4324"
+  },
+  {
+    "path": "cases/s0_vllm_20260908T132920_274c59_probe_failure_b2a845.json",
+    "size": 1416,
+    "sha256": "1e743e671b9c6cbeec9291ba6acab65710b67ae3ac464eed23c129351f3ed926"
+  },
+  {
+    "path": "actor_child/metrics.jsonl",
+    "size": 876,
+    "sha256": "593aa03057383f006fb9df44ac2ff9cab7f0711c7bd523bae3215272464aafa4"
+  },
+  {
+    "path": "actor_child/command.json",
+    "size": 161,
+    "sha256": "3085bedb1b0c292525d743e970f8610b24fb11ed1b65b352e84383f91e46193e"
+  }
+]

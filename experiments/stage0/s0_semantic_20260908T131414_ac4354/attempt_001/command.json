@@ -1,0 +1,7 @@
+[
+  "/data/WSH/post-train/.venv-train/bin/python",
+  "-m",
+  "medical_posttrain.cli",
+  "worker",
+  "/data/WSH/post-train/experiments/stage0/s0_semantic_20260908T131414_ac4354/attempt_001"
+]

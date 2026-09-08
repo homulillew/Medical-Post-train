@@ -1,0 +1,16 @@
+{
+  "run_ids": [
+    "s0_environment_20260908T135907_d1144c",
+    "s0_snapshot_20260908T132515_ec08e3",
+    "s0_template_20260908T131151_f17286",
+    "s0_lora_20260908T132530_c22c36",
+    "s0_reload_20260908T132639_9b0d8f",
+    "s0_vllm_20260908T134647_8251b8",
+    "s0_verl_20260908T133100_897d2d",
+    "s0_numeric_20260908T131331_3f5986",
+    "s0_minibatch_20260908T133333_f32dbe",
+    "s0_semantic_20260908T134138_110db5",
+    "s0_length_20260908T133647_20874e"
+  ],
+  "selection_rule": "Explicit compatibility evidence; earlier failed and superseded diagnostic runs remain in inventory. Length compares both conditions under the same earlier non-batch-invariant base setting; final LoRA runtime is batch invariant. No test-set selection."
+}

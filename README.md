@@ -2,6 +2,24 @@
 
 A docs-first, evidence-driven project for full post-training of a medical LLM on a single 48 GB GPU.
 
+## Current runtime status
+
+Stage 0 has real Qwen3-8B BF16 LoRA, checkpoint/resume, native verl FSDP2/GSPO,
+and vLLM adapter/sleep evidence. The accepted rollout configuration explicitly
+uses native sampling and batch invariance after default LoRA numerical failures.
+Stage 1–6 remain **NOT_STARTED**; no formal training or test evaluation has run.
+
+- [Stage 0 report](docs/stage_reports/00_runtime_compatibility.md)
+- [Runtime installation and CLI](env/README.md)
+- [Selected evidence](experiments/stage0/selected_runs.json)
+- [Failed and successful run inventory](experiments/stage0/run_inventory.json)
+- [Measured and conditional compute budget](docs/implementation/COMPUTE_BUDGET.md)
+
+Run `python scripts/verify_stage0.py --bulk-hashes` in the analysis runtime to
+check local evidence. Bulk models/checkpoints/raw responses are outside Git;
+their manifests retain exact paths, sizes and hashes. A clone alone does not
+restore those local artifacts.
+
 ## Research objective
 
 Build and evaluate a complete pipeline around **Qwen3-8B**:

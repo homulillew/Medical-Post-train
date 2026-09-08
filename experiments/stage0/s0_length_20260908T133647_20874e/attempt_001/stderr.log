@@ -1,0 +1,8 @@
+(EngineCore pid=1809530) Loading safetensors checkpoint shards:   0% Completed | 0/5 [00:00<?, ?it/s]
+(EngineCore pid=1809530) Loading safetensors checkpoint shards:  20% Completed | 1/5 [00:00<00:01,  2.39it/s]
+(EngineCore pid=1809530) Loading safetensors checkpoint shards:  40% Completed | 2/5 [00:00<00:01,  2.56it/s]
+(EngineCore pid=1809530) Loading safetensors checkpoint shards:  60% Completed | 3/5 [00:01<00:00,  2.64it/s]
+(EngineCore pid=1809530) Loading safetensors checkpoint shards:  80% Completed | 4/5 [00:01<00:00,  2.90it/s]
+(EngineCore pid=1809530) Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:01<00:00,  3.84it/s]
+(EngineCore pid=1809530) Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:01<00:00,  3.21it/s]
+(EngineCore pid=1809530) 

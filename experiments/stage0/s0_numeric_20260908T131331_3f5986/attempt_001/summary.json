@@ -1,0 +1,49 @@
+{
+  "gates": {
+    "gspo_numeric": true
+  },
+  "results": [
+    {
+      "run_id": "s0_numeric_20260908T131331_3f5986",
+      "timestamp": "2026-09-08T13:13:37.198808+00:00",
+      "event": "gspo_numeric",
+      "device": "cpu",
+      "loss": 0.06656666450033338,
+      "expected": 0.06656666666666666,
+      "ratios": [
+        1.2,
+        0.8,
+        1.2,
+        0.8,
+        1.0,
+        1.0001
+      ],
+      "finite_grad": true,
+      "padding_grad_zero": true,
+      "actor/pg_clipfrac": 0.41666666631944443,
+      "actor/ppo_kl": 0.047387757559581155,
+      "actor/pg_clipfrac_lower": 0.0
+    },
+    {
+      "run_id": "s0_numeric_20260908T131331_3f5986",
+      "timestamp": "2026-09-08T13:13:37.537219+00:00",
+      "event": "gspo_numeric",
+      "device": "cuda",
+      "loss": 0.06656666450033344,
+      "expected": 0.06656666666666666,
+      "ratios": [
+        1.2,
+        0.8,
+        1.2,
+        0.8,
+        1.0,
+        1.0001
+      ],
+      "finite_grad": true,
+      "padding_grad_zero": true,
+      "actor/pg_clipfrac": 0.41666666631944443,
+      "actor/ppo_kl": 0.047387757559581155,
+      "actor/pg_clipfrac_lower": 0.0
+    }
+  ]
+}

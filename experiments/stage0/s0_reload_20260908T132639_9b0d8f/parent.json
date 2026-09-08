@@ -1,0 +1,4 @@
+{
+  "parent_run_id": "s0_lora_20260908T132530_c22c36",
+  "checkpoint": "/data/WSH/medical-post-train-artifacts/runs/s0_lora_20260908T132530_c22c36/attempt_001/checkpoint_step3.pt"
+}

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s0_lora_20260908T132530_c22c36/attempt_001/checkpoint_step3.pt",
+    "global_step": 3,
+    "adapter": "/data/WSH/medical-post-train-artifacts/runs/s0_lora_20260908T132530_c22c36/attempt_001/adapter_step3"
+  }
+]

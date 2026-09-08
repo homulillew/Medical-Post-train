@@ -1,0 +1,3 @@
+{"path": "/data/WSH/medical-post-train-artifacts/runs/s0_vllm_20260908T133151_566161/actor_child/updated_adapter/adapter_model.safetensors", "role": "updated_actor_adapter", "size": 349243752, "sha256": "b63df53fbf04d0c8dfb939c619fe8555cae54a3a50b0d9478d2d4fe3e5b0c829"}
+{"path": "/data/WSH/medical-post-train-artifacts/runs/s0_vllm_20260908T133151_566161/actor_child/updated_adapter/adapter_config.json", "role": "updated_actor_adapter", "size": 1123, "sha256": "274c6996fa87aff1fb4311b676580c18025b0dbf05081835f0bef7582059824b"}
+{"path": "/data/WSH/medical-post-train-artifacts/runs/s0_vllm_20260908T133151_566161/actor_child/updated_adapter/README.md", "role": "updated_actor_adapter", "size": 5344, "sha256": "69f3aa1fb067ef986745d9470eced45cc83c7657395eb2c40755ace7fd476c57"}

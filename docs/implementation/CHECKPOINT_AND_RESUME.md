@@ -86,3 +86,9 @@ append-only generation WAL独立于训练checkpoint。请求开始先写attempt_
 用相同初始化与固定synthetic/训练允许prompt，连续4updates与2updates→保存→结束→新进程restore→2updates对照。检查adapter/logits容差、optimizer m/v/step、scheduler、RNG、采样cursor、accepted group IDs/counters、tokens。GPU浮点差异容差在fixture预声明（参数relative error建议1e-5起审，必要时按dtype证据调整），不能仅“loss接近”就通过。随机生成跨服务重启不承诺bitwise复现，须用固定trajectory重放隔离optimizer parity，再单独测fresh-rollout恢复语义。
 
 额外注入三种故障：checkpoint rename前kill、rename后pointer前kill、optimizer后checkpoint前kill。后者必须证明effective budget回退、cost不回退。恢复到最后checkpoint时若恰好达到5000，也仍需full verifier+report，不能直接DONE。
+
+## Stage 0 已实现边界
+
+`training/lora.py` 已完成真实Qwen3-8B/PEFT的step3 checkpoint与新进程step4 continuation；adapter参数digest、Adam state、scheduler、Python/NumPy/CPU/CUDA RNG均保存/恢复，对照参数和logits误差0。恢复CLI要求父run完成且checkpoint为该run已hash的可信本地artifact。文件先完整写入，再由run的checkpoint refs和artifact manifest发布；没有把一个存在但未完成的文件当成可恢复证据。
+
+launcher使用start_new_session、stdout/stderr、PID、5秒heartbeat和有限超时，故不依赖SSH/Codex进程存活。此MVP不处理主机重启，也不实现完整formal数据cursor、systemd reconciliation、FSDP分布式状态或多点事务。Stage4前仍须补齐本文件原有正式恢复合同。Stage0受控resume不能替代后续随机中断演练。

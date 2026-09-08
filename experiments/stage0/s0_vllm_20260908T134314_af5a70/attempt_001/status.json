@@ -1,0 +1,6 @@
+{
+  "status": "FAILED",
+  "reason": "Adapter is unstable even before sleeping",
+  "ended_at": "2026-09-08T13:43:48.105112+00:00",
+  "elapsed_seconds": 32.84751843381673
+}

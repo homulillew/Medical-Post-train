@@ -1,0 +1,67 @@
+[
+  {
+    "path": "code.json",
+    "size": 3807,
+    "sha256": "41987d70df75d00b2ed22d28264c1ad6c14b8dd1b3ffe28adf9f567969a1e918"
+  },
+  {
+    "path": "resolved_config.json",
+    "size": 328,
+    "sha256": "6f837b632895b167066c75efb6ee520eaa52be944a2d3e6183c9965bc426cefe"
+  },
+  {
+    "path": "runtime.json",
+    "size": 8976,
+    "sha256": "723ac08dbce1b27ac25b42dc67f1cff74ea211a62e9ffd0f4bc8062c5a02cd05"
+  },
+  {
+    "path": "observations.md",
+    "size": 64,
+    "sha256": "80867e9d76b1ace45fdf67874fc4a4fbdb0db697279fbc3e29747680e5f5813f"
+  },
+  {
+    "path": "launch.json",
+    "size": 121,
+    "sha256": "f7995003c1f0cb7e18cf3c950c5d43005726f14f0cee22851debc90b7be7749f"
+  },
+  {
+    "path": "metrics.jsonl",
+    "size": 186,
+    "sha256": "bfa8726730d19301db2120876d428d2beba0290d51f2872de17576505a627038"
+  },
+  {
+    "path": "environment.json",
+    "size": 7824,
+    "sha256": "d8745b90beed4c12745ba4b136dd3d0190fbada3bebe0ad1b2758bbb5bc751f3"
+  },
+  {
+    "path": "artifacts.jsonl",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "command.json",
+    "size": 194,
+    "sha256": "a689ea0e0ea363ead139594c5c553f78ff1f9b1c4a8492ac84aa8a2b4dcb867e"
+  },
+  {
+    "path": "summary.json",
+    "size": 9615,
+    "sha256": "73414cd61b4c511b058f2d773c50c4a09ca72965ccced4fc2a94a50a3c07eb0c"
+  },
+  {
+    "path": "heartbeat.json",
+    "size": 113,
+    "sha256": "499522127f3f24b10b3c189d5e6a89b23ef4d1ba5e4685e9156d41f9ab960262"
+  },
+  {
+    "path": "checkpoint_refs.json",
+    "size": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "path": "status.json",
+    "size": 113,
+    "sha256": "6ed2a699f1bb6edf827303bf31280f0a20033833bac9a2a9c90c900daa3e6541"
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "status": "FAILED",
+  "reason": "Error no file named model.safetensors, or pytorch_model.bin, found in directory /data/WSH/medical-post-train-artifacts/models/BAAI--bge-m3/5617a9f61b028005a4858fdac845db406aefb181.",
+  "ended_at": "2026-09-08T13:14:49.694424+00:00",
+  "elapsed_seconds": 34.421379623003304
+}

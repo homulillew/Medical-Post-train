@@ -1,0 +1,23 @@
+{
+  "run_id": "s0_environment_20260908T135907_d1144c",
+  "stage": 0,
+  "run_class": "DIAGNOSTIC",
+  "purpose": "environment",
+  "created_at": "2026-09-08T13:59:07.129167+00:00",
+  "planned_budget": {
+    "single_probe": true
+  },
+  "config": {
+    "purpose": "environment",
+    "stage": 0,
+    "run_class": "DIAGNOSTIC",
+    "seed": 42,
+    "model": "/data/WSH/medical-post-train-artifacts/models/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218",
+    "artifact_root": "/data/WSH/medical-post-train-artifacts/runs",
+    "adapter": null,
+    "resume": null,
+    "timeout_seconds": 7200,
+    "vllm_runner": "v1",
+    "batch_invariant": true
+  }
+}

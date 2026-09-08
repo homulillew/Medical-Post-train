@@ -19,3 +19,9 @@
 | Q13 | 单训练seed是否足够项目结论 | 原合同未要求多seed，主比较保留seed42 | 完成mandatory后按CI/资源提额外seed，不能挤占baseline | S5局限；新研究proposal |
 
 未来如Q03证明BF16不可行，或清洗后Q07/Q08无法满足quota，需要明确proposal描述原因、替代、比较影响与owner决定；在此之前状态BLOCKED，不将少量smoke当full。Questions更新保留已关闭证据、日期与decision链接，不覆盖原未知状态。
+
+## Stage 0 回答与仍需研究的事项
+
+已用真实运行回答：本机可加载BF16 Qwen3-8B并对r32 LoRA反传到2048；独立固定runtime可import并运行nativeFSDP2/vLLM；受控完整LoRA optimizer恢复通过。默认LoRA重复数值不稳定，最终采用native batch invariance，并完成3次sleep和真实adapter更新验证。
+
+仍OPEN：两种semantic encoder都不能排除剂量反例；1024输出仍不达闭合阈值；自然mixed acceptance、跨引擎matched-temperature logprob parity、完整Ray controller、正式数据去重/配额、外部备份与主机重启恢复。mini=4和共享更长response均仅proposal，未改变formal合同。本轮这些研究问题不要求owner即时批准，也不授权开始Stage1 FULL。

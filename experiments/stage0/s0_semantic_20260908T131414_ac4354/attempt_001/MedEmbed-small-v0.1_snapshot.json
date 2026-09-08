@@ -1,0 +1,66 @@
+{
+  "model": "abhinand/MedEmbed-small-v0.1",
+  "revision": "40a5850d046cfdb56154e332b4d7099b63e8d50e",
+  "files": [
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/models/abhinand--MedEmbed-small-v0.1/40a5850d046cfdb56154e332b4d7099b63e8d50e/model.safetensors",
+      "size": 133462128,
+      "sha256": "67b38b158c6904397d910a724d962d9be85cad9d89ba993ab59ec2b47cb6a3d9"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/models/abhinand--MedEmbed-small-v0.1/40a5850d046cfdb56154e332b4d7099b63e8d50e/config.json",
+      "size": 711,
+      "sha256": "86d5a871bc41599d2e04d7518c6f09cef47800befbe8dace4888f5fa7a9b4333"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/models/abhinand--MedEmbed-small-v0.1/40a5850d046cfdb56154e332b4d7099b63e8d50e/modules.json",
+      "size": 349,
+      "sha256": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/models/abhinand--MedEmbed-small-v0.1/40a5850d046cfdb56154e332b4d7099b63e8d50e/special_tokens_map.json",
+      "size": 695,
+      "sha256": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/models/abhinand--MedEmbed-small-v0.1/40a5850d046cfdb56154e332b4d7099b63e8d50e/tokenizer.json",
+      "size": 711396,
+      "sha256": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/models/abhinand--MedEmbed-small-v0.1/40a5850d046cfdb56154e332b4d7099b63e8d50e/vocab.txt",
+      "size": 231508,
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/models/abhinand--MedEmbed-small-v0.1/40a5850d046cfdb56154e332b4d7099b63e8d50e/README.md",
+      "size": 296820,
+      "sha256": "ee2e7e3ba1cb6d2758c13cec8a31b69ded1ffe8d3fcb5736e9bba4fe947e13ce"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/models/abhinand--MedEmbed-small-v0.1/40a5850d046cfdb56154e332b4d7099b63e8d50e/.gitattributes",
+      "size": 1519,
+      "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/models/abhinand--MedEmbed-small-v0.1/40a5850d046cfdb56154e332b4d7099b63e8d50e/config_sentence_transformers.json",
+      "size": 201,
+      "sha256": "de3d0f96c7851b68af569a091ceb9d550e4c9f97e57c3b3e5be0a8cfc7b549cd"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/models/abhinand--MedEmbed-small-v0.1/40a5850d046cfdb56154e332b4d7099b63e8d50e/tokenizer_config.json",
+      "size": 1242,
+      "sha256": "0b29c7bfc889e53b36d9dd3e686dd4300f6525110eaa98c76a5dafceb2029f53"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/models/abhinand--MedEmbed-small-v0.1/40a5850d046cfdb56154e332b4d7099b63e8d50e/sentence_bert_config.json",
+      "size": 53,
+      "sha256": "ec8e29d6dcb61b611b7d3fdd2982c4524e6ad985959fa7194eacfb655a8d0d51"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/models/abhinand--MedEmbed-small-v0.1/40a5850d046cfdb56154e332b4d7099b63e8d50e/1_Pooling/config.json",
+      "size": 296,
+      "sha256": "83eeb6d0c128b377a452f121f8c5a19bbbf9322092a87b856ef782f4ad2326b9"
+    }
+  ]
+}

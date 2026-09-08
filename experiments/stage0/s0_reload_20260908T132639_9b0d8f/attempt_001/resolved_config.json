@@ -1,0 +1,16 @@
+{
+  "purpose": "reload",
+  "stage": 0,
+  "run_class": "DIAGNOSTIC",
+  "seed": 42,
+  "model": "/data/WSH/medical-post-train-artifacts/models/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218",
+  "artifact_root": "/data/WSH/medical-post-train-artifacts/runs",
+  "adapter": null,
+  "resume": "/data/WSH/medical-post-train-artifacts/runs/s0_lora_20260908T132530_c22c36/attempt_001/checkpoint_step3.pt",
+  "timeout_seconds": 7200,
+  "diagnostic_contract": {
+    "resume_step": 3,
+    "continue_updates": 1,
+    "reference_step": 4
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "path": "/data/WSH/medical-post-train-artifacts/data/cmexam-train32-fadb22c8.json",
+  "sha256": "b4f3a9361ecf428458fae5edd1e2c85cbc12f821688e13632f230b095d28d7e0",
+  "source": "https://raw.githubusercontent.com/williamliujl/CMExam/fadb22c89beb1b7115dc36460ba792eb96b7b972/data/train.csv",
+  "split": "train",
+  "count": 32,
+  "selection": "first 32 CSV records; no label filtering"
+}

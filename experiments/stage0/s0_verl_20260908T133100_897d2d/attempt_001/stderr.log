@@ -1,0 +1,18 @@
+/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/verl/workers/engine/__init__.py:31: UserWarning: torchtitan engine is not available: ModuleNotFoundError("No module named 'torchtitan'")
+  warnings.warn(f"torchtitan engine is not available: {e!r}", stacklevel=1)
+/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/verl/workers/engine/__init__.py:40: UserWarning: veomni engine is not available: ModuleNotFoundError("No module named 'veomni'")
+  warnings.warn(f"veomni engine is not available: {e!r}", stacklevel=1)
+/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/verl/workers/engine/__init__.py:49: UserWarning: automodel engine is not available: ModuleNotFoundError("No module named 'nemo_automodel'")
+  warnings.warn(f"automodel engine is not available: {e!r}", stacklevel=1)
+/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/verl/workers/engine/mindspeed/transformer_impl.py:24: UserWarning: NPU not support router replay for now.
+  from verl.utils.megatron.router_replay_patch import RouterReplay
+/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/verl/workers/engine/__init__.py:59: UserWarning: mindspeed engine is not available: ModuleNotFoundError("No module named 'megatron'")
+  warnings.warn(f"mindspeed engine is not available: {e!r}", stacklevel=1)
+/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/verl/workers/engine/__init__.py:69: UserWarning: megatron engine is not available: ModuleNotFoundError("No module named 'megatron'")
+  warnings.warn(f"megatron engine is not available: {e!r}", stacklevel=1)
+/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/torch/distributed/device_mesh.py:302: UserWarning: It seems like you did not set/select the default device for the current process before the DeviceMesh initialization or use a launcher (i.e. torchrun) which populates `LOCAL_RANK` environment variable. It is recommended to set the current device for the process BEFORE the DeviceMesh initialization so that the underlying communicator (i.e. NCCL) can be initialized properly. Given that the current process has no default device selected, DeviceMesh will use a heuristic to set the device_id via `global_rank % num_devices_per_host`, assuming homogeneous hardware cluster. 
+  self._setup_world_group_and_device()
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:  78%|███████▊  | 313/399 [00:00<00:00, 3116.98it/s]Loading weights: 100%|██████████| 399/399 [00:00<00:00, 3029.97it/s]
+/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[rank0]:[W908 21:31:09.214656309 ProcessGroupNCCL.cpp:5188] Guessing device ID based on global rank. This can cause a hang if rank to GPU mapping is heterogeneous. You can specify device_id in init_process_group()

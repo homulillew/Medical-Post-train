@@ -1,0 +1,6 @@
+{
+  "status": "FAILED",
+  "reason": "Using SOCKS proxy, but the 'socksio' package is not installed. Make sure to install httpx using `pip install httpx[socks]`.",
+  "ended_at": "2026-09-08T13:13:23.656599+00:00",
+  "elapsed_seconds": 5.784560609143227
+}

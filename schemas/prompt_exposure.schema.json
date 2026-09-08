@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Future Stage 4 prompt exposure metrics; no Stage 0 counts implied",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["generated_unique_prompts", "accepted_unique_prompts", "prompt_repeat_histogram", "max_prompt_exposure"],
+  "properties": {
+    "generated_unique_prompts": {"type": "integer", "minimum": 0},
+    "accepted_unique_prompts": {"type": "integer", "minimum": 0},
+    "prompt_repeat_histogram": {
+      "type": "object", "additionalProperties": false,
+      "required": ["generated", "accepted"],
+      "properties": {
+        "generated": {"type": "object", "patternProperties": {"^[1-9][0-9]*$": {"type": "integer", "minimum": 0}}, "additionalProperties": false},
+        "accepted": {"type": "object", "patternProperties": {"^[1-9][0-9]*$": {"type": "integer", "minimum": 0}}, "additionalProperties": false}
+      }
+    },
+    "max_prompt_exposure": {
+      "type": "object", "additionalProperties": false,
+      "required": ["generated", "accepted"],
+      "properties": {"generated": {"type": "integer", "minimum": 0}, "accepted": {"type": "integer", "minimum": 0}}
+    }
+  }
+}

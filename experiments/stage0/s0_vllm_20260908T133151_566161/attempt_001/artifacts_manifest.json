@@ -1,0 +1,112 @@
+[
+  {
+    "path": "code.json",
+    "size": 5800,
+    "sha256": "866628b24b0e2757a5fc8a6267b8a020644b4d92c820fbfd1b66415cea13d761"
+  },
+  {
+    "path": "source.zip",
+    "size": 252371,
+    "sha256": "2e996516c87562bcf12d0df70ade72ecb603131217b011dff312cde22db7901a"
+  },
+  {
+    "path": "resolved_config.json",
+    "size": 664,
+    "sha256": "0b815462131fc66480a340c056c5aa781c17dfdbe8e7087a6c7a27fa3b05e7c0"
+  },
+  {
+    "path": "observations.md",
+    "size": 57,
+    "sha256": "15402d6c92571a5b343da16a12087b20198b621fb5599d48af461aa5a935aaa8"
+  },
+  {
+    "path": "launch.json",
+    "size": 121,
+    "sha256": "946d3fc9b4738c857867dc67432ff8440f47398c1e7b4d9feb9f5c8e08e7c114"
+  },
+  {
+    "path": "updated_adapter_outputs.json",
+    "size": 10888,
+    "sha256": "270a8b5c58cd383287688493b8a02ecee7d1501fd8b12cdfb84080fa2c909d33"
+  },
+  {
+    "path": "switch_actor.stdout.log",
+    "size": 875,
+    "sha256": "6c3bbf61b4f0a33e974f80069cc2b53c51a8e1221904e13ef60f4dfcf508798a"
+  },
+  {
+    "path": "metrics.jsonl",
+    "size": 1807,
+    "sha256": "51a5dc0bb4c993086898977ef4710c971e694630797887b1dd26a3472d6509a7"
+  },
+  {
+    "path": "execution_environment.json",
+    "size": 84,
+    "sha256": "75eafc2d58da3862561be8d1123a56450b8dfcfbc76ab059a4b3612183f24917"
+  },
+  {
+    "path": "environment.json",
+    "size": 7848,
+    "sha256": "0831b5c140aeba18fcab3ff5cbdd47c2528a9d5c74fa3b32b48e6f358d927381"
+  },
+  {
+    "path": "artifacts.jsonl",
+    "size": 781,
+    "sha256": "44e3934c4f92399439f918510b748345f7658f1b0efa5a22d9cbf7872551ba2c"
+  },
+  {
+    "path": "after_wake.json",
+    "size": 10977,
+    "sha256": "561b64574068b827db9a64d883abc8e019e6e4e057d2ee9c340814030c8eed34"
+  },
+  {
+    "path": "command.json",
+    "size": 187,
+    "sha256": "3e4ff99987ad9c522d5d31287d380dcd1b6cf520aa3855d5385cda135b23f970"
+  },
+  {
+    "path": "identity_outputs.json",
+    "size": 35605,
+    "sha256": "f7c95ab56f8ee4996e77c37b3a695d62ce5c62c2cd2a12f2ae2e0cd32d0b3874"
+  },
+  {
+    "path": "summary.json",
+    "size": 366,
+    "sha256": "938f18bf3f200de8248270d59b42d60be0ebb93838b54813223a7d8596fb3926"
+  },
+  {
+    "path": "heartbeat.json",
+    "size": 112,
+    "sha256": "445c180941b75b3d90c270ae75d350fc8351391bb68a6874eb357375d8f94bb7"
+  },
+  {
+    "path": "vllm_args.json",
+    "size": 508,
+    "sha256": "05c10f38183d2fe356c118b98f0a72537994d133047ece8e9f1413f5a1518187"
+  },
+  {
+    "path": "switch_actor.stderr.log",
+    "size": 1928,
+    "sha256": "cf4fa1ab58f1097a996cec7eb6512e74561c1d43131eb6a9183ed114d118620f"
+  },
+  {
+    "path": "checkpoint_refs.json",
+    "size": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "path": "status.json",
+    "size": 112,
+    "sha256": "c102ecb481f068faa916df7c0e2ebb1a513fd7863a15b75e089e58b1f2cf9146"
+  },
+  {
+    "path": "actor_child/metrics.jsonl",
+    "size": 875,
+    "sha256": "6c3bbf61b4f0a33e974f80069cc2b53c51a8e1221904e13ef60f4dfcf508798a"
+  },
+  {
+    "path": "actor_child/command.json",
+    "size": 161,
+    "sha256": "bc7ee06a95d3afdb1193c3e117e96a7ec42db40bc6bc0ac444d93db6c50b4d49"
+  }
+]

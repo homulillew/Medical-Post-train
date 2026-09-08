@@ -154,3 +154,9 @@ vllm serve /durable/pinned-qwen3-base --host 127.0.0.1 --port 8000 \
 **性能。** 并发1/4/8/16，每条件100条真实请求（项目加强为400总请求），条件相同workload与seed，warmup每条件8条另记不计分位数，至少100条一致性另计。smoke只4条API请求。固定prompt/output长度分布，保留真实finish_reason与失败；闭环并发，不声称外推生产负载。采样文本没有被强制变长；报告按长度分桶。
 
 客户端stream timestamps使用monotonic时钟：TTFT=首个非空token事件−send；E2E=complete−send；TPOT=(last-token−first-token)/(output_tokens−1)，输出<=1 token记null不填0。SSE chunk不是token，须保存累计content并按同一tokenizer核对usage；如chunk含多token，把流式TPOT标为request平均估计、不能宣称真实逐token ITL。优先捕获服务侧token timestamp获得精确TPOT；报告来源差异。throughput=测量窗口成功output tokens/窗口秒，request/s及error率均列；失败尝试成本单列不隐去。按条件报告TTFT/TPOT/E2E P50/P95、样本n、输出tokens、峰值NVML GPU used与poll interval（建议100ms）。保存raw requests/stream events、CSV/JSON、launch command、版本/hash、deployment runbook、latency outlier/serving mismatch cases。
+
+## Stage 0 review addition: unique prompt exposure
+
+Stage 4 records `generated_unique_prompts`, `accepted_unique_prompts`, `prompt_repeat_histogram`, and `max_prompt_exposure` under `schemas/prompt_exposure.schema.json`. Prompt identity is the immutable train record ID, independent of rollout group UUID; a repeated cyclic draw increments exposure once per prompt group, not four times for G=4. Histograms and maxima have separate generated and accepted views. Rejected/overflow groups count toward generated cost; only groups consumed by an optimizer update count toward accepted effective exposure.
+
+The future Stage 4 verifier must recompute these from raw prompt/group/update lineage: sum(histogram frequencies)=unique prompts; sum(exposure*frequency)=generated or accepted groups; maximum occupied bin=max exposure; accepted unique <= generated unique. Crash attempts retain physical generated cost, while effective accepted lineage excludes rolled-back updates. Report per-window and cumulative distributions for both conditions. No synthetic Stage 0 exposure is backfilled as a formal measurement.

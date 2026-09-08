@@ -1,0 +1,100 @@
+{
+  "stage": 0,
+  "note": "NOT_OBSERVED entries are coverage declarations, not fabricated cases. Actual case files are listed in run_inventory.json.",
+  "coverage": {
+    "package_conflict": {
+      "status": "NOT_OBSERVED",
+      "note": "No metadata conflict in final frozen stack; missing socksio was an observed dependency failure, recorded separately."
+    },
+    "dependency_failure": {
+      "status": "OBSERVED",
+      "runs": [
+        "s0_semantic_20260908T131317_51cc65",
+        "s0_vllm_20260908T132716_35f945"
+      ],
+      "note": "SOCKS module and runtime PATH; no fabricated ABI diagnosis"
+    },
+    "cuda_abi_failure": {
+      "status": "NOT_OBSERVED",
+      "note": "System nvcc12 mismatch was avoided with explicit SDPA/native sampler; actual ABI imports/FSDP/NCCL passed."
+    },
+    "qwen_load_oom": {
+      "status": "NOT_OBSERVED",
+      "runs": [
+        "s0_lora_20260908T132530_c22c36"
+      ]
+    },
+    "lora_save_reload_mismatch": {
+      "status": "NOT_OBSERVED",
+      "runs": [
+        "s0_reload_20260908T132639_9b0d8f"
+      ]
+    },
+    "vllm_base_only_fallback": {
+      "status": "NOT_OBSERVED",
+      "runs": [
+        "s0_vllm_20260908T134647_8251b8"
+      ],
+      "note": "Matched-token positive/negative identity controls present"
+    },
+    "adapter_sync_failure": {
+      "status": "NOT_OBSERVED",
+      "runs": [
+        "s0_vllm_20260908T134647_8251b8"
+      ],
+      "note": "New actual adapter hash and measurable logprob update verified"
+    },
+    "sleep_wake_failure": {
+      "status": "OBSERVED",
+      "runs": [
+        "s0_vllm_20260908T132920_274c59",
+        "s0_vllm_20260908T133501_7d5a55"
+      ],
+      "note": "Subsequent control found pre-sleep LoRA numerical drift; initial raw post-wake text not captured, later full cases retained"
+    },
+    "pre_sleep_lora_nondeterminism": {
+      "status": "OBSERVED",
+      "runs": [
+        "s0_vllm_20260908T134314_af5a70"
+      ],
+      "mitigation_run": "s0_vllm_20260908T134647_8251b8"
+    },
+    "output_format_mismatch": {
+      "status": "OBSERVED",
+      "runs": [
+        "s0_template_20260908T130957_12510c",
+        "s0_length_20260908T133647_20874e"
+      ]
+    },
+    "512_truncation": {
+      "status": "OBSERVED",
+      "runs": [
+        "s0_length_20260908T133647_20874e"
+      ]
+    },
+    "semantic_chinese_failure": {
+      "status": "OBSERVED",
+      "runs": [
+        "s0_semantic_20260908T134138_110db5"
+      ]
+    },
+    "checkpoint_resume_mismatch": {
+      "status": "NOT_OBSERVED",
+      "runs": [
+        "s0_reload_20260908T132639_9b0d8f"
+      ]
+    },
+    "gspo_ratio_one": {
+      "status": "OBSERVED",
+      "runs": [
+        "s0_minibatch_20260908T133333_f32dbe"
+      ]
+    },
+    "nonzero_clipping": {
+      "status": "OBSERVED",
+      "runs": [
+        "s0_minibatch_20260908T133333_f32dbe"
+      ]
+    }
+  }
+}

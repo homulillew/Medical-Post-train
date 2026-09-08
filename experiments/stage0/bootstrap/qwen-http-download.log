@@ -1,0 +1,30 @@
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Error while downloading from https://huggingface.co/Qwen/Qwen3-8B/resolve/b968826d9c46dd6066d109eabc6255188de91218/model-00002-of-00005.safetensors: The read operation timed out
+Trying to resume download...
+Fetching 15 files:  53%|█████▎    | 8/15 [06:45<05:55, 50.73s/it]Fetching 15 files:  93%|█████████▎| 14/15 [06:45<00:28, 28.99s/it]
+Error while downloading from https://huggingface.co/Qwen/Qwen3-8B/resolve/b968826d9c46dd6066d109eabc6255188de91218/model-00002-of-00005.safetensors: The read operation timed out
+Trying to resume download...
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+  File "/home/ubuntu/anaconda3/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/anaconda3/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 455, in snapshot_download
+    thread_map(
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/tqdm/contrib/concurrent.py", line 191, in thread_map
+    return _executor_map(ThreadPoolExecutor, fn, *iterables, **tqdm_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/tqdm/contrib/concurrent.py", line 163, in _executor_map
+    return list(ex.map(
+           ^^^^^^^^^^^^
+  File "/home/ubuntu/anaconda3/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/anaconda3/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/anaconda3/lib/python3.12/concurrent/futures/_base.py", line 451, in result
+    self._condition.wait(timeout)
+  File "/home/ubuntu/anaconda3/lib/python3.12/threading.py", line 355, in wait
+    waiter.acquire()
+KeyboardInterrupt

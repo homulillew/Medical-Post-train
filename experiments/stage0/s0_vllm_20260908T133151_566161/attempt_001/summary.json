@@ -1,0 +1,12 @@
+{
+  "gates": {
+    "vllm_load": true,
+    "vllm_lora_identity": true,
+    "actor_rollout_switch": true
+  },
+  "cold_load_seconds": 18.809903172776103,
+  "adapter_sha256": "0fcb54a7f3350cf8f8f0fa2174f66f7cc71cbf03685d3f3d555b0c0a9a31ab85",
+  "sleep_seconds": 7.135553843807429,
+  "wake_seconds": 1.3645278853364289,
+  "max_prompt_logprob_delta": 1.4971075057983398
+}

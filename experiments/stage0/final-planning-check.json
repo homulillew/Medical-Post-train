@@ -1,0 +1,14 @@
+{
+  "planning_check": "PASS",
+  "negative_state_probes_rejected": 15,
+  "local_links_checked": 42,
+  "stage_completion_verified": false,
+  "stages": {
+    "1": "NOT_STARTED",
+    "2": "NOT_STARTED",
+    "3": "NOT_STARTED",
+    "4": "NOT_STARTED",
+    "5": "NOT_STARTED",
+    "6": "NOT_STARTED"
+  }
+}

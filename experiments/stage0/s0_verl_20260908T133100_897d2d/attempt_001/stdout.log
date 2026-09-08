@@ -1,0 +1,8 @@
+{"run_id": "s0_verl_20260908T133100_897d2d", "timestamp": "2026-09-08T13:31:07.332998+00:00", "event": "reward_dict", "result": {"reward_score": 1.0, "reward_extra_info": {"score": 1.0, "acc": 1.0, "sem": 0.0, "format": 1.0}}}
+Skipping monkey patch for Qwen3ForCausalLM as use_fused_kernels is False or fused_kernels_backend is None
+Loading pre-trained LoRA adapter to from: /data/WSH/medical-post-train-artifacts/runs/s0_lora_20260908T132530_c22c36/attempt_001/adapter_step3
+PeftModelForCausalLM contains 8.28B parameters
+Before FSDP, memory allocated (GB): 0.00, memory reserved (GB): 0.34, device memory used/total (GB): 1.19/44.39
+After FSDP, memory allocated (GB): 15.62, memory reserved (GB): 17.16, device memory used/total (GB): 18.01/44.39
+Total steps: 3, num_warmup_steps: 0
+{"run_id": "s0_verl_20260908T133100_897d2d", "timestamp": "2026-09-08T13:31:16.002471+00:00", "event": "native_verl_fsdp2", "loss": 3.829347770079039e-05, "grad_norm": 0.0015449896454811096, "seconds": 7.739544619806111, "nvml_peak_bytes": 22160211968, "allocated_peak_bytes": 18946934784, "reserved_peak_bytes": 20581449728, "remaining_at_peak_bytes": 26145587200, "total_bytes": 48305799168}

@@ -1,0 +1,10 @@
+{
+  "gates": {
+    "adapter_reload": true,
+    "checkpoint_resume": true
+  },
+  "parent_checkpoint": "/data/WSH/medical-post-train-artifacts/runs/s0_lora_20260908T132530_c22c36/attempt_001/checkpoint_step3.pt",
+  "reload_logits_max_error": 0.0,
+  "continued_parameter_max_error": 0.0,
+  "global_step": 4
+}

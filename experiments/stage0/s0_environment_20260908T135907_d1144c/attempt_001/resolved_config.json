@@ -1,0 +1,16 @@
+{
+  "purpose": "environment",
+  "stage": 0,
+  "run_class": "DIAGNOSTIC",
+  "seed": 42,
+  "model": "/data/WSH/medical-post-train-artifacts/models/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218",
+  "artifact_root": "/data/WSH/medical-post-train-artifacts/runs",
+  "adapter": null,
+  "resume": null,
+  "timeout_seconds": 7200,
+  "vllm_runner": "v1",
+  "batch_invariant": true,
+  "diagnostic_contract": {
+    "single_probe": true
+  }
+}

@@ -49,3 +49,47 @@ Status=ACCEPTED（计划）；Contract change=NO。原合同给了validation-onl
 Status=ACCEPTED（解释与诊断要求）；Contract change=NO。证据：固定release的`ray_trainer.py:_update_actor`、`engine_workers.py:train_mini_batch`与GSPO函数。whole-batch单epoch单optimizer.step下，更新前old/current相同；clipfrac可能0是数学预期，不应捏造clipping改善。
 
 保持原8groups/update、1epoch起始设置；增加synthetic非1ratio梯度测试与pilot ratio观测。备选两个minibatches或多epoch会改变每rollout的优化量，暂不采纳，需要两组共同的新decision且仍各完成5000groups。主问题是sampling intervention，不增加未经对照的“GSPO优于GRPO”简历主张。当前额外成本仅未来小型CPU/numeric诊断，GPU成本未发生。
+
+## D-009 — Stage 0 independent runtime and explicit attention path
+
+2026-09-08. Keep the audited verl v0.9.0 / vLLM 0.24 / torch 2.11 / Transformers 5.5.3 combination. The actual environment run `s0_environment_20260908T131415_5a9fed` imported the core packages, passed pip check and executed CUDA BF16. Standard NCCL 2.28.9 is retained. Native flash-attn is absent; actor configurations explicitly select SDPA, remove_padding=False and fused kernels=False. This does not claim hybrid/FSDP correctness before their model probes. Add socksio 1.0.0 after the recorded proxy ImportError. No conda base mutation or CUDA 12 extension compilation.
+
+## D-010 — Explicit Qwen thinking target and tokenizer return type
+
+2026-09-08. Use the format in OUTPUT_FORMAT_CONTRACT.md: source-provided medical-o1 reasoning, empty Huatuo think, then answer. The first tokenizer fixture failed because Transformers 5.5.3 now returns BatchEncoding by default; explicitly requesting return_dict=False restored the expected token-list boundary and the next fixture passed (`s0_template_20260908T131151_f17286`). Preserve both attempts. This is an API correction, not a data or budget change.
+
+## D-011 — Semantic encoder remains OPEN
+
+2026-09-08. `s0_semantic_20260908T131537_c675b8` compared seven synthetic Chinese perturbations on CPU using fixed official snapshots. MedEmbed ranked negation and number replacement above the synonym; BGE-M3 ranked number replacement above the synonym. BGE's better unrelated-text separation does not establish clinical contradiction sensitivity. Keep the mandatory encoder assumption pending the broader Stage 2 train-only reward diagnostic; do not silently swap encoder or tune weights from these seven cases. Long examples actually exceed each tokenizer's maximum and are truncated by its encoder, so throughput on this mixed diagnostic is not a production reward latency estimate.
+
+## D-012 — Explicit native vLLM sampler and venv PATH
+
+2026-09-08. `s0_vllm_20260908T132716_35f945` loaded all five BF16 shards and selected bundled FlashAttention 2, then failed during FlashInfer sampling warmup because a bare `ninja` subprocess was not on PATH. The wheel's ninja executable is installed in `.venv-train/bin`; invoking that venv's Python alone does not activate PATH. The launcher now prefixes the executable's directory. Because this machine has nvcc 12 while torch uses CUDA 13, the next run explicitly sets the upstream-supported `VLLM_USE_FLASHINFER_SAMPLER=0`, using native vLLM sampling instead of compiling FlashInfer with an incompatible system toolkit. This is logged, not silent fallback. No torch/vLLM/verl version, BF16 policy, LoRA rank or probability truncation setting is changed. Formal conditions must use the same frozen sampler implementation and pass logprob parity before RL.
+
+## D-013 — Investigate intermittent V2 sleep identity; explicit runner gate
+
+2026-09-08. V2 run `s0_vllm_20260908T132920_274c59` failed greedy token equality after a real actor subprocess ran while rollout slept. It retained the assertion and pre-sleep output, but the first harness asserted before saving the post-wake output; that missing raw output cannot be reconstructed. A corrected evidence-only rerun `s0_vllm_20260908T133151_566161` passed with identical tokens and prompt logprobs (maximum error 0), then loaded an actually updated adapter with a 0.4998 matched-token logprob difference. The root cause of the first mismatch is **unknown**, so a single later success does not close R04.
+
+The next compatibility condition explicitly selects the existing vLLM V1 model runner (`VLLM_USE_V2_MODEL_RUNNER=0`) and tests three sleep/wake cycles, including an actual BF16 actor backward and adapter update in the first. No dependency version or model is replaced. The measured result must decide whether this is an acceptable Stage 0 mitigation; full Stage 4 repeated synchronization and matched-temperature policy logprob parity remain mandatory. Upstream [runner migration](https://github.com/vllm-project/vllm/issues/41286) and [level-2 LoRA fix](https://github.com/vllm-project/vllm/pull/39935) provide context, not a diagnosis of our level-1 failure.
+
+## D-014 — Proposal: expose more than one mini-batch to stale rollout logprobs
+
+2026-09-08. `s0_minibatch_20260908T133333_f32dbe` uses 8 synthetic prompts × 4 fixed teacher-forced trajectories, native verl GRPO advantages and native GSPO loss. The 8-prompt mini-batch produces one update with ratio exactly 1 and clip fraction 0. The 4-prompt condition's first update also has ratio 1, but its second update sees ratios approximately 0.793–1.106 and clip fraction 0.875. These are local diagnostic microbatches, not a Ray training run, on-policy learning result, Stage 4 smoke or pilot.
+
+Proposal: test 4-prompt mini-batches in the future formal pilot while holding the two comparison variants' settings equal. Do not silently change the main configuration: twice as many optimizer updates per 8-prompt batch changes optimization exposure, and the observed high clip fraction may require a pilot-specific learning-rate investigation. The mandatory 5000-group budgets and primary conditions remain intact. The synthetic response distribution cannot estimate natural mixed-group acceptance or expected final accuracy.
+
+D-013 follow-up: V1 run `s0_vllm_20260908T133501_7d5a55` also failed the first sleep comparison (matched prompt logprob max difference 0.37499). Therefore switching runner alone is **not** a demonstrated fix. The next diagnostic adds two consecutive adapter calls before sleeping and requires them to agree, then compares wake against that measured warm reference. Both cold and warm outputs are retained. This changes the diagnostic to isolate cold-loading effects; it does not erase the earlier failures or claim a root cause. If the warm reference or repeated wake checks disagree, the gate still fails.
+
+## D-015 — Shared response-length proposal, not a formal configuration change
+
+2026-09-08. `s0_length_20260908T133647_20874e` generated exactly 32 fixed CMExam **train** prompts × G=4 under each limit using the pinned base Qwen3-8B, explicit thinking template, temperature 0.6/top_p 1/top_k -1. At 512, closure=12.5%, truncation=87.5%, mean output=504.203 tokens. At 1024, closure=77.344%, truncation=22.656%, mean output=751.211 tokens. Format validity is lower than closure because the strict parser also rejects ambiguous/multiple answer tags and trailing text. Raw responses and IDs are retained outside Git with hashes.
+
+Proposal: reject the unvalidated assumption that 512 is sufficient; evaluate a shared 1024 minimum candidate for both formal variants. **1024 still does not meet the predeclared closure/truncation thresholds**, so it cannot be automatically frozen as adequate. After medical SFT, repeat train/validation-only length diagnostics and consider 2048 or an explicit common format intervention. No test data, model selection, 5000-group budget or mandatory baseline is changed. These base-model measurements cannot estimate post-SFT accuracy or mixed acceptance.
+
+## D-016 — Adopt native batch-invariant LoRA runtime after measured control
+
+2026-09-08. Before any sleep, `s0_vllm_20260908T134314_af5a70` had stable base logprobs but a 0.27922 maximum LoRA repeat difference. The installed vLLM 0.24 source selects shrink split_k=64 for small batches and uses relaxed atomic reduction; native `VLLM_BATCH_INVARIANT=1` selects split_k=1. This is an existing runtime option, with no local kernel patch, quantization or model-size change.
+
+`s0_vllm_20260908T134647_8251b8` enabled it and retained the resolved shrink configuration. Cold/warm controls and three sleep/wake cycles had zero matched-prompt-logprob error and identical greedy tokens. A real actor backward ran while rollout slept; a new adapter hash produced a 0.499998 logprob difference. Adopt V1 + native sampler + batch invariance for the next runtime gates. This mitigates R04 within the tested shapes; it does not prove bitwise stability for every batch or complete Stage 4 synchronization.
+
+The [upstream batch-invariance feature](https://docs.vllm.ai/en/stable/features/batch_invariance/) and [Punica reduction proposal](https://github.com/vllm-project/vllm/pull/50278) support the mechanism hypothesis. Because the flag also changes other numerical kernels, exact attribution solely to shrink is an inference, not an isolated kernel proof. Retain all default-mode failures. Record batch-invariance settings identically for both future formal variants and remeasure production throughput before freezing them.

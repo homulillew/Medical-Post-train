@@ -1,0 +1,9 @@
+{
+  "observed_issue": "First V2 sleep/wake greedy token equality failed; subsequent unchanged rerun passed token and matched-prompt-logprob equality. Root cause not established.",
+  "primary_sources": [
+    "https://github.com/vllm-project/vllm/issues/41286",
+    "https://github.com/vllm-project/vllm/pull/39935",
+    "https://github.com/vllm-project/vllm/pull/42673"
+  ],
+  "interpretation": "Upstream migration and level-2 fixes show this is an actively changing surface; neither proves the cause of our level-1 observation. Use explicit runner and repeated cycle diagnostics, preserve initial failure."
+}

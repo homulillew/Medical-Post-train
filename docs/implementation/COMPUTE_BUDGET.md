@@ -1,6 +1,6 @@
 # RTX 5880 Ada 算力与存储预算
 
-**这里全部 GPU-hour 数字都是分析情景，不是实测 benchmark，也不是确定性时间承诺。** 本次只测过64×64 BF16张量；没有8B实际token统计、吞吐或mixed acceptance。硬件容量已核实，因此排除了套用A100/H100速度的做法；吞吐仍须后续probe/pilot校准。名为realistic的列是工作假设，不是统计意义的期望值。
+本文件保留上一轮规划情景，并在末尾增加 Stage 0 实测校准。旧表属于 **Estimated**，不是 benchmark 或确定性承诺；本轮真实 probe 的数据单独标为 **Measured**。自然 mixed acceptance、医学样本平均长度和正式长期吞吐仍为 **Unknown**。realistic 是工作假设，不是统计期望。
 
 ## 显存账本
 
@@ -64,7 +64,7 @@ realistic情景下Vanilla生成约5.12M output tokens，Dynamic约14.63M（未�
 
 ## 后续校准与探索预算
 
-本次不做以下训练；列出后续上限与用途：
+以下是上一轮规划时保留的诊断/训练预算；本轮 Stage 0 已执行的实际范围见报告，不代表对应正式 Stage 已运行：
 
 | 验证 | 拟定小预算 | 解决的问题 |
 |---|---|---|
@@ -90,3 +90,34 @@ realistic情景下Vanilla生成约5.12M output tokens，Dynamic约14.63M（未�
 预留300 GiB工作额度+100 GiB安全余量：base单份约16.4GB、依赖/toolchain/wheels约20–60GiB、原始/处理数据与token cache约10–30GiB、raw rollout与token/logprob records约5–30GiB、两组checkpoints约30–80GiB（adapter-only权重+optimizer/extra若通过），另留export和故障证据。若只能保存完整base的FSDP checkpoints，每10份可增加约150GiB/run，转为预留>=600GiB并调整checkpoint保留策略，不能删除唯一恢复点。
 
 磁盘当前充足不等于无风险；每次prepare/checkpoint前检查free bytes、临时双写空间、目标mount一致。active run至少保留最近2个有效完整恢复点、所有validation便携adapter、最终与选中checkpoint及失败证据。每次关键checkpoint复制到第二个物理盘是本机冗余；外部备份目的地尚未确认，见OPEN_QUESTIONS。
+
+## Stage 0 实测校准（2026-09-08）
+
+### Measured
+
+- Qwen3-8B BF16+r32，512/1024/2048 的NVML峰值18.563/20.031/22.692 GiB（以raw bytes为准），update-phase吞吐584.44/1541.43/1499.00 total tokens/s。后两个点已包含Adam状态；数据为重复合成输入，非医学SFT长期速度。
+- 最终batch-invariant V1 vLLM，16条×32 tokens：base419.44，LoRA 114.14 output tokens/s。该短窗口含shape/激活开销，不是稳态benchmark。不能把base速度用于LoRA预算。
+- 首次sleep+wake约8.731s；独立actor进程的加载+一次backward+退出约13.604s。后两次热sleep+wake各约2.04s；不能把热路径代替首次成本。
+- 非batch-invariant base长度诊断：512平均504.203 tokens、87.5%截断；1024平均751.211 tokens、22.656%截断。不是post-SFT分布。
+- CPU语义比较实际执行8个混合长短文本，MedEmbed/BGE的单次编码总时长、RSS和截断长度见semantic原始metrics。长文本主导BGE耗时，短解释服务延迟仍不能由平均值替代。
+
+### Estimated：共享1024候选的条件性占用小时
+
+使用实测LoRA短批吞吐的1.5/1.0/0.5倍作为三种**估计**，有效SFT吞吐取实测1024 update-phase的0.8/0.45/0.2倍；actor/old-logprob速度仍是假设。mixed acceptance仍假设0.65/0.35/0.10；平均prompt384，平均output751.211从base诊断转移，overhead1.10/1.20/1.35，switch10/25/60s。625updates仍按原8-prompt主设置，未采纳D-014。
+
+| 工作 | optimistic h | working h | adverse h |
+|---|---:|---:|---:|
+| Stage1 20k SFT | 5.07 | 9.84 | 24.91 |
+| Stage2 1000×4 | 5.36 | 8.77 | 19.74 |
+| Stage3 256 accepted | 2.11 | 6.42 | 50.54 |
+| Vanilla 5000 + validation | 51.95 | 86.56 | 211.08 |
+| Dynamic 5000 accepted + validation | 66.39 | 168.04 | 1099.55 |
+| Stage5 all three checkpoints | 35.64 | 58.32 | 131.21 |
+| Stage6 reservation | 0.50 | 2.00 | 8.00 |
+| 总计 | 167.03 | 339.95 | 1545.04 |
+
+工作情景从原128.29h变为约339.95h，主要因为输出比原256-token工作假设长，以及LoRA吞吐明显低于base。这个数值没有加入mini=4可能增加的更新开销，也不代表已经批准1024为正式配置。输入、公式和源metrics哈希见 [calibration JSON](../../experiments/stage0/compute_calibration.json)，可用 `scripts/calibrate_stage0.py` 在新输出路径复算；旧分析情景和失败run保留。
+
+### Unknown
+
+post-SFT长度、真实医学数据packing效率、自然mixed acceptance、正式LoRA长窗口decode、完整Ray循环/optimizer/checkpoint开销、正式validation表现、systemd重启和外部备份时延。1024仍未达到闭合阈值，若共同提高到2048须重新预算。严格worst-case仍无有限上界；不能因预计多天运行而缩减20k/5000/G4合同。

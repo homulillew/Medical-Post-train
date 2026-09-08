@@ -1,0 +1,139 @@
+{
+  "gates": {
+    "minibatch_diagnostic": true
+  },
+  "conditions": [
+    {
+      "mini_prompts": 8,
+      "epochs": 1,
+      "updates": 1,
+      "metrics": [
+        {
+          "run_id": "s0_minibatch_20260908T133333_f32dbe",
+          "timestamp": "2026-09-08T13:34:01.925014+00:00",
+          "event": "gspo_minibatch",
+          "mini_prompts": 8,
+          "trajectories": 32,
+          "update_index": 1,
+          "ratio_mean": 1.0,
+          "ratio_min": 1.0,
+          "ratio_max": 1.0,
+          "ratios": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "clip_fraction": 0.0,
+          "loss": 0.0,
+          "grad_norm": 5.42077112197876,
+          "seconds": 15.830053305719048
+        }
+      ],
+      "mean_absolute_sequence_logprob_drift": 0.1231970563530922
+    },
+    {
+      "mini_prompts": 4,
+      "epochs": 1,
+      "updates": 2,
+      "metrics": [
+        {
+          "run_id": "s0_minibatch_20260908T133333_f32dbe",
+          "timestamp": "2026-09-08T13:34:13.862439+00:00",
+          "event": "gspo_minibatch",
+          "mini_prompts": 4,
+          "trajectories": 16,
+          "update_index": 1,
+          "ratio_mean": 1.0,
+          "ratio_min": 1.0,
+          "ratio_max": 1.0,
+          "ratios": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "clip_fraction": 0.0,
+          "loss": 0.0,
+          "grad_norm": 5.4434614181518555,
+          "seconds": 7.79502467578277
+        },
+        {
+          "run_id": "s0_minibatch_20260908T133333_f32dbe",
+          "timestamp": "2026-09-08T13:34:21.669330+00:00",
+          "event": "gspo_minibatch",
+          "mini_prompts": 4,
+          "trajectories": 16,
+          "update_index": 2,
+          "ratio_mean": 0.95217315107584,
+          "ratio_min": 0.7931938171386719,
+          "ratio_max": 1.1058602333068848,
+          "ratios": [
+            0.8755645155906677,
+            1.0957868099212646,
+            0.8755645155906677,
+            1.0957868099212646,
+            0.8695662617683411,
+            1.1058602333068848,
+            0.8695662617683411,
+            1.1058602333068848,
+            0.8370859622955322,
+            1.047629714012146,
+            0.8370859622955322,
+            1.047629714012146,
+            0.7931938171386719,
+            0.9926978945732117,
+            0.7931938171386719,
+            0.9926978945732117
+          ],
+          "clip_fraction": 0.875,
+          "loss": 0.0005306527018547058,
+          "grad_norm": 2.7496631145477295,
+          "seconds": 7.80518802581355
+        }
+      ],
+      "mean_absolute_sequence_logprob_drift": 0.22809870541095734
+    }
+  ],
+  "orchestration": "bounded local microbatch accumulation; native verl GSPO/GRPO; full Ray trainer not run"
+}

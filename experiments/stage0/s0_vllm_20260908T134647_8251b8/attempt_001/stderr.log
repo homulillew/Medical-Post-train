@@ -1,0 +1,17 @@
+(EngineCore pid=1818860) /data/WSH/post-train/.venv-train/lib/python3.12/site-packages/torch/library.py:363: UserWarning: Warning only once for all operators,  other operators may also be overridden.
+(EngineCore pid=1818860)   Overriding a previously registered kernel for the same operator and the same dispatch key
+(EngineCore pid=1818860)   operator: aten::mm(Tensor self, Tensor mat2) -> Tensor
+(EngineCore pid=1818860)     registered at /pytorch/build/aten/src/ATen/RegisterSchema.cpp:6
+(EngineCore pid=1818860)   dispatch key: CUDA
+(EngineCore pid=1818860)   previous kernel: registered at /pytorch/aten/src/ATen/LegacyBatchingRegistrations.cpp:1076
+(EngineCore pid=1818860)        new kernel: registered at /data/WSH/post-train/.venv-train/lib/python3.12/site-packages/vllm/model_executor/layers/batch_invariant.py:905 (Triggered internally at /pytorch/aten/src/ATen/core/dispatch/OperatorEntry.cpp:208.)
+(EngineCore pid=1818860)   self.m.impl(
+[W908 21:47:08.150807179 Context.cpp:541] Warning: torch.backends.cuda.preferred_blas_library is an experimental feature. If you see any error or unexpected behavior when this flag is set please file an issue on GitHub. (function operator())
+(EngineCore pid=1818860) Loading safetensors checkpoint shards:   0% Completed | 0/5 [00:00<?, ?it/s]
+(EngineCore pid=1818860) Loading safetensors checkpoint shards:  20% Completed | 1/5 [00:00<00:01,  2.45it/s]
+(EngineCore pid=1818860) Loading safetensors checkpoint shards:  40% Completed | 2/5 [00:00<00:01,  2.57it/s]
+(EngineCore pid=1818860) Loading safetensors checkpoint shards:  60% Completed | 3/5 [00:01<00:00,  2.63it/s]
+(EngineCore pid=1818860) Loading safetensors checkpoint shards:  80% Completed | 4/5 [00:01<00:00,  2.87it/s]
+(EngineCore pid=1818860) Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:01<00:00,  3.80it/s]
+(EngineCore pid=1818860) Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:01<00:00,  3.20it/s]
+(EngineCore pid=1818860) 

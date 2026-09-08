@@ -1,0 +1,2 @@
+# Preserve diagnostic artifact bytes, including raw streams and JSON receipts.
+experiments/stage0/** -whitespace

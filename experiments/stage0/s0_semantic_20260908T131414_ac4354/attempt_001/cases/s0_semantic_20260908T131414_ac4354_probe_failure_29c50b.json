@@ -1,0 +1,20 @@
+{
+  "case_id": "s0_semantic_20260908T131414_ac4354_probe_failure_29c50b",
+  "run_id": "s0_semantic_20260908T131414_ac4354",
+  "stage": 0,
+  "category": "SYSTEM_CASE",
+  "subtype": "probe_failure",
+  "observation": "Error no file named model.safetensors, or pytorch_model.bin, found in directory /data/WSH/medical-post-train-artifacts/models/BAAI--bge-m3/5617a9f61b028005a4858fdac845db406aefb181.",
+  "hypothesis": null,
+  "alternative_explanations": [],
+  "followup": "See Stage 0 report and linked raw evidence",
+  "reproduction_command": [
+    "/data/WSH/post-train/.venv-train/bin/python",
+    "-m",
+    "medical_posttrain.cli",
+    "worker",
+    "/data/WSH/post-train/experiments/stage0/s0_semantic_20260908T131414_ac4354/attempt_001"
+  ],
+  "error_type": "OSError",
+  "traceback": "Traceback (most recent call last):\n  File \"/data/WSH/post-train/src/medical_posttrain/runtime/__init__.py\", line 76, in worker\n    result = dispatch(ev)\n             ^^^^^^^^^^^^\n  File \"/data/WSH/post-train/src/medical_posttrain/verification/probes.py\", line 39, in dispatch\n    return importlib.import_module('medical_posttrain.verification.'+module).run(ev)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/WSH/post-train/src/medical_posttrain/verification/semantic.py\", line 23, in run\n    model=SentenceTransformer(str(dest),device='cpu',local_files_only=True)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/sentence_transformers/SentenceTransformer.py\", line 327, in __init__\n    modules, self.module_kwargs = self._load_sbert_model(\n                                  ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/sentence_transformers/SentenceTransformer.py\", line 2323, in _load_sbert_model\n    module = module_class.load(\n             ^^^^^^^^^^^^^^^^^^\n  File \"/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/sentence_transformers/models/Transformer.py\", line 436, in load\n    return cls(model_name_or_path=model_name_or_path, **init_kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/sentence_transformers/models/Transformer.py\", line 121, in __init__\n    self._load_model(model_name_or_path, config, cache_dir, backend, is_peft_model, **model_args)\n  File \"/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/sentence_transformers/models/Transformer.py\", line 270, in _load_model\n    self.auto_model = AutoModel.from_pretrained(\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py\", line 387, in from_pretrained\n    return model_class.from_pretrained(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/transformers/modeling_utils.py\", line 4057, in from_pretrained\n    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(\n                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/transformers/modeling_utils.py\", line 571, in _get_resolved_checkpoint_files\n    raise OSError(\nOSError: Error no file named model.safetensors, or pytorch_model.bin, found in directory /data/WSH/medical-post-train-artifacts/models/BAAI--bge-m3/5617a9f61b028005a4858fdac845db406aefb181.\n"
+}

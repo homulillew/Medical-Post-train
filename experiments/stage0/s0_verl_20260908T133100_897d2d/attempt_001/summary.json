@@ -1,0 +1,11 @@
+{
+  "gates": {
+    "verl_import_compose": true,
+    "verl_fsdp2": true,
+    "reward_dict": true
+  },
+  "strategy": "fsdp2",
+  "attention": "sdpa",
+  "remove_padding": false,
+  "loss": 3.829347770079039e-05
+}

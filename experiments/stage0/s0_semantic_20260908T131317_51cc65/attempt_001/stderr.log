@@ -1,0 +1,36 @@
+Traceback (most recent call last):
+  File "/data/WSH/post-train/src/medical_posttrain/runtime/__init__.py", line 76, in worker
+    result = dispatch(ev)
+             ^^^^^^^^^^^^
+  File "/data/WSH/post-train/src/medical_posttrain/verification/probes.py", line 39, in dispatch
+    return importlib.import_module('medical_posttrain.verification.'+module).run(ev)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/WSH/post-train/src/medical_posttrain/verification/semantic.py", line 20, in run
+    snapshot_download(name,revision=revision,local_dir=dest,ignore_patterns=['onnx/*','openvino/*','*.bin','*.onnx','*.h5','*.ot','*.msgpack'],max_workers=4)
+  File "/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 394, in snapshot_download
+    for f in api.list_repo_tree(repo_id=repo_id, recursive=True, revision=commit_hash, repo_type=repo_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/huggingface_hub/hf_api.py", line 4106, in list_repo_tree
+    for path_info in paginate(path=tree_url, headers=headers, params={"recursive": recursive, "expand": expand}):
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/huggingface_hub/utils/_pagination.py", line 35, in paginate
+    session = get_session()
+              ^^^^^^^^^^^^^
+  File "/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 379, in get_session
+    _GLOBAL_CLIENT = _GLOBAL_CLIENT_FACTORY()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 308, in default_client_factory
+    return httpx.Client(
+           ^^^^^^^^^^^^^
+  File "/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/httpx/_client.py", line 700, in __init__
+    else self._init_proxy_transport(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/httpx/_client.py", line 750, in _init_proxy_transport
+    return HTTPTransport(
+           ^^^^^^^^^^^^^^
+  File "/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/httpx/_transports/default.py", line 191, in __init__
+    raise ImportError(
+ImportError: Using SOCKS proxy, but the 'socksio' package is not installed. Make sure to install httpx using `pip install httpx[socks]`.

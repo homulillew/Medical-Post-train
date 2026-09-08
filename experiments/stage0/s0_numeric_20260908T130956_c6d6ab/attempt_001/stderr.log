@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "/data/WSH/post-train/src/medical_posttrain/runtime/__init__.py", line 76, in worker
+    result = dispatch(ev)
+             ^^^^^^^^^^^^
+  File "/data/WSH/post-train/src/medical_posttrain/verification/probes.py", line 39, in dispatch
+    return importlib.import_module('medical_posttrain.verification.'+module).run(ev)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/WSH/post-train/src/medical_posttrain/verification/verl_probe.py", line 73, in run
+    if ev.config['purpose']=='numeric': return numeric(ev)
+                                               ^^^^^^^^^^^
+  File "/data/WSH/post-train/src/medical_posttrain/verification/verl_probe.py", line 24, in numeric
+    loss,metrics=compute_policy_loss_gspo(old,current,adv,mask,config=actor_config())
+                                                                      ^^^^^^^^^^^^^^
+  File "/data/WSH/post-train/src/medical_posttrain/verification/verl_probe.py", line 10, in actor_config
+    return ActorConfig(strategy='fsdp2',clip_ratio_low=.0003,clip_ratio_high=.0004,ppo_mini_batch_size=8,ppo_epochs=1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 43, in __init__
+  File "/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/verl/workers/config/actor.py", line 202, in __post_init__
+    assert self.rollout_n != MISSING
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

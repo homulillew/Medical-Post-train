@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/data/WSH/post-train/src/medical_posttrain/runtime/__init__.py", line 76, in worker
+    result = dispatch(ev)
+             ^^^^^^^^^^^^
+  File "/data/WSH/post-train/src/medical_posttrain/verification/probes.py", line 39, in dispatch
+    return importlib.import_module('medical_posttrain.verification.'+module).run(ev)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/WSH/post-train/src/medical_posttrain/verification/templates.py", line 15, in run
+    ids,labels=sft_tokens(tok,'请选择 C。','C',reason)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/WSH/post-train/src/medical_posttrain/data/format.py", line 29, in sft_tokens
+    raise ValueError("Template prompt/target boundary mismatch")
+ValueError: Template prompt/target boundary mismatch

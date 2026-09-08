@@ -1,0 +1,23 @@
+{
+  "run_id": "s0_reload_20260908T132639_9b0d8f",
+  "stage": 0,
+  "run_class": "DIAGNOSTIC",
+  "purpose": "reload",
+  "created_at": "2026-09-08T13:26:39.730321+00:00",
+  "planned_budget": {
+    "resume_step": 3,
+    "continue_updates": 1,
+    "reference_step": 4
+  },
+  "config": {
+    "purpose": "reload",
+    "stage": 0,
+    "run_class": "DIAGNOSTIC",
+    "seed": 42,
+    "model": "/data/WSH/medical-post-train-artifacts/models/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218",
+    "artifact_root": "/data/WSH/medical-post-train-artifacts/runs",
+    "adapter": null,
+    "resume": "/data/WSH/medical-post-train-artifacts/runs/s0_lora_20260908T132530_c22c36/attempt_001/checkpoint_step3.pt",
+    "timeout_seconds": 7200
+  }
+}

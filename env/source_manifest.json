@@ -1,0 +1,14 @@
+{
+  "verl": {
+    "repository": "https://github.com/verl-project/verl",
+    "revision": "483b8a009ba3a97563edee3a19887e4862b8094a",
+    "wheel": "/data/WSH/medical-post-train-artifacts/wheels/verl-0.9.0-py3-none-any.whl",
+    "wheel_sha256": "149c8cedb2ab9fb75e3f65df506bb3b931211137ca6a934ec4cbea5ebd2d44f8",
+    "build_log": "experiments/stage0/bootstrap/verl-build.log",
+    "install_log": "experiments/stage0/bootstrap/project-install.log"
+  },
+  "locks": {
+    "env/train.lock": "83ad578dbad2cc21f683c683497dbd5959d44aead1d558dbd08f1a8a8c19fdd8",
+    "env/analysis.lock": "448d8f3ff12785aecd28068d7b28bbc6e433236e88b62dd327ef5994fe3f79de"
+  }
+}

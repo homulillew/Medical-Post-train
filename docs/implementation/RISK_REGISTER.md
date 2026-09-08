@@ -1,6 +1,6 @@
 # 风险登记
 
-2026-09-08。P0阻止受影响正式run冻结；P1必须在对应验收前关闭/有可审计处理；P2限制结论。负责人默认项目实现工程师，研究合同变化由项目owner确认。本次未关闭需要实际模型实验的风险。
+2026-09-08。P0阻止受影响正式run冻结；P1必须在对应验收前关闭/有可审计处理；P2限制结论。负责人默认项目实现工程师，研究合同变化由项目owner确认。原始规划背景保留；本轮实测后的状态与范围见文末 Stage 0 更新。
 
 | ID / 级别 | 证据或不确定性 | 触发 / 检测 | 缓解与fallback | 关闭证据 / 阶段 |
 |---|---|---|---|---|
@@ -28,3 +28,34 @@
 | R21 P1 | CMExam README使用限制与仓库license含义不同 | 对外分发原始考试题或商业化 | 项目按研究用途；保留来源声明，Git仅结构/允许摘录；商业范围另核 | dataset provenance / S1,S5 |
 
 所有错误、failed/invalid/negative run留manifest/日志。风险未触发不是PASS；例如没有启动服务不等于“未观察到serving mismatch所以验收通过”。
+
+## Stage 0 实测状态更新
+
+状态含义：OPEN=仍待证据/决策；MITIGATED=在指定边界内已有实测缓解，仍需后续gate；CLOSED=该具体风险范围已完成验证；BLOCKED=当前必须停止受影响推进。状态不替代Stage1–6验收。本轮Stage0没有留下无法运行的P0 blocker，但不批准正式训练。
+
+| ID | 状态 | 实际证据与剩余边界 |
+|---|---|---|
+| R01 | MITIGATED | 真实8B BF16+r32到2048 backward通过，peak约22.69GiB；仅microbatch1/SDPA/当前optimizer设置，正式数据smoke仍须执行 |
+| R02 | CLOSED（本机固定runtime） | 冻结环境、pip check、CUDA BF16、native FSDP2/NCCL、vLLM和三次sleep通过；native sampler避免CUDA12 JIT；其他GPU/toolchain不在结论范围 |
+| R03 | OPEN | native import/compose/FSDP2通过；完整Ray trainer、DAPO controller和resource pool尚未运行 |
+| R04 | MITIGATED | 默认V1/V2 LoRA重复logprob波动已捕获；batch-invariant/split_k1后冷/热+三次sleep一致，真实更新adapter可测；每次正式同步仍须identity断言 |
+| R05 | OPEN | 未开展正式SFT配额和跨来源heldout去重 |
+| R06 | OPEN | 两个encoder都把错误剂量排在同义句前，未替换；需更大train-only reward诊断 |
+| R07 | OPEN | 512截断87.5%，1024仍22.656%；共同长度proposal待SFT后验证，不能直接冻结1024 |
+| R08 | OPEN | 本轮没有自然on-policy group统计 |
+| R09 | OPEN | natural acceptance未知，没有正式refill/pilot |
+| R10 | OPEN | native GSPO numeric通过；默认LoRA数值波动进一步说明需matched-temperature跨引擎logprob parity和correction检查 |
+| R11 | MITIGATED | 受控HF/PEFT adapter+Adam+scheduler+RNG+step恢复到参考结果，max参数误差0；完整dataloader与正式FSDP checkpoint恢复未做 |
+| R12 | OPEN | MVP有run/attempt/checkpoint lineage，正式crash ledger/rollback计数未实现 |
+| R13 | MITIGATED | 固定32条CMExam train和Qwen tokenizer实际字段/模板通过；全量数据schema仍需Stage1/2处理 |
+| R14 | OPEN | 真实清洁20k/CMB2000配额未检验 |
+| R15 | OPEN | semantic数字反例和格式失败已捕获，未证明reward抗套利 |
+| R16 | OPEN | 本机资源充足，bulk hash存在但无外部备份，manifest不等于备份 |
+| R17 | MITIGATED | 已有实测锚点与约340h条件性工作预算；正式长期吞吐/acceptance仍未知 |
+| R18 | MITIGATED | 本轮只读取32条train，无test访问；正式selection/test隔离仍是后续gate |
+| R19 | OPEN | 尚未执行服务SSE/100题一致性；Stage0是离线vLLM检查 |
+| R20 | OPEN | 未产生正式性能提升或统计结论 |
+| R21 | OPEN | 原始train32只留本机bulk，Git存manifest和少量生成案例；许可边界仍按研究用途 |
+| R22 | MITIGATED | 单mini ratio=1/clip0实测，双mini第二步clip0.875；D-014为proposal，正式设置未变 |
+
+证据入口：[Stage 0 report](../stage_reports/00_runtime_compatibility.md)、[selected runs](../../experiments/stage0/selected_runs.json)、D-009至D-016。没有观察到OOM或ABI崩溃不被写成这些失败的虚构案例。

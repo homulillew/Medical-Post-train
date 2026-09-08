@@ -1,0 +1,2536 @@
+Building wheel...
+/home/ubuntu/.cache/uv/builds-v0/.tmpqrJvn3/lib/python3.12/site-packages/setuptools/config/_apply_pyprojecttoml.py:82: SetuptoolsDeprecationWarning: `project.license` as a TOML table is deprecated
+!!
+
+        ********************************************************************************
+        Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=77.0.0).
+
+        By 2027-Feb-18, you need to update your project and remove deprecated calls
+        or your builds will no longer be supported.
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  corresp(dist, value, root_dir)
+running egg_info
+creating verl.egg-info
+writing verl.egg-info/PKG-INFO
+writing dependency_links to verl.egg-info/dependency_links.txt
+writing requirements to verl.egg-info/requires.txt
+writing top-level names to verl.egg-info/top_level.txt
+writing manifest file 'verl.egg-info/SOURCES.txt'
+reading manifest file 'verl.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'verl.egg-info/SOURCES.txt'
+/home/ubuntu/.cache/uv/builds-v0/.tmpqrJvn3/lib/python3.12/site-packages/setuptools/config/_apply_pyprojecttoml.py:82: SetuptoolsDeprecationWarning: `project.license` as a TOML table is deprecated
+!!
+
+        ********************************************************************************
+        Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=77.0.0).
+
+        By 2027-Feb-18, you need to update your project and remove deprecated calls
+        or your builds will no longer be supported.
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  corresp(dist, value, root_dir)
+running bdist_wheel
+running build
+running build_py
+creating build/lib/tests
+copying ./tests/test_protocol_on_cpu.py -> build/lib/tests
+copying ./tests/__init__.py -> build/lib/tests
+copying ./tests/test_base_config_on_cpu.py -> build/lib/tests
+copying ./tests/test_protocol_v2_on_cpu.py -> build/lib/tests
+creating build/lib/verl
+copying ./verl/protocol.py -> build/lib/verl
+copying ./verl/__init__.py -> build/lib/verl
+copying ./verl/base_config.py -> build/lib/verl
+creating build/lib/scripts
+copying ./scripts/migrate_megatron_checkpoint_layout.py -> build/lib/scripts
+copying ./scripts/megatron_merge_lora.py -> build/lib/scripts
+copying ./scripts/chat_template_checker.py -> build/lib/scripts
+copying ./scripts/init_random_model.py -> build/lib/scripts
+copying ./scripts/print_cfg.py -> build/lib/scripts
+copying ./scripts/rollout_viewer.py -> build/lib/scripts
+copying ./scripts/legacy_model_merger.py -> build/lib/scripts
+copying ./scripts/__init__.py -> build/lib/scripts
+copying ./scripts/chat_template_mock_trajectories.py -> build/lib/scripts
+copying ./scripts/diagnose.py -> build/lib/scripts
+copying ./scripts/converter_hf_to_mcore.py -> build/lib/scripts
+creating build/lib/tests/checkpoint_engine
+copying ./tests/checkpoint_engine/test_utils.py -> build/lib/tests/checkpoint_engine
+copying ./tests/checkpoint_engine/test_fsdp_lora_only_checkpoint_on_cpu.py -> build/lib/tests/checkpoint_engine
+copying ./tests/checkpoint_engine/test_special_server_adapter.py -> build/lib/tests/checkpoint_engine
+copying ./tests/checkpoint_engine/test_sharded_delta.py -> build/lib/tests/checkpoint_engine
+copying ./tests/checkpoint_engine/__init__.py -> build/lib/tests/checkpoint_engine
+copying ./tests/checkpoint_engine/test_correctness_on_gpu.py -> build/lib/tests/checkpoint_engine
+copying ./tests/checkpoint_engine/test_block_placement.py -> build/lib/tests/checkpoint_engine
+copying ./tests/checkpoint_engine/test_sglang_loader.py -> build/lib/tests/checkpoint_engine
+copying ./tests/checkpoint_engine/test_correctness_on_npu.py -> build/lib/tests/checkpoint_engine
+copying ./tests/checkpoint_engine/test_global_steps_on_cpu.py -> build/lib/tests/checkpoint_engine
+creating build/lib/tests/special_e2e
+copying ./tests/special_e2e/check_results.py -> build/lib/tests/special_e2e
+copying ./tests/special_e2e/check_custom_rwd_fn.py -> build/lib/tests/special_e2e
+copying ./tests/special_e2e/__init__.py -> build/lib/tests/special_e2e
+creating build/lib/tests/tools
+copying ./tests/tools/test_function_tool_on_cpu.py -> build/lib/tests/tools
+copying ./tests/tools/__init__.py -> build/lib/tests/tools
+copying ./tests/tools/test_mixed_tools_on_cpu.py -> build/lib/tests/tools
+copying ./tests/tools/_stub_search_tools.py -> build/lib/tests/tools
+creating build/lib/tests/experimental
+copying ./tests/experimental/__init__.py -> build/lib/tests/experimental
+creating build/lib/tests/single_controller
+copying ./tests/single_controller/test_ray_utils_on_cpu.py -> build/lib/tests/single_controller
+copying ./tests/single_controller/test_auto_padding_on_cpu.py -> build/lib/tests/single_controller
+copying ./tests/single_controller/test_rvdz.py -> build/lib/tests/single_controller
+copying ./tests/single_controller/test_colocated_workers.py -> build/lib/tests/single_controller
+copying ./tests/single_controller/test_worker_group_basics.py -> build/lib/tests/single_controller
+copying ./tests/single_controller/test_driverfunc_to_worker.py -> build/lib/tests/single_controller
+copying ./tests/single_controller/test_device_mesh_register.py -> build/lib/tests/single_controller
+copying ./tests/single_controller/test_data_transfer.py -> build/lib/tests/single_controller
+copying ./tests/single_controller/test_split_resource_pool.py -> build/lib/tests/single_controller
+copying ./tests/single_controller/test_nested_worker.py -> build/lib/tests/single_controller
+copying ./tests/single_controller/test_worker_group_torch.py -> build/lib/tests/single_controller
+copying ./tests/single_controller/test_fused_workers_on_cpu.py -> build/lib/tests/single_controller
+copying ./tests/single_controller/test_colocated_workers_fused.py -> build/lib/tests/single_controller
+copying ./tests/single_controller/__init__.py -> build/lib/tests/single_controller
+copying ./tests/single_controller/test_high_level_scheduling_api.py -> build/lib/tests/single_controller
+copying ./tests/single_controller/test_ray_local_envs_on_cpu.py -> build/lib/tests/single_controller
+copying ./tests/single_controller/test_ray_collectives.py -> build/lib/tests/single_controller
+copying ./tests/single_controller/test_get_set_dispatch_collect_cpu.py -> build/lib/tests/single_controller
+copying ./tests/single_controller/test_decorator_on_cpu.py -> build/lib/tests/single_controller
+creating build/lib/tests/plugin
+copying ./tests/plugin/test_platform_abstraction.py -> build/lib/tests/plugin
+copying ./tests/plugin/__init__.py -> build/lib/tests/plugin
+creating build/lib/tests/trainer
+copying ./tests/trainer/test_multi_trajectories_advantage_on_cpu.py -> build/lib/tests/trainer
+copying ./tests/trainer/__init__.py -> build/lib/tests/trainer
+creating build/lib/tests/special_e2e/envs
+copying ./tests/special_e2e/envs/__init__.py -> build/lib/tests/special_e2e/envs
+creating build/lib/tests/special_e2e/envs/digit_completion
+copying ./tests/special_e2e/envs/digit_completion/tokenizer.py -> build/lib/tests/special_e2e/envs/digit_completion
+copying ./tests/special_e2e/envs/digit_completion/__init__.py -> build/lib/tests/special_e2e/envs/digit_completion
+copying ./tests/special_e2e/envs/digit_completion/task.py -> build/lib/tests/special_e2e/envs/digit_completion
+creating build/lib/tests/experimental/agent_loop
+copying ./tests/experimental/agent_loop/test_audio_server_contract_on_cpu.py -> build/lib/tests/experimental/agent_loop
+copying ./tests/experimental/agent_loop/test_multimodal_position_ids_on_cpu.py -> build/lib/tests/experimental/agent_loop
+copying ./tests/experimental/agent_loop/test_multi_modal.py -> build/lib/tests/experimental/agent_loop
+copying ./tests/experimental/agent_loop/test_standalone_rollout.py -> build/lib/tests/experimental/agent_loop
+copying ./tests/experimental/agent_loop/test_tool_call_id_on_cpu.py -> build/lib/tests/experimental/agent_loop
+copying ./tests/experimental/agent_loop/__init__.py -> build/lib/tests/experimental/agent_loop
+copying ./tests/experimental/agent_loop/test_basic_agent_loop.py -> build/lib/tests/experimental/agent_loop
+copying ./tests/experimental/agent_loop/function_tool_examples.py -> build/lib/tests/experimental/agent_loop
+copying ./tests/experimental/agent_loop/test_agent_loop_extra_fields_schema_on_cpu.py -> build/lib/tests/experimental/agent_loop
+copying ./tests/experimental/agent_loop/test_gpt_oss_tool_parser.py -> build/lib/tests/experimental/agent_loop
+copying ./tests/experimental/agent_loop/test_qwen3_tool_parser_on_cpu.py -> build/lib/tests/experimental/agent_loop
+copying ./tests/experimental/agent_loop/test_call_tool_on_cpu.py -> build/lib/tests/experimental/agent_loop
+copying ./tests/experimental/agent_loop/agent_utils.py -> build/lib/tests/experimental/agent_loop
+creating build/lib/tests/experimental/fully_async_policy
+copying ./tests/experimental/fully_async_policy/test_async_genrm_config_on_cpu.py -> build/lib/tests/experimental/fully_async_policy
+copying ./tests/experimental/fully_async_policy/__init__.py -> build/lib/tests/experimental/fully_async_policy
+creating build/lib/tests/trainer/ppo
+copying ./tests/trainer/ppo/test_rollout_moe_lb_metrics_on_cpu.py -> build/lib/tests/trainer/ppo
+copying ./tests/trainer/ppo/test_loss_aggregation_on_cpu.py -> build/lib/tests/trainer/ppo
+copying ./tests/trainer/ppo/test_value_loss_normalization_on_cpu.py -> build/lib/tests/trainer/ppo
+copying ./tests/trainer/ppo/test_spec_decode_metrics_on_cpu.py -> build/lib/tests/trainer/ppo
+copying ./tests/trainer/ppo/test_metric_utils_on_cpu.py -> build/lib/tests/trainer/ppo
+copying ./tests/trainer/ppo/__init__.py -> build/lib/tests/trainer/ppo
+copying ./tests/trainer/ppo/test_core_algos_on_cpu.py -> build/lib/tests/trainer/ppo
+copying ./tests/trainer/ppo/test_dynamic_policy_losses_on_cpu.py -> build/lib/tests/trainer/ppo
+copying ./tests/trainer/ppo/test_rollout_corr_integration.py -> build/lib/tests/trainer/ppo
+copying ./tests/trainer/ppo/test_reinforce_pp_multiturn_on_cpu.py -> build/lib/tests/trainer/ppo
+copying ./tests/trainer/ppo/test_rollout_corr.py -> build/lib/tests/trainer/ppo
+creating build/lib/verl/checkpoint_engine
+copying ./verl/checkpoint_engine/nixl_checkpoint_engine.py -> build/lib/verl/checkpoint_engine
+copying ./verl/checkpoint_engine/hccl_checkpoint_engine.py -> build/lib/verl/checkpoint_engine
+copying ./verl/checkpoint_engine/mooncake_checkpoint_engine.py -> build/lib/verl/checkpoint_engine
+copying ./verl/checkpoint_engine/delta_checkpoint_engine.py -> build/lib/verl/checkpoint_engine
+copying ./verl/checkpoint_engine/kimi_checkpoint_engine.py -> build/lib/verl/checkpoint_engine
+copying ./verl/checkpoint_engine/nccl_checkpoint_engine.py -> build/lib/verl/checkpoint_engine
+copying ./verl/checkpoint_engine/__init__.py -> build/lib/verl/checkpoint_engine
+copying ./verl/checkpoint_engine/base.py -> build/lib/verl/checkpoint_engine
+creating build/lib/verl/tools
+copying ./verl/tools/base_tool.py -> build/lib/verl/tools
+copying ./verl/tools/function_tool.py -> build/lib/verl/tools
+copying ./verl/tools/__init__.py -> build/lib/verl/tools
+copying ./verl/tools/schemas.py -> build/lib/verl/tools
+copying ./verl/tools/tool_registry.py -> build/lib/verl/tools
+creating build/lib/verl/utils
+copying ./verl/utils/model.py -> build/lib/verl/utils
+copying ./verl/utils/transferqueue_utils.py -> build/lib/verl/utils
+copying ./verl/utils/fp8_utils.py -> build/lib/verl/utils
+copying ./verl/utils/torch_functional.py -> build/lib/verl/utils
+copying ./verl/utils/seqlen_balancing.py -> build/lib/verl/utils
+copying ./verl/utils/fsdp_utils.py -> build/lib/verl/utils
+copying ./verl/utils/tracking.py -> build/lib/verl/utils
+copying ./verl/utils/ulysses.py -> build/lib/verl/utils
+copying ./verl/utils/attention_utils.py -> build/lib/verl/utils
+copying ./verl/utils/transformers_compat.py -> build/lib/verl/utils
+copying ./verl/utils/tensordict_utils.py -> build/lib/verl/utils
+copying ./verl/utils/device.py -> build/lib/verl/utils
+copying ./verl/utils/megatron_utils.py -> build/lib/verl/utils
+copying ./verl/utils/distributed.py -> build/lib/verl/utils
+copying ./verl/utils/activation_offload.py -> build/lib/verl/utils
+copying ./verl/utils/memory_utils.py -> build/lib/verl/utils
+copying ./verl/utils/dynamic_cp_scheduler.py -> build/lib/verl/utils
+copying ./verl/utils/fs.py -> build/lib/verl/utils
+copying ./verl/utils/__init__.py -> build/lib/verl/utils
+copying ./verl/utils/py_functional.py -> build/lib/verl/utils
+copying ./verl/utils/groupwise.py -> build/lib/verl/utils
+copying ./verl/utils/flops_counter.py -> build/lib/verl/utils
+copying ./verl/utils/import_utils.py -> build/lib/verl/utils
+copying ./verl/utils/megatron_peft_utils.py -> build/lib/verl/utils
+copying ./verl/utils/hdfs_io.py -> build/lib/verl/utils
+copying ./verl/utils/config.py -> build/lib/verl/utils
+copying ./verl/utils/npu_flash_attn_utils.py -> build/lib/verl/utils
+copying ./verl/utils/logging_utils.py -> build/lib/verl/utils
+copying ./verl/utils/ray_utils.py -> build/lib/verl/utils
+copying ./verl/utils/net_utils.py -> build/lib/verl/utils
+copying ./verl/utils/torch_dtypes.py -> build/lib/verl/utils
+copying ./verl/utils/rollout_trace.py -> build/lib/verl/utils
+creating build/lib/verl/third_party
+copying ./verl/third_party/__init__.py -> build/lib/verl/third_party
+creating build/lib/verl/experimental
+copying ./verl/experimental/__init__.py -> build/lib/verl/experimental
+creating build/lib/verl/single_controller
+copying ./verl/single_controller/__init__.py -> build/lib/verl/single_controller
+creating build/lib/verl/plugin
+copying ./verl/plugin/__init__.py -> build/lib/verl/plugin
+creating build/lib/verl/models
+copying ./verl/models/registry.py -> build/lib/verl/models
+copying ./verl/models/weight_loader_registry.py -> build/lib/verl/models
+copying ./verl/models/__init__.py -> build/lib/verl/models
+creating build/lib/verl/trainer
+copying ./verl/trainer/constants_ppo.py -> build/lib/verl/trainer
+copying ./verl/trainer/main_eval.py -> build/lib/verl/trainer
+copying ./verl/trainer/main_ppo.py -> build/lib/verl/trainer
+copying ./verl/trainer/sft_trainer_ray.py -> build/lib/verl/trainer
+copying ./verl/trainer/__init__.py -> build/lib/verl/trainer
+copying ./verl/trainer/main_ppo_v0.py -> build/lib/verl/trainer
+copying ./verl/trainer/sft_trainer.py -> build/lib/verl/trainer
+copying ./verl/trainer/main_generation_server.py -> build/lib/verl/trainer
+creating build/lib/verl/workers
+copying ./verl/workers/engine_workers_tinker.py -> build/lib/verl/workers
+copying ./verl/workers/engine_workers.py -> build/lib/verl/workers
+copying ./verl/workers/__init__.py -> build/lib/verl/workers
+creating build/lib/verl/model_merger
+copying ./verl/model_merger/__main__.py -> build/lib/verl/model_merger
+copying ./verl/model_merger/output_validation.py -> build/lib/verl/model_merger
+copying ./verl/model_merger/fsdp_model_merger.py -> build/lib/verl/model_merger
+copying ./verl/model_merger/__init__.py -> build/lib/verl/model_merger
+copying ./verl/model_merger/megatron_model_merger.py -> build/lib/verl/model_merger
+copying ./verl/model_merger/base_model_merger.py -> build/lib/verl/model_merger
+creating build/lib/verl/checkpoint_engine/delta_sync
+copying ./verl/checkpoint_engine/delta_sync/encode.py -> build/lib/verl/checkpoint_engine/delta_sync
+copying ./verl/checkpoint_engine/delta_sync/sparse_gather.py -> build/lib/verl/checkpoint_engine/delta_sync
+copying ./verl/checkpoint_engine/delta_sync/__init__.py -> build/lib/verl/checkpoint_engine/delta_sync
+creating build/lib/verl/utils/kernel
+copying ./verl/utils/kernel/linear_cross_entropy.py -> build/lib/verl/utils/kernel
+copying ./verl/utils/kernel/kernels.py -> build/lib/verl/utils/kernel
+copying ./verl/utils/kernel/__init__.py -> build/lib/verl/utils/kernel
+copying ./verl/utils/kernel/fp8_kernel.py -> build/lib/verl/utils/kernel
+creating build/lib/verl/utils/qat
+copying ./verl/utils/qat/quantizer.py -> build/lib/verl/utils/qat
+copying ./verl/utils/qat/vllm_patch.py -> build/lib/verl/utils/qat
+copying ./verl/utils/qat/linear.py -> build/lib/verl/utils/qat
+copying ./verl/utils/qat/__init__.py -> build/lib/verl/utils/qat
+copying ./verl/utils/qat/core.py -> build/lib/verl/utils/qat
+creating build/lib/verl/utils/profiler
+copying ./verl/utils/profiler/precision_debugger_profile.py -> build/lib/verl/utils/profiler
+copying ./verl/utils/profiler/profile.py -> build/lib/verl/utils/profiler
+copying ./verl/utils/profiler/mstx_profile.py -> build/lib/verl/utils/profiler
+copying ./verl/utils/profiler/performance.py -> build/lib/verl/utils/profiler
+copying ./verl/utils/profiler/nvtx_profile.py -> build/lib/verl/utils/profiler
+copying ./verl/utils/profiler/torch_memory_profile.py -> build/lib/verl/utils/profiler
+copying ./verl/utils/profiler/__init__.py -> build/lib/verl/utils/profiler
+copying ./verl/utils/profiler/config.py -> build/lib/verl/utils/profiler
+copying ./verl/utils/profiler/empty_annotations.py -> build/lib/verl/utils/profiler
+copying ./verl/utils/profiler/torch_profile.py -> build/lib/verl/utils/profiler
+creating build/lib/verl/utils/trtllm
+copying ./verl/utils/trtllm/trtllm_fp8_utils.py -> build/lib/verl/utils/trtllm
+copying ./verl/utils/trtllm/__init__.py -> build/lib/verl/utils/trtllm
+creating build/lib/verl/utils/sglang
+copying ./verl/utils/sglang/sglang_fp8_utils.py -> build/lib/verl/utils/sglang
+copying ./verl/utils/sglang/__init__.py -> build/lib/verl/utils/sglang
+creating build/lib/verl/utils/veomni
+copying ./verl/utils/veomni/router_replay.py -> build/lib/verl/utils/veomni
+copying ./verl/utils/veomni/__init__.py -> build/lib/verl/utils/veomni
+creating build/lib/verl/utils/logger
+copying ./verl/utils/logger/aggregate_logger.py -> build/lib/verl/utils/logger
+copying ./verl/utils/logger/__init__.py -> build/lib/verl/utils/logger
+creating build/lib/verl/utils/experimental
+copying ./verl/utils/experimental/torch_functional.py -> build/lib/verl/utils/experimental
+copying ./verl/utils/experimental/__init__.py -> build/lib/verl/utils/experimental
+creating build/lib/verl/utils/rendezvous
+copying ./verl/utils/rendezvous/ray_backend.py -> build/lib/verl/utils/rendezvous
+copying ./verl/utils/rendezvous/__init__.py -> build/lib/verl/utils/rendezvous
+creating build/lib/verl/utils/metric
+copying ./verl/utils/metric/__init__.py -> build/lib/verl/utils/metric
+copying ./verl/utils/metric/utils.py -> build/lib/verl/utils/metric
+creating build/lib/verl/utils/vllm
+copying ./verl/utils/vllm/vllm_fp4_utils.py -> build/lib/verl/utils/vllm
+copying ./verl/utils/vllm/npu_vllm_patch.py -> build/lib/verl/utils/vllm
+copying ./verl/utils/vllm/vllm_fp8_utils.py -> build/lib/verl/utils/vllm
+copying ./verl/utils/vllm/rocm_vllm_moe_expert_map.py -> build/lib/verl/utils/vllm
+copying ./verl/utils/vllm/__init__.py -> build/lib/verl/utils/vllm
+copying ./verl/utils/vllm/vllm_quant_utils.py -> build/lib/verl/utils/vllm
+copying ./verl/utils/vllm/patch.py -> build/lib/verl/utils/vllm
+copying ./verl/utils/vllm/utils.py -> build/lib/verl/utils/vllm
+creating build/lib/verl/utils/dataset
+copying ./verl/utils/dataset/multiturn_sft_dataset.py -> build/lib/verl/utils/dataset
+copying ./verl/utils/dataset/rm_dataset.py -> build/lib/verl/utils/dataset
+copying ./verl/utils/dataset/dataset_utils.py -> build/lib/verl/utils/dataset
+copying ./verl/utils/dataset/rl_dataset.py -> build/lib/verl/utils/dataset
+copying ./verl/utils/dataset/vision_utils.py -> build/lib/verl/utils/dataset
+copying ./verl/utils/dataset/__init__.py -> build/lib/verl/utils/dataset
+creating build/lib/verl/utils/megatron
+copying ./verl/utils/megatron/router_replay_utils.py -> build/lib/verl/utils/megatron
+copying ./verl/utils/megatron/sequence_parallel.py -> build/lib/verl/utils/megatron
+copying ./verl/utils/megatron/pipeline_parallel.py -> build/lib/verl/utils/megatron
+copying ./verl/utils/megatron/tensor_parallel.py -> build/lib/verl/utils/megatron
+copying ./verl/utils/megatron/dist_checkpointing.py -> build/lib/verl/utils/megatron
+copying ./verl/utils/megatron/memory.py -> build/lib/verl/utils/megatron
+copying ./verl/utils/megatron/__init__.py -> build/lib/verl/utils/megatron
+copying ./verl/utils/megatron/optimizer.py -> build/lib/verl/utils/megatron
+copying ./verl/utils/megatron/router_replay_patch.py -> build/lib/verl/utils/megatron
+creating build/lib/verl/utils/checkpoint
+copying ./verl/utils/checkpoint/fsdp_checkpoint_manager.py -> build/lib/verl/utils/checkpoint
+copying ./verl/utils/checkpoint/__init__.py -> build/lib/verl/utils/checkpoint
+copying ./verl/utils/checkpoint/megatron_checkpoint_manager.py -> build/lib/verl/utils/checkpoint
+copying ./verl/utils/checkpoint/checkpoint_manager.py -> build/lib/verl/utils/checkpoint
+copying ./verl/utils/checkpoint/checkpoint_handler.py -> build/lib/verl/utils/checkpoint
+creating build/lib/verl/utils/debug
+copying ./verl/utils/debug/trajectory_tracker.py -> build/lib/verl/utils/debug
+copying ./verl/utils/debug/metrics.py -> build/lib/verl/utils/debug
+copying ./verl/utils/debug/performance.py -> build/lib/verl/utils/debug
+copying ./verl/utils/debug/__init__.py -> build/lib/verl/utils/debug
+creating build/lib/verl/utils/reward_score
+copying ./verl/utils/reward_score/math_reward.py -> build/lib/verl/utils/reward_score
+copying ./verl/utils/reward_score/math_batch.py -> build/lib/verl/utils/reward_score
+copying ./verl/utils/reward_score/math_verify.py -> build/lib/verl/utils/reward_score
+copying ./verl/utils/reward_score/geo3k.py -> build/lib/verl/utils/reward_score
+copying ./verl/utils/reward_score/search_r1_like_qa_em.py -> build/lib/verl/utils/reward_score
+copying ./verl/utils/reward_score/math_dapo.py -> build/lib/verl/utils/reward_score
+copying ./verl/utils/reward_score/rlla.py -> build/lib/verl/utils/reward_score
+copying ./verl/utils/reward_score/__init__.py -> build/lib/verl/utils/reward_score
+copying ./verl/utils/reward_score/gsm8k.py -> build/lib/verl/utils/reward_score
+creating build/lib/verl/utils/skip
+copying ./verl/utils/skip/base_skip.py -> build/lib/verl/utils/skip
+copying ./verl/utils/skip/__init__.py -> build/lib/verl/utils/skip
+copying ./verl/utils/skip/config.py -> build/lib/verl/utils/skip
+copying ./verl/utils/skip/rollout_skip.py -> build/lib/verl/utils/skip
+copying ./verl/utils/skip/skip_manager.py -> build/lib/verl/utils/skip
+creating build/lib/verl/utils/tokenizer
+copying ./verl/utils/tokenizer/chat_template.py -> build/lib/verl/utils/tokenizer
+copying ./verl/utils/tokenizer/deepseek.py -> build/lib/verl/utils/tokenizer
+copying ./verl/utils/tokenizer/tokenizer.py -> build/lib/verl/utils/tokenizer
+copying ./verl/utils/tokenizer/__init__.py -> build/lib/verl/utils/tokenizer
+copying ./verl/utils/tokenizer/continuous_token.py -> build/lib/verl/utils/tokenizer
+copying ./verl/utils/tokenizer/continuous_token_wiring.py -> build/lib/verl/utils/tokenizer
+creating build/lib/verl/utils/modelopt
+copying ./verl/utils/modelopt/vllm_modelopt_patch.py -> build/lib/verl/utils/modelopt
+copying ./verl/utils/modelopt/qat_utils.py -> build/lib/verl/utils/modelopt
+copying ./verl/utils/modelopt/qat_weight_exporter.py -> build/lib/verl/utils/modelopt
+copying ./verl/utils/modelopt/__init__.py -> build/lib/verl/utils/modelopt
+copying ./verl/utils/modelopt/quantize.py -> build/lib/verl/utils/modelopt
+creating build/lib/verl/utils/reward_score/sandbox_fusion
+copying ./verl/utils/reward_score/sandbox_fusion/__init__.py -> build/lib/verl/utils/reward_score/sandbox_fusion
+copying ./verl/utils/reward_score/sandbox_fusion/utils.py -> build/lib/verl/utils/reward_score/sandbox_fusion
+creating build/lib/verl/utils/reward_score/prime_math
+copying ./verl/utils/reward_score/prime_math/math_normalize.py -> build/lib/verl/utils/reward_score/prime_math
+copying ./verl/utils/reward_score/prime_math/grader.py -> build/lib/verl/utils/reward_score/prime_math
+copying ./verl/utils/reward_score/prime_math/__init__.py -> build/lib/verl/utils/reward_score/prime_math
+creating build/lib/verl/utils/reward_score/prime_code
+copying ./verl/utils/reward_score/prime_code/testing_util.py -> build/lib/verl/utils/reward_score/prime_code
+copying ./verl/utils/reward_score/prime_code/__init__.py -> build/lib/verl/utils/reward_score/prime_code
+copying ./verl/utils/reward_score/prime_code/utils.py -> build/lib/verl/utils/reward_score/prime_code
+creating build/lib/verl/third_party/torch
+copying ./verl/third_party/torch/__init__.py -> build/lib/verl/third_party/torch
+creating build/lib/verl/third_party/vllm
+copying ./verl/third_party/vllm/__init__.py -> build/lib/verl/third_party/vllm
+creating build/lib/verl/third_party/torch/distributed
+copying ./verl/third_party/torch/distributed/_state_dict_utils.py -> build/lib/verl/third_party/torch/distributed
+copying ./verl/third_party/torch/distributed/__init__.py -> build/lib/verl/third_party/torch/distributed
+creating build/lib/verl/third_party/torch/distributed/checkpoint
+copying ./verl/third_party/torch/distributed/checkpoint/__init__.py -> build/lib/verl/third_party/torch/distributed/checkpoint
+copying ./verl/third_party/torch/distributed/checkpoint/state_dict.py -> build/lib/verl/third_party/torch/distributed/checkpoint
+creating build/lib/verl/experimental/agent_loop
+copying ./verl/experimental/agent_loop/tool_parser.py -> build/lib/verl/experimental/agent_loop
+copying ./verl/experimental/agent_loop/tool_agent_loop.py -> build/lib/verl/experimental/agent_loop
+copying ./verl/experimental/agent_loop/agent_loop.py -> build/lib/verl/experimental/agent_loop
+copying ./verl/experimental/agent_loop/__init__.py -> build/lib/verl/experimental/agent_loop
+copying ./verl/experimental/agent_loop/single_turn_agent_loop.py -> build/lib/verl/experimental/agent_loop
+copying ./verl/experimental/agent_loop/utils.py -> build/lib/verl/experimental/agent_loop
+creating build/lib/verl/experimental/one_step_off_policy
+copying ./verl/experimental/one_step_off_policy/ray_trainer.py -> build/lib/verl/experimental/one_step_off_policy
+copying ./verl/experimental/one_step_off_policy/main_ppo.py -> build/lib/verl/experimental/one_step_off_policy
+copying ./verl/experimental/one_step_off_policy/__init__.py -> build/lib/verl/experimental/one_step_off_policy
+creating build/lib/verl/experimental/reward_loop
+copying ./verl/experimental/reward_loop/__init__.py -> build/lib/verl/experimental/reward_loop
+copying ./verl/experimental/reward_loop/reward_loop.py -> build/lib/verl/experimental/reward_loop
+copying ./verl/experimental/reward_loop/reward_model.py -> build/lib/verl/experimental/reward_loop
+creating build/lib/verl/experimental/fully_async_policy
+copying ./verl/experimental/fully_async_policy/fully_async_main.py -> build/lib/verl/experimental/fully_async_policy
+copying ./verl/experimental/fully_async_policy/fully_async_trainer.py -> build/lib/verl/experimental/fully_async_policy
+copying ./verl/experimental/fully_async_policy/message_queue.py -> build/lib/verl/experimental/fully_async_policy
+copying ./verl/experimental/fully_async_policy/__init__.py -> build/lib/verl/experimental/fully_async_policy
+copying ./verl/experimental/fully_async_policy/detach_utils.py -> build/lib/verl/experimental/fully_async_policy
+copying ./verl/experimental/fully_async_policy/fully_async_rollouter.py -> build/lib/verl/experimental/fully_async_policy
+creating build/lib/verl/experimental/teacher_loop
+copying ./verl/experimental/teacher_loop/teacher_manager.py -> build/lib/verl/experimental/teacher_loop
+copying ./verl/experimental/teacher_loop/__init__.py -> build/lib/verl/experimental/teacher_loop
+copying ./verl/experimental/teacher_loop/teacher_model.py -> build/lib/verl/experimental/teacher_loop
+creating build/lib/verl/experimental/separation
+copying ./verl/experimental/separation/ray_trainer.py -> build/lib/verl/experimental/separation
+copying ./verl/experimental/separation/engine_workers.py -> build/lib/verl/experimental/separation
+copying ./verl/experimental/separation/__init__.py -> build/lib/verl/experimental/separation
+copying ./verl/experimental/separation/utils.py -> build/lib/verl/experimental/separation
+creating build/lib/verl/experimental/reward_loop/reward_manager
+copying ./verl/experimental/reward_loop/reward_manager/dapo.py -> build/lib/verl/experimental/reward_loop/reward_manager
+copying ./verl/experimental/reward_loop/reward_manager/naive.py -> build/lib/verl/experimental/reward_loop/reward_manager
+copying ./verl/experimental/reward_loop/reward_manager/limited.py -> build/lib/verl/experimental/reward_loop/reward_manager
+copying ./verl/experimental/reward_loop/reward_manager/registry.py -> build/lib/verl/experimental/reward_loop/reward_manager
+copying ./verl/experimental/reward_loop/reward_manager/remote.py -> build/lib/verl/experimental/reward_loop/reward_manager
+copying ./verl/experimental/reward_loop/reward_manager/__init__.py -> build/lib/verl/experimental/reward_loop/reward_manager
+copying ./verl/experimental/reward_loop/reward_manager/base.py -> build/lib/verl/experimental/reward_loop/reward_manager
+copying ./verl/experimental/reward_loop/reward_manager/gdpo.py -> build/lib/verl/experimental/reward_loop/reward_manager
+creating build/lib/verl/experimental/reward_loop/router
+copying ./verl/experimental/reward_loop/router/naive_router.py -> build/lib/verl/experimental/reward_loop/router
+copying ./verl/experimental/reward_loop/router/__init__.py -> build/lib/verl/experimental/reward_loop/router
+copying ./verl/experimental/reward_loop/router/inner_sglang_router.py -> build/lib/verl/experimental/reward_loop/router
+creating build/lib/verl/experimental/fully_async_policy/dynamic_schedule
+copying ./verl/experimental/fully_async_policy/dynamic_schedule/static_fully_async_policy.py -> build/lib/verl/experimental/fully_async_policy/dynamic_schedule
+copying ./verl/experimental/fully_async_policy/dynamic_schedule/dynamic_resource_controller.py -> build/lib/verl/experimental/fully_async_policy/dynamic_schedule
+copying ./verl/experimental/fully_async_policy/dynamic_schedule/__init__.py -> build/lib/verl/experimental/fully_async_policy/dynamic_schedule
+copying ./verl/experimental/fully_async_policy/dynamic_schedule/default_policy.py -> build/lib/verl/experimental/fully_async_policy/dynamic_schedule
+copying ./verl/experimental/fully_async_policy/dynamic_schedule/base.py -> build/lib/verl/experimental/fully_async_policy/dynamic_schedule
+copying ./verl/experimental/fully_async_policy/dynamic_schedule/fixed_ratio_policy.py -> build/lib/verl/experimental/fully_async_policy/dynamic_schedule
+creating build/lib/verl/experimental/fully_async_policy/unittest
+copying ./verl/experimental/fully_async_policy/unittest/simple_streaming_demo.py -> build/lib/verl/experimental/fully_async_policy/unittest
+copying ./verl/experimental/fully_async_policy/unittest/__init__.py -> build/lib/verl/experimental/fully_async_policy/unittest
+creating build/lib/verl/single_controller/ray
+copying ./verl/single_controller/ray/__init__.py -> build/lib/verl/single_controller/ray
+copying ./verl/single_controller/ray/base.py -> build/lib/verl/single_controller/ray
+creating build/lib/verl/single_controller/base
+copying ./verl/single_controller/base/decorator.py -> build/lib/verl/single_controller/base
+copying ./verl/single_controller/base/worker.py -> build/lib/verl/single_controller/base
+copying ./verl/single_controller/base/__init__.py -> build/lib/verl/single_controller/base
+copying ./verl/single_controller/base/worker_group.py -> build/lib/verl/single_controller/base
+creating build/lib/verl/plugin/platform
+copying ./verl/plugin/platform/platform_rocm.py -> build/lib/verl/plugin/platform
+copying ./verl/plugin/platform/platform_manager.py -> build/lib/verl/plugin/platform
+copying ./verl/plugin/platform/platform_cuda.py -> build/lib/verl/plugin/platform
+copying ./verl/plugin/platform/__init__.py -> build/lib/verl/plugin/platform
+copying ./verl/plugin/platform/platform_base.py -> build/lib/verl/plugin/platform
+copying ./verl/plugin/platform/platform_npu.py -> build/lib/verl/plugin/platform
+creating build/lib/verl/models/transformers
+copying ./verl/models/transformers/npu_patch.py -> build/lib/verl/models/transformers
+copying ./verl/models/transformers/qwen2.py -> build/lib/verl/models/transformers
+copying ./verl/models/transformers/qwen3_vl.py -> build/lib/verl/models/transformers
+copying ./verl/models/transformers/llama.py -> build/lib/verl/models/transformers
+copying ./verl/models/transformers/monkey_patch.py -> build/lib/verl/models/transformers
+copying ./verl/models/transformers/glm4v.py -> build/lib/verl/models/transformers
+copying ./verl/models/transformers/kimi_vl.py -> build/lib/verl/models/transformers
+copying ./verl/models/transformers/dense_common.py -> build/lib/verl/models/transformers
+copying ./verl/models/transformers/__init__.py -> build/lib/verl/models/transformers
+copying ./verl/models/transformers/qwen2_vl.py -> build/lib/verl/models/transformers
+copying ./verl/models/transformers/apertus.py -> build/lib/verl/models/transformers
+copying ./verl/models/transformers/qwen3_5.py -> build/lib/verl/models/transformers
+copying ./verl/models/transformers/tiled_mlp.py -> build/lib/verl/models/transformers
+creating build/lib/verl/models/mcore
+copying ./verl/models/mcore/model_forward.py -> build/lib/verl/models/mcore
+copying ./verl/models/mcore/model_forward_1f1b_overlap.py -> build/lib/verl/models/mcore
+copying ./verl/models/mcore/mtp_patch.py -> build/lib/verl/models/mcore
+copying ./verl/models/mcore/loader.py -> build/lib/verl/models/mcore
+copying ./verl/models/mcore/config_converter.py -> build/lib/verl/models/mcore
+copying ./verl/models/mcore/registry.py -> build/lib/verl/models/mcore
+copying ./verl/models/mcore/saver.py -> build/lib/verl/models/mcore
+copying ./verl/models/mcore/model_forward_fused.py -> build/lib/verl/models/mcore
+copying ./verl/models/mcore/weight_converter.py -> build/lib/verl/models/mcore
+copying ./verl/models/mcore/mbridge.py -> build/lib/verl/models/mcore
+copying ./verl/models/mcore/__init__.py -> build/lib/verl/models/mcore
+copying ./verl/models/mcore/util.py -> build/lib/verl/models/mcore
+copying ./verl/models/mcore/bridge.py -> build/lib/verl/models/mcore
+copying ./verl/models/mcore/model_initializer.py -> build/lib/verl/models/mcore
+copying ./verl/models/mcore/patch.py -> build/lib/verl/models/mcore
+creating build/lib/verl/trainer/ppo
+copying ./verl/trainer/ppo/ray_trainer.py -> build/lib/verl/trainer/ppo
+copying ./verl/trainer/ppo/prefix_grouper_utils.py -> build/lib/verl/trainer/ppo
+copying ./verl/trainer/ppo/rollout_corr_helper.py -> build/lib/verl/trainer/ppo
+copying ./verl/trainer/ppo/reward.py -> build/lib/verl/trainer/ppo
+copying ./verl/trainer/ppo/metric_utils.py -> build/lib/verl/trainer/ppo
+copying ./verl/trainer/ppo/padding_utils.py -> build/lib/verl/trainer/ppo
+copying ./verl/trainer/ppo/__init__.py -> build/lib/verl/trainer/ppo
+copying ./verl/trainer/ppo/core_algos.py -> build/lib/verl/trainer/ppo
+copying ./verl/trainer/ppo/utils.py -> build/lib/verl/trainer/ppo
+creating build/lib/verl/trainer/config
+copying ./verl/trainer/config/algorithm.py -> build/lib/verl/trainer/config
+copying ./verl/trainer/config/__init__.py -> build/lib/verl/trainer/config
+copying ./verl/trainer/config/config.py -> build/lib/verl/trainer/config
+creating build/lib/verl/trainer/distillation
+copying ./verl/trainer/distillation/__init__.py -> build/lib/verl/trainer/distillation
+copying ./verl/trainer/distillation/losses.py -> build/lib/verl/trainer/distillation
+creating build/lib/verl/trainer/ppo/v1
+copying ./verl/trainer/ppo/v1/trainer_colocate_async.py -> build/lib/verl/trainer/ppo/v1
+copying ./verl/trainer/ppo/v1/agent_loop_tq.py -> build/lib/verl/trainer/ppo/v1
+copying ./verl/trainer/ppo/v1/trainer_separate_async.py -> build/lib/verl/trainer/ppo/v1
+copying ./verl/trainer/ppo/v1/__init__.py -> build/lib/verl/trainer/ppo/v1
+copying ./verl/trainer/ppo/v1/replay_buffer.py -> build/lib/verl/trainer/ppo/v1
+copying ./verl/trainer/ppo/v1/trainer_base.py -> build/lib/verl/trainer/ppo/v1
+copying ./verl/trainer/ppo/v1/trainer_sync.py -> build/lib/verl/trainer/ppo/v1
+copying ./verl/trainer/ppo/v1/utils.py -> build/lib/verl/trainer/ppo/v1
+creating build/lib/verl/trainer/distillation/megatron
+copying ./verl/trainer/distillation/megatron/__init__.py -> build/lib/verl/trainer/distillation/megatron
+copying ./verl/trainer/distillation/megatron/losses.py -> build/lib/verl/trainer/distillation/megatron
+creating build/lib/verl/trainer/distillation/fsdp
+copying ./verl/trainer/distillation/fsdp/__init__.py -> build/lib/verl/trainer/distillation/fsdp
+copying ./verl/trainer/distillation/fsdp/losses.py -> build/lib/verl/trainer/distillation/fsdp
+creating build/lib/verl/workers/utils
+copying ./verl/workers/utils/__init__.py -> build/lib/verl/workers/utils
+copying ./verl/workers/utils/losses.py -> build/lib/verl/workers/utils
+copying ./verl/workers/utils/padding.py -> build/lib/verl/workers/utils
+creating build/lib/verl/workers/reward_manager
+copying ./verl/workers/reward_manager/dapo.py -> build/lib/verl/workers/reward_manager
+copying ./verl/workers/reward_manager/naive.py -> build/lib/verl/workers/reward_manager
+copying ./verl/workers/reward_manager/registry.py -> build/lib/verl/workers/reward_manager
+copying ./verl/workers/reward_manager/prime.py -> build/lib/verl/workers/reward_manager
+copying ./verl/workers/reward_manager/batch.py -> build/lib/verl/workers/reward_manager
+copying ./verl/workers/reward_manager/abstract.py -> build/lib/verl/workers/reward_manager
+copying ./verl/workers/reward_manager/__init__.py -> build/lib/verl/workers/reward_manager
+creating build/lib/verl/workers/rollout
+copying ./verl/workers/rollout/tokenizer.py -> build/lib/verl/workers/rollout
+copying ./verl/workers/rollout/__init__.py -> build/lib/verl/workers/rollout
+copying ./verl/workers/rollout/llm_server.py -> build/lib/verl/workers/rollout
+copying ./verl/workers/rollout/base.py -> build/lib/verl/workers/rollout
+copying ./verl/workers/rollout/schemas.py -> build/lib/verl/workers/rollout
+copying ./verl/workers/rollout/hf_rollout.py -> build/lib/verl/workers/rollout
+copying ./verl/workers/rollout/replica.py -> build/lib/verl/workers/rollout
+copying ./verl/workers/rollout/utils.py -> build/lib/verl/workers/rollout
+creating build/lib/verl/workers/config
+copying ./verl/workers/config/model.py -> build/lib/verl/workers/config
+copying ./verl/workers/config/distillation.py -> build/lib/verl/workers/config
+copying ./verl/workers/config/engine.py -> build/lib/verl/workers/config
+copying ./verl/workers/config/actor.py -> build/lib/verl/workers/config
+copying ./verl/workers/config/checkpoint.py -> build/lib/verl/workers/config
+copying ./verl/workers/config/reward.py -> build/lib/verl/workers/config
+copying ./verl/workers/config/megatron_peft.py -> build/lib/verl/workers/config
+copying ./verl/workers/config/disaggregation.py -> build/lib/verl/workers/config
+copying ./verl/workers/config/__init__.py -> build/lib/verl/workers/config
+copying ./verl/workers/config/optimizer.py -> build/lib/verl/workers/config
+copying ./verl/workers/config/rollout.py -> build/lib/verl/workers/config
+copying ./verl/workers/config/critic.py -> build/lib/verl/workers/config
+creating build/lib/verl/workers/engine
+copying ./verl/workers/engine/__init__.py -> build/lib/verl/workers/engine
+copying ./verl/workers/engine/base.py -> build/lib/verl/workers/engine
+copying ./verl/workers/engine/spec.py -> build/lib/verl/workers/engine
+copying ./verl/workers/engine/utils.py -> build/lib/verl/workers/engine
+creating build/lib/verl/workers/rollout/vllm_rollout
+copying ./verl/workers/rollout/vllm_rollout/vllm_pd_replica.py -> build/lib/verl/workers/rollout/vllm_rollout
+copying ./verl/workers/rollout/vllm_rollout/bucketed_weight_transfer.py -> build/lib/verl/workers/rollout/vllm_rollout
+copying ./verl/workers/rollout/vllm_rollout/vllm_async_server.py -> build/lib/verl/workers/rollout/vllm_rollout
+copying ./verl/workers/rollout/vllm_rollout/__init__.py -> build/lib/verl/workers/rollout/vllm_rollout
+copying ./verl/workers/rollout/vllm_rollout/vllm_rollout.py -> build/lib/verl/workers/rollout/vllm_rollout
+copying ./verl/workers/rollout/vllm_rollout/weight_update_utils.py -> build/lib/verl/workers/rollout/vllm_rollout
+copying ./verl/workers/rollout/vllm_rollout/utils.py -> build/lib/verl/workers/rollout/vllm_rollout
+creating build/lib/verl/workers/rollout/sglang_rollout
+copying ./verl/workers/rollout/sglang_rollout/delta_loader.py -> build/lib/verl/workers/rollout/sglang_rollout
+copying ./verl/workers/rollout/sglang_rollout/http_server_engine.py -> build/lib/verl/workers/rollout/sglang_rollout
+copying ./verl/workers/rollout/sglang_rollout/__init__.py -> build/lib/verl/workers/rollout/sglang_rollout
+copying ./verl/workers/rollout/sglang_rollout/sglang_pd_replica.py -> build/lib/verl/workers/rollout/sglang_rollout
+copying ./verl/workers/rollout/sglang_rollout/sglang_rollout.py -> build/lib/verl/workers/rollout/sglang_rollout
+copying ./verl/workers/rollout/sglang_rollout/utils.py -> build/lib/verl/workers/rollout/sglang_rollout
+copying ./verl/workers/rollout/sglang_rollout/async_sglang_server.py -> build/lib/verl/workers/rollout/sglang_rollout
+creating build/lib/verl/workers/rollout/trtllm_rollout
+copying ./verl/workers/rollout/trtllm_rollout/trtllm_worker_extension.py -> build/lib/verl/workers/rollout/trtllm_rollout
+copying ./verl/workers/rollout/trtllm_rollout/__init__.py -> build/lib/verl/workers/rollout/trtllm_rollout
+copying ./verl/workers/rollout/trtllm_rollout/trtllm_async_server.py -> build/lib/verl/workers/rollout/trtllm_rollout
+copying ./verl/workers/rollout/trtllm_rollout/trtllm_rollout.py -> build/lib/verl/workers/rollout/trtllm_rollout
+creating build/lib/verl/workers/rollout/naive
+copying ./verl/workers/rollout/naive/naive_rollout.py -> build/lib/verl/workers/rollout/naive
+copying ./verl/workers/rollout/naive/__init__.py -> build/lib/verl/workers/rollout/naive
+creating build/lib/verl/workers/engine/veomni
+copying ./verl/workers/engine/veomni/transformer_impl.py -> build/lib/verl/workers/engine/veomni
+copying ./verl/workers/engine/veomni/__init__.py -> build/lib/verl/workers/engine/veomni
+copying ./verl/workers/engine/veomni/utils.py -> build/lib/verl/workers/engine/veomni
+creating build/lib/verl/workers/engine/torchtitan
+copying ./verl/workers/engine/torchtitan/transformer_impl.py -> build/lib/verl/workers/engine/torchtitan
+copying ./verl/workers/engine/torchtitan/__init__.py -> build/lib/verl/workers/engine/torchtitan
+copying ./verl/workers/engine/torchtitan/utils.py -> build/lib/verl/workers/engine/torchtitan
+creating build/lib/verl/workers/engine/automodel
+copying ./verl/workers/engine/automodel/transformer_impl.py -> build/lib/verl/workers/engine/automodel
+copying ./verl/workers/engine/automodel/__init__.py -> build/lib/verl/workers/engine/automodel
+copying ./verl/workers/engine/automodel/utils.py -> build/lib/verl/workers/engine/automodel
+creating build/lib/verl/workers/engine/mindspeed
+copying ./verl/workers/engine/mindspeed/transformer_impl.py -> build/lib/verl/workers/engine/mindspeed
+copying ./verl/workers/engine/mindspeed/__init__.py -> build/lib/verl/workers/engine/mindspeed
+copying ./verl/workers/engine/mindspeed/utils.py -> build/lib/verl/workers/engine/mindspeed
+creating build/lib/verl/workers/engine/megatron
+copying ./verl/workers/engine/megatron/delta_export.py -> build/lib/verl/workers/engine/megatron
+copying ./verl/workers/engine/megatron/transformer_impl.py -> build/lib/verl/workers/engine/megatron
+copying ./verl/workers/engine/megatron/__init__.py -> build/lib/verl/workers/engine/megatron
+copying ./verl/workers/engine/megatron/utils.py -> build/lib/verl/workers/engine/megatron
+creating build/lib/verl/workers/engine/fsdp
+copying ./verl/workers/engine/fsdp/transformer_impl.py -> build/lib/verl/workers/engine/fsdp
+copying ./verl/workers/engine/fsdp/__init__.py -> build/lib/verl/workers/engine/fsdp
+copying ./verl/workers/engine/fsdp/utils.py -> build/lib/verl/workers/engine/fsdp
+running egg_info
+writing verl.egg-info/PKG-INFO
+writing dependency_links to verl.egg-info/dependency_links.txt
+writing requirements to verl.egg-info/requires.txt
+writing top-level names to verl.egg-info/top_level.txt
+reading manifest file 'verl.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'verl.egg-info/SOURCES.txt'
+/home/ubuntu/.cache/uv/builds-v0/.tmpqrJvn3/lib/python3.12/site-packages/setuptools/command/build_py.py:215: _Warning: Package 'verl.experimental.fully_async_policy.config' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'verl.experimental.fully_async_policy.config' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'verl.experimental.fully_async_policy.config' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'verl.experimental.fully_async_policy.config' to be distributed and are
+        already explicitly excluding 'verl.experimental.fully_async_policy.config' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+  check.warn(importable)
+/home/ubuntu/.cache/uv/builds-v0/.tmpqrJvn3/lib/python3.12/site-packages/setuptools/command/build_py.py:215: _Warning: Package 'verl.experimental.one_step_off_policy.config' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'verl.experimental.one_step_off_policy.config' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'verl.experimental.one_step_off_policy.config' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'verl.experimental.one_step_off_policy.config' to be distributed and are
+        already explicitly excluding 'verl.experimental.one_step_off_policy.config' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+  check.warn(importable)
+/home/ubuntu/.cache/uv/builds-v0/.tmpqrJvn3/lib/python3.12/site-packages/setuptools/command/build_py.py:215: _Warning: Package 'verl.trainer.config.actor' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'verl.trainer.config.actor' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'verl.trainer.config.actor' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'verl.trainer.config.actor' to be distributed and are
+        already explicitly excluding 'verl.trainer.config.actor' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+  check.warn(importable)
+/home/ubuntu/.cache/uv/builds-v0/.tmpqrJvn3/lib/python3.12/site-packages/setuptools/command/build_py.py:215: _Warning: Package 'verl.trainer.config.algorithm' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'verl.trainer.config.algorithm' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'verl.trainer.config.algorithm' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'verl.trainer.config.algorithm' to be distributed and are
+        already explicitly excluding 'verl.trainer.config.algorithm' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+  check.warn(importable)
+/home/ubuntu/.cache/uv/builds-v0/.tmpqrJvn3/lib/python3.12/site-packages/setuptools/command/build_py.py:215: _Warning: Package 'verl.trainer.config.critic' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'verl.trainer.config.critic' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'verl.trainer.config.critic' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'verl.trainer.config.critic' to be distributed and are
+        already explicitly excluding 'verl.trainer.config.critic' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+  check.warn(importable)
+/home/ubuntu/.cache/uv/builds-v0/.tmpqrJvn3/lib/python3.12/site-packages/setuptools/command/build_py.py:215: _Warning: Package 'verl.trainer.config.data' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'verl.trainer.config.data' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'verl.trainer.config.data' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'verl.trainer.config.data' to be distributed and are
+        already explicitly excluding 'verl.trainer.config.data' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+  check.warn(importable)
+/home/ubuntu/.cache/uv/builds-v0/.tmpqrJvn3/lib/python3.12/site-packages/setuptools/command/build_py.py:215: _Warning: Package 'verl.trainer.config.distillation' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'verl.trainer.config.distillation' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'verl.trainer.config.distillation' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'verl.trainer.config.distillation' to be distributed and are
+        already explicitly excluding 'verl.trainer.config.distillation' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+  check.warn(importable)
+/home/ubuntu/.cache/uv/builds-v0/.tmpqrJvn3/lib/python3.12/site-packages/setuptools/command/build_py.py:215: _Warning: Package 'verl.trainer.config.engine' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'verl.trainer.config.engine' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'verl.trainer.config.engine' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'verl.trainer.config.engine' to be distributed and are
+        already explicitly excluding 'verl.trainer.config.engine' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+  check.warn(importable)
+/home/ubuntu/.cache/uv/builds-v0/.tmpqrJvn3/lib/python3.12/site-packages/setuptools/command/build_py.py:215: _Warning: Package 'verl.trainer.config.model' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'verl.trainer.config.model' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'verl.trainer.config.model' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'verl.trainer.config.model' to be distributed and are
+        already explicitly excluding 'verl.trainer.config.model' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+  check.warn(importable)
+/home/ubuntu/.cache/uv/builds-v0/.tmpqrJvn3/lib/python3.12/site-packages/setuptools/command/build_py.py:215: _Warning: Package 'verl.trainer.config.model_engine' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'verl.trainer.config.model_engine' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'verl.trainer.config.model_engine' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'verl.trainer.config.model_engine' to be distributed and are
+        already explicitly excluding 'verl.trainer.config.model_engine' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+  check.warn(importable)
+/home/ubuntu/.cache/uv/builds-v0/.tmpqrJvn3/lib/python3.12/site-packages/setuptools/command/build_py.py:215: _Warning: Package 'verl.trainer.config.npu_profile' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'verl.trainer.config.npu_profile' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'verl.trainer.config.npu_profile' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'verl.trainer.config.npu_profile' to be distributed and are
+        already explicitly excluding 'verl.trainer.config.npu_profile' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+  check.warn(importable)
+/home/ubuntu/.cache/uv/builds-v0/.tmpqrJvn3/lib/python3.12/site-packages/setuptools/command/build_py.py:215: _Warning: Package 'verl.trainer.config.optim' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'verl.trainer.config.optim' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'verl.trainer.config.optim' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'verl.trainer.config.optim' to be distributed and are
+        already explicitly excluding 'verl.trainer.config.optim' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+  check.warn(importable)
+/home/ubuntu/.cache/uv/builds-v0/.tmpqrJvn3/lib/python3.12/site-packages/setuptools/command/build_py.py:215: _Warning: Package 'verl.trainer.config.profiler' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'verl.trainer.config.profiler' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'verl.trainer.config.profiler' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'verl.trainer.config.profiler' to be distributed and are
+        already explicitly excluding 'verl.trainer.config.profiler' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+  check.warn(importable)
+/home/ubuntu/.cache/uv/builds-v0/.tmpqrJvn3/lib/python3.12/site-packages/setuptools/command/build_py.py:215: _Warning: Package 'verl.trainer.config.ref' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'verl.trainer.config.ref' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'verl.trainer.config.ref' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'verl.trainer.config.ref' to be distributed and are
+        already explicitly excluding 'verl.trainer.config.ref' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+  check.warn(importable)
+/home/ubuntu/.cache/uv/builds-v0/.tmpqrJvn3/lib/python3.12/site-packages/setuptools/command/build_py.py:215: _Warning: Package 'verl.trainer.config.reward' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'verl.trainer.config.reward' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'verl.trainer.config.reward' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'verl.trainer.config.reward' to be distributed and are
+        already explicitly excluding 'verl.trainer.config.reward' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+  check.warn(importable)
+/home/ubuntu/.cache/uv/builds-v0/.tmpqrJvn3/lib/python3.12/site-packages/setuptools/command/build_py.py:215: _Warning: Package 'verl.trainer.config.rollout' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'verl.trainer.config.rollout' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'verl.trainer.config.rollout' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'verl.trainer.config.rollout' to be distributed and are
+        already explicitly excluding 'verl.trainer.config.rollout' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+  check.warn(importable)
+/home/ubuntu/.cache/uv/builds-v0/.tmpqrJvn3/lib/python3.12/site-packages/setuptools/command/build_py.py:215: _Warning: Package 'verl.trainer.config.transfer_queue' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'verl.trainer.config.transfer_queue' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'verl.trainer.config.transfer_queue' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'verl.trainer.config.transfer_queue' to be distributed and are
+        already explicitly excluding 'verl.trainer.config.transfer_queue' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+  check.warn(importable)
+/home/ubuntu/.cache/uv/builds-v0/.tmpqrJvn3/lib/python3.12/site-packages/setuptools/command/build_py.py:215: _Warning: Package 'verl.version' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'verl.version' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'verl.version' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'verl.version' to be distributed and are
+        already explicitly excluding 'verl.version' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+  check.warn(importable)
+copying ./verl/py.typed -> build/lib/verl
+creating build/lib/verl/version
+copying ./verl/version/version -> build/lib/verl/version
+copying ./verl/trainer/config/ppo_trainer.yaml -> build/lib/verl/trainer/config
+copying ./verl/trainer/config/_generated_ppo_trainer.yaml -> build/lib/verl/trainer/config
+copying ./verl/trainer/config/_generated_ppo_torchtitan_trainer.yaml -> build/lib/verl/trainer/config
+copying ./verl/trainer/config/_generated_ppo_megatron_trainer.yaml -> build/lib/verl/trainer/config
+copying ./verl/trainer/config/legacy_reward_impl.yaml -> build/lib/verl/trainer/config
+copying ./verl/trainer/config/evaluation.yaml -> build/lib/verl/trainer/config
+copying ./verl/trainer/config/_generated_ppo_veomni_trainer.yaml -> build/lib/verl/trainer/config
+copying ./verl/trainer/config/sft_trainer_engine.yaml -> build/lib/verl/trainer/config
+copying ./verl/trainer/config/ppo_megatron_trainer.yaml -> build/lib/verl/trainer/config
+creating build/lib/verl/trainer/config/reward
+copying ./verl/trainer/config/reward/reward.yaml -> build/lib/verl/trainer/config/reward
+creating build/lib/verl/trainer/config/profiler
+copying ./verl/trainer/config/profiler/profiler.yaml -> build/lib/verl/trainer/config/profiler
+creating build/lib/verl/trainer/config/critic
+copying ./verl/trainer/config/critic/megatron_critic.yaml -> build/lib/verl/trainer/config/critic
+copying ./verl/trainer/config/critic/dp_critic.yaml -> build/lib/verl/trainer/config/critic
+copying ./verl/trainer/config/critic/mindspeed_critic.yaml -> build/lib/verl/trainer/config/critic
+copying ./verl/trainer/config/critic/critic.yaml -> build/lib/verl/trainer/config/critic
+copying ./verl/trainer/config/critic/torchtitan_critic.yaml -> build/lib/verl/trainer/config/critic
+copying ./verl/trainer/config/critic/veomni_critic.yaml -> build/lib/verl/trainer/config/critic
+creating build/lib/verl/trainer/config/ref
+copying ./verl/trainer/config/ref/mindspeed_ref.yaml -> build/lib/verl/trainer/config/ref
+copying ./verl/trainer/config/ref/veomni_ref.yaml -> build/lib/verl/trainer/config/ref
+copying ./verl/trainer/config/ref/dp_ref.yaml -> build/lib/verl/trainer/config/ref
+copying ./verl/trainer/config/ref/megatron_ref.yaml -> build/lib/verl/trainer/config/ref
+copying ./verl/trainer/config/ref/ref.yaml -> build/lib/verl/trainer/config/ref
+copying ./verl/trainer/config/ref/torchtitan_ref.yaml -> build/lib/verl/trainer/config/ref
+creating build/lib/verl/trainer/config/model
+copying ./verl/trainer/config/model/hf_model.yaml -> build/lib/verl/trainer/config/model
+creating build/lib/verl/trainer/config/rollout
+copying ./verl/trainer/config/rollout/rollout.yaml -> build/lib/verl/trainer/config/rollout
+creating build/lib/verl/trainer/config/model_engine
+copying ./verl/trainer/config/model_engine/mindspeed.yaml -> build/lib/verl/trainer/config/model_engine
+copying ./verl/trainer/config/model_engine/megatron.yaml -> build/lib/verl/trainer/config/model_engine
+copying ./verl/trainer/config/model_engine/torchtitan.yaml -> build/lib/verl/trainer/config/model_engine
+copying ./verl/trainer/config/model_engine/veomni.yaml -> build/lib/verl/trainer/config/model_engine
+copying ./verl/trainer/config/model_engine/dp.yaml -> build/lib/verl/trainer/config/model_engine
+creating build/lib/verl/trainer/config/transfer_queue
+copying ./verl/trainer/config/transfer_queue/transfer_queue.yaml -> build/lib/verl/trainer/config/transfer_queue
+creating build/lib/verl/trainer/config/actor
+copying ./verl/trainer/config/actor/megatron_actor.yaml -> build/lib/verl/trainer/config/actor
+copying ./verl/trainer/config/actor/veomni_actor.yaml -> build/lib/verl/trainer/config/actor
+copying ./verl/trainer/config/actor/actor.yaml -> build/lib/verl/trainer/config/actor
+copying ./verl/trainer/config/actor/dp_actor.yaml -> build/lib/verl/trainer/config/actor
+copying ./verl/trainer/config/actor/mindspeed_actor.yaml -> build/lib/verl/trainer/config/actor
+copying ./verl/trainer/config/actor/torchtitan_actor.yaml -> build/lib/verl/trainer/config/actor
+creating build/lib/verl/trainer/config/algorithm
+copying ./verl/trainer/config/algorithm/rollout_correction.yaml -> build/lib/verl/trainer/config/algorithm
+creating build/lib/verl/trainer/config/npu_profile
+copying ./verl/trainer/config/npu_profile/npu_profile.yaml -> build/lib/verl/trainer/config/npu_profile
+creating build/lib/verl/trainer/config/optim
+copying ./verl/trainer/config/optim/megatron.yaml -> build/lib/verl/trainer/config/optim
+copying ./verl/trainer/config/optim/automodel.yaml -> build/lib/verl/trainer/config/optim
+copying ./verl/trainer/config/optim/torchtitan.yaml -> build/lib/verl/trainer/config/optim
+copying ./verl/trainer/config/optim/fsdp.yaml -> build/lib/verl/trainer/config/optim
+copying ./verl/trainer/config/optim/veomni.yaml -> build/lib/verl/trainer/config/optim
+creating build/lib/verl/trainer/config/distillation
+copying ./verl/trainer/config/distillation/distillation.yaml -> build/lib/verl/trainer/config/distillation
+creating build/lib/verl/trainer/config/engine
+copying ./verl/trainer/config/engine/mindspeed.yaml -> build/lib/verl/trainer/config/engine
+copying ./verl/trainer/config/engine/megatron.yaml -> build/lib/verl/trainer/config/engine
+copying ./verl/trainer/config/engine/automodel.yaml -> build/lib/verl/trainer/config/engine
+copying ./verl/trainer/config/engine/torchtitan.yaml -> build/lib/verl/trainer/config/engine
+copying ./verl/trainer/config/engine/fsdp.yaml -> build/lib/verl/trainer/config/engine
+copying ./verl/trainer/config/engine/veomni.yaml -> build/lib/verl/trainer/config/engine
+creating build/lib/verl/trainer/config/data
+copying ./verl/trainer/config/data/legacy_data.yaml -> build/lib/verl/trainer/config/data
+creating build/lib/verl/experimental/one_step_off_policy/config
+copying ./verl/experimental/one_step_off_policy/config/one_step_off_ppo_trainer.yaml -> build/lib/verl/experimental/one_step_off_policy/config
+copying ./verl/experimental/one_step_off_policy/config/one_step_off_ppo_megatron_trainer.yaml -> build/lib/verl/experimental/one_step_off_policy/config
+creating build/lib/verl/experimental/fully_async_policy/config
+copying ./verl/experimental/fully_async_policy/config/fully_async_ppo_megatron_trainer.yaml -> build/lib/verl/experimental/fully_async_policy/config
+copying ./verl/experimental/fully_async_policy/config/fully_async_ppo_trainer.yaml -> build/lib/verl/experimental/fully_async_policy/config
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/tests
+creating build/bdist.linux-x86_64/wheel/tests/checkpoint_engine
+copying build/lib/tests/checkpoint_engine/test_utils.py -> build/bdist.linux-x86_64/wheel/./tests/checkpoint_engine
+copying build/lib/tests/checkpoint_engine/test_fsdp_lora_only_checkpoint_on_cpu.py -> build/bdist.linux-x86_64/wheel/./tests/checkpoint_engine
+copying build/lib/tests/checkpoint_engine/test_special_server_adapter.py -> build/bdist.linux-x86_64/wheel/./tests/checkpoint_engine
+copying build/lib/tests/checkpoint_engine/test_sharded_delta.py -> build/bdist.linux-x86_64/wheel/./tests/checkpoint_engine
+copying build/lib/tests/checkpoint_engine/__init__.py -> build/bdist.linux-x86_64/wheel/./tests/checkpoint_engine
+copying build/lib/tests/checkpoint_engine/test_correctness_on_gpu.py -> build/bdist.linux-x86_64/wheel/./tests/checkpoint_engine
+copying build/lib/tests/checkpoint_engine/test_block_placement.py -> build/bdist.linux-x86_64/wheel/./tests/checkpoint_engine
+copying build/lib/tests/checkpoint_engine/test_sglang_loader.py -> build/bdist.linux-x86_64/wheel/./tests/checkpoint_engine
+copying build/lib/tests/checkpoint_engine/test_correctness_on_npu.py -> build/bdist.linux-x86_64/wheel/./tests/checkpoint_engine
+copying build/lib/tests/checkpoint_engine/test_global_steps_on_cpu.py -> build/bdist.linux-x86_64/wheel/./tests/checkpoint_engine
+creating build/bdist.linux-x86_64/wheel/tests/special_e2e
+copying build/lib/tests/special_e2e/check_results.py -> build/bdist.linux-x86_64/wheel/./tests/special_e2e
+copying build/lib/tests/special_e2e/check_custom_rwd_fn.py -> build/bdist.linux-x86_64/wheel/./tests/special_e2e
+creating build/bdist.linux-x86_64/wheel/tests/special_e2e/envs
+creating build/bdist.linux-x86_64/wheel/tests/special_e2e/envs/digit_completion
+copying build/lib/tests/special_e2e/envs/digit_completion/tokenizer.py -> build/bdist.linux-x86_64/wheel/./tests/special_e2e/envs/digit_completion
+copying build/lib/tests/special_e2e/envs/digit_completion/__init__.py -> build/bdist.linux-x86_64/wheel/./tests/special_e2e/envs/digit_completion
+copying build/lib/tests/special_e2e/envs/digit_completion/task.py -> build/bdist.linux-x86_64/wheel/./tests/special_e2e/envs/digit_completion
+copying build/lib/tests/special_e2e/envs/__init__.py -> build/bdist.linux-x86_64/wheel/./tests/special_e2e/envs
+copying build/lib/tests/special_e2e/__init__.py -> build/bdist.linux-x86_64/wheel/./tests/special_e2e
+creating build/bdist.linux-x86_64/wheel/tests/tools
+copying build/lib/tests/tools/test_function_tool_on_cpu.py -> build/bdist.linux-x86_64/wheel/./tests/tools
+copying build/lib/tests/tools/__init__.py -> build/bdist.linux-x86_64/wheel/./tests/tools
+copying build/lib/tests/tools/test_mixed_tools_on_cpu.py -> build/bdist.linux-x86_64/wheel/./tests/tools
+copying build/lib/tests/tools/_stub_search_tools.py -> build/bdist.linux-x86_64/wheel/./tests/tools
+creating build/bdist.linux-x86_64/wheel/tests/experimental
+creating build/bdist.linux-x86_64/wheel/tests/experimental/agent_loop
+copying build/lib/tests/experimental/agent_loop/test_audio_server_contract_on_cpu.py -> build/bdist.linux-x86_64/wheel/./tests/experimental/agent_loop
+copying build/lib/tests/experimental/agent_loop/test_multimodal_position_ids_on_cpu.py -> build/bdist.linux-x86_64/wheel/./tests/experimental/agent_loop
+copying build/lib/tests/experimental/agent_loop/test_multi_modal.py -> build/bdist.linux-x86_64/wheel/./tests/experimental/agent_loop
+copying build/lib/tests/experimental/agent_loop/test_standalone_rollout.py -> build/bdist.linux-x86_64/wheel/./tests/experimental/agent_loop
+copying build/lib/tests/experimental/agent_loop/test_tool_call_id_on_cpu.py -> build/bdist.linux-x86_64/wheel/./tests/experimental/agent_loop
+copying build/lib/tests/experimental/agent_loop/__init__.py -> build/bdist.linux-x86_64/wheel/./tests/experimental/agent_loop
+copying build/lib/tests/experimental/agent_loop/test_basic_agent_loop.py -> build/bdist.linux-x86_64/wheel/./tests/experimental/agent_loop
+copying build/lib/tests/experimental/agent_loop/function_tool_examples.py -> build/bdist.linux-x86_64/wheel/./tests/experimental/agent_loop
+copying build/lib/tests/experimental/agent_loop/test_agent_loop_extra_fields_schema_on_cpu.py -> build/bdist.linux-x86_64/wheel/./tests/experimental/agent_loop
+copying build/lib/tests/experimental/agent_loop/test_gpt_oss_tool_parser.py -> build/bdist.linux-x86_64/wheel/./tests/experimental/agent_loop
+copying build/lib/tests/experimental/agent_loop/test_qwen3_tool_parser_on_cpu.py -> build/bdist.linux-x86_64/wheel/./tests/experimental/agent_loop
+copying build/lib/tests/experimental/agent_loop/test_call_tool_on_cpu.py -> build/bdist.linux-x86_64/wheel/./tests/experimental/agent_loop
+copying build/lib/tests/experimental/agent_loop/agent_utils.py -> build/bdist.linux-x86_64/wheel/./tests/experimental/agent_loop
+creating build/bdist.linux-x86_64/wheel/tests/experimental/fully_async_policy
+copying build/lib/tests/experimental/fully_async_policy/test_async_genrm_config_on_cpu.py -> build/bdist.linux-x86_64/wheel/./tests/experimental/fully_async_policy
+copying build/lib/tests/experimental/fully_async_policy/__init__.py -> build/bdist.linux-x86_64/wheel/./tests/experimental/fully_async_policy
+copying build/lib/tests/experimental/__init__.py -> build/bdist.linux-x86_64/wheel/./tests/experimental
+creating build/bdist.linux-x86_64/wheel/tests/single_controller
+copying build/lib/tests/single_controller/test_ray_utils_on_cpu.py -> build/bdist.linux-x86_64/wheel/./tests/single_controller
+copying build/lib/tests/single_controller/test_auto_padding_on_cpu.py -> build/bdist.linux-x86_64/wheel/./tests/single_controller
+copying build/lib/tests/single_controller/test_rvdz.py -> build/bdist.linux-x86_64/wheel/./tests/single_controller
+copying build/lib/tests/single_controller/test_colocated_workers.py -> build/bdist.linux-x86_64/wheel/./tests/single_controller
+copying build/lib/tests/single_controller/test_worker_group_basics.py -> build/bdist.linux-x86_64/wheel/./tests/single_controller
+copying build/lib/tests/single_controller/test_driverfunc_to_worker.py -> build/bdist.linux-x86_64/wheel/./tests/single_controller
+copying build/lib/tests/single_controller/test_device_mesh_register.py -> build/bdist.linux-x86_64/wheel/./tests/single_controller
+copying build/lib/tests/single_controller/test_data_transfer.py -> build/bdist.linux-x86_64/wheel/./tests/single_controller
+copying build/lib/tests/single_controller/test_split_resource_pool.py -> build/bdist.linux-x86_64/wheel/./tests/single_controller
+copying build/lib/tests/single_controller/test_nested_worker.py -> build/bdist.linux-x86_64/wheel/./tests/single_controller
+copying build/lib/tests/single_controller/test_worker_group_torch.py -> build/bdist.linux-x86_64/wheel/./tests/single_controller
+copying build/lib/tests/single_controller/test_fused_workers_on_cpu.py -> build/bdist.linux-x86_64/wheel/./tests/single_controller
+copying build/lib/tests/single_controller/test_colocated_workers_fused.py -> build/bdist.linux-x86_64/wheel/./tests/single_controller
+copying build/lib/tests/single_controller/__init__.py -> build/bdist.linux-x86_64/wheel/./tests/single_controller
+copying build/lib/tests/single_controller/test_high_level_scheduling_api.py -> build/bdist.linux-x86_64/wheel/./tests/single_controller
+copying build/lib/tests/single_controller/test_ray_local_envs_on_cpu.py -> build/bdist.linux-x86_64/wheel/./tests/single_controller
+copying build/lib/tests/single_controller/test_ray_collectives.py -> build/bdist.linux-x86_64/wheel/./tests/single_controller
+copying build/lib/tests/single_controller/test_get_set_dispatch_collect_cpu.py -> build/bdist.linux-x86_64/wheel/./tests/single_controller
+copying build/lib/tests/single_controller/test_decorator_on_cpu.py -> build/bdist.linux-x86_64/wheel/./tests/single_controller
+copying build/lib/tests/test_protocol_on_cpu.py -> build/bdist.linux-x86_64/wheel/./tests
+creating build/bdist.linux-x86_64/wheel/tests/plugin
+copying build/lib/tests/plugin/test_platform_abstraction.py -> build/bdist.linux-x86_64/wheel/./tests/plugin
+copying build/lib/tests/plugin/__init__.py -> build/bdist.linux-x86_64/wheel/./tests/plugin
+creating build/bdist.linux-x86_64/wheel/tests/trainer
+copying build/lib/tests/trainer/test_multi_trajectories_advantage_on_cpu.py -> build/bdist.linux-x86_64/wheel/./tests/trainer
+creating build/bdist.linux-x86_64/wheel/tests/trainer/ppo
+copying build/lib/tests/trainer/ppo/test_rollout_moe_lb_metrics_on_cpu.py -> build/bdist.linux-x86_64/wheel/./tests/trainer/ppo
+copying build/lib/tests/trainer/ppo/test_loss_aggregation_on_cpu.py -> build/bdist.linux-x86_64/wheel/./tests/trainer/ppo
+copying build/lib/tests/trainer/ppo/test_value_loss_normalization_on_cpu.py -> build/bdist.linux-x86_64/wheel/./tests/trainer/ppo
+copying build/lib/tests/trainer/ppo/test_spec_decode_metrics_on_cpu.py -> build/bdist.linux-x86_64/wheel/./tests/trainer/ppo
+copying build/lib/tests/trainer/ppo/test_metric_utils_on_cpu.py -> build/bdist.linux-x86_64/wheel/./tests/trainer/ppo
+copying build/lib/tests/trainer/ppo/__init__.py -> build/bdist.linux-x86_64/wheel/./tests/trainer/ppo
+copying build/lib/tests/trainer/ppo/test_core_algos_on_cpu.py -> build/bdist.linux-x86_64/wheel/./tests/trainer/ppo
+copying build/lib/tests/trainer/ppo/test_dynamic_policy_losses_on_cpu.py -> build/bdist.linux-x86_64/wheel/./tests/trainer/ppo
+copying build/lib/tests/trainer/ppo/test_rollout_corr_integration.py -> build/bdist.linux-x86_64/wheel/./tests/trainer/ppo
+copying build/lib/tests/trainer/ppo/test_reinforce_pp_multiturn_on_cpu.py -> build/bdist.linux-x86_64/wheel/./tests/trainer/ppo
+copying build/lib/tests/trainer/ppo/test_rollout_corr.py -> build/bdist.linux-x86_64/wheel/./tests/trainer/ppo
+copying build/lib/tests/trainer/__init__.py -> build/bdist.linux-x86_64/wheel/./tests/trainer
+copying build/lib/tests/__init__.py -> build/bdist.linux-x86_64/wheel/./tests
+copying build/lib/tests/test_base_config_on_cpu.py -> build/bdist.linux-x86_64/wheel/./tests
+copying build/lib/tests/test_protocol_v2_on_cpu.py -> build/bdist.linux-x86_64/wheel/./tests
+creating build/bdist.linux-x86_64/wheel/verl
+copying build/lib/verl/protocol.py -> build/bdist.linux-x86_64/wheel/./verl
+creating build/bdist.linux-x86_64/wheel/verl/checkpoint_engine
+copying build/lib/verl/checkpoint_engine/nixl_checkpoint_engine.py -> build/bdist.linux-x86_64/wheel/./verl/checkpoint_engine
+copying build/lib/verl/checkpoint_engine/hccl_checkpoint_engine.py -> build/bdist.linux-x86_64/wheel/./verl/checkpoint_engine
+copying build/lib/verl/checkpoint_engine/mooncake_checkpoint_engine.py -> build/bdist.linux-x86_64/wheel/./verl/checkpoint_engine
+copying build/lib/verl/checkpoint_engine/delta_checkpoint_engine.py -> build/bdist.linux-x86_64/wheel/./verl/checkpoint_engine
+creating build/bdist.linux-x86_64/wheel/verl/checkpoint_engine/delta_sync
+copying build/lib/verl/checkpoint_engine/delta_sync/encode.py -> build/bdist.linux-x86_64/wheel/./verl/checkpoint_engine/delta_sync
+copying build/lib/verl/checkpoint_engine/delta_sync/sparse_gather.py -> build/bdist.linux-x86_64/wheel/./verl/checkpoint_engine/delta_sync
+copying build/lib/verl/checkpoint_engine/delta_sync/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/checkpoint_engine/delta_sync
+copying build/lib/verl/checkpoint_engine/kimi_checkpoint_engine.py -> build/bdist.linux-x86_64/wheel/./verl/checkpoint_engine
+copying build/lib/verl/checkpoint_engine/nccl_checkpoint_engine.py -> build/bdist.linux-x86_64/wheel/./verl/checkpoint_engine
+copying build/lib/verl/checkpoint_engine/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/checkpoint_engine
+copying build/lib/verl/checkpoint_engine/base.py -> build/bdist.linux-x86_64/wheel/./verl/checkpoint_engine
+creating build/bdist.linux-x86_64/wheel/verl/tools
+copying build/lib/verl/tools/base_tool.py -> build/bdist.linux-x86_64/wheel/./verl/tools
+copying build/lib/verl/tools/function_tool.py -> build/bdist.linux-x86_64/wheel/./verl/tools
+copying build/lib/verl/tools/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/tools
+copying build/lib/verl/tools/schemas.py -> build/bdist.linux-x86_64/wheel/./verl/tools
+copying build/lib/verl/tools/tool_registry.py -> build/bdist.linux-x86_64/wheel/./verl/tools
+creating build/bdist.linux-x86_64/wheel/verl/utils
+copying build/lib/verl/utils/model.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+copying build/lib/verl/utils/transferqueue_utils.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+creating build/bdist.linux-x86_64/wheel/verl/utils/kernel
+copying build/lib/verl/utils/kernel/linear_cross_entropy.py -> build/bdist.linux-x86_64/wheel/./verl/utils/kernel
+copying build/lib/verl/utils/kernel/kernels.py -> build/bdist.linux-x86_64/wheel/./verl/utils/kernel
+copying build/lib/verl/utils/kernel/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/utils/kernel
+copying build/lib/verl/utils/kernel/fp8_kernel.py -> build/bdist.linux-x86_64/wheel/./verl/utils/kernel
+copying build/lib/verl/utils/fp8_utils.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+copying build/lib/verl/utils/torch_functional.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+creating build/bdist.linux-x86_64/wheel/verl/utils/qat
+copying build/lib/verl/utils/qat/quantizer.py -> build/bdist.linux-x86_64/wheel/./verl/utils/qat
+copying build/lib/verl/utils/qat/vllm_patch.py -> build/bdist.linux-x86_64/wheel/./verl/utils/qat
+copying build/lib/verl/utils/qat/linear.py -> build/bdist.linux-x86_64/wheel/./verl/utils/qat
+copying build/lib/verl/utils/qat/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/utils/qat
+copying build/lib/verl/utils/qat/core.py -> build/bdist.linux-x86_64/wheel/./verl/utils/qat
+copying build/lib/verl/utils/seqlen_balancing.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+creating build/bdist.linux-x86_64/wheel/verl/utils/profiler
+copying build/lib/verl/utils/profiler/precision_debugger_profile.py -> build/bdist.linux-x86_64/wheel/./verl/utils/profiler
+copying build/lib/verl/utils/profiler/profile.py -> build/bdist.linux-x86_64/wheel/./verl/utils/profiler
+copying build/lib/verl/utils/profiler/mstx_profile.py -> build/bdist.linux-x86_64/wheel/./verl/utils/profiler
+copying build/lib/verl/utils/profiler/performance.py -> build/bdist.linux-x86_64/wheel/./verl/utils/profiler
+copying build/lib/verl/utils/profiler/nvtx_profile.py -> build/bdist.linux-x86_64/wheel/./verl/utils/profiler
+copying build/lib/verl/utils/profiler/torch_memory_profile.py -> build/bdist.linux-x86_64/wheel/./verl/utils/profiler
+copying build/lib/verl/utils/profiler/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/utils/profiler
+copying build/lib/verl/utils/profiler/config.py -> build/bdist.linux-x86_64/wheel/./verl/utils/profiler
+copying build/lib/verl/utils/profiler/empty_annotations.py -> build/bdist.linux-x86_64/wheel/./verl/utils/profiler
+copying build/lib/verl/utils/profiler/torch_profile.py -> build/bdist.linux-x86_64/wheel/./verl/utils/profiler
+copying build/lib/verl/utils/fsdp_utils.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+copying build/lib/verl/utils/tracking.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+creating build/bdist.linux-x86_64/wheel/verl/utils/trtllm
+copying build/lib/verl/utils/trtllm/trtllm_fp8_utils.py -> build/bdist.linux-x86_64/wheel/./verl/utils/trtllm
+copying build/lib/verl/utils/trtllm/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/utils/trtllm
+creating build/bdist.linux-x86_64/wheel/verl/utils/sglang
+copying build/lib/verl/utils/sglang/sglang_fp8_utils.py -> build/bdist.linux-x86_64/wheel/./verl/utils/sglang
+copying build/lib/verl/utils/sglang/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/utils/sglang
+creating build/bdist.linux-x86_64/wheel/verl/utils/veomni
+copying build/lib/verl/utils/veomni/router_replay.py -> build/bdist.linux-x86_64/wheel/./verl/utils/veomni
+copying build/lib/verl/utils/veomni/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/utils/veomni
+copying build/lib/verl/utils/ulysses.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+creating build/bdist.linux-x86_64/wheel/verl/utils/logger
+copying build/lib/verl/utils/logger/aggregate_logger.py -> build/bdist.linux-x86_64/wheel/./verl/utils/logger
+copying build/lib/verl/utils/logger/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/utils/logger
+creating build/bdist.linux-x86_64/wheel/verl/utils/experimental
+copying build/lib/verl/utils/experimental/torch_functional.py -> build/bdist.linux-x86_64/wheel/./verl/utils/experimental
+copying build/lib/verl/utils/experimental/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/utils/experimental
+copying build/lib/verl/utils/attention_utils.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+copying build/lib/verl/utils/transformers_compat.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+copying build/lib/verl/utils/tensordict_utils.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+copying build/lib/verl/utils/device.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+creating build/bdist.linux-x86_64/wheel/verl/utils/rendezvous
+copying build/lib/verl/utils/rendezvous/ray_backend.py -> build/bdist.linux-x86_64/wheel/./verl/utils/rendezvous
+copying build/lib/verl/utils/rendezvous/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/utils/rendezvous
+creating build/bdist.linux-x86_64/wheel/verl/utils/metric
+copying build/lib/verl/utils/metric/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/utils/metric
+copying build/lib/verl/utils/metric/utils.py -> build/bdist.linux-x86_64/wheel/./verl/utils/metric
+creating build/bdist.linux-x86_64/wheel/verl/utils/vllm
+copying build/lib/verl/utils/vllm/vllm_fp4_utils.py -> build/bdist.linux-x86_64/wheel/./verl/utils/vllm
+copying build/lib/verl/utils/vllm/npu_vllm_patch.py -> build/bdist.linux-x86_64/wheel/./verl/utils/vllm
+copying build/lib/verl/utils/vllm/vllm_fp8_utils.py -> build/bdist.linux-x86_64/wheel/./verl/utils/vllm
+copying build/lib/verl/utils/vllm/rocm_vllm_moe_expert_map.py -> build/bdist.linux-x86_64/wheel/./verl/utils/vllm
+copying build/lib/verl/utils/vllm/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/utils/vllm
+copying build/lib/verl/utils/vllm/vllm_quant_utils.py -> build/bdist.linux-x86_64/wheel/./verl/utils/vllm
+copying build/lib/verl/utils/vllm/patch.py -> build/bdist.linux-x86_64/wheel/./verl/utils/vllm
+copying build/lib/verl/utils/vllm/utils.py -> build/bdist.linux-x86_64/wheel/./verl/utils/vllm
+copying build/lib/verl/utils/megatron_utils.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+copying build/lib/verl/utils/distributed.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+copying build/lib/verl/utils/activation_offload.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+creating build/bdist.linux-x86_64/wheel/verl/utils/dataset
+copying build/lib/verl/utils/dataset/multiturn_sft_dataset.py -> build/bdist.linux-x86_64/wheel/./verl/utils/dataset
+copying build/lib/verl/utils/dataset/rm_dataset.py -> build/bdist.linux-x86_64/wheel/./verl/utils/dataset
+copying build/lib/verl/utils/dataset/dataset_utils.py -> build/bdist.linux-x86_64/wheel/./verl/utils/dataset
+copying build/lib/verl/utils/dataset/rl_dataset.py -> build/bdist.linux-x86_64/wheel/./verl/utils/dataset
+copying build/lib/verl/utils/dataset/vision_utils.py -> build/bdist.linux-x86_64/wheel/./verl/utils/dataset
+copying build/lib/verl/utils/dataset/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/utils/dataset
+copying build/lib/verl/utils/memory_utils.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+copying build/lib/verl/utils/dynamic_cp_scheduler.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+copying build/lib/verl/utils/fs.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+copying build/lib/verl/utils/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+copying build/lib/verl/utils/py_functional.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+creating build/bdist.linux-x86_64/wheel/verl/utils/megatron
+copying build/lib/verl/utils/megatron/router_replay_utils.py -> build/bdist.linux-x86_64/wheel/./verl/utils/megatron
+copying build/lib/verl/utils/megatron/sequence_parallel.py -> build/bdist.linux-x86_64/wheel/./verl/utils/megatron
+copying build/lib/verl/utils/megatron/pipeline_parallel.py -> build/bdist.linux-x86_64/wheel/./verl/utils/megatron
+copying build/lib/verl/utils/megatron/tensor_parallel.py -> build/bdist.linux-x86_64/wheel/./verl/utils/megatron
+copying build/lib/verl/utils/megatron/dist_checkpointing.py -> build/bdist.linux-x86_64/wheel/./verl/utils/megatron
+copying build/lib/verl/utils/megatron/memory.py -> build/bdist.linux-x86_64/wheel/./verl/utils/megatron
+copying build/lib/verl/utils/megatron/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/utils/megatron
+copying build/lib/verl/utils/megatron/optimizer.py -> build/bdist.linux-x86_64/wheel/./verl/utils/megatron
+copying build/lib/verl/utils/megatron/router_replay_patch.py -> build/bdist.linux-x86_64/wheel/./verl/utils/megatron
+copying build/lib/verl/utils/groupwise.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+creating build/bdist.linux-x86_64/wheel/verl/utils/checkpoint
+copying build/lib/verl/utils/checkpoint/fsdp_checkpoint_manager.py -> build/bdist.linux-x86_64/wheel/./verl/utils/checkpoint
+copying build/lib/verl/utils/checkpoint/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/utils/checkpoint
+copying build/lib/verl/utils/checkpoint/megatron_checkpoint_manager.py -> build/bdist.linux-x86_64/wheel/./verl/utils/checkpoint
+copying build/lib/verl/utils/checkpoint/checkpoint_manager.py -> build/bdist.linux-x86_64/wheel/./verl/utils/checkpoint
+copying build/lib/verl/utils/checkpoint/checkpoint_handler.py -> build/bdist.linux-x86_64/wheel/./verl/utils/checkpoint
+copying build/lib/verl/utils/flops_counter.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+copying build/lib/verl/utils/import_utils.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+copying build/lib/verl/utils/megatron_peft_utils.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+copying build/lib/verl/utils/hdfs_io.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+copying build/lib/verl/utils/config.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+copying build/lib/verl/utils/npu_flash_attn_utils.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+copying build/lib/verl/utils/logging_utils.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+creating build/bdist.linux-x86_64/wheel/verl/utils/debug
+copying build/lib/verl/utils/debug/trajectory_tracker.py -> build/bdist.linux-x86_64/wheel/./verl/utils/debug
+copying build/lib/verl/utils/debug/metrics.py -> build/bdist.linux-x86_64/wheel/./verl/utils/debug
+copying build/lib/verl/utils/debug/performance.py -> build/bdist.linux-x86_64/wheel/./verl/utils/debug
+copying build/lib/verl/utils/debug/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/utils/debug
+creating build/bdist.linux-x86_64/wheel/verl/utils/reward_score
+copying build/lib/verl/utils/reward_score/math_reward.py -> build/bdist.linux-x86_64/wheel/./verl/utils/reward_score
+creating build/bdist.linux-x86_64/wheel/verl/utils/reward_score/sandbox_fusion
+copying build/lib/verl/utils/reward_score/sandbox_fusion/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/utils/reward_score/sandbox_fusion
+copying build/lib/verl/utils/reward_score/sandbox_fusion/utils.py -> build/bdist.linux-x86_64/wheel/./verl/utils/reward_score/sandbox_fusion
+copying build/lib/verl/utils/reward_score/math_batch.py -> build/bdist.linux-x86_64/wheel/./verl/utils/reward_score
+copying build/lib/verl/utils/reward_score/math_verify.py -> build/bdist.linux-x86_64/wheel/./verl/utils/reward_score
+copying build/lib/verl/utils/reward_score/geo3k.py -> build/bdist.linux-x86_64/wheel/./verl/utils/reward_score
+copying build/lib/verl/utils/reward_score/search_r1_like_qa_em.py -> build/bdist.linux-x86_64/wheel/./verl/utils/reward_score
+copying build/lib/verl/utils/reward_score/math_dapo.py -> build/bdist.linux-x86_64/wheel/./verl/utils/reward_score
+copying build/lib/verl/utils/reward_score/rlla.py -> build/bdist.linux-x86_64/wheel/./verl/utils/reward_score
+copying build/lib/verl/utils/reward_score/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/utils/reward_score
+creating build/bdist.linux-x86_64/wheel/verl/utils/reward_score/prime_math
+copying build/lib/verl/utils/reward_score/prime_math/math_normalize.py -> build/bdist.linux-x86_64/wheel/./verl/utils/reward_score/prime_math
+copying build/lib/verl/utils/reward_score/prime_math/grader.py -> build/bdist.linux-x86_64/wheel/./verl/utils/reward_score/prime_math
+copying build/lib/verl/utils/reward_score/prime_math/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/utils/reward_score/prime_math
+creating build/bdist.linux-x86_64/wheel/verl/utils/reward_score/prime_code
+copying build/lib/verl/utils/reward_score/prime_code/testing_util.py -> build/bdist.linux-x86_64/wheel/./verl/utils/reward_score/prime_code
+copying build/lib/verl/utils/reward_score/prime_code/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/utils/reward_score/prime_code
+copying build/lib/verl/utils/reward_score/prime_code/utils.py -> build/bdist.linux-x86_64/wheel/./verl/utils/reward_score/prime_code
+copying build/lib/verl/utils/reward_score/gsm8k.py -> build/bdist.linux-x86_64/wheel/./verl/utils/reward_score
+copying build/lib/verl/utils/ray_utils.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+creating build/bdist.linux-x86_64/wheel/verl/utils/skip
+copying build/lib/verl/utils/skip/base_skip.py -> build/bdist.linux-x86_64/wheel/./verl/utils/skip
+copying build/lib/verl/utils/skip/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/utils/skip
+copying build/lib/verl/utils/skip/config.py -> build/bdist.linux-x86_64/wheel/./verl/utils/skip
+copying build/lib/verl/utils/skip/rollout_skip.py -> build/bdist.linux-x86_64/wheel/./verl/utils/skip
+copying build/lib/verl/utils/skip/skip_manager.py -> build/bdist.linux-x86_64/wheel/./verl/utils/skip
+copying build/lib/verl/utils/net_utils.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+creating build/bdist.linux-x86_64/wheel/verl/utils/tokenizer
+copying build/lib/verl/utils/tokenizer/chat_template.py -> build/bdist.linux-x86_64/wheel/./verl/utils/tokenizer
+copying build/lib/verl/utils/tokenizer/deepseek.py -> build/bdist.linux-x86_64/wheel/./verl/utils/tokenizer
+copying build/lib/verl/utils/tokenizer/tokenizer.py -> build/bdist.linux-x86_64/wheel/./verl/utils/tokenizer
+copying build/lib/verl/utils/tokenizer/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/utils/tokenizer
+copying build/lib/verl/utils/tokenizer/continuous_token.py -> build/bdist.linux-x86_64/wheel/./verl/utils/tokenizer
+copying build/lib/verl/utils/tokenizer/continuous_token_wiring.py -> build/bdist.linux-x86_64/wheel/./verl/utils/tokenizer
+creating build/bdist.linux-x86_64/wheel/verl/utils/modelopt
+copying build/lib/verl/utils/modelopt/vllm_modelopt_patch.py -> build/bdist.linux-x86_64/wheel/./verl/utils/modelopt
+copying build/lib/verl/utils/modelopt/qat_utils.py -> build/bdist.linux-x86_64/wheel/./verl/utils/modelopt
+copying build/lib/verl/utils/modelopt/qat_weight_exporter.py -> build/bdist.linux-x86_64/wheel/./verl/utils/modelopt
+copying build/lib/verl/utils/modelopt/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/utils/modelopt
+copying build/lib/verl/utils/modelopt/quantize.py -> build/bdist.linux-x86_64/wheel/./verl/utils/modelopt
+copying build/lib/verl/utils/torch_dtypes.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+copying build/lib/verl/utils/rollout_trace.py -> build/bdist.linux-x86_64/wheel/./verl/utils
+creating build/bdist.linux-x86_64/wheel/verl/third_party
+creating build/bdist.linux-x86_64/wheel/verl/third_party/torch
+creating build/bdist.linux-x86_64/wheel/verl/third_party/torch/distributed
+copying build/lib/verl/third_party/torch/distributed/_state_dict_utils.py -> build/bdist.linux-x86_64/wheel/./verl/third_party/torch/distributed
+copying build/lib/verl/third_party/torch/distributed/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/third_party/torch/distributed
+creating build/bdist.linux-x86_64/wheel/verl/third_party/torch/distributed/checkpoint
+copying build/lib/verl/third_party/torch/distributed/checkpoint/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/third_party/torch/distributed/checkpoint
+copying build/lib/verl/third_party/torch/distributed/checkpoint/state_dict.py -> build/bdist.linux-x86_64/wheel/./verl/third_party/torch/distributed/checkpoint
+copying build/lib/verl/third_party/torch/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/third_party/torch
+creating build/bdist.linux-x86_64/wheel/verl/third_party/vllm
+copying build/lib/verl/third_party/vllm/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/third_party/vllm
+copying build/lib/verl/third_party/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/third_party
+creating build/bdist.linux-x86_64/wheel/verl/experimental
+creating build/bdist.linux-x86_64/wheel/verl/experimental/agent_loop
+copying build/lib/verl/experimental/agent_loop/tool_parser.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/agent_loop
+copying build/lib/verl/experimental/agent_loop/tool_agent_loop.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/agent_loop
+copying build/lib/verl/experimental/agent_loop/agent_loop.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/agent_loop
+copying build/lib/verl/experimental/agent_loop/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/agent_loop
+copying build/lib/verl/experimental/agent_loop/single_turn_agent_loop.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/agent_loop
+copying build/lib/verl/experimental/agent_loop/utils.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/agent_loop
+creating build/bdist.linux-x86_64/wheel/verl/experimental/one_step_off_policy
+copying build/lib/verl/experimental/one_step_off_policy/ray_trainer.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/one_step_off_policy
+copying build/lib/verl/experimental/one_step_off_policy/main_ppo.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/one_step_off_policy
+copying build/lib/verl/experimental/one_step_off_policy/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/one_step_off_policy
+creating build/bdist.linux-x86_64/wheel/verl/experimental/one_step_off_policy/config
+copying build/lib/verl/experimental/one_step_off_policy/config/one_step_off_ppo_trainer.yaml -> build/bdist.linux-x86_64/wheel/./verl/experimental/one_step_off_policy/config
+copying build/lib/verl/experimental/one_step_off_policy/config/one_step_off_ppo_megatron_trainer.yaml -> build/bdist.linux-x86_64/wheel/./verl/experimental/one_step_off_policy/config
+creating build/bdist.linux-x86_64/wheel/verl/experimental/reward_loop
+creating build/bdist.linux-x86_64/wheel/verl/experimental/reward_loop/reward_manager
+copying build/lib/verl/experimental/reward_loop/reward_manager/dapo.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/reward_loop/reward_manager
+copying build/lib/verl/experimental/reward_loop/reward_manager/naive.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/reward_loop/reward_manager
+copying build/lib/verl/experimental/reward_loop/reward_manager/limited.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/reward_loop/reward_manager
+copying build/lib/verl/experimental/reward_loop/reward_manager/registry.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/reward_loop/reward_manager
+copying build/lib/verl/experimental/reward_loop/reward_manager/remote.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/reward_loop/reward_manager
+copying build/lib/verl/experimental/reward_loop/reward_manager/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/reward_loop/reward_manager
+copying build/lib/verl/experimental/reward_loop/reward_manager/base.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/reward_loop/reward_manager
+copying build/lib/verl/experimental/reward_loop/reward_manager/gdpo.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/reward_loop/reward_manager
+creating build/bdist.linux-x86_64/wheel/verl/experimental/reward_loop/router
+copying build/lib/verl/experimental/reward_loop/router/naive_router.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/reward_loop/router
+copying build/lib/verl/experimental/reward_loop/router/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/reward_loop/router
+copying build/lib/verl/experimental/reward_loop/router/inner_sglang_router.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/reward_loop/router
+copying build/lib/verl/experimental/reward_loop/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/reward_loop
+copying build/lib/verl/experimental/reward_loop/reward_loop.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/reward_loop
+copying build/lib/verl/experimental/reward_loop/reward_model.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/reward_loop
+creating build/bdist.linux-x86_64/wheel/verl/experimental/fully_async_policy
+creating build/bdist.linux-x86_64/wheel/verl/experimental/fully_async_policy/dynamic_schedule
+copying build/lib/verl/experimental/fully_async_policy/dynamic_schedule/static_fully_async_policy.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/fully_async_policy/dynamic_schedule
+copying build/lib/verl/experimental/fully_async_policy/dynamic_schedule/dynamic_resource_controller.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/fully_async_policy/dynamic_schedule
+copying build/lib/verl/experimental/fully_async_policy/dynamic_schedule/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/fully_async_policy/dynamic_schedule
+copying build/lib/verl/experimental/fully_async_policy/dynamic_schedule/default_policy.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/fully_async_policy/dynamic_schedule
+copying build/lib/verl/experimental/fully_async_policy/dynamic_schedule/base.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/fully_async_policy/dynamic_schedule
+copying build/lib/verl/experimental/fully_async_policy/dynamic_schedule/fixed_ratio_policy.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/fully_async_policy/dynamic_schedule
+copying build/lib/verl/experimental/fully_async_policy/fully_async_main.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/fully_async_policy
+copying build/lib/verl/experimental/fully_async_policy/fully_async_trainer.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/fully_async_policy
+copying build/lib/verl/experimental/fully_async_policy/message_queue.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/fully_async_policy
+copying build/lib/verl/experimental/fully_async_policy/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/fully_async_policy
+copying build/lib/verl/experimental/fully_async_policy/detach_utils.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/fully_async_policy
+copying build/lib/verl/experimental/fully_async_policy/fully_async_rollouter.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/fully_async_policy
+creating build/bdist.linux-x86_64/wheel/verl/experimental/fully_async_policy/config
+copying build/lib/verl/experimental/fully_async_policy/config/fully_async_ppo_megatron_trainer.yaml -> build/bdist.linux-x86_64/wheel/./verl/experimental/fully_async_policy/config
+copying build/lib/verl/experimental/fully_async_policy/config/fully_async_ppo_trainer.yaml -> build/bdist.linux-x86_64/wheel/./verl/experimental/fully_async_policy/config
+creating build/bdist.linux-x86_64/wheel/verl/experimental/fully_async_policy/unittest
+copying build/lib/verl/experimental/fully_async_policy/unittest/simple_streaming_demo.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/fully_async_policy/unittest
+copying build/lib/verl/experimental/fully_async_policy/unittest/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/fully_async_policy/unittest
+creating build/bdist.linux-x86_64/wheel/verl/experimental/teacher_loop
+copying build/lib/verl/experimental/teacher_loop/teacher_manager.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/teacher_loop
+copying build/lib/verl/experimental/teacher_loop/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/teacher_loop
+copying build/lib/verl/experimental/teacher_loop/teacher_model.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/teacher_loop
+copying build/lib/verl/experimental/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/experimental
+creating build/bdist.linux-x86_64/wheel/verl/experimental/separation
+copying build/lib/verl/experimental/separation/ray_trainer.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/separation
+copying build/lib/verl/experimental/separation/engine_workers.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/separation
+copying build/lib/verl/experimental/separation/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/separation
+copying build/lib/verl/experimental/separation/utils.py -> build/bdist.linux-x86_64/wheel/./verl/experimental/separation
+creating build/bdist.linux-x86_64/wheel/verl/single_controller
+creating build/bdist.linux-x86_64/wheel/verl/single_controller/ray
+copying build/lib/verl/single_controller/ray/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/single_controller/ray
+copying build/lib/verl/single_controller/ray/base.py -> build/bdist.linux-x86_64/wheel/./verl/single_controller/ray
+creating build/bdist.linux-x86_64/wheel/verl/single_controller/base
+copying build/lib/verl/single_controller/base/decorator.py -> build/bdist.linux-x86_64/wheel/./verl/single_controller/base
+copying build/lib/verl/single_controller/base/worker.py -> build/bdist.linux-x86_64/wheel/./verl/single_controller/base
+copying build/lib/verl/single_controller/base/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/single_controller/base
+copying build/lib/verl/single_controller/base/worker_group.py -> build/bdist.linux-x86_64/wheel/./verl/single_controller/base
+copying build/lib/verl/single_controller/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/single_controller
+creating build/bdist.linux-x86_64/wheel/verl/plugin
+creating build/bdist.linux-x86_64/wheel/verl/plugin/platform
+copying build/lib/verl/plugin/platform/platform_rocm.py -> build/bdist.linux-x86_64/wheel/./verl/plugin/platform
+copying build/lib/verl/plugin/platform/platform_manager.py -> build/bdist.linux-x86_64/wheel/./verl/plugin/platform
+copying build/lib/verl/plugin/platform/platform_cuda.py -> build/bdist.linux-x86_64/wheel/./verl/plugin/platform
+copying build/lib/verl/plugin/platform/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/plugin/platform
+copying build/lib/verl/plugin/platform/platform_base.py -> build/bdist.linux-x86_64/wheel/./verl/plugin/platform
+copying build/lib/verl/plugin/platform/platform_npu.py -> build/bdist.linux-x86_64/wheel/./verl/plugin/platform
+copying build/lib/verl/plugin/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/plugin
+creating build/bdist.linux-x86_64/wheel/verl/models
+creating build/bdist.linux-x86_64/wheel/verl/models/transformers
+copying build/lib/verl/models/transformers/npu_patch.py -> build/bdist.linux-x86_64/wheel/./verl/models/transformers
+copying build/lib/verl/models/transformers/qwen2.py -> build/bdist.linux-x86_64/wheel/./verl/models/transformers
+copying build/lib/verl/models/transformers/qwen3_vl.py -> build/bdist.linux-x86_64/wheel/./verl/models/transformers
+copying build/lib/verl/models/transformers/llama.py -> build/bdist.linux-x86_64/wheel/./verl/models/transformers
+copying build/lib/verl/models/transformers/monkey_patch.py -> build/bdist.linux-x86_64/wheel/./verl/models/transformers
+copying build/lib/verl/models/transformers/glm4v.py -> build/bdist.linux-x86_64/wheel/./verl/models/transformers
+copying build/lib/verl/models/transformers/kimi_vl.py -> build/bdist.linux-x86_64/wheel/./verl/models/transformers
+copying build/lib/verl/models/transformers/dense_common.py -> build/bdist.linux-x86_64/wheel/./verl/models/transformers
+copying build/lib/verl/models/transformers/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/models/transformers
+copying build/lib/verl/models/transformers/qwen2_vl.py -> build/bdist.linux-x86_64/wheel/./verl/models/transformers
+copying build/lib/verl/models/transformers/apertus.py -> build/bdist.linux-x86_64/wheel/./verl/models/transformers
+copying build/lib/verl/models/transformers/qwen3_5.py -> build/bdist.linux-x86_64/wheel/./verl/models/transformers
+copying build/lib/verl/models/transformers/tiled_mlp.py -> build/bdist.linux-x86_64/wheel/./verl/models/transformers
+creating build/bdist.linux-x86_64/wheel/verl/models/mcore
+copying build/lib/verl/models/mcore/model_forward.py -> build/bdist.linux-x86_64/wheel/./verl/models/mcore
+copying build/lib/verl/models/mcore/model_forward_1f1b_overlap.py -> build/bdist.linux-x86_64/wheel/./verl/models/mcore
+copying build/lib/verl/models/mcore/mtp_patch.py -> build/bdist.linux-x86_64/wheel/./verl/models/mcore
+copying build/lib/verl/models/mcore/loader.py -> build/bdist.linux-x86_64/wheel/./verl/models/mcore
+copying build/lib/verl/models/mcore/config_converter.py -> build/bdist.linux-x86_64/wheel/./verl/models/mcore
+copying build/lib/verl/models/mcore/registry.py -> build/bdist.linux-x86_64/wheel/./verl/models/mcore
+copying build/lib/verl/models/mcore/saver.py -> build/bdist.linux-x86_64/wheel/./verl/models/mcore
+copying build/lib/verl/models/mcore/model_forward_fused.py -> build/bdist.linux-x86_64/wheel/./verl/models/mcore
+copying build/lib/verl/models/mcore/weight_converter.py -> build/bdist.linux-x86_64/wheel/./verl/models/mcore
+copying build/lib/verl/models/mcore/mbridge.py -> build/bdist.linux-x86_64/wheel/./verl/models/mcore
+copying build/lib/verl/models/mcore/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/models/mcore
+copying build/lib/verl/models/mcore/util.py -> build/bdist.linux-x86_64/wheel/./verl/models/mcore
+copying build/lib/verl/models/mcore/bridge.py -> build/bdist.linux-x86_64/wheel/./verl/models/mcore
+copying build/lib/verl/models/mcore/model_initializer.py -> build/bdist.linux-x86_64/wheel/./verl/models/mcore
+copying build/lib/verl/models/mcore/patch.py -> build/bdist.linux-x86_64/wheel/./verl/models/mcore
+copying build/lib/verl/models/registry.py -> build/bdist.linux-x86_64/wheel/./verl/models
+copying build/lib/verl/models/weight_loader_registry.py -> build/bdist.linux-x86_64/wheel/./verl/models
+copying build/lib/verl/models/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/models
+creating build/bdist.linux-x86_64/wheel/verl/trainer
+copying build/lib/verl/trainer/constants_ppo.py -> build/bdist.linux-x86_64/wheel/./verl/trainer
+copying build/lib/verl/trainer/main_eval.py -> build/bdist.linux-x86_64/wheel/./verl/trainer
+copying build/lib/verl/trainer/main_ppo.py -> build/bdist.linux-x86_64/wheel/./verl/trainer
+copying build/lib/verl/trainer/sft_trainer_ray.py -> build/bdist.linux-x86_64/wheel/./verl/trainer
+creating build/bdist.linux-x86_64/wheel/verl/trainer/ppo
+copying build/lib/verl/trainer/ppo/ray_trainer.py -> build/bdist.linux-x86_64/wheel/./verl/trainer/ppo
+creating build/bdist.linux-x86_64/wheel/verl/trainer/ppo/v1
+copying build/lib/verl/trainer/ppo/v1/trainer_colocate_async.py -> build/bdist.linux-x86_64/wheel/./verl/trainer/ppo/v1
+copying build/lib/verl/trainer/ppo/v1/agent_loop_tq.py -> build/bdist.linux-x86_64/wheel/./verl/trainer/ppo/v1
+copying build/lib/verl/trainer/ppo/v1/trainer_separate_async.py -> build/bdist.linux-x86_64/wheel/./verl/trainer/ppo/v1
+copying build/lib/verl/trainer/ppo/v1/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/trainer/ppo/v1
+copying build/lib/verl/trainer/ppo/v1/replay_buffer.py -> build/bdist.linux-x86_64/wheel/./verl/trainer/ppo/v1
+copying build/lib/verl/trainer/ppo/v1/trainer_base.py -> build/bdist.linux-x86_64/wheel/./verl/trainer/ppo/v1
+copying build/lib/verl/trainer/ppo/v1/trainer_sync.py -> build/bdist.linux-x86_64/wheel/./verl/trainer/ppo/v1
+copying build/lib/verl/trainer/ppo/v1/utils.py -> build/bdist.linux-x86_64/wheel/./verl/trainer/ppo/v1
+copying build/lib/verl/trainer/ppo/prefix_grouper_utils.py -> build/bdist.linux-x86_64/wheel/./verl/trainer/ppo
+copying build/lib/verl/trainer/ppo/rollout_corr_helper.py -> build/bdist.linux-x86_64/wheel/./verl/trainer/ppo
+copying build/lib/verl/trainer/ppo/reward.py -> build/bdist.linux-x86_64/wheel/./verl/trainer/ppo
+copying build/lib/verl/trainer/ppo/metric_utils.py -> build/bdist.linux-x86_64/wheel/./verl/trainer/ppo
+copying build/lib/verl/trainer/ppo/padding_utils.py -> build/bdist.linux-x86_64/wheel/./verl/trainer/ppo
+copying build/lib/verl/trainer/ppo/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/trainer/ppo
+copying build/lib/verl/trainer/ppo/core_algos.py -> build/bdist.linux-x86_64/wheel/./verl/trainer/ppo
+copying build/lib/verl/trainer/ppo/utils.py -> build/bdist.linux-x86_64/wheel/./verl/trainer/ppo
+copying build/lib/verl/trainer/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/trainer
+creating build/bdist.linux-x86_64/wheel/verl/trainer/config
+creating build/bdist.linux-x86_64/wheel/verl/trainer/config/reward
+copying build/lib/verl/trainer/config/reward/reward.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/reward
+creating build/bdist.linux-x86_64/wheel/verl/trainer/config/profiler
+copying build/lib/verl/trainer/config/profiler/profiler.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/profiler
+copying build/lib/verl/trainer/config/ppo_trainer.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config
+copying build/lib/verl/trainer/config/_generated_ppo_trainer.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config
+copying build/lib/verl/trainer/config/algorithm.py -> build/bdist.linux-x86_64/wheel/./verl/trainer/config
+creating build/bdist.linux-x86_64/wheel/verl/trainer/config/critic
+copying build/lib/verl/trainer/config/critic/megatron_critic.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/critic
+copying build/lib/verl/trainer/config/critic/dp_critic.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/critic
+copying build/lib/verl/trainer/config/critic/mindspeed_critic.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/critic
+copying build/lib/verl/trainer/config/critic/critic.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/critic
+copying build/lib/verl/trainer/config/critic/torchtitan_critic.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/critic
+copying build/lib/verl/trainer/config/critic/veomni_critic.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/critic
+creating build/bdist.linux-x86_64/wheel/verl/trainer/config/ref
+copying build/lib/verl/trainer/config/ref/mindspeed_ref.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/ref
+copying build/lib/verl/trainer/config/ref/veomni_ref.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/ref
+copying build/lib/verl/trainer/config/ref/dp_ref.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/ref
+copying build/lib/verl/trainer/config/ref/megatron_ref.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/ref
+copying build/lib/verl/trainer/config/ref/ref.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/ref
+copying build/lib/verl/trainer/config/ref/torchtitan_ref.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/ref
+creating build/bdist.linux-x86_64/wheel/verl/trainer/config/model
+copying build/lib/verl/trainer/config/model/hf_model.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/model
+creating build/bdist.linux-x86_64/wheel/verl/trainer/config/rollout
+copying build/lib/verl/trainer/config/rollout/rollout.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/rollout
+creating build/bdist.linux-x86_64/wheel/verl/trainer/config/model_engine
+copying build/lib/verl/trainer/config/model_engine/mindspeed.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/model_engine
+copying build/lib/verl/trainer/config/model_engine/megatron.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/model_engine
+copying build/lib/verl/trainer/config/model_engine/torchtitan.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/model_engine
+copying build/lib/verl/trainer/config/model_engine/veomni.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/model_engine
+copying build/lib/verl/trainer/config/model_engine/dp.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/model_engine
+creating build/bdist.linux-x86_64/wheel/verl/trainer/config/transfer_queue
+copying build/lib/verl/trainer/config/transfer_queue/transfer_queue.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/transfer_queue
+creating build/bdist.linux-x86_64/wheel/verl/trainer/config/actor
+copying build/lib/verl/trainer/config/actor/megatron_actor.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/actor
+copying build/lib/verl/trainer/config/actor/veomni_actor.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/actor
+copying build/lib/verl/trainer/config/actor/actor.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/actor
+copying build/lib/verl/trainer/config/actor/dp_actor.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/actor
+copying build/lib/verl/trainer/config/actor/mindspeed_actor.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/actor
+copying build/lib/verl/trainer/config/actor/torchtitan_actor.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/actor
+copying build/lib/verl/trainer/config/_generated_ppo_torchtitan_trainer.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config
+creating build/bdist.linux-x86_64/wheel/verl/trainer/config/algorithm
+copying build/lib/verl/trainer/config/algorithm/rollout_correction.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/algorithm
+copying build/lib/verl/trainer/config/_generated_ppo_megatron_trainer.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config
+creating build/bdist.linux-x86_64/wheel/verl/trainer/config/npu_profile
+copying build/lib/verl/trainer/config/npu_profile/npu_profile.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/npu_profile
+copying build/lib/verl/trainer/config/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/trainer/config
+creating build/bdist.linux-x86_64/wheel/verl/trainer/config/optim
+copying build/lib/verl/trainer/config/optim/megatron.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/optim
+copying build/lib/verl/trainer/config/optim/automodel.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/optim
+copying build/lib/verl/trainer/config/optim/torchtitan.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/optim
+copying build/lib/verl/trainer/config/optim/fsdp.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/optim
+copying build/lib/verl/trainer/config/optim/veomni.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/optim
+copying build/lib/verl/trainer/config/legacy_reward_impl.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config
+copying build/lib/verl/trainer/config/evaluation.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config
+copying build/lib/verl/trainer/config/config.py -> build/bdist.linux-x86_64/wheel/./verl/trainer/config
+copying build/lib/verl/trainer/config/_generated_ppo_veomni_trainer.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config
+copying build/lib/verl/trainer/config/sft_trainer_engine.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config
+creating build/bdist.linux-x86_64/wheel/verl/trainer/config/distillation
+copying build/lib/verl/trainer/config/distillation/distillation.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/distillation
+copying build/lib/verl/trainer/config/ppo_megatron_trainer.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config
+creating build/bdist.linux-x86_64/wheel/verl/trainer/config/engine
+copying build/lib/verl/trainer/config/engine/mindspeed.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/engine
+copying build/lib/verl/trainer/config/engine/megatron.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/engine
+copying build/lib/verl/trainer/config/engine/automodel.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/engine
+copying build/lib/verl/trainer/config/engine/torchtitan.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/engine
+copying build/lib/verl/trainer/config/engine/fsdp.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/engine
+copying build/lib/verl/trainer/config/engine/veomni.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/engine
+creating build/bdist.linux-x86_64/wheel/verl/trainer/config/data
+copying build/lib/verl/trainer/config/data/legacy_data.yaml -> build/bdist.linux-x86_64/wheel/./verl/trainer/config/data
+copying build/lib/verl/trainer/main_ppo_v0.py -> build/bdist.linux-x86_64/wheel/./verl/trainer
+copying build/lib/verl/trainer/sft_trainer.py -> build/bdist.linux-x86_64/wheel/./verl/trainer
+creating build/bdist.linux-x86_64/wheel/verl/trainer/distillation
+copying build/lib/verl/trainer/distillation/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/trainer/distillation
+copying build/lib/verl/trainer/distillation/losses.py -> build/bdist.linux-x86_64/wheel/./verl/trainer/distillation
+creating build/bdist.linux-x86_64/wheel/verl/trainer/distillation/megatron
+copying build/lib/verl/trainer/distillation/megatron/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/trainer/distillation/megatron
+copying build/lib/verl/trainer/distillation/megatron/losses.py -> build/bdist.linux-x86_64/wheel/./verl/trainer/distillation/megatron
+creating build/bdist.linux-x86_64/wheel/verl/trainer/distillation/fsdp
+copying build/lib/verl/trainer/distillation/fsdp/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/trainer/distillation/fsdp
+copying build/lib/verl/trainer/distillation/fsdp/losses.py -> build/bdist.linux-x86_64/wheel/./verl/trainer/distillation/fsdp
+copying build/lib/verl/trainer/main_generation_server.py -> build/bdist.linux-x86_64/wheel/./verl/trainer
+copying build/lib/verl/__init__.py -> build/bdist.linux-x86_64/wheel/./verl
+creating build/bdist.linux-x86_64/wheel/verl/workers
+copying build/lib/verl/workers/engine_workers_tinker.py -> build/bdist.linux-x86_64/wheel/./verl/workers
+copying build/lib/verl/workers/engine_workers.py -> build/bdist.linux-x86_64/wheel/./verl/workers
+creating build/bdist.linux-x86_64/wheel/verl/workers/utils
+copying build/lib/verl/workers/utils/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/workers/utils
+copying build/lib/verl/workers/utils/losses.py -> build/bdist.linux-x86_64/wheel/./verl/workers/utils
+copying build/lib/verl/workers/utils/padding.py -> build/bdist.linux-x86_64/wheel/./verl/workers/utils
+creating build/bdist.linux-x86_64/wheel/verl/workers/reward_manager
+copying build/lib/verl/workers/reward_manager/dapo.py -> build/bdist.linux-x86_64/wheel/./verl/workers/reward_manager
+copying build/lib/verl/workers/reward_manager/naive.py -> build/bdist.linux-x86_64/wheel/./verl/workers/reward_manager
+copying build/lib/verl/workers/reward_manager/registry.py -> build/bdist.linux-x86_64/wheel/./verl/workers/reward_manager
+copying build/lib/verl/workers/reward_manager/prime.py -> build/bdist.linux-x86_64/wheel/./verl/workers/reward_manager
+copying build/lib/verl/workers/reward_manager/batch.py -> build/bdist.linux-x86_64/wheel/./verl/workers/reward_manager
+copying build/lib/verl/workers/reward_manager/abstract.py -> build/bdist.linux-x86_64/wheel/./verl/workers/reward_manager
+copying build/lib/verl/workers/reward_manager/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/workers/reward_manager
+creating build/bdist.linux-x86_64/wheel/verl/workers/rollout
+creating build/bdist.linux-x86_64/wheel/verl/workers/rollout/vllm_rollout
+copying build/lib/verl/workers/rollout/vllm_rollout/vllm_pd_replica.py -> build/bdist.linux-x86_64/wheel/./verl/workers/rollout/vllm_rollout
+copying build/lib/verl/workers/rollout/vllm_rollout/bucketed_weight_transfer.py -> build/bdist.linux-x86_64/wheel/./verl/workers/rollout/vllm_rollout
+copying build/lib/verl/workers/rollout/vllm_rollout/vllm_async_server.py -> build/bdist.linux-x86_64/wheel/./verl/workers/rollout/vllm_rollout
+copying build/lib/verl/workers/rollout/vllm_rollout/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/workers/rollout/vllm_rollout
+copying build/lib/verl/workers/rollout/vllm_rollout/vllm_rollout.py -> build/bdist.linux-x86_64/wheel/./verl/workers/rollout/vllm_rollout
+copying build/lib/verl/workers/rollout/vllm_rollout/weight_update_utils.py -> build/bdist.linux-x86_64/wheel/./verl/workers/rollout/vllm_rollout
+copying build/lib/verl/workers/rollout/vllm_rollout/utils.py -> build/bdist.linux-x86_64/wheel/./verl/workers/rollout/vllm_rollout
+creating build/bdist.linux-x86_64/wheel/verl/workers/rollout/sglang_rollout
+copying build/lib/verl/workers/rollout/sglang_rollout/delta_loader.py -> build/bdist.linux-x86_64/wheel/./verl/workers/rollout/sglang_rollout
+copying build/lib/verl/workers/rollout/sglang_rollout/http_server_engine.py -> build/bdist.linux-x86_64/wheel/./verl/workers/rollout/sglang_rollout
+copying build/lib/verl/workers/rollout/sglang_rollout/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/workers/rollout/sglang_rollout
+copying build/lib/verl/workers/rollout/sglang_rollout/sglang_pd_replica.py -> build/bdist.linux-x86_64/wheel/./verl/workers/rollout/sglang_rollout
+copying build/lib/verl/workers/rollout/sglang_rollout/sglang_rollout.py -> build/bdist.linux-x86_64/wheel/./verl/workers/rollout/sglang_rollout
+copying build/lib/verl/workers/rollout/sglang_rollout/utils.py -> build/bdist.linux-x86_64/wheel/./verl/workers/rollout/sglang_rollout
+copying build/lib/verl/workers/rollout/sglang_rollout/async_sglang_server.py -> build/bdist.linux-x86_64/wheel/./verl/workers/rollout/sglang_rollout
+copying build/lib/verl/workers/rollout/tokenizer.py -> build/bdist.linux-x86_64/wheel/./verl/workers/rollout
+creating build/bdist.linux-x86_64/wheel/verl/workers/rollout/trtllm_rollout
+copying build/lib/verl/workers/rollout/trtllm_rollout/trtllm_worker_extension.py -> build/bdist.linux-x86_64/wheel/./verl/workers/rollout/trtllm_rollout
+copying build/lib/verl/workers/rollout/trtllm_rollout/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/workers/rollout/trtllm_rollout
+copying build/lib/verl/workers/rollout/trtllm_rollout/trtllm_async_server.py -> build/bdist.linux-x86_64/wheel/./verl/workers/rollout/trtllm_rollout
+copying build/lib/verl/workers/rollout/trtllm_rollout/trtllm_rollout.py -> build/bdist.linux-x86_64/wheel/./verl/workers/rollout/trtllm_rollout
+copying build/lib/verl/workers/rollout/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/workers/rollout
+copying build/lib/verl/workers/rollout/llm_server.py -> build/bdist.linux-x86_64/wheel/./verl/workers/rollout
+copying build/lib/verl/workers/rollout/base.py -> build/bdist.linux-x86_64/wheel/./verl/workers/rollout
+copying build/lib/verl/workers/rollout/schemas.py -> build/bdist.linux-x86_64/wheel/./verl/workers/rollout
+copying build/lib/verl/workers/rollout/hf_rollout.py -> build/bdist.linux-x86_64/wheel/./verl/workers/rollout
+copying build/lib/verl/workers/rollout/replica.py -> build/bdist.linux-x86_64/wheel/./verl/workers/rollout
+creating build/bdist.linux-x86_64/wheel/verl/workers/rollout/naive
+copying build/lib/verl/workers/rollout/naive/naive_rollout.py -> build/bdist.linux-x86_64/wheel/./verl/workers/rollout/naive
+copying build/lib/verl/workers/rollout/naive/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/workers/rollout/naive
+copying build/lib/verl/workers/rollout/utils.py -> build/bdist.linux-x86_64/wheel/./verl/workers/rollout
+copying build/lib/verl/workers/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/workers
+creating build/bdist.linux-x86_64/wheel/verl/workers/config
+copying build/lib/verl/workers/config/model.py -> build/bdist.linux-x86_64/wheel/./verl/workers/config
+copying build/lib/verl/workers/config/distillation.py -> build/bdist.linux-x86_64/wheel/./verl/workers/config
+copying build/lib/verl/workers/config/engine.py -> build/bdist.linux-x86_64/wheel/./verl/workers/config
+copying build/lib/verl/workers/config/actor.py -> build/bdist.linux-x86_64/wheel/./verl/workers/config
+copying build/lib/verl/workers/config/checkpoint.py -> build/bdist.linux-x86_64/wheel/./verl/workers/config
+copying build/lib/verl/workers/config/reward.py -> build/bdist.linux-x86_64/wheel/./verl/workers/config
+copying build/lib/verl/workers/config/megatron_peft.py -> build/bdist.linux-x86_64/wheel/./verl/workers/config
+copying build/lib/verl/workers/config/disaggregation.py -> build/bdist.linux-x86_64/wheel/./verl/workers/config
+copying build/lib/verl/workers/config/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/workers/config
+copying build/lib/verl/workers/config/optimizer.py -> build/bdist.linux-x86_64/wheel/./verl/workers/config
+copying build/lib/verl/workers/config/rollout.py -> build/bdist.linux-x86_64/wheel/./verl/workers/config
+copying build/lib/verl/workers/config/critic.py -> build/bdist.linux-x86_64/wheel/./verl/workers/config
+creating build/bdist.linux-x86_64/wheel/verl/workers/engine
+creating build/bdist.linux-x86_64/wheel/verl/workers/engine/veomni
+copying build/lib/verl/workers/engine/veomni/transformer_impl.py -> build/bdist.linux-x86_64/wheel/./verl/workers/engine/veomni
+copying build/lib/verl/workers/engine/veomni/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/workers/engine/veomni
+copying build/lib/verl/workers/engine/veomni/utils.py -> build/bdist.linux-x86_64/wheel/./verl/workers/engine/veomni
+creating build/bdist.linux-x86_64/wheel/verl/workers/engine/torchtitan
+copying build/lib/verl/workers/engine/torchtitan/transformer_impl.py -> build/bdist.linux-x86_64/wheel/./verl/workers/engine/torchtitan
+copying build/lib/verl/workers/engine/torchtitan/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/workers/engine/torchtitan
+copying build/lib/verl/workers/engine/torchtitan/utils.py -> build/bdist.linux-x86_64/wheel/./verl/workers/engine/torchtitan
+creating build/bdist.linux-x86_64/wheel/verl/workers/engine/automodel
+copying build/lib/verl/workers/engine/automodel/transformer_impl.py -> build/bdist.linux-x86_64/wheel/./verl/workers/engine/automodel
+copying build/lib/verl/workers/engine/automodel/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/workers/engine/automodel
+copying build/lib/verl/workers/engine/automodel/utils.py -> build/bdist.linux-x86_64/wheel/./verl/workers/engine/automodel
+creating build/bdist.linux-x86_64/wheel/verl/workers/engine/mindspeed
+copying build/lib/verl/workers/engine/mindspeed/transformer_impl.py -> build/bdist.linux-x86_64/wheel/./verl/workers/engine/mindspeed
+copying build/lib/verl/workers/engine/mindspeed/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/workers/engine/mindspeed
+copying build/lib/verl/workers/engine/mindspeed/utils.py -> build/bdist.linux-x86_64/wheel/./verl/workers/engine/mindspeed
+copying build/lib/verl/workers/engine/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/workers/engine
+copying build/lib/verl/workers/engine/base.py -> build/bdist.linux-x86_64/wheel/./verl/workers/engine
+creating build/bdist.linux-x86_64/wheel/verl/workers/engine/megatron
+copying build/lib/verl/workers/engine/megatron/delta_export.py -> build/bdist.linux-x86_64/wheel/./verl/workers/engine/megatron
+copying build/lib/verl/workers/engine/megatron/transformer_impl.py -> build/bdist.linux-x86_64/wheel/./verl/workers/engine/megatron
+copying build/lib/verl/workers/engine/megatron/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/workers/engine/megatron
+copying build/lib/verl/workers/engine/megatron/utils.py -> build/bdist.linux-x86_64/wheel/./verl/workers/engine/megatron
+creating build/bdist.linux-x86_64/wheel/verl/workers/engine/fsdp
+copying build/lib/verl/workers/engine/fsdp/transformer_impl.py -> build/bdist.linux-x86_64/wheel/./verl/workers/engine/fsdp
+copying build/lib/verl/workers/engine/fsdp/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/workers/engine/fsdp
+copying build/lib/verl/workers/engine/fsdp/utils.py -> build/bdist.linux-x86_64/wheel/./verl/workers/engine/fsdp
+copying build/lib/verl/workers/engine/spec.py -> build/bdist.linux-x86_64/wheel/./verl/workers/engine
+copying build/lib/verl/workers/engine/utils.py -> build/bdist.linux-x86_64/wheel/./verl/workers/engine
+creating build/bdist.linux-x86_64/wheel/verl/version
+copying build/lib/verl/version/version -> build/bdist.linux-x86_64/wheel/./verl/version
+creating build/bdist.linux-x86_64/wheel/verl/model_merger
+copying build/lib/verl/model_merger/__main__.py -> build/bdist.linux-x86_64/wheel/./verl/model_merger
+copying build/lib/verl/model_merger/output_validation.py -> build/bdist.linux-x86_64/wheel/./verl/model_merger
+copying build/lib/verl/model_merger/fsdp_model_merger.py -> build/bdist.linux-x86_64/wheel/./verl/model_merger
+copying build/lib/verl/model_merger/__init__.py -> build/bdist.linux-x86_64/wheel/./verl/model_merger
+copying build/lib/verl/model_merger/megatron_model_merger.py -> build/bdist.linux-x86_64/wheel/./verl/model_merger
+copying build/lib/verl/model_merger/base_model_merger.py -> build/bdist.linux-x86_64/wheel/./verl/model_merger
+copying build/lib/verl/base_config.py -> build/bdist.linux-x86_64/wheel/./verl
+copying build/lib/verl/py.typed -> build/bdist.linux-x86_64/wheel/./verl
+creating build/bdist.linux-x86_64/wheel/scripts
+copying build/lib/scripts/migrate_megatron_checkpoint_layout.py -> build/bdist.linux-x86_64/wheel/./scripts
+copying build/lib/scripts/megatron_merge_lora.py -> build/bdist.linux-x86_64/wheel/./scripts
+copying build/lib/scripts/chat_template_checker.py -> build/bdist.linux-x86_64/wheel/./scripts
+copying build/lib/scripts/init_random_model.py -> build/bdist.linux-x86_64/wheel/./scripts
+copying build/lib/scripts/print_cfg.py -> build/bdist.linux-x86_64/wheel/./scripts
+copying build/lib/scripts/rollout_viewer.py -> build/bdist.linux-x86_64/wheel/./scripts
+copying build/lib/scripts/legacy_model_merger.py -> build/bdist.linux-x86_64/wheel/./scripts
+copying build/lib/scripts/__init__.py -> build/bdist.linux-x86_64/wheel/./scripts
+copying build/lib/scripts/chat_template_mock_trajectories.py -> build/bdist.linux-x86_64/wheel/./scripts
+copying build/lib/scripts/diagnose.py -> build/bdist.linux-x86_64/wheel/./scripts
+copying build/lib/scripts/converter_hf_to_mcore.py -> build/bdist.linux-x86_64/wheel/./scripts
+running install_egg_info
+Copying verl.egg-info to build/bdist.linux-x86_64/wheel/./verl-0.9.0-py3.12.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/verl-0.9.0.dist-info/WHEEL
+creating '/data/WSH/medical-post-train-artifacts/wheels/.tmp-xqy2obvf/verl-0.9.0-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'scripts/__init__.py'
+adding 'scripts/chat_template_checker.py'
+adding 'scripts/chat_template_mock_trajectories.py'
+adding 'scripts/converter_hf_to_mcore.py'
+adding 'scripts/diagnose.py'
+adding 'scripts/init_random_model.py'
+adding 'scripts/legacy_model_merger.py'
+adding 'scripts/megatron_merge_lora.py'
+adding 'scripts/migrate_megatron_checkpoint_layout.py'
+adding 'scripts/print_cfg.py'
+adding 'scripts/rollout_viewer.py'
+adding 'tests/__init__.py'
+adding 'tests/test_base_config_on_cpu.py'
+adding 'tests/test_protocol_on_cpu.py'
+adding 'tests/test_protocol_v2_on_cpu.py'
+adding 'tests/checkpoint_engine/__init__.py'
+adding 'tests/checkpoint_engine/test_block_placement.py'
+adding 'tests/checkpoint_engine/test_correctness_on_gpu.py'
+adding 'tests/checkpoint_engine/test_correctness_on_npu.py'
+adding 'tests/checkpoint_engine/test_fsdp_lora_only_checkpoint_on_cpu.py'
+adding 'tests/checkpoint_engine/test_global_steps_on_cpu.py'
+adding 'tests/checkpoint_engine/test_sglang_loader.py'
+adding 'tests/checkpoint_engine/test_sharded_delta.py'
+adding 'tests/checkpoint_engine/test_special_server_adapter.py'
+adding 'tests/checkpoint_engine/test_utils.py'
+adding 'tests/experimental/__init__.py'
+adding 'tests/experimental/agent_loop/__init__.py'
+adding 'tests/experimental/agent_loop/agent_utils.py'
+adding 'tests/experimental/agent_loop/function_tool_examples.py'
+adding 'tests/experimental/agent_loop/test_agent_loop_extra_fields_schema_on_cpu.py'
+adding 'tests/experimental/agent_loop/test_audio_server_contract_on_cpu.py'
+adding 'tests/experimental/agent_loop/test_basic_agent_loop.py'
+adding 'tests/experimental/agent_loop/test_call_tool_on_cpu.py'
+adding 'tests/experimental/agent_loop/test_gpt_oss_tool_parser.py'
+adding 'tests/experimental/agent_loop/test_multi_modal.py'
+adding 'tests/experimental/agent_loop/test_multimodal_position_ids_on_cpu.py'
+adding 'tests/experimental/agent_loop/test_qwen3_tool_parser_on_cpu.py'
+adding 'tests/experimental/agent_loop/test_standalone_rollout.py'
+adding 'tests/experimental/agent_loop/test_tool_call_id_on_cpu.py'
+adding 'tests/experimental/fully_async_policy/__init__.py'
+adding 'tests/experimental/fully_async_policy/test_async_genrm_config_on_cpu.py'
+adding 'tests/plugin/__init__.py'
+adding 'tests/plugin/test_platform_abstraction.py'
+adding 'tests/single_controller/__init__.py'
+adding 'tests/single_controller/test_auto_padding_on_cpu.py'
+adding 'tests/single_controller/test_colocated_workers.py'
+adding 'tests/single_controller/test_colocated_workers_fused.py'
+adding 'tests/single_controller/test_data_transfer.py'
+adding 'tests/single_controller/test_decorator_on_cpu.py'
+adding 'tests/single_controller/test_device_mesh_register.py'
+adding 'tests/single_controller/test_driverfunc_to_worker.py'
+adding 'tests/single_controller/test_fused_workers_on_cpu.py'
+adding 'tests/single_controller/test_get_set_dispatch_collect_cpu.py'
+adding 'tests/single_controller/test_high_level_scheduling_api.py'
+adding 'tests/single_controller/test_nested_worker.py'
+adding 'tests/single_controller/test_ray_collectives.py'
+adding 'tests/single_controller/test_ray_local_envs_on_cpu.py'
+adding 'tests/single_controller/test_ray_utils_on_cpu.py'
+adding 'tests/single_controller/test_rvdz.py'
+adding 'tests/single_controller/test_split_resource_pool.py'
+adding 'tests/single_controller/test_worker_group_basics.py'
+adding 'tests/single_controller/test_worker_group_torch.py'
+adding 'tests/special_e2e/__init__.py'
+adding 'tests/special_e2e/check_custom_rwd_fn.py'
+adding 'tests/special_e2e/check_results.py'
+adding 'tests/special_e2e/envs/__init__.py'
+adding 'tests/special_e2e/envs/digit_completion/__init__.py'
+adding 'tests/special_e2e/envs/digit_completion/task.py'
+adding 'tests/special_e2e/envs/digit_completion/tokenizer.py'
+adding 'tests/tools/__init__.py'
+adding 'tests/tools/_stub_search_tools.py'
+adding 'tests/tools/test_function_tool_on_cpu.py'
+adding 'tests/tools/test_mixed_tools_on_cpu.py'
+adding 'tests/trainer/__init__.py'
+adding 'tests/trainer/test_multi_trajectories_advantage_on_cpu.py'
+adding 'tests/trainer/ppo/__init__.py'
+adding 'tests/trainer/ppo/test_core_algos_on_cpu.py'
+adding 'tests/trainer/ppo/test_dynamic_policy_losses_on_cpu.py'
+adding 'tests/trainer/ppo/test_loss_aggregation_on_cpu.py'
+adding 'tests/trainer/ppo/test_metric_utils_on_cpu.py'
+adding 'tests/trainer/ppo/test_reinforce_pp_multiturn_on_cpu.py'
+adding 'tests/trainer/ppo/test_rollout_corr.py'
+adding 'tests/trainer/ppo/test_rollout_corr_integration.py'
+adding 'tests/trainer/ppo/test_rollout_moe_lb_metrics_on_cpu.py'
+adding 'tests/trainer/ppo/test_spec_decode_metrics_on_cpu.py'
+adding 'tests/trainer/ppo/test_value_loss_normalization_on_cpu.py'
+adding 'verl/__init__.py'
+adding 'verl/base_config.py'
+adding 'verl/protocol.py'
+adding 'verl/py.typed'
+adding 'verl/checkpoint_engine/__init__.py'
+adding 'verl/checkpoint_engine/base.py'
+adding 'verl/checkpoint_engine/delta_checkpoint_engine.py'
+adding 'verl/checkpoint_engine/hccl_checkpoint_engine.py'
+adding 'verl/checkpoint_engine/kimi_checkpoint_engine.py'
+adding 'verl/checkpoint_engine/mooncake_checkpoint_engine.py'
+adding 'verl/checkpoint_engine/nccl_checkpoint_engine.py'
+adding 'verl/checkpoint_engine/nixl_checkpoint_engine.py'
+adding 'verl/checkpoint_engine/delta_sync/__init__.py'
+adding 'verl/checkpoint_engine/delta_sync/encode.py'
+adding 'verl/checkpoint_engine/delta_sync/sparse_gather.py'
+adding 'verl/experimental/__init__.py'
+adding 'verl/experimental/agent_loop/__init__.py'
+adding 'verl/experimental/agent_loop/agent_loop.py'
+adding 'verl/experimental/agent_loop/single_turn_agent_loop.py'
+adding 'verl/experimental/agent_loop/tool_agent_loop.py'
+adding 'verl/experimental/agent_loop/tool_parser.py'
+adding 'verl/experimental/agent_loop/utils.py'
+adding 'verl/experimental/fully_async_policy/__init__.py'
+adding 'verl/experimental/fully_async_policy/detach_utils.py'
+adding 'verl/experimental/fully_async_policy/fully_async_main.py'
+adding 'verl/experimental/fully_async_policy/fully_async_rollouter.py'
+adding 'verl/experimental/fully_async_policy/fully_async_trainer.py'
+adding 'verl/experimental/fully_async_policy/message_queue.py'
+adding 'verl/experimental/fully_async_policy/config/fully_async_ppo_megatron_trainer.yaml'
+adding 'verl/experimental/fully_async_policy/config/fully_async_ppo_trainer.yaml'
+adding 'verl/experimental/fully_async_policy/dynamic_schedule/__init__.py'
+adding 'verl/experimental/fully_async_policy/dynamic_schedule/base.py'
+adding 'verl/experimental/fully_async_policy/dynamic_schedule/default_policy.py'
+adding 'verl/experimental/fully_async_policy/dynamic_schedule/dynamic_resource_controller.py'
+adding 'verl/experimental/fully_async_policy/dynamic_schedule/fixed_ratio_policy.py'
+adding 'verl/experimental/fully_async_policy/dynamic_schedule/static_fully_async_policy.py'
+adding 'verl/experimental/fully_async_policy/unittest/__init__.py'
+adding 'verl/experimental/fully_async_policy/unittest/simple_streaming_demo.py'
+adding 'verl/experimental/one_step_off_policy/__init__.py'
+adding 'verl/experimental/one_step_off_policy/main_ppo.py'
+adding 'verl/experimental/one_step_off_policy/ray_trainer.py'
+adding 'verl/experimental/one_step_off_policy/config/one_step_off_ppo_megatron_trainer.yaml'
+adding 'verl/experimental/one_step_off_policy/config/one_step_off_ppo_trainer.yaml'
+adding 'verl/experimental/reward_loop/__init__.py'
+adding 'verl/experimental/reward_loop/reward_loop.py'
+adding 'verl/experimental/reward_loop/reward_model.py'
+adding 'verl/experimental/reward_loop/reward_manager/__init__.py'
+adding 'verl/experimental/reward_loop/reward_manager/base.py'
+adding 'verl/experimental/reward_loop/reward_manager/dapo.py'
+adding 'verl/experimental/reward_loop/reward_manager/gdpo.py'
+adding 'verl/experimental/reward_loop/reward_manager/limited.py'
+adding 'verl/experimental/reward_loop/reward_manager/naive.py'
+adding 'verl/experimental/reward_loop/reward_manager/registry.py'
+adding 'verl/experimental/reward_loop/reward_manager/remote.py'
+adding 'verl/experimental/reward_loop/router/__init__.py'
+adding 'verl/experimental/reward_loop/router/inner_sglang_router.py'
+adding 'verl/experimental/reward_loop/router/naive_router.py'
+adding 'verl/experimental/separation/__init__.py'
+adding 'verl/experimental/separation/engine_workers.py'
+adding 'verl/experimental/separation/ray_trainer.py'
+adding 'verl/experimental/separation/utils.py'
+adding 'verl/experimental/teacher_loop/__init__.py'
+adding 'verl/experimental/teacher_loop/teacher_manager.py'
+adding 'verl/experimental/teacher_loop/teacher_model.py'
+adding 'verl/model_merger/__init__.py'
+adding 'verl/model_merger/__main__.py'
+adding 'verl/model_merger/base_model_merger.py'
+adding 'verl/model_merger/fsdp_model_merger.py'
+adding 'verl/model_merger/megatron_model_merger.py'
+adding 'verl/model_merger/output_validation.py'
+adding 'verl/models/__init__.py'
+adding 'verl/models/registry.py'
+adding 'verl/models/weight_loader_registry.py'
+adding 'verl/models/mcore/__init__.py'
+adding 'verl/models/mcore/bridge.py'
+adding 'verl/models/mcore/config_converter.py'
+adding 'verl/models/mcore/loader.py'
+adding 'verl/models/mcore/mbridge.py'
+adding 'verl/models/mcore/model_forward.py'
+adding 'verl/models/mcore/model_forward_1f1b_overlap.py'
+adding 'verl/models/mcore/model_forward_fused.py'
+adding 'verl/models/mcore/model_initializer.py'
+adding 'verl/models/mcore/mtp_patch.py'
+adding 'verl/models/mcore/patch.py'
+adding 'verl/models/mcore/registry.py'
+adding 'verl/models/mcore/saver.py'
+adding 'verl/models/mcore/util.py'
+adding 'verl/models/mcore/weight_converter.py'
+adding 'verl/models/transformers/__init__.py'
+adding 'verl/models/transformers/apertus.py'
+adding 'verl/models/transformers/dense_common.py'
+adding 'verl/models/transformers/glm4v.py'
+adding 'verl/models/transformers/kimi_vl.py'
+adding 'verl/models/transformers/llama.py'
+adding 'verl/models/transformers/monkey_patch.py'
+adding 'verl/models/transformers/npu_patch.py'
+adding 'verl/models/transformers/qwen2.py'
+adding 'verl/models/transformers/qwen2_vl.py'
+adding 'verl/models/transformers/qwen3_5.py'
+adding 'verl/models/transformers/qwen3_vl.py'
+adding 'verl/models/transformers/tiled_mlp.py'
+adding 'verl/plugin/__init__.py'
+adding 'verl/plugin/platform/__init__.py'
+adding 'verl/plugin/platform/platform_base.py'
+adding 'verl/plugin/platform/platform_cuda.py'
+adding 'verl/plugin/platform/platform_manager.py'
+adding 'verl/plugin/platform/platform_npu.py'
+adding 'verl/plugin/platform/platform_rocm.py'
+adding 'verl/single_controller/__init__.py'
+adding 'verl/single_controller/base/__init__.py'
+adding 'verl/single_controller/base/decorator.py'
+adding 'verl/single_controller/base/worker.py'
+adding 'verl/single_controller/base/worker_group.py'
+adding 'verl/single_controller/ray/__init__.py'
+adding 'verl/single_controller/ray/base.py'
+adding 'verl/third_party/__init__.py'
+adding 'verl/third_party/torch/__init__.py'
+adding 'verl/third_party/torch/distributed/__init__.py'
+adding 'verl/third_party/torch/distributed/_state_dict_utils.py'
+adding 'verl/third_party/torch/distributed/checkpoint/__init__.py'
+adding 'verl/third_party/torch/distributed/checkpoint/state_dict.py'
+adding 'verl/third_party/vllm/__init__.py'
+adding 'verl/tools/__init__.py'
+adding 'verl/tools/base_tool.py'
+adding 'verl/tools/function_tool.py'
+adding 'verl/tools/schemas.py'
+adding 'verl/tools/tool_registry.py'
+adding 'verl/trainer/__init__.py'
+adding 'verl/trainer/constants_ppo.py'
+adding 'verl/trainer/main_eval.py'
+adding 'verl/trainer/main_generation_server.py'
+adding 'verl/trainer/main_ppo.py'
+adding 'verl/trainer/main_ppo_v0.py'
+adding 'verl/trainer/sft_trainer.py'
+adding 'verl/trainer/sft_trainer_ray.py'
+adding 'verl/trainer/config/__init__.py'
+adding 'verl/trainer/config/_generated_ppo_megatron_trainer.yaml'
+adding 'verl/trainer/config/_generated_ppo_torchtitan_trainer.yaml'
+adding 'verl/trainer/config/_generated_ppo_trainer.yaml'
+adding 'verl/trainer/config/_generated_ppo_veomni_trainer.yaml'
+adding 'verl/trainer/config/algorithm.py'
+adding 'verl/trainer/config/config.py'
+adding 'verl/trainer/config/evaluation.yaml'
+adding 'verl/trainer/config/legacy_reward_impl.yaml'
+adding 'verl/trainer/config/ppo_megatron_trainer.yaml'
+adding 'verl/trainer/config/ppo_trainer.yaml'
+adding 'verl/trainer/config/sft_trainer_engine.yaml'
+adding 'verl/trainer/config/actor/actor.yaml'
+adding 'verl/trainer/config/actor/dp_actor.yaml'
+adding 'verl/trainer/config/actor/megatron_actor.yaml'
+adding 'verl/trainer/config/actor/mindspeed_actor.yaml'
+adding 'verl/trainer/config/actor/torchtitan_actor.yaml'
+adding 'verl/trainer/config/actor/veomni_actor.yaml'
+adding 'verl/trainer/config/algorithm/rollout_correction.yaml'
+adding 'verl/trainer/config/critic/critic.yaml'
+adding 'verl/trainer/config/critic/dp_critic.yaml'
+adding 'verl/trainer/config/critic/megatron_critic.yaml'
+adding 'verl/trainer/config/critic/mindspeed_critic.yaml'
+adding 'verl/trainer/config/critic/torchtitan_critic.yaml'
+adding 'verl/trainer/config/critic/veomni_critic.yaml'
+adding 'verl/trainer/config/data/legacy_data.yaml'
+adding 'verl/trainer/config/distillation/distillation.yaml'
+adding 'verl/trainer/config/engine/automodel.yaml'
+adding 'verl/trainer/config/engine/fsdp.yaml'
+adding 'verl/trainer/config/engine/megatron.yaml'
+adding 'verl/trainer/config/engine/mindspeed.yaml'
+adding 'verl/trainer/config/engine/torchtitan.yaml'
+adding 'verl/trainer/config/engine/veomni.yaml'
+adding 'verl/trainer/config/model/hf_model.yaml'
+adding 'verl/trainer/config/model_engine/dp.yaml'
+adding 'verl/trainer/config/model_engine/megatron.yaml'
+adding 'verl/trainer/config/model_engine/mindspeed.yaml'
+adding 'verl/trainer/config/model_engine/torchtitan.yaml'
+adding 'verl/trainer/config/model_engine/veomni.yaml'
+adding 'verl/trainer/config/npu_profile/npu_profile.yaml'
+adding 'verl/trainer/config/optim/automodel.yaml'
+adding 'verl/trainer/config/optim/fsdp.yaml'
+adding 'verl/trainer/config/optim/megatron.yaml'
+adding 'verl/trainer/config/optim/torchtitan.yaml'
+adding 'verl/trainer/config/optim/veomni.yaml'
+adding 'verl/trainer/config/profiler/profiler.yaml'
+adding 'verl/trainer/config/ref/dp_ref.yaml'
+adding 'verl/trainer/config/ref/megatron_ref.yaml'
+adding 'verl/trainer/config/ref/mindspeed_ref.yaml'
+adding 'verl/trainer/config/ref/ref.yaml'
+adding 'verl/trainer/config/ref/torchtitan_ref.yaml'
+adding 'verl/trainer/config/ref/veomni_ref.yaml'
+adding 'verl/trainer/config/reward/reward.yaml'
+adding 'verl/trainer/config/rollout/rollout.yaml'
+adding 'verl/trainer/config/transfer_queue/transfer_queue.yaml'
+adding 'verl/trainer/distillation/__init__.py'
+adding 'verl/trainer/distillation/losses.py'
+adding 'verl/trainer/distillation/fsdp/__init__.py'
+adding 'verl/trainer/distillation/fsdp/losses.py'
+adding 'verl/trainer/distillation/megatron/__init__.py'
+adding 'verl/trainer/distillation/megatron/losses.py'
+adding 'verl/trainer/ppo/__init__.py'
+adding 'verl/trainer/ppo/core_algos.py'
+adding 'verl/trainer/ppo/metric_utils.py'
+adding 'verl/trainer/ppo/padding_utils.py'
+adding 'verl/trainer/ppo/prefix_grouper_utils.py'
+adding 'verl/trainer/ppo/ray_trainer.py'
+adding 'verl/trainer/ppo/reward.py'
+adding 'verl/trainer/ppo/rollout_corr_helper.py'
+adding 'verl/trainer/ppo/utils.py'
+adding 'verl/trainer/ppo/v1/__init__.py'
+adding 'verl/trainer/ppo/v1/agent_loop_tq.py'
+adding 'verl/trainer/ppo/v1/replay_buffer.py'
+adding 'verl/trainer/ppo/v1/trainer_base.py'
+adding 'verl/trainer/ppo/v1/trainer_colocate_async.py'
+adding 'verl/trainer/ppo/v1/trainer_separate_async.py'
+adding 'verl/trainer/ppo/v1/trainer_sync.py'
+adding 'verl/trainer/ppo/v1/utils.py'
+adding 'verl/utils/__init__.py'
+adding 'verl/utils/activation_offload.py'
+adding 'verl/utils/attention_utils.py'
+adding 'verl/utils/config.py'
+adding 'verl/utils/device.py'
+adding 'verl/utils/distributed.py'
+adding 'verl/utils/dynamic_cp_scheduler.py'
+adding 'verl/utils/flops_counter.py'
+adding 'verl/utils/fp8_utils.py'
+adding 'verl/utils/fs.py'
+adding 'verl/utils/fsdp_utils.py'
+adding 'verl/utils/groupwise.py'
+adding 'verl/utils/hdfs_io.py'
+adding 'verl/utils/import_utils.py'
+adding 'verl/utils/logging_utils.py'
+adding 'verl/utils/megatron_peft_utils.py'
+adding 'verl/utils/megatron_utils.py'
+adding 'verl/utils/memory_utils.py'
+adding 'verl/utils/model.py'
+adding 'verl/utils/net_utils.py'
+adding 'verl/utils/npu_flash_attn_utils.py'
+adding 'verl/utils/py_functional.py'
+adding 'verl/utils/ray_utils.py'
+adding 'verl/utils/rollout_trace.py'
+adding 'verl/utils/seqlen_balancing.py'
+adding 'verl/utils/tensordict_utils.py'
+adding 'verl/utils/torch_dtypes.py'
+adding 'verl/utils/torch_functional.py'
+adding 'verl/utils/tracking.py'
+adding 'verl/utils/transferqueue_utils.py'
+adding 'verl/utils/transformers_compat.py'
+adding 'verl/utils/ulysses.py'
+adding 'verl/utils/checkpoint/__init__.py'
+adding 'verl/utils/checkpoint/checkpoint_handler.py'
+adding 'verl/utils/checkpoint/checkpoint_manager.py'
+adding 'verl/utils/checkpoint/fsdp_checkpoint_manager.py'
+adding 'verl/utils/checkpoint/megatron_checkpoint_manager.py'
+adding 'verl/utils/dataset/__init__.py'
+adding 'verl/utils/dataset/dataset_utils.py'
+adding 'verl/utils/dataset/multiturn_sft_dataset.py'
+adding 'verl/utils/dataset/rl_dataset.py'
+adding 'verl/utils/dataset/rm_dataset.py'
+adding 'verl/utils/dataset/vision_utils.py'
+adding 'verl/utils/debug/__init__.py'
+adding 'verl/utils/debug/metrics.py'
+adding 'verl/utils/debug/performance.py'
+adding 'verl/utils/debug/trajectory_tracker.py'
+adding 'verl/utils/experimental/__init__.py'
+adding 'verl/utils/experimental/torch_functional.py'
+adding 'verl/utils/kernel/__init__.py'
+adding 'verl/utils/kernel/fp8_kernel.py'
+adding 'verl/utils/kernel/kernels.py'
+adding 'verl/utils/kernel/linear_cross_entropy.py'
+adding 'verl/utils/logger/__init__.py'
+adding 'verl/utils/logger/aggregate_logger.py'
+adding 'verl/utils/megatron/__init__.py'
+adding 'verl/utils/megatron/dist_checkpointing.py'
+adding 'verl/utils/megatron/memory.py'
+adding 'verl/utils/megatron/optimizer.py'
+adding 'verl/utils/megatron/pipeline_parallel.py'
+adding 'verl/utils/megatron/router_replay_patch.py'
+adding 'verl/utils/megatron/router_replay_utils.py'
+adding 'verl/utils/megatron/sequence_parallel.py'
+adding 'verl/utils/megatron/tensor_parallel.py'
+adding 'verl/utils/metric/__init__.py'
+adding 'verl/utils/metric/utils.py'
+adding 'verl/utils/modelopt/__init__.py'
+adding 'verl/utils/modelopt/qat_utils.py'
+adding 'verl/utils/modelopt/qat_weight_exporter.py'
+adding 'verl/utils/modelopt/quantize.py'
+adding 'verl/utils/modelopt/vllm_modelopt_patch.py'
+adding 'verl/utils/profiler/__init__.py'
+adding 'verl/utils/profiler/config.py'
+adding 'verl/utils/profiler/empty_annotations.py'
+adding 'verl/utils/profiler/mstx_profile.py'
+adding 'verl/utils/profiler/nvtx_profile.py'
+adding 'verl/utils/profiler/performance.py'
+adding 'verl/utils/profiler/precision_debugger_profile.py'
+adding 'verl/utils/profiler/profile.py'
+adding 'verl/utils/profiler/torch_memory_profile.py'
+adding 'verl/utils/profiler/torch_profile.py'
+adding 'verl/utils/qat/__init__.py'
+adding 'verl/utils/qat/core.py'
+adding 'verl/utils/qat/linear.py'
+adding 'verl/utils/qat/quantizer.py'
+adding 'verl/utils/qat/vllm_patch.py'
+adding 'verl/utils/rendezvous/__init__.py'
+adding 'verl/utils/rendezvous/ray_backend.py'
+adding 'verl/utils/reward_score/__init__.py'
+adding 'verl/utils/reward_score/geo3k.py'
+adding 'verl/utils/reward_score/gsm8k.py'
+adding 'verl/utils/reward_score/math_batch.py'
+adding 'verl/utils/reward_score/math_dapo.py'
+adding 'verl/utils/reward_score/math_reward.py'
+adding 'verl/utils/reward_score/math_verify.py'
+adding 'verl/utils/reward_score/rlla.py'
+adding 'verl/utils/reward_score/search_r1_like_qa_em.py'
+adding 'verl/utils/reward_score/prime_code/__init__.py'
+adding 'verl/utils/reward_score/prime_code/testing_util.py'
+adding 'verl/utils/reward_score/prime_code/utils.py'
+adding 'verl/utils/reward_score/prime_math/__init__.py'
+adding 'verl/utils/reward_score/prime_math/grader.py'
+adding 'verl/utils/reward_score/prime_math/math_normalize.py'
+adding 'verl/utils/reward_score/sandbox_fusion/__init__.py'
+adding 'verl/utils/reward_score/sandbox_fusion/utils.py'
+adding 'verl/utils/sglang/__init__.py'
+adding 'verl/utils/sglang/sglang_fp8_utils.py'
+adding 'verl/utils/skip/__init__.py'
+adding 'verl/utils/skip/base_skip.py'
+adding 'verl/utils/skip/config.py'
+adding 'verl/utils/skip/rollout_skip.py'
+adding 'verl/utils/skip/skip_manager.py'
+adding 'verl/utils/tokenizer/__init__.py'
+adding 'verl/utils/tokenizer/chat_template.py'
+adding 'verl/utils/tokenizer/continuous_token.py'
+adding 'verl/utils/tokenizer/continuous_token_wiring.py'
+adding 'verl/utils/tokenizer/deepseek.py'
+adding 'verl/utils/tokenizer/tokenizer.py'
+adding 'verl/utils/trtllm/__init__.py'
+adding 'verl/utils/trtllm/trtllm_fp8_utils.py'
+adding 'verl/utils/veomni/__init__.py'
+adding 'verl/utils/veomni/router_replay.py'
+adding 'verl/utils/vllm/__init__.py'
+adding 'verl/utils/vllm/npu_vllm_patch.py'
+adding 'verl/utils/vllm/patch.py'
+adding 'verl/utils/vllm/rocm_vllm_moe_expert_map.py'
+adding 'verl/utils/vllm/utils.py'
+adding 'verl/utils/vllm/vllm_fp4_utils.py'
+adding 'verl/utils/vllm/vllm_fp8_utils.py'
+adding 'verl/utils/vllm/vllm_quant_utils.py'
+adding 'verl/version/version'
+adding 'verl/workers/__init__.py'
+adding 'verl/workers/engine_workers.py'
+adding 'verl/workers/engine_workers_tinker.py'
+adding 'verl/workers/config/__init__.py'
+adding 'verl/workers/config/actor.py'
+adding 'verl/workers/config/checkpoint.py'
+adding 'verl/workers/config/critic.py'
+adding 'verl/workers/config/disaggregation.py'
+adding 'verl/workers/config/distillation.py'
+adding 'verl/workers/config/engine.py'
+adding 'verl/workers/config/megatron_peft.py'
+adding 'verl/workers/config/model.py'
+adding 'verl/workers/config/optimizer.py'
+adding 'verl/workers/config/reward.py'
+adding 'verl/workers/config/rollout.py'
+adding 'verl/workers/engine/__init__.py'
+adding 'verl/workers/engine/base.py'
+adding 'verl/workers/engine/spec.py'
+adding 'verl/workers/engine/utils.py'
+adding 'verl/workers/engine/automodel/__init__.py'
+adding 'verl/workers/engine/automodel/transformer_impl.py'
+adding 'verl/workers/engine/automodel/utils.py'
+adding 'verl/workers/engine/fsdp/__init__.py'
+adding 'verl/workers/engine/fsdp/transformer_impl.py'
+adding 'verl/workers/engine/fsdp/utils.py'
+adding 'verl/workers/engine/megatron/__init__.py'
+adding 'verl/workers/engine/megatron/delta_export.py'
+adding 'verl/workers/engine/megatron/transformer_impl.py'
+adding 'verl/workers/engine/megatron/utils.py'
+adding 'verl/workers/engine/mindspeed/__init__.py'
+adding 'verl/workers/engine/mindspeed/transformer_impl.py'
+adding 'verl/workers/engine/mindspeed/utils.py'
+adding 'verl/workers/engine/torchtitan/__init__.py'
+adding 'verl/workers/engine/torchtitan/transformer_impl.py'
+adding 'verl/workers/engine/torchtitan/utils.py'
+adding 'verl/workers/engine/veomni/__init__.py'
+adding 'verl/workers/engine/veomni/transformer_impl.py'
+adding 'verl/workers/engine/veomni/utils.py'
+adding 'verl/workers/reward_manager/__init__.py'
+adding 'verl/workers/reward_manager/abstract.py'
+adding 'verl/workers/reward_manager/batch.py'
+adding 'verl/workers/reward_manager/dapo.py'
+adding 'verl/workers/reward_manager/naive.py'
+adding 'verl/workers/reward_manager/prime.py'
+adding 'verl/workers/reward_manager/registry.py'
+adding 'verl/workers/rollout/__init__.py'
+adding 'verl/workers/rollout/base.py'
+adding 'verl/workers/rollout/hf_rollout.py'
+adding 'verl/workers/rollout/llm_server.py'
+adding 'verl/workers/rollout/replica.py'
+adding 'verl/workers/rollout/schemas.py'
+adding 'verl/workers/rollout/tokenizer.py'
+adding 'verl/workers/rollout/utils.py'
+adding 'verl/workers/rollout/naive/__init__.py'
+adding 'verl/workers/rollout/naive/naive_rollout.py'
+adding 'verl/workers/rollout/sglang_rollout/__init__.py'
+adding 'verl/workers/rollout/sglang_rollout/async_sglang_server.py'
+adding 'verl/workers/rollout/sglang_rollout/delta_loader.py'
+adding 'verl/workers/rollout/sglang_rollout/http_server_engine.py'
+adding 'verl/workers/rollout/sglang_rollout/sglang_pd_replica.py'
+adding 'verl/workers/rollout/sglang_rollout/sglang_rollout.py'
+adding 'verl/workers/rollout/sglang_rollout/utils.py'
+adding 'verl/workers/rollout/trtllm_rollout/__init__.py'
+adding 'verl/workers/rollout/trtllm_rollout/trtllm_async_server.py'
+adding 'verl/workers/rollout/trtllm_rollout/trtllm_rollout.py'
+adding 'verl/workers/rollout/trtllm_rollout/trtllm_worker_extension.py'
+adding 'verl/workers/rollout/vllm_rollout/__init__.py'
+adding 'verl/workers/rollout/vllm_rollout/bucketed_weight_transfer.py'
+adding 'verl/workers/rollout/vllm_rollout/utils.py'
+adding 'verl/workers/rollout/vllm_rollout/vllm_async_server.py'
+adding 'verl/workers/rollout/vllm_rollout/vllm_pd_replica.py'
+adding 'verl/workers/rollout/vllm_rollout/vllm_rollout.py'
+adding 'verl/workers/rollout/vllm_rollout/weight_update_utils.py'
+adding 'verl/workers/utils/__init__.py'
+adding 'verl/workers/utils/losses.py'
+adding 'verl/workers/utils/padding.py'
+adding 'verl-0.9.0.dist-info/licenses/LICENSE'
+adding 'verl-0.9.0.dist-info/METADATA'
+adding 'verl-0.9.0.dist-info/WHEEL'
+adding 'verl-0.9.0.dist-info/top_level.txt'
+adding 'verl-0.9.0.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Successfully built /data/WSH/medical-post-train-artifacts/wheels/verl-0.9.0-py3-none-any.whl

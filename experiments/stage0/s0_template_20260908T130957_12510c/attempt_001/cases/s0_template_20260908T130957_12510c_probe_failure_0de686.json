@@ -1,0 +1,20 @@
+{
+  "case_id": "s0_template_20260908T130957_12510c_probe_failure_0de686",
+  "run_id": "s0_template_20260908T130957_12510c",
+  "stage": 0,
+  "category": "SYSTEM_CASE",
+  "subtype": "probe_failure",
+  "observation": "Template prompt/target boundary mismatch",
+  "hypothesis": null,
+  "alternative_explanations": [],
+  "followup": "See Stage 0 report and linked raw evidence",
+  "reproduction_command": [
+    "/data/WSH/post-train/.venv-train/bin/python",
+    "-m",
+    "medical_posttrain.cli",
+    "worker",
+    "/data/WSH/post-train/experiments/stage0/s0_template_20260908T130957_12510c/attempt_001"
+  ],
+  "error_type": "ValueError",
+  "traceback": "Traceback (most recent call last):\n  File \"/data/WSH/post-train/src/medical_posttrain/runtime/__init__.py\", line 76, in worker\n    result = dispatch(ev)\n             ^^^^^^^^^^^^\n  File \"/data/WSH/post-train/src/medical_posttrain/verification/probes.py\", line 39, in dispatch\n    return importlib.import_module('medical_posttrain.verification.'+module).run(ev)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/WSH/post-train/src/medical_posttrain/verification/templates.py\", line 15, in run\n    ids,labels=sft_tokens(tok,'请选择 C。','C',reason)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/WSH/post-train/src/medical_posttrain/data/format.py\", line 29, in sft_tokens\n    raise ValueError(\"Template prompt/target boundary mismatch\")\nValueError: Template prompt/target boundary mismatch\n"
+}

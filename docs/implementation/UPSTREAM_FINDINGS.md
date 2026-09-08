@@ -53,3 +53,9 @@ SFT collator 根据实际模板定位 assistant target，验证保留最后回�
 ## 审计日main与release的实际差异
 
 额外比较`0d3f56a8980a55bfbbf1214ea54fa1b32ca1405c` main与v0.9.0：GRPO outcome advantage函数AST相同；GSPO函数的loss aggregation不同。v0.9.0内部强制sequence mean，而main改成使用传入loss_agg_mode，注释提示默认可为token-mean。主线显式固定`seq-mean-token-mean`并固定release，所以未来升级main不能假设同名gspo具有完全相同聚合语义。差异见[AST审计记录](evidence/gspo-release-main-comparison.json)。
+
+## Stage 0 实际接口增补
+
+- Transformers5.5.3的apply_chat_template默认BatchEncoding；本项目显式return_dict=False并用真实tokenizer快照验证监督边界。
+- verl ActorConfig需要rollout_n和micro_batch_size_per_gpu；enable_sleep_mode存在于RolloutConfig dataclass但未在compose的YAML中出现，使用显式`+`追加。nativeFSDPEngineWithLMHead在当前8B/BF16/LoRA/SDPA配置真实反传通过。
+- vLLM0.24默认LoRA shrink配置对小batch使用split_k64；源码已有batch-invariant分支选择1。默认LoRA重复logprob出现波动，开启原生选项后当前三轮切换全部一致。上游来源与因果解释边界见D-016，不将其他模型的issue当作本机根因证明。

@@ -1,0 +1,6 @@
+{
+  "status": "FAILED",
+  "reason": "[actor] Please set at least one of 'actor.ppo_micro_batch_size' or 'actor.ppo_micro_batch_size_per_gpu' if use_dynamic_bsz is not enabled.",
+  "ended_at": "2026-09-08T13:11:57.379477+00:00",
+  "elapsed_seconds": 5.565706219989806
+}

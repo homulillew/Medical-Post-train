@@ -1,0 +1,6 @@
+Fetching 12 files:   0%|          | 0/12 [00:00<?, ?it/s]Fetching 12 files: 100%|██████████| 12/12 [00:00<00:00, 213.66it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 5095.27it/s]
+Token indices sequence length is longer than the specified maximum sequence length for this model (2431 > 512). Running this sequence through the model will result in indexing errors
+Fetching 22 files:   0%|          | 0/22 [00:00<?, ?it/s]Fetching 22 files: 100%|██████████| 22/22 [01:48<00:00,  4.91s/it]Fetching 22 files: 100%|██████████| 22/22 [01:48<00:00,  4.91s/it]
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 24978.26it/s]
+Token indices sequence length is longer than the specified maximum sequence length for this model (14412 > 8192). Running this sequence through the model will result in indexing errors

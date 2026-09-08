@@ -1,0 +1,14 @@
+{
+  "run_id": "s0_bootstrap_20260908_001",
+  "stage": 0,
+  "category": "SYSTEM_CASE",
+  "subtype": "download_recovery_race",
+  "observation": "HTTP worker thread completed the official shard after KeyboardInterrupt reached its main thread. Parallel HTTP range recovery independently assembled all ranges and passed the official full SHA check, then refused to replace the now-existing target file. Both files and all partials are retained.",
+  "error": "AssertionError: target already exists",
+  "reproduction_command": "python scripts/download_qwen_shard.py",
+  "root_cause": "ThreadPoolExecutor shutdown waited for ongoing HTTP download despite SIGINT; original and recovery completed concurrently.",
+  "resolution": "Use snapshot verifier over actual target; do not replace an existing snapshot file.",
+  "hypothesis": null,
+  "alternative_explanations": [],
+  "followup": "Future download supervisor should terminate a dedicated process group after graceful timeout, and validate existing target hashes before treating a race as failure."
+}

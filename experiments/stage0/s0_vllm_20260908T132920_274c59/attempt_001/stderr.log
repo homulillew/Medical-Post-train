@@ -1,0 +1,19 @@
+(EngineCore pid=1803779) Loading safetensors checkpoint shards:   0% Completed | 0/5 [00:00<?, ?it/s]
+(EngineCore pid=1803779) Loading safetensors checkpoint shards:  20% Completed | 1/5 [00:00<00:01,  2.31it/s]
+(EngineCore pid=1803779) Loading safetensors checkpoint shards:  40% Completed | 2/5 [00:00<00:01,  2.50it/s]
+(EngineCore pid=1803779) Loading safetensors checkpoint shards:  60% Completed | 3/5 [00:01<00:00,  2.58it/s]
+(EngineCore pid=1803779) Loading safetensors checkpoint shards:  80% Completed | 4/5 [00:01<00:00,  2.84it/s]
+(EngineCore pid=1803779) Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:01<00:00,  3.76it/s]
+(EngineCore pid=1803779) Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:01<00:00,  3.14it/s]
+(EngineCore pid=1803779) 
+Traceback (most recent call last):
+  File "/data/WSH/post-train/src/medical_posttrain/runtime/__init__.py", line 94, in worker
+    result = dispatch(ev)
+             ^^^^^^^^^^^^
+  File "/data/WSH/post-train/src/medical_posttrain/verification/probes.py", line 39, in dispatch
+    return importlib.import_module('medical_posttrain.verification.'+module).run(ev)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/WSH/post-train/src/medical_posttrain/verification/vllm_probe.py", line 61, in run
+    assert after['token_ids']==outputs['adapter']['token_ids'],'sleep/wake changed adapter identity'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: sleep/wake changed adapter identity

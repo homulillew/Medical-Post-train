@@ -1,0 +1,19 @@
+(EngineCore pid=1816529) Loading safetensors checkpoint shards:   0% Completed | 0/5 [00:00<?, ?it/s]
+(EngineCore pid=1816529) Loading safetensors checkpoint shards:  20% Completed | 1/5 [00:00<00:01,  2.35it/s]
+(EngineCore pid=1816529) Loading safetensors checkpoint shards:  40% Completed | 2/5 [00:00<00:01,  2.51it/s]
+(EngineCore pid=1816529) Loading safetensors checkpoint shards:  60% Completed | 3/5 [00:01<00:00,  2.59it/s]
+(EngineCore pid=1816529) Loading safetensors checkpoint shards:  80% Completed | 4/5 [00:01<00:00,  2.84it/s]
+(EngineCore pid=1816529) Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:01<00:00,  3.76it/s]
+(EngineCore pid=1816529) Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:01<00:00,  3.14it/s]
+(EngineCore pid=1816529) 
+Traceback (most recent call last):
+  File "/data/WSH/post-train/src/medical_posttrain/runtime/__init__.py", line 94, in worker
+    result = dispatch(ev)
+             ^^^^^^^^^^^^
+  File "/data/WSH/post-train/src/medical_posttrain/verification/probes.py", line 39, in dispatch
+    return importlib.import_module('medical_posttrain.verification.'+module).run(ev)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/WSH/post-train/src/medical_posttrain/verification/vllm_probe.py", line 58, in run
+    assert warm[0]['token_ids']==warm[1]['token_ids'] and max(warm_errors)<=1e-4,'Adapter is unstable even before sleeping'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Adapter is unstable even before sleeping

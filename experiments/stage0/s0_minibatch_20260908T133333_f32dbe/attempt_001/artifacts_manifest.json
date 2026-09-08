@@ -1,0 +1,87 @@
+[
+  {
+    "path": "code.json",
+    "size": 5800,
+    "sha256": "866628b24b0e2757a5fc8a6267b8a020644b4d92c820fbfd1b66415cea13d761"
+  },
+  {
+    "path": "source.zip",
+    "size": 252371,
+    "sha256": "2e996516c87562bcf12d0df70ade72ecb603131217b011dff312cde22db7901a"
+  },
+  {
+    "path": "resolved_config.json",
+    "size": 691,
+    "sha256": "9460358a8634f42814151431f6c4aa122de9de5523c9a0deb1e0af52e9fcc9bb"
+  },
+  {
+    "path": "observations.md",
+    "size": 62,
+    "sha256": "c7b882fd279a2c9921f88552b55b68748a661475379451439b21afa044e0ce94"
+  },
+  {
+    "path": "launch.json",
+    "size": 121,
+    "sha256": "928aa03d194379da3c4acf12da857202ce77adf6f9108ddd45b92229e1e2a21b"
+  },
+  {
+    "path": "metrics.jsonl",
+    "size": 1924,
+    "sha256": "a96959665399b3b369c632dfa99bb6bc70016d1558f8fa38464cd6fbc1384279"
+  },
+  {
+    "path": "environment.json",
+    "size": 7848,
+    "sha256": "0831b5c140aeba18fcab3ff5cbdd47c2528a9d5c74fa3b32b48e6f358d927381"
+  },
+  {
+    "path": "artifacts.jsonl",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "command.json",
+    "size": 192,
+    "sha256": "6ccd971bb43104ccd0e9aa52d77afe64a2abee23e9b7ba905994437f7f4d6a96"
+  },
+  {
+    "path": "summary.json",
+    "size": 3470,
+    "sha256": "bb38e4eb58d4b490355b8d46723c2c399c784db0dab1586d659f8a02a28a9179"
+  },
+  {
+    "path": "heartbeat.json",
+    "size": 112,
+    "sha256": "1a38d799a1a0adb84d3ba88e7fc2e1cc3e0d1778c4e814a244e6c4005f29733c"
+  },
+  {
+    "path": "checkpoint_refs.json",
+    "size": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "path": "status.json",
+    "size": 113,
+    "sha256": "bab9723a6f3e0ccb8013ce0fb3ea6824b76364f35fb72abf6fc2beaa7aa57224"
+  },
+  {
+    "path": "trajectories.json",
+    "size": 18383,
+    "sha256": "129244367def84978b99586735bc4c613d97d7abdaffea6b39b8f16ddcfa14f0"
+  },
+  {
+    "path": "cases/s0_minibatch_20260908T133333_f32dbe_gspo_ratio_one_8cdd7c.json",
+    "size": 1384,
+    "sha256": "f31463d9fd2dd05c52144d1c746c317a4a4fbdc9c6fea73b4e381dba4cfe2656"
+  },
+  {
+    "path": "cases/s0_minibatch_20260908T133333_f32dbe_gspo_after_update_1f1096.json",
+    "size": 1517,
+    "sha256": "0a7d02f971add8e7321ae3932f5b08ee338aa64eb5051c0d37403e67d90c4cf6"
+  },
+  {
+    "path": "cases/s0_minibatch_20260908T133333_f32dbe_gspo_ratio_one_6f2951.json",
+    "size": 1208,
+    "sha256": "a73ed9381563c63a408f6e31dec05d2fc1a7461ba85ab75952bd1da7b1fa7940"
+  }
+]

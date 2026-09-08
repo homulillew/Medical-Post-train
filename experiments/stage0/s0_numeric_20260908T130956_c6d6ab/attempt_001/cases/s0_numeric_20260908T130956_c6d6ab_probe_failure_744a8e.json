@@ -1,0 +1,20 @@
+{
+  "case_id": "s0_numeric_20260908T130956_c6d6ab_probe_failure_744a8e",
+  "run_id": "s0_numeric_20260908T130956_c6d6ab",
+  "stage": 0,
+  "category": "SYSTEM_CASE",
+  "subtype": "probe_failure",
+  "observation": "",
+  "hypothesis": null,
+  "alternative_explanations": [],
+  "followup": "See Stage 0 report and linked raw evidence",
+  "reproduction_command": [
+    "/data/WSH/post-train/.venv-train/bin/python",
+    "-m",
+    "medical_posttrain.cli",
+    "worker",
+    "/data/WSH/post-train/experiments/stage0/s0_numeric_20260908T130956_c6d6ab/attempt_001"
+  ],
+  "error_type": "AssertionError",
+  "traceback": "Traceback (most recent call last):\n  File \"/data/WSH/post-train/src/medical_posttrain/runtime/__init__.py\", line 76, in worker\n    result = dispatch(ev)\n             ^^^^^^^^^^^^\n  File \"/data/WSH/post-train/src/medical_posttrain/verification/probes.py\", line 39, in dispatch\n    return importlib.import_module('medical_posttrain.verification.'+module).run(ev)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/WSH/post-train/src/medical_posttrain/verification/verl_probe.py\", line 73, in run\n    if ev.config['purpose']=='numeric': return numeric(ev)\n                                               ^^^^^^^^^^^\n  File \"/data/WSH/post-train/src/medical_posttrain/verification/verl_probe.py\", line 24, in numeric\n    loss,metrics=compute_policy_loss_gspo(old,current,adv,mask,config=actor_config())\n                                                                      ^^^^^^^^^^^^^^\n  File \"/data/WSH/post-train/src/medical_posttrain/verification/verl_probe.py\", line 10, in actor_config\n    return ActorConfig(strategy='fsdp2',clip_ratio_low=.0003,clip_ratio_high=.0004,ppo_mini_batch_size=8,ppo_epochs=1)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 43, in __init__\n  File \"/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/verl/workers/config/actor.py\", line 202, in __post_init__\n    assert self.rollout_n != MISSING\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+}
