@@ -1,0 +1,12 @@
+{
+  "recorded_at": "2026-09-08T16:38:18.119283+00:00",
+  "progress": {
+    "global_step": 631,
+    "sample_cursor": 10096,
+    "coverage_fraction": 0.5048,
+    "processed_tokens": 4646335,
+    "supervised_tokens": 3925371
+  },
+  "authoritative_live_progress": "/data/WSH/medical-post-train-artifacts/runs/s1_formal_20260908T152119_60040b/progress.json",
+  "status": "FULL_RUNNING"
+}

@@ -54,6 +54,8 @@ def main():
     metrics = [json.loads(line) for line in (bulk / 'canonical_metrics.jsonl').open()]
     physical = [json.loads(line) for path in sorted(bulk.glob('attempt_*/metrics.jsonl')) for line in path.open()]
     assert len(metrics) == 1250
+    checkpoint_events = [r for r in physical if r['event'] == 'checkpoint']
+    assert checkpoint_events
     validations = formal['validation']
     initial = next(r for r in validations if r['scope'] == 'initial')
     final = next(r for r in validations if r['scope'] == 'final')
@@ -91,6 +93,7 @@ def main():
         ['NVML峰值', f"{formal['nvml_peak_bytes']/2**30:.3f} GiB", '全formal worker，raw bytes见summary'],
         ['活跃张量峰值', f"{formal['allocated_peak_bytes']/2**30:.3f} GiB", 'PyTorch allocated peak'],
         ['缓存预留峰值', f"{formal['reserved_peak_bytes']/2**30:.3f} GiB", 'PyTorch reserved peak'],
+        ['checkpoint计时', f"{len(checkpoint_events)} 次，共 {sum(r['seconds'] for r in checkpoint_events):.2f} s；最长 {max(r['seconds'] for r in checkpoint_events):.2f} s", '实际物理attempt保存事件'],
         ['峰值时显存余量', f"{formal['remaining_at_peak_bytes']/2**30:.3f} GiB", 'NVML总量减观察峰值'],
         ['新进程HF重载+4条生成', f"{reload['elapsed_seconds']:.2f} s", '单独诊断，不计进formal更新吞吐'],
         ['配对vLLM生成', f"{evaluation['wall_seconds']:.2f} s", '含cold load和identity probe'],
@@ -179,7 +182,7 @@ AdamW LR1e-4，betas0.9/0.999、eps1e-8、weight decay0；cosine，warmup3%（38
 
 Smoke update-phase吞吐{smoke['effective_tokens_per_update_second']:.2f} tokens/s；pilot为{pilot['effective_tokens_per_update_second']:.2f}。两者样本数、batch形状和验证/加载比例不同，不能当作严格吞吐消融。pilot的128条验证NLL从2.046165到1.452088；并非正式1000条结果。
 
-下载bootstrap最初请求不存在的CMExam `test.csv` 返回404，随后改为固定revision中的 `test_with_annotations.csv`。早期bootstrap开始时间未采集，保持missing，不从mtime补造。初期部分run仅存源码哈希，后续正式manifest有完整source archive；旧部分artifact seal和失败记录均保留，最终全量索引另行生成。
+下载bootstrap最初请求不存在的CMExam `test.csv` 返回404，随后改为固定revision中的 `test_with_annotations.csv`。早期bootstrap开始时间未采集，保持missing，不从mtime补造。首次data-case audit未写worker status文件，后来依据原PASS summary并独立核对原artifact SHA补记了状态；原结束时间和exit code仍为unknown，旧UNKNOWN索引快照保留。初期部分run仅存源码哈希，后续正式manifest有完整source archive；旧部分artifact seal和失败记录均保留，最终全量索引另行生成。
 
 ## 7. 实际resume与checkpoint
 
@@ -193,7 +196,7 @@ formal本次有{attempt_count}个训练attempt，未人为中断制造第二份�
 
 初始与最终同1000条验证NLL为{initial['loss']:.6f}→{final['loss']:.6f}。中间128条是各源64条固定monitor，不能将其数值直接与1000条连成同一评价集合的改善曲线。模型选择固定使用最终预算adapter；这些验证值没有用于early stop。
 
-正式更新loss范围{high['loss_min']:.6f}–{high['loss_max']:.6f}，前50/后50更新均值{high['first50_mean']:.6f}/{high['last50_mean']:.6f}。事后Q3+3IQR高loss标记阈值{high['descriptive_high_loss_threshold']:.6f}，标记{high['high_loss_batches']}个batch；这是案例检索，不是正式稳定性门槛或早停规则。每条指标对应16个sample IDs，不能把batch loss捏造成单样本loss。
+正式更新loss范围{high['loss_min']:.6f}–{high['loss_max']:.6f}，前50/后50更新均值{high['first50_mean']:.6f}/{high['last50_mean']:.6f}；裁剪前grad norm范围{min(r['grad_norm'] for r in metrics):.6f}–{max(r['grad_norm'] for r in metrics):.6f}。事后Q3+3IQR高loss标记阈值{high['descriptive_high_loss_threshold']:.6f}，标记{high['high_loss_batches']}个batch；这是案例检索，不是正式稳定性门槛或早停规则。每条指标对应16个sample IDs，不能把batch loss捏造成单样本loss。
 
 原始loss/grad/LR/样本/token/cursor均保留；处理{formal['processed_tokens']:,} total和{formal['supervised_tokens']:,}监督tokens，与完整冻结train统计相等，20,000唯一ID无遗漏、无重复计数。没有以早期下降趋势代替完整预算。
 
@@ -202,6 +205,8 @@ formal本次有{attempt_count}个训练attempt，未人为中断制造第二份�
 ## 9. 吞吐、显存与单卡取舍
 
 {resources}
+
+含smoke、pilot、memory诊断、各次HF重载和最终配对生成的已记录互不重叠GPU占用阶段，合计至少{calibration['observed_stage1_costs']['recorded_gpu_occupancy_lower_bound_hours']:.3f}h。phase逐项秒数见compute calibration。pilot早期attempt未保留完整结束wall，故该attempt只累加实际计时的load/update/validation/checkpoint（含reference-only update成本），未计时的save/digest/退出尾部仍unknown；不把下界写成全阶段精确总耗时。CPU数据下载/清洗/只读审计不计GPU小时。
 
 GPU为RTX5880 Ada，系统可见约44.99GiB，单卡；不是多GPU/FSDP训练成果。正式预算Stage0工作估计约9.84h，真实token分布比当时1024均长假设短，且真实microbatch优化后的吞吐更高，最终以本表实测为准。update-phase不含独立HF/vLLM验证成本，不能把训练tokens/s写成生成tokens/s。
 

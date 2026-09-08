@@ -23,7 +23,29 @@ def main():
         generating=20000*response/decode;learning=20000*(prompt+response)*(1/actor+1/old);validation=8704*response/decode
         values=dict(stage1_measured_worker=formal['attempt_wall_seconds']/3600,stage2=hours(4000*response/decode),stage3=hours(256*4*response/acceptance/decode),vanilla=hours(generating+learning+625*switch+validation),dynamic=hours(generating/acceptance+learning+625*switch+validation),stage5=hours((3*(6811+2000)+150)*response/decode),stage6={'optimistic':.5,'working':2,'adverse':8}[name])
         scenarios[name]=dict(classification='Estimated except completed Stage 1 worker time',assumptions=dict(mean_response_transferred_from_open_ended_validation=response,mean_prompt_tokens=prompt,decode_tokens_per_second=decode,mixed_acceptance=acceptance,actor_tokens_per_second=actor,old_logprob_tokens_per_second=old,switch_seconds=switch,overhead=overhead,updates_per_rl_variant=625),gpu_hours=values,total_gpu_hours=sum(values.values()))
-    result=dict(analysis_id='s1_compute_calibration_'+selected['formal'],stage=1,classification='DIAGNOSTIC_ANALYSIS',measured=measured,estimated_scenarios=scenarios,rl_response_candidate=candidate,candidate_meets_heldout_closure_trigger=bool(good),unknown=['Natural CMExam mixed-group acceptance','Post-SFT CMExam response distribution; current inputs are open-ended SFT validation','Formal GSPO actor/old-logprob throughput and Ray switching','Sustained serving throughput and request latency','Any extra update cost if later adopting the mini=4 GSPO proposal'],sources={str(fdir/'summary.json'):sha256(fdir/'summary.json'),str(edir/'summary.json'):sha256(edir/'summary.json')},caveats=['No Stage 2–6 experiment was executed by this analysis.','SFT wall time is measured to worker completion; separate smoke/pilot/diagnostics/reload/generation costs are reported in the stage report.','Open-ended validation speed/length transfer to examination rollouts is an estimate.','Mandatory 20k/5000/G4 budgets and 625-update planning assumption are preserved.','The strict worst case remains unbounded as mixed acceptance tends to zero.'])
+    sources={str(fdir/'summary.json'):sha256(fdir/'summary.json'),str(edir/'summary.json'):sha256(edir/'summary.json')}
+    phase_costs={}
+    for purpose in ('smoke','pilot','formal'):
+        root=Path(json.loads((Path('experiments/stage1')/selected[purpose]/'manifest.json').read_text())['artifact_root'])
+        summary=json.loads((root/'summary.json').read_text())
+        reload=json.loads((root/'reload_generation/receipt.json').read_text())
+        sources[str(root/'summary.json')]=sha256(root/'summary.json');sources[str(root/'reload_generation/receipt.json')]=sha256(root/'reload_generation/receipt.json')
+        phase_costs[purpose+'_final_attempt_worker']=summary['attempt_wall_seconds']
+        phase_costs[purpose+'_fresh_reload_and_greedy']=reload['elapsed_seconds']
+        attempts=sorted(root.glob('attempt_*/metrics.jsonl'))
+        for attempt in attempts[:-1]:
+            # Earlier attempt wall-end was not retained. Sum only recorded,
+            # disjoint timed phases; do not infer missing save/exit overhead.
+            rows=[json.loads(line) for line in attempt.open()]
+            seconds=sum(r['seconds'] for r in rows if r['event'] in ('load','validation','checkpoint'))
+            seconds+=sum(r['update_seconds'] for r in rows if r['event'] in ('update','reference_only_update_excluded_from_coverage'))
+            phase_costs[purpose+'_'+attempt.parent.name+'_recorded_phases_lower_bound']=seconds
+            sources[str(attempt)]=sha256(attempt)
+    memory_path=Path('experiments/stage1')/selected['memory']/'summary.json'
+    phase_costs['allocator_diagnostic_worker']=json.loads(memory_path.read_text())['wall_seconds']
+    phase_costs['paired_generation_worker']=evaluation['wall_seconds'];sources[str(memory_path)]=sha256(memory_path)
+    observed_costs=dict(nonoverlapping_recorded_seconds=phase_costs,recorded_gpu_occupancy_lower_bound_hours=sum(phase_costs.values())/3600,missing_overhead='Earlier pilot attempt untimed save/digest/exit and process startup/teardown gaps; exact total Stage 1 occupancy is not reconstructed.',scope='GPU-owning processes/phases including CPU work within them; not utilization-integrated kernel time. Dataset download/governance/CPU audits excluded.')
+    result=dict(analysis_id='s1_compute_calibration_'+selected['formal'],stage=1,classification='DIAGNOSTIC_ANALYSIS',measured=measured,observed_stage1_costs=observed_costs,estimated_scenarios=scenarios,rl_response_candidate=candidate,candidate_meets_heldout_closure_trigger=bool(good),unknown=['Natural CMExam mixed-group acceptance','Post-SFT CMExam response distribution; current inputs are open-ended SFT validation','Formal GSPO actor/old-logprob throughput and Ray switching','Sustained serving throughput and request latency','Any extra update cost if later adopting the mini=4 GSPO proposal'],sources=sources,caveats=['No Stage 2–6 experiment was executed by this analysis.','SFT wall time is measured to worker completion; separate smoke/pilot/diagnostics/reload/generation costs are reported in the stage report.','Open-ended validation speed/length transfer to examination rollouts is an estimate.','Mandatory 20k/5000/G4 budgets and 625-update planning assumption are preserved.','The strict worst case remains unbounded as mixed acceptance tends to zero.'])
     assert not Path(args.output).exists(),'Keep earlier calibration evidence; choose a new output'
     write_json(args.output,result);print(json.dumps({name:round(row['total_gpu_hours'],2) for name,row in scenarios.items()}))
 

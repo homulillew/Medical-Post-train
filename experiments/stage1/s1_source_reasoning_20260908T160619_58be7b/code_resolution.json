@@ -1,0 +1,8 @@
+{
+  "original_manifest_commit": "cc4a8ec9788fae608a2dfc1cf57d585bee71c4e5",
+  "original_dirty_state": true,
+  "source_script_sha256": "e7f0de37f73210a5108bc416f9401fe02756626ca380cdacfc6d847abd7fde47",
+  "source_archive": "/data/WSH/medical-post-train-artifacts/data/stage1/s1_source_reasoning_20260908T160619_58be7b/audit_source.py",
+  "committed_source_revision": "b1b8c3995ddf7cd68167bec1b0b813813b9a7639",
+  "note": "The diagnostic script was new at execution; its exact unchanged bytes are now archived and committed. Original manifest preserved."
+}

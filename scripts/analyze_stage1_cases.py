@@ -102,12 +102,25 @@ def main():
             if after['source'] == 'medical_o1' and after['reasoning_tokens'] == 0:
                 retain('medical_o1_no_reasoning', 'BAD_CASE', pair, 'No measured reasoning content in the SFT response to a reasoning-source validation prompt.')
 
+    if len(evaluation['limits']) > 1:
+        small, large = sorted(evaluation['limits'])
+        shorter = read_rows(evaluation_root / f'sft_{small}.jsonl')
+        longer = read_rows(evaluation_root / f'sft_{large}.jsonl')
+        for before, after in zip(shorter, longer):
+            assert before['sample_id'] == after['sample_id']
+            if before['truncated'] and after['answer_closed'] and not after['truncated']:
+                retain('cap_extension_closes_answer', 'GOOD_CASE', [before, after], 'The same SFT prompt is truncated at the smaller cap and has a closed answer at the larger cap; this is a length diagnostic, not group-accuracy boundary evidence.')
+            if before['truncated'] and after['truncated']:
+                retain('cap_extension_still_truncated', 'BAD_CASE', [before, after], 'Both measured caps truncate this SFT prompt.')
+
     required = ['paired_format_improvement', 'paired_shorter_structured_output',
         'paired_closed_reasoning_and_answer', 'paired_format_regression',
         'paired_truncation_regression', 'generation_missing_think_close',
         'generation_missing_answer_close', 'format_anomaly',
         'empty_or_near_empty_tagged_answer', 'generation_repetition',
         'huatuo_long_reasoning_over512', 'medical_o1_no_reasoning']
+    if len(evaluation['limits']) > 1:
+        required.extend(['cap_extension_closes_answer', 'cap_extension_still_truncated'])
     not_observed = [dict(subtype=k, scope='Completed paired validation conditions', status='NOT_OBSERVED') for k in required if not counts[k]]
     not_assessed = [dict(subtype='clinically_adjudicated_improvement_or_regression', status='NOT_ASSESSED', scope='No expert clinical adjudication in Stage 1'),
         dict(subtype='mixed_group_boundary_case', status='NOT_ASSESSED', scope='Group rollout belongs to later stages')]

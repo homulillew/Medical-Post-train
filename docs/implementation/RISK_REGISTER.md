@@ -59,3 +59,20 @@
 | R22 | MITIGATED | 单mini ratio=1/clip0实测，双mini第二步clip0.875；D-014为proposal，正式设置未变 |
 
 证据入口：[Stage 0 report](../stage_reports/00_runtime_compatibility.md)、[selected runs](../../experiments/stage0/selected_runs.json)、D-009至D-016。没有观察到OOM或ABI崩溃不被写成这些失败的虚构案例。
+
+## Stage 1 已取得证据与剩余边界（2026-09-09 CST）
+
+本节不将进行中的formal提前记为完成；最终全程资源和生成风险以Stage1报告、完整raw metrics及收据补充。来源：[Stage1 selected runs](../../experiments/stage1/selected_runs.json)、[决策与观察](STAGE1_DECISIONS.md)。
+
+| ID | 状态 | 本阶段直接证据与限制 |
+| --- | --- | --- |
+| R05 | MITIGATED（固定词法边界） | 全79,319条benchmark question-only索引，精确/近重复连通簇排除489条关联SFT成员；全21k选中编码与ID/cluster复核。语义改写漏检和近似题型误排仍可能存在，不声称零语义泄漏 |
+| R11 | MITIGATED（实际SFT dataloader） | 1024例pilot在step32退出并新进程恢复，step33参数/loss差均0、next IDs/scheduler一致；formal checkpoint独立哈希检查通过。尚不覆盖未来FSDP/GSPO状态恢复 |
+| R13 | MITIGATED（固定SFT原始源） | 两源全量实际schema通过，Huatuo全部单轮；原生模板与多轮fixture分别检查。数据内容医学正确性不由schema检验证明 |
+| R14 | CLOSED（仅Stage1配额） | 清洁唯一候选16,646/137,370，分别选10k train+500 val，无复制或重复采样；未来CMB2000评估配额仍是独立gate |
+| R18 | MITIGATED（Stage1范围） | test原始文件按字节保留，解析只访问Question/question建立预先排除；答案与难度不参与训练/选择。final-budget adapter预先固定，禁止按中途val改选；Stage5 test隔离仍须另验 |
+| R16 | OPEN | 本机bulk持续保存全部有效checkpoint、原始失败和哈希，仍没有外部备份目的地；源码和小摘要push不等于模型/数据备份 |
+| R06/R09/R10 | OPEN | 本阶段未运行semantic reward、自然mixed acceptance或完整GSPO actor/rollout循环；Stage0负例与后续gate仍有效 |
+| R23 P2（新增） | OPEN：原始CoT事实/算术噪声 | 最长选中CoT row14099把3.9921875+4写成9.9921875，推理与末尾结论也不一致。结构清洗与去重没有审定推理正确性；保留原冻结baseline及精确算术反例。最长样本不是随机质量抽样，错误率未知；未来数据事实筛查必须另立版本/run，不能事后改写此epoch |
+
+R23不被包装成已修复：原样本实际保留在训练数据中。后续报告只能声明完成领域SFT及实测格式/长度行为，不能凭loss下降声明医学事实质量已经提高。R07长度风险将在最终50条配对生成中进一步测量，仍需下一阶段考试train-only profiling验证迁移。

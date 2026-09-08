@@ -13,8 +13,8 @@
         "s1_formal_20260908T152119_60040b"
       ],
       "progress": {
-        "train_examples": 0,
-        "coverage_fraction": 0
+        "train_examples": 10096,
+        "coverage_fraction": 0.5048
       },
       "verification_receipt": null,
       "stage_report": null,
