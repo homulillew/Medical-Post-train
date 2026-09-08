@@ -1,0 +1,21 @@
+{
+  "case_id": "CASE-XXX",
+  "run_id": "<run_id>",
+  "stage": 0,
+  "category": "BAD_CASE",
+  "subtype": "<subtype>",
+  "prompt_id": "<prompt_id>",
+  "prompt": "<prompt or artifact reference>",
+  "ground_truth": "<ground truth if applicable>",
+  "responses": [],
+  "parsed_answers": [],
+  "reward_components": {},
+  "metric_context": {},
+  "why_interesting": "",
+  "observation": "",
+  "hypothesis": "",
+  "alternative_explanations": [],
+  "followup": "",
+  "artifact_refs": [],
+  "created_at": ""
+}
