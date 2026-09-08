@@ -3,5 +3,6 @@
   "matplotlib_version": "3.10.9",
   "source_metrics": "/data/WSH/medical-post-train-artifacts/runs/s1_formal_20260908T152119_60040b/canonical_metrics.jsonl",
   "smoothing": "trailing mean of up to 50 observed updates; raw losses retained",
-  "validation_note": "128-example monitor and 1000-example full validation are shown separately"
+  "validation_note": "128-example monitor and 1000-example full validation are shown separately",
+  "svg_postprocessing": "Removed line-ending spaces after Matplotlib export; normalized XML attributes/path tokens unchanged. PNG unchanged."
 }
