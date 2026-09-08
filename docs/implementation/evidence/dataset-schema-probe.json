@@ -1,0 +1,77 @@
+{
+  "cmexam_train_head": {
+    "url": "https://raw.githubusercontent.com/williamliujl/CMExam/fadb22c89beb1b7115dc36460ba792eb96b7b972/data/train.csv",
+    "bytes_read": 65536,
+    "http_status": 206,
+    "columns": [
+      "Question",
+      "Options",
+      "Answer",
+      "Explanation"
+    ],
+    "train_value_types": {
+      "Question": "str",
+      "Options": "str",
+      "Answer": "str",
+      "Explanation": "str"
+    }
+  },
+  "cmexam_test_header": {
+    "url": "https://raw.githubusercontent.com/williamliujl/CMExam/fadb22c89beb1b7115dc36460ba792eb96b7b972/data/test_with_annotations.csv",
+    "bytes_read": 65536,
+    "http_status": 206,
+    "columns": [
+      "Question",
+      "Options",
+      "Answer",
+      "Explanation",
+      "Disease Group",
+      "Area of Competency",
+      "Clinical Department",
+      "Medical Discipline",
+      "Difficulty level"
+    ],
+    "train_value_types": {}
+  },
+  "o1_head": {
+    "url": "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT/resolve/fc2c9e8a37b38f38da6d449564a8c350b244aef4/medical_o1_sft_Chinese.json",
+    "bytes_read": 65536,
+    "http_status": 206,
+    "first_object_keys": [
+      "Question",
+      "Complex_CoT",
+      "Response"
+    ],
+    "value_types": {
+      "Question": "str",
+      "Complex_CoT": "str",
+      "Response": "str"
+    }
+  },
+  "huatuo_head": {
+    "url": "https://huggingface.co/datasets/FreedomIntelligence/HuatuoGPT2-SFT-GPT4-140K/resolve/4077ffaeb123e49b8b8a0283f42957a5570a52ce/HuatuoGPT2-GPT4-SFT-140K.json",
+    "bytes_read": 65536,
+    "http_status": 206,
+    "first_object_keys": [
+      "id",
+      "conversations"
+    ],
+    "value_types": {
+      "id": "str",
+      "conversations": "list"
+    }
+  },
+  "medembed_config": {
+    "url": "https://huggingface.co/abhinand/MedEmbed-small-v0.1/resolve/40a5850d046cfdb56154e332b4d7099b63e8d50e/sentence_bert_config.json",
+    "bytes_read": 53,
+    "http_status": 206,
+    "first_object_keys": [
+      "max_seq_length",
+      "do_lower_case"
+    ],
+    "value_types": {
+      "max_seq_length": "int",
+      "do_lower_case": "bool"
+    }
+  }
+}

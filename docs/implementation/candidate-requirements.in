@@ -1,0 +1,12 @@
+# Resolution candidate for Linux x86_64 / Python 3.12; NOT a validated runtime lock.
+# flash-attn is a separate ABI/build gate; see DEPENDENCY_STRATEGY.md.
+verl @ git+https://github.com/verl-project/verl.git@483b8a009ba3a97563edee3a19887e4862b8094a
+vllm==0.24.0
+torch==2.11.0
+transformers==5.5.3
+peft==0.18.1
+datasets==4.8.4
+accelerate==1.14.0
+sentence-transformers==5.3.0
+triton==3.6.0
+jsonschema==4.23.0

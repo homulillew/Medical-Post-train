@@ -1,0 +1,38 @@
+{
+  "kind": "PLANNING_VALIDATION_ONLY",
+  "checked_at_utc": "2026-09-08T10:06:09.806612+00:00",
+  "command": [
+    "python",
+    "scripts/verify_planning.py"
+  ],
+  "checker_sha256": "fd60ef20f713c9596bb3369c6e23b615a1cf07f302dec27a2ecade8dcc531737",
+  "result": {
+    "planning_check": "PASS",
+    "negative_state_probes_rejected": 15,
+    "local_links_checked": 32,
+    "stage_completion_verified": false,
+    "stages": {
+      "1": "NOT_STARTED",
+      "2": "NOT_STARTED",
+      "3": "NOT_STARTED",
+      "4": "NOT_STARTED",
+      "5": "NOT_STARTED",
+      "6": "NOT_STARTED"
+    }
+  },
+  "stage_verifier_implemented": false,
+  "documents": {
+    "docs/implementation/CHECKPOINT_AND_RESUME.md": "920fd90a3665f2bccac27176b980c5add16f160ffaa023e99ce53c3aabd88157",
+    "docs/implementation/COMPUTE_BUDGET.md": "645febf84fc30f60738e9f8929b3d1134cbc90e38db29094e902cd1ddecd3cbd",
+    "docs/implementation/DECISIONS.md": "4435fa9d84680b96f6b265e90ef2ee469b46b6f7bc8884be3060713bbdbe902c",
+    "docs/implementation/DEPENDENCY_STRATEGY.md": "ebad609293af7d8e01d35160bdd4d189c9934ab4c795585f199fc21c30fb180b",
+    "docs/implementation/ENVIRONMENT_AUDIT.md": "416fb7e3edfbb5fe27ec7c45e177b5ab578611f0c15a5127febb19cd00781126",
+    "docs/implementation/EXECUTION_PLAN.md": "df025114874b42b11e31b5718534310871b176d6435f57196728bb1567754cd1",
+    "docs/implementation/EXPERIMENT_DATA_MODEL.md": "9898c9715e6732cb27063848382f9dc1db658912f2a8b2d969791697bd417c9f",
+    "docs/implementation/IMPLEMENTATION_PLAN.md": "d342b8198c23fad766a4891ee713f469ddded932416f78b990da2546a8b1a414",
+    "docs/implementation/OPEN_QUESTIONS.md": "27011d0814821d982bdac0f19a7c1175e7d8966f7b1fae86490cf3a3f3b5484d",
+    "docs/implementation/REPOSITORY_ARCHITECTURE.md": "1e87ce3444d535e2014d5c0175499d3e52c9fc47e865b02c2e9d30d7d83676b1",
+    "docs/implementation/RISK_REGISTER.md": "a6848ebb0d7f1bace2486a6c14ce0eab766958a8d463d712c000f8b363f915db",
+    "docs/implementation/UPSTREAM_FINDINGS.md": "31fdf55a5601cccf9d659bfca586ddb40bc626924510b36f73de3b91ff468769"
+  }
+}

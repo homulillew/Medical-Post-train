@@ -53,3 +53,20 @@ Implementation details are deliberately left open to the executing agent. The pr
 ## Important
 
 This project is designed to preserve **negative results, failed hypotheses, bad cases, configuration changes, full raw metrics, and decision rationale**. A scientifically complete negative result is preferable to an incomplete positive-looking demo.
+
+## Implementation handoff — 2026-09-08
+
+The repository takeover and execution design is in
+[`docs/implementation/IMPLEMENTATION_PLAN.md`](docs/implementation/IMPLEMENTATION_PLAN.md).
+The audited machine has one **NVIDIA RTX 5880 Ada Generation** with 46,068 MiB visible VRAM.
+The plan includes pinned upstream source references, dependency compatibility risks,
+Stage 1–6 commands and module interfaces, compute scenarios, durable resume, and evidence gates.
+Candidate dependencies have metadata resolution evidence; the training stack is not yet runtime validated.
+
+[`project_state.json`](project_state.json) keeps all six stages **NOT_STARTED**.
+The only GPU execution in takeover was a tiny BF16 environment diagnostic; no formal training,
+full dataset download, profiling run, or model benchmark was performed.
+Future training commands in the plan are interfaces to implement, not existing executables.
+
+Check these planning artifacts with `python scripts/verify_planning.py` (requires `jsonschema`).
+This checks the takeover documents, initial state, and contract invariants; it does not verify any Stage completion.

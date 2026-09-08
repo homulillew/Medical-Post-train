@@ -1,0 +1,228 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Immutable run manifest interface (not a full-run receipt)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "run_id",
+    "stage",
+    "run_class",
+    "mode",
+    "purpose",
+    "created_at",
+    "parent_run_id",
+    "initial_checkpoint",
+    "git_commit",
+    "dirty_patch_sha256",
+    "config_sha256",
+    "contract_sha256",
+    "seed",
+    "argv",
+    "environment_ref",
+    "model_manifest_ref",
+    "dataset_manifest_refs",
+    "planned_budget",
+    "stop_conditions",
+    "artifact_root",
+    "comparison_id",
+    "dependency_lock_sha256"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "stage": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 6
+    },
+    "run_class": {
+      "enum": [
+        "SMOKE",
+        "PILOT",
+        "FORMAL",
+        "DIAGNOSTIC",
+        "EXPLORATORY",
+        "EVALUATION",
+        "SERVING_BENCHMARK"
+      ]
+    },
+    "mode": {
+      "enum": [
+        "smoke",
+        "pilot",
+        "full",
+        "diagnostic",
+        "exploratory"
+      ]
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 1
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "parent_run_id": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "initial_checkpoint": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "git_commit": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "dirty_patch_sha256": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "config_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "contract_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "seed": {
+      "type": "integer"
+    },
+    "argv": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "environment_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "model_manifest_ref": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "dataset_manifest_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "planned_budget": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": [
+          "number",
+          "string",
+          "array"
+        ]
+      }
+    },
+    "stop_conditions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "artifact_root": {
+      "type": "string",
+      "minLength": 1
+    },
+    "comparison_id": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "dependency_lock_sha256": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "run_class": {
+            "const": "FORMAL"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "mode": {
+            "const": "full"
+          },
+          "dirty_patch_sha256": {
+            "type": "null"
+          },
+          "model_manifest_ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "dataset_manifest_refs": {
+            "minItems": 1
+          },
+          "dependency_lock_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    }
+  ]
+}

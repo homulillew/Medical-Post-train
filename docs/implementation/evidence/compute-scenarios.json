@@ -1,0 +1,108 @@
+{
+  "kind": "ANALYTICAL_ESTIMATE_NOT_BENCHMARK",
+  "hardware": "NVIDIA RTX 5880 Ada Generation",
+  "scenarios": {
+    "best_case": {
+      "inputs": {
+        "sft_len": 512,
+        "sft_tps": 1000,
+        "prompt_len": 256,
+        "response_len": 128,
+        "gen_tps": 300,
+        "actor_tps": 800,
+        "old_tps": 1500,
+        "acceptance": 0.65,
+        "switch_s": 5,
+        "overhead": 1.1
+      },
+      "hours": {
+        "s1": 3.128888888888889,
+        "s2": 0.5214814814814815,
+        "s3": 0.20538347578347577,
+        "s4_vanilla": 9.194790000000001,
+        "s4_dynamic": 10.598778603988602,
+        "s5": 3.465635555555556,
+        "s6": 0.5,
+        "formal_total": 27.614958005698007
+      },
+      "rl_components_before_overhead": {
+        "vanilla_generation": 2.3703703703703707,
+        "dynamic_generation": 3.646723646723647,
+        "actor": 2.6666666666666665,
+        "old_logprob": 1.4222222222222223,
+        "switch": 0.8680555555555556,
+        "validation": 1.0315851851851852
+      },
+      "serving_scheduling_reserve_hours": 0.5,
+      "serving_aggregate_model_hours_not_adopted": 0.26935703703703706
+    },
+    "realistic_assumption": {
+      "inputs": {
+        "sft_len": 1024,
+        "sft_tps": 450,
+        "prompt_len": 384,
+        "response_len": 256,
+        "gen_tps": 160,
+        "actor_tps": 350,
+        "old_tps": 700,
+        "acceptance": 0.35,
+        "switch_s": 15,
+        "overhead": 1.2
+      },
+      "hours": {
+        "s1": 15.17037037037037,
+        "s2": 2.1333333333333333,
+        "s3": 1.5603809523809524,
+        "s4_vanilla": 36.71951428571429,
+        "s4_dynamic": 56.529038095238086,
+        "s5": 14.1776,
+        "s6": 2.0,
+        "formal_total": 128.29023703703703
+      },
+      "rl_components_before_overhead": {
+        "vanilla_generation": 8.88888888888889,
+        "dynamic_generation": 25.3968253968254,
+        "actor": 10.158730158730158,
+        "old_logprob": 5.079365079365079,
+        "switch": 2.6041666666666665,
+        "validation": 3.868444444444444
+      },
+      "serving_scheduling_reserve_hours": 2.0,
+      "serving_aggregate_model_hours_not_adopted": 0.7837333333333334
+    },
+    "adverse_finite_case": {
+      "inputs": {
+        "sft_len": 2048,
+        "sft_tps": 150,
+        "prompt_len": 768,
+        "response_len": 512,
+        "gen_tps": 60,
+        "actor_tps": 100,
+        "old_tps": 200,
+        "acceptance": 0.1,
+        "switch_s": 60,
+        "overhead": 1.35
+      },
+      "hours": {
+        "s1": 102.40000000000002,
+        "s2": 12.800000000000002,
+        "s3": 32.768,
+        "s4_vanilla": 249.9153,
+        "s4_dynamic": 825.9153,
+        "s5": 85.06560000000002,
+        "s6": 8.0,
+        "formal_total": 1316.8642000000002
+      },
+      "rl_components_before_overhead": {
+        "vanilla_generation": 47.407407407407405,
+        "dynamic_generation": 474.0740740740741,
+        "actor": 71.11111111111111,
+        "old_logprob": 35.55555555555556,
+        "switch": 10.416666666666666,
+        "validation": 20.631703703703703
+      },
+      "serving_scheduling_reserve_hours": 8.0,
+      "serving_aggregate_model_hours_not_adopted": 2.7024000000000004
+    }
+  }
+}

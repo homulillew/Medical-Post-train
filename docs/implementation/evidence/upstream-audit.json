@@ -1,0 +1,223 @@
+{
+  "audited_at_utc": "2026-09-08T09:33:30.795413+00:00",
+  "scope": "metadata_and_source_only_no_model_weights",
+  "models_and_datasets": {
+    "qwen": {
+      "id": "Qwen/Qwen3-8B",
+      "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "license": "apache-2.0",
+      "language": null,
+      "configs": null
+    },
+    "medical_o1": {
+      "id": "FreedomIntelligence/medical-o1-reasoning-SFT",
+      "revision": "fc2c9e8a37b38f38da6d449564a8c350b244aef4",
+      "license": "apache-2.0",
+      "language": [
+        "en",
+        "zh"
+      ],
+      "configs": [
+        {
+          "config_name": "en",
+          "data_files": "medical_o1_sft.json"
+        },
+        {
+          "config_name": "zh",
+          "data_files": "medical_o1_sft_Chinese.json"
+        },
+        {
+          "config_name": "en_mix",
+          "data_files": "medical_o1_sft_mix.json"
+        },
+        {
+          "config_name": "zh_mix",
+          "data_files": "medical_o1_sft_mix_Chinese.json"
+        }
+      ]
+    },
+    "huatuo": {
+      "id": "FreedomIntelligence/HuatuoGPT2-SFT-GPT4-140K",
+      "revision": "4077ffaeb123e49b8b8a0283f42957a5570a52ce",
+      "license": "apache-2.0",
+      "language": [
+        "zh"
+      ],
+      "configs": [
+        {
+          "config_name": "default",
+          "data_files": [
+            {
+              "split": "train",
+              "path": "HuatuoGPT2-GPT4-SFT-140K.json"
+            }
+          ]
+        }
+      ]
+    },
+    "medembed": {
+      "id": "abhinand/MedEmbed-small-v0.1",
+      "revision": "40a5850d046cfdb56154e332b4d7099b63e8d50e",
+      "license": "apache-2.0",
+      "language": "en",
+      "configs": null
+    },
+    "cmb": {
+      "id": "FreedomIntelligence/CMB",
+      "revision": "935fbc09edf1303d89872b21265ff597f426ac0d",
+      "license": "apache-2.0",
+      "language": [
+        "zh"
+      ],
+      "configs": [
+        {
+          "config_name": "CMB-Clin",
+          "data_files": [
+            {
+              "split": "test",
+              "path": "CMB-Clin/CMB-Clin-qa.json"
+            }
+          ]
+        },
+        {
+          "config_name": "CMB-Exam",
+          "data_files": [
+            {
+              "split": "test",
+              "path": "CMB-Exam/CMB-test/CMB-test-choice-question-merge.json"
+            },
+            {
+              "split": "train",
+              "path": "CMB-Exam/CMB-train/CMB-train-merge.json"
+            },
+            {
+              "split": "val",
+              "path": "CMB-Exam/CMB-val/CMB-val-merge.json"
+            }
+          ]
+        }
+      ]
+    },
+    "bge_m3": {
+      "id": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "license": "mit"
+    }
+  },
+  "verl_release": {
+    "version": "0.9.0",
+    "revision": "483b8a009ba3a97563edee3a19887e4862b8094a",
+    "published_at": "2026-08-14T07:55:09Z"
+  },
+  "verl_main_observed": "0d3f56a8980a55bfbbf1214ea54fa1b32ca1405c",
+  "recipe_revision": "e7f889574b8301cc0f0fc1d57c6d67f31ffeb689",
+  "vllm_selected": {
+    "version": "0.24.0",
+    "revision": "ee0da84ab9e04ac7610e28580af62c365e898389"
+  },
+  "vllm_latest_observed": "0.28.0",
+  "source_files": [
+    {
+      "url": "https://github.com/verl-project/verl/blob/483b8a009ba3a97563edee3a19887e4862b8094a/verl/trainer/ppo/core_algos.py",
+      "sha256": "0ec87b90cba24fa0aa959adff573efb2cc49434d705621cf546be231e56a8932",
+      "bytes": 104526
+    },
+    {
+      "url": "https://github.com/verl-project/verl/blob/483b8a009ba3a97563edee3a19887e4862b8094a/verl/workers/engine/fsdp/transformer_impl.py",
+      "sha256": "0a3c894d8129f77a28ecf74ebdd7921e0974053b1fa72ac294cedde4e7fce4f9",
+      "bytes": 75490
+    },
+    {
+      "url": "https://github.com/verl-project/verl/blob/483b8a009ba3a97563edee3a19887e4862b8094a/verl/workers/rollout/vllm_rollout/vllm_async_server.py",
+      "sha256": "4d0bf69fa51151343ea478368e9ac469c147448ae08bda28e3380d5d943e5006",
+      "bytes": 56938
+    },
+    {
+      "url": "https://github.com/verl-project/verl/blob/483b8a009ba3a97563edee3a19887e4862b8094a/verl/utils/checkpoint/fsdp_checkpoint_manager.py",
+      "sha256": "72afa38272a99962ae9850afabe5b7353fc558b24cce9aaf77825bbe86bc749e",
+      "bytes": 22811
+    },
+    {
+      "url": "https://github.com/verl-project/verl/blob/483b8a009ba3a97563edee3a19887e4862b8094a/verl/experimental/reward_loop/reward_manager/naive.py",
+      "sha256": "85a7a6872e2c9684c1252393755c8fe39d8fdf9393608c98cacd025821ba1d51",
+      "bytes": 4069
+    },
+    {
+      "url": "https://github.com/verl-project/verl/blob/483b8a009ba3a97563edee3a19887e4862b8094a/verl/trainer/config/actor/actor.yaml",
+      "sha256": "8cb1890151eda566e2d05bc7ceaa2c2f0ee2d9ccfa6cc0ec4eeee0828bfd3c44",
+      "bytes": 11189
+    },
+    {
+      "url": "https://github.com/verl-project/verl/blob/483b8a009ba3a97563edee3a19887e4862b8094a/verl/trainer/config/model/hf_model.yaml",
+      "sha256": "59c03abbd18577702d207fb939f0dcceef54b6d1c32964a9470e973b7ce15588",
+      "bytes": 5724
+    },
+    {
+      "url": "https://github.com/verl-project/verl/blob/483b8a009ba3a97563edee3a19887e4862b8094a/docker/Dockerfile.stable.vllm",
+      "sha256": "64578a1b19aa0f9034a60c9bb3dacd246cdacdba106f26fef1aa93d5a029086e",
+      "bytes": 8433
+    },
+    {
+      "url": "https://github.com/verl-project/verl/blob/483b8a009ba3a97563edee3a19887e4862b8094a/setup.py",
+      "sha256": "05a35c6f13daed3b915393de58c6004be44596ea9b900392fbe5430423b92b3d",
+      "bytes": 3440
+    },
+    {
+      "url": "https://github.com/verl-project/verl/blob/483b8a009ba3a97563edee3a19887e4862b8094a/requirements.txt",
+      "sha256": "82a67e04e489899f71e0a0af34823c156b534f16e3e69f8468f9c562c1ea9423",
+      "bytes": 562
+    },
+    {
+      "url": "https://github.com/verl-project/verl-recipe/blob/e7f889574b8301cc0f0fc1d57c6d67f31ffeb689/dapo/dapo_ray_trainer.py",
+      "sha256": "990e18797993134f84879370498dc923b84219810ed8d67c4ecc7a11c7581e60",
+      "bytes": 22733
+    },
+    {
+      "url": "https://github.com/verl-project/verl-recipe/blob/e7f889574b8301cc0f0fc1d57c6d67f31ffeb689/dapo/main_dapo.py",
+      "sha256": "071b8e7f632b6a665ba135212ba5dff28c0675083bd952b5146924deaede6c41",
+      "bytes": 4066
+    },
+    {
+      "url": "https://github.com/verl-project/verl-recipe/blob/e7f889574b8301cc0f0fc1d57c6d67f31ffeb689/dapo/REQUIRED_VERL.txt",
+      "sha256": "5a6ba067644efd0503c7b7af470720da336116d758ed766a7bad02861770bc99",
+      "bytes": 924
+    },
+    {
+      "url": "https://github.com/verl-project/verl/blob/483b8a009ba3a97563edee3a19887e4862b8094a/verl/trainer/ppo/ray_trainer.py",
+      "sha256": "32b2fd1a6700d2490dc16f9f1e55413c4ab5207c54ee4584c48fd1d4e0add45e",
+      "bytes": 88394
+    },
+    {
+      "url": "https://github.com/verl-project/verl/blob/483b8a009ba3a97563edee3a19887e4862b8094a/verl/workers/engine_workers.py",
+      "sha256": "22e8fe70af0b617adec01e8c9fc190a4f9da897303a094182f52d26290e767a4",
+      "bytes": 39280
+    }
+  ],
+  "additional_sources": {
+    "qwen_tokenizer_config": {
+      "url": "https://huggingface.co/Qwen/Qwen3-8B/resolve/b968826d9c46dd6066d109eabc6255188de91218/tokenizer_config.json",
+      "bytes": 9732,
+      "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101"
+    },
+    "verl_main_core": {
+      "url": "https://raw.githubusercontent.com/verl-project/verl/0d3f56a8980a55bfbbf1214ea54fa1b32ca1405c/verl/trainer/ppo/core_algos.py",
+      "bytes": 104620,
+      "sha256": "a54b6d812db4441e8b0989ae69d2c46b0a0a7b584296f73d8316f264462c37cb"
+    },
+    "vllm_lora_doc": {
+      "url": "https://raw.githubusercontent.com/vllm-project/vllm/ee0da84ab9e04ac7610e28580af62c365e898389/docs/features/lora.md",
+      "bytes": 19748,
+      "sha256": "46513bde61b795709201cb35277907e325c9fe64aeaa1af8efc7add8da4c986e"
+    },
+    "vllm_sleep_doc": {
+      "url": "https://raw.githubusercontent.com/vllm-project/vllm/ee0da84ab9e04ac7610e28580af62c365e898389/docs/features/sleep_mode.md",
+      "bytes": 5486,
+      "sha256": "1b74c99de4e82896d1122b6d40af65190b31de52f35cb01ed12dbd8f7c91f8c6"
+    },
+    "medembed_models": {
+      "url": "https://huggingface.co/api/models?author=abhinand&search=MedEmbed&limit=10",
+      "bytes": 1878,
+      "sha256": "6e8aaaaf3bf6a6bbc038f25ecce84a7e44b71cea2a2e8618b86c68bd2d99a653"
+    }
+  }
+}

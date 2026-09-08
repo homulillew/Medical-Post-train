@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "status": "UNCHANGED_RESEARCH_CONTRACT",
+  "stage_budgets": {
+    "1": {
+      "train_examples": 20000,
+      "planned_epochs": 1,
+      "minimum_coverage_fraction": 0.99
+    },
+    "2": {
+      "candidate_pool": 15000,
+      "profiling_unique_prompts": 1000,
+      "group_size": 4,
+      "completed_responses": 4000
+    },
+    "3": {
+      "accepted_integration_mixed_groups": 256,
+      "group_size": 4
+    },
+    "4": {
+      "vanilla_training_groups": 5000,
+      "dynamic_accepted_mixed_groups": 5000,
+      "group_size": 4,
+      "accepted_trajectories_per_variant": 20000
+    },
+    "5": {
+      "primary_checkpoints": 3,
+      "cmexam_questions_per_checkpoint": 6811,
+      "cmb_clean_questions_per_checkpoint": 2000
+    },
+    "6": {
+      "consistency_prompts": 100,
+      "concurrency_conditions": [
+        1,
+        4,
+        8,
+        16
+      ],
+      "minimum_real_requests_total": 100,
+      "planned_requests_per_condition": 100
+    }
+  },
+  "source_documents": {
+    "docs/PROJECT_CHARTER.md": "657be202754e019491591912cc8b90748680af1e223d4573f083f53ea2209ce0",
+    "docs/DEFINITION_OF_DONE.md": "43358fde24cf455070213ad2dbb73cf27f613b009d03d5279bb9328afd0f96be",
+    "docs/stages/01_sft.md": "8324e1d3a5e291b567518290b0ebd1296c619e6a3279dfbf1cc9581c2b83192d",
+    "docs/stages/02_reward_rollout.md": "1b5d61290c72a215e708c2d6d0a2c47b35469b2e6c55574af7b7cb8dbddf7178",
+    "docs/stages/03_dynamic_sampling.md": "93a54aef9a5c01e4097540a4f77e2b970eb106166d1b973d19e872ace9f88bc7",
+    "docs/stages/04_gspo.md": "622b12a6dc0affd66e7fdbb52707875159e5d81cc9346f3b4ae2a5556ab2e50c",
+    "docs/stages/05_evaluation.md": "c1f54e501623f5b46e66fe22586066c97a5d25e2becb866ed1d33735b6dc452e",
+    "docs/stages/06_serving.md": "af53bc16840973b1a35ba50e5969e41b0b3db1fbc771b87ca4e8617b3a75598d"
+  }
+}

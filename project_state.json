@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "phase": "TAKEOVER_PLANNING",
+  "contract_sha256": "8ba60bd2e724fbbb74e26f4ef677eb6c6d51eaafcba6eb3bcb0b2eb588a51f24",
+  "stage_verifier_implemented": false,
+  "stages": {
+    "1": {
+      "status": "NOT_STARTED",
+      "run_ids": [],
+      "progress": {
+        "train_examples": 0,
+        "coverage_fraction": 0
+      },
+      "verification_receipt": null,
+      "stage_report": null,
+      "interview_story": null
+    },
+    "2": {
+      "status": "NOT_STARTED",
+      "run_ids": [],
+      "progress": {
+        "candidate_pool": 0,
+        "profiling_unique_prompts": 0,
+        "completed_responses": 0
+      },
+      "verification_receipt": null,
+      "stage_report": null,
+      "interview_story": null
+    },
+    "3": {
+      "status": "NOT_STARTED",
+      "run_ids": [],
+      "progress": {
+        "accepted_integration_mixed_groups": 0
+      },
+      "verification_receipt": null,
+      "stage_report": null,
+      "interview_story": null
+    },
+    "4": {
+      "status": "NOT_STARTED",
+      "run_ids": [],
+      "progress": {
+        "vanilla_training_groups": 0,
+        "dynamic_accepted_mixed_groups": 0
+      },
+      "verification_receipt": null,
+      "stage_report": null,
+      "interview_story": null
+    },
+    "5": {
+      "status": "NOT_STARTED",
+      "run_ids": [],
+      "progress": {
+        "checkpoints_evaluated": 0,
+        "cmexam_questions_per_checkpoint": 0,
+        "cmb_questions_per_checkpoint": 0
+      },
+      "verification_receipt": null,
+      "stage_report": null,
+      "interview_story": null
+    },
+    "6": {
+      "status": "NOT_STARTED",
+      "run_ids": [],
+      "progress": {
+        "consistency_prompts": 0,
+        "real_requests_total": 0,
+        "concurrency_conditions": []
+      },
+      "verification_receipt": null,
+      "stage_report": null,
+      "interview_story": null
+    }
+  }
+}

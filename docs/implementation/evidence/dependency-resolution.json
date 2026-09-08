@@ -1,0 +1,22 @@
+{
+  "kind": "ENVIRONMENT_METADATA_PROBE",
+  "installed_any_packages": false,
+  "direct_git_no_build_attempt": {
+    "exit_code": 1,
+    "reason": "uv --no-build rejects source metadata preparation for git verl"
+  },
+  "fallback_method": "AST literal extraction of install_requires from fixed verl setup.py + candidate pins; uv pip compile --python-version 3.12 --no-build",
+  "resolved_packages": 242,
+  "resolution_log_first_line": "Resolved 242 packages in 2.59s",
+  "input_sha256": "49a9a3e8f68cc4261eac9e9f04ee9035ff0fd63b5e0a1f677ab4f7d6743373fa",
+  "output_sha256": "9c519af9f549596dc75cc80b20319b960ebaf9ba67ba2b8d388c5ce2f9c5a84c",
+  "runtime_validation": "NOT_RUN",
+  "excluded_build_gate": "flash-attn==2.8.3 and optional GPU extras",
+  "nccl_standard_pin": "2.28.9",
+  "nccl_upstream_docker_override": "2.29.7 or newer; conflicts with torch metadata; not applied",
+  "run_id": "s0_dependency_metadata_20260908_483b8a00",
+  "run_class": "DIAGNOSTIC",
+  "stage": 0,
+  "purpose": "environment_metadata_probe",
+  "does_not_complete_any_stage": true
+}

@@ -1,0 +1,14 @@
+# Bulk artifacts live outside the repository; these are local convenience paths.
+.venv*/
+__pycache__/
+*.pyc
+.pytest_cache/
+.cache/
+/data/
+/models/
+/runs/
+/checkpoints/
+/wandb/
+.env
+.env.*
+!.env.example

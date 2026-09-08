@@ -1,0 +1,17 @@
+{
+  "release": "483b8a009ba3a97563edee3a19887e4862b8094a",
+  "main": "0d3f56a8980a55bfbbf1214ea54fa1b32ca1405c",
+  "functions": {
+    "compute_policy_loss_gspo": {
+      "release_ast_sha256": "50cf8b1693eeaab5d2b2d544af534aad34f208d411951baaf1e3de2a88cebdd2",
+      "main_ast_sha256": "342dc67567a92066e29a09000944e1c74de55a76880534dc16983fdf6fd7f493",
+      "equal": false,
+      "difference_summary": "Release forces seq-mean-token-mean in agg_loss; main passes loss_agg_mode argument. Pin explicit aggregation when upgrading."
+    },
+    "compute_grpo_outcome_advantage": {
+      "release_ast_sha256": "a314152a96addd5d5fbe86d21b20f1952ad40adbf354c7b4845a9792424caf31",
+      "main_ast_sha256": "a314152a96addd5d5fbe86d21b20f1952ad40adbf354c7b4845a9792424caf31",
+      "equal": true
+    }
+  }
+}

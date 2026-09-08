@@ -1,0 +1,1368 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Project state index; semantic verification required",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "phase",
+    "contract_sha256",
+    "stage_verifier_implemented",
+    "stages"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "phase": {
+      "enum": [
+        "TAKEOVER_PLANNING",
+        "IMPLEMENTATION",
+        "EXECUTION",
+        "COMPLETE"
+      ]
+    },
+    "contract_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "stage_verifier_implemented": {
+      "type": "boolean"
+    },
+    "stages": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "properties": {
+        "1": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "run_ids",
+            "progress",
+            "verification_receipt",
+            "stage_report",
+            "interview_story"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "NOT_STARTED",
+                "IMPLEMENTED",
+                "SMOKE_PASS",
+                "PILOT_PASS",
+                "FULL_RUNNING",
+                "FULL_PASS",
+                "VERIFIED",
+                "DONE",
+                "FAILED",
+                "BLOCKED"
+              ]
+            },
+            "run_ids": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "progress": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "train_examples",
+                "coverage_fraction"
+              ],
+              "properties": {
+                "train_examples": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "coverage_fraction": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                }
+              }
+            },
+            "verification_receipt": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "path",
+                    "sha256",
+                    "verifier_commit",
+                    "contract_sha256",
+                    "result"
+                  ],
+                  "properties": {
+                    "path": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "sha256": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{64}$"
+                    },
+                    "verifier_commit": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{40}$"
+                    },
+                    "contract_sha256": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{64}$"
+                    },
+                    "result": {
+                      "const": "PASS"
+                    }
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "stage_report": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "interview_story": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "status": {
+                    "enum": [
+                      "FULL_PASS",
+                      "VERIFIED",
+                      "DONE"
+                    ]
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "run_ids": {
+                    "minItems": 1
+                  },
+                  "progress": {
+                    "properties": {
+                      "train_examples": {
+                        "minimum": 20000
+                      },
+                      "coverage_fraction": {
+                        "minimum": 0.99
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "status": {
+                    "enum": [
+                      "VERIFIED",
+                      "DONE"
+                    ]
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "verification_receipt": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "path",
+                      "sha256",
+                      "verifier_commit",
+                      "contract_sha256",
+                      "result"
+                    ],
+                    "properties": {
+                      "path": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "sha256": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{64}$"
+                      },
+                      "verifier_commit": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{40}$"
+                      },
+                      "contract_sha256": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{64}$"
+                      },
+                      "result": {
+                        "const": "PASS"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "status": {
+                    "const": "DONE"
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "stage_report": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "interview_story": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "2": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "run_ids",
+            "progress",
+            "verification_receipt",
+            "stage_report",
+            "interview_story"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "NOT_STARTED",
+                "IMPLEMENTED",
+                "SMOKE_PASS",
+                "PILOT_PASS",
+                "FULL_RUNNING",
+                "FULL_PASS",
+                "VERIFIED",
+                "DONE",
+                "FAILED",
+                "BLOCKED"
+              ]
+            },
+            "run_ids": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "progress": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "candidate_pool",
+                "profiling_unique_prompts",
+                "completed_responses"
+              ],
+              "properties": {
+                "candidate_pool": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "profiling_unique_prompts": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "completed_responses": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              }
+            },
+            "verification_receipt": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "path",
+                    "sha256",
+                    "verifier_commit",
+                    "contract_sha256",
+                    "result"
+                  ],
+                  "properties": {
+                    "path": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "sha256": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{64}$"
+                    },
+                    "verifier_commit": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{40}$"
+                    },
+                    "contract_sha256": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{64}$"
+                    },
+                    "result": {
+                      "const": "PASS"
+                    }
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "stage_report": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "interview_story": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "status": {
+                    "enum": [
+                      "FULL_PASS",
+                      "VERIFIED",
+                      "DONE"
+                    ]
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "run_ids": {
+                    "minItems": 1
+                  },
+                  "progress": {
+                    "properties": {
+                      "candidate_pool": {
+                        "minimum": 15000
+                      },
+                      "profiling_unique_prompts": {
+                        "minimum": 1000
+                      },
+                      "completed_responses": {
+                        "minimum": 4000
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "status": {
+                    "enum": [
+                      "VERIFIED",
+                      "DONE"
+                    ]
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "verification_receipt": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "path",
+                      "sha256",
+                      "verifier_commit",
+                      "contract_sha256",
+                      "result"
+                    ],
+                    "properties": {
+                      "path": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "sha256": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{64}$"
+                      },
+                      "verifier_commit": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{40}$"
+                      },
+                      "contract_sha256": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{64}$"
+                      },
+                      "result": {
+                        "const": "PASS"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "status": {
+                    "const": "DONE"
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "stage_report": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "interview_story": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "3": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "run_ids",
+            "progress",
+            "verification_receipt",
+            "stage_report",
+            "interview_story"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "NOT_STARTED",
+                "IMPLEMENTED",
+                "SMOKE_PASS",
+                "PILOT_PASS",
+                "FULL_RUNNING",
+                "FULL_PASS",
+                "VERIFIED",
+                "DONE",
+                "FAILED",
+                "BLOCKED"
+              ]
+            },
+            "run_ids": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "progress": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "accepted_integration_mixed_groups"
+              ],
+              "properties": {
+                "accepted_integration_mixed_groups": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              }
+            },
+            "verification_receipt": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "path",
+                    "sha256",
+                    "verifier_commit",
+                    "contract_sha256",
+                    "result"
+                  ],
+                  "properties": {
+                    "path": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "sha256": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{64}$"
+                    },
+                    "verifier_commit": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{40}$"
+                    },
+                    "contract_sha256": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{64}$"
+                    },
+                    "result": {
+                      "const": "PASS"
+                    }
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "stage_report": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "interview_story": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "status": {
+                    "enum": [
+                      "FULL_PASS",
+                      "VERIFIED",
+                      "DONE"
+                    ]
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "run_ids": {
+                    "minItems": 1
+                  },
+                  "progress": {
+                    "properties": {
+                      "accepted_integration_mixed_groups": {
+                        "minimum": 256
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "status": {
+                    "enum": [
+                      "VERIFIED",
+                      "DONE"
+                    ]
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "verification_receipt": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "path",
+                      "sha256",
+                      "verifier_commit",
+                      "contract_sha256",
+                      "result"
+                    ],
+                    "properties": {
+                      "path": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "sha256": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{64}$"
+                      },
+                      "verifier_commit": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{40}$"
+                      },
+                      "contract_sha256": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{64}$"
+                      },
+                      "result": {
+                        "const": "PASS"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "status": {
+                    "const": "DONE"
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "stage_report": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "interview_story": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "4": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "run_ids",
+            "progress",
+            "verification_receipt",
+            "stage_report",
+            "interview_story"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "NOT_STARTED",
+                "IMPLEMENTED",
+                "SMOKE_PASS",
+                "PILOT_PASS",
+                "FULL_RUNNING",
+                "FULL_PASS",
+                "VERIFIED",
+                "DONE",
+                "FAILED",
+                "BLOCKED"
+              ]
+            },
+            "run_ids": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "progress": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "vanilla_training_groups",
+                "dynamic_accepted_mixed_groups"
+              ],
+              "properties": {
+                "vanilla_training_groups": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "dynamic_accepted_mixed_groups": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              }
+            },
+            "verification_receipt": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "path",
+                    "sha256",
+                    "verifier_commit",
+                    "contract_sha256",
+                    "result"
+                  ],
+                  "properties": {
+                    "path": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "sha256": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{64}$"
+                    },
+                    "verifier_commit": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{40}$"
+                    },
+                    "contract_sha256": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{64}$"
+                    },
+                    "result": {
+                      "const": "PASS"
+                    }
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "stage_report": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "interview_story": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "status": {
+                    "enum": [
+                      "FULL_PASS",
+                      "VERIFIED",
+                      "DONE"
+                    ]
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "run_ids": {
+                    "minItems": 2
+                  },
+                  "progress": {
+                    "properties": {
+                      "vanilla_training_groups": {
+                        "minimum": 5000
+                      },
+                      "dynamic_accepted_mixed_groups": {
+                        "minimum": 5000
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "status": {
+                    "enum": [
+                      "VERIFIED",
+                      "DONE"
+                    ]
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "verification_receipt": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "path",
+                      "sha256",
+                      "verifier_commit",
+                      "contract_sha256",
+                      "result"
+                    ],
+                    "properties": {
+                      "path": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "sha256": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{64}$"
+                      },
+                      "verifier_commit": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{40}$"
+                      },
+                      "contract_sha256": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{64}$"
+                      },
+                      "result": {
+                        "const": "PASS"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "status": {
+                    "const": "DONE"
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "stage_report": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "interview_story": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "5": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "run_ids",
+            "progress",
+            "verification_receipt",
+            "stage_report",
+            "interview_story"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "NOT_STARTED",
+                "IMPLEMENTED",
+                "SMOKE_PASS",
+                "PILOT_PASS",
+                "FULL_RUNNING",
+                "FULL_PASS",
+                "VERIFIED",
+                "DONE",
+                "FAILED",
+                "BLOCKED"
+              ]
+            },
+            "run_ids": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "progress": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "checkpoints_evaluated",
+                "cmexam_questions_per_checkpoint",
+                "cmb_questions_per_checkpoint"
+              ],
+              "properties": {
+                "checkpoints_evaluated": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "cmexam_questions_per_checkpoint": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "cmb_questions_per_checkpoint": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              }
+            },
+            "verification_receipt": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "path",
+                    "sha256",
+                    "verifier_commit",
+                    "contract_sha256",
+                    "result"
+                  ],
+                  "properties": {
+                    "path": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "sha256": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{64}$"
+                    },
+                    "verifier_commit": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{40}$"
+                    },
+                    "contract_sha256": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{64}$"
+                    },
+                    "result": {
+                      "const": "PASS"
+                    }
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "stage_report": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "interview_story": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "status": {
+                    "enum": [
+                      "FULL_PASS",
+                      "VERIFIED",
+                      "DONE"
+                    ]
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "run_ids": {
+                    "minItems": 1
+                  },
+                  "progress": {
+                    "properties": {
+                      "checkpoints_evaluated": {
+                        "minimum": 3
+                      },
+                      "cmexam_questions_per_checkpoint": {
+                        "minimum": 6811
+                      },
+                      "cmb_questions_per_checkpoint": {
+                        "minimum": 2000
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "status": {
+                    "enum": [
+                      "VERIFIED",
+                      "DONE"
+                    ]
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "verification_receipt": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "path",
+                      "sha256",
+                      "verifier_commit",
+                      "contract_sha256",
+                      "result"
+                    ],
+                    "properties": {
+                      "path": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "sha256": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{64}$"
+                      },
+                      "verifier_commit": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{40}$"
+                      },
+                      "contract_sha256": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{64}$"
+                      },
+                      "result": {
+                        "const": "PASS"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "status": {
+                    "const": "DONE"
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "stage_report": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "interview_story": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "6": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "run_ids",
+            "progress",
+            "verification_receipt",
+            "stage_report",
+            "interview_story"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "NOT_STARTED",
+                "IMPLEMENTED",
+                "SMOKE_PASS",
+                "PILOT_PASS",
+                "FULL_RUNNING",
+                "FULL_PASS",
+                "VERIFIED",
+                "DONE",
+                "FAILED",
+                "BLOCKED"
+              ]
+            },
+            "run_ids": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "progress": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "consistency_prompts",
+                "real_requests_total",
+                "concurrency_conditions"
+              ],
+              "properties": {
+                "consistency_prompts": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "real_requests_total": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "concurrency_conditions": {
+                  "type": "array",
+                  "items": {
+                    "enum": [
+                      1,
+                      4,
+                      8,
+                      16
+                    ]
+                  },
+                  "uniqueItems": true
+                }
+              }
+            },
+            "verification_receipt": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "path",
+                    "sha256",
+                    "verifier_commit",
+                    "contract_sha256",
+                    "result"
+                  ],
+                  "properties": {
+                    "path": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "sha256": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{64}$"
+                    },
+                    "verifier_commit": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{40}$"
+                    },
+                    "contract_sha256": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{64}$"
+                    },
+                    "result": {
+                      "const": "PASS"
+                    }
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "stage_report": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "interview_story": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "status": {
+                    "enum": [
+                      "FULL_PASS",
+                      "VERIFIED",
+                      "DONE"
+                    ]
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "run_ids": {
+                    "minItems": 1
+                  },
+                  "progress": {
+                    "properties": {
+                      "consistency_prompts": {
+                        "minimum": 100
+                      },
+                      "real_requests_total": {
+                        "minimum": 100
+                      },
+                      "concurrency_conditions": {
+                        "minItems": 4
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "status": {
+                    "enum": [
+                      "VERIFIED",
+                      "DONE"
+                    ]
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "verification_receipt": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "path",
+                      "sha256",
+                      "verifier_commit",
+                      "contract_sha256",
+                      "result"
+                    ],
+                    "properties": {
+                      "path": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "sha256": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{64}$"
+                      },
+                      "verifier_commit": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{40}$"
+                      },
+                      "contract_sha256": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{64}$"
+                      },
+                      "result": {
+                        "const": "PASS"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "status": {
+                    "const": "DONE"
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "stage_report": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "interview_story": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

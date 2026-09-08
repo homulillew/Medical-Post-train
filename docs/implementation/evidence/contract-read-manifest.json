@@ -1,0 +1,98 @@
+{
+  "read_in_full": true,
+  "source_commit": "8af94b2",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "de6f2afbe434c24cbeeef46ab64b31cbe0aeeef4f897348e82ee83f489df8657"
+    },
+    {
+      "path": "README.md",
+      "sha256": "6c248ff2c0b078ae8b22bdf2f7cff184d54c00e3c1303eae2a31036e77df85c9"
+    },
+    {
+      "path": "docs/ARTIFACT_RETENTION.md",
+      "sha256": "4804a5f027d223a496354bdb950e0a755bd8150b61baaac5f4d49a43ae0f4d70"
+    },
+    {
+      "path": "docs/AUTONOMY_AND_EXPLORATION.md",
+      "sha256": "7b4bba9d88a50707498e145a6f4785975f2651040c7a4252b5532ac921d9ef24"
+    },
+    {
+      "path": "docs/CASE_STUDY_PROTOCOL.md",
+      "sha256": "3418e515b96367c5b5fde5e4bb915b1601537453a2b940e5ce8e6e30bc15730b"
+    },
+    {
+      "path": "docs/DEFINITION_OF_DONE.md",
+      "sha256": "43358fde24cf455070213ad2dbb73cf27f613b009d03d5279bb9328afd0f96be"
+    },
+    {
+      "path": "docs/EXECUTION_WORKFLOW.md",
+      "sha256": "1e460f56a0f0786db58780ab4396180d2a5328892f34fe46d97b9b0a781554ca"
+    },
+    {
+      "path": "docs/EXPERIMENT_PROTOCOL.md",
+      "sha256": "ed1215cd7b7960901dc49c757d512a68f0490c51cab202b82ba3bf2c5e15f1d2"
+    },
+    {
+      "path": "docs/PROJECT_CHARTER.md",
+      "sha256": "657be202754e019491591912cc8b90748680af1e223d4573f083f53ea2209ce0"
+    },
+    {
+      "path": "docs/stages/01_sft.md",
+      "sha256": "8324e1d3a5e291b567518290b0ebd1296c619e6a3279dfbf1cc9581c2b83192d"
+    },
+    {
+      "path": "docs/stages/02_reward_rollout.md",
+      "sha256": "1b5d61290c72a215e708c2d6d0a2c47b35469b2e6c55574af7b7cb8dbddf7178"
+    },
+    {
+      "path": "docs/stages/03_dynamic_sampling.md",
+      "sha256": "93a54aef9a5c01e4097540a4f77e2b970eb106166d1b973d19e872ace9f88bc7"
+    },
+    {
+      "path": "docs/stages/04_gspo.md",
+      "sha256": "622b12a6dc0affd66e7fdbb52707875159e5d81cc9346f3b4ae2a5556ab2e50c"
+    },
+    {
+      "path": "docs/stages/05_evaluation.md",
+      "sha256": "c1f54e501623f5b46e66fe22586066c97a5d25e2becb866ed1d33735b6dc452e"
+    },
+    {
+      "path": "docs/stages/06_serving.md",
+      "sha256": "af53bc16840973b1a35ba50e5969e41b0b3db1fbc771b87ca4e8617b3a75598d"
+    },
+    {
+      "path": "docs/templates/BAD_CASE.json",
+      "sha256": "250b98545ff7ba6eb1d3bb7446093e473623beeb1291692ff21d1021cdd3c216"
+    },
+    {
+      "path": "docs/templates/DECISION_RECORD.md",
+      "sha256": "f1fd41b625747452df4e104e942eef21b278f158ff450d1d381d3136f6e44b43"
+    },
+    {
+      "path": "docs/templates/IMPLEMENTATION_PLAN.md",
+      "sha256": "859abb26a3eadf9a7f35e39734ffa5d7fb9abb13820cd9535aec629af52cecc3"
+    },
+    {
+      "path": "docs/templates/INTERVIEW_STORY.md",
+      "sha256": "0cdda3d6a2130983f75c5c376220dbd71326294eefd0eefe0dff6c73ba194bd3"
+    },
+    {
+      "path": "docs/templates/OBSERVATION_ENTRY.md",
+      "sha256": "ecd2eefd9d318de2daa9117e675ae4f2c3d134e1404614e25cca2aed3b9bd6f1"
+    },
+    {
+      "path": "docs/templates/RESUME_EVIDENCE.md",
+      "sha256": "214ad50ae2db59c95fb6ef79f35471586e75588be48e9afc10f6690b3c15e91e"
+    },
+    {
+      "path": "docs/templates/RUN_REPORT.md",
+      "sha256": "40fbbaa0d9f9ad97f4015dd4e47d62dc1069d72ab063728699b07bf5c14d4c94"
+    },
+    {
+      "path": "docs/templates/STAGE_REPORT.md",
+      "sha256": "5bf73a3fb075cbe3ae76f6b5563dfdefb754cef7faaedb812611f22ce56539ea"
+    }
+  ]
+}
