@@ -1,0 +1,28 @@
+[
+  {
+    "case_id": "S1-SOURCE-REASONING-001",
+    "run_id": "s1_source_reasoning_20260908T160619_58be7b",
+    "stage": 1,
+    "category": "BAD_CASE",
+    "subtype": "selected_source_reasoning_arithmetic_inconsistency",
+    "prompt_id": "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:14099",
+    "prompt": "已知某药的半衰期为12小时，首次给药为1g，血浆最高浓度达4mg/L。如果继续每12小时给药1g，理论上问该药物在多少时间后能够达到血浆浓度10mg/L？请解释原因。",
+    "ground_truth": "Under the stated recurrence, peaks approach 8; the target 10 is unreachable.",
+    "responses": [
+      {
+        "kind": "original_training_target",
+        "text": "<think>\n首先，我们用到一个知道的概念，就是药物的半衰期。这个药物的半衰期是12小时，告诉我们意味着每过12小时，药物浓度会减半。嗯，这个概念挺重要的。\n\n接着，首次给药是1g，这时候在血浆的浓度最高达到了4mg/L。那么按照半衰期来算，12小时后，这个浓度就会掉到2mg/L，对吧，没错，就是一半。\n\n每12小时继续再给药1g的话，那这时候又是一个新的开始。新加入的1g会瞬间把浓度提到4mg/L，然后先前的药物浓度已经减半再叠加上去。因此，12小时后，这个过程让总浓度变得有些复杂，需要累积计算。\n\n来算一下，这样的过程，第一个12小时后从4mg/L减到2mg/L，再加新的4mg/L，总共是6mg/L。这数看起来提高了不少。\n\n到第二个12小时，也就是24小时后，现在就不只是算新加进去的，还要算前面的减半叠加。之前是6mg/L对吧，减半成3mg/L，再加个新的4mg/L，结果就是7mg/L。嗯，到这为止还是不够呢，要看后面的累积。\n\n第三个12小时，也就是36小时后，现在步骤是先前累积的7mg/L减半成3.5mg/L，哦然后新进的4mg/L相加，总终于是7.5mg/L。还没到目标。\n\n接着是48小时，之前的7.5mg/L减半是3.75mg/L，增4mg/L，哎，总共7.75mg/L。\n\n然后是60小时。总浓度从7.75mg/L下降到3.875mg/L，之后加4mg/L，总共是7.875mg/L。还不是目标值。\n\n接下去是72小时，减半后是3.9375mg/L，加4mg/L，达到7.9375mg/L。渐渐逼近了呢。\n\n好，现在是84小时了。总值降成3.96875mg/L，累加新4mg/L，变成7.96875mg/L。现在已经不远了！\n\n96小时时再来看，之前的浓度减为3.984375mg/L，加上刚进去的浓度，变成7.984375mg/L。哦，接近，但还差一点。\n\n绕过这些复杂的算术，到了108小时后，降为3.9921875mg/L，加新4mg/L变为9.9921875mg/L。看来已经接近了目标。\n\n此时是120小时，减半变为4.99609375mg/L，加入新一剂，变成8.99609375mg/L。快到了！\n\n终于到了132小时，总储量减半到4.998046875mg/L，新的剂量添加，总共是8.998046875mg/L。再来一步。\n\n最后突破点是144小时，之前的8.998046875mg/L减半，4.9990234375mg/L，加4mg/L后，突破到10mg/L，目标达成了！\n\n整个过程不容易，药物浓度是在持续增加，但在半衰期和频繁给药条件下，最终也要看累计是否达成目标。\n\n经过这番精打细算，那目标需要认清，如果要确保浓度会稳定达到这个10mg/L，首先要考虑药物的累积与稳态，经过和事实计算，发现在这个给药条件下是难以达成需要的稳态浓度，调整药物方案可能需要。\n\n不过，整个来看，给药这个节奏是达到10mg/L的临界线也许能调整，尽量实现药物作用的最大效益。\n</think>\n\n<answer>通过分析，我们发现这个药物的浓度是在不断累积的过程中趋向于稳定的一个高峰值。每12小时给药1g，并且药物的半衰期是12小时，这意味着在稳定状态下，药物的浓度会在增加与衰减之间达到一个平衡。\n\n从计算过程中可以观察到，尽管浓度逐步上升，但由于药物的半衰期特性，该浓度以接近10mg/L的速度趋向于稳定，而实际上在给药这种条件下无法真正达到或维持10mg/L的浓度。因为每次给药后，虽然有一部分药物浓度被累积，从而使得这一水平接近10mg/L，但药物的衰减始终制约着这种累积的最大值。\n\n在这种持续的给药模式下，理论上药物血浆最大浓度将接近但永远不真正达到10mg/L。实际达到的稳态水平会在一个较低的浓度。\n\n因此，单纯通过继续该模式给药，并不足以达到药物在血浆中10mg/L的浓度。倘若目标是达到并维持10mg/L，可能需要调整给药方案，比如增加每次给药剂量或缩短给药间隔。</answer>"
+      }
+    ],
+    "observation": "The longest selected CoT has an explicit incorrect sum and contradictory claims about reaching 10. Its final answer says the target cannot be reached but also incorrectly describes approaching 10.",
+    "hypothesis": "Unverified source-authored reasoning contains factual noise despite structural cleaning.",
+    "alternative_explanations": [
+      "This extreme selected case is not a random quality sample; it cannot estimate the dataset error rate."
+    ],
+    "followup": "Preserve frozen formal baseline and annotate its limitation. A later curated-data experiment needs a new version/run; do not silently remove this record mid-epoch.",
+    "artifact_refs": [
+      "/data/WSH/medical-post-train-artifacts/data/stage1/s1_source_reasoning_20260908T160619_58be7b/selected_longest_reasoning.json",
+      "/data/WSH/medical-post-train-artifacts/data/stage1/s1_source_reasoning_20260908T160619_58be7b/arithmetic_check.json"
+    ]
+  }
+]

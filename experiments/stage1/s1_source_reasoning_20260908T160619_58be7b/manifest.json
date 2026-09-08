@@ -1,0 +1,25 @@
+{
+  "run_id": "s1_source_reasoning_20260908T160619_58be7b",
+  "stage": 1,
+  "run_class": "DIAGNOSTIC",
+  "purpose": "Inspect selected longest reasoning, arithmetic consistency and cross-source duplicate edge counts; no training/data mutation",
+  "started": "2026-09-08T16:06:16.750382+00:00",
+  "artifact_root": "/data/WSH/medical-post-train-artifacts/data/stage1/s1_source_reasoning_20260908T160619_58be7b",
+  "source_data_run": "s1_data_20260908T144854_bac3a7",
+  "git_commit": "cc4a8ec9788fae608a2dfc1cf57d585bee71c4e5",
+  "dirty_state": true,
+  "script_sha256": "e7f0de37f73210a5108bc416f9401fe02756626ca380cdacfc6d847abd7fde47",
+  "command": [
+    "/data/WSH/post-train/.venv-train/bin/python",
+    "scripts/audit_stage1_source_reasoning.py"
+  ],
+  "environment": {
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:27:36) [GCC 11.2.0]",
+    "platform": "Linux-7.0.0-28-generic-x86_64-with-glibc2.39",
+    "gpu_used": false
+  },
+  "source_hashes": {
+    "/data/WSH/medical-post-train-artifacts/data/stage1/s1_data_20260908T144854_bac3a7/train.jsonl": "971a44dbc0ae2b12ca15ab5c2e7fb3c6c6ad3f711615a1bdb7e218f01d0759db",
+    "/data/WSH/medical-post-train-artifacts/data/stage1/s1_data_20260908T144854_bac3a7/duplicate_edges.jsonl": "c4513c660c040974f01db931465d5f24b20c14a286065f48d214de2aa54ebc8d"
+  }
+}

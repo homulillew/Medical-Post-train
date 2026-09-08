@@ -1,0 +1,30 @@
+{
+  "run_id": "s1_source_reasoning_20260908T160619_58be7b",
+  "status": "PASS",
+  "observed_source_quality_failure": true,
+  "selected_longest_reasoning_sample": "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:14099",
+  "reasoning_tokens": 868,
+  "direct_medical_o1_huatuo_duplicate_edges": 0,
+  "edge_source_pairs": {
+    "cmb_test / cmb_test": 157,
+    "cmb_test / cmexam_test": 127,
+    "cmb_test / cmexam_train": 699,
+    "cmb_test / cmexam_val": 99,
+    "cmb_test / medical_o1": 29,
+    "cmexam_test / cmexam_test": 42,
+    "cmexam_test / cmexam_train": 790,
+    "cmexam_test / cmexam_val": 82,
+    "cmexam_test / medical_o1": 20,
+    "cmexam_train / cmexam_train": 3283,
+    "cmexam_train / cmexam_val": 785,
+    "cmexam_train / huatuo": 4,
+    "cmexam_train / medical_o1": 390,
+    "cmexam_val / cmexam_val": 45,
+    "cmexam_val / medical_o1": 38,
+    "huatuo / huatuo": 4851,
+    "medical_o1 / medical_o1": 3048
+  },
+  "frozen_data_changed": false,
+  "quality_error_rate": null,
+  "conclusion": "Structural validity and lexical isolation do not establish reasoning correctness."
+}
