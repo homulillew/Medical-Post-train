@@ -1,0 +1,15 @@
+{
+  "pid": 2297463,
+  "detached": true,
+  "timestamp": "2026-09-09T16:00:05.643954+00:00",
+  "pair": {
+    "path": "/data/WSH/post-train/experiments/stage4/formal_pair.json",
+    "sha256": "95e2022605ff54ee5c264887e3d7a4421d4087d224b7dda8d85fe788cccd86b8",
+    "bytes": 15286
+  },
+  "logs": "/data/WSH/medical-post-train-artifacts/stage4-formal-queue/stage4_formal_8fb878a48ba4/attempt_001",
+  "command": [
+    "/data/WSH/post-train/.venv-train/bin/python",
+    "/data/WSH/post-train/scripts/continue_stage4_formal.py"
+  ]
+}

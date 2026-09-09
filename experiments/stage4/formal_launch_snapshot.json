@@ -1,0 +1,62 @@
+{
+  "timestamp": "2026-09-09T16:02:04.260957+00:00",
+  "stage4_status": "FULL_RUNNING",
+  "queue": {
+    "status": "FULL_RUNNING",
+    "variant": "vanilla",
+    "run_id": "s4_formal_vanilla_20260909T155928_24aec5",
+    "owner_pid": 2297533,
+    "pid": 2297463,
+    "timestamp": "2026-09-09T16:01:36.667037+00:00",
+    "committed": null,
+    "READY_FOR_STAGE5": "NO"
+  },
+  "queue_heartbeat": {
+    "pid": 2297463,
+    "timestamp": "2026-09-09T16:01:56.105509+00:00"
+  },
+  "vanilla_status": {
+    "status": "RUNNING",
+    "pid": 2297533,
+    "timestamp": "2026-09-09T16:00:06.827207+00:00"
+  },
+  "vanilla_heartbeat": {
+    "pid": 2297533,
+    "timestamp": "2026-09-09T16:01:56.955666+00:00"
+  },
+  "dynamic_status": {
+    "status": "PREPARED",
+    "timestamp": "2026-09-09T15:59:29.345160+00:00"
+  },
+  "committed_formal_groups": {
+    "vanilla": 0,
+    "dynamic": 0
+  },
+  "phase": "Vanilla initial monitor512",
+  "initial_policy_identity": {
+    "policy_version": "1601e97891e51940bd4b575d8811a77d8278cbeb296c044b7004e41da6d9ea64",
+    "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s1_formal_20260908T152119_60040b/checkpoints/final/adapter",
+    "adapter_sha256": "1601e97891e51940bd4b575d8811a77d8278cbeb296c044b7004e41da6d9ea64",
+    "lora_id": 1,
+    "repeat_error": 0.0,
+    "previous_policy_delta": null,
+    "prompt_tokens": 214,
+    "output_tokens": 16,
+    "seconds": 1.9361395123414695,
+    "controls": [
+      {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/attempt_001/initial_sync/first.json",
+        "sha256": "259d5b909c89e1c0a6efe55d26c7ee73aeb503a6856b3357f88423abd3cfe0f5",
+        "bytes": 5284
+      },
+      {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/attempt_001/initial_sync/repeat.json",
+        "sha256": "259d5b909c89e1c0a6efe55d26c7ee73aeb503a6856b3357f88423abd3cfe0f5",
+        "bytes": 5284
+      }
+    ]
+  },
+  "completed_initial_validation_batches": 4,
+  "READY_FOR_STAGE5": "NO",
+  "stage5_6": "NOT_STARTED"
+}

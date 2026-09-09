@@ -77,7 +77,7 @@
       "interview_story": "docs/stage_reports/03_dynamic_sampling.md"
     },
     "4": {
-      "status": "PILOT_PASS",
+      "status": "FULL_RUNNING",
       "run_ids": [
         "s4_optimization_diagnostic_20260909T065945_66b040",
         "s4_optimization_diagnostic_20260909T070249_a3a605",
@@ -88,7 +88,9 @@
         "s4_pilot_dynamic_20260909T075204_3e449e",
         "s4_recovery_a_20260909T153057_987d5a",
         "s4_recovery_b_20260909T153059_e39b9b",
-        "s4_recovery_c_20260909T153059_f621ea"
+        "s4_recovery_c_20260909T153059_f621ea",
+        "s4_formal_vanilla_20260909T155928_24aec5",
+        "s4_formal_dynamic_20260909T155929_18b61a"
       ],
       "progress": {
         "vanilla_training_groups": 0,

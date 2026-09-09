@@ -1,87 +1,42 @@
 # Stage4 progress and continuation
 
-Updated2026-09-09 22:56 Asia/Shanghai. **PILOT_PASS; Stage4 incomplete.** Stage0 VERIFIED,
-Stage1–3 DONE, Stage5–6 NOT_STARTED. Formal progress: Vanilla0/5000,
-Dynamic0/5000 accepted mixed. READY_FOR_STAGE5=NO.
+Snapshot2026-09-10 00:01 Asia/Shanghai: **FULL_RUNNING; incomplete.** Stage0 VERIFIED, Stage1–3 DONE, Stage5–6 NOT_STARTED. READY_FOR_STAGE5=NO.
 
-| Gate | Actual evidence |
-| --- | --- |
-| Matched real8×4 optimization diagnostic | PASS; three fresh SFT/native Adam conditions, shared trajectories and old logprobs |
-| Vanilla smoke |32 training groups,4 windows,8 optimizer steps; raw verifier PASS |
-| Dynamic smoke |32 accepted mixed,80 generated groups,4 windows,8 steps; raw verifier PASS |
-| Real committed-boundary resume |Actual SIGTERM/new parent and native optimizer continuity PASS for both variants |
-| Native final reload preflight |Vanilla smoke checkpoint reloaded in a fresh process, Adam step8,558 finite response logprobs |
-| Pilot |Both fresh512-group runs completed64 windows/128 optimizer steps and passed raw verification |
-| Formal |Not prepared or launched; both625-window budgets still required |
+| Formal run | Actual state at launch snapshot | Required budget |
+| --- | --- | --- |
+| Vanilla `s4_formal_vanilla_20260909T155928_24aec5` | RUNNING; initial monitor512, 0 committed groups |5000 groups /625 windows /1250 optimizer steps |
+| Dynamic `s4_formal_dynamic_20260909T155929_18b61a` | PREPARED in the same persistent queue;0 groups |5000 accepted mixed groups /625 windows /1250 optimizer steps |
 
-Pilot pair prepared and detached queue launched at2026-09-09 07:52UTC
-(15:52 Asia/Shanghai), from shared code commit`11be2ed`:
+Both initialize from the original Stage1 SFT SHA`1601e97891e51940bd4b575d8811a77d8278cbeb296c044b7004e41da6d9ea64`, with fresh Adam/scheduler/stream. Neither continues a pilot. The unique pair is `stage4_formal_8fb878a48ba4`, frozen at clean code commit`540b777bdd9b3ae8d0f8d32d7b90a567c41ac67e`. The complete config/input/source/model/validation hashes are in `experiments/stage4/formal_pair.json`.
 
-- Vanilla:`s4_pilot_vanilla_20260909T075203_95a6e9`, initially RUNNING with
-  worker PID2174146.
-- Dynamic:`s4_pilot_dynamic_20260909T075204_3e449e`, PREPARED and queued.
-- Queue PID2174073; logs under
-  `/data/WSH/medical-post-train-artifacts/stage4-pilot-queue/`.
+The initial worker PID is2297533; queue PID2297463. These are launch observations, not a substitute for current PID/heartbeat inspection. Queue logs: `/data/WSH/medical-post-train-artifacts/stage4-formal-queue/stage4_formal_8fb878a48ba4/attempt_001/`. Bulk runs are under `/data/WSH/medical-post-train-artifacts/runs/`.
 
-These are launch-time observations; inspect current PID/heartbeat before acting.
-Pilot progress never increments the two formal counters in project state.
-
-Completion update: Vanilla raw verification PASS at18:22; Dynamic PASS at22:10.
-Queue status is`BOTH_PILOTS_RAW_VERIFIED` and the pilot queue has ended. No
-formal training is currently running. Analysis and remaining gates are in
-`STAGE4_PILOT_REVIEW.md`; exactly0 formal groups have been trained.
-
-Runtime is native verl FSDP2/GSPO plus native vLLM rollout. The shared smoke/
-pilot candidate is LR1e-6, mini4 prompts, one epoch, G4 and8 groups/window.
-The formal config is not frozen. Both pilots must complete before its decision.
-Two failed early runs and the initial verifier/test failures remain documented.
-Cross-process seeded sampling is not fully bitwise reproducible:29/32 first
-smoke responses matched token IDs, despite identical initial parameter digest.
-
-## Inspect before acting
-
-Read `experiments/stage4/pilot_queue_status.json` and `pilot_pair.json` when
-present. The detached queue runs Vanilla then Dynamic, each with an actual
-pause/SIGTERM/new-process check. It requires full raw verification before
-advancing to the second pilot. Queue completion does not launch formal runs.
+## Current-state commands
 
 ```bash
-.venv-train/bin/python scripts/run_stage4.py inspect --run <exact-run-path>
+cat experiments/stage4/formal_queue_status.json
+cat experiments/stage4/formal_queue_heartbeat.json
+.venv-train/bin/python scripts/run_stage4.py inspect --run /data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5
+.venv-train/bin/python scripts/run_stage4.py inspect --run /data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a
+nvidia-smi
 ```
 
-If the owner is alive and heartbeat/progress move, leave it running. After an
-observed exit, inspect stderr/failure/last checkpoint first. A retained incomplete
-actor transaction can be audited and archived before restoring the same run:
+If the worker is alive, continue monitoring; do not launch a competitor. If dead, inspect the attempt failure, latest committed checkpoint, incomplete actor transaction and raw reservations. `run_stage4.py recover --run ...` preserves orphan costs and performs the tested rollback/adoption. Restart the formal queue only after the audited recovery; it reconciles the immutable commit chain and cached pointer before launching. Unknown unreturned generation/validation cost cannot be silently retried. Do not change the shared scientific config between variants.
 
-```bash
-.venv-train/bin/python scripts/run_stage4.py recover --run <exact-run-path>
-.venv-train/bin/python scripts/run_stage4.py launch --run <exact-run-path>
-```
+The detached queue runs Vanilla5000 → final native reload/full raw verification → Dynamic5000 → final reload/full raw verification → measured analysis/plots. It has no elapsed-time success cutoff. It stops for failures or diagnostic pauses without relaxing budgets. After both raw verifiers, manual cases, retrospective, interview/resume evidence and full stage verifier still remain; no automatic DONE or Stage5 launch occurs.
 
-`recover` requires all recorded parent processes dead and GPU idle. It preserves
-raw rollout, archives orphan actor work, and never adds uncommitted budget.
-Unreturned generation/validation cost cannot be fabricated; that case fails
-closed and needs investigation. A completed pilot/formal cannot be replaced by
-a fresh run just because a session ended.
+## Completed entry evidence
 
-## Remaining gates before formal launch
+- Matched real8×4 optimizer diagnostic; LR1e-6 selected for stability and nonzero second-mini GSPO clip activity.
+- Both32-group online smokes and both512-group fresh pilots passed raw verification and real process/native resume. Pilot analysis is in `STAGE4_PILOT_REVIEW.md`; pilot performance is not the formal result.
+- Three real SIGKILL transaction recoveries PASS at2026-09-09 15:57UTC. A24 groups/6 effective steps/8 physical steps; B24 mixed groups/6 effective/6 physical; C24 groups/6 effective/7 physical. B adopted the original durable checkpoint with zero optimizer replay; A/C retained orphan work and reused persisted rollout.
+- All134 preflight tests PASS. Fault-tested runtime bytes match the frozen formal code.
+- Fault A restored exact input identities/RNG and reproduced old arrays exactly, but floating-point optimizer replay was not bitwise identical. Relative adapter L2 difference2.4558e-5 and second-mini differences are retained in `fault_a_replay_numerics.json`. No bitwise GPU backward claim is made.
 
-Both fresh512-group pilots, monitor512 evaluations and the initial stability/
-cost/paired-case review are complete. No persistent collapse was observed.
-Perform the additional checkpoint transaction fault
-injections required by `CHECKPOINT_AND_RESUME.md`; the two committed-boundary
-resume tests do not claim those additional crash timings were tested.
+## Validation, costs and remaining work
 
-Then freeze one formal pair config and one code commit, declare both fresh SFT
-run manifests, and execute exactly5000 groups per variant. Complete raw verifier,
-validation/cost curves, native reloads, cases, report, interview narrative and
-Stage5 readiness. Final commit/push and clean worktree follow those gates.
+Shared monitor512 at training groups0,512,...,4608,5000 and each first committed crossing of the common1M,2M,... training-rollout-token grid. The primary axis is physical prompt tokens once per encounter plus all output tokens, including rejects and overflow. Validation/control costs are separate; actual overshoot is retained, never interpolated.
 
-Bulk path: `/data/WSH/medical-post-train-artifacts/runs/`. Git holds compact
-manifests, receipts, curves and cases. Clone alone does not restore bulk data.
+Measured checkpoint size1,409,125,569 bytes; freeze preflight free3,411,659,776,000 bytes versus2,044,921,839,775 bytes projected with reserve. Full native checkpoints remain available every window. Prior pilot/raw evidence is retained. Pilot-based training-phase estimates are about18h Vanilla and30h Dynamic; each monitor512 evaluation measured roughly11minutes in pilots. The complete pair is conditionally about50–60h, potentially longer if amplification rises. This is not a stopping rule.
 
-## Formal entry gates — completed2026-09-09 15:57UTC
-
-All three real transaction injections PASS (`recovery_fault_injections.json`): A temp-before-rename rollback, B renamed native checkpoint adoption without optimizer replay, C applied-but-uncommitted optimizer rollback. Final effective steps6 in each24-group diagnostic; physical steps8/6/7. All paid raw output and orphan work retained. Detailed numerical replay limitation and formal freeze decision are in `STAGE4_FORMAL_EXECUTION.md` and D4-FORMAL-FREEZE.
-
-Final preflight suite:134 PASS. Shared formal candidate and first-crossing1M-token monitor protocol are recorded. Next operation is clean-commit freeze and preparation of two fresh-SFT5000-group runs. At this entry-gate snapshot no formal worker has launched and both formal counters remain0. Stage5/6 remain NOT_STARTED, READY_FOR_STAGE5=NO.
+Stage4 DONE still requires both actual5000-group budgets, all monitor points, raw verifiers, final reloads, full cost/exposure/case analysis, `docs/stage_reports/04_gspo_training.md`, interview/resume evidence and Stage5 handoff. Selection1024 and all test evaluation remain forbidden in this task.

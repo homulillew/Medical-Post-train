@@ -15,11 +15,14 @@ and all eight verifier gates passing. Measured train-sample accuracy is 51.775%,
 mixed groups 53.1%, and truncation 0%. Stage2 performed no policy optimization.
 Stage 3 is **DONE**:496 newly generated groups,256 accepted mixed and1 retained overflow,
 with1.9375× measured amplification and all nine verifier gates passing.
-Stage 4 is **PILOT_PASS**: both32-group online GSPO smokes and both fresh512-group
-pilots passed raw verification, real process resume and native checkpoint reload.
-Monitor512 accuracy is56.64% Vanilla and60.16% Dynamic versus55.08% SFT;
-Dynamic generated2.76× output tokens. These are pilot results, not test claims.
-Formal budgets remain0/5000 for each variant; Stage4 is incomplete.
+Stage 4 is **FULL_RUNNING**: three real checkpoint transaction fault tests passed,
+and the shared formal pair is frozen at clean source commit`540b777`.
+Vanilla fresh-SFT formal launched at2026-09-10 00:00 Asia/Shanghai; Dynamic is
+prepared in the persistent queue. Each must complete5000 groups/625 windows/
+1250 optimizer steps. Group milestones and first-crossing1M training-token
+milestones use the same monitor512 protocol. Launch snapshot:0/5000 each,
+Vanilla performing initial monitor evaluation. Stage4 is incomplete and
+READY_FOR_STAGE5=NO. Completed pilot results remain separately documented.
 Stage 5–6 remain **NOT_STARTED**.
 No examination test scoring has run. Current stage status is recorded in
 [`project_state.json`](project_state.json).
@@ -35,6 +38,8 @@ No examination test scoring has run. Current stage status is recorded in
 - [Stage 4 sampler readiness](experiments/stage3/readiness.json)
 - [Stage 4 current progress and commands](docs/implementation/STAGE4_PROGRESS.md)
 - [Stage 4 measured decisions and limitations](docs/implementation/STAGE4_DECISIONS.md)
+- [Stage 4 frozen formal pair](experiments/stage4/formal_pair.json)
+- [Stage 4 real transaction fault verification](experiments/stage4/recovery_fault_injections.json)
 - [Stage 4 completed pilot analysis](docs/implementation/STAGE4_PILOT_REVIEW.md)
 - [Stage 3 execution plan and lifecycle decisions](docs/implementation/STAGE3_PLAN.md)
 - Current refill progress: `python scripts/stage3_status.py`
