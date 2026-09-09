@@ -148,3 +148,15 @@ sync): Vanilla105.7s/window; Dynamic approximately161s/window. This suggests
 about1.9h and2.9h for64-window pilots, or18.3h and28h for625-window formal
 runs, excluding validation, initialization and recovery overhead. Small-smoke
 Dynamic acceptance is uncertain and must be recalibrated after the pilots.
+
+## D4-FORMAL-FREEZE — Shared full-budget pair
+
+The three real SIGKILL/native recovery tests all passed on2026-09-09 at15:57UTC. Full evidence is `experiments/stage4/recovery_fault_injections.json`; detailed acceptance and input refs are in `formal_freeze_decision.json`. Each diagnostic completed24 groups/3 windows/6 effective optimizer steps; physical steps A8, B6, C7 retained the orphan work correctly. Fault B adopted the original durable native output without an extra optimizer step. These groups never count toward formal5000.
+
+Freeze the reviewed LR1e-6/mini4/one-epoch candidate with clip0.0003/0.0004, 8 groups/window, G4, response1024, temperature0.6, unchanged Stage2 reward, original SFT rank32/alpha64 and no KL/critic/reference/entropy bonus. The basis is correctness and stability in the matched real diagnostic and both completed512-group pilots, not Dynamic's higher pilot monitor score.
+
+Both runs start with fresh original SFT, empty Adam, fresh constant scheduler and fresh common stream. The scientific budget is exactly5000 groups/20000 trajectories/625 windows/1250 optimizer steps each. The common monitor512 group schedule gains an unbounded deterministic1M training-rollout-token grid, evaluated at each first committed crossing and coalesced at identical windows. Physical prompt+all output is primary; validation/control costs stay separate. Shared persistent-clipping and response-length diagnostic pauses are preregistered; they do not change reward or budget.
+
+Fault A's exact restored input and old arrays did not imply bitwise recomputed optimizer output; the measured relative adapter difference2.4558e-5 and second-mini differences are retained in `fault_a_replay_numerics.json`. Native input identity, scheduler, RNG and cursor continuity passed; no bitwise GPU-backward reproducibility claim is made. This limitation is disclosed in the pair manifest. No new learning-rate or algorithm search is opened.
+
+The code commit is the clean revision recorded by the formal pair preparation, with identical archived runtime source bytes for both runs. Full budgets and all measured validations/raw verification/report/case/handoff gates remain outstanding at freeze. Stage5/6 are not started.

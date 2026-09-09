@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-09-09T15:40:56.785705+00:00",
+  "scope": "DIAGNOSTIC_ONLY",
+  "run_id": "s4_recovery_a_20260909T153057_987d5a",
+  "restored_previous_checkpoint_identity_exact": true,
+  "old_arrays_exact": true,
+  "replay_final_adapter_bitwise_equal": false,
+  "adapter_difference_l2": 0.0014319548715695178,
+  "adapter_relative_l2": 2.4558118998740408e-05,
+  "maximum_adapter_element_difference": 2.2851163521409035e-06,
+  "differing_adapter_elements": 87119120,
+  "minibatch_max_array_differences": [
+    {
+      "current_logprobs": 0.0,
+      "indices": 0.0,
+      "ratios": 0.0,
+      "losses": 0.0,
+      "clips": 0.0,
+      "entropy": 0.0
+    },
+    {
+      "current_logprobs": 0.38448333740234375,
+      "indices": 0.0,
+      "ratios": 0.008412063121795654,
+      "losses": 0.005927085876464844,
+      "clips": 1.0,
+      "entropy": 0.003494441509246826
+    }
+  ],
+  "observation": "Same saved rollout, exact old arrays, restored prior adapter/Adam/scheduler/RNG produced a numerically close but not byte-identical recomputed update. No bitwise training replay claim is made.",
+  "hypothesis": "Nondeterministic GPU backward/reduction arithmetic; restoring RNG alone does not guarantee identical floating-point execution.",
+  "consequence": "Rollback integrity is verified at the trusted input checkpoint. Fault B must still adopt the durable output checkpoint exactly instead of recomputing.",
+  "sources": [
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/.tmp-checkpoint/COMMITTED.json",
+      "sha256": "3642361111de562a04e70a4974c4e8cbc427b3b822de13a3522587c17ba0c9db",
+      "bytes": 2980
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/checkpoint/COMMITTED.json",
+      "sha256": "8f812b4d24e9f2ffd550a5eea4d851372b6e155a9ea5eaf7d4bf64419facde34",
+      "bytes": 2980
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/actor/resume_receipt.json",
+      "sha256": "504740cdaaf81c8de66aa81b8aa71f7546db8bdc65b1959aa98ea86d385ccc4f",
+      "bytes": 3014
+    }
+  ]
+}

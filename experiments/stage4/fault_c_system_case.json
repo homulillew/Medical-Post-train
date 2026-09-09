@@ -1,0 +1,36 @@
+{
+  "case_id": "s4_fault_c_applied_uncommitted_step",
+  "run_id": "s4_recovery_c_20260909T153059_f621ea",
+  "stage": 4,
+  "category": "SYSTEM_CASE",
+  "subtype": "orphan_optimizer_step",
+  "observation": "Actual optimizer step3 changed LoRA and Adam, followed by SIGKILL before checkpoint commit. Effective state stayed8 groups/2 steps while physical ledger retained3 steps. Fresh native actor restored step2 and completed24 groups/6 effective steps; total physical steps7.",
+  "hypothesis": "Applied optimizer work is a paid cost but cannot become effective training progress without a durable checkpoint and successful policy sync.",
+  "alternative_explanations": [
+    "A printed optimizer counter alone would not prove an applied update; the fault barrier retained changed trainable/optimizer digests and durable step events."
+  ],
+  "resolution": "Archive orphan update evidence, restore exact trusted native input identities/RNG/cursor, reuse saved rollout and count only the new committed lineage.",
+  "sources": [
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_c_20260909T153059_f621ea/fault/result.json",
+      "sha256": "ccb0f6fd340f1d4844e77b7be56c46d86f9dc7a6f50d9e70cd1de903a1281359",
+      "bytes": 8187
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_c_20260909T153059_f621ea/fault/ready.json",
+      "sha256": "521f775043403985c53158ef8e587ee5ac027285362b5c99688fb69613c7d506",
+      "bytes": 2221
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_c_20260909T153059_f621ea/fault/after_recovery.json",
+      "sha256": "26eb3b1764e34603c2455482d56bf5c568477e53d6d23cc5c527253bcf163815",
+      "bytes": 3177
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_c_20260909T153059_f621ea/windows/0001/actor/resume_receipt.json",
+      "sha256": "b03d201c05c48c1c760449f26999905babb9bf42440241158f50dd705cd12161",
+      "bytes": 3014
+    }
+  ],
+  "timestamp": "2026-09-09T15:58:30.425092+00:00"
+}

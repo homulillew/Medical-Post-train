@@ -33,11 +33,17 @@ def retained(path,value):
 
 
 def monitor(rollout,out,state,cfg):
-    if cfg['mode']=='smoke':
+    if cfg['mode'] in ('smoke','recovery_test'):
         return
     from .validation import evaluate
     protocol=read(cfg['validation_protocol']['path'])
-    if state['policy_windows'] in protocol['checkpoint_windows'] or state['training_groups']==cfg['target_training_groups']:
+    from .schedule import validation_trigger
+    n=state['policy_windows']
+    before=read(out/'windows'/f'{n-1:04d}'/'state_before.json') if n else state
+    trigger=validation_trigger(protocol,before,state,cfg['target_training_groups'])
+    if trigger['evaluate']:
+        if cfg['mode']=='formal':
+            retained(out/'validation'/f'{n:04d}'/'trigger.json',trigger)
         event(out,'validation_started',policy_windows=state['policy_windows'],policy_version=state['policy_version'])
         result=evaluate(rollout,out,state,cfg['validation_protocol'])
         event(out,'validation_completed',policy_windows=state['policy_windows'],accuracy=result['accuracy'],
@@ -106,9 +112,13 @@ def actor_window(out,window,checkpoint,state):
             assert identity['scheduler']==marker['scheduler']
             assert identity['optimizer_steps']==[state['optimizer_steps']]
             restore_rng(torch.load(checkpoint/'rng.pt',weights_only=False))
+            from .transactions import rng_digest
+            from medical_posttrain.training.lora import rng_state
+            rng_hash=rng_digest(rng_state())
+            assert rng_hash==rng_digest(torch.load(checkpoint/'rng.pt',weights_only=False))
             immutable(window/'actor/resume_receipt.json',dict(result='PASS',
                 source_checkpoint=str(checkpoint),source_marker=record(checkpoint/'COMMITTED.json'),
-                restored_identity=identity,restored_state=state,explicit_rng=record(checkpoint/'rng.pt')))
+                restored_identity=identity,restored_state=state,explicit_rng=record(checkpoint/'rng.pt'),restored_rng_digest=rng_hash))
         groups = read(window/'selection.json')['groups']
         summary = actor.update(groups,window/'update',step_before=state['optimizer_steps'],
                                check_parity=(state['policy_windows']==0))
@@ -116,6 +126,27 @@ def actor_window(out,window,checkpoint,state):
             state_before=state,selection=record(window/'selection.json'),
             config=record(out/'config.json'),run_id=out.name,update=record(window/'update/update.json')))
         immutable(window/'actor_result.json',dict(summary=summary,adapter=adapter_ref,**memory.result()))
+        actor.close()
+
+
+def adopt_actor(out,window):
+    import torch
+    from .actor import Actor
+    from .transactions import rng_digest
+    from medical_posttrain.training.lora import MemoryMonitor,restore_rng,rng_state
+    cfg=read(out/'config.json');checkpoint=window/'checkpoint'
+    marker=verify_checkpoint(checkpoint)
+    assert record(checkpoint/'COMMITTED.json')==read(window/'checkpoint_adoption.json')['source_marker']
+    with MemoryMonitor() as memory:
+        actor=Actor(cfg,window/'recovered_actor',checkpoint/'adapter',checkpoint)
+        identity=read(window/'recovered_actor/loaded_identity.json')
+        assert identity['trainable_digest']==marker['trainable_digest']
+        assert identity['optimizer_digest']==marker['optimizer_digest']
+        assert identity['scheduler']==marker['scheduler'] and identity['optimizer_steps']==[marker['optimizer_step']]
+        rng=torch.load(checkpoint/'rng.pt',weights_only=False);restore_rng(rng)
+        assert rng_digest(rng_state())==rng_digest(rng)
+        immutable(window/'recovered_actor/result.json',dict(result='PASS',identity=identity,
+            rng_digest=rng_digest(rng),marker=record(checkpoint/'COMMITTED.json'),optimizer_steps_added=0,**memory.result()))
         actor.close()
 
 
@@ -139,6 +170,8 @@ def run(out,attempt):
     if cfg['mode']=='formal':
         assert cfg['target_training_groups']==5000
     assert state['training_groups']<=cfg['target_training_groups']
+    from .health import assess,RefillBlocked
+    assess(out,state,cfg)
     with MemoryMonitor() as memory:
         load_initial = dict(initial,adapter_path=str(checkpoint/'adapter'),adapter_sha256=state['policy_version']) if checkpoint else initial
         rollout = Rollout(attempt,cfg,load_initial)
@@ -150,7 +183,8 @@ def run(out,attempt):
         while state['training_groups']<cfg['target_training_groups']:
             window = out/'windows'/f'{state["policy_windows"]:04d}'
             window.mkdir(exist_ok=True)
-            complete_actor=all((window/p).exists() for p in ('actor_result.json','checkpoint/COMMITTED.json','actor_exit.json'))
+            adoption=(window/'checkpoint_adoption.json').exists()
+            complete_actor=adoption or all((window/p).exists() for p in ('actor_result.json','checkpoint/COMMITTED.json','actor_exit.json'))
             if (window/'actor').exists() and not complete_actor:
                 raise RuntimeError('Incomplete actor transaction retained; require explicit audited rollback/recovery')
             if not (window/'state_before.json').exists():
@@ -175,7 +209,7 @@ def run(out,attempt):
                     break
             if len(selected)!=8:
                 immutable(window/'starvation.json',dict(selected=len(selected),generated=len(groups),decisions=decisions))
-                raise RuntimeError('Bounded refill exhausted before eight training groups')
+                raise RefillBlocked('Bounded refill exhausted before eight training groups')
             metrics = window_metrics(groups,decisions)
             retained(window/'selection.json',dict(groups=selected,decisions=decisions,policy_version=state['policy_version']))
             retained(window/'rollout_metrics.json',metrics)
@@ -202,6 +236,22 @@ def run(out,attempt):
                     code = proc.wait()
                 actor_seconds = time.monotonic()-start
                 immutable(window/'actor_exit.json',dict(exit_code=code,timestamp=now(),seconds=actor_seconds))
+            elif adoption:
+                argv=[sys.executable,str(ROOT/'scripts/run_stage4.py'),'adopt-actor','--run',str(out),'--directory',str(window)]
+                immutable(window/'adoption_command.json',argv)
+                start=time.monotonic()
+                with (window/'adoption.stdout.log').open('x') as stdout,(window/'adoption.stderr.log').open('x') as stderr:
+                    proc=subprocess.Popen(argv,stdout=stdout,stderr=stderr,cwd=ROOT,
+                        env=dict(os.environ,PYTORCH_ALLOC_CONF='expandable_segments:True'))
+                    immutable(window/'adoption_launch.json',dict(pid=proc.pid,timestamp=now()))
+                    code=proc.wait()
+                actor_seconds=time.monotonic()-start
+                immutable(window/'adoption_exit.json',dict(exit_code=code,timestamp=now(),seconds=actor_seconds))
+                assert code==0
+                if not (window/'actor_result.json').exists():
+                    immutable(window/'actor_result.json',dict(summary=read(window/'update/update.json'),
+                        adapter=record(window/'checkpoint/adapter/adapter_model.safetensors'),
+                        recovered_from_committed_checkpoint=True,reload=record(window/'recovered_actor/result.json')))
             else:
                 saved_exit=read(window/'actor_exit.json')
                 code,actor_seconds=saved_exit['exit_code'],saved_exit['seconds']
@@ -229,7 +279,14 @@ def run(out,attempt):
                 training_groups=state['training_groups'],generated_groups=state['generated_groups'],
                 output_tokens=state['output_tokens'],policy_version=digest)
             durable(INDEX/out.name/'progress.json',dict(state=state,last_window=metrics,timestamp=now()))
+            if cfg['mode']=='formal':
+                project=read(ROOT/'project_state.json')
+                project['stages']['4']['status']='FULL_RUNNING'
+                key='vanilla_training_groups' if cfg['sampling_mode']=='vanilla' else 'dynamic_accepted_mixed_groups'
+                project['stages']['4']['progress'][key]=state['training_groups']
+                durable(ROOT/'project_state.json',project)
             monitor(rollout,out,state,cfg)
+            assess(out,state,cfg)
             if cfg.get('pause_after_windows')==state['policy_windows'] and attempt.name=='attempt_001':
                 immutable(out/'pause_ready.json',dict(state=state,checkpoint=str(checkpoint),pid=os.getpid(),
                     next_encounters=[encounter(stream,i,out.name,state['policy_version']) for i in range(state['cursor'],state['cursor']+8)]))
@@ -237,7 +294,7 @@ def run(out,attempt):
                 signal.pause()
                 raise RuntimeError('External SIGTERM and fresh-process resume required')
         rollout.close()
-    if cfg['mode']!='smoke':
+    if cfg['mode'] not in ('smoke','recovery_test'):
         directory=out/'final_reload'
         if not (directory/'result.json').exists():
             directory.mkdir(exist_ok=True)
@@ -249,5 +306,5 @@ def run(out,attempt):
             immutable(directory/'exit.json',dict(exit_code=code,timestamp=now()))
         assert read(directory/'exit.json')['exit_code']==0 and read(directory/'result.json')['result']=='PASS'
     from .common import seal
-    seal(out,dict(status='SMOKE_PASS' if cfg['mode']=='smoke' else 'PILOT_PASS' if cfg['mode']=='pilot' else 'FULL_PASS',
+    seal(out,dict(status='RECOVERY_TEST_PASS' if cfg['mode']=='recovery_test' else 'SMOKE_PASS' if cfg['mode']=='smoke' else 'PILOT_PASS' if cfg['mode']=='pilot' else 'FULL_PASS',
         run_id=out.name,state=state,mode=cfg['mode'],sampling_mode=cfg['sampling_mode']))

@@ -1,0 +1,512 @@
+{
+  "result": "PASS",
+  "scenarios": {
+    "before_checkpoint_rename": {
+      "result": "PASS",
+      "scenario": "before_checkpoint_rename",
+      "run_id": "s4_recovery_a_20260909T153057_987d5a",
+      "run_class": "DIAGNOSTIC",
+      "formal_training_groups": 0,
+      "real_process_termination": true,
+      "old_pid": 2282449,
+      "new_pid": 2284538,
+      "committed_budget_continuous": true,
+      "cost_not_rolled_back": true,
+      "effective_before": {
+        "policy_version": "a3fc752ec2e1402ce213f1bf46dcafcd6b908f7aa4cf1d383c294ef6eedced68",
+        "cursor": 8,
+        "policy_windows": 1,
+        "optimizer_steps": 2,
+        "training_groups": 8,
+        "generated_groups": 8,
+        "output_tokens": 7387,
+        "prompt_tokens": 1164,
+        "generated_exposure": {
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52524": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28431": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3331": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48013": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:35201": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42439": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:25646": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39723": 1
+        },
+        "training_exposure": {
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52524": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28431": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3331": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48013": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:35201": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42439": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:25646": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39723": 1
+        }
+      },
+      "effective_final": {
+        "policy_version": "47664d9f1c72a0050f2ddc95dddb26f47f7b6c6f6d1786e4f14ded9caa0a62b7",
+        "cursor": 24,
+        "policy_windows": 3,
+        "optimizer_steps": 6,
+        "training_groups": 24,
+        "generated_groups": 24,
+        "output_tokens": 21800,
+        "prompt_tokens": 3410,
+        "generated_exposure": {
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52524": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28431": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3331": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48013": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:35201": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42439": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:25646": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39723": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20873": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29854": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:5085": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40703": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37926": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50715": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15841": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31567": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22308": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49055": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34260": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39388": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20985": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41487": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:678": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:46421": 1
+        },
+        "training_exposure": {
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52524": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28431": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3331": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48013": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:35201": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42439": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:25646": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39723": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20873": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29854": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:5085": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40703": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37926": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50715": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15841": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31567": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22308": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49055": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34260": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39388": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20985": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41487": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:678": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:46421": 1
+        }
+      },
+      "physical_optimizer_steps": 8,
+      "sources": [
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/fault/after_recovery.json",
+          "sha256": "4e8d2759244e525157f919e1fa7f7d25a146eb898556ec479de5e60cd84ff986",
+          "bytes": 3177
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/fault/before_kill.json",
+          "sha256": "6b05551ee49137827d90188468f8e4945da9b4e6a503ab5f6d845fbf1457031d",
+          "bytes": 10561
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/fault/final_cost.json",
+          "sha256": "c276964f05906e7149614a08dde4650627ea575aa8b9d724ca002c92808160ea",
+          "bytes": 2270
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/fault/raw_verification.json",
+          "sha256": "1de82d5f21f939bc8239184ed14cf5ba379090ef8cb128b0d77917d8541a82d1",
+          "bytes": 4261
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/fault/ready.json",
+          "sha256": "9b84c9f5c24c7cfac29d407c9204ade002a69cac83087a35abcfb2f06802c4bc",
+          "bytes": 2155
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/fault/termination.json",
+          "sha256": "935d9a75061411abf9579f7419db7790b2bd75088a14d30a8b4e6c53ae6df54b",
+          "bytes": 1506
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/fault/termination_observed.json",
+          "sha256": "3d6af003b8046265135bf3e85711e3aa6ac587592607d5f5a0a155d0ad7ebfcd",
+          "bytes": 138
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/attempt_002/resume_start.json",
+          "sha256": "99bebaba441eb36aa2b2a05e4de64e162715d2ba4bfd807d1e0c5912c74fc628",
+          "bytes": 4105
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/checkpoint/COMMITTED.json",
+          "sha256": "8f812b4d24e9f2ffd550a5eea4d851372b6e155a9ea5eaf7d4bf64419facde34",
+          "bytes": 2980
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/actor/resume_receipt.json",
+          "sha256": "504740cdaaf81c8de66aa81b8aa71f7546db8bdc65b1959aa98ea86d385ccc4f",
+          "bytes": 3014
+        }
+      ],
+      "timestamp": "2026-09-09T15:39:57.371778+00:00"
+    },
+    "after_rename_before_pointer": {
+      "result": "PASS",
+      "scenario": "after_rename_before_pointer",
+      "run_id": "s4_recovery_b_20260909T153059_e39b9b",
+      "run_class": "DIAGNOSTIC",
+      "formal_training_groups": 0,
+      "real_process_termination": true,
+      "old_pid": 2286864,
+      "new_pid": 2289465,
+      "committed_budget_continuous": true,
+      "cost_not_rolled_back": true,
+      "effective_before": {
+        "policy_version": "3bed3acc1ba384a4f4eb04fa19309a4eacbcf82c66e06fd3267e7792d258be89",
+        "cursor": 16,
+        "policy_windows": 1,
+        "optimizer_steps": 2,
+        "training_groups": 8,
+        "generated_groups": 16,
+        "output_tokens": 15430,
+        "prompt_tokens": 1973,
+        "generated_exposure": {
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23170": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10527": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39390": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47715": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16091": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48336": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14788": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26582": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29014": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:24375": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:46758": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43413": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14569": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34127": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14543": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50898": 1
+        },
+        "training_exposure": {
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10527": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39390": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26582": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29014": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:46758": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43413": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34127": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14543": 1
+        }
+      },
+      "effective_final": {
+        "policy_version": "05891118c5d7f5da76cb3d6a68f0f3a6c284e80a69ba95f05cf132fb2fa34f92",
+        "cursor": 48,
+        "policy_windows": 3,
+        "optimizer_steps": 6,
+        "training_groups": 24,
+        "generated_groups": 48,
+        "output_tokens": 46754,
+        "prompt_tokens": 6260,
+        "generated_exposure": {
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23170": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10527": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39390": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47715": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16091": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48336": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14788": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26582": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29014": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:24375": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:46758": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43413": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14569": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34127": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14543": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50898": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53094": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22826": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10111": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6035": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14092": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10207": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29451": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18342": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2190": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48431": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49417": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50318": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39743": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:24434": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14855": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:25981": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22571": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34550": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11399": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43343": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7773": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:45722": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50203": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:54066": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16317": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28482": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26924": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:25781": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:45504": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:46266": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42491": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26340": 1
+        },
+        "training_exposure": {
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10527": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39390": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26582": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29014": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:46758": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43413": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34127": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14543": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53094": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22826": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6035": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14092": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10207": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18342": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2190": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:24434": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34550": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11399": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7773": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:45722": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50203": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28482": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26924": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:25781": 1
+        }
+      },
+      "physical_optimizer_steps": 6,
+      "sources": [
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_b_20260909T153059_e39b9b/fault/after_recovery.json",
+          "sha256": "95ef1a166f1c5e8eec621ddab3611b487ba48e849e636a24c6533c212f5e9477",
+          "bytes": 11586
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_b_20260909T153059_e39b9b/fault/before_kill.json",
+          "sha256": "597ab790d773a2097a2c09b6b355195dc9537da54580d96734471df4ddb4b4c2",
+          "bytes": 11586
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_b_20260909T153059_e39b9b/fault/final_cost.json",
+          "sha256": "8b68caeb086f3e18ad9da33652961388af7b8359e0723c2379ef78269e00796d",
+          "bytes": 2762
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_b_20260909T153059_e39b9b/fault/raw_verification.json",
+          "sha256": "e2de291d6fa0d21af3378caf260c3a256e88a8f315df7ddfaa8de2f6a8b22d46",
+          "bytes": 6003
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_b_20260909T153059_e39b9b/fault/ready.json",
+          "sha256": "f0fe1d483ceaf024ca3d6a039d145d5a16be1a3e820d55c60ab978eaae6e716c",
+          "bytes": 2719
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_b_20260909T153059_e39b9b/fault/termination.json",
+          "sha256": "d74e22292ae204187b19671b56a3ba3246781676a78f1908fffd6def0c9c9afb",
+          "bytes": 1506
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_b_20260909T153059_e39b9b/fault/termination_observed.json",
+          "sha256": "80e6fd947cb5e54f93632192d5a09780e85f590187bead1faf9ba62204d49b40",
+          "bytes": 138
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_b_20260909T153059_e39b9b/attempt_002/resume_start.json",
+          "sha256": "ea0658675a14587b080fb7dd8cad0f46ee351467f00229ae23ed99dd7d31882f",
+          "bytes": 4690
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_b_20260909T153059_e39b9b/windows/0001/checkpoint/COMMITTED.json",
+          "sha256": "050877b84d2c69aac5c0ed873bb39d084207f97471d2b61de54f5e8f42c6be72",
+          "bytes": 2980
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_b_20260909T153059_e39b9b/windows/0001/recovered_actor/result.json",
+          "sha256": "25e338038c5d6bd92a8044842684dc3afa587c860405d8733a6a39a1dd9dc701",
+          "bytes": 1310
+        }
+      ],
+      "timestamp": "2026-09-09T15:49:15.726157+00:00"
+    },
+    "after_optimizer_before_checkpoint": {
+      "result": "PASS",
+      "scenario": "after_optimizer_before_checkpoint",
+      "run_id": "s4_recovery_c_20260909T153059_f621ea",
+      "run_class": "DIAGNOSTIC",
+      "formal_training_groups": 0,
+      "real_process_termination": true,
+      "old_pid": 2291786,
+      "new_pid": 2293578,
+      "committed_budget_continuous": true,
+      "cost_not_rolled_back": true,
+      "effective_before": {
+        "policy_version": "862bfe107b29c1386a1d55b840c955f5d15e583c64f954c6fb1f6cb164499667",
+        "cursor": 8,
+        "policy_windows": 1,
+        "optimizer_steps": 2,
+        "training_groups": 8,
+        "generated_groups": 8,
+        "output_tokens": 7625,
+        "prompt_tokens": 1227,
+        "generated_exposure": {
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37888": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21976": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7080": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23088": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37926": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28886": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36588": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52518": 1
+        },
+        "training_exposure": {
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37888": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21976": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7080": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23088": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37926": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28886": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36588": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52518": 1
+        }
+      },
+      "effective_final": {
+        "policy_version": "cb1c4cd299d82aa55e19ffff8227b069c89c2686a6afca266789307cc2d52f66",
+        "cursor": 24,
+        "policy_windows": 3,
+        "optimizer_steps": 6,
+        "training_groups": 24,
+        "generated_groups": 24,
+        "output_tokens": 23583,
+        "prompt_tokens": 3307,
+        "generated_exposure": {
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37888": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21976": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7080": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23088": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37926": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28886": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36588": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52518": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29442": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6041": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:54067": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23171": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4586": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28681": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48043": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34848": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41399": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13423": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15734": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8466": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16461": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19996": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3118": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51656": 1
+        },
+        "training_exposure": {
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37888": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21976": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7080": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23088": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37926": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28886": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36588": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52518": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29442": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6041": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:54067": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23171": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4586": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28681": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48043": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34848": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41399": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13423": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15734": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8466": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16461": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19996": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3118": 1,
+          "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51656": 1
+        }
+      },
+      "physical_optimizer_steps": 7,
+      "sources": [
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_c_20260909T153059_f621ea/fault/after_recovery.json",
+          "sha256": "26eb3b1764e34603c2455482d56bf5c568477e53d6d23cc5c527253bcf163815",
+          "bytes": 3177
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_c_20260909T153059_f621ea/fault/before_kill.json",
+          "sha256": "5845ea34f0056ff26649655436816a3c2d429599359786947c571b1fe41607a7",
+          "bytes": 5675
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_c_20260909T153059_f621ea/fault/final_cost.json",
+          "sha256": "5bf7072bbaca949bceb89c9e9a94c9312996275baf9aa52fdb6187dc2b9a5f30",
+          "bytes": 2269
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_c_20260909T153059_f621ea/fault/raw_verification.json",
+          "sha256": "fda718c598a9b9c0256186ef0345b0296dc624bdeafe3f2607b598e5d747aed9",
+          "bytes": 4271
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_c_20260909T153059_f621ea/fault/ready.json",
+          "sha256": "521f775043403985c53158ef8e587ee5ac027285362b5c99688fb69613c7d506",
+          "bytes": 2221
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_c_20260909T153059_f621ea/fault/termination.json",
+          "sha256": "9cd9c1c330de32232695fe6302570f3229d06d9fc9ba9fd0679a384ed844f35e",
+          "bytes": 1506
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_c_20260909T153059_f621ea/fault/termination_observed.json",
+          "sha256": "c16ce61599ed104d930616e121b7cd1b9df80bebc07a6e0e0aeb7a17c87de5be",
+          "bytes": 138
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_c_20260909T153059_f621ea/attempt_002/resume_start.json",
+          "sha256": "a002105964533bc0efdcedac7ab115efc9f48652f4586c9c3d56f8d720ae4172",
+          "bytes": 4102
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_c_20260909T153059_f621ea/windows/0001/checkpoint/COMMITTED.json",
+          "sha256": "7eedfa59f1ffa22a833f3cf274b9c8da8a5dd48ac05acfbd1e07f64af69b620b",
+          "bytes": 2979
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_c_20260909T153059_f621ea/windows/0001/actor/resume_receipt.json",
+          "sha256": "b03d201c05c48c1c760449f26999905babb9bf42440241158f50dd705cd12161",
+          "bytes": 3014
+        }
+      ],
+      "timestamp": "2026-09-09T15:57:02.094353+00:00"
+    }
+  },
+  "timestamp": "2026-09-09T15:57:02.158736+00:00"
+}

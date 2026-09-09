@@ -100,3 +100,13 @@ Vanilla和Dynamic各完成32训练groups、4windows、8optimizer steps，均在2
 恢复证据见`experiments/stage4/{vanilla,dynamic}_smoke_verification.json`及各run的`physical_resume_receipt.json`。每window保存完整native/portable LoRA、Adam、scheduler、RNG、controller metadata和COMMITTED文件哈希，再经过vLLM新adapter ID正向sync probe才提交训练计数。launcher脱离会话、10秒heartbeat、GPU flock与重复owner防护已实现。不能把这些边界检查说成已经完成上文三种不同事务时点的真实故障注入；该项仍是formal前待验收工作。
 
 新增`run_stage4.py recover`在确认owner退出/GPU空闲后归档未提交actor工件，保留原raw并恢复相同run；完整actor但未sync的checkpoint可复用。三项CPU恢复保护测试通过，但不替代GPU故障注入。未返回的生成/validation请求若缺raw，成本仍未知，明确拒绝静默补0重试。
+
+## Stage4 三种真实事务故障已验收（2026-09-09 15:57UTC）
+
+`experiments/stage4/recovery_fault_injections.json`保存三个独立DIAGNOSTIC run的实际SIGKILL、新PID、native恢复和raw verifier PASS：A在临时checkpoint写完、rename前结束；B在rename后、发布前结束；C在真实optimizer step后、checkpoint前结束。三者最终均24 groups/3 windows/6有效steps，物理steps分别8/6/7。原始rollout未重采，orphan update成本未删除。
+
+B不再依赖actor_exit成功标志判断checkpoint有效性：完整文件hash、controller/config/selection/update来源验证后，由新native actor验证原LoRA、Adam、scheduler和RNG，执行0额外steps，成功sync后才发布1次窗口。A/C归档未发布actor状态并恢复上一可信checkpoint。重复adoption中断的归档路径也有单元测试。
+
+当前持久化实现为已实际使用的`start_new_session`后台进程、每10秒heartbeat、run launch lock和共享GPU flock，不声称systemd或主机断电恢复已实测。恢复入口为`run_stage4.py recover`，正式队列还会从已同步immutable commits审计/修复缓存pointer。已知成本与effective进度分开；未知生成尾部成本仍fail closed。
+
+额外检查发现固定raw/old数组在GPU重新backward后不保证bitwise相同；详见`fault_a_replay_numerics.json`与D4-FORMAL-FREEZE。以上验收证明保存状态的native恢复、成本与预算连续及B原checkpoint精确接纳，不把浮点重算一致性扩大为未经证明的保证。

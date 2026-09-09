@@ -85,7 +85,10 @@
         "s4_smoke_vanilla_20260909T070935_4a09cb",
         "s4_smoke_vanilla_20260909T071222_ef95d2",
         "s4_pilot_vanilla_20260909T075203_95a6e9",
-        "s4_pilot_dynamic_20260909T075204_3e449e"
+        "s4_pilot_dynamic_20260909T075204_3e449e",
+        "s4_recovery_a_20260909T153057_987d5a",
+        "s4_recovery_b_20260909T153059_e39b9b",
+        "s4_recovery_c_20260909T153059_f621ea"
       ],
       "progress": {
         "vanilla_training_groups": 0,

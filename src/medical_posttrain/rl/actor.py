@@ -164,6 +164,9 @@ class Actor:
         lp_all = torch.log_softmax(logits/self.cfg['sampling']['temperature'],dim=-1)
         lp = lp_all.gather(1,labels).squeeze(1)
         ent = -(lp_all.detach().exp()*lp_all.detach()).sum(-1) if entropy else None
+        assert torch.isfinite(lp).all()
+        if raw is not None:assert torch.isfinite(raw).all()
+        if ent is not None:assert torch.isfinite(ent).all()
         return lp,raw,ent
 
     def update(self, groups, directory, fixed_old=None, check_parity=False, step_before=0):
@@ -180,6 +183,7 @@ class Actor:
         mask = torch.zeros(32,max_r,device='cuda')
         rewards = torch.zeros_like(mask)
         for i,r in enumerate(rows):
+            assert all(np.isfinite(r[k]) for k in ('acc','semantic','format','total_reward'))
             mask[i,:len(r['token_ids'])] = 1
             rewards[i,len(r['token_ids'])-1] = r['total_reward']
         advantages,_ = compute_grpo_outcome_advantage(rewards,mask,np.repeat(np.arange(8),4),
@@ -239,6 +243,7 @@ class Actor:
                 currents.append(current.detach().cpu().numpy()[0])
             if start == 0:
                 assert max(abs(r-1) for r in ratios) <= 1e-6, 'First mini is not current==old'
+            assert all(np.isfinite(x).all() for x in (ratios,losses,clips,entropies,drifts))
             grad = self.engine.optimizer_step()
             assert np.isfinite(grad), 'Native optimizer skipped nonfinite gradient: abort window'
             lr = self.engine.lr_scheduler_step()
@@ -254,6 +259,11 @@ class Actor:
                 mean_absolute_logprob_drift=float(np.mean(drifts)),lr=lr,seconds=time.monotonic()-began)
             minibatches.append(row)
             event(directory,'optimizer_step',**row)
+            if self.cfg.get('fault_injection') and len(minibatches)==1:
+                from .transactions import fault_point
+                fault_point(self.cfg,directory.parent,'after_optimizer_before_checkpoint',
+                    physical_optimizer_step=row['optimizer_step'],trainable_digest=self.digest(trainable_state(self.model)),
+                    optimizer_digest=optimizer_digest(self.engine),scheduler=self.engine.lr_scheduler.state_dict())
         after = trainable_state(self.model)
         delta = sum((after[k]-v).double().square().sum().item() for k,v in initial.items())**.5
         assert delta > 0
@@ -289,10 +299,15 @@ class Actor:
         immutable(temp/'COMMITTED.json',dict(files=records,optimizer_step=step,
             trainable_digest=self.digest(state),optimizer_digest=optimizer_digest(self.engine),
             scheduler=self.engine.lr_scheduler.state_dict(),seconds=time.monotonic()-start))
+        from .transactions import fault_point
+        fault_point(self.cfg,directory.parent,'before_checkpoint_rename',temporary_checkpoint=str(temp),
+            marker=record(temp/'COMMITTED.json'))
         os.rename(temp,directory)
         fd = os.open(directory.parent,os.O_DIRECTORY)
         os.fsync(fd)
         os.close(fd)
+        fault_point(self.cfg,directory.parent,'after_rename_before_pointer',checkpoint=str(directory),
+            marker=record(directory/'COMMITTED.json'))
         return record(directory/'adapter/adapter_model.safetensors')
 
     def close(self):

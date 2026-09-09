@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-09-09T15:55:30.781352+00:00",
+  "result": "PASS",
+  "exit_code": 0,
+  "reason": "Final queue now invokes measured analysis/plots after both raw verifiers; recheck the complete suite and freeze final runtime bytes.",
+  "command": [
+    "/data/WSH/post-train/.venv-train/bin/python",
+    "-c",
+    "import sys;sys.path.append('/data/WSH/post-train/.venv-analysis/lib/python3.12/site-packages');import pytest;raise SystemExit(pytest.main(['tests','-q']))"
+  ],
+  "stdout": "........................................................................ [ 53%]\n..............................................................           [100%]\n134 passed in 9.83s\n",
+  "stderr": "",
+  "runtime_hashes": {
+    "src/medical_posttrain/rl/recovery.py": "9b0300a861f0c9328e9dd5570e89f7ef54a3427a8ee536ce254466807019ba9f",
+    "src/medical_posttrain/rl/controller.py": "938a022b701029b643cdc2d64472305dafa9967288adb7fbeb4344a6645f1975",
+    "src/medical_posttrain/rl/transactions.py": "4a1f48d4e0c7b04d9c73702aae597355f66eb5a2b4fad134fef2d238c76661b9",
+    "src/medical_posttrain/rl/__init__.py": "52a90e1d34aa6892cd847637c45cc42b58ab548f88f322d33a4cef65954e6768",
+    "src/medical_posttrain/rl/rollout.py": "3086b730b89df2f465d775cba8683bf8870c71b7206441ef2cd1e13701eeb99a",
+    "src/medical_posttrain/rl/online.py": "448506a242fc34ec698eb73f273f80c530f5453648a0b9b812ff2512ac356840",
+    "src/medical_posttrain/rl/common.py": "7a1c791778e6f9efe84ff744bc77961aba92e728964a55a3a7aa93215f7ed20d",
+    "src/medical_posttrain/rl/actor.py": "fc54a712379309dd8f1ea15c64f84ab990739c2993e42d5665316d22d0f542b7",
+    "src/medical_posttrain/rl/health.py": "eff9be4643b80253081a19045668f91e2d48218d54d9f1848e7a035f52df2aed",
+    "src/medical_posttrain/rl/validation.py": "8f7587ab15d2e0f9b4842054f07dcb3cf0323503a3fb49af7095c078b579f5d3",
+    "src/medical_posttrain/rl/schedule.py": "5d0484d248bde00d78e23cb7db24e4f5667bf5c6333643fee06f66fcbb97d209",
+    "scripts/continue_stage4_formal.py": "382ae1c593112583b619e1581d0331fb00a50867bae327e47b1c8405e1e6a4db",
+    "scripts/run_stage4.py": "eceff7891ebe899a340aeb4181932f9ce63861693e2942525d2cd889323024c2",
+    "scripts/audit_stage4_boundary.py": "f838c52b638e204a8439bba0d29d612bd2748e9e0ca737374f7d1d070ef91d45",
+    "scripts/reload_stage4.py": "6d9df8c44f1f2ceafb7ccc02bc67cd23ec5028a1efd154d35e953629d78af58d"
+  }
+}

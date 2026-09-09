@@ -1,0 +1,109 @@
+{
+  "model": "/data/WSH/medical-post-train-artifacts/models/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218",
+  "initialization": {
+    "path": "/data/WSH/post-train/experiments/stage1/initialization_manifest.json",
+    "sha256": "6fb9e83dba72e4fcbc76548c515a555b46f9c415a280409224e6028067d1059c",
+    "bytes": 1850
+  },
+  "pool": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/candidate_pool.jsonl",
+    "sha256": "6fa3e114f47c51977d940ca01b4e0d6510a03a390fe1f1495fe5d0820bf41262",
+    "bytes": 17377597
+  },
+  "reward_manifest": {
+    "path": "/data/WSH/post-train/experiments/stage2/reward_manifest.json",
+    "sha256": "cc72be1c2348d20f58bf978d047b9b4a2f200d8c70c39f0d0d98506528bfb905",
+    "bytes": 7541
+  },
+  "sampling": {
+    "n": 4,
+    "temperature": 0.6,
+    "top_p": 1.0,
+    "top_k": -1,
+    "min_p": 0.0,
+    "max_tokens": 1024,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "repetition_penalty": 1.0
+  },
+  "engine": {
+    "dtype": "bfloat16",
+    "tensor_parallel_size": 1,
+    "max_model_len": 4096,
+    "max_num_seqs": 16,
+    "gpu_memory_utilization": 0.65,
+    "enable_lora": true,
+    "max_lora_rank": 32,
+    "enable_sleep_mode": true,
+    "enforce_eager": true,
+    "seed": 42,
+    "enable_prefix_caching": false,
+    "generation_config": "vllm"
+  },
+  "execution_hashes": {
+    "src/medical_posttrain/reward/parser.py": "c3dfb9b4f0ff71334f7b2f19d5e265d7341c5d93baec2b00d9f40212329c8bdc",
+    "src/medical_posttrain/reward/hybrid.py": "b4de882de1d2455f5af46addd854a5aac48308603b5113fcd44842bdc837a09d",
+    "src/medical_posttrain/reward/semantic.py": "f9704e0655ef1f74f3635cf1b51facb4bba6b4266bfd5db42e354d854e4d33a7",
+    "src/medical_posttrain/data/exam.py": "081121a5b54aff164030a162de573e9fcf1a02f64fab639b23d4b8bed65e9996",
+    "src/medical_posttrain/rollout/profile.py": "8b50a372b0b2cdf475ef9d4a901d5fe3cc8b281614b0649afef6141eab1aeaa4",
+    "src/medical_posttrain/rollout/statistics.py": "f8aa2c2dc7a0bb2639b5a2b9aee1cd7b84798addb253856848caed40e3a90917"
+  },
+  "seed": 42,
+  "stage": 4,
+  "groups_per_window": 8,
+  "mini_prompts": 4,
+  "ppo_epochs": 1,
+  "sampling_metric": "acc",
+  "max_generation_batches": 32,
+  "request_batch_prompts": 8,
+  "clip_ratio_low": 0.0003,
+  "clip_ratio_high": 0.0004,
+  "grad_clip": 1.0,
+  "learning_rate": 1e-06,
+  "weight_decay": 0.0,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "eps": 1e-08,
+  "lr_scheduler": "constant",
+  "warmup_steps": 0,
+  "entropy_coefficient": 0.0,
+  "kl_reward": false,
+  "kl_loss": false,
+  "reference_worker": false,
+  "critic": false,
+  "parity_limits": {
+    "token_mean_abs": 0.03,
+    "token_p99_abs": 0.25,
+    "sequence_mean_abs_max": 0.02
+  },
+  "mode": "formal",
+  "target_training_groups": 5000,
+  "stream_domain": "stage4:formal:pair1",
+  "validation_protocol": {
+    "path": "/data/WSH/post-train/experiments/stage4/formal_validation_protocol.json",
+    "sha256": "fa9f2a4b36659488ee64ee530104b3cc963c4c0c403480f13e5dc7cc7475fc36",
+    "bytes": 34602
+  },
+  "checkpoint_interval_windows": 1,
+  "health_protocol": {
+    "clip_threshold": 0.9,
+    "clip_consecutive_windows": 8,
+    "length_block_windows": 16,
+    "length_consecutive_blocks": 3,
+    "length_cap_fraction": 0.9
+  },
+  "pilot_receipts": {
+    "vanilla": {
+      "path": "/data/WSH/post-train/experiments/stage4/vanilla_pilot_verification.json",
+      "sha256": "3fa6e6d0c7a8b4aa2f944d919b97857563ea22302b3e7baad3291100efa2ee7d",
+      "bytes": 76816
+    },
+    "dynamic": {
+      "path": "/data/WSH/post-train/experiments/stage4/dynamic_pilot_verification.json",
+      "sha256": "4e09b33aece65b2322bdcbb52f8069d145435a2d36941ad6030f3ef84f9648e5",
+      "bytes": 141137
+    }
+  }
+}

@@ -1,0 +1,1082 @@
+[
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/attempt_001/command.json",
+    "sha256": "0bae163e55ecc2690da2ca6c0be97097bcaea6b4d684024c790ad0df09c17011",
+    "bytes": 322
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/attempt_001/engine_args.json",
+    "sha256": "20a9e1854f89f15120caa124024a8b981c24fcbc7ce870aafa08d03300c9de41",
+    "bytes": 539
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/attempt_001/environment.json",
+    "sha256": "d0a14aa4b869c0f91dba5392f84cac93f5bf87f6208a39c461d93e72b0b984f9",
+    "bytes": 7848
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/attempt_001/events.jsonl",
+    "sha256": "ebc5860762bdc565eebf7c0de4b1f0068e67693cde3b1770a375c67f1b84d905",
+    "bytes": 1109
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/attempt_001/initial_sync/first.json",
+    "sha256": "ecd1442011d09e2f22615a670dd6c0b1e6469571d94999df3f99e9f34fc3a651",
+    "bytes": 8584
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/attempt_001/initial_sync/receipt.json",
+    "sha256": "060e73a2a641dff6890e92db191373fa13e94d10907845040fc2f3f3c0ecfbb9",
+    "bytes": 976
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/attempt_001/initial_sync/repeat.json",
+    "sha256": "ecd1442011d09e2f22615a670dd6c0b1e6469571d94999df3f99e9f34fc3a651",
+    "bytes": 8584
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/attempt_001/launch.json",
+    "sha256": "3870d55ea2c84a9a042658738d2244c277c2dc46947685b5ab0fdab2935d307c",
+    "bytes": 92
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/attempt_001/resume_start.json",
+    "sha256": "d86243fa65843f5889f1a8375c6f6bacf8f82ae3d5e792e90f89b326c2ccf1d6",
+    "bytes": 2821
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/attempt_001/runtime_env.json",
+    "sha256": "4b95fdedd15a53f3c449dd56bcb5e162e72f2828f7e19939443950ebdf7692aa",
+    "bytes": 150
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/attempt_001/stderr.log",
+    "sha256": "78fb23b1ad8b501155411c01d50ba83ba5331be4dec643c7e00a8aca654517e3",
+    "bytes": 2136
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/attempt_001/stdout.log",
+    "sha256": "c8cc924023ae8a20b55f477f0c2e5222aa2250ece468fdbdd7489f9f45f31576",
+    "bytes": 12292
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/attempt_002/command.json",
+    "sha256": "3b4f40592e41b2d86c6ec85a4a176493a24321c2020c75aed9a8984f86599319",
+    "bytes": 322
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/attempt_002/engine_args.json",
+    "sha256": "20a9e1854f89f15120caa124024a8b981c24fcbc7ce870aafa08d03300c9de41",
+    "bytes": 539
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/attempt_002/environment.json",
+    "sha256": "d0a14aa4b869c0f91dba5392f84cac93f5bf87f6208a39c461d93e72b0b984f9",
+    "bytes": 7848
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/attempt_002/events.jsonl",
+    "sha256": "a9513bd2f3b54c8fddf9d94e367d7f175acb71f1126d004c5c49887184e0db1f",
+    "bytes": 555
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/attempt_002/initial_sync/first.json",
+    "sha256": "3eb06b2c953a37610248dda73dd2abfd745691ec106b9db1f02443c916a2be57",
+    "bytes": 8581
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/attempt_002/initial_sync/receipt.json",
+    "sha256": "85925abadca3c9a12141905b288b948d23197f5f85315c0693e5c80a881b2c43",
+    "bytes": 987
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/attempt_002/initial_sync/repeat.json",
+    "sha256": "3eb06b2c953a37610248dda73dd2abfd745691ec106b9db1f02443c916a2be57",
+    "bytes": 8581
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/attempt_002/launch.json",
+    "sha256": "1f426ac0bd7620d8faffc99f2d9bf01cebeb7710d6c1276b278c60781496bb4d",
+    "bytes": 92
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/attempt_002/resume_start.json",
+    "sha256": "99bebaba441eb36aa2b2a05e4de64e162715d2ba4bfd807d1e0c5912c74fc628",
+    "bytes": 4105
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/attempt_002/runtime_env.json",
+    "sha256": "4b95fdedd15a53f3c449dd56bcb5e162e72f2828f7e19939443950ebdf7692aa",
+    "bytes": 150
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/attempt_002/stderr.log",
+    "sha256": "b705e1cc00a372aa213e19901fbe75c9edc1c490b22fb877527bb053c76f5fb6",
+    "bytes": 2137
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/attempt_002/stdout.log",
+    "sha256": "b5816a71049f693972289dc4a93f57a4f92892e9563278e276f6e725ebe32a12",
+    "bytes": 13032
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/checkpoint.json",
+    "sha256": "7ccdc53f7f680c36ecb51328d41e72264ec1f88439f9e0a2619f7d26ce9da8ac",
+    "bytes": 4169
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/config.json",
+    "sha256": "d2288f87096d00671cd0cf742b2903583b75940d1ac3e3d2f09773cc7054accf",
+    "bytes": 2946
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/events.jsonl",
+    "sha256": "957582cf713c0f327c2dfb9372637fd0094176290d6514d5c0dee7d04d9875c0",
+    "bytes": 834
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/fault/after_recovery.json",
+    "sha256": "4e8d2759244e525157f919e1fa7f7d25a146eb898556ec479de5e60cd84ff986",
+    "bytes": 3177
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/fault/before_kill.json",
+    "sha256": "6b05551ee49137827d90188468f8e4945da9b4e6a503ab5f6d845fbf1457031d",
+    "bytes": 10561
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/fault/ready.json",
+    "sha256": "9b84c9f5c24c7cfac29d407c9204ade002a69cac83087a35abcfb2f06802c4bc",
+    "bytes": 2155
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/fault/termination.json",
+    "sha256": "935d9a75061411abf9579f7419db7790b2bd75088a14d30a8b4e6c53ae6df54b",
+    "bytes": 1506
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/fault/termination_observed.json",
+    "sha256": "3d6af003b8046265135bf3e85711e3aa6ac587592607d5f5a0a155d0ad7ebfcd",
+    "bytes": 138
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/heartbeat.json",
+    "sha256": "6c4297cabf00a72444ac2dae24cffbbcfaad8d1bf1b10670eb8d0093f41fbb74",
+    "bytes": 72
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/launch.lock",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/manifest.json",
+    "sha256": "23711481d4929a6ca0c0d07aeaec9ba7fdda23c902719105a5eab9851d0a4a94",
+    "bytes": 16851
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/observations.md",
+    "sha256": "5d98b0e4bd7dde3f378eaccb7b5ad7c1f1c65850f7f905079fd8f779d1c2a024",
+    "bytes": 45
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/source.zip",
+    "sha256": "e0357f51e9ff893cd0c3fc1000ae7be3833f9c2b20c893dbdf618510957d2ea8",
+    "bytes": 260050
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/status.json",
+    "sha256": "3629bf009142baa8b1adaae366eb4a9a2aafe2823f86b278bc8649a5c5cfc2a6",
+    "bytes": 88
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/summary.json",
+    "sha256": "19b04b07a2ee3bf870313e5489ad51c11c96a2525ec4e80a059325de6acfdde5",
+    "bytes": 3947
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/actor/actual_native_configs.json",
+    "sha256": "1723924b67698c1d34fcdc3409f95bb1afddf2e0c6b0ff96e51ba0fd02b5302c",
+    "bytes": 11894
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/actor/dist_init",
+    "sha256": "f94642021add6e3721078510e835b7caf85dcde37d7724347b23056d003b5eb2",
+    "bytes": 176
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/actor/loaded_identity.json",
+    "sha256": "40ce206bb856a63fa710eab7a1ad4de28419739e913605bf48e7fe69233042fe",
+    "bytes": 558
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/actor/orchestration.json",
+    "sha256": "8b090d6491b31882430946c0518b8dac01123c8485908da6fce2eec4faed8865",
+    "bytes": 487
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/actor/verl_composed.yaml",
+    "sha256": "5e8ac31030bffd074e9cc65eeb9c4247831b1a65de67434ab5a009bc266761a3",
+    "bytes": 31725
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/actor.stderr.log",
+    "sha256": "87254a8f5481bbbbb43c6910bc6c45efc1e763d81ae05b746a94293b4342d2b7",
+    "bytes": 4409
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/actor.stdout.log",
+    "sha256": "1877862159a102e8cb75fa152fbef709474518d4dfa0f8ec51bd6312c1b10cfe",
+    "bytes": 2081
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/actor_command.json",
+    "sha256": "00d907e5644b0f758955d71ce9f9649adf906693572684a5b58daa6d19228781",
+    "bytes": 331
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/actor_exit.json",
+    "sha256": "72a70dbe4b2e953833451a1f053677e5540a3dc2cd9a6d9dbef605733eedb1b5",
+    "bytes": 105
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/actor_launch.json",
+    "sha256": "313fdadf5414def2ae87966d18ad8703eb8d503d0d91a60ac3db7775c6d6d4e5",
+    "bytes": 72
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/actor_result.json",
+    "sha256": "496043a14cc36dffbec842190b8ef1696319671297ebcaaf63f671b46ddbed64",
+    "bytes": 3299
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/batches/000/dispositions.json",
+    "sha256": "1c5e3b528adef9e10630775a0297cbbccbfe8639b7bb5efd678019725db52d7d",
+    "bytes": 3105
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/batches/000/raw.json",
+    "sha256": "3390a3a27b43c029055ebaac3b9f35c1071b5d3595a876fc01e13c74799fd851",
+    "bytes": 560332
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/batches/000/reservation.json",
+    "sha256": "0de73b92220cb2ab52f7205943750f4a64805a603a5a8d85787e8301137a2726",
+    "bytes": 17288
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/batches/000/reward_runtime.json",
+    "sha256": "f0eba9a49e68922bd095ff340ee5c18b7173d7a846d68405fd2144ee1b84ca94",
+    "bytes": 36
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/batches/000/scored.json",
+    "sha256": "64766224400e500069a9fb2baea5efd64f80161f235526df2eff45edde64f87e",
+    "bytes": 336131
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/batches/000/semantic_encoding.json",
+    "sha256": "506b2be63ca3a37b5f95704188dec4291d57ad397393adfd978beab830f6c459",
+    "bytes": 44928
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/batches/000/semantic_vectors.npy",
+    "sha256": "6f730062a10a576b7c125a10877a002aeaedf390fc0dbd1b08867024bc0261e7",
+    "bytes": 159872
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/checkpoint/COMMITTED.json",
+    "sha256": "ea31d570e0be6ec793a5b18733d56950bb1d1e531d307dd9a1ad4f0442e23dd6",
+    "bytes": 2980
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/checkpoint/adapter/README.md",
+    "sha256": "69f3aa1fb067ef986745d9470eced45cc83c7657395eb2c40755ace7fd476c57",
+    "bytes": 5344
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/checkpoint/adapter/adapter_config.json",
+    "sha256": "a77e84c4a4826ac3626fa03452c4678cb3a1f392899f6ea0d253b5aa4a020f2c",
+    "bytes": 1123
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/checkpoint/adapter/adapter_model.safetensors",
+    "sha256": "a3fc752ec2e1402ce213f1bf46dcafcd6b908f7aa4cf1d383c294ef6eedced68",
+    "bytes": 349243752
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/checkpoint/controller.json",
+    "sha256": "858dfcaece9fa3e01a0f88f6a9ce43053acb23ce2f7118b4698d2cb1806814cf",
+    "bytes": 1119
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/checkpoint/native/extra_state_world_size_1_rank_0.pt",
+    "sha256": "967af2491e34cf587f11b30f2011050a73cd63d9f91813ddb947fed234ddd7d5",
+    "bytes": 15141
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/checkpoint/native/fsdp_config.json",
+    "sha256": "a9f7e97dba5fe2553928a5bd7802ec2e301d1560aa4460753d881dc86d8c154f",
+    "bytes": 46
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/checkpoint/native/huggingface/chat_template.jinja",
+    "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+    "bytes": 4168
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/checkpoint/native/huggingface/config.json",
+    "sha256": "6595cb23e0dfd00b2ae82c1ac6f59451fe16f4bc1812780dc3cdc9e31a46ba08",
+    "bytes": 1628
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/checkpoint/native/huggingface/generation_config.json",
+    "sha256": "6b08ea8d092c7dd1a9de07d899271ba71ab2fe74375900c7a6400356e88752b2",
+    "bytes": 213
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/checkpoint/native/huggingface/tokenizer.json",
+    "sha256": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506",
+    "bytes": 11422650
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/checkpoint/native/huggingface/tokenizer_config.json",
+    "sha256": "d9bf1d78a80bad5eb65b83c2608910e3be00a9d3250c8153a5a393ad1257e1d6",
+    "bytes": 664
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/checkpoint/native/lora_train_meta.json",
+    "sha256": "349f62eff696826bc2adec7661a8559b44883e6d137cff5a31cd64adf6a9e8ab",
+    "bytes": 67
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/checkpoint/native/model_world_size_1_rank_0.pt",
+    "sha256": "b1ba8e9de22f757ad5f2c7a1f3ec9049977505d0c834136f47d3b51325566673",
+    "bytes": 349425275
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/checkpoint/native/optim_world_size_1_rank_0.pt",
+    "sha256": "f5885dac76ed281bfebe4b722a7626e14e36ccf5e7715deca37d5907e94e8c95",
+    "bytes": 698914428
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/checkpoint/rng.pt",
+    "sha256": "09a5ee38dbbb5754c0bcbbd44f0152e6a5baf8dfee4e72d5c5b3e98c6065f3ba",
+    "bytes": 14533
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/commit.json",
+    "sha256": "9c78b2cdf1734c34e3d23b91b727b9912b50b09a98ddd1f0c8646aadca21ba03",
+    "bytes": 5432
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/rollout_metrics.json",
+    "sha256": "ca4234cabf0774c871ac9a832e3c3f31980deb307d29f5d9f67bf8d488ecfbc5",
+    "bytes": 1178
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/selection.json",
+    "sha256": "186e36dbb84522a1623a378c80676fe78aad084a447d41ed40e9492dc16694ec",
+    "bytes": 594902
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/state_before.json",
+    "sha256": "023154b25dcd589809f4bf33ad5868f1e901a0c67b29893eb1cc4fb10d4bc58e",
+    "bytes": 301
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/sync/first.json",
+    "sha256": "3eb06b2c953a37610248dda73dd2abfd745691ec106b9db1f02443c916a2be57",
+    "bytes": 8581
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/sync/receipt.json",
+    "sha256": "f641082248f3b8f45b4e6a0c94dd6e2094ffb911919fc723a7d2f04e15362a35",
+    "bytes": 989
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/sync/repeat.json",
+    "sha256": "3eb06b2c953a37610248dda73dd2abfd745691ec106b9db1f02443c916a2be57",
+    "bytes": 8581
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/update/events.jsonl",
+    "sha256": "0309196f772a9eda76b83dfeb5a2e276c37ec3d72fcc8a5e35c83473e0d0ba45",
+    "bytes": 1518
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/update/mini_00.npz",
+    "sha256": "dbd176b0ac325fc8965dcdc89e5373cfd2fa9e2d305c8033bb1a9c4a4d83dc55",
+    "bytes": 14077
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/update/mini_01.npz",
+    "sha256": "82e326166d36adebd89e61a6af43450c5c2f47a7c55052204a4aa4bc65518ac3",
+    "bytes": 14088
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/update/old.npz",
+    "sha256": "d402b0528431026d11d0c56eb9daa68e98bd372de6fd86f1823cc115f21f8930",
+    "bytes": 54640
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/update/old_frozen.json",
+    "sha256": "4d00a9b700f0c8773373445622155ad713d093d914e4b7627ce720e4ae04eff9",
+    "bytes": 2966
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/update/parity.json",
+    "sha256": "330b6a0263ff2ccb02381fa2b28bfe8d52d414af104d720f14ee33a45a2ad0c4",
+    "bytes": 812
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0000/update/update.json",
+    "sha256": "da5402692cfeaa006c9115029cacb4b666f30ac97ffb8bdb48de37976b08a9c9",
+    "bytes": 2616
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/actor/actual_native_configs.json",
+    "sha256": "979be0e51759b9facc6d8693f89c8970a8d40e27c4b1c027b923b14aae708d22",
+    "bytes": 11904
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/actor/dist_init",
+    "sha256": "470fec043a4d84d852516b6244fba0cb73292050a8dcda2108a9ea230ba08cc8",
+    "bytes": 176
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/actor/loaded_identity.json",
+    "sha256": "d780d3ecd49e150084f06281fec18b6538208b98464a2361df1d9679a88c3285",
+    "bytes": 669
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/actor/orchestration.json",
+    "sha256": "0f2fe1e094cdad00d0d33a56c26efd81a2153dd47ef03da4595f8c5d449ae442",
+    "bytes": 497
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/actor/resume_receipt.json",
+    "sha256": "504740cdaaf81c8de66aa81b8aa71f7546db8bdc65b1959aa98ea86d385ccc4f",
+    "bytes": 3014
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/actor/verl_composed.yaml",
+    "sha256": "5e8ac31030bffd074e9cc65eeb9c4247831b1a65de67434ab5a009bc266761a3",
+    "bytes": 31725
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/actor.stderr.log",
+    "sha256": "e81b436e881818352d6821dee43b37bbb17dd6b55daa243fbdece0913c7d9504",
+    "bytes": 5244
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/actor.stdout.log",
+    "sha256": "9c00c9c78a14c047e75cd061de935880cc751cbf9fecd24e699aba4c64ff9ab5",
+    "bytes": 2089
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/actor_command.json",
+    "sha256": "58b7c93c0f37f6be552f8d13b72790169d74bc8ff8d25f108caaaf61ede65d15",
+    "bytes": 331
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/actor_exit.json",
+    "sha256": "effa1ce8b09adf38b5a4f2443fb7dcec92a379960e320244add5025ae06adeb5",
+    "bytes": 104
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/actor_launch.json",
+    "sha256": "62db948ab8f8e16a1bf9dd37fde01641b23e2360333bc023c7f661f22f355240",
+    "bytes": 72
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/actor_result.json",
+    "sha256": "72117d45c1b6ce996e7bfd66d14b4e71da8e0fbdcc46111743faf50a1aed6274",
+    "bytes": 3294
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/batches/000/dispositions.json",
+    "sha256": "068bc0ac3f071d692d899465e421ae385ff4f901c6daf371d9e76fbd91d336af",
+    "bytes": 3075
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/batches/000/raw.json",
+    "sha256": "dbff91ffdd15b61cbcb302e52153abd33b930fc852a5d8eb93f16329aa1a2b81",
+    "bytes": 556346
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/batches/000/reservation.json",
+    "sha256": "b04d17c17713c52f6d592f7325ed344a0a05827bd97e1f3207e7a02a04b0e580",
+    "bytes": 17946
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/batches/000/reward_runtime.json",
+    "sha256": "ce901a986496635f23f03a4ca28f362f9675accd6c5ee807271380b0645b67e3",
+    "bytes": 36
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/batches/000/scored.json",
+    "sha256": "fce9f4af40e93e22068348eb7958563caaf62611710210dfad3310edfdb5212d",
+    "bytes": 334669
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/batches/000/semantic_encoding.json",
+    "sha256": "b00de0397c6c73d1fede241dc672241e331a023da815aba09f6a07c1e6c820b4",
+    "bytes": 44501
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/batches/000/semantic_vectors.npy",
+    "sha256": "27e2dfd455eb500de499d5f637e366e3ad463c08f957a7ffdc9f8a59aedcf0a7",
+    "bytes": 151680
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/checkpoint/COMMITTED.json",
+    "sha256": "8f812b4d24e9f2ffd550a5eea4d851372b6e155a9ea5eaf7d4bf64419facde34",
+    "bytes": 2980
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/checkpoint/adapter/README.md",
+    "sha256": "69f3aa1fb067ef986745d9470eced45cc83c7657395eb2c40755ace7fd476c57",
+    "bytes": 5344
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/checkpoint/adapter/adapter_config.json",
+    "sha256": "16772877c07b011e7edefeab74c018a3ede631dea9fa613402d2150b229396f5",
+    "bytes": 1123
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/checkpoint/adapter/adapter_model.safetensors",
+    "sha256": "62d76924e55b6bdabbb43ea1896f8c915d8192b03e231180b8e98a511e1df74a",
+    "bytes": 349243752
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/checkpoint/controller.json",
+    "sha256": "773ff3f90774f68a1c84fcd42c867b1c7ab4e353f878177d95e2af8a46b4385b",
+    "bytes": 2283
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/checkpoint/native/extra_state_world_size_1_rank_0.pt",
+    "sha256": "0d6a75ef80d943eb613113919e55640be9fe2f351484b6bb31bdc93ae5fae9c4",
+    "bytes": 15141
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/checkpoint/native/fsdp_config.json",
+    "sha256": "a9f7e97dba5fe2553928a5bd7802ec2e301d1560aa4460753d881dc86d8c154f",
+    "bytes": 46
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/checkpoint/native/huggingface/chat_template.jinja",
+    "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+    "bytes": 4168
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/checkpoint/native/huggingface/config.json",
+    "sha256": "6595cb23e0dfd00b2ae82c1ac6f59451fe16f4bc1812780dc3cdc9e31a46ba08",
+    "bytes": 1628
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/checkpoint/native/huggingface/generation_config.json",
+    "sha256": "6b08ea8d092c7dd1a9de07d899271ba71ab2fe74375900c7a6400356e88752b2",
+    "bytes": 213
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/checkpoint/native/huggingface/tokenizer.json",
+    "sha256": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506",
+    "bytes": 11422650
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/checkpoint/native/huggingface/tokenizer_config.json",
+    "sha256": "d9bf1d78a80bad5eb65b83c2608910e3be00a9d3250c8153a5a393ad1257e1d6",
+    "bytes": 664
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/checkpoint/native/lora_train_meta.json",
+    "sha256": "349f62eff696826bc2adec7661a8559b44883e6d137cff5a31cd64adf6a9e8ab",
+    "bytes": 67
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/checkpoint/native/model_world_size_1_rank_0.pt",
+    "sha256": "d6ba46aaa7f250eceba4c5829773f6f287bb7112a13701a06a4ffc34af716985",
+    "bytes": 349425275
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/checkpoint/native/optim_world_size_1_rank_0.pt",
+    "sha256": "23db00075e66d4ae60b0a347b0be0d2da388c0196bb0628cd7e59e31af748dcd",
+    "bytes": 698914428
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/checkpoint/rng.pt",
+    "sha256": "09a5ee38dbbb5754c0bcbbd44f0152e6a5baf8dfee4e72d5c5b3e98c6065f3ba",
+    "bytes": 14533
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/commit.json",
+    "sha256": "58e75c5f0d1ef023dad04e514bf7ab0877ca1c053b79dccfa607f2659063ee5e",
+    "bytes": 7776
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/.tmp-checkpoint/COMMITTED.json",
+    "sha256": "3642361111de562a04e70a4974c4e8cbc427b3b822de13a3522587c17ba0c9db",
+    "bytes": 2980
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/.tmp-checkpoint/adapter/README.md",
+    "sha256": "69f3aa1fb067ef986745d9470eced45cc83c7657395eb2c40755ace7fd476c57",
+    "bytes": 5344
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/.tmp-checkpoint/adapter/adapter_config.json",
+    "sha256": "471bc858ccc7d1e7112573fcfa9ace1308825d7938342b77a3577f96f91c0e51",
+    "bytes": 1123
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/.tmp-checkpoint/adapter/adapter_model.safetensors",
+    "sha256": "e718dcf1aaf7b0f997f0b995daa1582a75601725087a26387609a729acbaf478",
+    "bytes": 349243752
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/.tmp-checkpoint/controller.json",
+    "sha256": "4c7a8abf16040687b8a7cf286871f884a84650f98f711ffb1a95ffd3c9900099",
+    "bytes": 2283
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/.tmp-checkpoint/native/extra_state_world_size_1_rank_0.pt",
+    "sha256": "0d6a75ef80d943eb613113919e55640be9fe2f351484b6bb31bdc93ae5fae9c4",
+    "bytes": 15141
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/.tmp-checkpoint/native/fsdp_config.json",
+    "sha256": "a9f7e97dba5fe2553928a5bd7802ec2e301d1560aa4460753d881dc86d8c154f",
+    "bytes": 46
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/.tmp-checkpoint/native/huggingface/chat_template.jinja",
+    "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+    "bytes": 4168
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/.tmp-checkpoint/native/huggingface/config.json",
+    "sha256": "6595cb23e0dfd00b2ae82c1ac6f59451fe16f4bc1812780dc3cdc9e31a46ba08",
+    "bytes": 1628
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/.tmp-checkpoint/native/huggingface/generation_config.json",
+    "sha256": "6b08ea8d092c7dd1a9de07d899271ba71ab2fe74375900c7a6400356e88752b2",
+    "bytes": 213
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/.tmp-checkpoint/native/huggingface/tokenizer.json",
+    "sha256": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506",
+    "bytes": 11422650
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/.tmp-checkpoint/native/huggingface/tokenizer_config.json",
+    "sha256": "d9bf1d78a80bad5eb65b83c2608910e3be00a9d3250c8153a5a393ad1257e1d6",
+    "bytes": 664
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/.tmp-checkpoint/native/lora_train_meta.json",
+    "sha256": "349f62eff696826bc2adec7661a8559b44883e6d137cff5a31cd64adf6a9e8ab",
+    "bytes": 67
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/.tmp-checkpoint/native/model_world_size_1_rank_0.pt",
+    "sha256": "da18a2d1da0b3151694c1fbb41e0da79028eb197f3efce1b2ff2ef016e6c5d01",
+    "bytes": 349425275
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/.tmp-checkpoint/native/optim_world_size_1_rank_0.pt",
+    "sha256": "7c879e4ee20df8952bc4a2a745d71d634c6122cb266b67b7f25a0f486b1389b0",
+    "bytes": 698914428
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/.tmp-checkpoint/rng.pt",
+    "sha256": "09a5ee38dbbb5754c0bcbbd44f0152e6a5baf8dfee4e72d5c5b3e98c6065f3ba",
+    "bytes": 14533
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/actor/actual_native_configs.json",
+    "sha256": "979be0e51759b9facc6d8693f89c8970a8d40e27c4b1c027b923b14aae708d22",
+    "bytes": 11904
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/actor/dist_init",
+    "sha256": "b15d1ca53a7e7ca5bf029f1ccab5dad796aeca3f1f45205509f4c50283288601",
+    "bytes": 176
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/actor/loaded_identity.json",
+    "sha256": "d780d3ecd49e150084f06281fec18b6538208b98464a2361df1d9679a88c3285",
+    "bytes": 669
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/actor/orchestration.json",
+    "sha256": "0f2fe1e094cdad00d0d33a56c26efd81a2153dd47ef03da4595f8c5d449ae442",
+    "bytes": 497
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/actor/resume_receipt.json",
+    "sha256": "504740cdaaf81c8de66aa81b8aa71f7546db8bdc65b1959aa98ea86d385ccc4f",
+    "bytes": 3014
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/actor/verl_composed.yaml",
+    "sha256": "5e8ac31030bffd074e9cc65eeb9c4247831b1a65de67434ab5a009bc266761a3",
+    "bytes": 31725
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/actor.stderr.log",
+    "sha256": "af7d219c99e701e0789dc86d600f4ab23a79a29c1900c50c2737639a439c486b",
+    "bytes": 5244
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/actor.stdout.log",
+    "sha256": "d81fa934b9ff728bdc918143e1ae127e43b5111c378da1b060a6ce85aefe3f48",
+    "bytes": 2096
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/actor_command.json",
+    "sha256": "58b7c93c0f37f6be552f8d13b72790169d74bc8ff8d25f108caaaf61ede65d15",
+    "bytes": 331
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/actor_launch.json",
+    "sha256": "fd153d041a49b50b8124693c4a11fa20e90ed6a507bbac03dc489f4211ecf652",
+    "bytes": 72
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/recovery.json",
+    "sha256": "1b49238c220cb768562f8c0a1158c6caa1df78bc870d33f5f68fb0f385ba4b34",
+    "bytes": 10497
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/update/events.jsonl",
+    "sha256": "4716b09ac3a2e10fb19593322a5f2cb7bc04cc51df6a22e6c131ad68ab130044",
+    "bytes": 1523
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/update/mini_00.npz",
+    "sha256": "5fe4eb119c05db91c1b04873efd7c8d6511214fa37bf2f5bc2f497364adbe3c3",
+    "bytes": 15277
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/update/mini_01.npz",
+    "sha256": "b88c6cbf5dbf12ab3d92dbaa2baf7b71eb38899d2f3950b091bfda347f8cb6ca",
+    "bytes": 12787
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/update/old.npz",
+    "sha256": "c9670d4431750a7d1d4a5dcd0e54e1c21bf14956fb09b0ea3f7827c9d5e92493",
+    "bytes": 53839
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/update/old_frozen.json",
+    "sha256": "27b783a9c9586c1256461dcb501b1ae82c25acb6139c535068b9ceada0d90f1c",
+    "bytes": 2965
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/recovery/001/update/update.json",
+    "sha256": "9adc0e56282843302354bf1ceaa9c4c3cdfb27f32f88a274c076fb970d87454b",
+    "bytes": 2619
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/rollout_metrics.json",
+    "sha256": "64cb0734a3bd2b890d3611852b2189d270eb086ab8722d212c14a7d2dc244482",
+    "bytes": 1200
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/selection.json",
+    "sha256": "6b8095381d8632eda08df508f29fe54f773f53b8e95e2e7e3bd6529f29f98c5a",
+    "bytes": 590854
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/state_before.json",
+    "sha256": "33f8d7717dc987da612022a4b3fba2484cc18376c458ab7bb3aee45d246cabc1",
+    "bytes": 1429
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/sync/first.json",
+    "sha256": "e84a83a4dba11255183db6bc294da59ec39198febd0f02a33976c8be0eee287c",
+    "bytes": 8593
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/sync/receipt.json",
+    "sha256": "bfa0a4d988b56abac5f5b2581c97b5292121949dbac912220bcefc12f6de5535",
+    "bytes": 989
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/sync/repeat.json",
+    "sha256": "e84a83a4dba11255183db6bc294da59ec39198febd0f02a33976c8be0eee287c",
+    "bytes": 8593
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/update/events.jsonl",
+    "sha256": "9689bf80d9e1ca279cd423dd8e0e25200b6951de3d2ca30d1f6169f81898369e",
+    "bytes": 1516
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/update/mini_00.npz",
+    "sha256": "5fe4eb119c05db91c1b04873efd7c8d6511214fa37bf2f5bc2f497364adbe3c3",
+    "bytes": 15277
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/update/mini_01.npz",
+    "sha256": "0ebf1c6d64d38e6e7dd07e9e8d9e515cf203a6d4f335907f10dfe6dbf57c8c21",
+    "bytes": 12785
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/update/old.npz",
+    "sha256": "c9670d4431750a7d1d4a5dcd0e54e1c21bf14956fb09b0ea3f7827c9d5e92493",
+    "bytes": 53839
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/update/old_frozen.json",
+    "sha256": "dfaba2ec65611fb56d68ebf4f6cb2184caf859574b6eb88f0016539a9593ab78",
+    "bytes": 2965
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0001/update/update.json",
+    "sha256": "daf447460d60b30c865154ba8d77afab546aa81c6f0c3f221f97f7f66bb440dd",
+    "bytes": 2611
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/actor/actual_native_configs.json",
+    "sha256": "e577b2a00a0b6397660753ee616a9b849a3592082edf20f55209ed5193cc5513",
+    "bytes": 11904
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/actor/dist_init",
+    "sha256": "f48bd5ba205a009d09a1b9960677934a2d30c775b4cabf8cf129ba9f25e4e51a",
+    "bytes": 176
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/actor/loaded_identity.json",
+    "sha256": "a0215115659476a93cfe4fdc30c15ffb38b553f57a9641d1eb95b625bb27e092",
+    "bytes": 669
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/actor/orchestration.json",
+    "sha256": "11d5fc18407948a22add6521bf6656aa540781ba9a2e51b03f8c6937ac8bec63",
+    "bytes": 497
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/actor/resume_receipt.json",
+    "sha256": "c27a891f88e8f725e9258e1d248c4bdd57446b812bd627d23baa3bdba4e982c2",
+    "bytes": 4168
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/actor/verl_composed.yaml",
+    "sha256": "5e8ac31030bffd074e9cc65eeb9c4247831b1a65de67434ab5a009bc266761a3",
+    "bytes": 31725
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/actor.stderr.log",
+    "sha256": "f60746d806d58f72b7b9ef291af7270bf53860b3a3e3ecbc7858bebb4b53b223",
+    "bytes": 5244
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/actor.stdout.log",
+    "sha256": "f09b2fcd755e6348d9b34f7c91d6a478bcca0522a59369ee5f568076590b61e3",
+    "bytes": 2089
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/actor_command.json",
+    "sha256": "dfa31352ef8a13d76b0ad4c993ab3b990691a5780037e4cc0cdad6157aa7da5a",
+    "bytes": 331
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/actor_exit.json",
+    "sha256": "09e4bdc454a6fe96adc051f4ac76f541d16511eb512c0f164c78acc4a1884f1d",
+    "bytes": 104
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/actor_launch.json",
+    "sha256": "9181486f6252a5b75323d20d312b5e57d49771a9c2ac1a01a6a11d04550429d5",
+    "bytes": 72
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/actor_result.json",
+    "sha256": "c9533a77c24fccd4a9af8575ab87ae10a956765eca95887fc6ead48082a57e72",
+    "bytes": 3311
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/batches/000/dispositions.json",
+    "sha256": "73da9a47f75ba013b344c5a1fb947ff41926f87305971bd22bf37c1e817f81ee",
+    "bytes": 3090
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/batches/000/raw.json",
+    "sha256": "dcee7358ebe339e4132f6c3eb7bf7987923500d4cecddbb4d71fc31d936003f3",
+    "bytes": 541414
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/batches/000/reservation.json",
+    "sha256": "bc7238b86c7de2e096d3632acbc23623bc23541e8c245cbd0e41359684392a3c",
+    "bytes": 15809
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/batches/000/reward_runtime.json",
+    "sha256": "09b5611ab425db2bf44c758c07b978c4a88c99fb8dd5670cb910c6bdc4b40d2a",
+    "bytes": 36
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/batches/000/scored.json",
+    "sha256": "4de29de732ce1f876a913b7d49bf9fbbe0ed2a5fd95c3bb2fabf9943581dc31e",
+    "bytes": 327282
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/batches/000/semantic_encoding.json",
+    "sha256": "a5b42c6583bb21b4cb6f7bff73d5c75dcdad9bdbe5f004a5e4f3a5c81a4ff191",
+    "bytes": 44872
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/batches/000/semantic_vectors.npy",
+    "sha256": "d014c5f8a65814b07982aa2a227c00564f0640511322abe00437b5403c1cd649",
+    "bytes": 159872
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/checkpoint/COMMITTED.json",
+    "sha256": "fe227d122d716a9eb60b2c720d9f4438696e220bc6f408d54e027fa2f09e84e1",
+    "bytes": 2980
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/checkpoint/adapter/README.md",
+    "sha256": "69f3aa1fb067ef986745d9470eced45cc83c7657395eb2c40755ace7fd476c57",
+    "bytes": 5344
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/checkpoint/adapter/adapter_config.json",
+    "sha256": "531ab54aa2f0beda5a536c7684618e6b35c7ad27b233ea9cc666885afdfefae5",
+    "bytes": 1123
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/checkpoint/adapter/adapter_model.safetensors",
+    "sha256": "47664d9f1c72a0050f2ddc95dddb26f47f7b6c6f6d1786e4f14ded9caa0a62b7",
+    "bytes": 349243752
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/checkpoint/controller.json",
+    "sha256": "51173317fd07e774b894c7819e49c3347c1062ac32de2c48ffa85cf380accceb",
+    "bytes": 3437
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/checkpoint/native/extra_state_world_size_1_rank_0.pt",
+    "sha256": "76f578afd49b171223106d5c5834d0b9ca494eb184eef666f0529ee21b3769d9",
+    "bytes": 15141
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/checkpoint/native/fsdp_config.json",
+    "sha256": "a9f7e97dba5fe2553928a5bd7802ec2e301d1560aa4460753d881dc86d8c154f",
+    "bytes": 46
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/checkpoint/native/huggingface/chat_template.jinja",
+    "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+    "bytes": 4168
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/checkpoint/native/huggingface/config.json",
+    "sha256": "6595cb23e0dfd00b2ae82c1ac6f59451fe16f4bc1812780dc3cdc9e31a46ba08",
+    "bytes": 1628
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/checkpoint/native/huggingface/generation_config.json",
+    "sha256": "6b08ea8d092c7dd1a9de07d899271ba71ab2fe74375900c7a6400356e88752b2",
+    "bytes": 213
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/checkpoint/native/huggingface/tokenizer.json",
+    "sha256": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506",
+    "bytes": 11422650
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/checkpoint/native/huggingface/tokenizer_config.json",
+    "sha256": "d9bf1d78a80bad5eb65b83c2608910e3be00a9d3250c8153a5a393ad1257e1d6",
+    "bytes": 664
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/checkpoint/native/lora_train_meta.json",
+    "sha256": "349f62eff696826bc2adec7661a8559b44883e6d137cff5a31cd64adf6a9e8ab",
+    "bytes": 67
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/checkpoint/native/model_world_size_1_rank_0.pt",
+    "sha256": "2a6b857a677abeb89790a8962d6c9705c59181d44b6c4e723f9ef933f173ac2c",
+    "bytes": 349425275
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/checkpoint/native/optim_world_size_1_rank_0.pt",
+    "sha256": "74fc5c1512bce4c5c0735c645ed77afd14d521007ce1d650bf442539cd92f4db",
+    "bytes": 698914428
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/checkpoint/rng.pt",
+    "sha256": "09a5ee38dbbb5754c0bcbbd44f0152e6a5baf8dfee4e72d5c5b3e98c6065f3ba",
+    "bytes": 14533
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/commit.json",
+    "sha256": "009a97fc0b5dff52f7c0229a21e2e42b77c9c5c3915267048c4eed253097ea7c",
+    "bytes": 10117
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/rollout_metrics.json",
+    "sha256": "7118093bf2e7930debd6c28a33d7c6760ae1ba674f9ad31c45b1e1c587802d61",
+    "bytes": 1241
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/selection.json",
+    "sha256": "36dc302f18e2f83343621477165902947dfae44820ae3b90a008c5bdbb0c3141",
+    "bytes": 575964
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/state_before.json",
+    "sha256": "bb626c5b98d2e3cde3bcd48f8d49f3ded8b5e5b973567cd628889482df5fd46c",
+    "bytes": 2551
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/sync/first.json",
+    "sha256": "fb440a0d0fe7ca488c4382b4414cfb417d0a26e47b232f3e927cd20ba6219b04",
+    "bytes": 8587
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/sync/receipt.json",
+    "sha256": "6cb91e00ca77a3e0f41198301506cd0d9b4365fca4244df32854120b1f30d2b8",
+    "bytes": 987
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/sync/repeat.json",
+    "sha256": "fb440a0d0fe7ca488c4382b4414cfb417d0a26e47b232f3e927cd20ba6219b04",
+    "bytes": 8587
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/update/events.jsonl",
+    "sha256": "eb0965c5dcd4d9c798b6f88dd1f9cf1c66860142af904dcad82b3fdb5bf5c66c",
+    "bytes": 1516
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/update/mini_00.npz",
+    "sha256": "89b331220c290d6e5b7af67aed871dad19dddb1ece917bc2ef40c8c2c45aea0d",
+    "bytes": 13483
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/update/mini_01.npz",
+    "sha256": "9df8c85064a63de8a0c42f6296e7c63be45a1192d04abce38c152b241b49f089",
+    "bytes": 14443
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/update/old.npz",
+    "sha256": "d58e2017cde0346eeaa11c1cad478ad826c396fa4504efb9ea4cd2284a31d916",
+    "bytes": 53739
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/update/old_frozen.json",
+    "sha256": "945dca29b6beefceac5c194c72a38793bcb5a7d36c45fab82b607275ab381cb8",
+    "bytes": 2965
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/windows/0002/update/update.json",
+    "sha256": "b96774d177e39db94f59db29345a2634bdf14544414ce830fdbfd69825370e4c",
+    "bytes": 2628
+  }
+]

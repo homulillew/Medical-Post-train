@@ -40,13 +40,26 @@ def recover_actor_transaction(out):
     previous=read(out/'status.json')
     archive=window/'recovery'/f'{len(list((window/"recovery").glob("*")))+1:03d}'
     archive.mkdir(parents=True)
-    keep_completed=all((window/p).exists() for p in ('checkpoint/COMMITTED.json','actor_result.json','update/update.json','actor_exit.json'))
-    keep_completed=keep_completed and read(window/'actor_exit.json')['exit_code']==0
+    keep_completed=all((window/p).exists() for p in ('checkpoint/COMMITTED.json','update/update.json'))
     if keep_completed:
         marker=verify_checkpoint(window/'checkpoint')
         assert marker['optimizer_step']==state['optimizer_steps']+2
-        moved=['sync']
-        action='Reuse complete native actor transaction; redo only interrupted sync controls'
+        metadata=read(window/'checkpoint/controller.json')
+        assert metadata['state_before']==state and metadata['run_id']==out.name
+        for k in ('config','selection','update'):
+            assert record(metadata[k]['path'])==metadata[k]
+        if (window/'checkpoint_adoption.json').exists():
+            assert read(window/'checkpoint_adoption.json')['source_marker']==record(window/'checkpoint/COMMITTED.json')
+        else:
+            immutable(window/'checkpoint_adoption.json',dict(timestamp=now(),state_before=state,
+                source_marker=record(window/'checkpoint/COMMITTED.json'),
+                action='Retain durable native checkpoint; fresh process must validate optimizer/scheduler/RNG before sync',
+                optimizer_steps_to_reexecute=0))
+        moved=['sync','recovered_actor','adoption_command.json','adoption_launch.json',
+               'adoption_exit.json','adoption.stdout.log','adoption.stderr.log']
+        if (window/'actor_result.json').exists() and read(window/'actor_result.json').get('recovered_from_committed_checkpoint'):
+            moved.append('actor_result.json')
+        action='Adopt complete renamed native actor transaction; no optimizer replay; validate reload then sync'
     else:
         moved=['actor','update','checkpoint','.tmp-checkpoint','actor_result.json','actor_command.json',
                'actor_launch.json','actor_exit.json','actor.stdout.log','actor.stderr.log','sync']

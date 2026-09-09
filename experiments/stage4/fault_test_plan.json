@@ -1,0 +1,33 @@
+{
+  "scenarios": {
+    "before_checkpoint_rename": {
+      "run_id": "s4_recovery_a_20260909T153057_987d5a",
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a",
+      "manifest": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/manifest.json",
+        "sha256": "23711481d4929a6ca0c0d07aeaec9ba7fdda23c902719105a5eab9851d0a4a94",
+        "bytes": 16851
+      }
+    },
+    "after_rename_before_pointer": {
+      "run_id": "s4_recovery_b_20260909T153059_e39b9b",
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_b_20260909T153059_e39b9b",
+      "manifest": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_b_20260909T153059_e39b9b/manifest.json",
+        "sha256": "869290e347071e104a62a7f131144c590db3cebb79e260458cfd5b7c9cdd71e6",
+        "bytes": 16918
+      }
+    },
+    "after_optimizer_before_checkpoint": {
+      "run_id": "s4_recovery_c_20260909T153059_f621ea",
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_c_20260909T153059_f621ea",
+      "manifest": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_c_20260909T153059_f621ea/manifest.json",
+        "sha256": "33db9037eb56f8911004bf68ca5082a8d5f07390211c41d80472b5d814386011",
+        "bytes": 16991
+      }
+    }
+  },
+  "created_at": "2026-09-09T15:30:59.948367+00:00",
+  "formal_training_groups": 0
+}

@@ -79,3 +79,9 @@ Stage5 readiness. Final commit/push and clean worktree follow those gates.
 
 Bulk path: `/data/WSH/medical-post-train-artifacts/runs/`. Git holds compact
 manifests, receipts, curves and cases. Clone alone does not restore bulk data.
+
+## Formal entry gates — completed2026-09-09 15:57UTC
+
+All three real transaction injections PASS (`recovery_fault_injections.json`): A temp-before-rename rollback, B renamed native checkpoint adoption without optimizer replay, C applied-but-uncommitted optimizer rollback. Final effective steps6 in each24-group diagnostic; physical steps8/6/7. All paid raw output and orphan work retained. Detailed numerical replay limitation and formal freeze decision are in `STAGE4_FORMAL_EXECUTION.md` and D4-FORMAL-FREEZE.
+
+Final preflight suite:134 PASS. Shared formal candidate and first-crossing1M-token monitor protocol are recorded. Next operation is clean-commit freeze and preparation of two fresh-SFT5000-group runs. At this entry-gate snapshot no formal worker has launched and both formal counters remain0. Stage5/6 remain NOT_STARTED, READY_FOR_STAGE5=NO.

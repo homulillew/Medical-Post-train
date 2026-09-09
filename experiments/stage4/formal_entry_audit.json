@@ -1,0 +1,44 @@
+{
+  "timestamp": "2026-09-09T15:18:00.178457+00:00",
+  "result": "PASS",
+  "formal_groups": 0,
+  "formal_frozen": false,
+  "READY_FOR_STAGE5": "NO",
+  "sources": [
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_pair.json",
+      "sha256": "16fe98aca1cb237975c597d7c60b5092fcf137aa63a465b27032761686352e6e",
+      "bytes": 5624
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_analysis_v1.json",
+      "sha256": "15df2fcfae06f30a4631820860ec5373ff8525806e74ea241b6d496e71132f2c",
+      "bytes": 130556
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_review.json",
+      "sha256": "b800a99037c56eec59676108878b81fcccaceb79a8a598204de96e850f2b50bc",
+      "bytes": 1257
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/optimizer_decision.json",
+      "sha256": "359ca0a4695fbbb94307e05287763ee0005f6a0d437938718346806127137c8c",
+      "bytes": 1746
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/vanilla_pilot_verification.json",
+      "sha256": "3fa6e6d0c7a8b4aa2f944d919b97857563ea22302b3e7baad3291100efa2ee7d",
+      "bytes": 76816
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/dynamic_pilot_verification.json",
+      "sha256": "4e09b33aece65b2322bdcbb52f8069d145435a2d36941ad6030f3ef84f9648e5",
+      "bytes": 141137
+    }
+  ],
+  "state": {
+    "path": "/data/WSH/post-train/project_state.json",
+    "sha256": "e9cadd8c6d45cf38f3608d4b303ca37377919255e394ed6bc91acf683a5cee9f",
+    "bytes": 4547
+  }
+}

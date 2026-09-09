@@ -1,0 +1,158 @@
+{
+  "result": "PASS",
+  "scenario": "after_optimizer_before_checkpoint",
+  "run_id": "s4_recovery_c_20260909T153059_f621ea",
+  "run_class": "DIAGNOSTIC",
+  "formal_training_groups": 0,
+  "real_process_termination": true,
+  "old_pid": 2291786,
+  "new_pid": 2293578,
+  "committed_budget_continuous": true,
+  "cost_not_rolled_back": true,
+  "effective_before": {
+    "policy_version": "862bfe107b29c1386a1d55b840c955f5d15e583c64f954c6fb1f6cb164499667",
+    "cursor": 8,
+    "policy_windows": 1,
+    "optimizer_steps": 2,
+    "training_groups": 8,
+    "generated_groups": 8,
+    "output_tokens": 7625,
+    "prompt_tokens": 1227,
+    "generated_exposure": {
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37888": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21976": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7080": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23088": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37926": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28886": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36588": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52518": 1
+    },
+    "training_exposure": {
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37888": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21976": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7080": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23088": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37926": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28886": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36588": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52518": 1
+    }
+  },
+  "effective_final": {
+    "policy_version": "cb1c4cd299d82aa55e19ffff8227b069c89c2686a6afca266789307cc2d52f66",
+    "cursor": 24,
+    "policy_windows": 3,
+    "optimizer_steps": 6,
+    "training_groups": 24,
+    "generated_groups": 24,
+    "output_tokens": 23583,
+    "prompt_tokens": 3307,
+    "generated_exposure": {
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37888": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21976": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7080": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23088": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37926": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28886": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36588": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52518": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29442": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6041": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:54067": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23171": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4586": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28681": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48043": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34848": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41399": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13423": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15734": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8466": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16461": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19996": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3118": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51656": 1
+    },
+    "training_exposure": {
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37888": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21976": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7080": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23088": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37926": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28886": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36588": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52518": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29442": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6041": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:54067": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23171": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4586": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28681": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48043": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34848": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41399": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13423": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15734": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8466": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16461": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19996": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3118": 1,
+      "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51656": 1
+    }
+  },
+  "physical_optimizer_steps": 7,
+  "sources": [
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_c_20260909T153059_f621ea/fault/after_recovery.json",
+      "sha256": "26eb3b1764e34603c2455482d56bf5c568477e53d6d23cc5c527253bcf163815",
+      "bytes": 3177
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_c_20260909T153059_f621ea/fault/before_kill.json",
+      "sha256": "5845ea34f0056ff26649655436816a3c2d429599359786947c571b1fe41607a7",
+      "bytes": 5675
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_c_20260909T153059_f621ea/fault/final_cost.json",
+      "sha256": "5bf7072bbaca949bceb89c9e9a94c9312996275baf9aa52fdb6187dc2b9a5f30",
+      "bytes": 2269
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_c_20260909T153059_f621ea/fault/raw_verification.json",
+      "sha256": "fda718c598a9b9c0256186ef0345b0296dc624bdeafe3f2607b598e5d747aed9",
+      "bytes": 4271
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_c_20260909T153059_f621ea/fault/ready.json",
+      "sha256": "521f775043403985c53158ef8e587ee5ac027285362b5c99688fb69613c7d506",
+      "bytes": 2221
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_c_20260909T153059_f621ea/fault/termination.json",
+      "sha256": "9cd9c1c330de32232695fe6302570f3229d06d9fc9ba9fd0679a384ed844f35e",
+      "bytes": 1506
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_c_20260909T153059_f621ea/fault/termination_observed.json",
+      "sha256": "c16ce61599ed104d930616e121b7cd1b9df80bebc07a6e0e0aeb7a17c87de5be",
+      "bytes": 138
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_c_20260909T153059_f621ea/attempt_002/resume_start.json",
+      "sha256": "a002105964533bc0efdcedac7ab115efc9f48652f4586c9c3d56f8d720ae4172",
+      "bytes": 4102
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_c_20260909T153059_f621ea/windows/0001/checkpoint/COMMITTED.json",
+      "sha256": "7eedfa59f1ffa22a833f3cf274b9c8da8a5dd48ac05acfbd1e07f64af69b620b",
+      "bytes": 2979
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_c_20260909T153059_f621ea/windows/0001/actor/resume_receipt.json",
+      "sha256": "b03d201c05c48c1c760449f26999905babb9bf42440241158f50dd705cd12161",
+      "bytes": 3014
+    }
+  ],
+  "timestamp": "2026-09-09T15:57:02.094353+00:00"
+}

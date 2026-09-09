@@ -1,0 +1,27 @@
+{
+  "case_id": "s4_fault_a_orphan_and_replay",
+  "run_id": "s4_recovery_a_20260909T153057_987d5a",
+  "stage": 4,
+  "category": "SYSTEM_CASE",
+  "subtype": "checkpoint_transaction_recovery",
+  "observation": "Actual SIGKILL before checkpoint rename left effective8 groups/2 steps. New native actor restored the trusted checkpoint and completed24 groups/6 effective steps while retaining8 physical steps. Saved rollout was reused without new generation.",
+  "hypothesis": "Nondeterministic GPU backward/reduction arithmetic; restoring RNG alone does not guarantee identical floating-point execution.",
+  "alternative_explanations": [
+    "Further kernel-level attribution was not performed; RNG restoration alone is insufficient to establish bitwise floating-point execution"
+  ],
+  "resolution": "Temporary checkpoint and orphan optimizer work archived; native trusted state and stream restored; raw verification PASS. Numerical replay divergence is retained explicitly.",
+  "limitations": "Same saved rollout, exact old arrays, restored prior adapter/Adam/scheduler/RNG produced a numerically close but not byte-identical recomputed update. No bitwise training replay claim is made.",
+  "sources": [
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_a_20260909T153057_987d5a/fault/result.json",
+      "sha256": "428b0959a021fe1a37fd4645174411ac25da088c7d072bf18a6341f90d5cb21d",
+      "bytes": 8181
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/fault_a_replay_numerics.json",
+      "sha256": "9e3b9d722b913115c50ba3f4dec62d93809ccfab5bb90b6735ea8f4de6ab3ae1",
+      "bytes": 2208
+    }
+  ],
+  "timestamp": "2026-09-09T15:42:42.119287+00:00"
+}

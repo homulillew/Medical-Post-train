@@ -15,3 +15,6 @@ __pycache__/
 
 *.egg-info/
 build/
+
+# Runtime advisory lock inodes contain no experiment evidence.
+experiments/stage4/*.lock

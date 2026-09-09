@@ -91,6 +91,7 @@ def update(path,groups,cfg):
     from verl.trainer.ppo.core_algos import compute_grpo_outcome_advantage,compute_policy_loss_gspo
     from verl.workers.config import ActorConfig
     old = np.load(path/'old.npz')
+    assert all(np.isfinite(old[k]).all() for k in old.files)
     frozen = read(path/'old_frozen.json')
     assert record(path/'old.npz')==frozen['artifact']
     rows = [r for g in groups for r in g['responses']]
@@ -128,6 +129,7 @@ def update(path,groups,cfg):
     assert frozen['timestamp'] < events[0]['timestamp']
     for j,mini in enumerate(summary['minibatches']):
         evidence = np.load(path/f'mini_{j:02d}.npz')
+        assert all(np.isfinite(evidence[k]).all() for k in evidence.files)
         idx = evidence['indices']
         assert idx.tolist()==list(range(j*16,(j+1)*16))
         current = evidence['current_logprobs']
@@ -186,10 +188,10 @@ def online_run(path,expected_mode='smoke'):
     cfg=read(path/'config.json')
     initial=validate(cfg)
     assert cfg['mode']==expected_mode
-    target={'smoke':32,'pilot':512,'formal':5000}[expected_mode]
+    target={'smoke':32,'pilot':512,'formal':5000,'recovery_test':24}[expected_mode]
     assert cfg['target_training_groups']==target and cfg['groups_per_window']==8
     assert cfg['mini_prompts']==4 and cfg['ppo_epochs']==1
-    assert read(path/'manifest.json')['run_class']==expected_mode.upper()
+    assert read(path/'manifest.json')['run_class']==('DIAGNOSTIC' if expected_mode=='recovery_test' else expected_mode.upper())
     state=initial_state(initial)
     pool=jsonlines(cfg['pool']['path'])
     stream=Stream([r['prompt_id'] for r in pool],cfg['seed'],cfg['stream_domain'])
@@ -254,7 +256,17 @@ def online_run(path,expected_mode='smoke'):
         assert probe_delta(first,repeat)==sync['repeat_error']
         assert probe_delta(previous_probe,first)==sync['previous_policy_delta']
         previous_probe=first
-        assert read(w/'actor_exit.json')['exit_code']==0
+        if (w/'checkpoint_adoption.json').exists():
+            assert read(w/'adoption_exit.json')['exit_code']==0
+            adopted=read(w/'recovered_actor/result.json')
+            assert adopted['result']=='PASS' and adopted['optimizer_steps_added']==0
+            assert adopted['marker']==record(w/'checkpoint/COMMITTED.json')
+            assert adopted['identity']['trainable_digest']==marker['trainable_digest']
+            assert adopted['identity']['optimizer_digest']==marker['optimizer_digest']
+            assert adopted['identity']['scheduler']==marker['scheduler']
+            assert adopted['identity']['optimizer_steps']==[marker['optimizer_step']]
+        else:
+            assert read(w/'actor_exit.json')['exit_code']==0
         commit=read(w/'commit.json')
         assert commit['state_before']==state
         after=advance(state,groups,decisions,policy,2)
@@ -274,7 +286,7 @@ def online_run(path,expected_mode='smoke'):
         assert resume['result']=='PASS' and resume['new_pid']!=resume['old_pid']
         assert read(path/'termination_observed.json')['dead']
         assert read(path/'pause_ready.json')['state']==read(path/'attempt_002/resume_start.json')['state']
-    validations=validation_run(path,cfg) if expected_mode!='smoke' else []
+    validations=validation_run(path,cfg) if expected_mode not in ('smoke','recovery_test') else []
     return dict(result='PASS',scope=expected_mode.upper(),run_id=path.name,sampling_mode=cfg['sampling_mode'],
         timestamp=now(),state=state,real_resume=real_resume,clip_active=True,validation=validations,
         sequence_ratio_min=min(all_ratios),sequence_ratio_max=max(all_ratios),
@@ -295,10 +307,21 @@ def validation_run(path,cfg):
     from medical_posttrain.data.exam import messages
     final=cfg['target_training_groups']//8
     schedule=sorted(set([n for n in protocol['checkpoint_windows'] if n<=final]+[final]))
+    triggers={}
+    if cfg['mode']=='formal':
+        from medical_posttrain.rl.schedule import validation_trigger
+        before=initial_state(validate(cfg))
+        for n in range(final+1):
+            after=read(path/'windows'/f'{n-1:04d}'/'commit.json')['state_after'] if n else before
+            trigger=validation_trigger(protocol,before,after,cfg['target_training_groups'])
+            if trigger['evaluate']:triggers[n]=trigger
+            before=after
+        schedule=sorted(triggers)
     assert [p.name for p in sorted((path/'validation').glob('*'))]==[f'{n:04d}' for n in schedule]
     summaries=[]
     for n in schedule:
         directory=path/'validation'/f'{n:04d}'
+        if triggers:assert read(directory/'trigger.json')==triggers[n]
         state=read(path/'windows'/f'{n-1:04d}'/'commit.json')['state_after'] if n else initial_state(validate(cfg))
         rows=[]
         seconds=0.
@@ -395,7 +418,7 @@ def verify():
             assert m['created_at']>p['frozen_at']
             assert m['created_at']>read(INDEX/f'{v}_pilot_verification.json')['timestamp']
         a,b=[read(Path(p['runs'][v]['path'])/'manifest.json') for v in ('vanilla','dynamic')]
-        execution=lambda m:{k:v for k,v in m['source_hashes'].items() if k.startswith('src/') or k=='scripts/run_stage4.py'}
+        execution=lambda m:{k:v for k,v in m['source_hashes'].items() if k.startswith('src/') or k in ('scripts/run_stage4.py','scripts/reload_stage4.py','scripts/audit_stage4_boundary.py','scripts/continue_stage4_formal.py')}
         assert execution(a)==execution(b)==p['execution_hashes']
         assert all(sha256(ROOT/k)==v for k,v in p['execution_hashes'].items())
         first=[]

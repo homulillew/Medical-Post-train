@@ -46,3 +46,27 @@ def test_committed_boundary_recovery_preserves_counters(tmp_path,monkeypatch):
     result=recover_actor_transaction(tmp_path)
     assert result['state']==state
     assert read(tmp_path/'status.json')['status']=='INTERRUPTED'
+
+
+def test_renamed_checkpoint_adopted_without_replaying_optimizer(tmp_path,monkeypatch):
+    from medical_posttrain.rl.common import record
+    from medical_posttrain.rl import online
+    state=setup_run(tmp_path,monkeypatch)
+    w=tmp_path/'windows/0001'
+    durable(w/'state_before.json',state)
+    durable(w/'batches/000/raw.json',dict(groups=[]))
+    durable(w/'selection.json',dict(groups=[]))
+    durable(w/'update/update.json',dict(optimizer_steps_after=4))
+    durable(w/'checkpoint/COMMITTED.json',dict(optimizer_step=4))
+    durable(w/'checkpoint/controller.json',dict(run_id=tmp_path.name,state_before=state,
+        config=record(tmp_path/'config.json'),selection=record(w/'selection.json'),update=record(w/'update/update.json')))
+    monkeypatch.setattr(online,'verify_checkpoint',lambda p:read(p/'COMMITTED.json'))
+    first=recover_actor_transaction(tmp_path)
+    assert first['state']==state and (w/'checkpoint/COMMITTED.json').exists()
+    assert read(w/'checkpoint_adoption.json')['optimizer_steps_to_reexecute']==0
+    assert not (w/'actor_exit.json').exists()
+    durable(w/'recovered_actor/partial.json',{})
+    # A second crash while adopting must preserve the same valid checkpoint.
+    second=recover_actor_transaction(tmp_path)
+    assert second['state']==state and (w/'recovery/002/recovered_actor/partial.json').exists()
+    assert (w/'update/update.json').exists()

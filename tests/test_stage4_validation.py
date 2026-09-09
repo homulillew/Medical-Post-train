@@ -70,3 +70,28 @@ def test_incomplete_validation_is_retained_and_cannot_silently_retry(tmp_path):
     assert (tmp_path/'run/validation/0000/reservation_000.json').exists()
     with pytest.raises(AssertionError,match='unknown tail cost'):
         evaluate(Rollout(),tmp_path/'run',state(),ref)
+
+
+def test_formal_monitor_first_token_crossing_reuses_same_measured_checkpoint(tmp_path,monkeypatch):
+    from medical_posttrain.rl.online import monitor
+    from medical_posttrain.rl import validation
+    from medical_posttrain.rl.common import read
+    p,ref=protocol(tmp_path)
+    p.update(checkpoint_windows=[0,64],generated_total_token_stride=100)
+    durable(ref['path'],p);ref=record(ref['path'])
+    cfg=dict(mode='formal',target_training_groups=5000,validation_protocol=ref)
+    out=tmp_path/'run'
+    before=dict(state(),policy_windows=1,training_groups=8,prompt_tokens=10,output_tokens=89)
+    after=dict(before,policy_windows=2,training_groups=16,optimizer_steps=4,output_tokens=91)
+    durable(out/'windows/0001/state_before.json',before)
+    rollout=Rollout()
+    monitor(rollout,out,after,cfg)
+    assert rollout.calls==32
+    trigger=read(out/'validation/0002/trigger.json')
+    assert trigger['generated_total_token_milestones']==[100] and trigger['actual_generated_total_tokens']==101
+    monitor(rollout,out,after,cfg)
+    assert rollout.calls==32
+    later=dict(after,policy_windows=3,training_groups=24,output_tokens=92)
+    durable(out/'windows/0002/state_before.json',after)
+    monitor(rollout,out,later,cfg)
+    assert rollout.calls==32 and not (out/'validation/0003').exists()

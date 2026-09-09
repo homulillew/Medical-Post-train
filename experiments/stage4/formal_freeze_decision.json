@@ -1,0 +1,79 @@
+{
+  "decision": "D4-FORMAL-FREEZE",
+  "status": "ACCEPTED_FOR_MATCHED_FORMAL_PAIR",
+  "timestamp": "2026-09-09T15:58:30.456578+00:00",
+  "shared_config": {
+    "path": "/data/WSH/post-train/configs/stages/s4_formal_shared.json",
+    "sha256": "a1b8f963152bfaf8bfc1cf631d4b9623ffa34667faf744d7d44e9f24cd77ea86",
+    "bytes": 3707
+  },
+  "validation_protocol": {
+    "path": "/data/WSH/post-train/experiments/stage4/formal_validation_protocol.json",
+    "sha256": "fa9f2a4b36659488ee64ee530104b3cc963c4c0c403480f13e5dc7cc7475fc36",
+    "bytes": 34602
+  },
+  "optimization": {
+    "learning_rate": 1e-06,
+    "mini_prompts": 4,
+    "ppo_epochs": 1,
+    "groups_per_window": 8,
+    "group_size": 4,
+    "clip_low": 0.0003,
+    "clip_high": 0.0004,
+    "response_cap": 1024,
+    "temperature": 0.6,
+    "grad_clip": 1,
+    "entropy_coefficient": 0,
+    "kl": false,
+    "critic": false,
+    "reference": false
+  },
+  "reason": "Real matched optimization diagnostic and both completed512-group pilots showed nonzero second-mini GSPO clipping without persistent near-total clipping, NaN, entropy collapse or length runaway. All three real transaction fault gates now pass on the identical intended actor/recovery runtime.",
+  "excluded_selection_basis": "Variant validation superiority was not used to choose the optimizer, reward, sampling, or freeze decision.",
+  "immutable_baseline": "Both formal runs start afresh from original Stage1 SFT SHA1601e97891e51940bd4b575d8811a77d8278cbeb296c044b7004e41da6d9ea64; no pilot continuation.",
+  "mandatory_budget_per_variant": {
+    "groups": 5000,
+    "trajectories": 20000,
+    "windows": 625,
+    "optimizer_steps": 1250
+  },
+  "diagnostic": {
+    "path": "/data/WSH/post-train/experiments/stage4/optimizer_decision.json",
+    "sha256": "359ca0a4695fbbb94307e05287763ee0005f6a0d437938718346806127137c8c",
+    "bytes": 1746
+  },
+  "pilot_review": {
+    "path": "/data/WSH/post-train/experiments/stage4/pilot_review.json",
+    "sha256": "b800a99037c56eec59676108878b81fcccaceb79a8a598204de96e850f2b50bc",
+    "bytes": 1257
+  },
+  "pilot_receipts": {
+    "vanilla": {
+      "path": "/data/WSH/post-train/experiments/stage4/vanilla_pilot_verification.json",
+      "sha256": "3fa6e6d0c7a8b4aa2f944d919b97857563ea22302b3e7baad3291100efa2ee7d",
+      "bytes": 76816
+    },
+    "dynamic": {
+      "path": "/data/WSH/post-train/experiments/stage4/dynamic_pilot_verification.json",
+      "sha256": "4e09b33aece65b2322bdcbb52f8069d145435a2d36941ad6030f3ef84f9648e5",
+      "bytes": 141137
+    }
+  },
+  "recovery_gate": {
+    "path": "/data/WSH/post-train/experiments/stage4/recovery_fault_injections.json",
+    "sha256": "b112f409cad9830ea89d6da79431ba1563482d4d4a0d1a15337338de2c86abb9",
+    "bytes": 29084
+  },
+  "tests": {
+    "path": "/data/WSH/post-train/experiments/stage4/formal_preflight_tests_v2.json",
+    "sha256": "0e38aca3de793031f633059ac558d2e1902937a72adecada97d0003e2242c565",
+    "bytes": 2367
+  },
+  "limitations": [
+    "Same saved rollout, exact old arrays, restored prior adapter/Adam/scheduler/RNG produced a numerically close but not byte-identical recomputed update. No bitwise training replay claim is made.",
+    "Single training seed; no universal superiority claim",
+    "Unknown unreturned generation/validation cost fails closed"
+  ],
+  "READY_FOR_STAGE5": "NO",
+  "selection_test_used": false
+}

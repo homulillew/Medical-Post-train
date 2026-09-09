@@ -1,0 +1,34 @@
+{
+  "case_id": "s4_fault_b_adopt_durable_checkpoint",
+  "run_id": "s4_recovery_b_20260909T153059_e39b9b",
+  "stage": 4,
+  "category": "SYSTEM_CASE",
+  "subtype": "checkpoint_transaction_recovery",
+  "observation": "SIGKILL after checkpoint rename but before actor result/publication. Effective state remained8 groups/2 steps; the durable actor checkpoint already held step4. A new native actor restored its exact LoRA/Adam/scheduler/RNG, performed zero optimizer steps, synced vLLM and committed the window once.",
+  "hypothesis": "Checkpoint durability and window publication are distinct events; treating a missing actor-exit receipt as checkpoint invalidity would discard valid optimizer state.",
+  "resolution": "Validate and adopt the complete durable checkpoint, preserve the original interrupted actor evidence, then publish only after successful sync.",
+  "alternative_explanations": [
+    "A successful marker alone would be insufficient without full file hashes, source/controller linkage and native identity/RNG checks; those checks were performed."
+  ],
+  "effective_final_groups": 24,
+  "physical_optimizer_steps": 6,
+  "medical_claims": "None",
+  "sources": [
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_b_20260909T153059_e39b9b/fault/result.json",
+      "sha256": "1e5d3dad4f417d57621f6c3911743ee0cdb0b20df33ac8816582f5ea255ea30b",
+      "bytes": 10498
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_b_20260909T153059_e39b9b/windows/0001/recovered_actor/result.json",
+      "sha256": "25e338038c5d6bd92a8044842684dc3afa587c860405d8733a6a39a1dd9dc701",
+      "bytes": 1310
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_recovery_b_20260909T153059_e39b9b/windows/0001/checkpoint_adoption.json",
+      "sha256": "4a7325970d869e83e3a9de746ba9f7ba8529de15aa1b5e635197a5ae475b5c5d",
+      "bytes": 2552
+    }
+  ],
+  "timestamp": "2026-09-09T15:50:44.278622+00:00"
+}

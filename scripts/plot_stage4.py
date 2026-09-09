@@ -50,6 +50,8 @@ def plot(pair_path):
         ('response_length_p95',lambda z:z['response_length']['p95'],'P95 response tokens (all rollout)'),
         ('entropy',lambda z:sum(m['entropy'] for m in z['optimization'])/2,'Mean policy entropy (training trajectories)'),
         ('objective_clip_second_mini',lambda z:z['optimization'][1]['clip_fraction'],'Objective clip fraction (second mini)'),
+        ('sequence_ratio_min',lambda z:min(m['ratio']['min'] for m in z['optimization']),'Minimum sequence importance ratio'),
+        ('sequence_ratio_max',lambda z:max(m['ratio']['max'] for m in z['optimization']),'Maximum sequence importance ratio'),
         ('gradient_norm',lambda z:max(m['grad_norm'] for m in z['optimization']),'Maximum pre-clip gradient norm'),
         ('reward',lambda z:z['reward']['mean'],'Hybrid reward (all rollout)')):
         figure(name,lambda z:z['training_groups'],fn,'Training groups',label)

@@ -106,7 +106,7 @@ def worker(out,attempt=None):
                 run(out,logdir)
     except BaseException as exc:
         immutable(logdir/'failure.json',dict(error=repr(exc),traceback=traceback.format_exc(),timestamp=now()))
-        durable(out/'status.json',dict(status='FAILED',timestamp=now()))
+        durable(out/'status.json',dict(status=getattr(exc,'status','FAILED'),timestamp=now()))
         traceback.print_exc()
         sys.stdout.flush()
         sys.stderr.flush()
@@ -120,7 +120,7 @@ def worker(out,attempt=None):
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument('action',choices=['prepare-diagnostic','prepare-smoke','launch','inspect','worker','actor-diagnostic','actor-window','terminate','recover'])
+    p.add_argument('action',choices=['prepare-diagnostic','prepare-smoke','launch','inspect','worker','actor-diagnostic','actor-window','terminate','recover','adopt-actor'])
     p.add_argument('--run')
     p.add_argument('--directory')
     p.add_argument('--fixed-old')
@@ -200,6 +200,9 @@ def main():
         state = read(window/'state_before.json')
         checkpoint = out/'windows'/f'{state["policy_windows"]-1:04d}'/'checkpoint' if state['policy_windows'] else None
         actor_window(out,window,checkpoint,state)
+    elif a.action == 'adopt-actor':
+        from medical_posttrain.rl.online import adopt_actor
+        adopt_actor(Path(a.run),Path(a.directory))
     elif a.action == 'terminate':
         out = Path(a.run)
         pause = read(out/'pause_ready.json')
