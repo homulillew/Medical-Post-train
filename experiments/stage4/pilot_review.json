@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-09-09T15:02:38.111963+00:00",
+  "scope": "PILOT_REVIEW",
+  "result": "PASS_WITH_DOCUMENTED_LIMITATIONS",
+  "analysis": {
+    "path": "/data/WSH/post-train/experiments/stage4/pilot_analysis_v1.json",
+    "sha256": "15df2fcfae06f30a4631820860ec5373ff8525806e74ea241b6d496e71132f2c",
+    "bytes": 130556
+  },
+  "manual_cases": {
+    "path": "/data/WSH/post-train/experiments/stage4/pilot_manual_cases_v1.json",
+    "sha256": "0b61c657dc3d3479119960e716f6269b7223ae00dc33489a11698ea3aaceeb90",
+    "bytes": 43286
+  },
+  "report": {
+    "path": "/data/WSH/post-train/docs/implementation/STAGE4_PILOT_REVIEW.md",
+    "sha256": "67b01dc9a7f0b7ca30088fa874791c12eb8875ef6a4ac011fe6d7115706b9757",
+    "bytes": 8175
+  },
+  "plots": {
+    "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/manifest.json",
+    "sha256": "c27bcff3dde014686798c4708d58e63d5544eae3c053e34553fff4975decb26d",
+    "bytes": 6824
+  },
+  "recommendation": "Retain shared optimizer candidate; no new scientific variable",
+  "formal_frozen": false,
+  "pending": [
+    "Three real checkpoint transaction fault injections",
+    "Freeze shared formal config/code",
+    "Both fresh5000-group formal runs and full-stage acceptance"
+  ],
+  "READY_FOR_STAGE5": "NO"
+}

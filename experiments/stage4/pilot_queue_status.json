@@ -1,5 +1,7 @@
 {
-  "status": "RUNNING",
-  "pid": 2174073,
-  "timestamp": "2026-09-09T07:52:04.983720+00:00"
+  "status": "BOTH_PILOTS_RAW_VERIFIED",
+  "timestamp": "2026-09-09T14:10:58.288589+00:00",
+  "next": "Review stability/cases/resource evidence, then freeze shared formal config and code",
+  "formal_training_groups": 0,
+  "READY_FOR_STAGE5": "NO"
 }

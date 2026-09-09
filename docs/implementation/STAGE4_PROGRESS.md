@@ -1,6 +1,6 @@
 # Stage4 progress and continuation
 
-Updated2026-09-09. **SMOKE_PASS; Stage4 incomplete.** Stage0 VERIFIED,
+Updated2026-09-09 22:56 Asia/Shanghai. **PILOT_PASS; Stage4 incomplete.** Stage0 VERIFIED,
 Stage1–3 DONE, Stage5–6 NOT_STARTED. Formal progress: Vanilla0/5000,
 Dynamic0/5000 accepted mixed. READY_FOR_STAGE5=NO.
 
@@ -11,7 +11,7 @@ Dynamic0/5000 accepted mixed. READY_FOR_STAGE5=NO.
 | Dynamic smoke |32 accepted mixed,80 generated groups,4 windows,8 steps; raw verifier PASS |
 | Real committed-boundary resume |Actual SIGTERM/new parent and native optimizer continuity PASS for both variants |
 | Native final reload preflight |Vanilla smoke checkpoint reloaded in a fresh process, Adam step8,558 finite response logprobs |
-| Pilot |Fresh512 groups per variant required; exact active IDs in `experiments/stage4/pilot_pair.json` once prepared |
+| Pilot |Both fresh512-group runs completed64 windows/128 optimizer steps and passed raw verification |
 | Formal |Not prepared or launched; both625-window budgets still required |
 
 Pilot pair prepared and detached queue launched at2026-09-09 07:52UTC
@@ -25,6 +25,11 @@ Pilot pair prepared and detached queue launched at2026-09-09 07:52UTC
 
 These are launch-time observations; inspect current PID/heartbeat before acting.
 Pilot progress never increments the two formal counters in project state.
+
+Completion update: Vanilla raw verification PASS at18:22; Dynamic PASS at22:10.
+Queue status is`BOTH_PILOTS_RAW_VERIFIED` and the pilot queue has ended. No
+formal training is currently running. Analysis and remaining gates are in
+`STAGE4_PILOT_REVIEW.md`; exactly0 formal groups have been trained.
 
 Runtime is native verl FSDP2/GSPO plus native vLLM rollout. The shared smoke/
 pilot candidate is LR1e-6, mini4 prompts, one epoch, G4 and8 groups/window.
@@ -61,10 +66,9 @@ a fresh run just because a session ended.
 
 ## Remaining gates before formal launch
 
-Finish both fresh512-group pilots and monitor512 evaluations; review genuine
-clipping, gradients, entropy, format, length, mixed subtypes and resource use.
-Capture actual cases and investigate persistent pathology without choosing by
-test or selection1024. Perform the additional checkpoint transaction fault
+Both fresh512-group pilots, monitor512 evaluations and the initial stability/
+cost/paired-case review are complete. No persistent collapse was observed.
+Perform the additional checkpoint transaction fault
 injections required by `CHECKPOINT_AND_RESUME.md`; the two committed-boundary
 resume tests do not claim those additional crash timings were tested.
 

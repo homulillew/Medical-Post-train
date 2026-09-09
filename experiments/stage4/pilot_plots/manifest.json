@@ -1,0 +1,161 @@
+{
+  "pair": {
+    "path": "/data/WSH/post-train/experiments/stage4/pilot_pair.json",
+    "sha256": "16fe98aca1cb237975c597d7c60b5092fcf137aa63a465b27032761686352e6e",
+    "bytes": 5624
+  },
+  "figures": [
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/validation_accuracy_vs_training_groups.svg",
+      "sha256": "15133db9be519a3ee0b43c12354f38a9762452dfa994329f3aebc1690323cac2",
+      "bytes": 36589
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/validation_accuracy_vs_training_groups.pdf",
+      "sha256": "8fee19662e5f82968dab5d19da8979d93593e517bd8b03cac0555a6ef2cf5bbc",
+      "bytes": 16265
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/validation_accuracy_vs_generated_output_tokens.svg",
+      "sha256": "d88d64f23fd9875d0bf19d2c3b05b28c31281ec5fceebea99af9efb37e243dae",
+      "bytes": 41841
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/validation_accuracy_vs_generated_output_tokens.pdf",
+      "sha256": "b47d7c6134552160259ebbd40bee1ee5ab2f6de3f3abb43a777dad4cc2cbd2d7",
+      "bytes": 17072
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/validation_accuracy_vs_generated_total_tokens.svg",
+      "sha256": "ea8289ceec57c51ebe8f30c25a51d367afa708d13228577e24902b2b7a141944",
+      "bytes": 42972
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/validation_accuracy_vs_generated_total_tokens.pdf",
+      "sha256": "2750e743873cfb87cc67a8eb358e5e8ab036a221c1229717444c6cce9eafb0f3",
+      "bytes": 17106
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/pre_filter_mixed.svg",
+      "sha256": "134ce518267c1a91fbbb5488fa288abc655538d7462fd37242f0014957f23d12",
+      "bytes": 35911
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/pre_filter_mixed.pdf",
+      "sha256": "7ba28a5dad3c74cd58b66e267fd265059756ae17486a91d52317188c92b84b63",
+      "bytes": 16342
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/pre_filter_all_correct.svg",
+      "sha256": "0daad062bc2bd4e92c5af1610262f9f3305c2405a10fa8070bbe3c3fc36aa9f3",
+      "bytes": 35776
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/pre_filter_all_correct.pdf",
+      "sha256": "0d521d2dc5e80a563f1888622067d788be811229ab53eb3cd01f2660073e162c",
+      "bytes": 16431
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/pre_filter_all_wrong.svg",
+      "sha256": "c61dca3f90c9c2332955f4bc5811f056bc44082fab953d740f95204c7de887a5",
+      "bytes": 36369
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/pre_filter_all_wrong.pdf",
+      "sha256": "ef2901af823ca943d26e741deccec5122d00ea4d6afc0bb72c1c98102dc0e8f7",
+      "bytes": 16103
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/sampling_amplification.svg",
+      "sha256": "e2b19eaec41e17c17afe2b1d857e5c77bb1a3944c8c1404989a8790a15d3c9cf",
+      "bytes": 37752
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/sampling_amplification.pdf",
+      "sha256": "ab1e03efcade0e4b3f1ffe55d684e831019d7615ed98e06ccad302b72663d39b",
+      "bytes": 15942
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/mixed_unparseable_only.svg",
+      "sha256": "09d6d093c7fc2b0ed3bcd30842f87bd00b5cb1a8f57400a40aef9d5d22735505",
+      "bytes": 37637
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/mixed_unparseable_only.pdf",
+      "sha256": "67e1843ef828611acb4fe6a6b6a4264530153025db2d355e325722f69a3d0d01",
+      "bytes": 15250
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/strict_format.svg",
+      "sha256": "ea869fce61142ed1cde3c4b08079fe73f5e87daba739a39a4d4854933f4834c7",
+      "bytes": 40042
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/strict_format.pdf",
+      "sha256": "d35736afaee8eaa5475604d2defa687f608b638dda0d7152c8daefeeef377358",
+      "bytes": 16118
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/response_length_mean.svg",
+      "sha256": "6e58fe071e6ce24e03d201bf8354721c2f6dccfd0f01deb769fa2731a728c6e4",
+      "bytes": 39406
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/response_length_mean.pdf",
+      "sha256": "8f73565cd16fd61390cdbf7955222633f91944b2551e00f6c0d1c1b0f5e8d2e5",
+      "bytes": 16980
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/response_length_p95.svg",
+      "sha256": "4f33c6aa6b39e5cc568f4fab0b900121937b58538dd43e33404bb1cb81a99701",
+      "bytes": 38784
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/response_length_p95.pdf",
+      "sha256": "9fe7ba72867e52c79b4ce8e0f0f621e047bf896cd72051143a45bba746c0d9bd",
+      "bytes": 16569
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/entropy.svg",
+      "sha256": "9eabb93e49d7bd6d698208d4acadde7b4a2b287db11ed1f4bd6f6884e23d0e88",
+      "bytes": 40488
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/entropy.pdf",
+      "sha256": "a5f00b86ecd7eabbe8763750c749e4eae2dba5af7334b41ce919095f717d16a9",
+      "bytes": 16546
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/objective_clip_second_mini.svg",
+      "sha256": "6b019ec57e7c76cf21389ed5d1af7b91375c0c8fb84e5f48de3bb9805302b7fc",
+      "bytes": 38343
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/objective_clip_second_mini.pdf",
+      "sha256": "68dcb049099f000be1ae3c8ba80a887f68a50b6457d4a996a0ee73ed16438aa1",
+      "bytes": 15828
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/gradient_norm.svg",
+      "sha256": "93bb6aed405c09bf149c2ba541364e70fa4efb3d0793deb34db7c13e8b98324c",
+      "bytes": 37099
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/gradient_norm.pdf",
+      "sha256": "5539a68876f0cb938e891cbbd16cff136abdfa9586a82d8d8f635f0c01f57e0d",
+      "bytes": 15846
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/reward.svg",
+      "sha256": "057c685687f33b77fa5d41fa980d5b480b9574f076afaaf92b4b807317c54b64",
+      "bytes": 38119
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_plots/reward.pdf",
+      "sha256": "21bb240b354b1d8c3b75a3cfec1598041abe1fc049828870b5a5f4c3f2ec52bd",
+      "bytes": 17166
+    }
+  ],
+  "scope": "Committed windows; no interpolation or missing-result backfill",
+  "costs": "Validation/control generations excluded from training rollout x axes and retained separately"
+}

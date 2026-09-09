@@ -77,7 +77,7 @@
       "interview_story": "docs/stage_reports/03_dynamic_sampling.md"
     },
     "4": {
-      "status": "SMOKE_PASS",
+      "status": "PILOT_PASS",
       "run_ids": [
         "s4_optimization_diagnostic_20260909T065945_66b040",
         "s4_optimization_diagnostic_20260909T070249_a3a605",

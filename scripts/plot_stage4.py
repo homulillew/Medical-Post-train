@@ -25,7 +25,8 @@ def plot(pair_path):
         for v,r in data.items():
             rows=r['validation'] if validation else r['windows']
             if rows:
-                ax.plot([x(z) for z in rows],[y(z) for z in rows],label=v,color=colors[v],marker='o' if validation else None,markersize=3)
+                ax.plot([x(z) for z in rows],[y(z) for z in rows],label=v,color=colors[v],marker='o' if validation else None,
+                    linestyle='none' if validation and pair['mode']=='PILOT' else '-',markersize=3)
         ax.set(xlabel=xlabel,ylabel=ylabel,title=pair['mode']+' · '+name.replace('_',' '))
         ax.grid(alpha=.2)
         if ax.lines:
