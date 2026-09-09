@@ -1,0 +1,556 @@
+{
+  "old_run": "s3_smoke_20260909T051456_a53a8c",
+  "new_run": "s3_smoke_20260909T052408_5114dc",
+  "paired_groups": [
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49046",
+      "encounter_index": 0,
+      "same_output_count": 3,
+      "old_acc": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "new_acc": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3826",
+      "encounter_index": 1,
+      "same_output_count": 4,
+      "old_acc": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "new_acc": [
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34077",
+      "encounter_index": 2,
+      "same_output_count": 4,
+      "old_acc": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "new_acc": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21636",
+      "encounter_index": 3,
+      "same_output_count": 4,
+      "old_acc": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "new_acc": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:180",
+      "encounter_index": 4,
+      "same_output_count": 4,
+      "old_acc": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "new_acc": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12133",
+      "encounter_index": 5,
+      "same_output_count": 3,
+      "old_acc": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "new_acc": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43163",
+      "encounter_index": 6,
+      "same_output_count": 4,
+      "old_acc": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "new_acc": [
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:25184",
+      "encounter_index": 7,
+      "same_output_count": 4,
+      "old_acc": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "new_acc": [
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27342",
+      "encounter_index": 8,
+      "same_output_count": 4,
+      "old_acc": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "new_acc": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:24965",
+      "encounter_index": 9,
+      "same_output_count": 4,
+      "old_acc": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "new_acc": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:5401",
+      "encounter_index": 10,
+      "same_output_count": 4,
+      "old_acc": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "new_acc": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49086",
+      "encounter_index": 11,
+      "same_output_count": 4,
+      "old_acc": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "new_acc": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32444",
+      "encounter_index": 12,
+      "same_output_count": 4,
+      "old_acc": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "new_acc": [
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23622",
+      "encounter_index": 13,
+      "same_output_count": 4,
+      "old_acc": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "new_acc": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13654",
+      "encounter_index": 14,
+      "same_output_count": 4,
+      "old_acc": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "new_acc": [
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2543",
+      "encounter_index": 15,
+      "same_output_count": 4,
+      "old_acc": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "new_acc": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7533",
+      "encounter_index": 16,
+      "same_output_count": 2,
+      "old_acc": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "new_acc": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:35967",
+      "encounter_index": 17,
+      "same_output_count": 4,
+      "old_acc": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "new_acc": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:1963",
+      "encounter_index": 18,
+      "same_output_count": 4,
+      "old_acc": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "new_acc": [
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12715",
+      "encounter_index": 19,
+      "same_output_count": 4,
+      "old_acc": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "new_acc": [
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26525",
+      "encounter_index": 20,
+      "same_output_count": 4,
+      "old_acc": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "new_acc": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14257",
+      "encounter_index": 21,
+      "same_output_count": 4,
+      "old_acc": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "new_acc": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41202",
+      "encounter_index": 22,
+      "same_output_count": 3,
+      "old_acc": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "new_acc": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20811",
+      "encounter_index": 23,
+      "same_output_count": 3,
+      "old_acc": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "new_acc": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40168",
+      "encounter_index": 24,
+      "same_output_count": 1,
+      "old_acc": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "new_acc": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41654",
+      "encounter_index": 25,
+      "same_output_count": 0,
+      "old_acc": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "new_acc": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49059",
+      "encounter_index": 26,
+      "same_output_count": 4,
+      "old_acc": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "new_acc": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20093",
+      "encounter_index": 27,
+      "same_output_count": 2,
+      "old_acc": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "new_acc": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3992",
+      "encounter_index": 28,
+      "same_output_count": 0,
+      "old_acc": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "new_acc": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8008",
+      "encounter_index": 29,
+      "same_output_count": 3,
+      "old_acc": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "new_acc": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7152",
+      "encounter_index": 30,
+      "same_output_count": 2,
+      "old_acc": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "new_acc": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37589",
+      "encounter_index": 31,
+      "same_output_count": 4,
+      "old_acc": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "new_acc": [
+        1,
+        1,
+        1,
+        0
+      ]
+    }
+  ],
+  "identical_trajectories": 106,
+  "total_trajectories": 128,
+  "changed_acc_vectors": 2,
+  "interpretation": "Same deterministic prompts, seeds, frozen adapter/reward and engine settings do not establish bitwise stochastic vLLM replay across processes. Identity controls within each process passed; no reward/policy tuning. Resume relies on persisted raw/commits, not regenerating completed groups.",
+  "root_cause": "NOT_ESTABLISHED",
+  "timestamp": "2026-09-09T05:30:23.934595+00:00"
+}

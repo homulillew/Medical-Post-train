@@ -100,3 +100,11 @@ R24 P2 (new): official text-only CMExam prompts can reference missing images (ob
 R25 (OBSERVED): four pool references exactly equal 请等待更新; one formal prompt is affected. Retain frozen results, report separately; later masking requires an explicit shared reward version decision.
 
 Stage 2 full evidence: 1000×4 complete; final adapter controls PASS, zero truncation at1024, strict format86.925%. Source placeholders/missing images and weak semantic discrimination remain interpretation risks. No clinical validation or Stage3/4 execution is claimed.
+
+## Stage 3 implementation and smoke evidence
+
+R26 (OBSERVED, engineering fix under real revalidation): terminal evidence writer raised duplicate-run_id TypeError after all32 smoke groups committed. Raw generation, rewards, counters and genuine restart preserved; FAILED run remains `s3_smoke_20260909T051456_a53a8c`. A dedicated regression test covers summary merging.
+
+R27 (OBSERVED, engineering fix under real revalidation): failed worker retained GPU allocations, so `s3_smoke_20260909T052138_e6717b` hit vLLM free-memory admission guard before any rollout. Preserve failed startup and zero generation-attempt evidence. Owned-group termination, explicit engine shutdown and prelaunch GPU-empty checks added. See D3-002/D3-003 in STAGE3_PLAN.md. No reduction of gpu_memory_utilization or scientific settings.
+
+R28 (OPEN until formal): acc-only filtering, exact-target overflow, cyclic exposure and replay must pass raw checks for256 fresh mixed groups. Candidate starvation is bounded at128 generation batches of16; failure cannot redefine256. All rejected costs remain incurred. Future changing-policy acceptance and optimizer scheduling remain Stage4 questions.

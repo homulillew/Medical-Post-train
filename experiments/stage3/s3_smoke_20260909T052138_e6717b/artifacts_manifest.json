@@ -1,0 +1,97 @@
+[
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_smoke_20260909T052138_e6717b/attempt_001/code.json",
+    "sha256": "92297d07a4629f6d6328b775be04d706e77c9b527827c8ef0aa060ae8419e75d",
+    "bytes": 9605
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_smoke_20260909T052138_e6717b/attempt_001/command.json",
+    "sha256": "b7b8662981798d5e32a8780d0b3d9e30d77e59518399580964c39b720aa17108",
+    "bytes": 312
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_smoke_20260909T052138_e6717b/attempt_001/environment.json",
+    "sha256": "5811b25ce60b97bf9b499c8cfb43c040c670d63df6b8cc26045a9653ce1451d8",
+    "bytes": 7851
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_smoke_20260909T052138_e6717b/attempt_001/failure.json",
+    "sha256": "5b23728cc27cdb36f0323fcde221ba32cdd8bbfc5fb76161858bff56f133294a",
+    "bytes": 2425
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_smoke_20260909T052138_e6717b/attempt_001/launch.json",
+    "sha256": "3c2fc3177186e51cdf62333f90008d808a0b962540a7a8d484dd138f361e2f45",
+    "bytes": 92
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_smoke_20260909T052138_e6717b/attempt_001/lora_shrink_config.json",
+    "sha256": "5bcb0802b7f36df3337be30186954b7ff4f71facad021e372861a873cdaab6c0",
+    "bytes": 166
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_smoke_20260909T052138_e6717b/attempt_001/resume_start.json",
+    "sha256": "0119a396edcf6bee51ef5ce90731533351d22beb73b5a32f5bb907dbb0c9451f",
+    "bytes": 5926
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_smoke_20260909T052138_e6717b/attempt_001/runtime_environment.json",
+    "sha256": "4b95fdedd15a53f3c449dd56bcb5e162e72f2828f7e19939443950ebdf7692aa",
+    "bytes": 150
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_smoke_20260909T052138_e6717b/attempt_001/status.json",
+    "sha256": "22dc99bdc4180794e7b8262a869728797f6baad5c54a76fe890ce82fdc8ffe2a",
+    "bytes": 76
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_smoke_20260909T052138_e6717b/attempt_001/stderr.log",
+    "sha256": "985783496073b34c9980a4b4f572a85af069ffc6fc696469b3e9d33eda05e8a0",
+    "bytes": 7536
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_smoke_20260909T052138_e6717b/attempt_001/stdout.log",
+    "sha256": "b85e3d2e4ddd5896cf74ce5101e7d119b8eda67be222fbba1fa26042d7c50be4",
+    "bytes": 9712
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_smoke_20260909T052138_e6717b/attempt_001/vllm_args.json",
+    "sha256": "20a9e1854f89f15120caa124024a8b981c24fcbc7ce870aafa08d03300c9de41",
+    "bytes": 539
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_smoke_20260909T052138_e6717b/checkpoint.json",
+    "sha256": "cd32835d01a3251a791a94bbf27a17faafd72fccd58cbdcb2de192300860728d",
+    "bytes": 760
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_smoke_20260909T052138_e6717b/config.json",
+    "sha256": "215306bd89c882e54f637ea350d5cddf27552ce53187a8f3f581800779b5b5eb",
+    "bytes": 3437
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_smoke_20260909T052138_e6717b/manifest.json",
+    "sha256": "cdae401fa88b1570240f5a67b4ff30f85b766aae2455b2e897e87250415da96e",
+    "bytes": 14006
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_smoke_20260909T052138_e6717b/observations.json",
+    "sha256": "6cc5db45918682610cd7c2a5edea30ea90628afa4ce6852f9885d012fd08ea16",
+    "bytes": 519
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_smoke_20260909T052138_e6717b/resume_supervisor_command.json",
+    "sha256": "1ce5d6cfa22cc3cdc92fbf898d449b96299d0d08824b1a715bdb81f0e041adea",
+    "bytes": 201
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_smoke_20260909T052138_e6717b/source.zip",
+    "sha256": "73e2e3485a278a709fc8e12649acd404d6f44ef7ca99b1ef27727b182513c056",
+    "bytes": 191435
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_smoke_20260909T052138_e6717b/status.json",
+    "sha256": "e91841a9e5021fd01d2f5d90511be679b0181189d612f0407a6c15ba9ea4c0ca",
+    "bytes": 76
+  }
+]

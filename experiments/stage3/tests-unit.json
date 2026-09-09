@@ -1,0 +1,19 @@
+{
+  "command": [
+    ".venv-analysis/bin/python",
+    "-m",
+    "pytest",
+    "tests/test_dynamic_sampling.py",
+    "-q"
+  ],
+  "exit_code": 0,
+  "timestamp": "2026-09-09T05:20:11.085299+00:00",
+  "test_hashes": {
+    "tests/test_dynamic_sampling.py": "b41a647d182e7aa7150348e3fd9dfb3b26103ed445b419b5e65e88690722210a"
+  },
+  "log": {
+    "path": "/data/WSH/post-train/experiments/stage3/tests-unit.log",
+    "sha256": "01ca683217fbe248f24468eadd351b85fed0ed62aba315862766e8f1bf0fe33d",
+    "bytes": 99
+  }
+}

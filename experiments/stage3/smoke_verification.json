@@ -1,0 +1,21 @@
+{
+  "stage": 3,
+  "result": "PASS",
+  "scope": "SMOKE_AND_RESUME",
+  "timestamp": "2026-09-09T05:30:16.863104+00:00",
+  "gates": {
+    "verified_predecessors_and_unchanged_contract_isolation": true,
+    "sixteen_patterns_reward_independence_validity_stream_overflow_resume_starvation": true,
+    "real_smoke_raw_pipeline_and_token_conservation": true,
+    "physical_termination_new_process_resume": true
+  },
+  "errors": [],
+  "counts": {},
+  "verifier_sha256": "bd10b83ec9df3ee013b8d99a4d9423d691adabc2d8d9a9e6bbf4c42982f8b9d9",
+  "contract_sha256": "8ba60bd2e724fbbb74e26f4ef677eb6c6d51eaafcba6eb3bcb0b2eb588a51f24",
+  "selected_runs": {
+    "smoke": "s3_smoke_20260909T052408_5114dc",
+    "failed_smoke": "s3_smoke_20260909T051456_a53a8c",
+    "failed_startup": "s3_smoke_20260909T052138_e6717b"
+  }
+}

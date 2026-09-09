@@ -1,0 +1,25 @@
+{
+  "stage": 2,
+  "result": "PASS",
+  "timestamp": "2026-09-09T05:09:11.409346+00:00",
+  "gates": {
+    "prior_stages_and_unchanged_contract_isolation": true,
+    "full_source_validated_clean_deterministic_15k_and_reserved_validation": true,
+    "controlled_semantic_comparison_and_frozen_gated_reward": true,
+    "real_50x4_smoke_raw_pipeline": true,
+    "formal_1000x4_fixed_policy_raw_parser_reward_lengths_and_groups": true,
+    "parser_and_reward_invariants_tests_pass": true,
+    "real_cases_50plus_review_report_interview_and_compute": true,
+    "artifact_seal_and_failed_run_retention": true
+  },
+  "errors": [],
+  "counts": {
+    "candidate_pool": 15000,
+    "semantic_pairs": 200,
+    "formal_prompts": 1000,
+    "completed_responses": 4000,
+    "optimizer_updates": 0
+  },
+  "verifier_sha256": "dc60675015cf28914a7c45c6af8f5c2664be4b27f1cbac13a39fc30dc3b7daf5",
+  "contract_sha256": "8ba60bd2e724fbbb74e26f4ef677eb6c6d51eaafcba6eb3bcb0b2eb588a51f24"
+}

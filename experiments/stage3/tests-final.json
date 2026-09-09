@@ -1,0 +1,25 @@
+{
+  "command": [
+    ".venv-train/bin/python",
+    "-c",
+    "import sys;sys.path.append('/data/WSH/post-train/.venv-analysis/lib/python3.12/site-packages');import pytest;raise SystemExit(pytest.main(['tests','-q']))"
+  ],
+  "exit_code": 0,
+  "timestamp": "2026-09-09T05:25:11.643849+00:00",
+  "log": {
+    "path": "/data/WSH/post-train/experiments/stage3/tests-final.log",
+    "sha256": "eb97d1a79ccefce49e355ea54ec2444f91a9108d0ee97ff8813840220249652e",
+    "bytes": 179
+  },
+  "test_hashes": {
+    "tests/test_verifier.py": "b3112bd4d43008400c8bdad4e6e5b26ceab8bf2f1b2d0e1f87c8544a663d7102",
+    "tests/test_medical_sources.py": "0fbae500221d39e737053000727008072f9822f11568dc9c6fd857aa5df52415",
+    "tests/test_stage2_reward.py": "15b6a09509e66820537f8a61d3a3cbcfdafcebca9301f9b18f34981c819f9734",
+    "tests/test_dynamic_sampling.py": "5d152ebc8154dd8e6b48f7b8797ddba782f6e624aa45e5ba14c853e26b5ddbd9",
+    "tests/test_stage1_training.py": "55a0dcc27d14249ee3a0504cf44513b898352ceab7879a1a6feeaf6b22a322ec",
+    "tests/test_runtime_contracts.py": "b6f9809f0488f32fde1bd14d6b001ff25247157b082015b5969e0ff715dbd64c",
+    "tests/test_stage2_data_groups.py": "d4176d82b3e1464f5c103c1a55785a32a4e8eba5555e7050335b4640efb89741",
+    "tests/test_stage1_data.py": "d109b9f2a59b247f20b90bcbe04d203ffe3a56cf49aa7c0d606f9df4fc54fff6",
+    "tests/test_stage1_verifier.py": "ec7a9a03c1384d32374e44a94b09dacfad0646538b651a8805cf7749e283f503"
+  }
+}

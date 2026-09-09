@@ -12,7 +12,7 @@ examples for one epoch, with 100% coverage and all ten verifier gates passing.
 Stage 2 is **DONE**: 15k CMExam candidates, a 200-pair semantic diagnostic,
 50×4 smoke, and full 1,000×4 profiling with 80 complete qualitative reviews
 and all eight verifier gates passing. Measured train-sample accuracy is 51.775%,
-mixed groups 53.1%, and truncation 0%. No policy optimization is performed. Stage 3–6 remain **NOT_STARTED**.
+mixed groups 53.1%, and truncation 0%. No policy optimization is performed. Stage 3 is **SMOKE_PASS** after32×4 real rollout and physical process-resume validation; Stage 4–6 remain **NOT_STARTED**.
 No examination test scoring has run. Current stage status is recorded in
 [`project_state.json`](project_state.json).
 
@@ -21,7 +21,9 @@ No examination test scoring has run. Current stage status is recorded in
 - [Stage 1 verification receipt](experiments/stage1/verification-final.json)
 - [Stage 2 report and interview evidence](docs/stage_reports/02_reward_rollout.md)
 - [Stage 2 final verification](experiments/stage2/verification-final.json)
-- [Stage 3 readiness and frozen inputs](experiments/stage2/readiness.json)
+- [Stage 3 inherited readiness and frozen inputs](experiments/stage2/readiness.json)
+- [Stage 3 execution plan and lifecycle decisions](docs/implementation/STAGE3_PLAN.md)
+- Current refill progress: `python scripts/stage3_status.py`
 - [Fixed SFT initialization and hashes](experiments/stage1/initialization_manifest.json)
 - [Runtime installation and CLI](env/README.md)
 - [Selected evidence](experiments/stage0/selected_runs.json)
@@ -30,8 +32,8 @@ No examination test scoring has run. Current stage status is recorded in
 
 The Stage 0 validator applies to its historical stage-isolation checkpoint;
 its archived PASS receipt is retained. Stage 1's archived PASS also retains its
-historical isolation boundary. The Stage 2 verifier checks current evidence and
-requires the full profiling budget before passing. Bulk models/checkpoints/raw responses are outside Git;
+historical isolation boundary. Stage 2 was reverified at Stage 3 entry; its isolation-boundary PASS is retained in
+`experiments/stage3/prerequisite-stage2.json`. Stage 3 verification consumes those frozen inputs and independently checks new raw refill evidence. Bulk models/checkpoints/raw responses are outside Git;
 their manifests retain exact paths, sizes and hashes. A clone alone does not
 restore those local artifacts.
 

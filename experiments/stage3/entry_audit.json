@@ -1,0 +1,38 @@
+{
+  "inputs": [
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/summary.json",
+      "sha256": "798c9bbb43baa5594a71c2a24a8352a6a846320660e59655df1f0e6c5df11ba8",
+      "bytes": 1489
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage1/initialization_manifest.json",
+      "sha256": "6fb9e83dba72e4fcbc76548c515a555b46f9c415a280409224e6028067d1059c",
+      "bytes": 1850
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage2/reward_manifest.json",
+      "sha256": "cc72be1c2348d20f58bf978d047b9b4a2f200d8c70c39f0d0d98506528bfb905",
+      "bytes": 7541
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage2/readiness.json",
+      "sha256": "ff5c20445fa845bcc0287ba24d1e04e7bde106bf22eea4c1daafd23a6b5f6768",
+      "bytes": 2273
+    },
+    {
+      "path": "/data/WSH/post-train/project_state.json",
+      "sha256": "9fb089fbb1e06bc335634438f556f435cc4244656af5b5b978f3dfeb4004d21e",
+      "bytes": 3618
+    }
+  ],
+  "predecessor_receipt": {
+    "path": "/data/WSH/post-train/experiments/stage3/prerequisite-stage2.json",
+    "sha256": "966daead7a776940a32e779537c503d6d1067068f1ef6925f706ef852a8e5af6",
+    "bytes": 963
+  },
+  "stage3_entry_status": "NOT_STARTED",
+  "note": "Source contracts read before implementation; project_state hash captured after IMPLEMENTED transition; frozen input content unchanged.",
+  "hardware": "1x RTX5880Ada 46,068 MiB; available 3.3 TiB",
+  "optimizer_updates": 0
+}

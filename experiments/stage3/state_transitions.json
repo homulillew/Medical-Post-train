@@ -1,0 +1,14 @@
+{
+  "events": [
+    {
+      "status": "SMOKE_PASS",
+      "timestamp": "2026-09-09T05:30:52.124368+00:00",
+      "receipt": {
+        "path": "/data/WSH/post-train/experiments/stage3/smoke_verification.json",
+        "sha256": "c7575b4e7790ee663830b3562b163d6a528ba90e9b13f5a2c54612b874ce2232",
+        "bytes": 805
+      },
+      "note": "IMPLEMENTED and failed-smoke history retained in run manifests and logs; formal progress remains0"
+    }
+  ]
+}

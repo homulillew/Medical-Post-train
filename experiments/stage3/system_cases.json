@@ -1,0 +1,33 @@
+{
+  "cases": [
+    {
+      "case_id": "s3_summary_duplicate_run_id",
+      "stage": 3,
+      "run_id": "s3_smoke_20260909T051456_a53a8c",
+      "category": "SYSTEM_CASE",
+      "symptom": "Final summary writer TypeError after all32 groups committed",
+      "root_cause": "Stage3 summarize supplies run_id; copied Run.finish supplied the keyword twice.",
+      "evidence": "attempt_002/failure.json and batches/*/commit.json under failed run",
+      "resolution": "Merge summary with run_id once; regression test test_finish_accepts_summary_with_existing_run_id; new smoke and real restart.",
+      "scientific_change": false,
+      "status": "FIXED_REAL_SMOKE_VERIFIED",
+      "timestamp": "2026-09-09T05:22:45.074640+00:00"
+    },
+    {
+      "case_id": "s3_orphan_gpu_worker_startup_rejection",
+      "stage": 3,
+      "run_id": "s3_smoke_20260909T052138_e6717b",
+      "category": "SYSTEM_CASE",
+      "symptom": "Engine free-memory guard failed before rollout;12.09GiB free versus28.85GiB requested",
+      "root_cause": "Prior failed process group remained alive with GPU allocation",
+      "resolution": "Owned-group cleanup, explicit engine shutdown, prelaunch empty GPU check; fresh smoke repeats integration",
+      "evidence": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s3_smoke_20260909T052138_e6717b/observations.json",
+        "sha256": "6cc5db45918682610cd7c2a5edea30ea90628afa4ce6852f9885d012fd08ea16",
+        "bytes": 519
+      },
+      "scientific_change": false,
+      "status": "FIXED_REAL_SMOKE_VERIFIED"
+    }
+  ]
+}
