@@ -22,6 +22,19 @@
       "run_id": "s3_formal_20260909T053101_d99393",
       "accepted_integration_mixed_groups": 256,
       "note": "Controller budget reached; stage verifier/report acceptance still required"
+    },
+    {
+      "status": "VERIFIED",
+      "timestamp": "2026-09-09T06:16:34.346929+00:00",
+      "receipt": "experiments/stage3/verification-final.json",
+      "sha256": "33d8b8fd6720e7f9f433b7f16994eecfd7aff0b7be9955b7a9f04673c6058203",
+      "verifier_commit": "a538dc42fef88f0fab5605a8334daf203fc362aa"
+    },
+    {
+      "status": "DONE",
+      "timestamp": "2026-09-09T06:16:34.347589+00:00",
+      "accepted_integration_mixed_groups": 256,
+      "report": "docs/stage_reports/03_dynamic_sampling.md"
     }
   ]
 }

@@ -56,7 +56,7 @@
       "interview_story": "docs/stage_reports/02_reward_rollout.md"
     },
     "3": {
-      "status": "FULL_PASS",
+      "status": "DONE",
       "run_ids": [
         "s3_smoke_20260909T052408_5114dc",
         "s3_smoke_20260909T051456_a53a8c",
@@ -66,7 +66,13 @@
       "progress": {
         "accepted_integration_mixed_groups": 256
       },
-      "verification_receipt": null,
+      "verification_receipt": {
+        "path": "experiments/stage3/verification-final.json",
+        "sha256": "33d8b8fd6720e7f9f433b7f16994eecfd7aff0b7be9955b7a9f04673c6058203",
+        "verifier_commit": "a538dc42fef88f0fab5605a8334daf203fc362aa",
+        "contract_sha256": "8ba60bd2e724fbbb74e26f4ef677eb6c6d51eaafcba6eb3bcb0b2eb588a51f24",
+        "result": "PASS"
+      },
       "stage_report": "docs/stage_reports/03_dynamic_sampling.md",
       "interview_story": "docs/stage_reports/03_dynamic_sampling.md"
     },

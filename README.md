@@ -12,7 +12,7 @@ examples for one epoch, with 100% coverage and all ten verifier gates passing.
 Stage 2 is **DONE**: 15k CMExam candidates, a 200-pair semantic diagnostic,
 50×4 smoke, and full 1,000×4 profiling with 80 complete qualitative reviews
 and all eight verifier gates passing. Measured train-sample accuracy is 51.775%,
-mixed groups 53.1%, and truncation 0%. No policy optimization is performed. Stage 3 has reached **FULL_PASS**:496 newly generated groups,256 accepted mixed and1 retained overflow, with1.9375× measured amplification; Stage 4–6 remain **NOT_STARTED**.
+mixed groups 53.1%, and truncation 0%. No policy optimization is performed. Stage 3 is **DONE**:496 newly generated groups,256 accepted mixed and1 retained overflow, with1.9375× measured amplification and all nine verifier gates passing; Stage 4–6 remain **NOT_STARTED**.
 No examination test scoring has run. Current stage status is recorded in
 [`project_state.json`](project_state.json).
 
