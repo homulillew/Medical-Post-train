@@ -1,0 +1,38 @@
+{
+  "result": "FAIL",
+  "stage": 1,
+  "errors": [
+    "research_contract_and_stage_isolation: AssertionError: "
+  ],
+  "gates": {
+    "research_contract_and_stage_isolation": false,
+    "explicit_selected_runs": true,
+    "frozen_balanced_data_and_decontamination": true,
+    "real_smoke_and_reload": true,
+    "real_pilot_and_process_resume": true,
+    "formal_run_exists": true,
+    "full_epoch_raw_metrics_and_coverage": true,
+    "checkpoints_and_final_fresh_process_reload": true,
+    "paired_heldout_generation_and_length_analysis": true,
+    "real_report_cases_interview_and_artifact_seal": true
+  },
+  "counts": {
+    "unique_examples": 20000,
+    "coverage": 1.0,
+    "updates": 1250,
+    "processed_tokens": 9168530,
+    "supervised_tokens": 7741165
+  },
+  "verifier_sha256": "7567e38fe7bca5bc3abca3efad2ca7a75253b45415fd08cee9de7c9f5dbe10e5",
+  "contract_sha256": "8ba60bd2e724fbbb74e26f4ef677eb6c6d51eaafcba6eb3bcb0b2eb588a51f24",
+  "selected_runs": {
+    "data": "s1_data_20260908T144854_bac3a7",
+    "smoke": "s1_smoke_20260908T145244_1af07b",
+    "pilot": "s1_pilot_20260908T150104_71a69a",
+    "formal": "s1_formal_20260908T152119_60040b",
+    "evaluation": "s1_evaluation_20260908T175526_8cfbc0",
+    "memory": "s1_memory_20260908T151118_dfaed6",
+    "data_audit": "s1_data_audit_20260908T145755_3aabaa",
+    "source_reasoning_audit": "s1_source_reasoning_20260908T160619_58be7b"
+  }
+}

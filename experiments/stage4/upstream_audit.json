@@ -1,0 +1,49 @@
+{
+  "packages": {
+    "verl": "0.9.0",
+    "vllm": "0.24.0",
+    "torch": "2.11.0",
+    "transformers": "5.5.3",
+    "peft": "0.18.1"
+  },
+  "files": [
+    {
+      "path": "/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/verl/trainer/ppo/core_algos.py",
+      "sha256": "0ec87b90cba24fa0aa959adff573efb2cc49434d705621cf546be231e56a8932",
+      "bytes": 104526
+    },
+    {
+      "path": "/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/verl/workers/engine/fsdp/transformer_impl.py",
+      "sha256": "0a3c894d8129f77a28ecf74ebdd7921e0974053b1fa72ac294cedde4e7fce4f9",
+      "bytes": 75490
+    },
+    {
+      "path": "/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/verl/workers/config/optimizer.py",
+      "sha256": "00a590a076078b52740529a985f5d615f5311cb26506bc8726a5f837a740fb78",
+      "bytes": 16366
+    },
+    {
+      "path": "/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/verl/utils/checkpoint/fsdp_checkpoint_manager.py",
+      "sha256": "72afa38272a99962ae9850afabe5b7353fc558b24cce9aaf77825bbe86bc749e",
+      "bytes": 22811
+    },
+    {
+      "path": "/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/vllm/v1/sample/sampler.py",
+      "sha256": "1a2f18ddc91c89f3744ab5a93624be056bf20b7a8b2e6e13d0236182718a2253",
+      "bytes": 17963
+    },
+    {
+      "path": "/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/vllm/v1/sample/ops/topk_topp_sampler.py",
+      "sha256": "35b9a1ffeb1e50b73b0ddd1ffc0f968910ee21cf9cc5455dd879fde547b6ddc1",
+      "bytes": 19562
+    }
+  ],
+  "observations": [
+    "Native GRPO outcome advantage sample std correction1 epsilon1e-6",
+    "Native GSPO sequence ratio, native stopgradient, seq-mean-token-mean",
+    "Default vLLM raw logprobs precede temperature",
+    "FSDP engine native optimizer and LoRA-only checkpoints retain optimizer and RNG",
+    "No reference or critic worker instantiated by local controller"
+  ],
+  "official_release": "https://github.com/volcengine/verl/blob/v0.9.0/verl/trainer/ppo/core_algos.py"
+}

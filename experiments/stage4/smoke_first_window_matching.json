@@ -1,0 +1,218 @@
+{
+  "result": "MATCHED_INITIALIZATION_WITH_NONIDENTICAL_STOCHASTIC_REGENERATION",
+  "timestamp": "2026-09-09T07:36:22.424413+00:00",
+  "groups": 8,
+  "trajectories": 32,
+  "same_prompts_seeds_policy_config": true,
+  "same_native_initial_parameter_digest": true,
+  "exact_token_trajectories": 29,
+  "exact_logprob_trajectories": 28,
+  "rows": [
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27714",
+      "member": 0,
+      "tokens_equal": true,
+      "raw_logprobs_equal": false
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27714",
+      "member": 1,
+      "tokens_equal": true,
+      "raw_logprobs_equal": true
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27714",
+      "member": 2,
+      "tokens_equal": false,
+      "raw_logprobs_equal": false
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27714",
+      "member": 3,
+      "tokens_equal": false,
+      "raw_logprobs_equal": false
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9121",
+      "member": 0,
+      "tokens_equal": true,
+      "raw_logprobs_equal": true
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9121",
+      "member": 1,
+      "tokens_equal": true,
+      "raw_logprobs_equal": true
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9121",
+      "member": 2,
+      "tokens_equal": true,
+      "raw_logprobs_equal": true
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9121",
+      "member": 3,
+      "tokens_equal": true,
+      "raw_logprobs_equal": true
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20415",
+      "member": 0,
+      "tokens_equal": true,
+      "raw_logprobs_equal": true
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20415",
+      "member": 1,
+      "tokens_equal": true,
+      "raw_logprobs_equal": true
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20415",
+      "member": 2,
+      "tokens_equal": true,
+      "raw_logprobs_equal": true
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20415",
+      "member": 3,
+      "tokens_equal": true,
+      "raw_logprobs_equal": true
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3174",
+      "member": 0,
+      "tokens_equal": true,
+      "raw_logprobs_equal": true
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3174",
+      "member": 1,
+      "tokens_equal": true,
+      "raw_logprobs_equal": true
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3174",
+      "member": 2,
+      "tokens_equal": true,
+      "raw_logprobs_equal": true
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3174",
+      "member": 3,
+      "tokens_equal": true,
+      "raw_logprobs_equal": true
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4052",
+      "member": 0,
+      "tokens_equal": false,
+      "raw_logprobs_equal": false
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4052",
+      "member": 1,
+      "tokens_equal": true,
+      "raw_logprobs_equal": true
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4052",
+      "member": 2,
+      "tokens_equal": true,
+      "raw_logprobs_equal": true
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4052",
+      "member": 3,
+      "tokens_equal": true,
+      "raw_logprobs_equal": true
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43193",
+      "member": 0,
+      "tokens_equal": true,
+      "raw_logprobs_equal": true
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43193",
+      "member": 1,
+      "tokens_equal": true,
+      "raw_logprobs_equal": true
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43193",
+      "member": 2,
+      "tokens_equal": true,
+      "raw_logprobs_equal": true
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43193",
+      "member": 3,
+      "tokens_equal": true,
+      "raw_logprobs_equal": true
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36023",
+      "member": 0,
+      "tokens_equal": true,
+      "raw_logprobs_equal": true
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36023",
+      "member": 1,
+      "tokens_equal": true,
+      "raw_logprobs_equal": true
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36023",
+      "member": 2,
+      "tokens_equal": true,
+      "raw_logprobs_equal": true
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36023",
+      "member": 3,
+      "tokens_equal": true,
+      "raw_logprobs_equal": true
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33729",
+      "member": 0,
+      "tokens_equal": true,
+      "raw_logprobs_equal": true
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33729",
+      "member": 1,
+      "tokens_equal": true,
+      "raw_logprobs_equal": true
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33729",
+      "member": 2,
+      "tokens_equal": true,
+      "raw_logprobs_equal": true
+    },
+    {
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33729",
+      "member": 3,
+      "tokens_equal": true,
+      "raw_logprobs_equal": true
+    }
+  ],
+  "sources": [
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_smoke_vanilla_20260909T071222_ef95d2/windows/0000/batches/000/raw.json",
+      "sha256": "4d4e2f4c537dc09524978c741034f35ac053563b745a83c3847a05b1c8125f4f",
+      "bytes": 559172
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_smoke_dynamic_20260909T071807_adad34/windows/0000/batches/000/raw.json",
+      "sha256": "f2c584ff0c1abf9a40d7e3344526c687d55ae48fe66f7465bbd9b8ceae7c754d",
+      "bytes": 558247
+    }
+  ],
+  "cause": "Unresolved upstream numerical/scheduling variation; same limitation observed in Stage3",
+  "scope": "Identity and stream matching verified; byte-identical stochastic regeneration is not established"
+}

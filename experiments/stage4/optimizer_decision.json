@@ -1,0 +1,50 @@
+{
+  "decision": "D4-002",
+  "status": "ACCEPTED_FOR_SMOKE_AND_PILOT_ONLY",
+  "learning_rate": 1e-06,
+  "mini_prompts": 4,
+  "ppo_epochs": 1,
+  "clip_low": 0.0003,
+  "clip_high": 0.0004,
+  "comparison": [
+    {
+      "lr": 1e-05,
+      "ratio_min": 0.6981698274612427,
+      "ratio_max": 1.0055676698684692,
+      "objective_clip": 0.1875,
+      "any_bound_exceedance": 0.8125,
+      "token_drift": 0.048971416312269866,
+      "parameter_delta": 0.15106055526857237
+    },
+    {
+      "lr": 3e-06,
+      "ratio_min": 0.9333279132843018,
+      "ratio_max": 1.006385087966919,
+      "objective_clip": 0.1875,
+      "any_bound_exceedance": 1.0,
+      "token_drift": 0.029653094243258238,
+      "parameter_delta": 0.04561826513517304
+    },
+    {
+      "lr": 1e-06,
+      "ratio_min": 0.9942335486412048,
+      "ratio_max": 1.0105730295181274,
+      "objective_clip": 0.25,
+      "any_bound_exceedance": 0.9375,
+      "token_drift": 0.025519560556858778,
+      "parameter_delta": 0.015130186052589468
+    }
+  ],
+  "source": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/summary.json",
+    "sha256": "d6be892789bc5b94659308ed9b4858b4f3a1cb25d8350169be05b932972af248",
+    "bytes": 9741
+  },
+  "diagnostic": {
+    "path": "/data/WSH/post-train/experiments/stage4/diagnostic_verification.json",
+    "sha256": "1168126d5c1f33bc36884672899d934659da135280233d96ec4a3935494c01d0",
+    "bytes": 10203
+  },
+  "reason": "Smallest measured parameter/mean-logprob drift, no extreme short-response ratio .698, objective clipping still active; no reward/validation tuning",
+  "limitations": "Only one fresh8x4 batch; BF16 current-policy logprob changes remain non-monotone, pilot stability required"
+}

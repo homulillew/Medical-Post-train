@@ -1,0 +1,64 @@
+{
+  "case_id": "S4-DIAG-SHORT-FORMAT-001",
+  "category": "SYSTEM_CASE",
+  "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21031",
+  "question": "贫血最常见临床表现是",
+  "options": {
+    "A": "窦性心动过速",
+    "B": "心脏杂音",
+    "C": "皮肤和黏膜苍白",
+    "D": "口腔炎，舌炎",
+    "E": "毛发干燥无光泽，易脱落"
+  },
+  "responses": [
+    {
+      "trajectory_id": "s4_optimization_diagnostic_20260909T065945_66b040:1601e97891e5:encounter:00000004:0",
+      "raw_output": "<think>...\n贫血是指血液中红细胞的数量或者血红蛋白的含量低于正常范围的一种状态。由于红细胞负责将氧气从肺部运输到身体的各个部位，当红细胞减少时，身体组织可能会缺乏足够的氧气，从而引发一系列症状。\n\n常见的贫血症状包括：\n\n1. 皮肤和黏膜苍白：由于红细胞减少，血红蛋白水平下降，导致皮肤和黏膜失去正常的红润颜色，变得苍白。\n\n2. 心跳加快：由于身体需要更多的氧气来补偿氧气运输不足，心脏可能会加快跳动以增加血液流动，导致心跳过速。\n\n3. 呼吸急促：为了补偿氧气不足，呼吸系统可能会加快呼吸频率。\n\n4. 疲劳和虚弱：由于组织氧气供应不足，可能会感到疲劳和虚弱。\n\n5. 头晕和头痛：由于大脑的供氧不足，可能会出现头晕或头痛。\n\n6. 低血压：贫血可能导致血压下降。\n\n7. 口腔炎和舌头炎症：贫血可能影响黏膜的健康，导致口腔问题。\n\n8. 毛发干燥无光泽：贫血可能影响皮肤和毛发的健康，导致毛发变得干燥无光泽。\n\n在这些症状中，皮肤和黏膜苍白是最常见的临床表现之一，因为它直接反映了血红蛋白的减少。相比之下，虽然窦性心动过速、心脏杂音、口腔炎、舌炎以及毛发干燥无光泽、易脱落等问题也可能与贫血有关，但它们不如皮肤和黏膜苍白常见。\n\n因此，综合分析，贫血最常见临床表现是皮肤和黏膜苍白。\n</think>\n\n<answer>C</answer>",
+      "output_tokens": 345,
+      "acc": 1,
+      "total_reward": 0.8500000000000001,
+      "parse_error": null,
+      "semantic_reason": "missing_reference"
+    },
+    {
+      "trajectory_id": "s4_optimization_diagnostic_20260909T065945_66b040:1601e97891e5:encounter:00000004:1",
+      "raw_output": "<think>...\n\n<answer>C</answer>",
+      "output_tokens": 9,
+      "acc": 0,
+      "total_reward": 0.0,
+      "parse_error": "unclosed_thinking",
+      "semantic_reason": "missing_reference"
+    },
+    {
+      "trajectory_id": "s4_optimization_diagnostic_20260909T065945_66b040:1601e97891e5:encounter:00000004:2",
+      "raw_output": "<think>\n嗯，让我们看看，贫血有哪些常见的临床表现呢？首先，贫血意味着血液中的红细胞或者血红蛋白不足，这会导致身体组织的氧气供应不足。那么，身体会如何反应呢？\n\n首先想到的是，贫血会影响血液循环，导致心脏需要更努力地工作来输送氧气，这可能会引起窦性心动过速。另外，心脏杂音也可能出现，因为心脏可能在努力补偿氧气的不足。不过，这些可能不是贫血最直接的表现。\n\n再想想，贫血会使得皮肤和黏膜变得苍白，因为缺乏血红蛋白，皮肤看起来没有颜色。这似乎是一个比较直接的反应，因为贫血直接导致了血液的不充足。\n\n然后，口腔炎和舌炎，这些似乎和贫血关系不是那么直接，可能更多与营养缺乏有关，而不是贫血本身。\n\n至于毛发的变化，比如干燥无光泽、易脱落，这可能更多与营养不良有关，而不是贫血直接导致。\n\n所以，综合来看，贫血最直接的临床表现应该是皮肤和黏膜的苍白，因为这是贫血导致血液不足最直接可见的症状。因此，答案应该是选项C。\n</think>\n\n<answer>C</answer>",
+      "output_tokens": 243,
+      "acc": 1,
+      "total_reward": 0.8500000000000001,
+      "parse_error": null,
+      "semantic_reason": "missing_reference"
+    },
+    {
+      "trajectory_id": "s4_optimization_diagnostic_20260909T065945_66b040:1601e97891e5:encounter:00000004:3",
+      "raw_output": "<think>\n嗯，贫血最常见的是什么呢？先想想，贫血是指血液中红细胞或血红蛋白含量低于正常水平。这个情况，身体的氧气运输就会出问题。\n\n那么，氧气不足的话，身体可能会有哪些反应呢？嗯，心脏可能会加速跳动，因为需要更努力地工作来补偿氧气的不足。但是，这种心动过速好像不是贫血最直接的表现。\n\n再想想，贫血的另一个常见表现是皮肤和黏膜变得苍白。因为血红蛋白减少，这些部位的颜色就会变浅。嗯，这个好像挺常见的，很多贫血患者都会出现这种情况。\n\n还有其他的选项呢，比如口腔炎、舌炎，这些好像不太常见。至于毛发干燥无光泽，可能和贫血有关，但不如皮肤和黏膜苍白那么普遍吧。\n\n所以，综合来看，贫血的最常见临床表现应该是皮肤和黏膜苍白。嗯，看起来这是个比较合理的结论哦。\n</think>\n\n<answer>C</answer>",
+      "output_tokens": 204,
+      "acc": 1,
+      "total_reward": 0.8500000000000001,
+      "parse_error": null,
+      "semantic_reason": "missing_reference"
+    }
+  ],
+  "source": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T065945_66b040/trajectories/scored.json",
+    "sha256": "d5d35aaff446b246a13cbe70afc78be8a49654f7a1402ae337b24e9dcff68d8c",
+    "bytes": 335767
+  },
+  "manual_review": "All four complete outputs read by Codex; no clinical adjudication",
+  "observation": "All four visible final letters areC, but member1 is nine tokens and lacks closing think. It getsacc0/reward0 while the three valid members get.85. LR1e-5 produces this trajectory second-mini ratio.69817;3e-6 produces.93333;1e-6 produces1.01057.",
+  "hypothesis": "Short malformed trajectories can magnify mean-logprob sensitivity; BF16 rounding can prevent monotone ratio response to tiny LR.",
+  "alternative_explanations": [
+    "Different first-mini gradients influence this held-back response",
+    "Forward quantization and learned adapter direction; not a measured clinical knowledge change"
+  ],
+  "followup": "Track length,unparseable-only groups and extreme ratios during real online pilots; do not filter this case based on length"
+}

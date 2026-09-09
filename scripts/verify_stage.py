@@ -183,6 +183,9 @@ if __name__=='__main__':
     elif args.stage==3:
         from verify_stage3 import verify as verify_stage3
         result=verify_stage3()
-    else:raise SystemExit('Stage 4–6 verifiers are not implemented or authorized in this stage.')
+    elif args.stage==4:
+        from verify_stage4 import verify as verify_stage4
+        result=verify_stage4()
+    else:raise SystemExit('Stage 5–6 verifiers are not implemented or authorized in this stage.')
     if args.output:write_json(args.output,result)
     print(json.dumps(result,indent=2));raise SystemExit(result['result']!='PASS')

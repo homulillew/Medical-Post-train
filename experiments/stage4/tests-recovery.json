@@ -1,0 +1,15 @@
+{
+  "result": "PASS",
+  "exit_code": 0,
+  "command": [
+    "/data/WSH/post-train/.venv-train/bin/python",
+    "-c",
+    "import sys; sys.path.append('/data/WSH/post-train/.venv-analysis/lib/python3.12/site-packages'); import pytest; raise SystemExit(pytest.main(['tests/test_stage4_recovery.py','-q']))"
+  ],
+  "log": {
+    "path": "/data/WSH/post-train/experiments/stage4/tests-recovery.log",
+    "sha256": "a0ba7f2fb96adfb2c2564a1053a85160f60c5f008ba0c8c06a58a8cb23d1fc2b",
+    "bytes": 98
+  },
+  "timestamp": "2026-09-09T07:48:13.934426+00:00"
+}

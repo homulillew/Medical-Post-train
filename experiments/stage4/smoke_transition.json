@@ -1,0 +1,18 @@
+{
+  "status": "SMOKE_PASS",
+  "timestamp": "2026-09-09T07:47:02.240797+00:00",
+  "receipts": {
+    "vanilla": {
+      "path": "/data/WSH/post-train/experiments/stage4/vanilla_smoke_verification.json",
+      "sha256": "a41d98afdba73a058b6ce04b4a177c1e9bed3af8b2ebfb01706ff7a777363993",
+      "bytes": 5379
+    },
+    "dynamic": {
+      "path": "/data/WSH/post-train/experiments/stage4/dynamic_smoke_verification.json",
+      "sha256": "e92e2037b239ec8b1bbb9d0448150bd67c977568c746cd7af29877a4ca119564",
+      "bytes": 8851
+    }
+  },
+  "formal_training_groups": 0,
+  "READY_FOR_STAGE5": "NO"
+}

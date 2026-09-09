@@ -1,0 +1,119 @@
+{
+  "timestamp": "2026-09-09T07:50:49.755601+00:00",
+  "variants": {
+    "vanilla": {
+      "run_id": "s4_smoke_vanilla_20260909T071222_ef95d2",
+      "window_phase_times": [
+        {
+          "window": "0000",
+          "seconds": 105.39501954847947,
+          "source": {
+            "path": "/data/WSH/medical-post-train-artifacts/runs/s4_smoke_vanilla_20260909T071222_ef95d2/windows/0000/commit.json",
+            "sha256": "f41399ac74a91bddb2a2ac5c5e9fbab4e4f93f1a59f68d39567531dcad0ff34e",
+            "bytes": 5498
+          }
+        },
+        {
+          "window": "0001",
+          "seconds": 103.48656943952665,
+          "source": {
+            "path": "/data/WSH/medical-post-train-artifacts/runs/s4_smoke_vanilla_20260909T071222_ef95d2/windows/0001/commit.json",
+            "sha256": "8dc14bb8b8ffc4d3b55744c4a1626bb53f8bf9f8ce1e9701c49a42f04ab98c81",
+            "bytes": 7834
+          }
+        },
+        {
+          "window": "0002",
+          "seconds": 106.93530786596239,
+          "source": {
+            "path": "/data/WSH/medical-post-train-artifacts/runs/s4_smoke_vanilla_20260909T071222_ef95d2/windows/0002/commit.json",
+            "sha256": "6d21136be05b60678e07a1589f20b1a0ae2fcd4f4b1f455306616a2a114d36a7",
+            "bytes": 10082
+          }
+        },
+        {
+          "window": "0003",
+          "seconds": 106.91170836146921,
+          "source": {
+            "path": "/data/WSH/medical-post-train-artifacts/runs/s4_smoke_vanilla_20260909T071222_ef95d2/windows/0003/commit.json",
+            "sha256": "914dafba869c17e5fa2bdb2e327ecb60c5d960c1778bceefa7e282afe716d50c",
+            "bytes": 12406
+          }
+        }
+      ],
+      "mean_window_seconds": 105.68215130385943,
+      "conditional_pilot_hours": 1.878793800957501,
+      "conditional_formal_hours": 18.347595712475595,
+      "generated_groups": 32,
+      "training_groups": 32,
+      "output_tokens": 32693,
+      "prompt_tokens": 4056,
+      "checkpoint_bytes": 1409053142
+    },
+    "dynamic": {
+      "run_id": "s4_smoke_dynamic_20260909T071807_adad34",
+      "window_phase_times": [
+        {
+          "window": "0000",
+          "seconds": 143.3850523228757,
+          "source": {
+            "path": "/data/WSH/medical-post-train-artifacts/runs/s4_smoke_dynamic_20260909T071807_adad34/windows/0000/commit.json",
+            "sha256": "900d3c94e92fe9584728c1cd1b36d84810ddebe4204ddec432be5101e7f9f942",
+            "bytes": 6211
+          }
+        },
+        {
+          "window": "0001",
+          "seconds": 137.47741920221597,
+          "source": {
+            "path": "/data/WSH/medical-post-train-artifacts/runs/s4_smoke_dynamic_20260909T071807_adad34/windows/0001/commit.json",
+            "sha256": "511bcbebcb9b7300e51e1d5f45767d70e6c3214033685b64d88a41d9ca7f4494",
+            "bytes": 9713
+          }
+        },
+        {
+          "window": "0002",
+          "seconds": 182.0469050751999,
+          "source": {
+            "path": "/data/WSH/medical-post-train-artifacts/runs/s4_smoke_dynamic_20260909T071807_adad34/windows/0002/commit.json",
+            "sha256": "8d0b6105fc4b2422f7944d6c735ba2f66e5a329297bc3413d505442b6df7d027",
+            "bytes": 13677
+          }
+        },
+        {
+          "window": "0003",
+          "seconds": 188.27814126992598,
+          "source": {
+            "path": "/data/WSH/medical-post-train-artifacts/runs/s4_smoke_dynamic_20260909T071807_adad34/windows/0003/commit.json",
+            "sha256": "5092e18089083a137fa033a3f99e191f6bad05785e787a82600bb13c33d3627c",
+            "bytes": 18362
+          }
+        }
+      ],
+      "mean_window_seconds": 162.7968794675544,
+      "conditional_pilot_hours": 2.894166746089856,
+      "conditional_formal_hours": 28.26334712978375,
+      "generated_groups": 80,
+      "training_groups": 32,
+      "output_tokens": 80039,
+      "prompt_tokens": 10536,
+      "checkpoint_bytes": 1409053143
+    }
+  },
+  "excluded": "Initialization, validation, deliberate pause and recovery; not GPU-kernel busy time",
+  "assumptions": "Four smoke windows only. Policy-dependent mixed acceptance and response length may change.",
+  "free_disk_bytes": 3606618636288,
+  "formal_budget_reduced": false,
+  "prior_failed_costs": [
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/s4_optimization_diagnostic_20260909T065945_66b040/failure_costs.json",
+      "sha256": "c62f1626a3efc863304b1640f7ca2a5aad7ea109eedd63daa22b1bf5cb73d4e5",
+      "bytes": 936
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/s4_smoke_vanilla_20260909T070935_4a09cb/failure_costs.json",
+      "sha256": "ca19d90d2efbdf4718abf8d263617623fb2f3a8e4aa8633388a95cf481962633",
+      "bytes": 468
+    }
+  ]
+}

@@ -12,7 +12,13 @@ examples for one epoch, with 100% coverage and all ten verifier gates passing.
 Stage 2 is **DONE**: 15k CMExam candidates, a 200-pair semantic diagnostic,
 50×4 smoke, and full 1,000×4 profiling with 80 complete qualitative reviews
 and all eight verifier gates passing. Measured train-sample accuracy is 51.775%,
-mixed groups 53.1%, and truncation 0%. No policy optimization is performed. Stage 3 is **DONE**:496 newly generated groups,256 accepted mixed and1 retained overflow, with1.9375× measured amplification and all nine verifier gates passing; Stage 4–6 remain **NOT_STARTED**.
+mixed groups 53.1%, and truncation 0%. Stage2 performed no policy optimization.
+Stage 3 is **DONE**:496 newly generated groups,256 accepted mixed and1 retained overflow,
+with1.9375× measured amplification and all nine verifier gates passing.
+Stage 4 is **SMOKE_PASS**: both32-group online GSPO smokes and real process
+resumes passed raw verification. The fresh512-group pilot pair is the next
+execution gate. Formal budgets remain0/5000 for each variant; Stage4 is incomplete.
+Stage 5–6 remain **NOT_STARTED**.
 No examination test scoring has run. Current stage status is recorded in
 [`project_state.json`](project_state.json).
 
@@ -25,6 +31,8 @@ No examination test scoring has run. Current stage status is recorded in
 - [Stage 3 report and interview evidence](docs/stage_reports/03_dynamic_sampling.md)
 - [Stage 3 verification receipt](experiments/stage3/verification-final.json)
 - [Stage 4 sampler readiness](experiments/stage3/readiness.json)
+- [Stage 4 current progress and commands](docs/implementation/STAGE4_PROGRESS.md)
+- [Stage 4 measured decisions and limitations](docs/implementation/STAGE4_DECISIONS.md)
 - [Stage 3 execution plan and lifecycle decisions](docs/implementation/STAGE3_PLAN.md)
 - Current refill progress: `python scripts/stage3_status.py`
 - [Fixed SFT initialization and hashes](experiments/stage1/initialization_manifest.json)

@@ -1,0 +1,15 @@
+{
+  "result": "PASS",
+  "exit_code": 0,
+  "command": [
+    "/data/WSH/post-train/.venv-train/bin/python",
+    "-c",
+    "import sys; sys.path.append('/data/WSH/post-train/.venv-analysis/lib/python3.12/site-packages'); import pytest; raise SystemExit(pytest.main(['tests','-q']))"
+  ],
+  "log": {
+    "path": "/data/WSH/post-train/experiments/stage4/tests-pilot-preflight.log",
+    "sha256": "ba00872d79ab6b7c746d6fa650dcfa938c7635ec87df0610b7d6284b0192b1f1",
+    "bytes": 181
+  },
+  "timestamp": "2026-09-09T07:45:58.767642+00:00"
+}

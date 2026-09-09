@@ -1,0 +1,14 @@
+{
+  "status": "FAILED",
+  "reason": "PosixPath in adapter orchestration metadata was not JSON serializable; zero optimizer steps",
+  "generated_groups": 8,
+  "output_tokens": 7665,
+  "optimizer_steps": 0,
+  "failures": [
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_smoke_vanilla_20260909T070935_4a09cb/attempt_001/failure.json",
+      "sha256": "aea218f7b0a72268685b3a86a231a1c139313f44579a6cd8518d4c1bd284178d",
+      "bytes": 651
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "result": "PASS",
+  "scope": "Stage4 predecessor handoff; does not rewrite historical FAIL receipts",
+  "timestamp": "2026-09-09T07:03:57.121157+00:00",
+  "fresh_raw_checks": [
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/prerequisite-stage1.json",
+      "sha256": "c8a30dd9d8837d6030cbd42c4f842e661bf8321823caca5628a60bcb91c356b9",
+      "bytes": 1403
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/prerequisite-stage2.json",
+      "sha256": "c298cc09fbe281576f54921edecba71415a03f5555f2f0297d04b90de13c15e4",
+      "bytes": 1076
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/prerequisite-stage3.json",
+      "sha256": "4b28f643f05693dc8256b770da6b9f2b151a2c6ba3c0e44e48735a6abb1cca62",
+      "bytes": 1249
+    }
+  ],
+  "stage_statuses": {
+    "1": "DONE",
+    "2": "DONE",
+    "3": "DONE",
+    "4": "NOT_STARTED",
+    "5": "NOT_STARTED",
+    "6": "NOT_STARTED"
+  },
+  "superseded_assertions": {
+    "1": "research_contract_and_stage_isolation",
+    "2": "prior_stages_and_unchanged_contract_isolation"
+  },
+  "reason": "Stage1/2 verifiers require all later stages NOT_STARTED, incompatible with verified Stage2/3 completion",
+  "scientific_raw_gates_all_pass": true,
+  "contract_and_base_and_adapter_rehashed": true
+}

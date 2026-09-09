@@ -1,0 +1,13 @@
+{
+  "stage": 4,
+  "result": "FAIL",
+  "scope": "FULL",
+  "timestamp": "2026-09-09T07:13:50.268960+00:00",
+  "errors": [
+    "vanilla: frozen formal pair and5000-group evidence MISSING",
+    "dynamic: frozen formal pair and5000-group evidence MISSING"
+  ],
+  "counts": {},
+  "READY_FOR_STAGE5": "NO",
+  "verifier_sha256": "fc639a58c0506e2005734a65a07c0ed8dfa343b5c8ada9e2221418fb0ac9910f"
+}

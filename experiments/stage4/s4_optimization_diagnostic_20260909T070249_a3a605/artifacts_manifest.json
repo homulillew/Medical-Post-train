@@ -1,0 +1,587 @@
+[
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/command.json",
+    "sha256": "e1a43057cb85278d145430e2bf16e1f188c5bdd0f68ff05cda245b63f1763189",
+    "bytes": 222
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/config.json",
+    "sha256": "6c8a9854ed0e5f0caca22451e5cf95b3b0115077fe0e95c1a0d71b8e597b9fa1",
+    "bytes": 3105
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/environment.json",
+    "sha256": "d0a14aa4b869c0f91dba5392f84cac93f5bf87f6208a39c461d93e72b0b984f9",
+    "bytes": 7848
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/heartbeat.json",
+    "sha256": "d1482e6922a7e14ab5cef334c89ce7b3edd9a20746101244f818f410a4c5c5e9",
+    "bytes": 72
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/launch.json",
+    "sha256": "d9099e4b6fd41fcd554b62c4c4b454e75a8b94120a7e7e04fcf017c9649bbb7e",
+    "bytes": 92
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/checkpoint/COMMITTED.json",
+    "sha256": "48dd8a9d3d9f4b9d0f3e0cbedeb8a81ef7c57b904f7bb10a9798c4a66cf6d9a3",
+    "bytes": 2645
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/checkpoint/adapter/README.md",
+    "sha256": "69f3aa1fb067ef986745d9470eced45cc83c7657395eb2c40755ace7fd476c57",
+    "bytes": 5344
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/checkpoint/adapter/adapter_config.json",
+    "sha256": "f29feb965a5e2544b482c7faa3d96a7f4099a88a8f808121374df9f0aa17e450",
+    "bytes": 1123
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/checkpoint/adapter/adapter_model.safetensors",
+    "sha256": "6edc5b8e0d504440d744a3e657f7e3cf8222953c82191fa07e06a69b49412e9b",
+    "bytes": 349243752
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/checkpoint/controller.json",
+    "sha256": "204bd898b92789d7d26d73252c64b8390a8203a4c6b4fb908614323284913388",
+    "bytes": 2864
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/checkpoint/native/extra_state_world_size_1_rank_0.pt",
+    "sha256": "f2dddbc41c076f2317e24426f98fef7f94b7a191f66dfd7f7aae29a89b3c7dff",
+    "bytes": 15141
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/checkpoint/native/fsdp_config.json",
+    "sha256": "a9f7e97dba5fe2553928a5bd7802ec2e301d1560aa4460753d881dc86d8c154f",
+    "bytes": 46
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/checkpoint/native/huggingface/chat_template.jinja",
+    "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+    "bytes": 4168
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/checkpoint/native/huggingface/config.json",
+    "sha256": "6595cb23e0dfd00b2ae82c1ac6f59451fe16f4bc1812780dc3cdc9e31a46ba08",
+    "bytes": 1628
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/checkpoint/native/huggingface/generation_config.json",
+    "sha256": "6b08ea8d092c7dd1a9de07d899271ba71ab2fe74375900c7a6400356e88752b2",
+    "bytes": 213
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/checkpoint/native/huggingface/tokenizer.json",
+    "sha256": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506",
+    "bytes": 11422650
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/checkpoint/native/huggingface/tokenizer_config.json",
+    "sha256": "d9bf1d78a80bad5eb65b83c2608910e3be00a9d3250c8153a5a393ad1257e1d6",
+    "bytes": 664
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/checkpoint/native/lora_train_meta.json",
+    "sha256": "349f62eff696826bc2adec7661a8559b44883e6d137cff5a31cd64adf6a9e8ab",
+    "bytes": 67
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/checkpoint/native/model_world_size_1_rank_0.pt",
+    "sha256": "b719b64a91af3ee504975e5390da946286a0ffc21f5449efe282aeac2779501f",
+    "bytes": 349425275
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/checkpoint/native/optim_world_size_1_rank_0.pt",
+    "sha256": "4f0d97e30464d9bdbd86ad1309c14225a521764667133ccbad34e49e1d5917a0",
+    "bytes": 698914428
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/checkpoint/rng.pt",
+    "sha256": "09a5ee38dbbb5754c0bcbbd44f0152e6a5baf8dfee4e72d5c5b3e98c6065f3ba",
+    "bytes": 14533
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/command.json",
+    "sha256": "6e6874c7480c74012f3052d597419fe546f0c8765b26e1f7a8add8ac9deed2c6",
+    "bytes": 357
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/config.json",
+    "sha256": "92f2b3607ebff9ff140f35b5e9222b6c86d81374e603a93371b01c565668a87a",
+    "bytes": 3105
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/exit.json",
+    "sha256": "b1c0cd8e51ed8e3344bac4f76cf67a3d41823a57f4809852090904741f78140f",
+    "bytes": 72
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/launch.json",
+    "sha256": "d21baed381015c41421ca81fbaed488adcbda571283d4ac1d21f2d252ba8b787",
+    "bytes": 72
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/result.json",
+    "sha256": "df4b233e73a2f52b32b263a3e0d40b7eb70abd8fecf3a12808c63cd7e90b2627",
+    "bytes": 3311
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/runtime/actual_native_configs.json",
+    "sha256": "c4535b5e9795828794e73884697a94cc9ec26da59ff878c3c3b27b9099a8445a",
+    "bytes": 11894
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/runtime/dist_init",
+    "sha256": "b0006642570382eb148937913f2c38c4ecf55deaf8545216155a8c7cd833c625",
+    "bytes": 176
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/runtime/loaded_identity.json",
+    "sha256": "4fedfece8a66728967a78f9996717ff24c0e34446c4dccfd6e125484e4c5afa4",
+    "bytes": 468
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/runtime/orchestration.json",
+    "sha256": "8b090d6491b31882430946c0518b8dac01123c8485908da6fce2eec4faed8865",
+    "bytes": 487
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/runtime/verl_composed.yaml",
+    "sha256": "20b834227f945befb5b76156559a87ac88dba1ffda4b4b16e01f5edb8648c653",
+    "bytes": 31725
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/stderr.log",
+    "sha256": "9e56a23f22a1b72c0ca87219094a509dc8a43eeb375b7b27193a66e309cb9fdd",
+    "bytes": 4454
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/stdout.log",
+    "sha256": "a998aa87462366a171d8ff973c32e604a5787bf57d8b1ee1a14f16b882818da3",
+    "bytes": 2085
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/update/events.jsonl",
+    "sha256": "bfddb7f96f83a8a994183c7f2bdcd368e12cfa9188d63cc60787f7cc0acaa7ad",
+    "bytes": 1522
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/update/mini_00.npz",
+    "sha256": "85bd37aceba78572a64e7283630cac73c4b5480060be27dd62dd85fad01671e0",
+    "bytes": 14636
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/update/mini_01.npz",
+    "sha256": "786b11755280d7a2457189cb6b9e74cedde126b205f0649bb7788c1ca3dd1768",
+    "bytes": 14461
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/update/old.npz",
+    "sha256": "9bb1e5df4d55ff53ddb86734b39d0ab8dce7f27bfb80732f4b1586832e03810d",
+    "bytes": 55582
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/update/old_frozen.json",
+    "sha256": "5977485d0b35569756dcd985f2fd75e1a8edf595f664989843a50393ad7e7e4b",
+    "bytes": 3391
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/update/parity.json",
+    "sha256": "4d029a66c664b34bf5f35267f67d910d16a3c76eace7c75f731bb96b2d62c516",
+    "bytes": 817
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-05/update/update.json",
+    "sha256": "e11e1aeed59d6f69e3dbe175cdde955e25525f9be1c1737cdb98565652d7a34d",
+    "bytes": 2619
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/checkpoint/COMMITTED.json",
+    "sha256": "da176aad9066a9b58e64c297971b81d118dbb184d2c82d4f8b17305e63410458",
+    "bytes": 2647
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/checkpoint/adapter/README.md",
+    "sha256": "69f3aa1fb067ef986745d9470eced45cc83c7657395eb2c40755ace7fd476c57",
+    "bytes": 5344
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/checkpoint/adapter/adapter_config.json",
+    "sha256": "e2a1f7924d24e2a6bda339d909aef2533da6a4530e3967500d08bf44d11eeecc",
+    "bytes": 1123
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/checkpoint/adapter/adapter_model.safetensors",
+    "sha256": "61fb4f24828528004a3a5e22b9394d9b68da77fc432e415d1703c7ab1b15747e",
+    "bytes": 349243752
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/checkpoint/controller.json",
+    "sha256": "2299488e1266e688faf81638e399b615e53e0200b4a6c2cfbe0c10a1e26c0d37",
+    "bytes": 2862
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/checkpoint/native/extra_state_world_size_1_rank_0.pt",
+    "sha256": "967af2491e34cf587f11b30f2011050a73cd63d9f91813ddb947fed234ddd7d5",
+    "bytes": 15141
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/checkpoint/native/fsdp_config.json",
+    "sha256": "a9f7e97dba5fe2553928a5bd7802ec2e301d1560aa4460753d881dc86d8c154f",
+    "bytes": 46
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/checkpoint/native/huggingface/chat_template.jinja",
+    "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+    "bytes": 4168
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/checkpoint/native/huggingface/config.json",
+    "sha256": "6595cb23e0dfd00b2ae82c1ac6f59451fe16f4bc1812780dc3cdc9e31a46ba08",
+    "bytes": 1628
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/checkpoint/native/huggingface/generation_config.json",
+    "sha256": "6b08ea8d092c7dd1a9de07d899271ba71ab2fe74375900c7a6400356e88752b2",
+    "bytes": 213
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/checkpoint/native/huggingface/tokenizer.json",
+    "sha256": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506",
+    "bytes": 11422650
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/checkpoint/native/huggingface/tokenizer_config.json",
+    "sha256": "d9bf1d78a80bad5eb65b83c2608910e3be00a9d3250c8153a5a393ad1257e1d6",
+    "bytes": 664
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/checkpoint/native/lora_train_meta.json",
+    "sha256": "349f62eff696826bc2adec7661a8559b44883e6d137cff5a31cd64adf6a9e8ab",
+    "bytes": 67
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/checkpoint/native/model_world_size_1_rank_0.pt",
+    "sha256": "1c54a3f74c069ca26cac85885f9b26dd7123e83dd870a5e747f9f3909a091f58",
+    "bytes": 349425275
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/checkpoint/native/optim_world_size_1_rank_0.pt",
+    "sha256": "bf171828d8a3c68cc75a2c22b5254e63a3db7d9ed85c97cb8fddc4c3d9bace92",
+    "bytes": 698914428
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/checkpoint/rng.pt",
+    "sha256": "09a5ee38dbbb5754c0bcbbd44f0152e6a5baf8dfee4e72d5c5b3e98c6065f3ba",
+    "bytes": 14533
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/command.json",
+    "sha256": "b01067bffceba50a63ff2b19c8c9c17b305520c350039b5d216a5faf71d8e190",
+    "bytes": 497
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/config.json",
+    "sha256": "6c8a9854ed0e5f0caca22451e5cf95b3b0115077fe0e95c1a0d71b8e597b9fa1",
+    "bytes": 3105
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/exit.json",
+    "sha256": "4f782c50814f1adf595091334827e6991921ad84eac6a2488c5d25e2358e0c6b",
+    "bytes": 72
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/launch.json",
+    "sha256": "302713b73f5e0a9b71cf677219801762ae4fe0f40f936a11353b90fa03793287",
+    "bytes": 72
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/result.json",
+    "sha256": "18368b7f0c52165f9b0d4af522df14baa986fd400192cbf5ffc066fcb69b6a47",
+    "bytes": 3309
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/runtime/actual_native_configs.json",
+    "sha256": "1723924b67698c1d34fcdc3409f95bb1afddf2e0c6b0ff96e51ba0fd02b5302c",
+    "bytes": 11894
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/runtime/dist_init",
+    "sha256": "58d319308c2bd09430819275781dd919974049ba9d78845c0c55a39e9389bed6",
+    "bytes": 176
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/runtime/loaded_identity.json",
+    "sha256": "a0ec0839052731583e56c9c6926bc7260dda60e7b811d8cfeea9ffc17efa9e6e",
+    "bytes": 468
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/runtime/orchestration.json",
+    "sha256": "8b090d6491b31882430946c0518b8dac01123c8485908da6fce2eec4faed8865",
+    "bytes": 487
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/runtime/verl_composed.yaml",
+    "sha256": "5e8ac31030bffd074e9cc65eeb9c4247831b1a65de67434ab5a009bc266761a3",
+    "bytes": 31725
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/stderr.log",
+    "sha256": "e7fda25c017c2315de65c8425284cbbb27c04744bc54870b7ea093da150355f6",
+    "bytes": 4456
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/stdout.log",
+    "sha256": "90ebb59b958aa335fe665727a37b1e1e4cfe55edf9697f124e176f37430c86de",
+    "bytes": 2082
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/update/events.jsonl",
+    "sha256": "b87846f656e1096b748debc8036d1b58707d41ef3ee31eb24bd7d1aec5154f82",
+    "bytes": 1519
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/update/mini_00.npz",
+    "sha256": "85bd37aceba78572a64e7283630cac73c4b5480060be27dd62dd85fad01671e0",
+    "bytes": 14636
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/update/mini_01.npz",
+    "sha256": "7fe41fe5f464abc3f711b46dc1f057a61461aee968f06649a9d5696466b00854",
+    "bytes": 14456
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/update/old.npz",
+    "sha256": "9bb1e5df4d55ff53ddb86734b39d0ab8dce7f27bfb80732f4b1586832e03810d",
+    "bytes": 55582
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/update/old_frozen.json",
+    "sha256": "77ef004802984aa185ed23ebe4f57fc1f592e18e5ab570edadc05d6ef751bfd4",
+    "bytes": 3391
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/update/parity.json",
+    "sha256": "4d029a66c664b34bf5f35267f67d910d16a3c76eace7c75f731bb96b2d62c516",
+    "bytes": 817
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_1e-06/update/update.json",
+    "sha256": "4e5d234883a8a0813e352f577c24fd27bd19d88486c703827f5c0b4140e00a75",
+    "bytes": 2617
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/checkpoint/COMMITTED.json",
+    "sha256": "a1a403e8b4cb8ae62bdec4c92ab93014c2cf9db612576fa18fa8be11804e522e",
+    "bytes": 2647
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/checkpoint/adapter/README.md",
+    "sha256": "69f3aa1fb067ef986745d9470eced45cc83c7657395eb2c40755ace7fd476c57",
+    "bytes": 5344
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/checkpoint/adapter/adapter_config.json",
+    "sha256": "3bbd2521e5cd4dcab97c666ce08c323fe574d3252b6116b922246486be0097e6",
+    "bytes": 1123
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/checkpoint/adapter/adapter_model.safetensors",
+    "sha256": "3aecb361a36b676b12813e3ab2fed76e08766ea43ce37d8a92afe2ddd3505f44",
+    "bytes": 349243752
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/checkpoint/controller.json",
+    "sha256": "7183e54402f850133ec387d6c48cb6dcfdb20d3f7378b21736bccb65122c7a06",
+    "bytes": 2863
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/checkpoint/native/extra_state_world_size_1_rank_0.pt",
+    "sha256": "f3c7356ac06fa4026a9b6c6d01e8f798cf81258129367b83bbcfdafa39fca36d",
+    "bytes": 15141
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/checkpoint/native/fsdp_config.json",
+    "sha256": "a9f7e97dba5fe2553928a5bd7802ec2e301d1560aa4460753d881dc86d8c154f",
+    "bytes": 46
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/checkpoint/native/huggingface/chat_template.jinja",
+    "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+    "bytes": 4168
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/checkpoint/native/huggingface/config.json",
+    "sha256": "6595cb23e0dfd00b2ae82c1ac6f59451fe16f4bc1812780dc3cdc9e31a46ba08",
+    "bytes": 1628
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/checkpoint/native/huggingface/generation_config.json",
+    "sha256": "6b08ea8d092c7dd1a9de07d899271ba71ab2fe74375900c7a6400356e88752b2",
+    "bytes": 213
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/checkpoint/native/huggingface/tokenizer.json",
+    "sha256": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506",
+    "bytes": 11422650
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/checkpoint/native/huggingface/tokenizer_config.json",
+    "sha256": "d9bf1d78a80bad5eb65b83c2608910e3be00a9d3250c8153a5a393ad1257e1d6",
+    "bytes": 664
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/checkpoint/native/lora_train_meta.json",
+    "sha256": "349f62eff696826bc2adec7661a8559b44883e6d137cff5a31cd64adf6a9e8ab",
+    "bytes": 67
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/checkpoint/native/model_world_size_1_rank_0.pt",
+    "sha256": "19f6f2334ae33122cf72d603012c875fc44e84d3214c86b4ac8f7be2a8682a0c",
+    "bytes": 349425275
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/checkpoint/native/optim_world_size_1_rank_0.pt",
+    "sha256": "4526ee1750500ab99a12ff3f2632be69732d29eb6b009fa2bf007638e35efdb6",
+    "bytes": 698914428
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/checkpoint/rng.pt",
+    "sha256": "09a5ee38dbbb5754c0bcbbd44f0152e6a5baf8dfee4e72d5c5b3e98c6065f3ba",
+    "bytes": 14533
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/command.json",
+    "sha256": "d89edab24842d2bd72ab251ac0b51bdb1d9cff7d547181df3c064f5432958ae9",
+    "bytes": 497
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/config.json",
+    "sha256": "eac5dd9f14fe930f7d9bfb9b356f67532d44836270edca8bbbd4226646cec171",
+    "bytes": 3105
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/exit.json",
+    "sha256": "ee4c59f3ebe4dd5e52cecdd3c0cedafc2316b2b27531a36cf865089d83643257",
+    "bytes": 72
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/launch.json",
+    "sha256": "1bff5799dec02f88f1edc6e265fe145f41d4b4e3c1a103d652a5d3e4dde0b0c6",
+    "bytes": 72
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/result.json",
+    "sha256": "1d777b1068ab006b734a37509069caaaed1993adda2eb3a0a44b14fcbf2026f6",
+    "bytes": 3310
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/runtime/actual_native_configs.json",
+    "sha256": "649cb246647cc7685fc344816be62edb01f5c0220d86e31b45d4327e41d6b8f5",
+    "bytes": 11894
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/runtime/dist_init",
+    "sha256": "fc1e4fa55051341f57bf8b723cfd2a198580b8c1c66bbc6b91aec1c553e6ebe9",
+    "bytes": 176
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/runtime/loaded_identity.json",
+    "sha256": "6e1aeeddd4d6242e66862a30d857abb2df67d8d481de402b50eb0debce40d656",
+    "bytes": 468
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/runtime/orchestration.json",
+    "sha256": "8b090d6491b31882430946c0518b8dac01123c8485908da6fce2eec4faed8865",
+    "bytes": 487
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/runtime/verl_composed.yaml",
+    "sha256": "2d60cf1242cb46d6558e53abae58f8c78583cb183c9573c466139fa0cf88c23c",
+    "bytes": 31725
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/stderr.log",
+    "sha256": "7611da2de26d6af92a9f42efc2254494d8dc65ec58285142b87f02c15aac928a",
+    "bytes": 4456
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/stdout.log",
+    "sha256": "05b3cfeedc412e281911560bc2db97602277aab3239ddfb37d5521abe59d87f1",
+    "bytes": 2084
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/update/events.jsonl",
+    "sha256": "b3525b9afa4984bd6ecda1019c54636a5f49d07cd71084cac1442d1214d6c767",
+    "bytes": 1521
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/update/mini_00.npz",
+    "sha256": "85bd37aceba78572a64e7283630cac73c4b5480060be27dd62dd85fad01671e0",
+    "bytes": 14636
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/update/mini_01.npz",
+    "sha256": "37cc97572140549e0e00f4d1016c8b9cf5a18dd5d2f56e7a8437c844a1fe6969",
+    "bytes": 14451
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/update/old.npz",
+    "sha256": "9bb1e5df4d55ff53ddb86734b39d0ab8dce7f27bfb80732f4b1586832e03810d",
+    "bytes": 55582
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/update/old_frozen.json",
+    "sha256": "838f4085dea5c7e999967ca769210babe36418e25d571fecfe2a4eba735c8cf4",
+    "bytes": 3391
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/update/parity.json",
+    "sha256": "4d029a66c664b34bf5f35267f67d910d16a3c76eace7c75f731bb96b2d62c516",
+    "bytes": 817
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/lr_3e-06/update/update.json",
+    "sha256": "8fbbc541b9798165b9d72c7e1107bdda3cce1180b959d2fd0935febfb3b93cc3",
+    "bytes": 2618
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/manifest.json",
+    "sha256": "92614abf9e7e5ef3ffe4d9f57fa5ad20ab7ce5622df0b87c555ce85832169f51",
+    "bytes": 15055
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/observations.md",
+    "sha256": "5d98b0e4bd7dde3f378eaccb7b5ad7c1f1c65850f7f905079fd8f779d1c2a024",
+    "bytes": 45
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/source.zip",
+    "sha256": "005cf40ace62dedcc5438a156a4263fe4b51a33cc712f971fe63835d6119c4dc",
+    "bytes": 222953
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/status.json",
+    "sha256": "6944e1f7ebf9f1070c3d072c321f6a7c6bc95bc0d33174e5cea052efbc380e0f",
+    "bytes": 85
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/stderr.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/stdout.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T070249_a3a605/summary.json",
+    "sha256": "d6be892789bc5b94659308ed9b4858b4f3a1cb25d8350169be05b932972af248",
+    "bytes": 9741
+  }
+]

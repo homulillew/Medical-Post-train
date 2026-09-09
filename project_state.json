@@ -77,8 +77,14 @@
       "interview_story": "docs/stage_reports/03_dynamic_sampling.md"
     },
     "4": {
-      "status": "NOT_STARTED",
-      "run_ids": [],
+      "status": "SMOKE_PASS",
+      "run_ids": [
+        "s4_optimization_diagnostic_20260909T065945_66b040",
+        "s4_optimization_diagnostic_20260909T070249_a3a605",
+        "s4_smoke_dynamic_20260909T071807_adad34",
+        "s4_smoke_vanilla_20260909T070935_4a09cb",
+        "s4_smoke_vanilla_20260909T071222_ef95d2"
+      ],
       "progress": {
         "vanilla_training_groups": 0,
         "dynamic_accepted_mixed_groups": 0

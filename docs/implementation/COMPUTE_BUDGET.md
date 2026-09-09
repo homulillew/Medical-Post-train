@@ -185,3 +185,22 @@ Stage2 request batches contained4 prompts; Stage3 uses16 with the same engine ma
 Dynamic formula: `5000 * 1.9375 * 4 * 240.98639112903226 / 245.48481766436305`. The measured amplification includes final-batch overflow. This is an initial generation-only projection: policy-dependent acceptance, actor/old-logprob, switches, validation and checkpoint costs remain Stage4 measurements. Both mandatory5000-group baselines are retained; no LR/mini-batch/clip decision is made here.
 
 All Stage3 costs are retained in [calibration JSON](../../experiments/stage3/compute_calibration.json): successful32-prompt smoke, failed32-prompt smoke with terminal metadata error, zero-generation failed startup, and formal. Across these runs, returned rollout output totals543,123 tokens; identity-control tokens are separate. Active-runtime checkpoints exclude the deliberate human pause and delayed failure cleanup. The failed worker overlaps the following startup attempt in wall time, so summing these process intervals would double-count GPU reservation; no exact all-stage GPU-kernel busy time is claimed. Raw timestamps, shutdown/termination observations, measured generation and active runtime remain available.
+
+## Stage4 online smoke calibration (2026-09-09)
+
+Both32-training-group smokes now include real native GSPO optimization,
+checkpointing and vLLM synchronization. Vanilla generated32693 output tokens;
+Dynamic generated80039, of which32148 belong to selected training groups.
+Dynamic used80 generated groups for32 accepted mixed, amplification2.5.
+
+Measured phase time averages105.682s/window Vanilla and162.797s/window Dynamic.
+At64 windows these imply1.879h/2.894h pilots; at625 windows18.348h/28.263h
+formals. These conditional forecasts exclude validation, initialization,
+deliberate pauses and recovery; four smoke windows do not fix future acceptance
+or response length. Raw phase sources and earlier failed-run cost links are in
+`experiments/stage4/compute_smoke_calibration.json`. No budget is reduced.
+
+The complete native+portable LoRA/Adam recovery point measures1,409,053,142bytes
+(1.41GB,1.31GiB) per window. Pilot preflight reserves all128 pilot and1250
+formal checkpoints with10% overhead plus100GiB free-space reserve. Older
+estimates and failed evidence remain intact; no prior checkpoint is deleted.

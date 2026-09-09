@@ -1,0 +1,14 @@
+{
+  "status": "FAILED",
+  "optimizer_steps": 0,
+  "generated_groups": 8,
+  "completed_trajectories": 32,
+  "output_tokens": 7436,
+  "generation_seconds": 34.40029041003436,
+  "error": {
+    "error": "AssertionError('Actor diagnostic failed: /data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T065945_66b040/lr_1e-05')",
+    "traceback": "Traceback (most recent call last):\n  File \"/data/WSH/post-train/scripts/run_stage4.py\", line 95, in worker\n    diagnostic(out)\n  File \"/data/WSH/post-train/scripts/run_stage4.py\", line 57, in diagnostic\n    assert code == 0, f'Actor diagnostic failed: {directory}'\n           ^^^^^^^^^\nAssertionError: Actor diagnostic failed: /data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T065945_66b040/lr_1e-05\n",
+    "timestamp": "2026-09-09T07:01:28.771553+00:00"
+  },
+  "reused_by": "s4_optimization_diagnostic_20260909T070249_a3a605"
+}

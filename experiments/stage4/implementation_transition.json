@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-09-09T07:20:08.497211+00:00",
+  "before": "NOT_STARTED",
+  "after": "IMPLEMENTED",
+  "scope": "Stage4 native actor and online controller implemented; smoke execution in progress; full verifier currently fails closed",
+  "formal_vanilla_groups": 0,
+  "formal_dynamic_groups": 0,
+  "stage5_6": "NOT_STARTED"
+}

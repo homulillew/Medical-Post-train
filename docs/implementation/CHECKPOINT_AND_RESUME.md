@@ -92,3 +92,11 @@ append-only generation WAL独立于训练checkpoint。请求开始先写attempt_
 `training/lora.py` 已完成真实Qwen3-8B/PEFT的step3 checkpoint与新进程step4 continuation；adapter参数digest、Adam state、scheduler、Python/NumPy/CPU/CUDA RNG均保存/恢复，对照参数和logits误差0。恢复CLI要求父run完成且checkpoint为该run已hash的可信本地artifact。文件先完整写入，再由run的checkpoint refs和artifact manifest发布；没有把一个存在但未完成的文件当成可恢复证据。
 
 launcher使用start_new_session、stdout/stderr、PID、5秒heartbeat和有限超时，故不依赖SSH/Codex进程存活。此MVP不处理主机重启，也不实现完整formal数据cursor、systemd reconciliation、FSDP分布式状态或多点事务。Stage4前仍须补齐本文件原有正式恢复合同。Stage0受控resume不能替代后续随机中断演练。
+
+## Stage4 smoke实测与当前边界（2026-09-09）
+
+Vanilla和Dynamic各完成32训练groups、4windows、8optimizer steps，均在2windows后真实SIGTERM，再用新PID恢复到第4window。每次native FSDP2 actor恢复校验LoRA digest、Adam state digest/step、scheduler及显式Python/NumPy/CPU/CUDA RNG；controller/stream/生成与训练计数连续。Vanilla另已完成最终native checkpoint新进程重载与558个response-token logprob检查，Adam保持step8。
+
+恢复证据见`experiments/stage4/{vanilla,dynamic}_smoke_verification.json`及各run的`physical_resume_receipt.json`。每window保存完整native/portable LoRA、Adam、scheduler、RNG、controller metadata和COMMITTED文件哈希，再经过vLLM新adapter ID正向sync probe才提交训练计数。launcher脱离会话、10秒heartbeat、GPU flock与重复owner防护已实现。不能把这些边界检查说成已经完成上文三种不同事务时点的真实故障注入；该项仍是formal前待验收工作。
+
+新增`run_stage4.py recover`在确认owner退出/GPU空闲后归档未提交actor工件，保留原raw并恢复相同run；完整actor但未sync的checkpoint可复用。三项CPU恢复保护测试通过，但不替代GPU故障注入。未返回的生成/validation请求若缺raw，成本仍未知，明确拒绝静默补0重试。
