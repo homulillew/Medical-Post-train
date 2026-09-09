@@ -25,7 +25,9 @@ def verify():
         try:fn();gates[name]=True
         except Exception as error:gates[name]=False;errors.append(dict(gate=name,error=repr(error)))
     def isolation():
-        state=read('project_state.json');assert state['stage0']['status']=='VERIFIED' and state['stages']['1']['status']=='DONE'
+        import jsonschema
+        state=read('project_state.json');jsonschema.validate(state,read('schemas/project_state.schema.json'))
+        assert state['stage0']['status']=='VERIFIED' and state['stages']['1']['status']=='DONE'
         for k in ('3','4','5','6'):
             assert state['stages'][k]['status']=='NOT_STARTED' and not state['stages'][k]['run_ids']
             assert all(v==0 or v==[] for v in state['stages'][k]['progress'].values())

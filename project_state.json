@@ -47,8 +47,7 @@
       },
       "verification_receipt": null,
       "stage_report": "docs/stage_reports/02_reward_rollout.md",
-      "interview_story": "docs/stage_reports/02_reward_rollout.md",
-      "progress_observed_at": "2026-09-09T04:50:29.322779+00:00"
+      "interview_story": "docs/stage_reports/02_reward_rollout.md"
     },
     "3": {
       "status": "NOT_STARTED",
