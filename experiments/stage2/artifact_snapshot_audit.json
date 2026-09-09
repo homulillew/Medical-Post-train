@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-09-09T04:50:29.846306+00:00",
+  "final_authority": "final_artifacts.json",
+  "differences": [
+    {
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "earlier": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/supervisor/heartbeat.json",
+        "sha256": "55656e6f80f5a9e927fdf350789799d934106e728afc711f579fa98cc34dd66a",
+        "bytes": 102
+      },
+      "sealed": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/supervisor/heartbeat.json",
+        "sha256": "c26813a5a14aa703ae8183cfcf45480199aab49a3331397208358b92e2f9d41d",
+        "bytes": 99
+      },
+      "reason": "Completion snapshot preceded monitor shutdown or log flush; original snapshot retained"
+    },
+    {
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "earlier": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/supervisor.stdout.log",
+        "sha256": "a7854395de6c330fa93622b53cfa444ad682be0f796ead611e18ec6a38f09ada",
+        "bytes": 207
+      },
+      "sealed": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/supervisor.stdout.log",
+        "sha256": "73a3181f758abd64859a3e928644529494b9ef34afb7b5c91ea3aed34d84c1a6",
+        "bytes": 272
+      },
+      "reason": "Completion snapshot preceded monitor shutdown or log flush; original snapshot retained"
+    }
+  ],
+  "note": "Original worker-completion manifests remain historical snapshots. Final seal also covers later manual packets and supervisor completion."
+}

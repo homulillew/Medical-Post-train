@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-09-09T04:49:01.273119+00:00",
+  "run_id": "s2_smoke_20260909T024936_746dbe",
+  "exit_code": 2,
+  "stderr": "usage: run_stage2.py [-h] [--run RUN] [--action ACTION] [--attempt ATTEMPT]\n                     [--config CONFIG] [--mode {smoke,formal,length}]\n                     {data,semantic,rollout,score,worker,resume}\nrun_stage2.py: error: score requires a completed GENERATED run; preserve existing results and investigate failed attempts before recovery\n",
+  "all_existing_artifacts_unchanged": true,
+  "checked_files": 87,
+  "script": {
+    "path": "/data/WSH/post-train/scripts/run_stage2.py",
+    "sha256": "ac32bc3ba0441a5507a14e095583b5e4d2f6be699904c81b0a7be51eaed5d282",
+    "bytes": 3435
+  },
+  "scope": "Post-formal launcher guard; no generation/reward changes and no worker launched"
+}

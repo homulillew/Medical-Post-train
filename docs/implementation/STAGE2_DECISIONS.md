@@ -10,6 +10,8 @@ Choose pool by `sha256('42:pool:'+ID)` after deterministic cluster representativ
 
 Initial semantic diagnostic `s2_semantic_20260909T024252_815f01` FAILED before scores: Transformers5.5.3 BertTokenizer lacks legacy `build_inputs_with_special_tokens`. Full traceback/config/pairs/source snapshot retained. Replacement run `s2_semantic_20260909T024652_cb6286` uses native tokenizers Encoding truncation with overflow chunks and backend post_process to add native special tokens; asserts concatenated content IDs equal originals exactly. This is chunking, not discarding overflow. Short-text vectors agree with SentenceTransformer.encode to max error 2.98e-8 for both models.
 
+<a id="d-022"></a>
+
 ## D-022 — BGE-M3 as limited gated semantic alignment
 
 2026-09-09; ACCEPTED before smoke and formal; contract change NO. Decision based on the 200 train-only/synthetic controlled pairs in `s2_semantic_20260909T024652_cb6286`, never on test or formal profiling results. Compared fixed MedEmbed-small revision40a5850d046cfdb56154e332b4d7099b63e8d50e and BGE-M3 revision5617a9f61b028005a4858fdac845db406aefb181.
@@ -39,3 +41,20 @@ Strict format173/200 (86.5%), despite raw answer-tag closure100%. Rejections:21 
 Freeze same SFT policy, reward/BGE/parser, request_batch_prompts4, G4, temperature0.6/top_p1/top_k-1/cap1024 and same engine settings for independent formal1000 prompts. Sampling is not filtered by previous successes/mixed groups. Actual smoke generation47252 outputtokens/254.635s=185.568tokens/s; formal prior estimate now~1.415h at the same mean and throughput, plus startup/scoring. This is a forecast, not a reduced budget. Prompt-token accounting records one input length per parent G4 request and also four logical trajectory input lengths; the legacy field name `generated_prompt_tokens_shared_prefill` denotes the former accounting convention and does not measure kernel prefill work or claim cache reuse (prefix caching is off).
 
 Installed vLLM parallel_sampling.py confirms each seeded n4 child uses seed+member_index. Thus identical text is retained with distinct trajectory lineage, while duplicate IDs are rejected. Record the source hash in runtime audit. Future Dynamic cost is estimated from acc contrast, including unparseable-as-incorrect outcomes under this frozen reward, not independently adjudicated medical uncertainty.
+
+## O-023 — Early immutable formal cases, no configuration changes
+
+Formal run `s2_formal_20260909T025736_f607d9` is still running. Read the first three completed groups in each0/1/2/3/4 correctness bucket (60 complete trajectories) from immutable raw group files. The deterministic category-prefix selection cannot change when later groups append; qualitative worklog retains exact IDs and output SHA. These reads do not select formal prompts or change parser/reward/sampling. Aggregate stage claims wait for all4000.
+
+Observed examples: train30338 member2 contains the explicit date-arithmetic statement “4月18日加14天为4月30日”; direct calendar addition givesMay2. Its nearest-option reasoning also selectsMay6 as closest toMay3 despiteMay2/4 alternatives. train19412 member2 chooses correctE after explicitly denying the same host-weight increase described byE; source explanation is missing. train31425 allfour choose correctD, while descriptions of urine specific gravity/pressure differ from the source reference. These are textual/arithmetic observations, not clinical adjudication. Correctness gating does not detect bad reasoning when the final option is correct.
+
+The prompt at train27961 literally says “如图1（暂无图）”; all responses only receive text, yet some discuss hypothetical imaging findings. The source reference includes a described radiographic sign. Missing-image prompts were not excluded by the pre-frozen schema/lexical rules; preserve them and report their incidence as a data limitation. No image, answer or reference was supplied to the actor, and no post-hoc removal changes the pool or profiling budget. This is an input-completeness risk, not evidence of visual reasoning capability.
+
+
+## O-024 — Full-run evidence and source placeholder
+
+Formal 1000×4 completed and scored without optimizer updates. 531 mixed groups include 153 whose contrast comes only from unparseable members; 378 contain parsed wrong answers. All 80 selected full trajectories were qualitatively reviewed by the execution agent, not clinically adjudicated.
+
+Four of 15k source references exactly equal `请等待更新`; one formal prompt (four responses) has this placeholder. Its frozen semantic scores remain unchanged and are reported as source-quality artifacts, not explanation-quality rankings. Future masking requires an explicit shared reward version; no retrospective rescore is performed. See `experiments/stage2/reference_placeholder_audit.json`.
+
+After formal scoring finished, the launcher was guarded against duplicate scoring of completed runs. A real replay attempt on the completed smoke was rejected before worker creation, with every existing artifact hash unchanged. This changes launcher validation only; all six frozen execution files and the reward/config remain unchanged. Receipt: `experiments/stage2/completed_run_replay_guard.json`.

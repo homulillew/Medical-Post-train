@@ -17,5 +17,30 @@
       "sha256": "b0336a059e8002e1acf0938853a3c909970b8ea9875bb19af9de1e05b1c0efd2",
       "bytes": 11720
     }
+  },
+  {
+    "status": "FULL_RUNNING",
+    "timestamp": "2026-09-09T02:57:36.818141+00:00",
+    "run_id": "s2_formal_20260909T025736_f607d9",
+    "manifest": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/manifest.json",
+      "sha256": "3ddeec5fa054072a35d59ceee610ca1ffca22a2910c2c32257b0f44a8f3728d4",
+      "bytes": 11598
+    }
+  },
+  {
+    "status": "FULL_PASS",
+    "timestamp": "2026-09-09T04:50:29.323298+00:00",
+    "run_id": "s2_formal_20260909T025736_f607d9",
+    "receipt": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/summary.json",
+      "sha256": "9734b65cce586f17378ebd5d3e33ee4e2e04b767562db588cde75a9fec5828a0",
+      "bytes": 80214
+    },
+    "manual_review": {
+      "path": "/data/WSH/post-train/experiments/stage2/manual_review.json",
+      "sha256": "8fc5667a44f2a9d2bda799c54320bea1b8dfe570dbdd0031cb28f6a98821d1f7",
+      "bytes": 50401
+    }
   }
 ]

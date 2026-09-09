@@ -9,7 +9,9 @@ and vLLM adapter/sleep evidence. The accepted rollout configuration explicitly
 uses native sampling and batch invariance after default LoRA numerical failures.
 Stage 1 is **DONE**: Qwen3-8B BF16 + r32/alpha64 LoRA trained on all 20,000 unique
 examples for one epoch, with 100% coverage and all ten verifier gates passing.
-Stage 2–6 remain **NOT_STARTED**.
+Stage 2 is **FULL_PASS**, pending final verification: the 15k CMExam pool,
+200-pair semantic diagnostic, independent 50×4 smoke, and complete 1,000×4
+formal rollout with scoring are retained. No policy optimization is performed. Stage 3–6 remain **NOT_STARTED**.
 No examination test scoring has run. Current stage status is recorded in
 [`project_state.json`](project_state.json).
 
@@ -23,8 +25,9 @@ No examination test scoring has run. Current stage status is recorded in
 - [Measured and conditional compute budget](docs/implementation/COMPUTE_BUDGET.md)
 
 The Stage 0 validator applies to its historical stage-isolation checkpoint;
-its archived PASS receipt is retained. Use the Stage 1 verifier below for current
-SFT evidence. Bulk models/checkpoints/raw responses are outside Git;
+its archived PASS receipt is retained. Stage 1's archived PASS also retains its
+historical isolation boundary. The Stage 2 verifier checks current evidence and
+requires the full profiling budget before passing. Bulk models/checkpoints/raw responses are outside Git;
 their manifests retain exact paths, sizes and hashes. A clone alone does not
 restore those local artifacts.
 
@@ -109,7 +112,9 @@ and generated-answer disagreements remain documented in the report.
 Current progress is authoritative in
 [`project_state.json`](project_state.json), with explicit runs in
 [`experiments/stage1/selected_runs.json`](experiments/stage1/selected_runs.json).
-Stage 2–6 have not started. Historical planning/Stage 0 validators intentionally check their original stage-isolation boundaries; their archived receipts are preserved.
+Stage 2 full profiling and scoring have completed; selected runs are in
+[`experiments/stage2/selected_runs.json`](experiments/stage2/selected_runs.json).
+Stage 3–6 have not started. Historical planning/Stage 0/Stage 1 validators intentionally check their original stage-isolation boundaries; their archived receipts are preserved.
 
 Use the independent training environment and real Stage 1 entry points:
 

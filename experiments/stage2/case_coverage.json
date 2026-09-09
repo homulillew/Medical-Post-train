@@ -1,0 +1,1636 @@
+{
+  "run_id": "s2_formal_20260909T025736_f607d9",
+  "categories": {
+    "all_wrong": {
+      "status": "OBSERVED",
+      "case_ids": [
+        "S2-ALL-WRONG-001",
+        "S2-ALL-WRONG-002",
+        "S2-ALL-WRONG-003"
+      ]
+    },
+    "one_of_four": {
+      "status": "OBSERVED",
+      "case_ids": [
+        "S2-ONE-OF-FOUR-001",
+        "S2-ONE-OF-FOUR-002",
+        "S2-ONE-OF-FOUR-003"
+      ]
+    },
+    "two_of_four": {
+      "status": "OBSERVED",
+      "case_ids": [
+        "S2-TWO-OF-FOUR-001",
+        "S2-TWO-OF-FOUR-002",
+        "S2-TWO-OF-FOUR-003"
+      ]
+    },
+    "three_of_four": {
+      "status": "OBSERVED",
+      "case_ids": [
+        "S2-THREE-OF-FOUR-001",
+        "S2-THREE-OF-FOUR-002",
+        "S2-THREE-OF-FOUR-003"
+      ]
+    },
+    "all_correct": {
+      "status": "OBSERVED",
+      "case_ids": [
+        "S2-ALL-CORRECT-001",
+        "S2-ALL-CORRECT-002",
+        "S2-ALL-CORRECT-003"
+      ]
+    },
+    "high_semantic_wrong": {
+      "status": "OBSERVED",
+      "case_ids": [
+        "S2-HIGH-SEMANTIC-WRONG-001",
+        "S2-HIGH-SEMANTIC-WRONG-002",
+        "S2-HIGH-SEMANTIC-WRONG-003"
+      ]
+    },
+    "highest_semantic_wrong_relative": {
+      "status": "OBSERVED",
+      "case_ids": [
+        "S2-HIGHEST-SEMANTIC-WRONG-RELATIVE-001",
+        "S2-HIGHEST-SEMANTIC-WRONG-RELATIVE-002",
+        "S2-HIGHEST-SEMANTIC-WRONG-RELATIVE-003"
+      ]
+    },
+    "correct_low_semantic": {
+      "status": "OBSERVED",
+      "case_ids": [
+        "S2-CORRECT-LOW-SEMANTIC-001",
+        "S2-CORRECT-LOW-SEMANTIC-002",
+        "S2-CORRECT-LOW-SEMANTIC-003"
+      ]
+    },
+    "correct_low_semantic_nonempty_reference": {
+      "status": "OBSERVED",
+      "case_ids": [
+        "S2-CORRECT-LOW-SEMANTIC-NONEMPTY-REFERENCE-001",
+        "S2-CORRECT-LOW-SEMANTIC-NONEMPTY-REFERENCE-002",
+        "S2-CORRECT-LOW-SEMANTIC-NONEMPTY-REFERENCE-003"
+      ]
+    },
+    "parser_ambiguous": {
+      "status": "OBSERVED",
+      "case_ids": [
+        "S2-PARSER-AMBIGUOUS-001",
+        "S2-PARSER-AMBIGUOUS-002",
+        "S2-PARSER-AMBIGUOUS-003"
+      ]
+    },
+    "fallback_correct": {
+      "status": "NOT_OBSERVED",
+      "case_ids": []
+    },
+    "format_failure": {
+      "status": "OBSERVED",
+      "case_ids": [
+        "S2-FORMAT-FAILURE-001",
+        "S2-FORMAT-FAILURE-002",
+        "S2-FORMAT-FAILURE-003"
+      ]
+    },
+    "truncation": {
+      "status": "NOT_OBSERVED",
+      "case_ids": []
+    },
+    "long_reasoning": {
+      "status": "OBSERVED",
+      "case_ids": [
+        "S2-LONG-REASONING-001",
+        "S2-LONG-REASONING-002",
+        "S2-LONG-REASONING-003"
+      ]
+    },
+    "short_reasoning": {
+      "status": "OBSERVED",
+      "case_ids": [
+        "S2-SHORT-REASONING-001",
+        "S2-SHORT-REASONING-002",
+        "S2-SHORT-REASONING-003"
+      ]
+    },
+    "multi_select": {
+      "status": "OBSERVED",
+      "case_ids": [
+        "S2-MULTI-SELECT-001",
+        "S2-MULTI-SELECT-002",
+        "S2-MULTI-SELECT-003"
+      ]
+    },
+    "format_gaming_candidate": {
+      "status": "OBSERVED",
+      "case_ids": [
+        "S2-FORMAT-GAMING-CANDIDATE-001",
+        "S2-FORMAT-GAMING-CANDIDATE-002",
+        "S2-FORMAT-GAMING-CANDIDATE-003"
+      ]
+    },
+    "correct_reasoning_numeric_triage": {
+      "status": "OBSERVED",
+      "case_ids": [
+        "S2-CORRECT-REASONING-NUMERIC-TRIAGE-001",
+        "S2-CORRECT-REASONING-NUMERIC-TRIAGE-002",
+        "S2-CORRECT-REASONING-NUMERIC-TRIAGE-003"
+      ]
+    }
+  },
+  "cases": [
+    {
+      "case_id": "S2-ALL-WRONG-001",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "all_wrong",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13809",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13809",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13809:0",
+      "prompt": "治疗心肌梗死气虚血瘀证，应首选",
+      "ground_truth": "A",
+      "parsed_answer": "B",
+      "raw_output_excerpt": "<think>\n好，让我想想心肌梗死气虚血瘀证。心肌梗死通常和气血的不畅有关，而气虚血瘀则是其中一种表现。气虚意味着身体缺乏能量，而血瘀则表示血液流动不畅，好像有什么东西卡住了。\n\n现在，我得看看有哪些中药方剂适合这种情况。补阳还五汤好像主要是用来治疗中风后遗症，对心肌梗死可能不太对口。再看看血府逐瘀汤，这个方子常常用来活血化瘀，对气血不畅的症状可能有帮助。\n\n左归丸更多是针对肾阴虚的，跟这个气虚血瘀的情况好像不太搭。参附汤合生脉散，嗯，参附汤是温阳救逆的，生脉散则是补气养阴，虽然能补气，但好像主要在气阴两虚的时候用。\n\n还有独参汤合桃仁红花煎，这个组合听起来是补气活血的。但独参汤主要是用来救急的，比如大出血，而桃仁红花煎主要是活血化瘀，可能不是最符合气虚血瘀的情况。\n\n所以，综合来看，血府逐瘀汤似乎更适合心肌梗死的气虚血瘀证，因为它能更好地活血化瘀，改善气血循环。嗯，我觉得这个选择是合理的，应该选B。这样分析下来，B选项应该是最适合的。\n</think>\n\n<answer>B</answer>",
+      "raw_output_sha256": "8b740e9fb9b51ed0056b346a0354883733889f56f6ac5f97835cf1574051b711",
+      "reward_components": {
+        "acc": 0,
+        "semantic": 0.9075206518173218,
+        "semantic_contribution": 0.0,
+        "format": 1,
+        "total_reward": 0.05
+      },
+      "why_interesting": "Deterministic representative of all_wrong; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=0, semantic=0.907521, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-ALL-WRONG-002",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "all_wrong",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40788",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40788",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40788:0",
+      "prompt": "需2～10℃冷处保存，并避免冻结的药品",
+      "ground_truth": "A",
+      "parsed_answer": "E",
+      "raw_output_excerpt": "<think>...\nOkay，我们来看看这些药品应该放在哪里保存。题目说要放在2到10摄氏度的冷处，而且要避免冻结。首先，胰岛素注射剂，我记得这种东西通常需要冷藏，所以它应该符合这个条件。脂肪乳呢，我记得也是需要冷藏的，所以它应该也没问题。利福平片和胰酶片好像不需要冷藏，它们应该可以在室温保存。哦，还有巴曲酶注射剂，它需要冷藏。所以，我得再仔细想想，看哪些药品符合这个要求。\n\n嗯，胰岛素注射剂和脂肪乳都需要冷藏，而巴曲酶注射剂也需要，所以它们都是符合的。不过，我想再确认一下，胰酶片，我好像记得它不需要冷藏，而是常温保存。利福平片也是一样，不需要冷藏。\n\n所以，符合2到10摄氏度冷藏条件的应该是胰岛素注射剂、脂肪乳和巴曲酶注射剂。可是，题目里说要避免冻结，所以我们要确保它们不会在冷藏中结冰。\n\n再仔细想想，胰岛素注射剂和脂肪乳通常都是在冷藏条件下保存，而巴曲酶注射剂也是一样。嗯，看来这些药品都应该是在冷藏条件下保存的，但巴曲酶注射剂似乎更特别，因为它需要冷藏但又特别强调避免冻结。\n\n经过反复考虑，我意识到巴曲酶注射剂在某些情况下可能更严格地需要避免冻结，因此它更符合题目要求。而胰岛素注射剂和脂肪乳虽然也需要冷藏，但题目更可能是指巴曲酶注射剂。\n\n最后，我觉得答案应该是巴曲酶注射剂，因为它特别强调了避免冻结。\n</think>\n\n<answer>E</answer>",
+      "raw_output_sha256": "762d578efd56bc7ec9b958bb48fa03eef0179c1a431c113f61ca4c36d065a55a",
+      "reward_components": {
+        "acc": 0,
+        "semantic": 0.887062668800354,
+        "semantic_contribution": 0.0,
+        "format": 1,
+        "total_reward": 0.05
+      },
+      "why_interesting": "Deterministic representative of all_wrong; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=0, semantic=0.887063, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-ALL-WRONG-003",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "all_wrong",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6081",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6081",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6081:0",
+      "prompt": "下列哪项不属于口腔健康促进的任务",
+      "ground_truth": "B",
+      "parsed_answer": "C",
+      "raw_output_excerpt": "<think>...\n嗯，口腔健康促进的任务是什么呢？让我想想，通常应该包括制定政策、协调行动、提高公众认知和预防危险因素。制定政策，比如制定一些关于口腔健康的有效政策，确保相关部门有承诺，这当然是促进口腔健康的重要任务。然后是确立目标，设定明确的目标，确保有方向性地去促进口腔健康。还有就是协调各方，比如政府、社会团体和个人，这样可以形成合力。提高公众的认知，让他们意识到口腔健康的重要性，也是促进的一部分。然后是预防危险因素，通过政策来减少那些对口腔健康有负面影响的因素。\n\n现在看看这些选项，A选项是制定有效的政策，这肯定属于口腔健康促进的任务。B选项是确立目标，这在任何健康促进中都是基础，所以也属于任务。C选项提到协调各方行动，这也是促进的一部分，因为需要多方合作才能有效实施政策和行动。D选项是提高公众意识，这显然是口腔健康促进的一部分。E选项是制定危险因素预防政策，这和制定政策一样，是促进任务的一部分。\n\n所以，C选项似乎和我理解的口腔健康促进任务不完全吻合。实际上，协调各方行动更多是政策执行或实施过程的一部分，而不是口腔健康促进任务的直接内容。因此，我认为C选项不属于口腔健康促进的任务。嗯，看来我的结论是正确的。\n</think>\n\n<answer>C</answer>",
+      "raw_output_sha256": "c694e787686bc96300f8a4a8341755572c2b7d0af13382175f560119eabf3b25",
+      "reward_components": {
+        "acc": 0,
+        "semantic": 0.856547474861145,
+        "semantic_contribution": 0.0,
+        "format": 1,
+        "total_reward": 0.05
+      },
+      "why_interesting": "Deterministic representative of all_wrong; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=0, semantic=0.856547, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-ONE-OF-FOUR-001",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "one_of_four",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41049",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41049",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41049:0",
+      "prompt": "不宜选择葡萄糖注射液作为溶剂的药物是",
+      "ground_truth": "A",
+      "parsed_answer": "D",
+      "raw_output_excerpt": "<think>\n嗯，看这个问题，我们需要找出哪种药物不适合用葡萄糖注射液作为溶剂。葡萄糖注射液通常是酸性的，对药物的稳定性有影响，所以我们需要仔细分析。\n\n首先想到的是青霉素，通常情况下青霉素可以用葡萄糖注射液配制，这在临床中很常见，所以可以排除A选项。\n\n然后是红霉素，红霉素在酸性条件下不稳定，葡萄糖注射液的酸性可能会影响它的稳定性，记得以前好像看到过这样的信息，所以B选项有可能。\n\n再来看磷霉素，这个药物好像对溶剂的要求不是很严格，不需要特别的溶剂，所以C选项似乎不太可能。\n\n接下来是环丙沙星，环丙沙星在酸性条件下会分解，所以用葡萄糖注射液会不太好，这让我觉得D选项是不适合的。\n\n最后是甲硝唑，甲硝唑在酸性条件下也是不稳定，所以葡萄糖注射液可能也不适合用，所以E选项也可能是个选项。\n\n经过这些分析，我觉得红霉素、环丙沙星和甲硝唑都不适合用葡萄糖注射液，也就是说B、D、E都是可能的。但是，在这种情况下，如果只能选一个最不合适的话，可能还是环丙沙星更加不合适，因为它的分解反应在酸性条件下特别明显。\n\n所以，经过仔细考虑，选择D选项环丙沙星作为不适合用葡萄糖注射液的药物会更准确。\n</think>\n\n<answer>D</answer>",
+      "raw_output_sha256": "2c3c567f2ecec52bd6097a1e4f010756a1e5dd892b21ea9fa0dd1a7b1efc41ee",
+      "reward_components": {
+        "acc": 0,
+        "semantic": 0.8225661516189575,
+        "semantic_contribution": 0.0,
+        "format": 1,
+        "total_reward": 0.05
+      },
+      "why_interesting": "Deterministic representative of one_of_four; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=0, semantic=0.822566, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-ONE-OF-FOUR-002",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "one_of_four",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49552",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49552",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49552:0",
+      "prompt": "单室模型单剂量静脉滴注给药，血药浓度公式为",
+      "ground_truth": "A",
+      "parsed_answer": "C",
+      "raw_output_excerpt": "<think>...\n嗯，单室模型单剂量静脉滴注给药的血药浓度公式需要仔细分析。首先，单室模型通常是指药物在体内分布均匀的一个简单模型。单剂量静脉滴注给药意味着药物是在一段时间内以恒定速率滴入体内，而不是一次全部给药。\n\n让我们看看选项。选项A的公式是C=K₀/KV*(1-e^{-kt})，这看起来像是描述药物在一定时间内累积的浓度变化，但似乎没有完全考虑滴注过程中的动态平衡。选项B的公式是C=C₀e^{-kt}，这更像是单次静脉注射的降解过程，而不是滴注。\n\n选项C的公式是Css=C₀*(1/(1-e^{-kt}))*e^{-kt}，这个公式似乎更符合描述药物在滴注过程中的稳态浓度。 Css代表稳态浓度，而C₀是初始浓度。这个公式中，(1-e^{-kt})部分可能表示药物在滴注过程中的累积，而e^{-kt}可能对应于药物的降解。\n\n选项D的公式涉及KaF和K，这似乎更像是一个双室模型或涉及吸收过程的模型，不太符合单室模型的滴注过程。\n\n选项E的公式是Css=K₀/KV，这似乎过于简化，没有考虑时间变化的影响，不太可能正确描述滴注过程中的动态变化。\n\n综合来看，选项C的公式似乎最符合单室模型单剂量静脉滴注给药的血药浓度变化。虽然不太确定，但从已知的模型和公式来看，这应该是最合理的答案。\n</think>\n\n<answer>C</answer>",
+      "raw_output_sha256": "b27ebe6629f4c820a2be50b1f95307244158fa83025176aad642fb3840dc9899",
+      "reward_components": {
+        "acc": 0,
+        "semantic": 0.9065119028091431,
+        "semantic_contribution": 0.0,
+        "format": 1,
+        "total_reward": 0.05
+      },
+      "why_interesting": "Deterministic representative of one_of_four; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=0, semantic=0.906512, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-ONE-OF-FOUR-003",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "one_of_four",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11430",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11430",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11430:0",
+      "prompt": "患者，男性，35岁，近日口角区出现一深大溃疡，直径25mm，深及肌层，溃疡周边红肿隆起，扪之基底较硬，边缘整齐。自觉疼痛症状明显，进食困难。该病者可能患有",
+      "ground_truth": "D",
+      "parsed_answer": "E",
+      "raw_output_excerpt": "<think>\n这个患者的口角出现了一个很大的溃疡，直径25mm，而且深到肌层，这听起来很严重啊。这种深度的溃疡一般不太可能是普通的创伤性溃疡，因为通常创伤性溃疡不会这么深。\n\n再看看溃疡的特征，它周边红肿隆起，而且摸起来基底比较硬，边缘整齐。这些特征让我想到可能是某种恶性病变，毕竟恶性溃疡常常会有这样的表现。\n\n患者还提到疼痛明显，进食困难，这也说明溃疡的严重程度。如果是普通的溃疡，疼痛应该不至于这么严重，进食也会有困难。\n\n不过，如果是癌性溃疡，那确实符合这些特征。但是，等等，这让我想到坏死性涎腺化生，这个病也能导致深大溃疡，而且它的疼痛和进食困难也跟患者的情况一致。\n\n再仔细想想，坏死性涎腺化生的溃疡常常是中心坏死，边缘隆起，而且基底硬，这些都跟患者描述的吻合。而且，患者是35岁，这个年龄可能更容易得坏死性涎腺化生。\n\n所以，综合这些信息，我觉得患者可能患有坏死性涎腺化生。这个判断似乎更合理，也更符合患者的症状表现。\n</think>\n\n<answer>E</answer>",
+      "raw_output_sha256": "5fa4bf7455530c6175ab86bfbcd8292c06dbcad4b32bf23e7955d8be7092ad0c",
+      "reward_components": {
+        "acc": 0,
+        "semantic": 0.7954056262969971,
+        "semantic_contribution": 0.0,
+        "format": 1,
+        "total_reward": 0.05
+      },
+      "why_interesting": "Deterministic representative of one_of_four; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=0, semantic=0.795406, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-TWO-OF-FOUR-001",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "two_of_four",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32976",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32976",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32976:0",
+      "prompt": "下列哪条动脉的分支，不分布到胃",
+      "ground_truth": "A",
+      "parsed_answer": "C",
+      "raw_output_excerpt": "<think>\n\n</think>\n\n<answer>C</answer>",
+      "raw_output_sha256": "a6a7cbc2645af3359b9d318b870c4489136c18d024ce8c90b7494e578217c073",
+      "reward_components": {
+        "acc": 0,
+        "semantic": 0.0,
+        "semantic_contribution": 0.0,
+        "format": 1,
+        "total_reward": 0.05
+      },
+      "why_interesting": "Deterministic representative of two_of_four; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=0, semantic=0.000000, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-TWO-OF-FOUR-002",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "two_of_four",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30338",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30338",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30338:0",
+      "prompt": "女，25岁，月经周期为30天，其末次月经是2002年4月18日，其排卵日期大约在5月",
+      "ground_truth": "B",
+      "parsed_answer": "B",
+      "raw_output_excerpt": "<think>\n嗯，这位女士的月经周期是30天，听起来挺正常的。通常情况下，排卵一般是在月经周期的中间，也就是14天左右开始。所以，如果她的月经周期是从4月18日开始，那么一般会认为排卵发生在大约5月2日左右。\n\n不过，等等，我们还要考虑女性的排卵日可能会有波动。有时候会提前或延后1到2天，因此，5月2日这个日期可能并不是最准确的。再想想，如果周期比较稳定的话，5月4日也是一个合理的推测。\n\n再仔细想想，平均来说，排卵发生在周期的第14天，那么从4月18日算起，14天后应该是5月2日。这似乎是大多数情况下最接近的日期。\n\n不过，考虑到个体差异，有些女性的周期可能会有一些变化，所以5月4日也是一个可能的日期。嗯，综合这些因素，5月4日看起来是一个比较合适的排卵日期。\n\n所以，最终，我认为选择5月4日作为排卵日期比较合理，而不是5月2日。嗯，这似乎更符合实际的情况。\n</think>\n\n<answer>B</answer>",
+      "raw_output_sha256": "5756c1a1d4284be34f6ff979cd1baa98110a3e0d0ed2d0da9584feab0a18e9e5",
+      "reward_components": {
+        "acc": 1,
+        "semantic": 0.8079226613044739,
+        "semantic_contribution": 0.12118839919567108,
+        "format": 1,
+        "total_reward": 0.9711883991956711
+      },
+      "why_interesting": "Deterministic representative of two_of_four; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=1, semantic=0.807923, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-TWO-OF-FOUR-003",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "two_of_four",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12715",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12715",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12715:0",
+      "prompt": "西医学的急性骨髓炎，相当于中医学的",
+      "ground_truth": "D",
+      "parsed_answer": "D",
+      "raw_output_excerpt": "<think>\n好，我们来看看这个问题。题目问的是西医学的急性骨髓炎在中医中对应什么病症。首先，得理解什么是急性骨髓炎。嗯，急性骨髓炎主要就是感染导致的骨骼和骨髓的炎症，听起来挺严重的。那么，中医里有没有类似的病症呢？\n\n先看选项。A是‘疔’，这个主要是指皮肤表面的小脓肿，和骨髓炎似乎不太相关。B是‘无头疽’，这个是说没有明显脓头的严重感染，嗯，和急性骨髓炎有点接近。C是‘有头疽’，这个是有脓头的严重感染，可能更符合急性骨髓炎的特点。D是‘附骨疽’，这个听起来像是在说骨头附近的感染，也许更接近。E是‘流注’，这个描述的是脓肿从一个地方扩散到另一个地方，不太符合。\n\n再想想，急性骨髓炎主要是一个局部的、有脓头的严重感染，而且通常是在骨骼内。这样的话，看起来C‘有头疽’更符合。不过等等，‘附骨疽’在中医里也常用来描述类似的情况，特别是骨骼附近的感染。\n\n那么，再仔细想想，急性骨髓炎是不是更像‘附骨疽’呢？因为‘附骨疽’特指在骨头周围的严重感染，这和急性骨髓炎的特征更一致。\n\n综上所述，‘附骨疽’似乎更符合西医学的急性骨髓炎在中医的理解。\n</think>\n\n<answer>D</answer>",
+      "raw_output_sha256": "265670bd8bc28501e41ae5addd6eb0211dede2bb0bd663b22b66eaffab6f992f",
+      "reward_components": {
+        "acc": 1,
+        "semantic": 0.7884986400604248,
+        "semantic_contribution": 0.11827479600906371,
+        "format": 1,
+        "total_reward": 0.9682747960090639
+      },
+      "why_interesting": "Deterministic representative of two_of_four; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=1, semantic=0.788499, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-THREE-OF-FOUR-001",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "three_of_four",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29864",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29864",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29864:0",
+      "prompt": "根据传染病法的规定，不属于乙类传染病的是",
+      "ground_truth": "E",
+      "parsed_answer": "E",
+      "raw_output_excerpt": "<think>\n嗯，首先我得确认一下，根据我国传染病防治法，乙类传染病有哪些。让我想想，我记得乙类传染病包括一些比较常见的疾病，比如艾滋病、脊髓灰质炎、麻疹和梅毒。哦，对了，这些疾病都是比较常见的，而且需要采取一定的控制措施来防止它们的传播。\n\n然后，我需要看看霍乱。霍乱在传染病分类中似乎有些不同，它常常被列为甲类传染病。甲类传染病一般是指那些传播速度快、危害性大的疾病，需要采取最严格的防控措施。\n\n所以，现在我来总结一下。根据这些信息，艾滋病、脊髓灰质炎、麻疹和梅毒都属于乙类传染病，而霍乱则属于甲类传染病。那么，题目问的是哪一个疾病不属于乙类传染病，显然霍乱就是那个不在此列的。\n\n这样看来，答案就是E，霍乱。\n</think>\n\n<answer>E</answer>",
+      "raw_output_sha256": "1fbe1d8c9efccccda98e39ffda6c00ee1f5654fa3c0cd3aff5412bf28ddb2e2a",
+      "reward_components": {
+        "acc": 1,
+        "semantic": 0.8787868618965149,
+        "semantic_contribution": 0.13181802928447722,
+        "format": 1,
+        "total_reward": 0.9818180292844774
+      },
+      "why_interesting": "Deterministic representative of three_of_four; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=1, semantic=0.878787, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-THREE-OF-FOUR-002",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "three_of_four",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19412",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19412",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19412:0",
+      "prompt": "战争年代因饥荒、人口拥挤、人口流动性增大而引起的急慢性传染病流行属于",
+      "ground_truth": "E",
+      "parsed_answer": "E",
+      "raw_output_excerpt": "<think>...\n战争年代，由于饥荒、人口拥挤和人口流动性的增加，这些因素都属于环境因素的改变。饥荒导致营养不良，影响人体免疫力；人口拥挤则增加了人与人之间的接触，容易传播疾病；人口流动性增大意味着疾病可能在不同地区快速传播。\n\n这些环境变化导致疾病传播的可能性增加，所以病因比重增加。同时，由于环境因素的变化，宿主的抵抗力可能下降，这使得宿主的比重增加。\n\n在流行病学三角模型中，病因、宿主和环境三者之间是相互作用的。当环境因素变动时，它可能影响到宿主的抵抗力和疾病的发生，从而改变了三角模型中的动态平衡。因此，这种情况下，环境因素的变动导致了病因和宿主比重的变化，而整个系统也随之保持动态平衡。\n\n因此，综合考虑这些因素，环境因素的变化影响了病因和宿主的比重，而整个系统维持动态平衡。\n</think>\n\n<answer>E</answer>",
+      "raw_output_sha256": "554985c4326b6fa245cec3b8479fd42309d11bfde36cf70658922528c7566aff",
+      "reward_components": {
+        "acc": 1,
+        "semantic": 0.0,
+        "semantic_contribution": 0.0,
+        "format": 1,
+        "total_reward": 0.8500000000000001
+      },
+      "why_interesting": "Deterministic representative of three_of_four; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=1, semantic=0.000000, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-THREE-OF-FOUR-003",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "three_of_four",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27961",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27961",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27961:0",
+      "prompt": "男，25岁。反复上腹痛反酸5年。X线钡餐检查结果如图1（暂无图），可诊断为",
+      "ground_truth": "B",
+      "parsed_answer": "B",
+      "raw_output_excerpt": "<think>\n嗯，这位25岁的男性患者有反复上腹痛和反酸，已经持续了五年。这些症状让我想到可能是胃或十二指肠溃疡引起的。上腹痛和反酸常常与消化性溃疡有关，尤其是十二指肠溃疡。这五年来反复发作，可能提示一个慢性的问题。\n\n想到X线钡餐检查，我记得这种检查可以显示消化道的形态和溃疡的位置。如果溃疡在十二指肠，通常在球部，也就是十二指肠的起始部分。而幽门管溃疡和球后溃疡的位置会不同，可能不太符合这个患者的症状。\n\n哦，对了，胃粘膜脱垂也可能引起上腹痛，不过通常会有更明显的上腹部不适和饱胀感，而不太会有反酸。而且，胃粘膜脱垂在X线钡餐上通常有特定的影像特征，比如胃黏膜通过幽门进入十二指肠的现象，但我不确定这些特征是否适用于这位患者。\n\n总的来说，结合患者反复发作的上腹痛和反酸，以及X线钡餐检查常见的表现，我觉得最有可能的是十二指肠球部溃疡。这种溃疡常常会导致这些症状，而且位置也符合X线钡餐的典型表现。因此，根据这些信息，我倾向于认为答案是B。\n</think>\n\n<answer>B</answer>",
+      "raw_output_sha256": "3241352a8918951167a005261b0e454bca26eb30dd265fca652f8c05ee88eef4",
+      "reward_components": {
+        "acc": 1,
+        "semantic": 0.892541229724884,
+        "semantic_contribution": 0.1338811844587326,
+        "format": 1,
+        "total_reward": 0.9838811844587327
+      },
+      "why_interesting": "Deterministic representative of three_of_four; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=1, semantic=0.892541, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-ALL-CORRECT-001",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "all_correct",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8418",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8418",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8418:0",
+      "prompt": "伦理学的基本类型不包括",
+      "ground_truth": "D",
+      "parsed_answer": "D",
+      "raw_output_excerpt": "<think>\n嗯，先来看看题目，它问的是伦理学的基本类型中哪一个不包括在内。首先，规范伦理学是关于道德行为的规则和原则，这肯定是伦理学的一部分。然后是元伦理学，它探讨道德语言和道德概念，比如‘好’和‘坏’是什么意思，这也算是伦理学的一个分支。\n\n美德伦理学嘛，它关注的是个人的道德品质和美德，比如诚实、仁慈，这也是伦理学的一个方面。不过，这里有个需要注意的地方，行为伦理学好像有点模糊。我之前好像听说过行为伦理学，但它似乎不是伦理学的主流分类，更像是在研究行为本身。\n\n哦，对了，还有描述伦理学，它研究现实中人们实际遵循的道德规范和价值观，这个也是属于伦理学的。所以，如果从这几个方面来看，行为伦理学似乎不太符合传统伦理学的分类。\n\n再想想，伦理学通常分为规范伦理学、元伦理学、美德伦理学和描述伦理学。这样看下来，行为伦理学确实不在传统的伦理学分类中。嗯，结论是D选项：行为伦理学。没错了，这样应该就对了。\n</think>\n\n<answer>D</answer>",
+      "raw_output_sha256": "ef73e07ee0b4f0177199ff4f6b1b70c9d47ca25b9f2eda0d4fbe90ee3ca7f4cc",
+      "reward_components": {
+        "acc": 1,
+        "semantic": 0.8409830927848816,
+        "semantic_contribution": 0.12614746391773224,
+        "format": 1,
+        "total_reward": 0.9761474639177323
+      },
+      "why_interesting": "Deterministic representative of all_correct; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=1, semantic=0.840983, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-ALL-CORRECT-002",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "all_correct",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31425",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31425",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31425:0",
+      "prompt": "一肺炎合并休克患者，治疗后血压96/66mmHg，脉搏96次/分，中心静脉压14cmH₂O，尿比重1.014，尿量15ml/小时，尿钠40mmol/L，肺毛细血管楔压12mmHg，可能为",
+      "ground_truth": "D",
+      "parsed_answer": "D",
+      "raw_output_excerpt": "<think>...\n患者在治疗后，血压是96/66mmHg，脉搏96次/分，中心静脉压14cmH₂O，这说明心脏的前负荷比较充足，但血压偏低，可能提示心输出量不足或者外周阻力较低。\n\n尿比重1.014，尿量只有15ml/小时，尿钠40mmol/L，这些指标显示肾小管可能在重吸收钠，但尿量依然很少，这可能意味着肾脏在努力保持体内液体平衡，但却没有足够的尿量排出。\n\n肺毛细血管楔压12mmHg，这个值正常，说明肺部没有充血，心输出量似乎没有明显不足，所以心衰的可能性比较低。\n\n患者处于休克状态，虽然血压有所恢复，但尿量少，尿比重高，提示可能存在肾前性问题，而非肾小管问题或者肾后性问题。\n\n综上，尿少和尿比重高，结合中心静脉压和肺毛细血管楔压，很可能是因为血容量不足导致的急性肾功能衰竭，而不是其他原因。\n\n因此，最符合的诊断是急性肾功能衰竭。\n</think>\n\n<answer>D</answer>",
+      "raw_output_sha256": "ac28ebc51ddbd8d0d4a237b4d36b151025c9ee2779d7837ee9e90218973c1003",
+      "reward_components": {
+        "acc": 1,
+        "semantic": 0.8672494888305664,
+        "semantic_contribution": 0.13008742332458495,
+        "format": 1,
+        "total_reward": 0.9800874233245851
+      },
+      "why_interesting": "Deterministic representative of all_correct; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=1, semantic=0.867249, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-ALL-CORRECT-003",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "all_correct",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18449",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18449",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18449:0",
+      "prompt": "下列生命质量测评量表中是目前被普遍认可的有",
+      "ground_truth": "C",
+      "parsed_answer": "C",
+      "raw_output_excerpt": "<think>\n好，先来看看题目要求。题目是让我们选择哪些生命质量测评量表是目前普遍被认可的。选项有四个：疾病影响量表、癌症病人生活功能指数、健康调查量表和健康良好状态指数。我需要先理解每个量表的具体用途，然后看看哪个是被广泛使用的。\n\n首先，疾病影响量表。这个听起来像是只针对某些特定疾病的影响进行评估。嗯，一般情况下，这种量表可能不太会成为普遍认可的测评工具，因为它过于狭窄了。\n\n然后是癌症病人生活功能指数。它很明显是为癌症患者设计的，专门评估他们在治疗期间的生活质量。这种针对性太强了，应该也不太可能成为普遍使用的量表。\n\n接下来是健康调查量表。这个量表听起来比较全面，不局限于特定疾病，可能更有可能被广泛使用。不过，我得再仔细想想，它是不是真的被普遍认可呢？\n\n再来看看健康良好状态指数。这个量表似乎也在评估健康状态，有可能被用于广泛的人群，但可能没有像其他量表那样被广泛认可。\n\n现在我有点困惑，因为健康调查量表应该是比较通用的，但我不确定它是否真的被普遍认可。我需要再确认一下。\n\n哦，对，健康调查量表其实是一个非常常见的量表，它被使用在很多不同的研究中，特别是在评估健康和生活质量方面。因此，它在许多领域都有广泛的使用和认可。\n\n看来，经过这些分析，健康调查量表是目前被普遍认可的。所以，我最终的结论是选C，健康调查量表。\n</think>\n\n<answer>C</answer>",
+      "raw_output_sha256": "f829338a95f84e0c1236a25cb2c5afdd55cb86869cc830cd018259214c1beb18",
+      "reward_components": {
+        "acc": 1,
+        "semantic": 0.8382002115249634,
+        "semantic_contribution": 0.1257300317287445,
+        "format": 1,
+        "total_reward": 0.9757300317287446
+      },
+      "why_interesting": "Deterministic representative of all_correct; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=1, semantic=0.838200, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-HIGH-SEMANTIC-WRONG-001",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "REWARD_CASE",
+      "subtype": "high_semantic_wrong",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39417",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39417",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39417:0",
+      "prompt": "大量出汗时尿量减少，主要原因是",
+      "ground_truth": "B",
+      "parsed_answer": "E",
+      "raw_output_excerpt": "<think>...\n大量出汗时，身体会流失大量的水分和钠，导致血容量减少。血容量减少意味着血液在血管中的量减少，这可能会影响肾脏的血流灌注，从而影响肾小球的过滤。肾小球的过滤主要依赖于血流，如果血流量减少，肾小球的滤过率也会相应减少。\n\n此外，出汗也会导致血浆中的晶体渗透压升高。晶体渗透压的升高会刺激下丘脑释放抗利尿激素（ADH），ADH可以增加肾小管对水的重吸收，减少尿量。这进一步导致尿量减少。\n\n交感神经的兴奋可能通过增加肾小球的血管阻力来减少肾脏的血流，但这种效应通常在剧烈运动或应激状态下更为显著，而不是单纯由于出汗引起的。\n\n此外，虽然肾素-血管紧张素系统在某些情况下会增强醛固酮的分泌，从而影响钠和水的重吸收，但这种影响通常不是出汗直接导致尿量减少的主要原因。\n\n综上所述，大量出汗时尿量减少的主要原因是由于血容量减少，导致肾小球的滤过减少。因此，选项E最合理。\n</think>\n\n<answer>E</answer>",
+      "raw_output_sha256": "b34fb429a9ede4195d363b403eaf40f8eb8414025882e40827b5b5267dd051eb",
+      "reward_components": {
+        "acc": 0,
+        "semantic": 0.9503639340400696,
+        "semantic_contribution": 0.0,
+        "format": 1,
+        "total_reward": 0.05
+      },
+      "why_interesting": "Deterministic representative of high_semantic_wrong; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=0, semantic=0.950364, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-HIGH-SEMANTIC-WRONG-002",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "REWARD_CASE",
+      "subtype": "high_semantic_wrong",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51382",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51382",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51382:0",
+      "prompt": "忌用麻仁润肠丸的病症有",
+      "ground_truth": "ABCE",
+      "parsed_answer": "A",
+      "raw_output_excerpt": "<think>\n麻仁润肠丸主要用来润肠通便，适合一些特定的便秘情况。首先，肠梗阻之便秘（A）就不适合使用麻仁润肠丸，因为这可能会加重病情。然后，对于结肠癌之便秘（B）和严重肠道憩室之便秘（E），麻仁润肠丸同样需要谨慎使用，因为这些情况可能涉及肠道的严重病变。\n\n接下来是炎症性肠病之便秘（C），这个也不适合使用麻仁润肠丸，因为这个药物可能加重炎症。最后，胃肠积热之便秘（D），虽然麻仁润肠丸有一定的调节作用，但可能不是最佳选择。\n\n综上所述，不建议使用麻仁润肠丸的病症包括：肠梗阻之便秘（A）、结肠癌之便秘（B）、炎症性肠病之便秘（C）以及严重肠道憩室之便秘（E）。因此，答案是这些选项。\n</think>\n\n<answer>A</answer>",
+      "raw_output_sha256": "8d77b4e7b36c8fa9d9b8876a1cb2b0052c9cdfa6c4050caa9866f362d7c05df0",
+      "reward_components": {
+        "acc": 0,
+        "semantic": 0.9459441900253296,
+        "semantic_contribution": 0.0,
+        "format": 1,
+        "total_reward": 0.05
+      },
+      "why_interesting": "Deterministic representative of high_semantic_wrong; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=0, semantic=0.945944, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-HIGH-SEMANTIC-WRONG-003",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "REWARD_CASE",
+      "subtype": "high_semantic_wrong",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11977",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11977",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11977:0",
+      "prompt": "乳牙患龋的最早年龄",
+      "ground_truth": "A",
+      "parsed_answer": "B",
+      "raw_output_excerpt": "<think>\n嗯，乳牙患龋这个问题，首先我们要弄清楚乳牙什么时候开始长出来。一般来说，孩子大概在6个月左右开始长乳牙，所以这个时间段应该会有乳牙出现。而龋齿嘛，通常是在牙齿开始接触食物后才有可能出现的。想想看，孩子在6个月的时候就开始吃辅食了，这时候牙齿就开始接触各种食物，糖分什么的就容易导致蛀牙。所以从这个角度来说，乳牙患龋的最早年龄应该不会超过6个月。\n\n不过，仔细想想，也不一定就是生后6个月。毕竟，很多孩子在6个月开始长牙，但并不是所有孩子在出生后马上就开始吃固态食物，有的可能要等到1岁才开始。所以，虽然理论上6个月是个可能，但实际情况中，可能1岁是比较普遍的时间。\n\n接着，如果从临床观察来看，很多孩子在1岁左右开始长乳牙，这时候牙齿开始接触食物，蛀牙就有可能发生。所以，很多时候，1岁这个时间点，被认为是乳牙开始出现龋齿的常见年龄。\n\n这样分析下来，感觉1岁这个选项更符合实际的临床观察，所以乳牙患龋的最早年龄更可能是1岁。当然，这个结论还需要结合更多临床数据来验证，不过从目前的信息来看，1岁是比较合理的。\n</think>\n\n<answer>B</answer>",
+      "raw_output_sha256": "18ccf3c1dc5feddb504660567323ffa54b5f942fd27f4a28e19ffaf90e8e4cbd",
+      "reward_components": {
+        "acc": 0,
+        "semantic": 0.9455471038818359,
+        "semantic_contribution": 0.0,
+        "format": 1,
+        "total_reward": 0.05
+      },
+      "why_interesting": "Deterministic representative of high_semantic_wrong; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=0, semantic=0.945547, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-HIGHEST-SEMANTIC-WRONG-RELATIVE-001",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "REWARD_CASE",
+      "subtype": "highest_semantic_wrong_relative",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39417",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39417",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39417:0",
+      "prompt": "大量出汗时尿量减少，主要原因是",
+      "ground_truth": "B",
+      "parsed_answer": "E",
+      "raw_output_excerpt": "<think>...\n大量出汗时，身体会流失大量的水分和钠，导致血容量减少。血容量减少意味着血液在血管中的量减少，这可能会影响肾脏的血流灌注，从而影响肾小球的过滤。肾小球的过滤主要依赖于血流，如果血流量减少，肾小球的滤过率也会相应减少。\n\n此外，出汗也会导致血浆中的晶体渗透压升高。晶体渗透压的升高会刺激下丘脑释放抗利尿激素（ADH），ADH可以增加肾小管对水的重吸收，减少尿量。这进一步导致尿量减少。\n\n交感神经的兴奋可能通过增加肾小球的血管阻力来减少肾脏的血流，但这种效应通常在剧烈运动或应激状态下更为显著，而不是单纯由于出汗引起的。\n\n此外，虽然肾素-血管紧张素系统在某些情况下会增强醛固酮的分泌，从而影响钠和水的重吸收，但这种影响通常不是出汗直接导致尿量减少的主要原因。\n\n综上所述，大量出汗时尿量减少的主要原因是由于血容量减少，导致肾小球的滤过减少。因此，选项E最合理。\n</think>\n\n<answer>E</answer>",
+      "raw_output_sha256": "b34fb429a9ede4195d363b403eaf40f8eb8414025882e40827b5b5267dd051eb",
+      "reward_components": {
+        "acc": 0,
+        "semantic": 0.9503639340400696,
+        "semantic_contribution": 0.0,
+        "format": 1,
+        "total_reward": 0.05
+      },
+      "why_interesting": "Deterministic representative of highest_semantic_wrong_relative; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=0, semantic=0.950364, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-HIGHEST-SEMANTIC-WRONG-RELATIVE-002",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "REWARD_CASE",
+      "subtype": "highest_semantic_wrong_relative",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51382",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51382",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51382:0",
+      "prompt": "忌用麻仁润肠丸的病症有",
+      "ground_truth": "ABCE",
+      "parsed_answer": "A",
+      "raw_output_excerpt": "<think>\n麻仁润肠丸主要用来润肠通便，适合一些特定的便秘情况。首先，肠梗阻之便秘（A）就不适合使用麻仁润肠丸，因为这可能会加重病情。然后，对于结肠癌之便秘（B）和严重肠道憩室之便秘（E），麻仁润肠丸同样需要谨慎使用，因为这些情况可能涉及肠道的严重病变。\n\n接下来是炎症性肠病之便秘（C），这个也不适合使用麻仁润肠丸，因为这个药物可能加重炎症。最后，胃肠积热之便秘（D），虽然麻仁润肠丸有一定的调节作用，但可能不是最佳选择。\n\n综上所述，不建议使用麻仁润肠丸的病症包括：肠梗阻之便秘（A）、结肠癌之便秘（B）、炎症性肠病之便秘（C）以及严重肠道憩室之便秘（E）。因此，答案是这些选项。\n</think>\n\n<answer>A</answer>",
+      "raw_output_sha256": "8d77b4e7b36c8fa9d9b8876a1cb2b0052c9cdfa6c4050caa9866f362d7c05df0",
+      "reward_components": {
+        "acc": 0,
+        "semantic": 0.9459441900253296,
+        "semantic_contribution": 0.0,
+        "format": 1,
+        "total_reward": 0.05
+      },
+      "why_interesting": "Deterministic representative of highest_semantic_wrong_relative; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=0, semantic=0.945944, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-HIGHEST-SEMANTIC-WRONG-RELATIVE-003",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "REWARD_CASE",
+      "subtype": "highest_semantic_wrong_relative",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11977",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11977",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11977:0",
+      "prompt": "乳牙患龋的最早年龄",
+      "ground_truth": "A",
+      "parsed_answer": "B",
+      "raw_output_excerpt": "<think>\n嗯，乳牙患龋这个问题，首先我们要弄清楚乳牙什么时候开始长出来。一般来说，孩子大概在6个月左右开始长乳牙，所以这个时间段应该会有乳牙出现。而龋齿嘛，通常是在牙齿开始接触食物后才有可能出现的。想想看，孩子在6个月的时候就开始吃辅食了，这时候牙齿就开始接触各种食物，糖分什么的就容易导致蛀牙。所以从这个角度来说，乳牙患龋的最早年龄应该不会超过6个月。\n\n不过，仔细想想，也不一定就是生后6个月。毕竟，很多孩子在6个月开始长牙，但并不是所有孩子在出生后马上就开始吃固态食物，有的可能要等到1岁才开始。所以，虽然理论上6个月是个可能，但实际情况中，可能1岁是比较普遍的时间。\n\n接着，如果从临床观察来看，很多孩子在1岁左右开始长乳牙，这时候牙齿开始接触食物，蛀牙就有可能发生。所以，很多时候，1岁这个时间点，被认为是乳牙开始出现龋齿的常见年龄。\n\n这样分析下来，感觉1岁这个选项更符合实际的临床观察，所以乳牙患龋的最早年龄更可能是1岁。当然，这个结论还需要结合更多临床数据来验证，不过从目前的信息来看，1岁是比较合理的。\n</think>\n\n<answer>B</answer>",
+      "raw_output_sha256": "18ccf3c1dc5feddb504660567323ffa54b5f942fd27f4a28e19ffaf90e8e4cbd",
+      "reward_components": {
+        "acc": 0,
+        "semantic": 0.9455471038818359,
+        "semantic_contribution": 0.0,
+        "format": 1,
+        "total_reward": 0.05
+      },
+      "why_interesting": "Deterministic representative of highest_semantic_wrong_relative; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=0, semantic=0.945547, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-CORRECT-LOW-SEMANTIC-001",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "REWARD_CASE",
+      "subtype": "correct_low_semantic",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19412",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19412",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19412:0",
+      "prompt": "战争年代因饥荒、人口拥挤、人口流动性增大而引起的急慢性传染病流行属于",
+      "ground_truth": "E",
+      "parsed_answer": "E",
+      "raw_output_excerpt": "<think>...\n战争年代，由于饥荒、人口拥挤和人口流动性的增加，这些因素都属于环境因素的改变。饥荒导致营养不良，影响人体免疫力；人口拥挤则增加了人与人之间的接触，容易传播疾病；人口流动性增大意味着疾病可能在不同地区快速传播。\n\n这些环境变化导致疾病传播的可能性增加，所以病因比重增加。同时，由于环境因素的变化，宿主的抵抗力可能下降，这使得宿主的比重增加。\n\n在流行病学三角模型中，病因、宿主和环境三者之间是相互作用的。当环境因素变动时，它可能影响到宿主的抵抗力和疾病的发生，从而改变了三角模型中的动态平衡。因此，这种情况下，环境因素的变动导致了病因和宿主比重的变化，而整个系统也随之保持动态平衡。\n\n因此，综合考虑这些因素，环境因素的变化影响了病因和宿主的比重，而整个系统维持动态平衡。\n</think>\n\n<answer>E</answer>",
+      "raw_output_sha256": "554985c4326b6fa245cec3b8479fd42309d11bfde36cf70658922528c7566aff",
+      "reward_components": {
+        "acc": 1,
+        "semantic": 0.0,
+        "semantic_contribution": 0.0,
+        "format": 1,
+        "total_reward": 0.8500000000000001
+      },
+      "why_interesting": "Deterministic representative of correct_low_semantic; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=1, semantic=0.000000, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-CORRECT-LOW-SEMANTIC-002",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "REWARD_CASE",
+      "subtype": "correct_low_semantic",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19412",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19412",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19412:1",
+      "prompt": "战争年代因饥荒、人口拥挤、人口流动性增大而引起的急慢性传染病流行属于",
+      "ground_truth": "E",
+      "parsed_answer": "E",
+      "raw_output_excerpt": "<think>...\n在战争年代，由于饥荒、人口拥挤和人口流动性增大，这些因素确实会显著影响传染病的流行。首先，饥荒会导致营养不良，从而影响个体的免疫系统，使他们更容易感染疾病。其次，人口拥挤意味着人与人之间的接触增加，增加了疾病传播的机会。而人口流动性增大则可能将传染病带到新的地区或人群中。\n\n从流行病学的角度来看，这些因素主要改变了环境的条件，因为它们直接影响了疾病的传播途径和人群的易感性。因此，这些变化可以被视为环境因素的变化。\n\n在流行病学三角模型中，环境因素的变化通常会改变疾病的传播条件。在这种情况下，环境因素的变化导致宿主的易感性增加，因为营养不良和拥挤环境都使人们更容易感染疾病。因此，这可以解释为环境因素导致宿主比重增加。\n\n综上所述，这种情况下，由于环境因素的变化，宿主的易感性增加，所以最终的选项是 E。\n</think>\n\n<answer>E</answer>",
+      "raw_output_sha256": "37c12973752ab963cef7c036b5bd33ab970f58769acb1386bb776a88dfed40eb",
+      "reward_components": {
+        "acc": 1,
+        "semantic": 0.0,
+        "semantic_contribution": 0.0,
+        "format": 1,
+        "total_reward": 0.8500000000000001
+      },
+      "why_interesting": "Deterministic representative of correct_low_semantic; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=1, semantic=0.000000, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-CORRECT-LOW-SEMANTIC-003",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "REWARD_CASE",
+      "subtype": "correct_low_semantic",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19412",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19412",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19412:2",
+      "prompt": "战争年代因饥荒、人口拥挤、人口流动性增大而引起的急慢性传染病流行属于",
+      "ground_truth": "E",
+      "parsed_answer": "E",
+      "raw_output_excerpt": "<think>...\n战争年代，饥荒、人口拥挤和人口流动性增大等因素确实会导致急慢性传染病的流行。这些因素都属于外部环境的变化，它们影响了传染病的传播条件。在流行病学中，这些可以被看作是环境因素的改变。在这种情况下，环境因素的变化使得传染病更容易传播，因为它们创造了更有利于病原体传播的条件。\n\n从流行病学三角模型来看，这个模型强调病因、宿主和环境三者之间的关系。病因可以是传染源，宿主是易感人群，而环境因素则是影响三者互动的外部因素。当环境因素改变时，它可能会影响宿主的易感性或者病原体的传播条件。\n\n在这个问题中，环境因素（如战争年代的饥荒、人口拥挤、人口流动性）的变化导致了传染病的流行。这意味着环境因素的改变影响了传染病的传播，而不是直接影响病因或者宿主的特性。\n\n因此，这些因素属于环境因素变化导致的，而不是宿主比重增加或病因比重增加。因此，最符合的选项是选项E：环境因素发生变化，导致宿主比重增加。这解释了为什么在这些条件下，传染病更容易流行。\n</think>\n\n<answer>E</answer>",
+      "raw_output_sha256": "5e3551f8f514082d5ef550c56267a99ed6416a963f1200518b4415f4cbb24008",
+      "reward_components": {
+        "acc": 1,
+        "semantic": 0.0,
+        "semantic_contribution": 0.0,
+        "format": 1,
+        "total_reward": 0.8500000000000001
+      },
+      "why_interesting": "Deterministic representative of correct_low_semantic; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=1, semantic=0.000000, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-CORRECT-LOW-SEMANTIC-NONEMPTY-REFERENCE-001",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "REWARD_CASE",
+      "subtype": "correct_low_semantic_nonempty_reference",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16611",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16611",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16611:0",
+      "prompt": "儿科常见病种发病率最高的是",
+      "ground_truth": "C",
+      "parsed_answer": "C",
+      "raw_output_excerpt": "<think>...\n</think>\n\n<answer>C</answer>",
+      "raw_output_sha256": "8bac88ce2c18e2329b764898bfc19520d19dfafc01f75be1d8beeac10f3d17ec",
+      "reward_components": {
+        "acc": 1,
+        "semantic": 0.3186684846878052,
+        "semantic_contribution": 0.047800272703170776,
+        "format": 1,
+        "total_reward": 0.8978002727031709
+      },
+      "why_interesting": "Deterministic representative of correct_low_semantic_nonempty_reference; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=1, semantic=0.318668, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-CORRECT-LOW-SEMANTIC-NONEMPTY-REFERENCE-002",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "REWARD_CASE",
+      "subtype": "correct_low_semantic_nonempty_reference",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17:3",
+      "prompt": "患者，男，45岁。近日发现大便色黑，伴不规则上腹痛。检查：左锁骨上窝触及1个1cm1.2cm大小的淋巴结，质硬，大便隐血试验(+++)。应首先考虑的是",
+      "ground_truth": "C",
+      "parsed_answer": "C",
+      "raw_output_excerpt": "<think>\n患者是一位45岁的男性，最近发现大便颜色变黑，而且伴有不规则的上腹痛。这让我首先想到的是消化道的出血，因为大便颜色黑通常提示上消化道出血。嗯，再看看他的检查结果，左锁骨上窝有一个1cm×1.2cm的硬质淋巴结，这不太寻常，提示可能有恶性病变。然后，大便隐血试验是(+++)，说明肠道内有大量出血。\n\n结合这些信息，消化性溃疡病（A）和胆道感染合并出血（B）虽然也可能导致大便变黑，但它们通常不会导致淋巴结肿大。血小板减少性紫癜（D）主要影响皮肤和黏膜出血，不太符合这个病例。肝硬化（E）也可能有出血倾向，但通常不是淋巴结肿大的原因。\n\n再仔细想一下，胃癌（C）可能性更大。胃癌可以导致大便变黑，同时伴随上腹痛，再加上淋巴结肿大，这很符合胃癌的特征。淋巴结肿大提示局部或远处转移，这在胃癌中是常见的。大便隐血试验显示大量出血也支持胃癌的观点。\n\n所以，综合这些症状和检查结果，最可能的原因是胃癌。\n</think>\n\n<answer>C</answer>",
+      "raw_output_sha256": "05cd639cc5133560bf7e3c083383017abe7c6f507ad8134a2f4fa851cbd7a6a7",
+      "reward_components": {
+        "acc": 1,
+        "semantic": 0.35277533531188965,
+        "semantic_contribution": 0.052916300296783444,
+        "format": 1,
+        "total_reward": 0.9029163002967835
+      },
+      "why_interesting": "Deterministic representative of correct_low_semantic_nonempty_reference; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=1, semantic=0.352775, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-CORRECT-LOW-SEMANTIC-NONEMPTY-REFERENCE-003",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "REWARD_CASE",
+      "subtype": "correct_low_semantic_nonempty_reference",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17:1",
+      "prompt": "患者，男，45岁。近日发现大便色黑，伴不规则上腹痛。检查：左锁骨上窝触及1个1cm1.2cm大小的淋巴结，质硬，大便隐血试验(+++)。应首先考虑的是",
+      "ground_truth": "C",
+      "parsed_answer": "C",
+      "raw_output_excerpt": "<think>\n患者是45岁的男性，最近出现大便颜色变黑，同时伴有不规则的上腹痛。这种症状让我立刻想到可能是消化道的问题，尤其是出血。大便变黑通常提示消化道有出血，可能是上消化道，比如胃或者十二指肠。\n\n检查中还发现左锁骨上窝有一个1cm×1.2cm的硬结，淋巴结的硬度和位置让我想到可能与恶性肿瘤有关。淋巴结肿大通常和癌症转移有关，尤其是如果质地硬且位置在锁骨上窝。\n\n大便隐血试验(+++)进一步支持了消化道出血的诊断。隐血试验阳性通常提示消化道有出血，尤其是上消化道。这些症状和体征让我倾向于考虑消化道恶性肿瘤，特别是胃癌。\n\n综合来看，患者的症状和检查结果与胃癌比较吻合，尤其是胃癌引起的消化道出血和淋巴结转移。因此，我最倾向于考虑胃癌作为病因。\n</think>\n\n<answer>C</answer>",
+      "raw_output_sha256": "4bcfd52ce455f1c26be9d6afdbed6f4fde911902ccf48345a55e64e4013547d7",
+      "reward_components": {
+        "acc": 1,
+        "semantic": 0.3594914376735687,
+        "semantic_contribution": 0.053923715651035306,
+        "format": 1,
+        "total_reward": 0.9039237156510354
+      },
+      "why_interesting": "Deterministic representative of correct_low_semantic_nonempty_reference; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=1, semantic=0.359491, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-PARSER-AMBIGUOUS-001",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "parser_ambiguous",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13809",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13809",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13809:1",
+      "prompt": "治疗心肌梗死气虚血瘀证，应首选",
+      "ground_truth": "A",
+      "parsed_answer": null,
+      "raw_output_excerpt": "<think>...\n\n<answer>D</answer>\n</think>\n\n<answer>D</answer>",
+      "raw_output_sha256": "488b9b17fbb0f16537c5f58f49c90c1e507293ebb90f2be1093c1c50c4926b72",
+      "reward_components": {
+        "acc": 0,
+        "semantic": 0.40208470821380615,
+        "semantic_contribution": 0.0,
+        "format": 0,
+        "total_reward": 0.0
+      },
+      "why_interesting": "Deterministic representative of parser_ambiguous; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=0, semantic=0.402085, format=0, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-PARSER-AMBIGUOUS-002",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "parser_ambiguous",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40788",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40788",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40788:2",
+      "prompt": "需2～10℃冷处保存，并避免冻结的药品",
+      "ground_truth": "A",
+      "parsed_answer": null,
+      "raw_output_excerpt": "<think>...\n\n<answer>C</answer>\n</think>\n\n<answer>C</answer>",
+      "raw_output_sha256": "b6f65366a9a685838d89d84a035f9737ab2a9b4f1b59b58885e6ad80f3f0352f",
+      "reward_components": {
+        "acc": 0,
+        "semantic": 0.4361468255519867,
+        "semantic_contribution": 0.0,
+        "format": 0,
+        "total_reward": 0.0
+      },
+      "why_interesting": "Deterministic representative of parser_ambiguous; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=0, semantic=0.436147, format=0, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-PARSER-AMBIGUOUS-003",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "parser_ambiguous",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6081",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6081",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6081:1",
+      "prompt": "下列哪项不属于口腔健康促进的任务",
+      "ground_truth": "B",
+      "parsed_answer": null,
+      "raw_output_excerpt": "<think>...\n\n<answer>C</answer>\n</think>\n\n<answer>C</answer>",
+      "raw_output_sha256": "b6f65366a9a685838d89d84a035f9737ab2a9b4f1b59b58885e6ad80f3f0352f",
+      "reward_components": {
+        "acc": 0,
+        "semantic": 0.39290651679039,
+        "semantic_contribution": 0.0,
+        "format": 0,
+        "total_reward": 0.0
+      },
+      "why_interesting": "Deterministic representative of parser_ambiguous; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=0, semantic=0.392907, format=0, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-FORMAT-FAILURE-001",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "format_failure",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13809",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13809",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13809:1",
+      "prompt": "治疗心肌梗死气虚血瘀证，应首选",
+      "ground_truth": "A",
+      "parsed_answer": null,
+      "raw_output_excerpt": "<think>...\n\n<answer>D</answer>\n</think>\n\n<answer>D</answer>",
+      "raw_output_sha256": "488b9b17fbb0f16537c5f58f49c90c1e507293ebb90f2be1093c1c50c4926b72",
+      "reward_components": {
+        "acc": 0,
+        "semantic": 0.40208470821380615,
+        "semantic_contribution": 0.0,
+        "format": 0,
+        "total_reward": 0.0
+      },
+      "why_interesting": "Deterministic representative of format_failure; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=0, semantic=0.402085, format=0, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-FORMAT-FAILURE-002",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "format_failure",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40788",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40788",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40788:2",
+      "prompt": "需2～10℃冷处保存，并避免冻结的药品",
+      "ground_truth": "A",
+      "parsed_answer": null,
+      "raw_output_excerpt": "<think>...\n\n<answer>C</answer>\n</think>\n\n<answer>C</answer>",
+      "raw_output_sha256": "b6f65366a9a685838d89d84a035f9737ab2a9b4f1b59b58885e6ad80f3f0352f",
+      "reward_components": {
+        "acc": 0,
+        "semantic": 0.4361468255519867,
+        "semantic_contribution": 0.0,
+        "format": 0,
+        "total_reward": 0.0
+      },
+      "why_interesting": "Deterministic representative of format_failure; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=0, semantic=0.436147, format=0, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-FORMAT-FAILURE-003",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "format_failure",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40788",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40788",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40788:3",
+      "prompt": "需2～10℃冷处保存，并避免冻结的药品",
+      "ground_truth": "A",
+      "parsed_answer": null,
+      "raw_output_excerpt": "<think>...\n\n<answer>C</answer>",
+      "raw_output_sha256": "e8d0895ae7964587b6c72ac2913599834b82369a56530b44f85f388f487b534c",
+      "reward_components": {
+        "acc": 0,
+        "semantic": 0.4361468255519867,
+        "semantic_contribution": 0.0,
+        "format": 0,
+        "total_reward": 0.0
+      },
+      "why_interesting": "Deterministic representative of format_failure; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=0, semantic=0.436147, format=0, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-LONG-REASONING-001",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "long_reasoning",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20126",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20126",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20126:1",
+      "prompt": "假定某一筛选计划检查了1000人，又假定某病的流行率为4%，而这种筛选试验的灵敏度为90%，特异度为80%。根据这些资料判断，被筛选出来的阳性者中假阳性者数是",
+      "ground_truth": "D",
+      "parsed_answer": "C",
+      "raw_output_excerpt": "<think>\n好，我们来看看这个题目。题目说有1000人接受了筛查，而且这种疾病的流行率是4%。这意味着在1000人中，有4%的人是患有这种疾病的。\n\n哦，那我们来算一下，患病的人数。1000乘以4%就是40人，也就是有40个人是患病的。\n\n然后，再来看看这个筛查试验。它的灵敏度是90%，意思是它能正确识别出90%的患者。那我们来算一下，能检测出多少患者。40乘以90%是36人，所以有36人会被正确识别为阳性。\n\n接下来，我们看看特异度。特异度是80%，也就是说，在1000人中，有80%的人是健康的。那健康的总人数就是1000乘以80%，也就是800人。\n\n好吧，接着，我们得算一下有多少健康的人会被错误地识别为阳性。特异度是80%，也就是说，健康人群中被正确识别为阴性的占80%，所以剩下的20%会被误判为阳性。那么，800人中20%的人被误判为阳性就是800乘以20%，也就是160人。\n\n所以，现在我们知道了，总共有36个真正患有疾病的人被正确识别为阳性，还有160个健康的人被误判为阳性。\n\n最后，我们要找的是这些阳性者中假阳性的人数。假阳性就是那些健康但被误判为阳性的，所以答案是160人。而题目给的选项中并没有这个答案，可能是我哪里弄错了哦。\n\n哦，等等，我们再仔细看看，题目问的是被筛选出来的阳性者中假阳性者数。也就是说，我们先得算出总的阳性人数，然后用这个总阳性人数减去真阳性人数。\n\n好，我们重新用总阳性人数减去真阳性人数。那总阳性人数就是屏幕出来的所有阳性者，也就是36个真阳性加上160个假阳性，总共是196人。\n\n所以，假阳性就是196减去36，得出的结果是160人。嗯，看来这个答案更准确。\n\n所以，最后的答案是假阳性者有160人，但选项中没有这个答案，看来需要再检查一下。\n\n看来我之前可能在题目理解上出了问题。再仔细看看题目，哦，对了，题目可能希望我们直接算出假阳性的人数，而不是总阳性的人数。\n\n好的，我们重新计算一下。健康人数是800人，特异度是80%，所以被误判为阳性的假阳性者是800乘以20%，得到的结果是160人。\n\n所以，假阳性者数是160人。然而，题目没有选项是这个答案，这说明我可能误解了问题，或者题目可能有其他隐藏的信息。\n\n最后，我们再看一遍题目，或许我漏掉了什么。题目可能希望我们直接从健康人群的误判中得到假阳性人数。\n\n好的，我们重新计算一下，假阳性人数是健康人群中被误判为阳性的，也就是800乘以20%，得到160人。所以，答案应该是160人。\n\n最终，结论是假阳性者有160人，但题目选项中没有这个答案，这说明我可能需要重新审视问题，或者题目存在其他信息。然而，根据题目提供的选项，我可能需要重新审视我的计算，但我相信我的过程是对的。\n</think>\n\n<answer>C</answer>",
+      "raw_output_sha256": "4618052691d55558159ef6a88327668b948592ecbbc6159b37ca4ad133e34b2e",
+      "reward_components": {
+        "acc": 0,
+        "semantic": 0.8695731163024902,
+        "semantic_contribution": 0.0,
+        "format": 1,
+        "total_reward": 0.05
+      },
+      "why_interesting": "Deterministic representative of long_reasoning; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=0, semantic=0.869573, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-LONG-REASONING-002",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "long_reasoning",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19991",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19991",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19991:0",
+      "prompt": "某项研究选择50名生育短肢畸形婴儿的母亲和90名生育正常婴儿的母亲，调查她们在怀孕初期是否服用过反应停，两组母亲分别有12人和2人回答服用过。利用上述资料回答下列问题。反应停与短肢畸形间的关联强度是",
+      "ground_truth": "A",
+      "parsed_answer": "B",
+      "raw_output_excerpt": "<think>\n好的，首先我们来看看题目给的数据。题目中提到，有50名生育短肢畸形婴儿的母亲和90名生育正常婴儿的母亲。然后，我们分别统计她们在怀孕初期是否服用过反应停。结果发现，短肢畸形组中有12人服用了反应停，而正常婴儿组中只有2人服用了反应停。好了，现在我们有了这些数据，下一步就是计算关联强度。\n\n常见的关联强度分析方法有比值比（OR）和相对风险（RR），不过这里可能用比值比（OR）比较合适。因为比值比适用于病例对照研究，而我们这里就是这种研究设计。\n\n计算比值比的公式是：OR = (a/b) / (c/d)，其中a是短肢畸形组中服用过反应停的人数，b是短肢畸形组中未服用过反应停的人数，c是正常婴儿组中服用过反应停的人数，d是正常婴儿组中未服用过反应停的人数。\n\n让我们代入数据看看。短肢畸形组中，a是12，b就是50 - 12 = 38；正常婴儿组中，c是2，d就是90 - 2 = 88。所以，OR = (12/38) / (2/88)。\n\n现在，我们来算一下这个比值。先算分子12/38，大约是0.3158。再算分母2/88，大约是0.0227。然后，我们把分子除以分母，0.3158 / 0.0227，结果大约是13.9。所以，OR值是13.9。\n\n不过，题目给的选项中并没有13.9这个答案，所以我们得再检查一下。哦，可能我们哪里算错了？仔细再考虑一下，题目中的数据和计算步骤。\n\n我们重新检查一下计算过程。首先，a是12，b是38，c是2，d是88。然后，OR = (12/38) / (2/88)。\n\n我们来重新计算一下。12除以38，得到0.3158，没错。2除以88，得到0.0227，还是对的。然后，0.3158除以0.0227，得到13.9。\n\n但是，题目中的选项没有13.9，这意味着我们可能哪里理解错了。再看看问题，题目问的是反应停与短肢畸形之间的关联强度，而不是比值比。嗯，我们是不是应该用相对风险来算呢？\n\n相对风险的公式是：RR = (a/(a+b)) / (c/(c+d))。我们试试用这个公式。短肢畸形组中，a是12，b是38，所以12/(12+38) = 12/50 = 0.24。正常婴儿组中，c是2，d是88，所以2/(2+88) = 2/90 = 0.0222。于是，RR = 0.24 / 0.0222，结果是10.8。\n\n现在，我们看一下题目给的选项，10.8这个答案确实存在。所以，反应停与短肢畸形之间的关联强度是10.8。这样看来，答案应该是B。\n</think>\n\n<answer>B</answer>",
+      "raw_output_sha256": "a234892b920592ab8682dc740834d2a2b3fa2497239930df1f3b46469f22422d",
+      "reward_components": {
+        "acc": 0,
+        "semantic": 0.5434809923171997,
+        "semantic_contribution": 0.0,
+        "format": 1,
+        "total_reward": 0.05
+      },
+      "why_interesting": "Deterministic representative of long_reasoning; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=0, semantic=0.543481, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-LONG-REASONING-003",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "long_reasoning",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48810",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48810",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48810:0",
+      "prompt": "苷型酸催化水解的易难顺序是",
+      "ground_truth": "A",
+      "parsed_answer": "C",
+      "raw_output_excerpt": "<think>\n嗯，苷类的水解难易主要与它们的糖苷键的稳定性有关。首先，糖苷键的稳定性主要取决于连接糖和苷元的原子类型。哦，对，N-苷的键是连接在氮原子上的，而O-苷则是连接在氧原子上的。一般来说，N-苷因为氮的电负性较低，所以糖苷键相对更稳定，不容易水解。所以，N-苷通常最难水解。\n\n那么，O-苷呢？因为氧的电负性比氮高，所以O-苷的键会比N-苷的键更容易水解。换句话说，O-苷的水解比N-苷要容易一些。\n\n至于S-苷和C-苷，它们的键稳定性似乎更差。嗯，S-苷的稳定性比O-苷更低，所以水解比较容易。而C-苷的键稳定性最低，所以水解应该是最容易的。\n\n综上所述，苷型的水解难易顺序应该是N-苷最难水解，O-苷次之，S-苷再其次，最后是C-苷最容易水解。\n\n不过，这个结论好像和之前学的有点不同。让我再想一下。\n\n哦，对了，之前好像提到过O-苷的水解比N-苷要容易，但C-苷和S-苷的水解应该比O-苷更难，而不是更容易。所以，我之前的结论可能有点问题。\n\n我们来重新分析一下。嗯，C-苷的水解应该是最难的，因为碳原子的电负性最低，所以糖苷键最不稳定。S-苷次之，因为硫的电负性比碳高，但比氧低，所以稳定性比碳好一些。然后是O-苷，因为氧的电负性较高，所以稳定性比S-苷好一点，但不如N-苷。最后是N-苷，氮的电负性最低，所以糖苷键最稳定，最难水解。\n\n这样看来，水解的难易顺序应该是C-苷最难水解，然后是S-苷，再是O-苷，最后是N-苷最容易水解。\n\n所以，最终的结论是，苷型酸催化水解的难易顺序应该是C-苷最难，其次是S-苷，然后是O-苷，最后是N-苷最容易。\n\n嗯，这个顺序应该是最合理的。我们得出的结论是C-苷最难水解，然后是S-苷，再是O-苷，最后是N-苷最容易水解。这应该就是正确的答案了。\n</think>\n\n<answer>C</answer>",
+      "raw_output_sha256": "8018c017d3877ceb762e97a695e30b0b3b562ef9454582651759ab39937173ef",
+      "reward_components": {
+        "acc": 0,
+        "semantic": 0.9022085666656494,
+        "semantic_contribution": 0.0,
+        "format": 1,
+        "total_reward": 0.05
+      },
+      "why_interesting": "Deterministic representative of long_reasoning; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=0, semantic=0.902209, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-SHORT-REASONING-001",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "short_reasoning",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32976",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32976",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32976:0",
+      "prompt": "下列哪条动脉的分支，不分布到胃",
+      "ground_truth": "A",
+      "parsed_answer": "C",
+      "raw_output_excerpt": "<think>\n\n</think>\n\n<answer>C</answer>",
+      "raw_output_sha256": "a6a7cbc2645af3359b9d318b870c4489136c18d024ce8c90b7494e578217c073",
+      "reward_components": {
+        "acc": 0,
+        "semantic": 0.0,
+        "semantic_contribution": 0.0,
+        "format": 1,
+        "total_reward": 0.05
+      },
+      "why_interesting": "Deterministic representative of short_reasoning; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=0, semantic=0.000000, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-SHORT-REASONING-002",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "short_reasoning",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3951",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3951",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3951:1",
+      "prompt": "龋病的好发部位是",
+      "ground_truth": "D",
+      "parsed_answer": "D",
+      "raw_output_excerpt": "<think>\n\n</think>\n\n<answer>D</answer>",
+      "raw_output_sha256": "b6bfdab1b2d937a511ba9b02470d57eb1805e9df783a1fa220b4ece7c3bb9b7d",
+      "reward_components": {
+        "acc": 1,
+        "semantic": 0.0,
+        "semantic_contribution": 0.0,
+        "format": 1,
+        "total_reward": 0.8500000000000001
+      },
+      "why_interesting": "Deterministic representative of short_reasoning; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=1, semantic=0.000000, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-SHORT-REASONING-003",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "short_reasoning",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22795",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22795",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22795:1",
+      "prompt": "石棉肺最主要的症状是",
+      "ground_truth": "B",
+      "parsed_answer": "B",
+      "raw_output_excerpt": "<think>\n\n</think>\n\n<answer>B</answer>",
+      "raw_output_sha256": "2b809db12cd6f186341c5ba079e44e2077abad68e35841dbde308a228789f1b9",
+      "reward_components": {
+        "acc": 1,
+        "semantic": 0.0,
+        "semantic_contribution": 0.0,
+        "format": 1,
+        "total_reward": 0.8500000000000001
+      },
+      "why_interesting": "Deterministic representative of short_reasoning; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=1, semantic=0.000000, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-MULTI-SELECT-001",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "multi_select",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43659",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43659",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43659:0",
+      "prompt": "依据《中华人民共和国药品管理法实施条例》，以下关于医疗机构配制的制剂的表述正确的是",
+      "ground_truth": "ABE",
+      "parsed_answer": "ABCE",
+      "raw_output_excerpt": "<think>...\n根据《中华人民共和国药品管理法实施条例》，医疗机构配制的制剂是有严格规定的。\n\n首先，根据条例，医疗机构配制的制剂是专门用于本机构内部的，因此不得在市场上销售或者变相销售。这说明选项A是正确的。\n\n其次，医疗机构配制的制剂也不得发布广告。因为这些制剂是内部使用，广告发布可能会误导公众，所以选项B也是正确的。\n\n再来看选项C，医疗机构配制的制剂是否可以在医疗机构之间调剂使用呢？根据条例，医疗机构配制的制剂不得在医疗机构之间调剂使用，因为这可能导致制剂的滥用或不当使用，所以选项C也是正确的。\n\n选项D，不得办理变更配制场所的手续。这个说法似乎不太符合条例规定，因为通常情况下，医疗机构如果需要变更配制场所，应该按照法规的规定进行申请和变更手续，所以D的说法不正确。\n\n最后，关于选项E，医疗机构配制的制剂必须获得制剂批准文号，否则是不允许配制的。因此，选项E的说法是正确的，不得配制未取得制剂批准文号的制剂。\n\n综上所述，正确答案是A、B、C、E。\n</think>\n\n<answer>ABCE</answer>",
+      "raw_output_sha256": "7874d850e3d2562c9d0369743a43abcb089fc9dfdcf6a77bd02368e0887e61f0",
+      "reward_components": {
+        "acc": 0,
+        "semantic": 0.8887869119644165,
+        "semantic_contribution": 0.0,
+        "format": 1,
+        "total_reward": 0.05
+      },
+      "why_interesting": "Deterministic representative of multi_select; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=0, semantic=0.888787, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-MULTI-SELECT-002",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "multi_select",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43659",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43659",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43659:1",
+      "prompt": "依据《中华人民共和国药品管理法实施条例》，以下关于医疗机构配制的制剂的表述正确的是",
+      "ground_truth": "ABE",
+      "parsed_answer": "A",
+      "raw_output_excerpt": "<think>\n好，先看看题目说的这些选项。首先，A选项说医疗机构配制的制剂不能在市场上销售或变相销售。我记得《药品管理法》确实有规定，不能把这些制剂拿去市场卖，所以A应该没错。\n\n然后是B选项，说不能发布广告。嗯，这个好像也是对的。因为这些制剂是医疗机构自己配制的，不是正规药品，所以肯定不能打广告，不然就违规了。\n\n接下来是C选项，说不能在医疗机构之间调剂使用。这我得好好想想。一般来说，药品是可以调剂的，尤其是医院之间，好像法律上并没有特别禁止。所以这个选项可能是不实的。\n\n再看看D选项，不得办理变更配制场所的手续。这个有点奇怪，因为变更场所通常需要走程序，法律上可能没有明确说不能变。所以D也不太对。\n\n最后，E选项说不能配制未取得制剂批准文号的制剂。嗯，肯定是对的。因为没有批准文号的话，药品是不能合法生产的。\n\n经过这么一分析，我觉得A和E是正确的，C和D是错误的，B可能也不太准确。所以最终，我认为正确的选项是A和E。\n</think>\n\n<answer>A</answer>",
+      "raw_output_sha256": "8553fe7851832cbe045027d3451d885d96cc16da5f357b9850e6df7ee6e82432",
+      "reward_components": {
+        "acc": 0,
+        "semantic": 0.8593676090240479,
+        "semantic_contribution": 0.0,
+        "format": 1,
+        "total_reward": 0.05
+      },
+      "why_interesting": "Deterministic representative of multi_select; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=0, semantic=0.859368, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-MULTI-SELECT-003",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "multi_select",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43659",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43659",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43659:2",
+      "prompt": "依据《中华人民共和国药品管理法实施条例》，以下关于医疗机构配制的制剂的表述正确的是",
+      "ground_truth": "ABE",
+      "parsed_answer": "ABE",
+      "raw_output_excerpt": "<think>...\n根据《中华人民共和国药品管理法实施条例》，医疗机构配制的制剂有明确的规定。首先得明确，医疗机构配制的制剂是用于本单位内部的，不能在市场销售或变相销售。所以A选项是正确的。另外，根据法律，这些制剂不能发布广告，因为它们不是经过国家药品监督管理部门批准的药品，所以B选项也是正确的。\n\n至于C选项，医疗机构配制的制剂确实不能在不同医疗机构之间调剂使用。这是因为这可能会影响制剂的质量和安全性，而且法律上不允许这种跨机构的使用。再看D选项，变更配制场所需要经过相应的审批手续，所以不能简单地说不能办理变更配制场所的手续，D不正确。\n\n最后，E选项提到不得配制未取得制剂批准文号的制剂，这是完全正确的。因为医疗机构配制的制剂必须经过审批，才能配制。综上所述，正确选项应该是A、B和E。\n</think>\n\n<answer>ABE</answer>",
+      "raw_output_sha256": "4de445dca33bb81e1d99332681f4b0eb59275bd48c74cbefe29d6e9134008986",
+      "reward_components": {
+        "acc": 1,
+        "semantic": 0.8834851384162903,
+        "semantic_contribution": 0.13252277076244354,
+        "format": 1,
+        "total_reward": 0.9825227707624437
+      },
+      "why_interesting": "Deterministic representative of multi_select; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=1, semantic=0.883485, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-FORMAT-GAMING-CANDIDATE-001",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "format_gaming_candidate",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32976",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32976",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32976:0",
+      "prompt": "下列哪条动脉的分支，不分布到胃",
+      "ground_truth": "A",
+      "parsed_answer": "C",
+      "raw_output_excerpt": "<think>\n\n</think>\n\n<answer>C</answer>",
+      "raw_output_sha256": "a6a7cbc2645af3359b9d318b870c4489136c18d024ce8c90b7494e578217c073",
+      "reward_components": {
+        "acc": 0,
+        "semantic": 0.0,
+        "semantic_contribution": 0.0,
+        "format": 1,
+        "total_reward": 0.05
+      },
+      "why_interesting": "Deterministic representative of format_gaming_candidate; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=0, semantic=0.000000, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-FORMAT-GAMING-CANDIDATE-002",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "format_gaming_candidate",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3951",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3951",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3951:1",
+      "prompt": "龋病的好发部位是",
+      "ground_truth": "D",
+      "parsed_answer": "D",
+      "raw_output_excerpt": "<think>\n\n</think>\n\n<answer>D</answer>",
+      "raw_output_sha256": "b6bfdab1b2d937a511ba9b02470d57eb1805e9df783a1fa220b4ece7c3bb9b7d",
+      "reward_components": {
+        "acc": 1,
+        "semantic": 0.0,
+        "semantic_contribution": 0.0,
+        "format": 1,
+        "total_reward": 0.8500000000000001
+      },
+      "why_interesting": "Deterministic representative of format_gaming_candidate; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=1, semantic=0.000000, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-FORMAT-GAMING-CANDIDATE-003",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "format_gaming_candidate",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43697",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43697",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43697:3",
+      "prompt": "某县医院对其配制的医院制剂A，可以采取的服务措施是",
+      "ground_truth": "D",
+      "parsed_answer": "C",
+      "raw_output_excerpt": "<think>...\n</think>\n\n<answer>C</answer>",
+      "raw_output_sha256": "8bac88ce2c18e2329b764898bfc19520d19dfafc01f75be1d8beeac10f3d17ec",
+      "reward_components": {
+        "acc": 0,
+        "semantic": 0.295376718044281,
+        "semantic_contribution": 0.0,
+        "format": 1,
+        "total_reward": 0.05
+      },
+      "why_interesting": "Deterministic representative of format_gaming_candidate; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=0, semantic=0.295377, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-CORRECT-REASONING-NUMERIC-TRIAGE-001",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "correct_reasoning_numeric_triage",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:642",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:642",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:642:0",
+      "prompt": "患儿，7岁。发热1天，恶寒，无汗，头痛，鼻塞流清涕，喷嚏咳嗽，口不渴，咽不红，舌苔薄白，脉浮紧。其证候是",
+      "ground_truth": "A",
+      "parsed_answer": "A",
+      "raw_output_excerpt": "<think>\n这个孩子才7岁，发热发烧才一天，说明这个发热可能是突然发生的。恶寒，也就是他感觉很冷，没有出汗，这让我想到可能是外感风寒。头痛、鼻塞流清涕、喷嚏咳嗽，这些症状也让我觉得很像风寒感冒，因为风寒通常会让鼻子和喉咙不舒服。\n\n再看看口不渴，咽不红，这说明体内没有明显的热象，没有那种热嗓子干渴的感觉。舌苔薄白，脉浮紧，这些都进一步支持风寒的判断，因为风寒感冒的特征就是舌苔薄白，脉象浮紧。\n\n考虑到这些症状，没有出现像风热感冒那样的口渴、咽红等热象，也没有暑邪感冒的特征，比如长时间发热、流黄涕等。所以，从症状来看，更像是风寒感冒。\n\n综上所述，所有这些症状都指向风寒感冒，我觉得这个判断是合理的。\n</think>\n\n<answer>A</answer>",
+      "raw_output_sha256": "a393594b89ac80389ed7d5dd1a9ac94c33e5573dfabeab62490332bdddd42561",
+      "reward_components": {
+        "acc": 1,
+        "semantic": 0.8501390814781189,
+        "semantic_contribution": 0.12752086222171782,
+        "format": 1,
+        "total_reward": 0.977520862221718
+      },
+      "why_interesting": "Deterministic representative of correct_reasoning_numeric_triage; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=1, semantic=0.850139, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-CORRECT-REASONING-NUMERIC-TRIAGE-002",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "correct_reasoning_numeric_triage",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:642",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:642",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:642:1",
+      "prompt": "患儿，7岁。发热1天，恶寒，无汗，头痛，鼻塞流清涕，喷嚏咳嗽，口不渴，咽不红，舌苔薄白，脉浮紧。其证候是",
+      "ground_truth": "A",
+      "parsed_answer": "A",
+      "raw_output_excerpt": "<think>\n这个孩子才7岁，发热已经一天了，而且还有恶寒，没有出汗，看起来好像有点感冒了。头痛，鼻子堵得厉害，流清鼻涕，这一般就是感冒的早期症状。孩子还一直打喷嚏，咳嗽，这说明可能有风寒。口不渴，咽不红，这就不像是风热感冒，因为风热感冒通常会口渴，喉咙红肿。舌苔薄白，脉浮紧，这些症状都指向风寒，而不是风热。\n\n再想想，暑邪感冒不太可能，因为暑邪感冒一般会在夏天，而且会伴随口渴、大汗这些症状。这个孩子没出汗，也没有提到有暑邪的表现。感冒夹滞和感冒夹痰也不太可能，因为这些症状没有提到消化不良或者痰多。\n\n综合来看，这些症状，比如无汗、恶寒、头痛、流清鼻涕，都比较符合风寒感冒的表现。所以，这个孩子的感冒应该是风寒感冒，没有其他症状的干扰。嗯，看来选择A风寒感冒是最合理的。\n</think>\n\n<answer>A</answer>",
+      "raw_output_sha256": "40f6fc73f62ecd84297b1e5831ed01ebed758da3b35d8a2bdcba93a73fff1303",
+      "reward_components": {
+        "acc": 1,
+        "semantic": 0.8569192290306091,
+        "semantic_contribution": 0.12853788435459138,
+        "format": 1,
+        "total_reward": 0.9785378843545914
+      },
+      "why_interesting": "Deterministic representative of correct_reasoning_numeric_triage; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=1, semantic=0.856919, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    },
+    {
+      "case_id": "S2-CORRECT-REASONING-NUMERIC-TRIAGE-003",
+      "run_id": "s2_formal_20260909T025736_f607d9",
+      "stage": 2,
+      "category": "BOUNDARY_CASE",
+      "subtype": "correct_reasoning_numeric_triage",
+      "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:642",
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:642",
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:642:2",
+      "prompt": "患儿，7岁。发热1天，恶寒，无汗，头痛，鼻塞流清涕，喷嚏咳嗽，口不渴，咽不红，舌苔薄白，脉浮紧。其证候是",
+      "ground_truth": "A",
+      "parsed_answer": "A",
+      "raw_output_excerpt": "<think>\n嗯，这个小朋友才7岁，他发热了一天，还觉得冷，没有出汗，这让我想到可能是因为风寒。头痛和鼻塞流清涕，这些症状通常和风寒有关。而且，他咳嗽，但好像不太渴，这些症状让我觉得更像是风寒而不是风热。风热感冒通常会有口渴和咽红，但这里没有提到这些情况。嗯，舌苔薄白，脉浮紧，这些都是风寒感冒的典型表现。再看看选项，A是风寒感冒，B是风热感冒，C是暑邪感冒，D是感冒夹滞，E是感冒夹痰。感觉这些症状确实更符合风寒感冒，所以应该是A。嗯，综合来看，这个小朋友的症状和风寒感冒最匹配，所以答案应该是A。\n</think>\n\n<answer>A</answer>",
+      "raw_output_sha256": "7cb1f37f946fe75637ba9b0a69c0f001e35830b629daa9d5f656a725abd1db3a",
+      "reward_components": {
+        "acc": 1,
+        "semantic": 0.8610429763793945,
+        "semantic_contribution": 0.12915644645690919,
+        "format": 1,
+        "total_reward": 0.9791564464569092
+      },
+      "why_interesting": "Deterministic representative of correct_reasoning_numeric_triage; inspect full trajectory in the sealed bulk file.",
+      "observation": "acc=1, semantic=0.861043, format=1, finish=stop",
+      "hypothesis": "Selection illustrates a boundary; not an estimate of clinical reasoning quality.",
+      "alternative_explanations": [
+        "Source explanation may be missing or incorrect",
+        "Lexical overlap is not factual entailment"
+      ],
+      "followup": "Track fixed prompt and policy lineage in future Stage3/4, without training in Stage2.",
+      "raw_source": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl"
+    }
+  ],
+  "thresholds": {
+    "high_semantic_wrong": "acc=0 and sem>0.9",
+    "correct_low_semantic": "acc=1 and sem<0.5"
+  },
+  "clinical_reasoning_quality": "NOT_ASSESSED; numeric triage is not an error judgment"
+}

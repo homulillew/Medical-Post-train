@@ -1,0 +1,6494 @@
+{
+  "run_id": "s2_formal_20260909T025736_f607d9",
+  "mixed_group_contrast_counts": {
+    "has_parsed_wrong_answers": 378,
+    "contrast_only_from_unparseable_responses": 153
+  },
+  "mixed_groups": [
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29864",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19412",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32976",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27961",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41049",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49552",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40757",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30338",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12715",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11430",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10806",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42094",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18764",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 2,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41850",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3951",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53478",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49110",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 2,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20851",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36605",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17077",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 2,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43659",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51183",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17603",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14986",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14149",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 2,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41174",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51375",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32353",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30418",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20353",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2378",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31376",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13556",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34519",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41978",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53357",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28109",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9689",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 2,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47425",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7062",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16499",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47730",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29351",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13519",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33068",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:5147",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 2,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20430",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30589",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49546",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48079",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:1053",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15904",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49083",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15233",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29899",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17389",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:45271",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15581",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29110",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12027",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3145",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 2,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20704",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22200",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41710",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9784",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22757",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32404",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20229",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51364",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9873",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14794",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47237",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16746",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15754",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52124",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4465",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51313",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10216",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:46151",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18405",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13789",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43697",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:5853",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:688",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:54340",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:54395",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50938",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 2,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51277",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40224",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49522",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 2,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33867",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32621",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27652",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32885",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17363",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8634",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:25692",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9664",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29045",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34142",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:5322",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10466",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26902",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30707",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29056",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33172",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18215",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33719",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21651",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:91",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:44853",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28582",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31765",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20126",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39432",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:45922",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53077",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32965",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37176",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15379",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21376",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 2,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8730",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22795",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40400",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19547",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:45107",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28866",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41448",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6716",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34662",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16729",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:35630",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43859",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51024",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30136",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32389",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20101",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:44173",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48128",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7874",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37293",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:44037",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43915",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51735",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15699",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:5484",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:38654",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41937",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36403",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 3,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48539",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52844",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7523",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27165",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3328",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34728",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31463",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39844",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:334",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40970",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:561",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:45075",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:38038",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51596",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14271",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41888",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 2,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52227",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13816",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12405",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47831",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:54409",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53157",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43098",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15296",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43218",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 2,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49291",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31270",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51771",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3917",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33652",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:54318",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31458",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49925",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3665",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 2,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22951",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53807",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:25903",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18479",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18375",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20119",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 2,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18947",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23054",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40138",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23478",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:5120",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:593",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 2,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2756",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:5861",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28278",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12659",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:24727",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52131",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9522",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30130",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3058",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51552",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:35229",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51401",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32124",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 2,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34718",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:24093",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:38332",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16332",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50948",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4718",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13844",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 2,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16637",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37033",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41723",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 2,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13228",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53907",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30060",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52981",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 3,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47982",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:35824",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34714",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15706",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41466",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31093",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43908",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30433",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15766",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43177",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 2,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6754",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 3,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32706",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34920",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8206",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49648",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32591",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52240",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41661",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30017",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14002",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7881",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33828",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12371",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20407",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 3,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4855",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 2,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34272",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23653",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2757",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:869",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20373",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28929",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42250",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:45369",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3076",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20538",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:1107",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:1596",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41373",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9692",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3992",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53818",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:46725",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52245",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15187",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8392",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23134",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16944",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34102",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2154",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17435",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13173",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8939",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53099",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 2,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:24703",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8963",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23064",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29218",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48971",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12900",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27123",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:44986",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43105",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52708",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:38909",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39057",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31847",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14156",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37762",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 2,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40190",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:45315",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19016",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28829",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32463",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30594",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 2,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:35905",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7634",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47223",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51787",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14746",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11012",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39030",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4175",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20427",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20813",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53064",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7307",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30217",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 2,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49459",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53654",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 2,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15342",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53334",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 2,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23268",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19237",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29252",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33282",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20516",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:38390",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27298",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21850",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34994",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27823",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32219",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26412",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2041",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41210",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39417",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37093",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 2,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:45122",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53084",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34880",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6601",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4674",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26944",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32504",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13602",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34418",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:25517",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37727",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7718",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6925",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 3,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40131",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33396",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16040",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13748",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 2,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11028",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28062",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16196",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 2,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14578",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53489",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:24738",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:25508",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21261",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 3,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29614",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9580",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 2,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16611",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41663",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2375",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27150",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:25657",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40112",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11791",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28776",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40048",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15062",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:44010",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22007",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26482",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9576",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42727",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:38893",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42283",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33818",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8097",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20819",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:45161",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:25652",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 3,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18178",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:45363",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2173",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32141",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34554",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30395",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6606",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 2,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48314",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26010",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49043",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:38027",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21402",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29279",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:5502",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2876",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31363",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:598",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11737",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28110",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17997",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7604",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34300",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30670",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22840",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:1982",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26219",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34510",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30146",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14493",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47047",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50869",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:25206",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3779",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53847",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39967",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39045",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16919",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28382",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:45429",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52059",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48486",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17906",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51677",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21235",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42201",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 3,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20811",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6127",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15486",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:46791",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47461",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13587",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13102",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9813",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8494",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16465",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 2,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:44045",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50018",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10513",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15923",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:24682",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:455",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33770",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40193",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34121",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13845",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27588",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20567",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33654",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:54419",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27479",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42823",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15505",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18352",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:25960",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42327",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:44637",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16776",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4213",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33203",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10665",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48054",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14882",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31457",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52006",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9527",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20607",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22621",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22195",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14048",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10020",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 2,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47150",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15066",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18846",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12806",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:54403",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52005",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51571",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18537",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16656",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:913",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 3,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:44822",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51094",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 2,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53741",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11927",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36765",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29817",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37508",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17985",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53140",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33971",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22640",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43416",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:38060",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6098",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:38362",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17746",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 2,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:38998",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 2,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:24084",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49463",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39714",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 2,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49680",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26928",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27752",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34081",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 2,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9938",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3542",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53947",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11318",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27977",
+      "acc_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14080",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53819",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19289",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52707",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17914",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33450",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:945",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49635",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14971",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:54148",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23691",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30493",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47427",
+      "acc_vector": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16529",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31042",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 2,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20823",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:24726",
+      "acc_vector": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 2,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50069",
+      "acc_vector": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20068",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 0,
+      "unparseable_count": 1,
+      "category": "contrast_only_from_unparseable_responses"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33591",
+      "acc_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 1,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:38697",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2908",
+      "acc_vector": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "parsed_wrong_count": 3,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:46576",
+      "acc_vector": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 1,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    },
+    {
+      "group_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:45945",
+      "acc_vector": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "parsed_wrong_count": 2,
+      "unparseable_count": 0,
+      "category": "has_parsed_wrong_answers"
+    }
+  ],
+  "high_semantic_wrong_parse_status": {
+    "parsed_wrong": 142,
+    "unparseable": 12
+  },
+  "all_wrong_hybrid_std_nonzero": 125,
+  "all_correct_hybrid_std_nonzero": 197,
+  "empty_reasoning_count": 4,
+  "near_empty_reasoning_le10": 425,
+  "format_valid_empty_reasoning": 4,
+  "pool_image_reference_prompts": 34,
+  "pool_image_reference_ids": [
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36575",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:44473",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36310",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36720",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13789",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28866",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36766",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36487",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36493",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36545",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36520",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36259",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37891",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27545",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13988",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36641",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13703",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36439",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13975",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36440",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29092",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:45482",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36444",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27757",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29126",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29134",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36668",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36639",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13813",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36405",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27961",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20975",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36694",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36660"
+  ],
+  "formal_image_reference_prompts": 3,
+  "image_reference_trajectory_accuracy": {
+    "count": 12,
+    "total": 9.0,
+    "mean": 0.75,
+    "p50": 1.0,
+    "p90": 1.0,
+    "p95": 1.0,
+    "p99": 1.0,
+    "min": 0.0,
+    "max": 1.0
+  },
+  "formal_missing_reference_prompts": 149,
+  "semantic_encoded_only_by_accuracy": {
+    "0": {
+      "count": 1624,
+      "total": 1213.3821685314178,
+      "mean": 0.7471565077163903,
+      "p50": 0.8305487036705017,
+      "p90": 0.8991973042488098,
+      "p95": 0.911186197400093,
+      "p99": 0.9274763602018357,
+      "min": 0.295376718044281,
+      "max": 0.9503639340400696
+    },
+    "1": {
+      "count": 1776,
+      "total": 1493.966812133789,
+      "mean": 0.841197529354611,
+      "p50": 0.8517141938209534,
+      "p90": 0.9059900343418121,
+      "p95": 0.9174730777740479,
+      "p99": 0.9344232827425003,
+      "min": 0.3186684846878052,
+      "max": 0.9504337310791016
+    }
+  },
+  "exact_arithmetic_case": {
+    "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30338",
+    "member": 2,
+    "output_claim": "2002-04-18 + 14 days = 2002-04-30",
+    "recomputed_date": "2002-05-02",
+    "option_distance_from_may3_days": {
+      "A_May2": 1,
+      "B_May4": 1,
+      "C_May6": 3
+    },
+    "scope": "calendar arithmetic only; no clinical ovulation-date validation"
+  },
+  "caveats": [
+    "Mixed groups can arise from malformed outputs as well as disagreements among parseable answers; acc is the defined task-level reward.",
+    "All-correct groups may retain semantic ranking signal under hybrid reward. Filtering them removes that signal by design, not because all advantages must be zero.",
+    "Missing-image regex is descriptive triage, not a new exclusion or category/difficulty annotation.",
+    "Raw semantic correlations and qualitative source disagreements are not causal or clinical judgments."
+  ],
+  "sources": [
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl",
+      "sha256": "4287a57867360e48ebcde3a9422fb6a3bb328edafc3253df91ac74866c39bc1f",
+      "bytes": 18808452
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/groups.jsonl",
+      "sha256": "9f79299d5b2e866af96eb56c3c9e7a98874c8386513eb2687de5b0dceb7bb82b",
+      "bytes": 1167037
+    }
+  ]
+}

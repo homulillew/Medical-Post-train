@@ -1,0 +1,184 @@
+{
+  "stage": 2,
+  "classification": "Retrospective accounting plus conditional estimates, not actual RL training",
+  "measured": {
+    "mean_output_tokens": 237.55325,
+    "p95_output_tokens": 365.0,
+    "mixed_fraction": 0.531,
+    "output_tokens_per_second": 182.27388530137017,
+    "formal_costs": {
+      "generated_prompt_tokens_shared_prefill": 135234,
+      "logical_prompt_tokens_all_trajectories": 540936,
+      "generated_output_tokens": 950213,
+      "canonical_output_tokens": 950213,
+      "generation_wall_seconds": 5213.105533076916,
+      "output_tokens_per_second": 182.27388530137017,
+      "control_prompt_tokens": 640,
+      "control_output_tokens": 40,
+      "control_generation_seconds": 2.5891653737053275,
+      "generation_process_wall_seconds": 5429.929392409977,
+      "gpu_reserved_time_scope": "Generation worker wall includes engine startup and sleep/wake; embedding process time separately reported",
+      "incomplete_requests": [],
+      "failed_request_tokens": 0,
+      "retry_output_tokens": 0,
+      "attempt_count": 1
+    },
+    "tracked_gpu_worker_seconds": 5837.0359032880515,
+    "tracked_gpu_worker_hours": 1.6213988620244588,
+    "run_costs": [
+      {
+        "run_id": "s2_data_20260909T024052_870aba",
+        "run_class": "DIAGNOSTIC",
+        "purpose": "data",
+        "status": "PASS",
+        "gpu_attempts": [],
+        "cpu_attempts": [
+          {
+            "attempt": "attempt_001",
+            "action": "data",
+            "status": "PASS",
+            "measured_wall_seconds": 4.25920382887125,
+            "unknown_elapsed": false
+          }
+        ]
+      },
+      {
+        "run_id": "s2_formal_20260909T025736_f607d9",
+        "run_class": "FORMAL",
+        "purpose": "formal",
+        "status": "PASS",
+        "gpu_attempts": [
+          {
+            "attempt": "attempt_001",
+            "action": "rollout",
+            "status": "PASS",
+            "measured_wall_seconds": 5441.4661062820815,
+            "unknown_elapsed": false
+          },
+          {
+            "attempt": "attempt_002",
+            "action": "score",
+            "status": "PASS",
+            "measured_wall_seconds": 76.40217234706506,
+            "unknown_elapsed": false
+          }
+        ],
+        "cpu_attempts": []
+      },
+      {
+        "run_id": "s2_semantic_20260909T024252_815f01",
+        "run_class": "DIAGNOSTIC",
+        "purpose": "semantic",
+        "status": "FAILED",
+        "gpu_attempts": [],
+        "cpu_attempts": [
+          {
+            "attempt": "attempt_001",
+            "action": "semantic",
+            "status": "FAILED",
+            "measured_wall_seconds": null,
+            "unknown_elapsed": true
+          }
+        ]
+      },
+      {
+        "run_id": "s2_semantic_20260909T024652_cb6286",
+        "run_class": "DIAGNOSTIC",
+        "purpose": "semantic",
+        "status": "PASS",
+        "gpu_attempts": [],
+        "cpu_attempts": [
+          {
+            "attempt": "attempt_001",
+            "action": "semantic",
+            "status": "PASS",
+            "measured_wall_seconds": 26.1150420489721,
+            "unknown_elapsed": false
+          }
+        ]
+      },
+      {
+        "run_id": "s2_smoke_20260909T024936_746dbe",
+        "run_class": "SMOKE",
+        "purpose": "smoke",
+        "status": "PASS",
+        "gpu_attempts": [
+          {
+            "attempt": "attempt_001",
+            "action": "rollout",
+            "status": "PASS",
+            "measured_wall_seconds": 303.4405750320293,
+            "unknown_elapsed": false
+          },
+          {
+            "attempt": "attempt_002",
+            "action": "score",
+            "status": "PASS",
+            "measured_wall_seconds": 15.727049626875669,
+            "unknown_elapsed": false
+          }
+        ],
+        "cpu_attempts": []
+      }
+    ]
+  },
+  "projections": {
+    "vanilla": {
+      "accepted_training_groups": 5000,
+      "estimated_generated_groups": 5000,
+      "estimated_output_tokens": 4751065.0,
+      "estimated_generation_gpu_hours": 7.240424351495717,
+      "optimizer_and_old_logprob_gpu_hours": "UNKNOWN: no policy update run in Stage2",
+      "switching_and_validation_gpu_hours": "UNKNOWN: rollout-only projection excludes future training/evaluation overhead"
+    },
+    "dynamic": {
+      "accepted_training_groups": 5000,
+      "estimated_generated_groups": 9416.195856873823,
+      "estimated_output_tokens": 8947391.713747645,
+      "estimated_generation_gpu_hours": 13.635450756112458,
+      "optimizer_and_old_logprob_gpu_hours": "UNKNOWN: no policy update run in Stage2",
+      "switching_and_validation_gpu_hours": "UNKNOWN: rollout-only projection excludes future training/evaluation overhead"
+    }
+  },
+  "sensitivity": {
+    "acceptance_half": {
+      "acceptance": 0.2655,
+      "output_tokens_per_second": 182.27388530137017,
+      "dynamic_generated_groups": 18832.391713747646,
+      "dynamic_generation_gpu_hours": 27.270901512224917
+    },
+    "point_estimate": {
+      "acceptance": 0.531,
+      "output_tokens_per_second": 182.27388530137017,
+      "dynamic_generated_groups": 9416.195856873823,
+      "dynamic_generation_gpu_hours": 13.635450756112458
+    },
+    "throughput_half": {
+      "acceptance": 0.531,
+      "output_tokens_per_second": 91.13694265068509,
+      "dynamic_generated_groups": 9416.195856873823,
+      "dynamic_generation_gpu_hours": 27.270901512224917
+    }
+  },
+  "stage3_256_mixed_groups_estimated_generation_gpu_hours": 0.698135078712958,
+  "sources": [
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/summary.json",
+      "sha256": "9734b65cce586f17378ebd5d3e33ee4e2e04b767562db588cde75a9fec5828a0",
+      "bytes": 80214
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_smoke_20260909T024936_746dbe/summary.json",
+      "sha256": "b0336a059e8002e1acf0938853a3c909970b8ea9875bb19af9de1e05b1c0efd2",
+      "bytes": 11720
+    }
+  ],
+  "caveats": [
+    "All estimates use the single fixed SFT policy; acceptance and lengths change after optimization.",
+    "No actual Stage3 refill or Stage4 optimizer execution is included.",
+    "Mandatory 5000 training groups per variant, G4 and original research contract remain unchanged.",
+    "Tracked GPU worker wall includes CPU setup/scoring/bookkeeping and sleep/wake inside those workers, not utilization-integrated kernel hours; process teardown gaps unmeasured.",
+    "Generation tokens/s includes the real bounded-batch generation calls, not cold load or semantic encoding. The projection excludes reference embedding cache startup.",
+    "If acceptance tends to zero, dynamic sampling has no finite worst-case time bound."
+  ]
+}

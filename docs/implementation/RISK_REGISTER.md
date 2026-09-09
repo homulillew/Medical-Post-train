@@ -88,3 +88,15 @@ R07在本次开放QA验证范围内MITIGATED：固定50条SFT在1024 cap下全�
 R17的实测锚点为formal worker2.537h、更新吞吐1074.84 total tokens/s、post-SFT生成均长346.22和LoRA172.01 output tokens/s。后续工作情景约124.52h含已完成SFT，仍依赖acceptance和任务长度迁移等假设；不是已执行的项目总耗时。
 
 R23和R20仍OPEN：实际SFT格式完整的药物回答与源参考不同，且没有专家审定；不能把格式100%或loss下降当作医学准确率提升。一个UTF-8截断边界还揭示一次性decode与原生增量decode不同；首次额外audit失败保留，按原生DecodeStream复核100条输出后通过，raw生成未改写。
+
+## Stage 2 early observations (retained historical record)
+
+R06/R15: controlled200-pair comparison completed; D-022 chooses BGE-M3 for bounded reference alignment and preserves0.8/0.15/0.05 correctness gating. Both encoders fail controlled negation/dose ranking; medical reasoning validity remains OPEN. Missing reference is an explicit semantic0 condition (2220/15000 pool), not an encoder error.
+
+R04: final-adapter identity positive/negative, repeat and sleep/wake controls passed on real50×4 smoke without actor updates. Same controls required in formal. R07: smoke cap1024 has0/200 truncation,100% answer-tag closure,86.5% strict format; nested/malformed tags remain observed, longer cap is not their demonstrated fix.
+
+R24 P2 (new): official text-only CMExam prompts can reference missing images (observed train27961 “暂无图”). Source-faithful pool is retained; report image-reference incidence and restrict interpretation to text-only exam response/label agreement. No post-hoc exclusion, no visual capability claim. R23 continues: correct final label may accompany arithmetic or reference-explanation disagreement, now retained in Stage2 qualitative worklog.
+
+R25 (OBSERVED): four pool references exactly equal 请等待更新; one formal prompt is affected. Retain frozen results, report separately; later masking requires an explicit shared reward version decision.
+
+Stage 2 full evidence: 1000×4 complete; final adapter controls PASS, zero truncation at1024, strict format86.925%. Source placeholders/missing images and weak semantic discrimination remain interpretation risks. No clinical validation or Stage3/4 execution is claimed.

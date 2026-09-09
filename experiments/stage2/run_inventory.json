@@ -1,0 +1,137 @@
+[
+  {
+    "run_id": "s2_data_20260909T024052_870aba",
+    "purpose": "data",
+    "run_class": "DIAGNOSTIC",
+    "status": "PASS",
+    "artifact_root": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba",
+    "config": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/config.json",
+      "sha256": "b705e2d4d62f59879c947632a438a1d869b27bd566f6ad9d9a129a8491e17b07",
+      "bytes": 479
+    },
+    "manifest": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/manifest.json",
+      "sha256": "103d122dd42922848d8595f6e6289c4bd61bde6cebe97fac0c60abbafa0d1053",
+      "bytes": 8361
+    },
+    "source_archive": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/source.zip",
+      "sha256": "47204fe40877aa0bdc3feae5140742e0f5245afec2803bed8a3e3f86b6963f6f",
+      "bytes": 116789
+    },
+    "status_receipt": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/status.json",
+      "sha256": "efb2505e187deda472f5be1cc7a1d9e3ed3de39d260b29cae2de30a29a71f26e",
+      "bytes": 70
+    }
+  },
+  {
+    "run_id": "s2_formal_20260909T025736_f607d9",
+    "purpose": "formal",
+    "run_class": "FORMAL",
+    "status": "PASS",
+    "artifact_root": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9",
+    "config": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/config.json",
+      "sha256": "5924228d4ed46880db92e8e50ceb2be506ffd1888816bd4700950af02e9e919d",
+      "bytes": 2976
+    },
+    "manifest": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/manifest.json",
+      "sha256": "3ddeec5fa054072a35d59ceee610ca1ffca22a2910c2c32257b0f44a8f3728d4",
+      "bytes": 11598
+    },
+    "source_archive": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/source.zip",
+      "sha256": "9c53a16832f634d5880f404cecb21e9f58f4876b0232c09c95b93d8e9f65a902",
+      "bytes": 141051
+    },
+    "status_receipt": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/status.json",
+      "sha256": "02e870481667efbcfd5ca6892395bb7d4a3aa82e21ad7f341bba6a9f177f3454",
+      "bytes": 70
+    }
+  },
+  {
+    "run_id": "s2_semantic_20260909T024252_815f01",
+    "purpose": "semantic",
+    "run_class": "DIAGNOSTIC",
+    "status": "FAILED",
+    "artifact_root": "/data/WSH/medical-post-train-artifacts/runs/s2_semantic_20260909T024252_815f01",
+    "config": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_semantic_20260909T024252_815f01/config.json",
+      "sha256": "bd47426ff3a21aee29638fc580ac0e928bfa0a4175e7928df01592b2f6cb2e2f",
+      "bytes": 195
+    },
+    "manifest": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_semantic_20260909T024252_815f01/manifest.json",
+      "sha256": "70f5a26292a796e926bc5d607b271aec32366afe4c4d70761e274c7a5d04429c",
+      "bytes": 8264
+    },
+    "source_archive": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_semantic_20260909T024252_815f01/source.zip",
+      "sha256": "2976c780632a3ef3075f7e3f93fdbe5415267eb9caf9266c5d43f1f8497a3d02",
+      "bytes": 121481
+    },
+    "status_receipt": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_semantic_20260909T024252_815f01/status.json",
+      "sha256": "fc8f345df4b6abc16d7cadfac7d24b2ca6a3a763638100fb9f749be203d97e39",
+      "bytes": 893
+    }
+  },
+  {
+    "run_id": "s2_semantic_20260909T024652_cb6286",
+    "purpose": "semantic",
+    "run_class": "DIAGNOSTIC",
+    "status": "PASS",
+    "artifact_root": "/data/WSH/medical-post-train-artifacts/runs/s2_semantic_20260909T024652_cb6286",
+    "config": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_semantic_20260909T024652_cb6286/config.json",
+      "sha256": "bd47426ff3a21aee29638fc580ac0e928bfa0a4175e7928df01592b2f6cb2e2f",
+      "bytes": 195
+    },
+    "manifest": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_semantic_20260909T024652_cb6286/manifest.json",
+      "sha256": "040ed2b89b985a4bd468f92134c735a49ee7056935ad63cd8b1e22d762e8df95",
+      "bytes": 8592
+    },
+    "source_archive": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_semantic_20260909T024652_cb6286/source.zip",
+      "sha256": "9bd3325d84407d7b9d502ca46b0e671d5cc183774041cfa811911e6348c4f27e",
+      "bytes": 128973
+    },
+    "status_receipt": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_semantic_20260909T024652_cb6286/status.json",
+      "sha256": "8addb1532e0d7445243aa36025f43b7d9224114d9c007e053d906d3fbd6975d7",
+      "bytes": 70
+    }
+  },
+  {
+    "run_id": "s2_smoke_20260909T024936_746dbe",
+    "purpose": "smoke",
+    "run_class": "SMOKE",
+    "status": "PASS",
+    "artifact_root": "/data/WSH/medical-post-train-artifacts/runs/s2_smoke_20260909T024936_746dbe",
+    "config": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_smoke_20260909T024936_746dbe/config.json",
+      "sha256": "c967bdecd898d346c1a1293addde1cc5f55d1891bffa935311638db8d5665369",
+      "bytes": 2532
+    },
+    "manifest": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_smoke_20260909T024936_746dbe/manifest.json",
+      "sha256": "246c9e2fc670189949dd175ec1655e252e0a28dba253b5260318d63b6da0066f",
+      "bytes": 11404
+    },
+    "source_archive": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_smoke_20260909T024936_746dbe/source.zip",
+      "sha256": "a05672ba498c9f4d6666b00362d466edc7e654b8b72d946c96714add5dcfcb09",
+      "bytes": 132043
+    },
+    "status_receipt": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_smoke_20260909T024936_746dbe/status.json",
+      "sha256": "f5440606319a00f837e140987866ea7f3e918c848b898354e58b9855457f2bdc",
+      "bytes": 70
+    }
+  }
+]

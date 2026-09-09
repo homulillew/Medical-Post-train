@@ -1,0 +1,35 @@
+{
+  "stage": 2,
+  "result": "FAIL",
+  "timestamp": "2026-09-09T03:29:02.907031+00:00",
+  "gates": {
+    "prior_stages_and_unchanged_contract_isolation": true,
+    "full_source_validated_clean_deterministic_15k_and_reserved_validation": true,
+    "controlled_semantic_comparison_and_frozen_gated_reward": true,
+    "real_50x4_smoke_raw_pipeline": true,
+    "formal_1000x4_fixed_policy_raw_parser_reward_lengths_and_groups": false,
+    "parser_and_reward_invariants_tests_pass": true,
+    "real_cases_50plus_review_report_interview_and_compute": false,
+    "artifact_seal_and_failed_run_retention": false
+  },
+  "errors": [
+    {
+      "gate": "formal_1000x4_fixed_policy_raw_parser_reward_lengths_and_groups",
+      "error": "AssertionError()"
+    },
+    {
+      "gate": "real_cases_50plus_review_report_interview_and_compute",
+      "error": "FileNotFoundError(2, 'No such file or directory')"
+    },
+    {
+      "gate": "artifact_seal_and_failed_run_retention",
+      "error": "FileNotFoundError(2, 'No such file or directory')"
+    }
+  ],
+  "counts": {
+    "candidate_pool": 15000,
+    "semantic_pairs": 200
+  },
+  "verifier_sha256": "d550dcdeb73c95117c5cb30950a1dca8af115ad7716d7528f7e8367627b8a9e9",
+  "contract_sha256": "8ba60bd2e724fbbb74e26f4ef677eb6c6d51eaafcba6eb3bcb0b2eb588a51f24"
+}

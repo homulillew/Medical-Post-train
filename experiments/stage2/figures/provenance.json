@@ -1,0 +1,42 @@
+{
+  "run_id": "s2_formal_20260909T025736_f607d9",
+  "sources": [
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/trajectories.jsonl",
+      "sha256": "4287a57867360e48ebcde3a9422fb6a3bb328edafc3253df91ac74866c39bc1f",
+      "bytes": 18808452
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/groups.jsonl",
+      "sha256": "9f79299d5b2e866af96eb56c3c9e7a98874c8386513eb2687de5b0dceb7bb82b",
+      "bytes": 1167037
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/summary.json",
+      "sha256": "9734b65cce586f17378ebd5d3e33ee4e2e04b767562db588cde75a9fec5828a0",
+      "bytes": 80214
+    }
+  ],
+  "script": {
+    "path": "/data/WSH/post-train/scripts/plot_stage2.py",
+    "sha256": "51d4c7c4c72cd6c232568d0a30cb460ab72fe1484d87026c4027461444c1e118",
+    "bytes": 3466
+  },
+  "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:27:36) [GCC 11.2.0]",
+  "matplotlib": "3.10.9",
+  "numpy": "2.5.2",
+  "platform": "Linux-7.0.0-28-generic-x86_64-with-glibc2.39",
+  "artifacts": [
+    {
+      "path": "/data/WSH/post-train/experiments/stage2/figures/rollout_profile.png",
+      "sha256": "a0649ad48b63915397278baed350ebbf7ad109a53ae77ab49b56e6c2f0a4411d",
+      "bytes": 187623
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage2/figures/rollout_profile.svg",
+      "sha256": "843ea8ae698b7b5c67757df57fdbbf9ed0d49498f76ab9d0fcaf8628ed260552",
+      "bytes": 132008
+    }
+  ],
+  "note": "Empirical counts/ECDF/histograms; no interpolated accuracy or invented advantage metrics. SVG line-end whitespace normalized after export."
+}

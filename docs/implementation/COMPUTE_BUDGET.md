@@ -155,3 +155,15 @@ post-SFT长度、真实医学数据packing效率、自然mixed acceptance、正�
 ### Unknown
 
 真实CMExam post-SFT响应分布、自然all-correct/mixed/all-wrong比例、完整Ray/GSPO actor和old-logprob吞吐、切换峰值、长期验证与外部备份。格式50/50通过不能填补医学正确性；源CoT算术错误与生成参考分歧已记录。下一阶段必须在train-only profiling中实测这些未知量。acceptance趋近0时严格最坏成本仍无有限上界，不能据此缩减正式组预算。
+
+
+## Stage 2 actual profiling calibration
+
+Formal `s2_formal_20260909T025736_f607d9`: measured mixed fraction 0.531000, mean output 237.553 tokens, P95 365.000, bounded-batch LoRA generation 182.274 output tokens/s. Tracked Stage2 GPU-worker wall 1.6214h includes smoke/formal generation and sequential semantic scoring; CPU diagnostics separately recorded.
+
+| Variant | Contract training groups | Estimated generated groups | Estimated output tokens | Estimated generation GPU hours |
+| --- | ---: | ---: | ---: | ---: |
+| vanilla | 5000 | 5000 | 4751065.0 | 7.240424351495717 |
+| dynamic | 5000 | 9416.195856873823 | 8947391.713747645 | 13.635450756112458 |
+
+These are fixed-initial-policy rollout-only estimates. Actor updates, old-logprob recomputation, switching and validation costs remain unmeasured in Stage2 and must be added after their stages. Acceptance changes with policy updates; 1/P_mixed is not a measured Dynamic training amplification. No 5000-group budget reduction is made. Stage1 historical scenarios remain above, not overwritten. Machine-readable source hashes, actual run costs and adverse sensitivity: `experiments/stage2/compute_calibration.json`.

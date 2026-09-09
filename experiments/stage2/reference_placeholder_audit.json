@@ -1,0 +1,49 @@
+{
+  "run_id": "s2_formal_20260909T025736_f607d9",
+  "observed_at": "2026-09-09T04:48:10.215006+00:00",
+  "classification": "Post-hoc source-quality audit; no frozen data/reward changes",
+  "exact_source_text": "请等待更新",
+  "pool_count": 4,
+  "pool_ids": [
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:194",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2659",
+    "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:576"
+  ],
+  "formal_prompt_count": 1,
+  "formal_trajectory_count": 4,
+  "formal_rows": [
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17:0",
+      "acc": 1,
+      "semantic": 0.3605785071849823,
+      "semantic_reason": "encoded"
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17:1",
+      "acc": 1,
+      "semantic": 0.3594914376735687,
+      "semantic_reason": "encoded"
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17:2",
+      "acc": 1,
+      "semantic": 0.37210386991500854,
+      "semantic_reason": "encoded"
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17:3",
+      "acc": 1,
+      "semantic": 0.35277533531188965,
+      "semantic_reason": "encoded"
+    }
+  ],
+  "scope": "Only this actually observed exact placeholder; not a claim to exhaust all non-informative references",
+  "consequence": "Frozen pipeline encodes this nonempty source text; do not interpret its similarity as medical explanation quality",
+  "followup": "Any future placeholder masking must be an explicit shared reward version decision, not a retroactive rescore",
+  "source": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/candidate_pool.jsonl",
+    "sha256": "6fa3e114f47c51977d940ca01b4e0d6510a03a390fe1f1495fe5d0820bf41262",
+    "bytes": 17377597
+  }
+}

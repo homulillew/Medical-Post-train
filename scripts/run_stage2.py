@@ -33,7 +33,12 @@ def main():
         assert read(out/'status.json')['status'] in ('FAILED','INTERRUPTED')
         launch(out,a.action or 'rollout');return
     if a.command=='score':
-        launch(Path(a.run),'score');return
+        out=Path(a.run)
+        if read(out/'status.json')['status']!='GENERATED':
+            p.error('score requires a completed GENERATED run; preserve existing results and investigate failed attempts before recovery')
+        if any((out/name).exists() for name in ('trajectories.jsonl','semantic_vectors.npy','summary.json')):
+            p.error('scoring artifacts already exist; refusing to overwrite prior evidence')
+        launch(out,'score');return
     if a.command=='data':
         state=read('project_state.json');assert state['stage0']['status']=='VERIFIED' and state['stages']['1']['status']=='DONE'
         for s in ('3','4','5','6'):assert state['stages'][s]['status']=='NOT_STARTED'

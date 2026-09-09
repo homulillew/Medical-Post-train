@@ -1,0 +1,110 @@
+[
+  {
+    "case_id": "S2-MANUAL-CORRECT-REFERENCE-DISAGREEMENT",
+    "run_id": "s2_formal_20260909T025736_f607d9",
+    "stage": 2,
+    "category": "REWARD_CASE",
+    "subtype": "correct_reference_disagreement",
+    "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31425",
+    "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31425:0",
+    "prompt": "一肺炎合并休克患者，治疗后血压96/66mmHg，脉搏96次/分，中心静脉压14cmH₂O，尿比重1.014，尿量15ml/小时，尿钠40mmol/L，肺毛细血管楔压12mmHg，可能为",
+    "ground_truth": "D",
+    "parsed_answer": "D",
+    "raw_output_excerpt": "<think>...\n患者在治疗后，血压是96/66mmHg，脉搏96次/分，中心静脉压14cmH₂O，这说明心脏的前负荷比较充足，但血压偏低，可能提示心输出量不足或者外周阻力较低。\n\n尿比重1.014，尿量只有15ml/小时，尿钠40mmol/L，这些指标显示肾小管可能在重吸收钠，但尿量依然很少，这可能意味着肾脏在努力保持体内液体平衡，但却没有足够的尿量排出。\n\n肺毛细血管楔压12mmHg，这个值正常，说明肺部没有充血，心输出量似乎没有明显不足，所以心衰的可能性比较低。\n\n患者处于休克状态，虽然血压有所恢复，但尿量少，尿比重高，提示可能存在肾前性问题，而非肾小管问题或者肾后性问题。\n\n综上，尿少和尿比重高，结合中心静脉压和肺毛细血管楔压，很可能是因为血容量不足导致的急性肾功能衰竭，而不是其他原因。\n\n因此，最符合的诊断是急性肾功能衰竭。\n</think>\n\n<answer>D</answer>",
+    "reward_components": {
+      "acc": 1,
+      "semantic": 0.8672494888305664,
+      "semantic_contribution": 0.13008742332458495,
+      "format": 1,
+      "total_reward": 0.9800874233245851
+    },
+    "observation": "Final D matches GT; reasoning calls urine specific gravity high and attributes to low volume, while reference describes low specific gravity and rejects low volume. Clinical truth NOT_ASSESSED.",
+    "why_interesting": "Specific manually read limitation of option-level reward or source completeness",
+    "hypothesis": null,
+    "alternative_explanations": [
+      "Reference explanation itself is not clinically adjudicated"
+    ],
+    "followup": "Retain fixed prompt case for future Stage3/4 review; no reward changes in this profiling."
+  },
+  {
+    "case_id": "S2-MANUAL-CORRECT-INTERNAL-CONTRADICTION",
+    "run_id": "s2_formal_20260909T025736_f607d9",
+    "stage": 2,
+    "category": "REWARD_CASE",
+    "subtype": "correct_internal_contradiction",
+    "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19412",
+    "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19412:2",
+    "prompt": "战争年代因饥荒、人口拥挤、人口流动性增大而引起的急慢性传染病流行属于",
+    "ground_truth": "E",
+    "parsed_answer": "E",
+    "raw_output_excerpt": "<think>...\n战争年代，饥荒、人口拥挤和人口流动性增大等因素确实会导致急慢性传染病的流行。这些因素都属于外部环境的变化，它们影响了传染病的传播条件。在流行病学中，这些可以被看作是环境因素的改变。在这种情况下，环境因素的变化使得传染病更容易传播，因为它们创造了更有利于病原体传播的条件。\n\n从流行病学三角模型来看，这个模型强调病因、宿主和环境三者之间的关系。病因可以是传染源，宿主是易感人群，而环境因素则是影响三者互动的外部因素。当环境因素改变时，它可能会影响宿主的易感性或者病原体的传播条件。\n\n在这个问题中，环境因素（如战争年代的饥荒、人口拥挤、人口流动性）的变化导致了传染病的流行。这意味着环境因素的改变影响了传染病的传播，而不是直接影响病因或者宿主的特性。\n\n因此，这些因素属于环境因素变化导致的，而不是宿主比重增加或病因比重增加。因此，最符合的选项是选项E：环境因素发生变化，导致宿主比重增加。这解释了为什么在这些条件下，传染病更容易流行。\n</think>\n\n<answer>E</answer>",
+    "reward_components": {
+      "acc": 1,
+      "semantic": 0.0,
+      "semantic_contribution": 0.0,
+      "format": 1,
+      "total_reward": 0.8500000000000001
+    },
+    "observation": "Final E is correct, yet preceding sentence denies the host-weight increase in E. Reference explanation absent; semantic is zero for missing reference.",
+    "why_interesting": "Specific manually read limitation of option-level reward or source completeness",
+    "hypothesis": null,
+    "alternative_explanations": [
+      "Reference explanation itself is not clinically adjudicated"
+    ],
+    "followup": "Retain fixed prompt case for future Stage3/4 review; no reward changes in this profiling."
+  },
+  {
+    "case_id": "S2-MANUAL-DATE-ARITHMETIC-ERROR",
+    "run_id": "s2_formal_20260909T025736_f607d9",
+    "stage": 2,
+    "category": "REWARD_CASE",
+    "subtype": "date_arithmetic_error",
+    "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30338",
+    "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30338:2",
+    "prompt": "女，25岁，月经周期为30天，其末次月经是2002年4月18日，其排卵日期大约在5月",
+    "ground_truth": "B",
+    "parsed_answer": "C",
+    "raw_output_excerpt": "<think>\n嗯，这位女士的月经周期是30天，那么她的排卵期应该在月经周期的中间。一般来说，排卵期是在月经周期的中间，也就是大约在第14天左右。\n\n她的末次月经是2002年4月18日，所以我们可以简单地计算一下她的排卵日。从4月18日开始，加上14天，排卵日应该是在2002年4月30日。\n\n但是，题目给的选项中没有4月30日，因此我需要考虑一些可能的误差或者计算时的误差。通常，排卵可能在月经周期的第14天前后的几天内，因此排卵日可能在4月25日至5月3日之间。\n\n让我再仔细检查一下，从4月18日开始，加上13天，排卵日应该是在4月30日。如果考虑到可能的误差，排卵日也可能在5月1日左右。哦，我之前可能漏掉了这个。那么，考虑到选项中的日期，5月1日最接近的是5月3日。\n\n综上所述，根据月经周期和可能的误差，这位女士的排卵日期大约在5月3日。因此，最接近的选项是C，5月6日。\n</think>\n\n<answer>C</answer>",
+    "reward_components": {
+      "acc": 0,
+      "semantic": 0.8373731374740601,
+      "semantic_contribution": 0.0,
+      "format": 1,
+      "total_reward": 0.05
+    },
+    "observation": "Calendar addition and nearest-option distances are inconsistent with the raw reasoning. Final C differs from GT B.",
+    "why_interesting": "Specific manually read limitation of option-level reward or source completeness",
+    "hypothesis": null,
+    "alternative_explanations": [
+      "Reference explanation itself is not clinically adjudicated"
+    ],
+    "followup": "Retain fixed prompt case for future Stage3/4 review; no reward changes in this profiling."
+  },
+  {
+    "case_id": "S2-MANUAL-MISSING-IMAGE",
+    "run_id": "s2_formal_20260909T025736_f607d9",
+    "stage": 2,
+    "category": "REWARD_CASE",
+    "subtype": "missing_image",
+    "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27961",
+    "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27961:2",
+    "prompt": "男，25岁。反复上腹痛反酸5年。X线钡餐检查结果如图1（暂无图），可诊断为",
+    "ground_truth": "B",
+    "parsed_answer": "B",
+    "raw_output_excerpt": "<think>\n嗯，这个25岁男性反复出现上腹痛和反酸已经有5年了，这让我想到消化系统的溃疡问题。上腹痛和反酸通常和胃或十二指肠溃疡有关。X线钡餐检查是诊断这些溃疡的常用方法。通过X线钡餐，我们可以看到消化道的轮廓，特别是胃和十二指肠的形态变化。\n\n如果十二指肠的球部有溃疡，那么在钡餐检查中，可能会看到一个叫做'龛影'的特征，也就是一个圆形的、比正常更暗的区域。这种特征在十二指肠球部溃疡中很常见。如果是球后溃疡，可能会在十二指肠的球后部分看到类似的变化。球后溃疡可能表现为一个较规则的龛影，但位置在十二指肠的较后部。\n\n考虑到患者的症状，上腹痛和反酸，这让我更倾向于十二指肠球部溃疡。因为球部溃疡通常会引起这些症状，而球后溃疡的位置相对较高，可能不太容易引起反酸。\n\n所以，综合这些信息，结合X线钡餐的典型表现，最可能的诊断是十二指肠球部溃疡。嗯，这个结论比较合理，也符合常见的临床表现和影像学特征。\n</think>\n\n<answer>B</answer>",
+    "reward_components": {
+      "acc": 1,
+      "semantic": 0.9198039770126343,
+      "semantic_contribution": 0.13797059655189514,
+      "format": 1,
+      "total_reward": 0.9879705965518952
+    },
+    "observation": "Prompt explicitly says no image; response discusses hypothetical imaging findings. Correct B does not establish visual reasoning.",
+    "why_interesting": "Specific manually read limitation of option-level reward or source completeness",
+    "hypothesis": null,
+    "alternative_explanations": [
+      "Reference explanation itself is not clinically adjudicated"
+    ],
+    "followup": "Retain fixed prompt case for future Stage3/4 review; no reward changes in this profiling."
+  }
+]

@@ -32,21 +32,23 @@
       "interview_story": "docs/stage_reports/01_medical_sft.md"
     },
     "2": {
-      "status": "SMOKE_PASS",
+      "status": "FULL_PASS",
       "run_ids": [
         "s2_data_20260909T024052_870aba",
         "s2_semantic_20260909T024252_815f01",
         "s2_semantic_20260909T024652_cb6286",
-        "s2_smoke_20260909T024936_746dbe"
+        "s2_smoke_20260909T024936_746dbe",
+        "s2_formal_20260909T025736_f607d9"
       ],
       "progress": {
         "candidate_pool": 15000,
-        "profiling_unique_prompts": 0,
-        "completed_responses": 0
+        "profiling_unique_prompts": 1000,
+        "completed_responses": 4000
       },
       "verification_receipt": null,
-      "stage_report": null,
-      "interview_story": null
+      "stage_report": "docs/stage_reports/02_reward_rollout.md",
+      "interview_story": "docs/stage_reports/02_reward_rollout.md",
+      "progress_observed_at": "2026-09-09T04:50:29.322779+00:00"
     },
     "3": {
       "status": "NOT_STARTED",

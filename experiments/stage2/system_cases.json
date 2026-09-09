@@ -1,0 +1,24 @@
+[
+  {
+    "case_id": "S2-SYSTEM-TOKENIZER-API",
+    "stage": 2,
+    "category": "SYSTEM_CASE",
+    "run_id": "s2_semantic_20260909T024252_815f01",
+    "subtype": "semantic_tokenizer_api",
+    "observation": "Pinned Transformers BertTokenizer lacks build_inputs_with_special_tokens; diagnostic failed at warmup before model comparison scores.",
+    "root_cause": "Legacy tokenizer helper was not supported by the installed tokenizer backend.",
+    "resolution": "New diagnostic run uses native backend post_process; normalized short-text vectors checked against SentenceTransformer.encode.",
+    "reproduction": "Run the archived source.zip with its retained config and attempt command in the recorded environment.",
+    "evidence": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_semantic_20260909T024252_815f01/status.json",
+      "sha256": "fc8f345df4b6abc16d7cadfac7d24b2ca6a3a763638100fb9f749be203d97e39",
+      "bytes": 893
+    },
+    "original_source": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_semantic_20260909T024252_815f01/source.zip",
+      "sha256": "2976c780632a3ef3075f7e3f93fdbe5415267eb9caf9266c5d43f1f8497a3d02",
+      "bytes": 121481
+    },
+    "successful_followup": "s2_semantic_20260909T024652_cb6286"
+  }
+]

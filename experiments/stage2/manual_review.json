@@ -1,0 +1,815 @@
+{
+  "run_id": "s2_formal_20260909T025736_f607d9",
+  "review_type": "manual qualitative review",
+  "reviewer": "current execution agent; no human clinician or external judge API",
+  "clinical_validation": false,
+  "entries": [
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13809:0",
+      "raw_output_sha256": "8b740e9fb9b51ed0056b346a0354883733889f56f6ac5f97835cf1574051b711",
+      "reviewed_at": "2026-09-09T03:02:37.061682+00:00",
+      "observation": "气虚血瘀题排除参考A、最终选B；讨论同批方剂但选项不符，完整标签不应带来正确性分。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 0
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40788:0",
+      "raw_output_sha256": "762d578efd56bc7ec9b958bb48fa03eef0179c1a431c113f61ca4c36d065a55a",
+      "reviewed_at": "2026-09-09T03:02:37.061781+00:00",
+      "observation": "贮存题先认同多种候选，再凭“更强调避免冻结”改选E，参考A；数字条件的论证未被校准。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 4
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6081:0",
+      "raw_output_sha256": "c694e787686bc96300f8a4a8341755572c2b7d0af13382175f560119eabf3b25",
+      "reviewed_at": "2026-09-09T03:03:10.947701+00:00",
+      "observation": "先说协调行动属于任务，随后又用“只是执行手段”排除C，内部论证转向；最终C与GT B不同。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 8
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13809:1",
+      "raw_output_sha256": "488b9b17fbb0f16537c5f58f49c90c1e507293ebb90f2be1093c1c50c4926b72",
+      "reviewed_at": "2026-09-09T03:02:37.061724+00:00",
+      "observation": "think内部和最终各有一个D标签，且推理仅省略号；按重复/嵌套标签规则拒绝，GT为A。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 1
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13809:2",
+      "raw_output_sha256": "d9942dc69830f2587a9e10be85d2bf397fbd39a5aded59ae663c6edb12ac73e0",
+      "reviewed_at": "2026-09-09T03:02:37.061749+00:00",
+      "observation": "把参附汤合生脉散判断为首选D，与参考A分歧；解析D无误，推理质量未作临床审定。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 2
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13809:3",
+      "raw_output_sha256": "049b087bd1d4a396c128183d2f94b231c5bd03381d184e8b532c79e6d8215f9d",
+      "reviewed_at": "2026-09-09T03:02:37.061766+00:00",
+      "observation": "在多个方剂间比较后选E，参考为A；格式正确，不能把领域词重合当作答对。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 3
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40788:1",
+      "raw_output_sha256": "484e4ff97159449b62aec035c67d9ef5effbf4ee956ba43ff227c1956cf3a600",
+      "reviewed_at": "2026-09-09T03:02:37.061796+00:00",
+      "observation": "单选GT A却输出ABDE，含A不等于集合一致；多选完整解析但正确性为0。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 5
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40788:2",
+      "raw_output_sha256": "b6f65366a9a685838d89d84a035f9737ab2a9b4f1b59b58885e6ad80f3f0352f",
+      "reviewed_at": "2026-09-09T03:02:37.061807+00:00",
+      "observation": "输出两个C答案块，其中一个在think中；没有有效推理，结构不合法的拒绝符合合同。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 6
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40788:3",
+      "raw_output_sha256": "e8d0895ae7964587b6c72ac2913599834b82369a56530b44f85f388f487b534c",
+      "reviewed_at": "2026-09-09T03:02:37.061818+00:00",
+      "observation": "think未闭合但出现C答案块；不能从未结束推理中取选项，结构失败按原文保留。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 7
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6081:1",
+      "raw_output_sha256": "b6f65366a9a685838d89d84a035f9737ab2a9b4f1b59b58885e6ad80f3f0352f",
+      "reviewed_at": "2026-09-09T03:03:10.947743+00:00",
+      "observation": "只有省略号及嵌套/重复C答案标签，没有可用推理；按既定结构规则拒绝。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 9
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6081:2",
+      "raw_output_sha256": "6ce3498859369ce32255f32129cde8df9429677ab94d116ad10a4c6101fee2df",
+      "reviewed_at": "2026-09-09T03:03:10.947768+00:00",
+      "observation": "详细复述各选项后把协调行动视为手段而排除，和参考明确列入协调的内容分歧；最终C。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 10
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6081:3",
+      "raw_output_sha256": "78711d7ae303132184e676182b05c04516fd1bdd438afee376a431274dc1d60c",
+      "reviewed_at": "2026-09-09T03:03:10.947786+00:00",
+      "observation": "反复承认C属于促进活动，最后仍选C；标签有效但GT B，记录自我论证不一致。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 11
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41049:0",
+      "raw_output_sha256": "2c3c567f2ecec52bd6097a1e4f010756a1e5dd892b21ea9fa0dd1a7b1efc41ee",
+      "reviewed_at": "2026-09-09T03:03:10.947802+00:00",
+      "observation": "溶剂题以多个候选酸不稳定作推论，最终D而GT A；解析无误，医学论断未被验证。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 12
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49552:0",
+      "raw_output_sha256": "b27ebe6629f4c820a2be50b1f95307244158fa83025176aad642fb3840dc9899",
+      "reviewed_at": "2026-09-09T03:03:41.469336+00:00",
+      "observation": "滴注题以稳态字样为依据选择C，参考是A；完整输出但公式判别未得到题目条件支持。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 16
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11430:0",
+      "raw_output_sha256": "5fa4bf7455530c6175ab86bfbcd8292c06dbcad4b32bf23e7955d8be7092ad0c",
+      "reviewed_at": "2026-09-09T03:03:41.469440+00:00",
+      "observation": "溃疡题最终E而GT D；以年龄和深度匹配作判断，诊断推理仅定性记录、未经临床审定。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 20
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41049:1",
+      "raw_output_sha256": "f7d588b363abb3cd315f3bc57b3905eb1af8728265aa6eefcaf59f48b1f29a78",
+      "reviewed_at": "2026-09-09T03:03:10.947816+00:00",
+      "observation": "提到青霉素不宜合用后仍选B；与同组其他成员对药物稳定性的表述不同，参考A。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 13
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41049:2",
+      "raw_output_sha256": "58ad12ca3594559cfb3af17c0b84f86a8e84269e655cd3c1b12b06a01dc8a389",
+      "reviewed_at": "2026-09-09T03:03:10.947829+00:00",
+      "observation": "把不适宜原因归为磷霉素析晶并选C，源参考指定A；结构有效但答案不同。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 14
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41049:3",
+      "raw_output_sha256": "ac91265728d9f628b9d41f264613e84e087c484e49337c7ca958a0101a620e77",
+      "reviewed_at": "2026-09-09T03:03:10.947843+00:00",
+      "observation": "最终A匹配参考，但同时声称甲硝唑也不适宜，和参考解释分歧；是正确选项但可疑解释的跟踪案例。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 15
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49552:1",
+      "raw_output_sha256": "df915b4f1e9d3246111f3b152e77e4dc33992bdafcc2b8d244ba9fbee9f54db9",
+      "reviewed_at": "2026-09-09T03:03:41.469380+00:00",
+      "observation": "最终A与参考一致，并区分滴注积累与注射衰减；对D公式的转述有分母变乘法的文本偏差，正确标签不等于全推理无误。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 17
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49552:2",
+      "raw_output_sha256": "c5fe207c8bfde8387d0983e22aa395bcff34c7d19c5d4a131efa0eb77389dda1",
+      "reviewed_at": "2026-09-09T03:03:41.469407+00:00",
+      "observation": "逐项复述后选择C，参考A；把稳态符号当作主要依据，解析器忠实保留错误最终选项。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 18
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49552:3",
+      "raw_output_sha256": "01b8d2c50b99da1a6866601f439caf8e4af5168413ef480373fef557008771c6",
+      "reviewed_at": "2026-09-09T03:03:41.469425+00:00",
+      "observation": "把选项C原有1/(1-e^-kt)转述成(1-e^-kt)，可直接核对的公式抄写变化；最终C仍与GT A不同。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 19
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11430:1",
+      "raw_output_sha256": "ed1d1c16b040416ff5874a6ae80500d38beabaff2b203ad4944b78767d6df3eb",
+      "reviewed_at": "2026-09-09T03:03:41.469454+00:00",
+      "observation": "最终A而参考D，对“良性通常不会深”和疼痛特征的判断与参考描述分歧；标签格式本身正常。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 21
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11430:2",
+      "raw_output_sha256": "78dd478a9f4d49447ff3482615e477925d9d3eeb5c25ec2d3042f74b5731ce65",
+      "reviewed_at": "2026-09-09T03:03:41.469468+00:00",
+      "observation": "最终D匹配参考，比较了多种溃疡；关于其他疾病病因的额外表述未由参考支持，医学质量NOT_ASSESSED。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 22
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11430:3",
+      "raw_output_sha256": "c617b415068ec8d2fca66164654fb7c57ec9551adf873e8cc1f19b700e1bfe2a",
+      "reviewed_at": "2026-09-09T03:03:41.469481+00:00",
+      "observation": "最终A与GT D不同，并认为重型阿弗他不会深及肌层，和源参考症状解释冲突；原文保留。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 23
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32976:0",
+      "raw_output_sha256": "a6a7cbc2645af3359b9d318b870c4489136c18d024ce8c90b7494e578217c073",
+      "reviewed_at": "2026-09-09T03:04:09.716517+00:00",
+      "observation": "空think但有完整C答案，格式奖励按合同可为1，GT A使正确性为0；真实format-only案例。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 24
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30338:0",
+      "raw_output_sha256": "5756c1a1d4284be34f6ff979cd1baa98110a3e0d0ed2d0da9584feab0a18e9e5",
+      "reviewed_at": "2026-09-09T03:04:09.716619+00:00",
+      "observation": "日期题最终B正确，却主要靠个体波动从5月2日改成4日，未采用参考的下次月经前14日规则。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 28
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12715:0",
+      "raw_output_sha256": "265670bd8bc28501e41ae5addd6eb0211dede2bb0bd663b22b66eaffab6f992f",
+      "reviewed_at": "2026-09-09T03:04:35.315546+00:00",
+      "observation": "急性骨髓炎对应题在C与D间摇摆后选D，匹配GT；记录有内容的推理而非标签套利。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 32
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32976:1",
+      "raw_output_sha256": "e748fa2d1318dc272797c803a6c65a5acde4c704a4d46b48c286b62c79461912",
+      "reviewed_at": "2026-09-09T03:04:09.716560+00:00",
+      "observation": "同时认为A和C不直接供胃，最终却选C；原题问分支，参考A，判断对象表述有转移。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 25
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32976:2",
+      "raw_output_sha256": "86a1eded18051a1d0ef4712a69925418c9217f85d160f1284e667dcdeee53cf9",
+      "reviewed_at": "2026-09-09T03:04:09.716587+00:00",
+      "observation": "最终A匹配GT，但对脾动脉分支的解释反复犹豫；不由正确字母推定全部解剖陈述正确。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 26
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32976:3",
+      "raw_output_sha256": "4b2ce7119427d3988fb926dc92fdc8294e305c1eb519db5098f4db247153a822",
+      "reviewed_at": "2026-09-09T03:04:09.716604+00:00",
+      "observation": "最终A正确，同时加入“胃左动脉来源于脾动脉”的具体解释；仅记录额外待核查事实，不临床审定。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 27
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30338:1",
+      "raw_output_sha256": "17ec3eb4f89409a78ee2bcb44cc262577984004cdd8416981727e5ded21d87f4",
+      "reviewed_at": "2026-09-09T03:04:09.716635+00:00",
+      "observation": "先得到参考同样的5月4日，后又改为周期中点5月3日，再择B；结论对但推理路线反复，值得跟踪。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 29
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30338:2",
+      "raw_output_sha256": "3beedccaab27307aa6d707ce58c2b2ca16ed0295417e3fc74cf06781114589f1",
+      "reviewed_at": "2026-09-09T03:04:09.716648+00:00",
+      "observation": "声称4月18日加14天为4月30日，且把5月6日说成最接近5月3日，存在可直接计算核验的日期/距离错误；最终C不符GT B。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 30
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30338:3",
+      "raw_output_sha256": "3a4d3fa14252be92bfc1075f18a010c1c4a00dbdd9efe71f0f35cf64a6e97d2d",
+      "reviewed_at": "2026-09-09T03:04:09.716661+00:00",
+      "observation": "将范围中的第14天作为最终依据选A，参考B；所有标签闭合，不把格式合格等同准确。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 31
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12715:1",
+      "raw_output_sha256": "afd29efb812c44487d4fd4e9b894b11aeeb2b3e8005fcf844cf89086867d64b6",
+      "reviewed_at": "2026-09-09T03:04:35.315590+00:00",
+      "observation": "最终D正确，但把无头疽与有头疽都描述为表面脓肿，和参考对深部组织的区分不一致。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 33
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12715:2",
+      "raw_output_sha256": "d08b965c4c9cef3a7093dfce0ec7c60dc2e2ab8327e5dcc748edcfe18b38a5e3",
+      "reviewed_at": "2026-09-09T03:04:35.315614+00:00",
+      "observation": "前段说无头疽一般是皮肤脓肿，后段又说一般是深部感染而选B，直接可见内部描述改变；GT D。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 34
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12715:3",
+      "raw_output_sha256": "bb687ec8a7170fed5a37f99d1e3aadf95af9a6d8cbe50b56ffbb2c9138f7e90b",
+      "reviewed_at": "2026-09-09T03:04:35.315632+00:00",
+      "observation": "主要依据病名听感选C，参考D；完整结构与答案错误同时存在。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 35
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29864:0",
+      "raw_output_sha256": "1fbe1d8c9efccccda98e39ffda6c00ee1f5654fa3c0cd3aff5412bf28ddb2e2a",
+      "reviewed_at": "2026-09-09T03:04:35.315646+00:00",
+      "observation": "最终E与参考标签一致，逐项分类后排除；没有以原始参考“E错”字样误读ground truth。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 36
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19412:0",
+      "raw_output_sha256": "554985c4326b6fa245cec3b8479fd42309d11bfde36cf70658922528c7566aff",
+      "reviewed_at": "2026-09-09T03:05:13.503726+00:00",
+      "observation": "最终E正确但末段强调“保持动态平衡”，解释与所选项含义并不完全对应；源解释缺失，语义为0的原因应标missing_reference。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 40
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27961:0",
+      "raw_output_sha256": "3241352a8918951167a005261b0e454bca26eb30dd265fca652f8c05ee88eef4",
+      "reviewed_at": "2026-09-09T03:05:13.503827+00:00",
+      "observation": "题干明确“暂无图”，模型凭症状及一般影像知识选B；GT一致不代表实际读取了X线图像。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 44
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29864:1",
+      "raw_output_sha256": "f524cbcf66819b623fc9e14953963dfd7e58fefc584033ef50a074a5ef63fdfd",
+      "reviewed_at": "2026-09-09T03:04:35.315660+00:00",
+      "observation": "最终E正确，解释和参考的分类方向一致；这是样本级对照，不是当前法规核验。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 37
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29864:2",
+      "raw_output_sha256": "f4f466c537b4ea10ed506f6c5599dd1554b7d4b25f574bd3f5df096cfeafa882",
+      "reviewed_at": "2026-09-09T03:04:35.315681+00:00",
+      "observation": "先把所有疾病列乙类，再把麻疹改成丙类以选C，和参考E分歧；保留“再三确认”但无外部证据的行为。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 38
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29864:3",
+      "raw_output_sha256": "9cf7ad32f5c97ef9cea772154c34c5b5704eb60815dbb4c5d5fee7dca19a7722",
+      "reviewed_at": "2026-09-09T03:04:35.315694+00:00",
+      "observation": "最终E与GT一致，推理按选项排除完成；不宣称进行了法律或临床验证。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 39
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19412:1",
+      "raw_output_sha256": "37c12973752ab963cef7c036b5bd33ab970f58769acb1386bb776a88dfed40eb",
+      "reviewed_at": "2026-09-09T03:05:13.503769+00:00",
+      "observation": "最终E匹配GT，按环境改变易感性展开；参考解释缺失，不能把低语义分理解成编码器否定了推理。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 41
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19412:2",
+      "raw_output_sha256": "5e3551f8f514082d5ef550c56267a99ed6416a963f1200518b4415f4cbb24008",
+      "reviewed_at": "2026-09-09T03:05:13.503794+00:00",
+      "observation": "同一结尾先说不是宿主比重增加，随后选“宿主比重增加”的E，直接文字自相矛盾但最终字母正确；参考缺失。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 42
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19412:3",
+      "raw_output_sha256": "9899219ad663c320ef298f2669bf13a67a1764e8c394f8fe6399b14b0f302506",
+      "reviewed_at": "2026-09-09T03:05:13.503811+00:00",
+      "observation": "最终D而GT E，承认宿主和病因双重变化后选择病因；没有参考解释供事实层面对照。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 43
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27961:1",
+      "raw_output_sha256": "cd76ea2579a0414c4e47b9f45e89641d922b7925e885a519bddf60dee2a8024f",
+      "reviewed_at": "2026-09-09T03:05:13.503841+00:00",
+      "observation": "依据症状逐项排除后选B，GT相符；原题所需图像缺失应作为数据边界保留。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 45
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27961:2",
+      "raw_output_sha256": "453142c525db426331f0b9331a5ae8070c365533373654970d9e1f26db1e6a9b",
+      "reviewed_at": "2026-09-09T03:05:13.503854+00:00",
+      "observation": "最终B正确，详细描述假设的龛影，题干没有图像，不能把该描述当成视觉诊断证据。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 46
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27961:3",
+      "raw_output_sha256": "2faef1a3996116db599fe61be581497ba878bd0bc4bcfbbe10ff13b685ff2c84",
+      "reviewed_at": "2026-09-09T03:05:13.503868+00:00",
+      "observation": "用五年病程推断球后溃疡C，并假设图像会支持；与GT B不同，缺图问题和额外推断分别记录。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 47
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8418:0",
+      "raw_output_sha256": "ef73e07ee0b4f0177199ff4f6b1b70c9d47ca25b9f2eda0d4fbe90ee3ca7f4cc",
+      "reviewed_at": "2026-09-09T03:05:42.803815+00:00",
+      "observation": "伦理学题最终D与参考相符，完整分析后回答；本组全对不代表四条文本完全一样。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 48
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31425:0",
+      "raw_output_sha256": "ac28ebc51ddbd8d0d4a237b4d36b151025c9ee2779d7837ee9e90218973c1003",
+      "reviewed_at": "2026-09-09T03:05:42.803914+00:00",
+      "observation": "最终D正确，但把1.014称为尿比重高，并归因血容量不足；源参考称低比重且排除容量不足，保留正确答案/解释分歧。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 52
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18449:0",
+      "raw_output_sha256": "f829338a95f84e0c1236a25cb2c5afdd55cb86869cc830cd018259214c1beb18",
+      "reviewed_at": "2026-09-09T03:06:34.774771+00:00",
+      "observation": "生命质量量表题最终C正确，较长思考主要围绕名称与适用范围，未引入源参考之外的评分。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 56
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8418:1",
+      "raw_output_sha256": "121ef82df9c5e4b08ecc8372771fe0ed80c1ddfedfefe8b1ef5e380d8b781b49",
+      "reviewed_at": "2026-09-09T03:05:42.803857+00:00",
+      "observation": "同样选D，分别解释四种类型，与参考分类方向一致；文字组织与其他成员不同。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 49
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8418:2",
+      "raw_output_sha256": "10befb693f454744f8c96a1e431749191879f16e588a01200ff2c44c8481d625",
+      "reviewed_at": "2026-09-09T03:05:42.803882+00:00",
+      "observation": "列出分类再重复确认D，标签与GT一致；重复确认并不提供独立正确性证据。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 50
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8418:3",
+      "raw_output_sha256": "839ff3adddc7eff2cbe23f2ca4a7b8b608e440c5bb3e0fc1735ecce6c245a13a",
+      "reviewed_at": "2026-09-09T03:05:42.803899+00:00",
+      "observation": "最终D正确，概念说明有完整内容；all-correct组仍可能因语义分数不同产生hybrid方差。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 51
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31425:1",
+      "raw_output_sha256": "ee500d57f0772017c7a0657792f534d0c363602eaf89ede8f9491ab243b0bd6b",
+      "reviewed_at": "2026-09-09T03:05:42.803929+00:00",
+      "observation": "最终D正确，却把楔压12称为增加，参考描述为正常；数字被照抄但定性方向可能不同，不能由cosine认证。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 53
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31425:2",
+      "raw_output_sha256": "6570971aa97b507dab36899788981111c2d7ccfe3239d63e2fbe05efc7966f78",
+      "reviewed_at": "2026-09-09T03:05:42.803943+00:00",
+      "observation": "最终D与GT一致，将1.014称正常、楔压12称较高，和参考低比重/正常楔压表述分歧；非临床审定。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 54
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31425:3",
+      "raw_output_sha256": "46c3d886ec32b1d77389b09f459cb0e1f27eca55e5f86a125e279e3e8fa189a1",
+      "reviewed_at": "2026-09-09T03:05:42.803956+00:00",
+      "observation": "最终D正确，称尿液浓缩而参考是低比重尿；对尿钠重吸收的论述与其他成员不同，适合跟踪全对组语义排序局限。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 55
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18449:1",
+      "raw_output_sha256": "12149b748dadb799c93baa38f7f84524e0ea964fb91cc63576f868a86418f3c6",
+      "reviewed_at": "2026-09-09T03:06:34.774815+00:00",
+      "observation": "最终C正确，凭广泛使用的记忆判断，结构完整；没有将信心措辞转成额外奖励。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 57
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18449:2",
+      "raw_output_sha256": "a975567881a2dabb6c4453bd83b0a63f231d611cf5debe1f15fd8988333597c5",
+      "reviewed_at": "2026-09-09T03:06:34.774839+00:00",
+      "observation": "最终C正确，并明确SF-36名称，与参考36条目简明量表一致；只作文本对照。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 58
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18449:3",
+      "raw_output_sha256": "34ffbc5dff889d45fb16f7276d98cedfdc2adbb31268ad164fffdfb16ba31443",
+      "reviewed_at": "2026-09-09T03:06:34.774857+00:00",
+      "observation": "最终C正确，各选项适用范围比较与该组其他回答不同；全对组的文字和潜在语义分仍可变化。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "packet_index": 59
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39417:0",
+      "raw_output_sha256": "b34fb429a9ede4195d363b403eaf40f8eb8414025882e40827b5b5267dd051eb",
+      "reviewed_at": "2026-09-09T04:48:09.721902+00:00",
+      "observation": "出汗题讨论了与参考相同的ADH和渗透压机制，却最终选E而非B；sem=0.950364为全量错答最高，门控后仅format的0.05。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "selection_reason": "final deterministic semantic/length/format/category packet"
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51382:0",
+      "raw_output_sha256": "8d77b4e7b36c8fa9d9b8876a1cb2b0052c9cdfa6c4050caa9866f362d7c05df0",
+      "reviewed_at": "2026-09-09T04:48:09.721954+00:00",
+      "observation": "多选题think结尾列出ABCE，与参考集合一致，但最终标签只有A；严格按最终集合少选得0，不能用相似推理补答案。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "selection_reason": "final deterministic semantic/length/format/category packet"
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11977:0",
+      "raw_output_sha256": "18ccf3c1dc5feddb504660567323ffa54b5f942fd27f4a28e19ffaf90e8e4cbd",
+      "reviewed_at": "2026-09-09T04:48:09.721985+00:00",
+      "observation": "乳牙题先承认6个月可能，随后把最早年龄换成较常见年龄并选1岁；问题所问最早与常见概念混淆，sem仍0.945547。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "selection_reason": "final deterministic semantic/length/format/category packet"
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16611:0",
+      "raw_output_sha256": "8bac88ce2c18e2329b764898bfc19520d19dfafc01f75be1d8beeac10f3d17ec",
+      "reviewed_at": "2026-09-09T04:48:09.722003+00:00",
+      "observation": "最终C正确，但think只有省略号，reasoning一token；低sem不能自动等同医学解释错误，这里实际没有实质解释。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "selection_reason": "final deterministic semantic/length/format/category packet"
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17:3",
+      "raw_output_sha256": "05cd639cc5133560bf7e3c083383017abe7c6f507ad8134a2f4fa851cbd7a6a7",
+      "reviewed_at": "2026-09-09T04:48:09.722020+00:00",
+      "observation": "最终C正确，完整推理讨论症状与淋巴结；参考文本仅为“请等待更新”，实际语义比较的是占位提示而非临床解释。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "selection_reason": "final deterministic semantic/length/format/category packet"
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17:1",
+      "raw_output_sha256": "4bcfd52ce455f1c26be9d6afdbed6f4fde911902ccf48345a55e64e4013547d7",
+      "reviewed_at": "2026-09-09T04:48:09.722035+00:00",
+      "observation": "同一占位参考题，另一个正确C响应更简短，sem稍高；该差异不具备参考解释质量排序的含义。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "selection_reason": "final deterministic semantic/length/format/category packet"
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20126:1",
+      "raw_output_sha256": "4618052691d55558159ef6a88327668b948592ecbbc6159b37ca4ad133e34b2e",
+      "reviewed_at": "2026-09-09T04:48:09.722054+00:00",
+      "observation": "最长响应把特异度80%误当健康人口比例，重复计算160并声称过程正确；按题给患病40人应有960健康者，最终还选了表示72的C。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "selection_reason": "final deterministic semantic/length/format/category packet"
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19991:0",
+      "raw_output_sha256": "a234892b920592ab8682dc740834d2a2b3fa2497239930df1f3b46469f22422d",
+      "reviewed_at": "2026-09-09T04:48:09.722072+00:00",
+      "observation": "先算出OR约13.9，随后两次称选项无13.9，实际上A就是13.9；因此改算另一比率10.8并选B，属于直接可核对的选项读取错误。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "selection_reason": "final deterministic semantic/length/format/category packet"
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48810:0",
+      "raw_output_sha256": "8018c017d3877ceb762e97a695e30b0b3b562ef9454582651759ab39937173ef",
+      "reviewed_at": "2026-09-09T04:48:09.722088+00:00",
+      "observation": "苷水解顺序反复自相矛盾，最后文字给出N易C难但标签选C，与对应顺序A不符；sem0.902209并未阻止这种高重合错误。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "selection_reason": "final deterministic semantic/length/format/category packet"
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3951:1",
+      "raw_output_sha256": "b6bfdab1b2d937a511ba9b02470d57eb1805e9df783a1fa220b4ece7c3bb9b7d",
+      "reviewed_at": "2026-09-09T04:48:09.722100+00:00",
+      "observation": "龋病部位最终D正确，think只有空白；format1、sem0、total0.85，格式符合不代表存在推理内容。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "selection_reason": "final deterministic semantic/length/format/category packet"
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22795:1",
+      "raw_output_sha256": "2b809db12cd6f186341c5ba079e44e2077abad68e35841dbde308a228789f1b9",
+      "reviewed_at": "2026-09-09T04:48:09.722111+00:00",
+      "observation": "石棉肺题最终B正确，think完全空白，sem0来自empty_reasoning；无法从该输出评估医学解释能力。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "selection_reason": "final deterministic semantic/length/format/category packet"
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43659:0",
+      "raw_output_sha256": "7874d850e3d2562c9d0369743a43abcb089fc9dfdcf6a77bd02368e0887e61f0",
+      "reviewed_at": "2026-09-09T03:26:31.189443+00:00",
+      "observation": "最终ABCE比参考ABE多选C；推理忽略参考所列经批准调剂的例外。仅核对考试来源，不作现行法规验证。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "selection_reason": "first three multi-select trajectories; deterministic final case category"
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43659:1",
+      "raw_output_sha256": "8553fe7851832cbe045027d3451d885d96cc16da5f357b9850e6df7ee6e82432",
+      "reviewed_at": "2026-09-09T03:26:31.189494+00:00",
+      "observation": "推理先肯定B，结尾改为A和E，但最终标签只有A；按最终集合少选得0，不能从think补回E。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "selection_reason": "first three multi-select trajectories; deterministic final case category"
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43659:2",
+      "raw_output_sha256": "4de445dca33bb81e1d99332681f4b0eb59275bd48c74cbefe29d6e9134008986",
+      "reviewed_at": "2026-09-09T03:26:31.189521+00:00",
+      "observation": "最终ABE与GT一致，推理却支持C所述跨机构一律禁用，结尾无解释地排除C；正确选项掩盖内部不一致。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "selection_reason": "first three multi-select trajectories; deterministic final case category"
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43697:3",
+      "raw_output_sha256": "8bac88ce2c18e2329b764898bfc19520d19dfafc01f75be1d8beeac10f3d17ec",
+      "reviewed_at": "2026-09-09T04:48:09.722122+00:00",
+      "observation": "制剂服务题仅省略号后选C，参考D；形式正确只能获得0.05，不代表论证充分或法规正确。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "selection_reason": "final deterministic semantic/length/format/category packet"
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:642:0",
+      "raw_output_sha256": "a393594b89ac80389ed7d5dd1a9ac94c33e5573dfabeab62490332bdddd42561",
+      "reviewed_at": "2026-09-09T04:48:09.722136+00:00",
+      "observation": "患儿题最终A匹配参考，使用无汗、清涕、舌苔脉象支持结论；对其他证候的额外描述未作医学审定。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "selection_reason": "final deterministic semantic/length/format/category packet"
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:642:1",
+      "raw_output_sha256": "40f6fc73f62ecd84297b1e5831ed01ebed758da3b35d8a2bdcba93a73fff1303",
+      "reviewed_at": "2026-09-09T04:48:09.722150+00:00",
+      "observation": "同题另一个A响应按寒热及消化/痰症状排除其他项，保留完整解释；比同组相似分数稍高不能据此认定推理更可靠。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "selection_reason": "final deterministic semantic/length/format/category packet"
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:642:2",
+      "raw_output_sha256": "7cb1f37f946fe75637ba9b0a69c0f001e35830b629daa9d5f656a725abd1db3a",
+      "reviewed_at": "2026-09-09T04:48:09.722219+00:00",
+      "observation": "同题A响应较短，重复风寒判断并列出选项；语义分数高于另外两条，不据此判定短解释医学质量最佳。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "selection_reason": "final deterministic semantic/length/format/category packet"
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:44173:2",
+      "raw_output_sha256": "396685f33c673368b110e4e1bec26b256b7843b14b25caba822d4eca7629aeb8",
+      "reviewed_at": "2026-09-09T04:48:09.722236+00:00",
+      "observation": "最终D与参考一致，额外提及扎那米韦和其他药物用途；这些扩展事实不在选项正确性奖励的审定范围内。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "selection_reason": "final deterministic semantic/length/format/category packet"
+    },
+    {
+      "trajectory_id": "s2_formal_20260909T025736_f607d9:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3665:2",
+      "raw_output_sha256": "e8d3780596111b784ec1c5ce2f5b754346b82b31a556d76c18b07c3ddd6fafea",
+      "reviewed_at": "2026-09-09T04:48:09.722250+00:00",
+      "observation": "最终D与参考一致，但把原因叙述为已有感染炎症与粘接改善，题干未给感染，参考依据是磨改可能累及牙髓；保留来源与生成解释差异。",
+      "parser_review": "PASS",
+      "reasoning_clinical_quality": "NOT_ASSESSED",
+      "read_scope": "full prompt/options/reference/raw output",
+      "selection_reason": "final deterministic semantic/length/format/category packet"
+    }
+  ],
+  "packet": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/manual_review_packet.json",
+    "sha256": "0f043a0028168ed1a0249073ef22faaec4b54ace8ce7fca312050a7d26b2cf46",
+    "bytes": 576354
+  },
+  "completed_at": "2026-09-09T04:48:09.724605+00:00",
+  "scope": "80 complete selected trajectories, not a random clinical audit; parser PASS means consistent with the frozen contract"
+}
