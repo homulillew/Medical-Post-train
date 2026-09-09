@@ -1,0 +1,23 @@
+{
+  "files": [
+    {
+      "path": ".venv-train/lib/python3.12/site-packages/verl/workers/reward_manager/naive.py",
+      "sha256": "c8a043a053a024976613b62a401ca8acc511d6e1d51aefca4a9720f7cc793448"
+    },
+    {
+      "path": ".venv-train/lib/python3.12/site-packages/vllm/v1/engine/detokenizer.py",
+      "sha256": "52d43b97d5c0f84285df596b2da5f4ee32184b9f41b87c6ef99437225b5720b5"
+    },
+    {
+      "path": ".venv-train/lib/python3.12/site-packages/vllm/lora/ops/triton_ops/utils.py",
+      "sha256": "ba7110f5f52b6b5172aede8cb15da4fac93358a0d0c7c4004743ed5a1c979343"
+    },
+    {
+      "path": ".venv-train/lib/python3.12/site-packages/vllm/v1/engine/parallel_sampling.py",
+      "sha256": "bf3f0a3c6640aaf706d1b6f7ec3a8e09a970f3dd9e7e96fa6a901779ea84f61d"
+    }
+  ],
+  "reward_interface": "dict score keyed; scalar fallback aliases reward to acc; use dict",
+  "vllm": "0.24 V1 native sampler with batch invariant and split_k1; preserve pinned runtime",
+  "n4_seed": "Native child sampling seed = parent request seed + member index"
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "status": "NOT_STARTED",
+    "scope": "observed at task entry"
+  },
+  {
+    "status": "IMPLEMENTED",
+    "timestamp": "2026-09-09T02:50:06.427808+00:00",
+    "evidence": "15k pool + parser/reward implementation, 33 tests PASS; smoke running, formal not started"
+  },
+  {
+    "status": "SMOKE_PASS",
+    "timestamp": "2026-09-09T02:56:42.146796+00:00",
+    "run_id": "s2_smoke_20260909T024936_746dbe",
+    "receipt": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_smoke_20260909T024936_746dbe/summary.json",
+      "sha256": "b0336a059e8002e1acf0938853a3c909970b8ea9875bb19af9de1e05b1c0efd2",
+      "bytes": 11720
+    }
+  }
+]

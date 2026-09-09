@@ -1,0 +1,72 @@
+{
+  "run_id": "s2_smoke_20260909T024936_746dbe",
+  "review_type": "manual qualitative review",
+  "clinical_validation": false,
+  "entries": [
+    {
+      "index": 0,
+      "trajectory_id": "s2_smoke_20260909T024936_746dbe:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6832:0",
+      "observation": "最终C与GT D不同；前面分析多个错误选项，严格抽取C符合规则。",
+      "parser_review": "PASS"
+    },
+    {
+      "index": 1,
+      "trajectory_id": "s2_smoke_20260909T024936_746dbe:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6832:1",
+      "observation": "最终C、GT D，虽然think内有其他选项结论，最终独立answer只有C。",
+      "parser_review": "PASS"
+    },
+    {
+      "index": 2,
+      "trajectory_id": "s2_smoke_20260909T024936_746dbe:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6832:2",
+      "observation": "最终C与GT D不同；没有从think中讨论的D覆盖最终答案。",
+      "parser_review": "PASS"
+    },
+    {
+      "index": 3,
+      "trajectory_id": "s2_smoke_20260909T024936_746dbe:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6832:3",
+      "observation": "最终C与GT D不同，完整think与answer结构可解析。",
+      "parser_review": "PASS"
+    },
+    {
+      "index": 30,
+      "trajectory_id": "s2_smoke_20260909T024936_746dbe:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:24872:2",
+      "observation": "最终D与GT D一致，标签闭合且选项合法。",
+      "parser_review": "PASS"
+    },
+    {
+      "index": 69,
+      "trajectory_id": "s2_smoke_20260909T024936_746dbe:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:54219:1",
+      "observation": "最终C与GT D不同，不能因为解释似乎流畅增加正确分。",
+      "parser_review": "PASS"
+    },
+    {
+      "index": 89,
+      "trajectory_id": "s2_smoke_20260909T024936_746dbe:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:46849:1",
+      "observation": "GT为AD、生成C；多选严格集合不符，不给予部分分。",
+      "parser_review": "PASS"
+    },
+    {
+      "index": 108,
+      "trajectory_id": "s2_smoke_20260909T024936_746dbe:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30042:0",
+      "observation": "最终C匹配GT，但reasoning关于过敏替代药的表述可疑；医学正确性NOT_ASSESSED，保留为后续人工关注项。",
+      "parser_review": "PASS"
+    },
+    {
+      "index": 161,
+      "trajectory_id": "s2_smoke_20260909T024936_746dbe:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28827:1",
+      "observation": "最终C匹配GT，think中的A/B/D/E讨论不影响选项抽取。",
+      "parser_review": "PASS"
+    },
+    {
+      "index": 198,
+      "trajectory_id": "s2_smoke_20260909T024936_746dbe:cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:44599:2",
+      "observation": "生成ABCD而GT为ABCDE，缺一选项仍acc=0。",
+      "parser_review": "PASS"
+    }
+  ],
+  "additional_structure_review": [
+    "unclosed_thinking example train19118 member2: answer prose remains inside unclosed think, rejected",
+    "invalid_thinking_structure train16883 member3: answer C nested within think plus final C, rejected per duplicate-tag contract",
+    "illegal option train25138 member2: answer 无, rejected"
+  ]
+}

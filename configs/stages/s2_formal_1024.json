@@ -1,0 +1,74 @@
+{
+  "stage": 2,
+  "mode": "formal",
+  "model": "/data/WSH/medical-post-train-artifacts/models/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218",
+  "policy_version": "cdb99bc34f05c71a7ec6411c19e7091562e8f8b3277961ceb83d33e8393a9ff1",
+  "initialization": {
+    "path": "/data/WSH/post-train/experiments/stage1/initialization_manifest.json",
+    "sha256": "6fb9e83dba72e4fcbc76548c515a555b46f9c415a280409224e6028067d1059c",
+    "bytes": 1850
+  },
+  "pool": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/candidate_pool.jsonl",
+    "sha256": "6fa3e114f47c51977d940ca01b4e0d6510a03a390fe1f1495fe5d0820bf41262",
+    "bytes": 17377597
+  },
+  "selection": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/profiling_prompt_ids.json",
+    "sha256": "c8aac6ed238a7b9d23633ad8de14d6fb5b427464e7d0483322152467c8b452fc",
+    "bytes": 64817
+  },
+  "planned_prompts": 1000,
+  "planned_responses": 4000,
+  "seed": 42,
+  "request_batch_prompts": 4,
+  "sampling": {
+    "n": 4,
+    "temperature": 0.6,
+    "top_p": 1.0,
+    "top_k": -1,
+    "min_p": 0.0,
+    "max_tokens": 1024,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "repetition_penalty": 1.0
+  },
+  "engine": {
+    "dtype": "bfloat16",
+    "tensor_parallel_size": 1,
+    "max_model_len": 4096,
+    "max_num_seqs": 16,
+    "gpu_memory_utilization": 0.65,
+    "enable_lora": true,
+    "max_lora_rank": 32,
+    "enable_sleep_mode": true,
+    "enforce_eager": true,
+    "seed": 42,
+    "enable_prefix_caching": false,
+    "generation_config": "vllm"
+  },
+  "reward_manifest": {
+    "path": "/data/WSH/post-train/experiments/stage2/reward_manifest.json",
+    "sha256": "cc72be1c2348d20f58bf978d047b9b4a2f200d8c70c39f0d0d98506528bfb905",
+    "bytes": 7541
+  },
+  "execution_hashes": {
+    "src/medical_posttrain/reward/parser.py": "c3dfb9b4f0ff71334f7b2f19d5e265d7341c5d93baec2b00d9f40212329c8bdc",
+    "src/medical_posttrain/reward/hybrid.py": "b4de882de1d2455f5af46addd854a5aac48308603b5113fcd44842bdc837a09d",
+    "src/medical_posttrain/reward/semantic.py": "f9704e0655ef1f74f3635cf1b51facb4bba6b4266bfd5db42e354d854e4d33a7",
+    "src/medical_posttrain/data/exam.py": "081121a5b54aff164030a162de573e9fcf1a02f64fab639b23d4b8bed65e9996",
+    "src/medical_posttrain/rollout/profile.py": "8b50a372b0b2cdf475ef9d4a901d5fe3cc8b281614b0649afef6141eab1aeaa4",
+    "src/medical_posttrain/rollout/statistics.py": "f8aa2c2dc7a0bb2639b5a2b9aee1cd7b84798addb253856848caed40e3a90917"
+  },
+  "optimizer_updates": 0,
+  "smoke_receipt": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_smoke_20260909T024936_746dbe/summary.json",
+    "sha256": "b0336a059e8002e1acf0938853a3c909970b8ea9875bb19af9de1e05b1c0efd2",
+    "bytes": 11720
+  },
+  "freeze_decision": {
+    "path": "/data/WSH/post-train/docs/implementation/STAGE2_DECISIONS.md",
+    "sha256": "732252934f2545979885c526c7add60ab3d52dc5e742a9472307384e1c4da5ff",
+    "bytes": 8688
+  }
+}

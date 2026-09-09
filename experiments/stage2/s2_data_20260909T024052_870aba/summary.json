@@ -1,0 +1,43 @@
+{
+  "run_id": "s2_data_20260909T024052_870aba",
+  "status": "PASS",
+  "candidate_pool": 15000,
+  "clean_unique_available": 49043,
+  "raw_train_count": 54497,
+  "rejections": {
+    "heldout_cluster_overlap": 2617,
+    "empty_normalized_question": 2,
+    "noncontiguous_options": 11,
+    "illegal_or_empty_options": 3,
+    "train_duplicate_cluster": 2821
+  },
+  "answer_cardinality": {
+    "1": 14504,
+    "3": 175,
+    "2": 117,
+    "4": 132,
+    "5": 72
+  },
+  "missing_explanations": 2220,
+  "pool": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/candidate_pool.jsonl",
+    "sha256": "6fa3e114f47c51977d940ca01b4e0d6510a03a390fe1f1495fe5d0820bf41262",
+    "bytes": 17377597
+  },
+  "formal_selection": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/profiling_prompt_ids.json",
+    "sha256": "c8aac6ed238a7b9d23633ad8de14d6fb5b427464e7d0483322152467c8b452fc",
+    "bytes": 64817
+  },
+  "smoke_selection": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/smoke_prompt_ids.json",
+    "sha256": "371b355211e9b78c592c9fca4eee6baffcd3b978891d6515f798a87a1f5a6af5",
+    "bytes": 3245
+  },
+  "validation_partition": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/validation_partitions.json",
+    "sha256": "da61c249bb0dad0e2f88a5db1b9efb2147cde6f12e057c06b060876699f53f75",
+    "bytes": 1387473
+  },
+  "optimizer_updates": 0
+}

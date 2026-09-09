@@ -1,0 +1,507 @@
+{
+  "run_id": "s2_semantic_20260909T024652_cb6286",
+  "status": "PASS",
+  "pair_count": 200,
+  "category_counts": {
+    "synonym": 12,
+    "unrelated": 12,
+    "negation": 12,
+    "dose_number": 12,
+    "age": 12,
+    "sex": 12,
+    "disease_entity": 12,
+    "drug_entity": 12,
+    "treatment_direction": 12,
+    "duration": 12,
+    "causality": 12,
+    "repeated_fluff": 12,
+    "question_only": 12,
+    "correct_conclusion_wrong_explanation": 12,
+    "wrong_conclusion_high_overlap": 12,
+    "train_surface_paraphrase": 10,
+    "train_unrelated": 10
+  },
+  "results": [
+    {
+      "model_id": "abhinand/MedEmbed-small-v0.1",
+      "revision": "40a5850d046cfdb56154e332b4d7099b63e8d50e",
+      "positive_mean": 0.9529854655265808,
+      "negative_mean": 0.9377212336893832,
+      "pairwise_auc": 0.4796986721144024,
+      "within_anchor_ranking_accuracy": 0.25842696629213485,
+      "categories": {
+        "age": {
+          "count": 12,
+          "mean": 0.9804594268401464,
+          "min": 0.972237229347229,
+          "max": 0.9866777062416077,
+          "synonym_ranks_higher_fraction": 0.0
+        },
+        "causality": {
+          "count": 12,
+          "mean": 0.9992523292700449,
+          "min": 0.9990694522857666,
+          "max": 0.9994507431983948,
+          "synonym_ranks_higher_fraction": 0.0
+        },
+        "correct_conclusion_wrong_explanation": {
+          "count": 12,
+          "mean": 0.9886087228854498,
+          "min": 0.9866052269935608,
+          "max": 0.9917623400688171,
+          "synonym_ranks_higher_fraction": 0.0
+        },
+        "disease_entity": {
+          "count": 12,
+          "mean": 0.9966021676858267,
+          "min": 0.9840013980865479,
+          "max": 1.0,
+          "synonym_ranks_higher_fraction": 0.0
+        },
+        "dose_number": {
+          "count": 12,
+          "mean": 0.9944824626048406,
+          "min": 0.986467719078064,
+          "max": 0.9985824823379517,
+          "synonym_ranks_higher_fraction": 0.0
+        },
+        "drug_entity": {
+          "count": 12,
+          "mean": 0.990651269753774,
+          "min": 0.9544930458068848,
+          "max": 0.9996030926704407,
+          "synonym_ranks_higher_fraction": 0.0
+        },
+        "duration": {
+          "count": 12,
+          "mean": 0.9977476596832275,
+          "min": 0.9964855909347534,
+          "max": 0.9991281032562256,
+          "synonym_ranks_higher_fraction": 0.0
+        },
+        "negation": {
+          "count": 12,
+          "mean": 0.9998100201288859,
+          "min": 0.9997521042823792,
+          "max": 0.9998522400856018,
+          "synonym_ranks_higher_fraction": 0.0
+        },
+        "question_only": {
+          "count": 12,
+          "mean": 0.8852544178565344,
+          "min": 0.8602249622344971,
+          "max": 0.9100301265716553,
+          "synonym_ranks_higher_fraction": 1.0
+        },
+        "repeated_fluff": {
+          "count": 12,
+          "mean": 0.7282334963480631,
+          "min": 0.7161577939987183,
+          "max": 0.7381540536880493,
+          "synonym_ranks_higher_fraction": 1.0
+        },
+        "sex": {
+          "count": 12,
+          "mean": 0.9658757795890173,
+          "min": 0.9632794857025146,
+          "max": 0.9724335670471191,
+          "synonym_ranks_higher_fraction": 0.0
+        },
+        "synonym": {
+          "count": 12,
+          "mean": 0.917364165186882,
+          "min": 0.8997297286987305,
+          "max": 0.9338561296463013,
+          "synonym_ranks_higher_fraction": null
+        },
+        "train_surface_paraphrase": {
+          "count": 10,
+          "mean": 0.9957310259342194,
+          "min": 0.985397458076477,
+          "max": 1.0,
+          "synonym_ranks_higher_fraction": null
+        },
+        "train_unrelated": {
+          "count": 10,
+          "mean": 0.7190572619438171,
+          "min": 0.6582655906677246,
+          "max": 0.7482425570487976,
+          "synonym_ranks_higher_fraction": 1.0
+        },
+        "treatment_direction": {
+          "count": 12,
+          "mean": 0.9886317104101181,
+          "min": 0.9867737889289856,
+          "max": 0.9917060136795044,
+          "synonym_ranks_higher_fraction": 0.0
+        },
+        "unrelated": {
+          "count": 12,
+          "mean": 0.799472709496816,
+          "min": 0.7887821197509766,
+          "max": 0.8138473033905029,
+          "synonym_ranks_higher_fraction": 1.0
+        },
+        "wrong_conclusion_high_overlap": {
+          "count": 12,
+          "mean": 0.9952350755532583,
+          "min": 0.9927481412887573,
+          "max": 0.9968429207801819,
+          "synonym_ranks_higher_fraction": 0.0
+        }
+      },
+      "encoding_seconds": 2.4804184548556805,
+      "load_seconds": 5.472698798868805,
+      "unique_texts": 188,
+      "seconds_per_unique_text": 0.013193715185402556,
+      "device": "cpu",
+      "cpu_rss_bytes": 1173401600,
+      "gpu_memory_bytes": 0,
+      "native_short_text_max_error": 2.9802322387695312e-08,
+      "encoder_max_seq_length": 512,
+      "total_encoder_tokens": 16016,
+      "max_encoder_tokens": 512,
+      "chunked_texts": 1,
+      "truncated_tokens": 0,
+      "model_files": [
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/abhinand--MedEmbed-small-v0.1/40a5850d046cfdb56154e332b4d7099b63e8d50e/.gitattributes",
+          "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361",
+          "bytes": 1519
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/abhinand--MedEmbed-small-v0.1/40a5850d046cfdb56154e332b4d7099b63e8d50e/1_Pooling/config.json",
+          "sha256": "83eeb6d0c128b377a452f121f8c5a19bbbf9322092a87b856ef782f4ad2326b9",
+          "bytes": 296
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/abhinand--MedEmbed-small-v0.1/40a5850d046cfdb56154e332b4d7099b63e8d50e/README.md",
+          "sha256": "ee2e7e3ba1cb6d2758c13cec8a31b69ded1ffe8d3fcb5736e9bba4fe947e13ce",
+          "bytes": 296820
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/abhinand--MedEmbed-small-v0.1/40a5850d046cfdb56154e332b4d7099b63e8d50e/config.json",
+          "sha256": "86d5a871bc41599d2e04d7518c6f09cef47800befbe8dace4888f5fa7a9b4333",
+          "bytes": 711
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/abhinand--MedEmbed-small-v0.1/40a5850d046cfdb56154e332b4d7099b63e8d50e/config_sentence_transformers.json",
+          "sha256": "de3d0f96c7851b68af569a091ceb9d550e4c9f97e57c3b3e5be0a8cfc7b549cd",
+          "bytes": 201
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/abhinand--MedEmbed-small-v0.1/40a5850d046cfdb56154e332b4d7099b63e8d50e/model.safetensors",
+          "sha256": "67b38b158c6904397d910a724d962d9be85cad9d89ba993ab59ec2b47cb6a3d9",
+          "bytes": 133462128
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/abhinand--MedEmbed-small-v0.1/40a5850d046cfdb56154e332b4d7099b63e8d50e/modules.json",
+          "sha256": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+          "bytes": 349
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/abhinand--MedEmbed-small-v0.1/40a5850d046cfdb56154e332b4d7099b63e8d50e/sentence_bert_config.json",
+          "sha256": "ec8e29d6dcb61b611b7d3fdd2982c4524e6ad985959fa7194eacfb655a8d0d51",
+          "bytes": 53
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/abhinand--MedEmbed-small-v0.1/40a5850d046cfdb56154e332b4d7099b63e8d50e/special_tokens_map.json",
+          "sha256": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a",
+          "bytes": 695
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/abhinand--MedEmbed-small-v0.1/40a5850d046cfdb56154e332b4d7099b63e8d50e/tokenizer.json",
+          "sha256": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+          "bytes": 711396
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/abhinand--MedEmbed-small-v0.1/40a5850d046cfdb56154e332b4d7099b63e8d50e/tokenizer_config.json",
+          "sha256": "0b29c7bfc889e53b36d9dd3e686dd4300f6525110eaa98c76a5dafceb2029f53",
+          "bytes": 1242
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/abhinand--MedEmbed-small-v0.1/40a5850d046cfdb56154e332b4d7099b63e8d50e/vocab.txt",
+          "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+          "bytes": 231508
+        }
+      ],
+      "scores": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s2_semantic_20260909T024652_cb6286/MedEmbed-small-v0.1_scores.jsonl",
+        "sha256": "d7d05754e3c2ce43085e81323d6f1a7c1b061af1b0f469738e7d39b44cd9f647",
+        "bytes": 204680
+      }
+    },
+    {
+      "model_id": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "positive_mean": 0.9614938524636355,
+      "negative_mean": 0.8480816964018211,
+      "pairwise_auc": 0.6340653728294178,
+      "within_anchor_ranking_accuracy": 0.33707865168539325,
+      "categories": {
+        "age": {
+          "count": 12,
+          "mean": 0.9820446670055389,
+          "min": 0.9717822074890137,
+          "max": 0.9882915019989014,
+          "synonym_ranks_higher_fraction": 0.0
+        },
+        "causality": {
+          "count": 12,
+          "mean": 0.9945637186368307,
+          "min": 0.9934389591217041,
+          "max": 0.9958698153495789,
+          "synonym_ranks_higher_fraction": 0.0
+        },
+        "correct_conclusion_wrong_explanation": {
+          "count": 12,
+          "mean": 0.9825349152088165,
+          "min": 0.9790164232254028,
+          "max": 0.9880809187889099,
+          "synonym_ranks_higher_fraction": 0.0
+        },
+        "disease_entity": {
+          "count": 12,
+          "mean": 0.9433275163173676,
+          "min": 0.9091625213623047,
+          "max": 0.967753529548645,
+          "synonym_ranks_higher_fraction": 0.16666666666666666
+        },
+        "dose_number": {
+          "count": 12,
+          "mean": 0.9977689832448959,
+          "min": 0.996988832950592,
+          "max": 0.9986572861671448,
+          "synonym_ranks_higher_fraction": 0.0
+        },
+        "drug_entity": {
+          "count": 12,
+          "mean": 0.87001071870327,
+          "min": 0.8381761908531189,
+          "max": 0.9144982099533081,
+          "synonym_ranks_higher_fraction": 1.0
+        },
+        "duration": {
+          "count": 12,
+          "mean": 0.9951013873020808,
+          "min": 0.9933348894119263,
+          "max": 0.9963548183441162,
+          "synonym_ranks_higher_fraction": 0.0
+        },
+        "negation": {
+          "count": 12,
+          "mean": 0.9909717192252477,
+          "min": 0.9870728850364685,
+          "max": 0.9958921670913696,
+          "synonym_ranks_higher_fraction": 0.0
+        },
+        "question_only": {
+          "count": 12,
+          "mean": 0.7888573308785757,
+          "min": 0.7598540782928467,
+          "max": 0.814481794834137,
+          "synonym_ranks_higher_fraction": 1.0
+        },
+        "repeated_fluff": {
+          "count": 12,
+          "mean": 0.4716349318623543,
+          "min": 0.4532166123390198,
+          "max": 0.5092999935150146,
+          "synonym_ranks_higher_fraction": 1.0
+        },
+        "sex": {
+          "count": 12,
+          "mean": 0.9798830797274908,
+          "min": 0.9741747975349426,
+          "max": 0.985150158405304,
+          "synonym_ranks_higher_fraction": 0.0
+        },
+        "synonym": {
+          "count": 12,
+          "mean": 0.9303198258082072,
+          "min": 0.9215312600135803,
+          "max": 0.9375418424606323,
+          "synonym_ranks_higher_fraction": null
+        },
+        "train_surface_paraphrase": {
+          "count": 10,
+          "mean": 0.9989026844501495,
+          "min": 0.9954785108566284,
+          "max": 1.0,
+          "synonym_ranks_higher_fraction": null
+        },
+        "train_unrelated": {
+          "count": 10,
+          "mean": 0.32081048786640165,
+          "min": 0.2782042622566223,
+          "max": 0.3574240505695343,
+          "synonym_ranks_higher_fraction": 1.0
+        },
+        "treatment_direction": {
+          "count": 12,
+          "mean": 0.9926573286453882,
+          "min": 0.9908698797225952,
+          "max": 0.9938161969184875,
+          "synonym_ranks_higher_fraction": 0.0
+        },
+        "unrelated": {
+          "count": 12,
+          "mean": 0.3456731215119362,
+          "min": 0.3160959482192993,
+          "max": 0.3746035099029541,
+          "synonym_ranks_higher_fraction": 1.0
+        },
+        "wrong_conclusion_high_overlap": {
+          "count": 12,
+          "mean": 0.9775070051352183,
+          "min": 0.9729225635528564,
+          "max": 0.9838312864303589,
+          "synonym_ranks_higher_fraction": 0.0
+        }
+      },
+      "encoding_seconds": 13.092981154099107,
+      "load_seconds": 1.6262490670196712,
+      "unique_texts": 188,
+      "seconds_per_unique_text": 0.06964351677712291,
+      "device": "cpu",
+      "cpu_rss_bytes": 3246141440,
+      "gpu_memory_bytes": 0,
+      "native_short_text_max_error": 2.9802322387695312e-08,
+      "encoder_max_seq_length": 8192,
+      "total_encoder_tokens": 12556,
+      "max_encoder_tokens": 351,
+      "chunked_texts": 0,
+      "truncated_tokens": 0,
+      "model_files": [
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/BAAI--bge-m3/5617a9f61b028005a4858fdac845db406aefb181/.gitattributes",
+          "sha256": "7363a8ebd782ede400e72bb3e88c19248478eb6f280a7376d398fc2f22707b9a",
+          "bytes": 1627
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/BAAI--bge-m3/5617a9f61b028005a4858fdac845db406aefb181/1_Pooling/config.json",
+          "sha256": "e54c164a07274f2eb45bb724f54a79d1efcc90c41573887cd9a29aeee0597352",
+          "bytes": 191
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/BAAI--bge-m3/5617a9f61b028005a4858fdac845db406aefb181/README.md",
+          "sha256": "0b81ccf9134e5874d620a86e6905062ea999e779c34eb1a7e65eaeb7fe00e450",
+          "bytes": 15822
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/BAAI--bge-m3/5617a9f61b028005a4858fdac845db406aefb181/colbert_linear.pt",
+          "sha256": "19bfbae397c2b7524158c919d0e9b19393c5639d098f0a66932c91ed8f5f9abb",
+          "bytes": 2100674
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/BAAI--bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json",
+          "sha256": "26159e7ad065073448460117eb24b7a4572f6f4e78eadff65dc0a11c052449fa",
+          "bytes": 687
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/BAAI--bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json",
+          "sha256": "1eef72430e7194a1e59680e635aed81ffa083f05668dbc5bb1c56c04c0999c38",
+          "bytes": 123
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/BAAI--bge-m3/5617a9f61b028005a4858fdac845db406aefb181/imgs/.DS_Store",
+          "sha256": "d65165279105ca6773180500688df4bdc69a2c7b771752f0a46ef120b7fd8ec3",
+          "bytes": 6148
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/BAAI--bge-m3/5617a9f61b028005a4858fdac845db406aefb181/imgs/bm25.jpg",
+          "sha256": "4d88d1c224dc6dae62b76547e1e79ed12e1085b94dc1fe0c50440a948277d89a",
+          "bytes": 131849
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/BAAI--bge-m3/5617a9f61b028005a4858fdac845db406aefb181/imgs/long.jpg",
+          "sha256": "d2a44539154d2cee75abd032fe773d5514f1129b741c4641cde12554762709a6",
+          "bytes": 485432
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/BAAI--bge-m3/5617a9f61b028005a4858fdac845db406aefb181/imgs/miracl.jpg",
+          "sha256": "a48c10a1be83aa7a92a25d85dbc6d2c0194b59503a2599a9e89bd7e063c32a66",
+          "bytes": 576482
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/BAAI--bge-m3/5617a9f61b028005a4858fdac845db406aefb181/imgs/mkqa.jpg",
+          "sha256": "ae331fb64bdceeaafecc2f8cd89a2d55a3e41c429dcc5ba906cb9a7bdb73cf2b",
+          "bytes": 608027
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/BAAI--bge-m3/5617a9f61b028005a4858fdac845db406aefb181/imgs/nqa.jpg",
+          "sha256": "5385ca9d6af4124932281039e1366d704d10ed81e905526f795f5732352394bb",
+          "bytes": 158358
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/BAAI--bge-m3/5617a9f61b028005a4858fdac845db406aefb181/imgs/others.webp",
+          "sha256": "9222ef69ba79cbd3aa8c659bd3cbbf9d90b3dbb040526f56298ed9ceb05ec9df",
+          "bytes": 20984
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/BAAI--bge-m3/5617a9f61b028005a4858fdac845db406aefb181/long.jpg",
+          "sha256": "4ba03433ef54575eeef5a291abd81661eb53c432677934dc4050565893e7a8a9",
+          "bytes": 126894
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/BAAI--bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json",
+          "sha256": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+          "bytes": 349
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/BAAI--bge-m3/5617a9f61b028005a4858fdac845db406aefb181/pytorch_model.bin",
+          "sha256": "b5e0ce3470abf5ef3831aa1bd5553b486803e83251590ab7ff35a117cf6aad38",
+          "bytes": 2271145830
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/BAAI--bge-m3/5617a9f61b028005a4858fdac845db406aefb181/sentence_bert_config.json",
+          "sha256": "eb9b44b13c0f52a3b3685c3b1cbdea1ba8b04bea123b98f61610048940776eb1",
+          "bytes": 54
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/BAAI--bge-m3/5617a9f61b028005a4858fdac845db406aefb181/sentencepiece.bpe.model",
+          "sha256": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+          "bytes": 5069051
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/BAAI--bge-m3/5617a9f61b028005a4858fdac845db406aefb181/sparse_linear.pt",
+          "sha256": "45c93804d2142b8f6d7ec6914ae23a1eee9c6a1d27d83d908a20d2afb3595ad9",
+          "bytes": 3516
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/BAAI--bge-m3/5617a9f61b028005a4858fdac845db406aefb181/special_tokens_map.json",
+          "sha256": "8c785abebea9ae3257b61681b4e6fd8365ceafde980c21970d001e834cf10835",
+          "bytes": 964
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/BAAI--bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer.json",
+          "sha256": "21106b6d7dab2952c1d496fb21d5dc9db75c28ed361a05f5020bbba27810dd08",
+          "bytes": 17098108
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/models/BAAI--bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json",
+          "sha256": "a62b2b6784f990259fddef5f16388693a8043be4f69179e6a5257eeb3f9abac4",
+          "bytes": 444
+        }
+      ],
+      "scores": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s2_semantic_20260909T024652_cb6286/bge-m3_scores.jsonl",
+        "sha256": "30290e5ab4b689e8ef3b66bcaaa4d10723557c54cf74fa7db7e014fd8290c811",
+        "bytes": 204826
+      }
+    }
+  ],
+  "chunk_policy": {
+    "version": 1,
+    "max_content_tokens": 480,
+    "overlap_tokens": 0,
+    "segmentation": "contiguous encoder token IDs, special tokens added per chunk",
+    "pooling": "content-token-length weighted mean of L2-normalized chunk embeddings; L2 normalize again",
+    "mapping": "clip(cosine,0,1)",
+    "empty_reasoning": 0,
+    "missing_reference": 0,
+    "truncation": "none: every encoder content token retained"
+  },
+  "caveat": "Controlled pairs share 12 synthetic anchors plus 10 train explanations; descriptive sensitivity, not independent clinical validation.",
+  "optimizer_updates": 0
+}

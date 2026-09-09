@@ -32,10 +32,15 @@
       "interview_story": "docs/stage_reports/01_medical_sft.md"
     },
     "2": {
-      "status": "NOT_STARTED",
-      "run_ids": [],
+      "status": "SMOKE_PASS",
+      "run_ids": [
+        "s2_data_20260909T024052_870aba",
+        "s2_semantic_20260909T024252_815f01",
+        "s2_semantic_20260909T024652_cb6286",
+        "s2_smoke_20260909T024936_746dbe"
+      ],
       "progress": {
-        "candidate_pool": 0,
+        "candidate_pool": 15000,
         "profiling_unique_prompts": 0,
         "completed_responses": 0
       },

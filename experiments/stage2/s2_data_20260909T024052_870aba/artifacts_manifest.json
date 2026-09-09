@@ -1,0 +1,97 @@
+[
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/attempt_001/code.json",
+    "sha256": "a28f3f61349749fb4bde7df5dcb4752019cf5866ff5c4b5b5581bed10123ca85",
+    "bytes": 7122
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/attempt_001/command.json",
+    "sha256": "a0a23291f34992312a501dceda5003e485a0ae327b2c4cf6ad10b84e55f108c4",
+    "bytes": 334
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/attempt_001/environment.json",
+    "sha256": "0831b5c140aeba18fcab3ff5cbdd47c2528a9d5c74fa3b32b48e6f358d927381",
+    "bytes": 7848
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/attempt_001/launch.json",
+    "sha256": "0d1d19890d821632df0537998263ac11c3226474074f0e745a179c4a316703a8",
+    "bytes": 92
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/attempt_001/status.json",
+    "sha256": "982a7058adeacae9e5caa4780efba19e864d8c8d4ddcddcf1745e17f315927de",
+    "bytes": 106
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/attempt_001/stderr.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/attempt_001/stdout.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/candidate_pool.jsonl",
+    "sha256": "6fa3e114f47c51977d940ca01b4e0d6510a03a390fe1f1495fe5d0820bf41262",
+    "bytes": 17377597
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/cluster_provenance.json",
+    "sha256": "6fea47a31d27c7e8cbf508651a912cea377b2f85f78c2062b3c643cf85a2fb60",
+    "bytes": 519
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/config.json",
+    "sha256": "b705e2d4d62f59879c947632a438a1d869b27bd566f6ad9d9a129a8491e17b07",
+    "bytes": 479
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/manifest.json",
+    "sha256": "103d122dd42922848d8595f6e6289c4bd61bde6cebe97fac0c60abbafa0d1053",
+    "bytes": 8361
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/profiling_prompt_ids.json",
+    "sha256": "c8aac6ed238a7b9d23633ad8de14d6fb5b427464e7d0483322152467c8b452fc",
+    "bytes": 64817
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/rejections.jsonl",
+    "sha256": "e9112af2cbcce2bb32875726c0081ec602a10f0b1ac087b81d2805e9c5138ffd",
+    "bytes": 1111691
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/smoke_prompt_ids.json",
+    "sha256": "371b355211e9b78c592c9fca4eee6baffcd3b978891d6515f798a87a1f5a6af5",
+    "bytes": 3245
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/source.zip",
+    "sha256": "47204fe40877aa0bdc3feae5140742e0f5245afec2803bed8a3e3f86b6963f6f",
+    "bytes": 116789
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/source_validation.json",
+    "sha256": "3928daa13ff82b5d95414c3a20fd123e7ed3b77de58e92b15c55dd903abae07a",
+    "bytes": 1205
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/status.json",
+    "sha256": "efb2505e187deda472f5be1cc7a1d9e3ed3de39d260b29cae2de30a29a71f26e",
+    "bytes": 70
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/summary.json",
+    "sha256": "798c9bbb43baa5594a71c2a24a8352a6a846320660e59655df1f0e6c5df11ba8",
+    "bytes": 1489
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/validation_partitions.json",
+    "sha256": "da61c249bb0dad0e2f88a5db1b9efb2147cde6f12e057c06b060876699f53f75",
+    "bytes": 1387473
+  }
+]

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Formal Stage 1 verification; other stages intentionally remain unimplemented."""
+"""Raw-evidence verification for implemented Stage 1 and Stage 2 gates."""
 import argparse
 from collections import Counter
 import json
@@ -175,7 +175,11 @@ def verify(root=ROOT):
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser();parser.add_argument('--stage',type=int,required=True);parser.add_argument('--output');args=parser.parse_args()
-    if args.stage!=1:raise SystemExit('Stage 2–6 verifiers are not implemented or authorized in this stage.')
-    result=verify()
+    if args.stage==1:
+        result=verify()
+    elif args.stage==2:
+        from verify_stage2 import verify as verify_stage2
+        result=verify_stage2()
+    else:raise SystemExit('Stage 3–6 verifiers are not implemented or authorized in this stage.')
     if args.output:write_json(args.output,result)
     print(json.dumps(result,indent=2));raise SystemExit(result['result']!='PASS')
