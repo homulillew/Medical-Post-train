@@ -1,0 +1,14 @@
+{
+  "pid": 2174073,
+  "command": [
+    "/data/WSH/post-train/.venv-train/bin/python",
+    "/data/WSH/post-train/scripts/continue_stage4_pilots.py"
+  ],
+  "log_directory": "/data/WSH/medical-post-train-artifacts/stage4-pilot-queue",
+  "timestamp": "2026-09-09T07:52:04.808750+00:00",
+  "script": {
+    "path": "/data/WSH/post-train/scripts/continue_stage4_pilots.py",
+    "sha256": "3f57658156a3409d63c4f8cd7ef46fd5308d6f17b0700c87a47e59e88d8b059f",
+    "bytes": 3493
+  }
+}

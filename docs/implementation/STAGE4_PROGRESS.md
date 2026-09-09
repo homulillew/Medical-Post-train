@@ -14,6 +14,18 @@ Dynamic0/5000 accepted mixed. READY_FOR_STAGE5=NO.
 | Pilot |Fresh512 groups per variant required; exact active IDs in `experiments/stage4/pilot_pair.json` once prepared |
 | Formal |Not prepared or launched; both625-window budgets still required |
 
+Pilot pair prepared and detached queue launched at2026-09-09 07:52UTC
+(15:52 Asia/Shanghai), from shared code commit`11be2ed`:
+
+- Vanilla:`s4_pilot_vanilla_20260909T075203_95a6e9`, initially RUNNING with
+  worker PID2174146.
+- Dynamic:`s4_pilot_dynamic_20260909T075204_3e449e`, PREPARED and queued.
+- Queue PID2174073; logs under
+  `/data/WSH/medical-post-train-artifacts/stage4-pilot-queue/`.
+
+These are launch-time observations; inspect current PID/heartbeat before acting.
+Pilot progress never increments the two formal counters in project state.
+
 Runtime is native verl FSDP2/GSPO plus native vLLM rollout. The shared smoke/
 pilot candidate is LR1e-6, mini4 prompts, one epoch, G4 and8 groups/window.
 The formal config is not frozen. Both pilots must complete before its decision.

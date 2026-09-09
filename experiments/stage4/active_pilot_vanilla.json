@@ -1,0 +1,14 @@
+{
+  "run_id": "s4_pilot_vanilla_20260909T075203_95a6e9",
+  "path": "/data/WSH/medical-post-train-artifacts/runs/s4_pilot_vanilla_20260909T075203_95a6e9",
+  "config": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_pilot_vanilla_20260909T075203_95a6e9/config.json",
+    "sha256": "9b2c91d5898b7768ffc8d0a34ad9db448dc4a5ddb81efa4a73d8ab4e49217e21",
+    "bytes": 3563
+  },
+  "manifest": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_pilot_vanilla_20260909T075203_95a6e9/manifest.json",
+    "sha256": "27053ebb958e7f895a9b4b2a5f5108b4cc3226ac1e67218162e082af3d82c67a",
+    "bytes": 16506
+  }
+}

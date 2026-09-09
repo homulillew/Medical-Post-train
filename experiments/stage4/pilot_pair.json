@@ -1,0 +1,146 @@
+{
+  "mode": "PILOT",
+  "runs": {
+    "vanilla": {
+      "run_id": "s4_pilot_vanilla_20260909T075203_95a6e9",
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_pilot_vanilla_20260909T075203_95a6e9",
+      "config": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_pilot_vanilla_20260909T075203_95a6e9/config.json",
+        "sha256": "9b2c91d5898b7768ffc8d0a34ad9db448dc4a5ddb81efa4a73d8ab4e49217e21",
+        "bytes": 3563
+      },
+      "manifest": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_pilot_vanilla_20260909T075203_95a6e9/manifest.json",
+        "sha256": "27053ebb958e7f895a9b4b2a5f5108b4cc3226ac1e67218162e082af3d82c67a",
+        "bytes": 16506
+      }
+    },
+    "dynamic": {
+      "run_id": "s4_pilot_dynamic_20260909T075204_3e449e",
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_pilot_dynamic_20260909T075204_3e449e",
+      "config": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_pilot_dynamic_20260909T075204_3e449e/config.json",
+        "sha256": "94027758df322a7725b71688c5f750cc4d1ad5fa9808b8dfed3ba45faaf86a11",
+        "bytes": 3563
+      },
+      "manifest": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_pilot_dynamic_20260909T075204_3e449e/manifest.json",
+        "sha256": "bd74dd2acbf63797d7778890f9b432a4990d15f613afa55a051b0389838c4fc8",
+        "bytes": 16619
+      }
+    }
+  },
+  "created_at": "2026-09-09T07:52:04.420622+00:00",
+  "shared_config": {
+    "model": "/data/WSH/medical-post-train-artifacts/models/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218",
+    "initialization": {
+      "path": "/data/WSH/post-train/experiments/stage1/initialization_manifest.json",
+      "sha256": "6fb9e83dba72e4fcbc76548c515a555b46f9c415a280409224e6028067d1059c",
+      "bytes": 1850
+    },
+    "pool": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/candidate_pool.jsonl",
+      "sha256": "6fa3e114f47c51977d940ca01b4e0d6510a03a390fe1f1495fe5d0820bf41262",
+      "bytes": 17377597
+    },
+    "reward_manifest": {
+      "path": "/data/WSH/post-train/experiments/stage2/reward_manifest.json",
+      "sha256": "cc72be1c2348d20f58bf978d047b9b4a2f200d8c70c39f0d0d98506528bfb905",
+      "bytes": 7541
+    },
+    "sampling": {
+      "n": 4,
+      "temperature": 0.6,
+      "top_p": 1.0,
+      "top_k": -1,
+      "min_p": 0.0,
+      "max_tokens": 1024,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "repetition_penalty": 1.0
+    },
+    "engine": {
+      "dtype": "bfloat16",
+      "tensor_parallel_size": 1,
+      "max_model_len": 4096,
+      "max_num_seqs": 16,
+      "gpu_memory_utilization": 0.65,
+      "enable_lora": true,
+      "max_lora_rank": 32,
+      "enable_sleep_mode": true,
+      "enforce_eager": true,
+      "seed": 42,
+      "enable_prefix_caching": false,
+      "generation_config": "vllm"
+    },
+    "execution_hashes": {
+      "src/medical_posttrain/reward/parser.py": "c3dfb9b4f0ff71334f7b2f19d5e265d7341c5d93baec2b00d9f40212329c8bdc",
+      "src/medical_posttrain/reward/hybrid.py": "b4de882de1d2455f5af46addd854a5aac48308603b5113fcd44842bdc837a09d",
+      "src/medical_posttrain/reward/semantic.py": "f9704e0655ef1f74f3635cf1b51facb4bba6b4266bfd5db42e354d854e4d33a7",
+      "src/medical_posttrain/data/exam.py": "081121a5b54aff164030a162de573e9fcf1a02f64fab639b23d4b8bed65e9996",
+      "src/medical_posttrain/rollout/profile.py": "8b50a372b0b2cdf475ef9d4a901d5fe3cc8b281614b0649afef6141eab1aeaa4",
+      "src/medical_posttrain/rollout/statistics.py": "f8aa2c2dc7a0bb2639b5a2b9aee1cd7b84798addb253856848caed40e3a90917"
+    },
+    "seed": 42,
+    "stage": 4,
+    "groups_per_window": 8,
+    "mini_prompts": 4,
+    "ppo_epochs": 1,
+    "sampling_metric": "acc",
+    "max_generation_batches": 32,
+    "request_batch_prompts": 8,
+    "clip_ratio_low": 0.0003,
+    "clip_ratio_high": 0.0004,
+    "grad_clip": 1.0,
+    "learning_rate": 1e-06,
+    "weight_decay": 0.0,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "lr_scheduler": "constant",
+    "warmup_steps": 0,
+    "entropy_coefficient": 0.0,
+    "kl_reward": false,
+    "kl_loss": false,
+    "reference_worker": false,
+    "critic": false,
+    "parity_limits": {
+      "token_mean_abs": 0.03,
+      "token_p99_abs": 0.25,
+      "sequence_mean_abs_max": 0.02
+    },
+    "mode": "pilot",
+    "stream_domain": "stage4:pilot:pair1",
+    "target_training_groups": 512,
+    "pause_after_windows": 2,
+    "validation_protocol": {
+      "path": "/data/WSH/post-train/experiments/stage4/validation_protocol.json",
+      "sha256": "bb62e6d866d132b765892b373e249cf4e46952bb5daf91a968a49fd1f9df12fa",
+      "bytes": 33740
+    },
+    "checkpoint_interval_windows": 1,
+    "smoke_receipts": {
+      "vanilla": {
+        "path": "/data/WSH/post-train/experiments/stage4/vanilla_smoke_verification.json",
+        "sha256": "a41d98afdba73a058b6ce04b4a177c1e9bed3af8b2ebfb01706ff7a777363993",
+        "bytes": 5379
+      },
+      "dynamic": {
+        "path": "/data/WSH/post-train/experiments/stage4/dynamic_smoke_verification.json",
+        "sha256": "e92e2037b239ec8b1bbb9d0448150bd67c977568c746cd7af29877a4ca119564",
+        "bytes": 8851
+      }
+    }
+  },
+  "resource_preflight": {
+    "free_bytes": 3606618042368,
+    "measured_checkpoint_bytes": 1409053142,
+    "pilot_and_formal_projection_with_reserve_bytes": 2243216935043.6
+  },
+  "fresh_sft": true,
+  "formal_frozen": false,
+  "formal_training_groups": 0,
+  "hypothesis": "Assess stability, resource use and genuine clipping before formal comparison; validation superiority is not a pass condition"
+}

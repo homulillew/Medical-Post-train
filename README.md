@@ -16,8 +16,9 @@ mixed groups 53.1%, and truncation 0%. Stage2 performed no policy optimization.
 Stage 3 is **DONE**:496 newly generated groups,256 accepted mixed and1 retained overflow,
 with1.9375× measured amplification and all nine verifier gates passing.
 Stage 4 is **SMOKE_PASS**: both32-group online GSPO smokes and real process
-resumes passed raw verification. The fresh512-group pilot pair is the next
-execution gate. Formal budgets remain0/5000 for each variant; Stage4 is incomplete.
+resumes passed raw verification. The fresh512-group Vanilla pilot is running;
+the matched Dynamic pilot is queued behind its raw verification gate.
+Formal budgets remain0/5000 for each variant; Stage4 is incomplete.
 Stage 5–6 remain **NOT_STARTED**.
 No examination test scoring has run. Current stage status is recorded in
 [`project_state.json`](project_state.json).

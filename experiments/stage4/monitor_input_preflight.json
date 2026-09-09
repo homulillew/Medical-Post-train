@@ -1,0 +1,13 @@
+{
+  "result": "PASS",
+  "questions": 512,
+  "min_prompt_tokens": 95,
+  "max_prompt_tokens": 370,
+  "protocol": {
+    "path": "/data/WSH/post-train/experiments/stage4/validation_protocol.json",
+    "sha256": "bb62e6d866d132b765892b373e249cf4e46952bb5daf91a968a49fd1f9df12fa",
+    "bytes": 33740
+  },
+  "timestamp": "2026-09-09T07:52:44.887273+00:00",
+  "model_inference": false
+}
