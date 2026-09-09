@@ -1,5 +1,7 @@
 # Stage 2 — CMExam pool、严格解析与正确性门控奖励实测报告
 
+最终状态：**DONE**。最终 verifier 8/8 gates PASS（含项目状态schema与原始证据重算）；[验收收据](../../experiments/stage2/verification-final.json)。READY_FOR_STAGE3 = YES，Stage3–6保持NOT_STARTED。
+
 正式run：`s2_formal_20260909T025736_f607d9`。完整预算为15,000题candidate pool，独立50×4 smoke，以及正式1,000个唯一train prompts × G4 = **4,000条有效完成轨迹**。本报告从全量原始响应、embedding向量、reward分解和人工定性记录生成；验收状态由 [verifier收据](../../experiments/stage2/verification-final.json) 与 `project_state.json` 最终确定。Stage3–6未启动，policy optimizer updates=0。
 
 主要结果：轨迹正确率 **51.775%**，至少一条正确的prompt比例（本次实际四次采样的pass@4/any-correct）**76.50%**；all-wrong/mixed/all-correct分别为 **23.50%/53.10%/23.40%**。这些是从清洁CMExam train候选池确定性抽取1000题、按冻结parser和官方答案计分的结果，不是全54,497题准确率或test/临床效果。

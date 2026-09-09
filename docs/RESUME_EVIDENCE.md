@@ -28,7 +28,7 @@
 
 ## Stage 2 — 正式profiling证据
 
-阶段状态：FULL_PASS，等待最终Stage 2 verifier。以下是完整正式运行的实测值，验收完成后更新为VERIFIED。
+阶段证据状态：**VERIFIED**，Stage 2 = DONE；[最终verifier](../experiments/stage2/verification-final.json) 的8个gate全部PASS。下列声明仅在明确范围内可用。
 
 | ID | 可核对表述 | 证据和范围 |
 | --- | --- | --- |

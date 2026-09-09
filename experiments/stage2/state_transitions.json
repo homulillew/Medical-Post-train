@@ -42,5 +42,42 @@
       "sha256": "8fc5667a44f2a9d2bda799c54320bea1b8dfe570dbdd0031cb28f6a98821d1f7",
       "bytes": 50401
     }
+  },
+  {
+    "status": "VERIFIED",
+    "timestamp": "2026-09-09T04:55:04.371023+00:00",
+    "verification_receipt": {
+      "path": "experiments/stage2/verification-final.json",
+      "sha256": "833bd57694a922355eebabae07558d0fa43060867e269d4c9e926bf353fa148d",
+      "verifier_commit": "75d235f194daa27a712b120b666ddb13f8a9683f",
+      "contract_sha256": "8ba60bd2e724fbbb74e26f4ef677eb6c6d51eaafcba6eb3bcb0b2eb588a51f24",
+      "result": "PASS"
+    }
+  },
+  {
+    "status": "DONE",
+    "timestamp": "2026-09-09T04:55:04.374012+00:00",
+    "verification_receipt": {
+      "path": "experiments/stage2/verification-final.json",
+      "sha256": "833bd57694a922355eebabae07558d0fa43060867e269d4c9e926bf353fa148d",
+      "verifier_commit": "75d235f194daa27a712b120b666ddb13f8a9683f",
+      "contract_sha256": "8ba60bd2e724fbbb74e26f4ef677eb6c6d51eaafcba6eb3bcb0b2eb588a51f24",
+      "result": "PASS"
+    },
+    "stage_report": {
+      "path": "/data/WSH/post-train/docs/stage_reports/02_reward_rollout.md",
+      "sha256": "77ecac06bdfa53a5e05cf1e3d2a0905cbda33e5444880689e82922039783a87a",
+      "bytes": 32477
+    },
+    "resume_evidence": {
+      "path": "/data/WSH/post-train/docs/RESUME_EVIDENCE.md",
+      "sha256": "09e2fefdc2b15cfdadf0cd72bbf7869b9ba67c803128e98234b222bb4ac46839",
+      "bytes": 5477
+    },
+    "readiness": {
+      "path": "/data/WSH/post-train/experiments/stage2/readiness.json",
+      "sha256": "ff5c20445fa845bcc0287ba24d1e04e7bde106bf22eea4c1daafd23a6b5f6768",
+      "bytes": 2273
+    }
   }
 ]

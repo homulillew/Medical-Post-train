@@ -1,0 +1,49 @@
+{
+  "READY_FOR_STAGE3": "YES",
+  "stage2_status": "DONE",
+  "timestamp": "2026-09-09T04:55:04.373122+00:00",
+  "verification_receipt": {
+    "path": "experiments/stage2/verification-final.json",
+    "sha256": "833bd57694a922355eebabae07558d0fa43060867e269d4c9e926bf353fa148d",
+    "verifier_commit": "75d235f194daa27a712b120b666ddb13f8a9683f",
+    "contract_sha256": "8ba60bd2e724fbbb74e26f4ef677eb6c6d51eaafcba6eb3bcb0b2eb588a51f24",
+    "result": "PASS"
+  },
+  "initialization": {
+    "path": "/data/WSH/post-train/experiments/stage1/initialization_manifest.json",
+    "sha256": "6fb9e83dba72e4fcbc76548c515a555b46f9c415a280409224e6028067d1059c",
+    "bytes": 1850
+  },
+  "candidate_pool": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/candidate_pool.jsonl",
+    "sha256": "6fa3e114f47c51977d940ca01b4e0d6510a03a390fe1f1495fe5d0820bf41262",
+    "bytes": 17377597
+  },
+  "reward_manifest": {
+    "path": "/data/WSH/post-train/experiments/stage2/reward_manifest.json",
+    "sha256": "cc72be1c2348d20f58bf978d047b9b4a2f200d8c70c39f0d0d98506528bfb905",
+    "bytes": 7541
+  },
+  "formal_config": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/config.json",
+    "sha256": "5924228d4ed46880db92e8e50ceb2be506ffd1888816bd4700950af02e9e919d",
+    "bytes": 2976
+  },
+  "formal_summary": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_formal_20260909T025736_f607d9/summary.json",
+    "sha256": "9734b65cce586f17378ebd5d3e33ee4e2e04b767562db588cde75a9fec5828a0",
+    "bytes": 80214
+  },
+  "group_size": 4,
+  "sampling_metric": "acc",
+  "response_cap_candidate": 1024,
+  "fixed_policy_expected_amplification": 1.8832391713747645,
+  "optimizer_updates": 0,
+  "stage3_to_6_started": false,
+  "caveats": [
+    "153 of 531 mixed groups have contrast only from unparseable members.",
+    "BGE similarity is reference alignment, not a clinical correctness judge; negation and numeric perturbations remain problematic.",
+    "Empty, placeholder and missing-image source evidence retained; any later reward change must be explicit and shared across primary baselines.",
+    "Sampling amplification is an initial-policy estimate; actual refill and training costs remain unmeasured."
+  ]
+}

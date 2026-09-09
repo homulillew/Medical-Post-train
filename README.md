@@ -9,15 +9,19 @@ and vLLM adapter/sleep evidence. The accepted rollout configuration explicitly
 uses native sampling and batch invariance after default LoRA numerical failures.
 Stage 1 is **DONE**: Qwen3-8B BF16 + r32/alpha64 LoRA trained on all 20,000 unique
 examples for one epoch, with 100% coverage and all ten verifier gates passing.
-Stage 2 is **FULL_PASS**, pending final verification: the 15k CMExam pool,
-200-pair semantic diagnostic, independent 50×4 smoke, and complete 1,000×4
-formal rollout with scoring are retained. No policy optimization is performed. Stage 3–6 remain **NOT_STARTED**.
+Stage 2 is **DONE**: 15k CMExam candidates, a 200-pair semantic diagnostic,
+50×4 smoke, and full 1,000×4 profiling with 80 complete qualitative reviews
+and all eight verifier gates passing. Measured train-sample accuracy is 51.775%,
+mixed groups 53.1%, and truncation 0%. No policy optimization is performed. Stage 3–6 remain **NOT_STARTED**.
 No examination test scoring has run. Current stage status is recorded in
 [`project_state.json`](project_state.json).
 
 - [Stage 0 report](docs/stage_reports/00_runtime_compatibility.md)
 - [Stage 1 report and interview evidence](docs/stage_reports/01_medical_sft.md)
 - [Stage 1 verification receipt](experiments/stage1/verification-final.json)
+- [Stage 2 report and interview evidence](docs/stage_reports/02_reward_rollout.md)
+- [Stage 2 final verification](experiments/stage2/verification-final.json)
+- [Stage 3 readiness and frozen inputs](experiments/stage2/readiness.json)
 - [Fixed SFT initialization and hashes](experiments/stage1/initialization_manifest.json)
 - [Runtime installation and CLI](env/README.md)
 - [Selected evidence](experiments/stage0/selected_runs.json)
@@ -112,7 +116,7 @@ and generated-answer disagreements remain documented in the report.
 Current progress is authoritative in
 [`project_state.json`](project_state.json), with explicit runs in
 [`experiments/stage1/selected_runs.json`](experiments/stage1/selected_runs.json).
-Stage 2 full profiling and scoring have completed; selected runs are in
+Stage 2 is **DONE**, including full profiling, scoring, analysis and verification; selected runs are in
 [`experiments/stage2/selected_runs.json`](experiments/stage2/selected_runs.json).
 Stage 3–6 have not started. Historical planning/Stage 0/Stage 1 validators intentionally check their original stage-isolation boundaries; their archived receipts are preserved.
 
@@ -124,7 +128,7 @@ Use the independent training environment and real Stage 1 entry points:
 .venv-train/bin/python scripts/run_stage1.py prepare --config configs/stages/s1_pilot.json
 .venv-train/bin/python scripts/run_stage1.py inspect --run <absolute-bulk-run-directory>
 .venv-train/bin/python scripts/run_stage1.py resume --run <absolute-bulk-run-directory> --checkpoint <verified-checkpoint-directory>
-.venv-train/bin/python scripts/verify_stage.py --stage 1
+.venv-train/bin/python scripts/verify_stage.py --stage 2 --output /tmp/stage2-recheck.json
 ```
 
 Each prepare creates a new run and detached worker; resume continues the same run with a new attempt and verified optimizer/scheduler/RNG/sample cursor. Formal preparation additionally requires committed configuration and successful smoke/pilot receipts. Do not relaunch smoke/pilot to resume an existing formal run. The original `mpt sft --mode smoke` remains a **Stage 0 synthetic capacity probe**, not the real medical SFT entry point above.

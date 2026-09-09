@@ -32,7 +32,7 @@
       "interview_story": "docs/stage_reports/01_medical_sft.md"
     },
     "2": {
-      "status": "FULL_PASS",
+      "status": "DONE",
       "run_ids": [
         "s2_data_20260909T024052_870aba",
         "s2_semantic_20260909T024252_815f01",
@@ -45,7 +45,13 @@
         "profiling_unique_prompts": 1000,
         "completed_responses": 4000
       },
-      "verification_receipt": null,
+      "verification_receipt": {
+        "path": "experiments/stage2/verification-final.json",
+        "sha256": "833bd57694a922355eebabae07558d0fa43060867e269d4c9e926bf353fa148d",
+        "verifier_commit": "75d235f194daa27a712b120b666ddb13f8a9683f",
+        "contract_sha256": "8ba60bd2e724fbbb74e26f4ef677eb6c6d51eaafcba6eb3bcb0b2eb588a51f24",
+        "result": "PASS"
+      },
       "stage_report": "docs/stage_reports/02_reward_rollout.md",
       "interview_story": "docs/stage_reports/02_reward_rollout.md"
     },
