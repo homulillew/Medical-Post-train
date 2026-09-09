@@ -1,0 +1,14 @@
+{
+  "result": "PASS",
+  "scope": "FORMAL_RAW_PIPELINE_ONLY",
+  "timestamp": "2026-09-09T06:08:03.491362+00:00",
+  "summary": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/summary.json",
+    "sha256": "914e2e94c1109c5dd40bc86c33b4bcb6ab07477fdfd3668198b0b8470827c91f",
+    "bytes": 861639
+  },
+  "generated_groups": 496,
+  "accepted": 256,
+  "completed_trajectories": 1984,
+  "optimizer_updates": 0
+}

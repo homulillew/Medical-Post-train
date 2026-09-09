@@ -1,0 +1,98 @@
+{
+  "source": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/summary.json",
+    "sha256": "914e2e94c1109c5dd40bc86c33b4bcb6ab07477fdfd3668198b0b8470827c91f",
+    "bytes": 861639
+  },
+  "stage3_formal_costs": {
+    "generated_output_tokens": 478117,
+    "output_tokens_by_disposition": {
+      "accepted": 242109,
+      "rejected_all_wrong": 133489,
+      "rejected_all_correct": 101493,
+      "overflow_eligible": 1026,
+      "invalid": 0
+    },
+    "rejected_output_tokens": 234982,
+    "accepted_token_fraction": 0.5063802374732544,
+    "prompt_tokens_shared_prefill": 66501,
+    "logical_prompt_tokens_all_trajectories": 266004,
+    "generation_wall_seconds": 1947.643868769519,
+    "output_tokens_per_second": 245.48481766436305,
+    "semantic_scoring_seconds": 36.67398768989369,
+    "gpu_worker_active_seconds": 2039.387754749041,
+    "worker_time_scope": "Sum of active worker runtime through final/pause checkpoints; excludes human pause gap, includes engine loading and scoring; not measured GPU kernel busy time",
+    "control_output_tokens": 40,
+    "control_prompt_tokens": 580,
+    "control_generation_seconds": 2.7102917921729386,
+    "unknown_inflight_attempts": 0
+  },
+  "stage3_smoke_costs": {
+    "generated_output_tokens": 32313,
+    "output_tokens_by_disposition": {
+      "accepted": 11665,
+      "rejected_all_wrong": 12230,
+      "rejected_all_correct": 8418,
+      "overflow_eligible": 0,
+      "invalid": 0
+    },
+    "rejected_output_tokens": 20648,
+    "accepted_token_fraction": 0.3610002166310773,
+    "prompt_tokens_shared_prefill": 4198,
+    "logical_prompt_tokens_all_trajectories": 16792,
+    "generation_wall_seconds": 154.54223609296605,
+    "output_tokens_per_second": 209.08847197320137,
+    "semantic_scoring_seconds": 2.7689369549043477,
+    "gpu_worker_active_seconds": 222.39288042020053,
+    "worker_time_scope": "Sum of active worker runtime through final/pause checkpoints; excludes human pause gap, includes engine loading and scoring; not measured GPU kernel busy time",
+    "control_output_tokens": 80,
+    "control_prompt_tokens": 1140,
+    "control_generation_seconds": 5.363517600111663,
+    "unknown_inflight_attempts": 0
+  },
+  "stage3_failed_run_costs": {
+    "failed_smoke": {
+      "generated_output_tokens": 32693,
+      "output_tokens_by_disposition": {
+        "accepted": 12797,
+        "rejected_all_wrong": 12431,
+        "rejected_all_correct": 7465,
+        "overflow_eligible": 0,
+        "invalid": 0
+      },
+      "rejected_output_tokens": 19896,
+      "accepted_token_fraction": 0.39142935796653716,
+      "prompt_tokens_shared_prefill": 4198,
+      "logical_prompt_tokens_all_trajectories": 16792,
+      "generation_wall_seconds": 150.8160793571733,
+      "output_tokens_per_second": 216.77396826219123,
+      "semantic_scoring_seconds": 2.7691768100485206,
+      "gpu_worker_active_seconds": 223.1636242340319,
+      "worker_time_scope": "Sum of active worker runtime through final/pause checkpoints; excludes human pause gap, includes engine loading and scoring; not measured GPU kernel busy time",
+      "control_output_tokens": 80,
+      "control_prompt_tokens": 1140,
+      "control_generation_seconds": 5.5510512590408325,
+      "unknown_inflight_attempts": 0
+    },
+    "failed_startup": {
+      "status": "FAILED",
+      "failure_phase": "Engine initialization before generation request",
+      "generated_group_attempts": 0,
+      "generated_output_tokens": 0,
+      "launch_to_failure_seconds": 21.714291,
+      "gpu_kernel_busy_time": "NOT_MEASURED",
+      "cause": "Previous failed worker retained vLLM/BGE allocations; engine free-memory guard rejected new initialization",
+      "fix": "Explicit engine shutdown, persisted-failure owned-group cleanup, prelaunch GPU-empty check",
+      "timestamp": "2026-09-09T05:25:04.640635+00:00"
+    }
+  },
+  "total_recorded_rollout_output_tokens": 543123,
+  "failed_lifecycle_time_scope": "Failed-summary worker retained GPU during later failed-startup attempt; do not sum overlapping wall intervals as GPU hours. Active runtime checkpoints omit human pause/cleanup gaps; startup failure launch-to-error wall separately retained.",
+  "measured_amplification": 1.9375,
+  "stage4_dynamic_output_tokens": 9338222.65625,
+  "stage4_dynamic_generation_hours": 10.566644253306853,
+  "stage4_vanilla_contract_groups": 5000,
+  "stage4_dynamic_contract_accepted_groups": 5000,
+  "formula": "5000 * measured_amplification * 4 * mean_output_tokens / measured_generation_tokens_per_second",
+  "limitations": "Fixed SFT initial projection only; changing policy acceptance, actor updates, old-logprob, switching, validation and checkpoint costs remain unmeasured."
+}

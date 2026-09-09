@@ -1,0 +1,5 @@
+{
+  "stage2_formal_prompt_overlap": 36,
+  "smoke_formal_prompt_overlap": 0,
+  "scope": "Prompt identity overlap only; separate run IDs, domain, encounter seeds and fresh generation; no smoke groups counted toward256"
+}

@@ -1,0 +1,1072 @@
+[
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/RUN_REPORT.md",
+    "sha256": "7348dc869f9faaa5002a37119ee188c5b048177d703655a3e5d7062774f421d1",
+    "bytes": 1209
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/attempt_001/code.json",
+    "sha256": "9e8287bf79030037c1996b0fea6ce590d4ba5dfb44925c7aaf519532bd5ac321",
+    "bytes": 9910
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/attempt_001/command.json",
+    "sha256": "5e82af397700074656852d91f01aa96d015d70863e8dac828c6c57d9afe73b78",
+    "bytes": 314
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/attempt_001/environment.json",
+    "sha256": "d0a14aa4b869c0f91dba5392f84cac93f5bf87f6208a39c461d93e72b0b984f9",
+    "bytes": 7848
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/attempt_001/identity_after_wake.json",
+    "sha256": "9c3bfa2d5feb9f06dc837e34b0562914ee6caf398a204bb5545b2beb0283734b",
+    "bytes": 22984
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/attempt_001/identity_base.json",
+    "sha256": "7df14869fcd8d1541318f4ae22ab96388e1fec70a0b1bd22657bb38fe72539ca",
+    "bytes": 22695
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/attempt_001/identity_base_negative.json",
+    "sha256": "7df14869fcd8d1541318f4ae22ab96388e1fec70a0b1bd22657bb38fe72539ca",
+    "bytes": 22695
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/attempt_001/identity_receipt.json",
+    "sha256": "5cc50e19ec2766460f7381dc7f2b1d45fd31fda83b9bff58c920369d79a14c2a",
+    "bytes": 1037
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/attempt_001/identity_sft.json",
+    "sha256": "9c3bfa2d5feb9f06dc837e34b0562914ee6caf398a204bb5545b2beb0283734b",
+    "bytes": 22984
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/attempt_001/identity_sft_repeat.json",
+    "sha256": "9c3bfa2d5feb9f06dc837e34b0562914ee6caf398a204bb5545b2beb0283734b",
+    "bytes": 22984
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/attempt_001/launch.json",
+    "sha256": "2d8144c623d37468b0092df7cd519404818919c16d83059754fc5dc250513111",
+    "bytes": 92
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/attempt_001/lora_shrink_config.json",
+    "sha256": "5bcb0802b7f36df3337be30186954b7ff4f71facad021e372861a873cdaab6c0",
+    "bytes": 166
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/attempt_001/metrics.jsonl",
+    "sha256": "3de677297168cfd9524129ef282c2000f264627383e4df6b9461a3ebf0377e18",
+    "bytes": 147227
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/attempt_001/resume_start.json",
+    "sha256": "56e0dd13d90998f76e67f91c43da161927cfb8257553837b33469b4d9d48c2f6",
+    "bytes": 5950
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/attempt_001/runtime_environment.json",
+    "sha256": "4b95fdedd15a53f3c449dd56bcb5e162e72f2828f7e19939443950ebdf7692aa",
+    "bytes": 150
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/attempt_001/runtime_progress.json",
+    "sha256": "40f9c16a92bc97a76ce5fb82cb1ccadbf8d566996d649a8fb26459b0423d6abb",
+    "bytes": 310
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/attempt_001/runtime_summary.json",
+    "sha256": "bc6b5e089eb2020e063386312eef9a6aa0dbff4d753270546a3e9c96931825ce",
+    "bytes": 1445
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/attempt_001/status.json",
+    "sha256": "145175fd98abac10d6c5f06f81a86208d8513e719fdd8a7ac2bb818e7459d40c",
+    "bytes": 108
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/attempt_001/stderr.log",
+    "sha256": "c76e69dd8932e3f045e370f626438f0124ef8427b7c38199054f88001937488c",
+    "bytes": 2137
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/attempt_001/stdout.log",
+    "sha256": "5fb53cbff2a71883015b6e6b3d6e0ae1a80b570439568de115181e513297eb68",
+    "bytes": 158483
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/attempt_001/vllm_args.json",
+    "sha256": "20a9e1854f89f15120caa124024a8b981c24fcbc7ce870aafa08d03300c9de41",
+    "bytes": 539
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0000/commit.json",
+    "sha256": "bd9c37696ef17b199cb479f39b01ddfa10a78fa2781e3f6cdfb6db93508e4393",
+    "bytes": 10861
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0000/raw.json",
+    "sha256": "238c12703f5ea73c366c4cba69aa9f4cfea3110ae18ac5c6cb30e7938444732a",
+    "bytes": 267220
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0000/reservation.json",
+    "sha256": "25ca8aeed3e0cc37be8ddbcedb300fad8947e6b9102065bd2a216813108e16b0",
+    "bytes": 18544
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0000/scored.json",
+    "sha256": "3d9da2745a3804a59101565ff77fda30ece77a4138113f0d73f79dfcd2e38cab",
+    "bytes": 308649
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0000/semantic_encoding.json",
+    "sha256": "28876d7e85bd92419c71ca29f9f0d427aef49f7f30a8ba27f225f25e532bd1b8",
+    "bytes": 96994
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0000/semantic_vectors.npy",
+    "sha256": "9ddd6d8038c51384632c49e85315a80ea0e9fabe56fdfb8ded2b085b8aa974e2",
+    "bytes": 315520
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0001/commit.json",
+    "sha256": "1a0f287e642f436e0f103d8a908bf0d50c1d2f92c65bd0af968663abb0d80c43",
+    "bytes": 16725
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0001/raw.json",
+    "sha256": "c517e34ac2a6edfaca9da8160a0e589691999cfb1026e3d93bb39c178992e7d6",
+    "bytes": 245284
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0001/reservation.json",
+    "sha256": "6b0ab79e76a4c5b1b1f769197da455781c563a932bc5b22d6953e4b5b8fa233e",
+    "bytes": 22165
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0001/scored.json",
+    "sha256": "4c1ff770e0b8d1d674fba5d738e5f4e9177443a5ee577a69e9dbe7b12168da7c",
+    "bytes": 286755
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0001/semantic_encoding.json",
+    "sha256": "b4c55f744b4c1eaefbf627ac55bf6f700798a8ce192a543f5103b01701f280ff",
+    "bytes": 88193
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0001/semantic_vectors.npy",
+    "sha256": "29079aee16888db32c225bd544c4b50234768cdcd63e16591185e2522e96b77f",
+    "bytes": 315520
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0002/commit.json",
+    "sha256": "203f3ebfda01e72597534696ae617c6ef524fd628735393f04f3afef9bb31e8a",
+    "bytes": 22859
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0002/raw.json",
+    "sha256": "2d9990f6c32c19be87f0db163352b3ba7d4600463192fdce3d301dd2bb076ab1",
+    "bytes": 240823
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0002/reservation.json",
+    "sha256": "c96b749a1fd9c53b110b85a5a9017f431c791f72624a46bf21fc87a328cf127b",
+    "bytes": 25157
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0002/scored.json",
+    "sha256": "74c67b259212ec238ee66b3fc35655326b8542a0434dc7a0fd72aed188e105b7",
+    "bytes": 282080
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0002/semantic_encoding.json",
+    "sha256": "af58d038a5df6804d221f171ae422b3e8ff3e9ad081ff90576a37c39b8674aca",
+    "bytes": 87181
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0002/semantic_vectors.npy",
+    "sha256": "d6c8376704384257842cee337fa88af3f6cf5ca8cdae5ee6436c16f70c3d2a45",
+    "bytes": 295040
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0003/commit.json",
+    "sha256": "75bff0cffff8b4584f727d9f10754531fad41b699c83533a1ce8f24cabf96c7e",
+    "bytes": 29080
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0003/raw.json",
+    "sha256": "6a9798df62a8dd7488efb7727088b3c1d338110fe3c88e7f2d431a094ddf9593",
+    "bytes": 255760
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0003/reservation.json",
+    "sha256": "7fe87860c6f76056b4747652acafc49196f11188fcd2fe5147007890c06274a2",
+    "bytes": 26836
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0003/scored.json",
+    "sha256": "30f884938ef2dd0e8cfb1a26dcb2c64bb768b923f84756d5c8ebe1847f53a73c",
+    "bytes": 296975
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0003/semantic_encoding.json",
+    "sha256": "3f9376cf46a87ea74e0da842a6de339c532d5bc8cf2cab8570d6e9ceb9be2711",
+    "bytes": 90939
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0003/semantic_vectors.npy",
+    "sha256": "007884704d1380dea3b395067b60cfbb53504225e2b8e8e4ff9e2cbfe8f06598",
+    "bytes": 315520
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0004/commit.json",
+    "sha256": "636bf6c7aac7cbea95b73cc33e4c9da614fc0abd522a71f8b9a5cad15e1edd5d",
+    "bytes": 35108
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0004/raw.json",
+    "sha256": "84356b72e0861edd9262125ac88d4dfb7354858114c0ca4954188fdce2282698",
+    "bytes": 270839
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0004/reservation.json",
+    "sha256": "39474db42cdc0fc10f965136e05073b1fcf04a01377c44897d8225001a0013a4",
+    "bytes": 32402
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0004/scored.json",
+    "sha256": "fad904fea81d592e945d5c1dee14252497319d5c0b5349855bbb52b2420fa915",
+    "bytes": 311804
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0004/semantic_encoding.json",
+    "sha256": "0e96487185df5e2f59b671f2f26cc857a67979e6f22094c6893dbdd8c085582d",
+    "bytes": 99395
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0004/semantic_vectors.npy",
+    "sha256": "f48ef853921270666377b192a2682808f18a7250b386a9043962c6fed4b019ad",
+    "bytes": 315520
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0005/commit.json",
+    "sha256": "36d136c7dd516948ffc453cbdb0e57fe3c1c6330e2cf32ae18f6b076f294cfe9",
+    "bytes": 40881
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0005/raw.json",
+    "sha256": "2aa059b8cc4e5d1c9e75cefffb8b6e8025cb443949a5726a45617d69ad77771a",
+    "bytes": 243562
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0005/reservation.json",
+    "sha256": "cf6773fec218f049c5a3728d14616aae510e1c368385600efa06f49189b31412",
+    "bytes": 32811
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0005/scored.json",
+    "sha256": "40a6ffd07aba30ee4c6c76e49ab96e774ec05c9b46c566e90a72e0d138ebec1f",
+    "bytes": 285085
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0005/semantic_encoding.json",
+    "sha256": "5fd1845a88e09e55e614931270d3871c002cc61044533713c88d3b0370e1597a",
+    "bytes": 90321
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0005/semantic_vectors.npy",
+    "sha256": "cd7354827ae2ccc0ad9404582e82a8fcc13b2a663409dac90dd0fd040b810de2",
+    "bytes": 311424
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0006/commit.json",
+    "sha256": "0cb21066f163be4328eb1fbb5bda1c6c98a147453fda4d8eba8c5ff85df17159",
+    "bytes": 46910
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0006/raw.json",
+    "sha256": "504a7a4d1786808cccd6a6db0bd9bbadfb2458301eb821dcc4c150c421ea87bb",
+    "bytes": 252660
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0006/reservation.json",
+    "sha256": "057bf67e7d888ee5bdcc9ce70821a29b4b64f2f7d77df70c39086b6667efca1f",
+    "bytes": 37458
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0006/scored.json",
+    "sha256": "043de401517221b225f2649d2c5d25bb034f29ce7238ded6c6b2cdc3e6067235",
+    "bytes": 294185
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0006/semantic_encoding.json",
+    "sha256": "a91ac8fd9d3782f4c0d33680ca56ab108e03fa338b95cf3bbe6f96086fc8f067",
+    "bytes": 90226
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0006/semantic_vectors.npy",
+    "sha256": "02f62800c5574bfe12e4948780f2e0ba630ff6621337e3fb9517b698b38955e9",
+    "bytes": 303232
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0007/commit.json",
+    "sha256": "aa62e7988806931571c818075f7ab527712adbd2462e5e2dabd027baa257cc93",
+    "bytes": 52838
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0007/raw.json",
+    "sha256": "943a15339634ed9aa20541555482c3f223eda2b3f94f2a5fcde4b87a612aeaff",
+    "bytes": 245839
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0007/reservation.json",
+    "sha256": "8ae2d2bcf28dfb45e01fb241a957f32a3b7f921e7b325343a347480c9902a124",
+    "bytes": 40493
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0007/scored.json",
+    "sha256": "47a309d83ce40690716ac12625f09114bc3a9ece7963d33e7e16387a7eb9c1d6",
+    "bytes": 286596
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0007/semantic_encoding.json",
+    "sha256": "88d3b25bdf8078de7beaa224f257d233d5e4fa94e5ebb15f2776383a8d1df590",
+    "bytes": 84972
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0007/semantic_vectors.npy",
+    "sha256": "d2e1e45d61ffa4c41bfb84b9defe091663265d12760048f75ecd56abf21d4c2c",
+    "bytes": 282752
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0008/commit.json",
+    "sha256": "690ecf4d698574554af78782709d682afc2f152a377aadbc8bc30565d2a005a1",
+    "bytes": 58629
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0008/raw.json",
+    "sha256": "2c70f91ab6a84e7952632727fd3dd0804f1db63e6279c54da69b5f60bcfbc820",
+    "bytes": 253641
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0008/reservation.json",
+    "sha256": "698de54642f39e4d45ff0b4934db37e427e4e680cf82fc0b87144dd8ae58966f",
+    "bytes": 42504
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0008/scored.json",
+    "sha256": "cdd1f07c39407dbb20ac28e6af3ef0bb5c546b3dc94c0690b2b6a2be43f8d504",
+    "bytes": 295195
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0008/semantic_encoding.json",
+    "sha256": "38ac6cef957c39f3a5e21ee4e2253f05b25f5df29a10d873ec516ad2f2488e8d",
+    "bytes": 96752
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0008/semantic_vectors.npy",
+    "sha256": "0b2652a3351523872910762d0686a0549a42bc441ede0dff07c39602d0fbffcf",
+    "bytes": 319616
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0009/commit.json",
+    "sha256": "a75fd3362b0189f5ed9fb37128fad94ebecfac1f775f062ff7c9ba64b3f5a19a",
+    "bytes": 64473
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0009/raw.json",
+    "sha256": "7da66be94490e1913952b6aee179f421bacd53f06dbef8a1fe9af895a77a18be",
+    "bytes": 241580
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0009/reservation.json",
+    "sha256": "d90ac464a7e0fbed2e5f75f70993cb620dbd821256402604400dc1e2885f3c7f",
+    "bytes": 44550
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0009/scored.json",
+    "sha256": "d4c46a42f5707916ae6a1fa67a113fb8098ebb84e5e48cc16b4aa81d18ce0ef7",
+    "bytes": 282504
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0009/semantic_encoding.json",
+    "sha256": "90f702ad5693aec39bc6437d4e00e86bc8325c41638f5f5ff89aa92657835f73",
+    "bytes": 86952
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0009/semantic_vectors.npy",
+    "sha256": "8d767c1bcf6d96871f3648b8d9fbbb1dbb9da820a8b11458c785d7e2d112161a",
+    "bytes": 307328
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0010/commit.json",
+    "sha256": "65d64c7eb2ecdf8f719d34266cebbc27182cd6fbc7e16418518b969fbe7dbd09",
+    "bytes": 70354
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0010/raw.json",
+    "sha256": "f436f5328359b43bd2324ea2b7a1bdbcef602b80566b88e750aad85bc0769fc9",
+    "bytes": 278343
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0010/reservation.json",
+    "sha256": "36950e5a881eeb159b5e5e1edd20f65a3efd7e70f6ad715806807f62a235d718",
+    "bytes": 49610
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0010/scored.json",
+    "sha256": "49da37a9f7dfbe6695b928524fa07733c473e1e730f112fd85893aad55fd97ea",
+    "bytes": 319745
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0010/semantic_encoding.json",
+    "sha256": "2e5c7b56a9b6c02425b97f3115d991c0f754804fc55f7ab73b1e6b932ac067a8",
+    "bytes": 103985
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0010/semantic_vectors.npy",
+    "sha256": "4a854cad2430d9e9adf4738e1da704510a47d3f7710b19d70bbfba6c386f91c0",
+    "bytes": 315520
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0011/commit.json",
+    "sha256": "ef69e0383f68c4a8ffe2434495222d5080dab0f98259789aa72de244f9eb822e",
+    "bytes": 76462
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0011/raw.json",
+    "sha256": "0a43771a0e2d0b5b34bf03c8486128a43e00260b82448749893f5cca4d941d1e",
+    "bytes": 267900
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0011/reservation.json",
+    "sha256": "5ade3bb660d622985397ecb03364aa9039c42b3c88eb32248b9c8bc7185fe935",
+    "bytes": 52982
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0011/scored.json",
+    "sha256": "f138b0d399419b9e68d9ae5912203cfea54ec6fd1316828b18de320591c9987b",
+    "bytes": 309253
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0011/semantic_encoding.json",
+    "sha256": "5e89f0e5b4f46b408d15c795510bc1e833723924ef17fba14ab3008d1d6b544b",
+    "bytes": 103695
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0011/semantic_vectors.npy",
+    "sha256": "12f700ec599102b1f1d4c0586bfcde52755cab95bf9892ac678b2bfadb15a968",
+    "bytes": 319616
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0012/commit.json",
+    "sha256": "083ce651d67eae1af8093d32ddeef72875d836b489510da132d2467dcd17012b",
+    "bytes": 82473
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0012/raw.json",
+    "sha256": "764335116b626050143e6d9c26983fdb48370185c6c76bd39b39e31b100c297f",
+    "bytes": 249493
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0012/reservation.json",
+    "sha256": "adaf47a21789e515dd0e4ab0269d867a579825c879d71f2cef0eab44be8a788a",
+    "bytes": 53942
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0012/scored.json",
+    "sha256": "30a0a97ae3eacf56bc8d2a3445f70c5ff11a05e3d1dab5915e4de212fa416bea",
+    "bytes": 290672
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0012/semantic_encoding.json",
+    "sha256": "fc721e0aa7bc51a05ef770d9621b93e648450a24edd4f4c6207c8ef1c7226307",
+    "bytes": 90532
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0012/semantic_vectors.npy",
+    "sha256": "6bffc886e1b3662bf09a67f5839fc49f1c94718b77b9b638d0465241c13cd720",
+    "bytes": 315520
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0013/commit.json",
+    "sha256": "8732f77ce3fdf5c9c9b3fab0a3a78ae2148a562160dcdbb7065ff87855de28fa",
+    "bytes": 88498
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0013/raw.json",
+    "sha256": "79e42009b01a12e80b23c5a6e126a263535d5de1696f2ce308e62487a5c296ee",
+    "bytes": 262095
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0013/reservation.json",
+    "sha256": "a212955c57b5cca4f62ac6da83c2caac736c4188706f718a329cf4603d0faa5e",
+    "bytes": 58760
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0013/scored.json",
+    "sha256": "135f43783fda8a778ffb5f5e04af7f11993488992896c61d32bb59494974af52",
+    "bytes": 303600
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0013/semantic_encoding.json",
+    "sha256": "a75bea699c37a9d2b0454b6ade4640d089649e2d925bbe5896ce847adb6f210f",
+    "bytes": 94401
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0013/semantic_vectors.npy",
+    "sha256": "c75c3bbd270238c029188c6b7ff5fa80b89f82cb72acd840c721223840440f2f",
+    "bytes": 319616
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0014/commit.json",
+    "sha256": "25ed723c541ac7ae9c865ad8d6b1a09233aa350fd98fa7265bf8d1c051e39278",
+    "bytes": 94433
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0014/raw.json",
+    "sha256": "7cce178621387079e081dca87e46e9e0cae80bb00ab4badd6238272bfd6b89cb",
+    "bytes": 251696
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0014/reservation.json",
+    "sha256": "5f7896d49a50e08a9e4224fd3ba08b57c6546c90e5adc83fea39ab8ae4389e79",
+    "bytes": 60302
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0014/scored.json",
+    "sha256": "a5dd6fd2f5aee608946180f9c25bebbe199f3b943d60d2031a13a57e18ea1573",
+    "bytes": 292657
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0014/semantic_encoding.json",
+    "sha256": "c68c99612edafc31393606a0c777232c4d061661dc1e4317cea802cd451a95b6",
+    "bytes": 90379
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0014/semantic_vectors.npy",
+    "sha256": "72ba1f4c371e27c33b5cef59fe552d52466d274b4ebc404af39b60eadb646603",
+    "bytes": 295040
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0015/commit.json",
+    "sha256": "e3ba5037df766496d8c8854f22f0cecdd07d7a5e744433fdf142beca7f860e9c",
+    "bytes": 100413
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0015/raw.json",
+    "sha256": "dbb9f5c7c9a627a9d2cbdbd83108dbfa7cf9e02bc926d42ca43d326a3dd6af6f",
+    "bytes": 260702
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0015/reservation.json",
+    "sha256": "b028a0b83243aea7751e1192a99f0426a94877cb3bf0a7c7382a75b92edccb81",
+    "bytes": 62487
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0015/scored.json",
+    "sha256": "7c5c616638ffc6c698d5937374eaed69244184eadf9221ecc05b46d421b224f8",
+    "bytes": 301974
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0015/semantic_encoding.json",
+    "sha256": "204addfb8f3fd9022b8e7871d8054e83d8d620f7e8e177b6de683945e11c9895",
+    "bytes": 100739
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0015/semantic_vectors.npy",
+    "sha256": "a55b93c01313c0a7b0139cea90dea27204bfb36030ea900e81376ac9eefbea82",
+    "bytes": 319616
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0016/commit.json",
+    "sha256": "f14ac2d032b29380245c6dc115f16a09de38467c700f027865fba23e419436f4",
+    "bytes": 106340
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0016/raw.json",
+    "sha256": "c61c2f3db865855248c554dcc57a38ea3d1803326cd07340cc35017df91d1d54",
+    "bytes": 273819
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0016/reservation.json",
+    "sha256": "d3a5fbc8ee75a6c77d601f7b41b3abb5b7e84a0b3f2d8a5a6051dbbbaab8a367",
+    "bytes": 66763
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0016/scored.json",
+    "sha256": "54247a6dc41d2f032a5493ba97d8d6b166dc77702d6e66bdbc6472ab6c96dd06",
+    "bytes": 315076
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0016/semantic_encoding.json",
+    "sha256": "ba7cbc1359a43d0c6b596f2d98672e5d62ebef2b96ba99d0cfcdb8ae67bca4c8",
+    "bytes": 100622
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0016/semantic_vectors.npy",
+    "sha256": "cf0ca2a10fae77b94504e0eb54cd481bad1c7f47afb0588787049ff99f306dc1",
+    "bytes": 323712
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0017/commit.json",
+    "sha256": "380c8f67e0135843b72485cc76d4c0a6ff4ac1110a4abafd4ea908cfb8c45f63",
+    "bytes": 112086
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0017/raw.json",
+    "sha256": "dd335645d7e9c969b7c5fe7d99cf898bbbae6f1f31abf1b705f566429e8052a1",
+    "bytes": 254822
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0017/reservation.json",
+    "sha256": "b3c60a4faf0579d67f772342bab193a4ae88214df0055783a41d41dba0e0bcf6",
+    "bytes": 68276
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0017/scored.json",
+    "sha256": "5cffc84c1cc57fd86529f0b448f6ecdf4fd4466ffb30d04410228efbcab2686c",
+    "bytes": 296377
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0017/semantic_encoding.json",
+    "sha256": "b026786bd4734db18b0233b1597e5e7d94a2b736551aca20e71af3cd811065c9",
+    "bytes": 92018
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0017/semantic_vectors.npy",
+    "sha256": "c93369f61176bacb27d495ac517a0e501b6f3b4f98ad7faef95bc432bcde7b55",
+    "bytes": 323712
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0018/commit.json",
+    "sha256": "e30ae8f300f9c763e72f27c1ed5d44ad3dee48598621f5ec1fe906d1f0509676",
+    "bytes": 117979
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0018/raw.json",
+    "sha256": "d2ae81ab893e0038b4cc208e459c7eb3429489fc0d55ca6538c01c444a6520d9",
+    "bytes": 251479
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0018/reservation.json",
+    "sha256": "c37781f3534a5bd542a694ce5d2ba0aeb3c7c57e72c53b20c69e9f3c4c523138",
+    "bytes": 72691
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0018/scored.json",
+    "sha256": "923702c60114ff4811c547fc8e355690a10f8c5eef6d6b2b23b528afbb041766",
+    "bytes": 292628
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0018/semantic_encoding.json",
+    "sha256": "095d089ab08e5ec4c3bc44d71b7a32bb9cbe010075359e28da8f550fd9ea37de",
+    "bytes": 91121
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0018/semantic_vectors.npy",
+    "sha256": "dead90a36e9ef3a8e814c13422f134966122a478f61d44a404381dd0bf640fef",
+    "bytes": 307328
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0019/commit.json",
+    "sha256": "74270021a7e9df5626929017d9cbfe45ba8ebb5da26367da6f1a0387cde14ac1",
+    "bytes": 123850
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0019/raw.json",
+    "sha256": "e888be16f9a88d907c0706eb9d60d3ff25b19015416b610885b692d4224ae9fe",
+    "bytes": 258203
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0019/reservation.json",
+    "sha256": "8068cd1f2bb942f23a0f33ba8589c332498f16b498e9d73bc085420a9c165a49",
+    "bytes": 75247
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0019/scored.json",
+    "sha256": "18f2244f15c34a1ef71b85d7e3f4f20c2cd81f07da12cad38abd327808b3dae2",
+    "bytes": 299274
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0019/semantic_encoding.json",
+    "sha256": "b16e19c28ae01aea4a5d2dd0e7e6ad994af8e4a6241e1678e83bd8813d4a2137",
+    "bytes": 92353
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0019/semantic_vectors.npy",
+    "sha256": "bb85488651d0685919f6d688b211e426badf7363d93eed43db5bb91ba73bc12a",
+    "bytes": 303232
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0020/commit.json",
+    "sha256": "b9127a723621abe77b214a03ef6bab6baa76b88277129ce9d9eb5d3a40f8ea89",
+    "bytes": 129736
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0020/raw.json",
+    "sha256": "3d555c0a711e0dc0a65180ba57957863035025c66bb8009bcc9fa3af50789d4c",
+    "bytes": 266195
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0020/reservation.json",
+    "sha256": "18e175b9ecf4afefeab9999beaec55ce18aa6b76f221dd0462c7de8a00f7e743",
+    "bytes": 78883
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0020/scored.json",
+    "sha256": "1d1296ca8e12da1d15d42b48dff0b59141a13de0a392f543ce054dec896db265",
+    "bytes": 307094
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0020/semantic_encoding.json",
+    "sha256": "154b82cf20fe7021cf1958aff1946ae095f13143e41918926630df143e9552ca",
+    "bytes": 99812
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0020/semantic_vectors.npy",
+    "sha256": "87c6639ecd1415d53332cb822987970b22b86da0ce3f630b2f97971e39a09e8b",
+    "bytes": 311424
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0021/commit.json",
+    "sha256": "a26dd9d73d492a21876caa4bc56c4698124e0944cab9613c56cc951d074acf53",
+    "bytes": 135717
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0021/raw.json",
+    "sha256": "4bc245313834fdc4b46271a3703b06362eff5348737c89c8876b82c1b4079d3b",
+    "bytes": 245202
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0021/reservation.json",
+    "sha256": "3bb0b9fda6afaa54dac6c22577442f33c138a861b5f892feb9193edb10d01131",
+    "bytes": 81471
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0021/scored.json",
+    "sha256": "3886e0d404ee5ed25d74c10fb297e5e47fe8d3074dcc965528b6164f9ff2e589",
+    "bytes": 286865
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0021/semantic_encoding.json",
+    "sha256": "b2118ee3c321c7f0668a7e675f12d2c9b70156c8d6bf3b582d572ec23275536c",
+    "bytes": 88467
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0021/semantic_vectors.npy",
+    "sha256": "feb8dfa72631f4f3dde26a3982c2bd1a729fb381087121e44b5e1b2d69d2bf27",
+    "bytes": 315520
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0022/commit.json",
+    "sha256": "4ba1baa54ce63e8c49ee8b47ff9b0088a5081363819ef7fdd3cf037b63caa6de",
+    "bytes": 141478
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0022/raw.json",
+    "sha256": "d7dc7c06b606a2134fc9bb0280e7a431a3997765e453e190ba39174742706b0d",
+    "bytes": 248203
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0022/reservation.json",
+    "sha256": "faceeceb4a6a1372b24c4ded263905c7c89b66c3455b4d72b286b4f71227a62b",
+    "bytes": 84098
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0022/scored.json",
+    "sha256": "c1edff7df03b34d27a4f85f8a713ace37cc597f66b460f02f932a532b1015a45",
+    "bytes": 289327
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0022/semantic_encoding.json",
+    "sha256": "c591ebad3dd2b879387362b8163837743b7c740b8470c0b50551eb2fd04d174b",
+    "bytes": 90355
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0022/semantic_vectors.npy",
+    "sha256": "5a6cfe7b664b8fbc81dd91913c032ce009c95396ad46d730bb1e50968bd1491f",
+    "bytes": 303232
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0023/commit.json",
+    "sha256": "4c3471afce33e32737d8537e834e6444c1ef3253e89bcce9fbc8897d3bac0b80",
+    "bytes": 147441
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0023/raw.json",
+    "sha256": "2f0398f120f949171c601382aa0eb88a5b9c3a72cb8c979ce59e038a6540ac58",
+    "bytes": 252318
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0023/reservation.json",
+    "sha256": "37d44b7055e7ed9a480cea1bb4947bc717b29b705529212aad2199231117f95f",
+    "bytes": 86315
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0023/scored.json",
+    "sha256": "c53c9eb3747046345b09a5ef4802b6b96bdbe19b8064774255bab23bf52b4ba0",
+    "bytes": 293422
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0023/semantic_encoding.json",
+    "sha256": "44c10ff6c92558e69df53e22fe94e7f7aa87440772e0487ba3d9af8b3a1a4992",
+    "bytes": 90197
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0023/semantic_vectors.npy",
+    "sha256": "f795eeee278879fd2848ef360892080a7bdb43918b19dd4acf2e1d3baf0ae09a",
+    "bytes": 307328
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0024/commit.json",
+    "sha256": "c9e90d6cf537a7098b6cc22c9fcdcad330baa9e75f46540a4375e3c21e8edc49",
+    "bytes": 153498
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0024/raw.json",
+    "sha256": "2b115c78f3f5a7e4aba707039857f269c753703b58d1fa733d00ccfd58f49a85",
+    "bytes": 261304
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0024/reservation.json",
+    "sha256": "58b6e2c8ff06581b06aa29ed2c5ada7f9b7e1ec3711930ec7645069c9db7f470",
+    "bytes": 90511
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0024/scored.json",
+    "sha256": "be4ca5837b7f6e517f544c5039678cc1cb077b4034f6bf8fd6a1dac6a6a76247",
+    "bytes": 302381
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0024/semantic_encoding.json",
+    "sha256": "d082e971a33a25d13a5951f32b1b6d698e385690534d58a18dbd2d5196f76eef",
+    "bytes": 93234
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0024/semantic_vectors.npy",
+    "sha256": "e434d8fa542318272a8c708db3f2a751491ecb7584ff660d808803323e565020",
+    "bytes": 311424
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0025/commit.json",
+    "sha256": "7ef19f38a7d3df072b76e7f7212795df2a253f5a70a0ec963eb76ca12fcae0ea",
+    "bytes": 159506
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0025/raw.json",
+    "sha256": "19a0c5a0430e4fb77abbb47dc142ac3af2531b8df7a8c48bb5ccbd9710c34152",
+    "bytes": 253288
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0025/reservation.json",
+    "sha256": "ca46d40426176c438ed73010ae8a1bcaf11346fceba4af0281754aa9c4657603",
+    "bytes": 93149
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0025/scored.json",
+    "sha256": "28d9c4838e212b6ca8f29bd67ee2dda118a5522c31484fbb153e89e0752e5d3a",
+    "bytes": 294527
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0025/semantic_encoding.json",
+    "sha256": "7ebddf46ac547247ab64c5bd8ad15914ffb7c4da8b7f0db6b4150a12d9122cde",
+    "bytes": 94507
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0025/semantic_vectors.npy",
+    "sha256": "abb137c0ec41cbdc8220d98f269d08d15a42d20044a49d557fcb456748e0f357",
+    "bytes": 311424
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0026/commit.json",
+    "sha256": "86fe61dfa46c883591f8a536fe43429a1b7fa42eb0068a25b5ec5d87716a8edf",
+    "bytes": 165432
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0026/raw.json",
+    "sha256": "374c7551bb894958ff88dd99f77857a9e8ed6db8fb5459d4911e1b589bf038b3",
+    "bytes": 268577
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0026/reservation.json",
+    "sha256": "5dd4a50f8feed38d68ae081a2aaf6c0210c63b40480e90455702087d3eecea74",
+    "bytes": 96226
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0026/scored.json",
+    "sha256": "c1e1c0fb94c4ad5d5a7952e8399622b9f052fe888bc3f7ff96c4f0c5622b48fe",
+    "bytes": 309352
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0026/semantic_encoding.json",
+    "sha256": "d94e99adc102e85e2d5c7f0379f12d50a4f505c693d4db514649a8ee62522a19",
+    "bytes": 94766
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0026/semantic_vectors.npy",
+    "sha256": "183e205c910c0ed84ec8b8250c4cf93b6f54171e2cffe20460d4a99685a1b909",
+    "bytes": 307328
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0027/commit.json",
+    "sha256": "2ce5ab82b6758dfe7e9c3a8fef8bb340735c93ed038b8a25755cabe9065d07a6",
+    "bytes": 171311
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0027/raw.json",
+    "sha256": "0f05803827e53499a0513e8a2b9a178243a98d37515285a9b262790efb4ce531",
+    "bytes": 243071
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0027/reservation.json",
+    "sha256": "fae8aa4cf5f349426acef85421f9c1e4b8bf0fef02795dc05a16baacf56fda7c",
+    "bytes": 98761
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0027/scored.json",
+    "sha256": "1858b538412cd813a91528854f87e4fd28d006be1d918b1e980bd8cfde93ffce",
+    "bytes": 284556
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0027/semantic_encoding.json",
+    "sha256": "371e4ed82ab50b2d372cc4528a8cd8814b77799e30b94e925b36d2f224f36bc4",
+    "bytes": 91295
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0027/semantic_vectors.npy",
+    "sha256": "7425932d02351d2355f95c21f11b89f8b103e01c4b288bb03dae0f25ecae2d0b",
+    "bytes": 315520
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0028/commit.json",
+    "sha256": "e505d2bd426ac6f7038a4b283f8d717ed4025e0150943832aa1f213f7617cf91",
+    "bytes": 177482
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0028/raw.json",
+    "sha256": "f0a67d35fb1711e827465ae3f776569c631d85ac0dff70383a4fce94db6f3f70",
+    "bytes": 265876
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0028/reservation.json",
+    "sha256": "3903cc2925561ed15ec415bbaf27957e43f89fbfb59fb62de1e8d3743d474369",
+    "bytes": 101465
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0028/scored.json",
+    "sha256": "2f760cba0759808499ef6d7bad211d676313966c4e559f549211ab69b60ba314",
+    "bytes": 307097
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0028/semantic_encoding.json",
+    "sha256": "605db958288d7855450956f99fef67ca66201683abe6e4db6bde191b40258ec6",
+    "bytes": 97962
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0028/semantic_vectors.npy",
+    "sha256": "8cd46b5a833bc351dd90376b62255c0678edfd90018a27967c854d4333fe800c",
+    "bytes": 323712
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0029/commit.json",
+    "sha256": "54e95d1db427c302b13ed855b37cab3799d4fcd3a47dc927348783929bab29a6",
+    "bytes": 183435
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0029/raw.json",
+    "sha256": "5a9c8a912667897eab9c20472ee6302aae81ce9b595def14409eb944a92bc429",
+    "bytes": 243347
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0029/reservation.json",
+    "sha256": "52027aa713f35ea8d13ac606cca12112e666fe129d2db9802c1c17940be3cf5c",
+    "bytes": 104489
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0029/scored.json",
+    "sha256": "59c3d40f49a7616516043c0b616943a86e8509a49949ac20f9ae76ee9849304f",
+    "bytes": 284862
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0029/semantic_encoding.json",
+    "sha256": "19eef89020ad14bc7ae12fb9a947b76c1548effe76b9f8f501feab00876c85d2",
+    "bytes": 88040
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0029/semantic_vectors.npy",
+    "sha256": "e07983faa7af2faf819e0d60f5407516db6aef46fcf08fa3fdf435421569d15d",
+    "bytes": 319616
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0030/commit.json",
+    "sha256": "bd6f36e12209cbcd6f4998614055782c373028b1424f3e946a91d1e8ef302bc5",
+    "bytes": 188991
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0030/raw.json",
+    "sha256": "f32ac7d097b1561e471350fdc6940ee8a93d39f246c7c2c3a94f1dae862d4659",
+    "bytes": 226604
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0030/reservation.json",
+    "sha256": "41afac67aff626cdfd7e4cfa423f943882ed76ce5a14c180885fdc4dc17c4715",
+    "bytes": 106461
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0030/scored.json",
+    "sha256": "c5fad26927728d88ea81e62cda24c97dc79819158af24dff3b01b351e6357bc0",
+    "bytes": 267817
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0030/semantic_encoding.json",
+    "sha256": "403114be7db389c8fdd05406e9d6f98d829d3d6702344e1982cfcc73dc0898a1",
+    "bytes": 82106
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/batches/0030/semantic_vectors.npy",
+    "sha256": "e16d51b849b97a4e0f8da0f9bd7ff7e6b44faa70b795b90844143903956b7728",
+    "bytes": 307328
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/checkpoint.json",
+    "sha256": "92868282a1d804abccf3fccf6b23726294275a6a67429229afefbfd35ac0d972",
+    "bytes": 97562
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/config.json",
+    "sha256": "5ab7c1b7d7c3992d3edd69ba58fa9cdcd57512daa20d51d901a9396aba19a14b",
+    "bytes": 3644
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/manifest.json",
+    "sha256": "897095efd6089ecaa6aad259093d035d0f505ae8ba43723c997e95c2b0a5c657",
+    "bytes": 14083
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/process_exit_observed.json",
+    "sha256": "b2963cc79f105e494cccdfceb6e41ba9a655e387a0fab7bf9476d3df572adad1",
+    "bytes": 127
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/source.zip",
+    "sha256": "d5e80525ce047ede15531596de1ed5c5a27ed27c03bf84045756c88de71f462d",
+    "bytes": 202540
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/status.json",
+    "sha256": "00e5b1c26f506e24bee0a8a5bab5a3f79216cac46cdb9f6efd5505d8054c8afa",
+    "bytes": 75
+  },
+  {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/summary.json",
+    "sha256": "914e2e94c1109c5dd40bc86c33b4bcb6ab07477fdfd3668198b0b8470827c91f",
+    "bytes": 861639
+  }
+]

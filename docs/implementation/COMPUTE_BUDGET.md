@@ -167,3 +167,21 @@ Formal `s2_formal_20260909T025736_f607d9`: measured mixed fraction 0.531000, mea
 | dynamic | 5000 | 9416.195856873823 | 8947391.713747645 | 13.635450756112458 |
 
 These are fixed-initial-policy rollout-only estimates. Actor updates, old-logprob recomputation, switching and validation costs remain unmeasured in Stage2 and must be added after their stages. Acceptance changes with policy updates; 1/P_mixed is not a measured Dynamic training amplification. No 5000-group budget reduction is made. Stage1 historical scenarios remain above, not overwritten. Machine-readable source hashes, actual run costs and adverse sensitivity: `experiments/stage2/compute_calibration.json`.
+
+
+## Stage 3 actual refill calibration (2026-09-09)
+
+Formal `s3_formal_20260909T053101_d99393` really generated496 groups /1984 responses and accepted exactly256 mixed, with1 additional overflow eligible. Measured amplification=1.937500x; P_mixed=257/496=51.814516%. Output478,117 tokens, accepted242,109, rejected234,982, overflow1,026; accepted rollout-token fraction50.638024%, not hardware utilization.
+
+Generation wall=1947.643869s (0.541012h); active GPU worker=2039.387755s (0.566497h), BGE scoring=36.673988s, throughput=245.484818 output tokens/s. Formal NVML peak=32.606384GiB. Mean output=240.986391, P95=372, P99=441.17, max576, zero truncation. This replaces the ~0.7h Stage3 generation forecast with measured0.541012h generation /0.566497h active worker; historical estimates above remain the planning record.
+
+Stage2 request batches contained4 prompts; Stage3 uses16 with the same engine max_num_seqs16. Its higher observed throughput is measured under different request batching and a different prompt slice, not evidence that Dynamic filtering saves rollout compute.
+
+| Stage4 initial fixed-SFT projection | Contract groups | Estimated output tokens | Estimated generation hours |
+| --- | ---: | ---: | ---: |
+| Vanilla | 5000 generated | 4819727.823 | 5.453752 |
+| Dynamic | 5000 accepted | 9338222.656 | 10.566644 |
+
+Dynamic formula: `5000 * 1.9375 * 4 * 240.98639112903226 / 245.48481766436305`. The measured amplification includes final-batch overflow. This is an initial generation-only projection: policy-dependent acceptance, actor/old-logprob, switches, validation and checkpoint costs remain Stage4 measurements. Both mandatory5000-group baselines are retained; no LR/mini-batch/clip decision is made here.
+
+All Stage3 costs are retained in [calibration JSON](../../experiments/stage3/compute_calibration.json): successful32-prompt smoke, failed32-prompt smoke with terminal metadata error, zero-generation failed startup, and formal. Across these runs, returned rollout output totals543,123 tokens; identity-control tokens are separate. Active-runtime checkpoints exclude the deliberate human pause and delayed failure cleanup. The failed worker overlaps the following startup attempt in wall time, so summing these process intervals would double-count GPU reservation; no exact all-stage GPU-kernel busy time is claimed. Raw timestamps, shutdown/termination observations, measured generation and active runtime remain available.

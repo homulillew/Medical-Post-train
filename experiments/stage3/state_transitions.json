@@ -9,6 +9,19 @@
         "bytes": 805
       },
       "note": "IMPLEMENTED and failed-smoke history retained in run manifests and logs; formal progress remains0"
+    },
+    {
+      "status": "FULL_RUNNING",
+      "timestamp": "2026-09-09T05:32:54.022661+00:00",
+      "run_id": "s3_formal_20260909T053101_d99393",
+      "accepted_integration_mixed_groups": 0
+    },
+    {
+      "status": "FULL_PASS",
+      "timestamp": "2026-09-09T06:07:54.882828+00:00",
+      "run_id": "s3_formal_20260909T053101_d99393",
+      "accepted_integration_mixed_groups": 256,
+      "note": "Controller budget reached; stage verifier/report acceptance still required"
     }
   ]
 }

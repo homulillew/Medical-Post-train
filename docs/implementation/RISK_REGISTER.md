@@ -108,3 +108,12 @@ R26 (OBSERVED, engineering fix under real revalidation): terminal evidence write
 R27 (OBSERVED, engineering fix under real revalidation): failed worker retained GPU allocations, so `s3_smoke_20260909T052138_e6717b` hit vLLM free-memory admission guard before any rollout. Preserve failed startup and zero generation-attempt evidence. Owned-group termination, explicit engine shutdown and prelaunch GPU-empty checks added. See D3-002/D3-003 in STAGE3_PLAN.md. No reduction of gpu_memory_utilization or scientific settings.
 
 R28 (OPEN until formal): acc-only filtering, exact-target overflow, cyclic exposure and replay must pass raw checks for256 fresh mixed groups. Candidate starvation is bounded at128 generation batches of16; failure cannot redefine256. All rejected costs remain incurred. Future changing-policy acceptance and optimizer scheduling remain Stage4 questions.
+
+
+### Stage 3 completed evidence
+
+R26/R27 MITIGATED for the implemented workflow: third smoke passed real32x4, owned-group SIGTERM/new-process resume, raw evidence verification and clean shutdown; formal496 groups also exited cleanly. Both failed runs and costs retained. R28 MITIGATED for fixed-SFT integration:31 batches reached exactly256 accepted with1 overflow, zero invalid, full token conservation and9 full-stage verifier gates PASS. Actual formal memory peak32.606GiB; no actor resident.
+
+Parser-only contrast remains OPEN for future training:78/257 mixed (30.3502%) are unparseable-only; accepted-only denominator78/256 (30.4688%). Formal unparseable250/1984, strict87.3992%, no truncation. The same-seed independent smoke comparison differed in22/128 raw trajectories and2/32 acc vectors; root cause remains NOT_ESTABLISHED, while per-process identity/repeat/wake controls passed. Resume relies on retained raw/commits, not regenerating completed responses.
+
+Future Stage4 still must validate changing-policy synchronization and trainer recovery, measure actor/old-logprob/switching costs, and retain both5000-group baselines. Stage3 tests a real committed-boundary controller restart; it does not establish all in-flight, power-loss or full trainer-resume cases. R23–R25 semantic/source-quality limitations remain.

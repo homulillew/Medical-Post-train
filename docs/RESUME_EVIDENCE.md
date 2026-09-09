@@ -40,3 +40,14 @@
 | S2-C06 | 完成200对受控语义诊断和80条完整输出定性复核 | [manual review](../experiments/stage2/manual_review.json)、[semantic summary](../experiments/stage2/s2_semantic_20260909T024652_cb6286/summary.json)；由执行代理阅读，非医生审定，保留否定/数字不敏感和占位参考等负例 |
 
 报告和30秒/2分钟/深挖材料：[Stage 2 report](stage_reports/02_reward_rollout.md)。完整模型能力提升、GSPO收益、临床可靠性仍不可作为已证实简历表述。
+
+
+## Stage 3 — verified sampling integration evidence
+
+| Claim | Evidence | Conditions | Resume-safe |
+| --- | --- | --- | --- |
+| 实现基于accuracy的DAPO-style group filtering与真实on-policy refill，固定SFT下新生成496组并恰好接受256个mixed | `s3_formal_20260909T053101_d99393`; `experiments/stage3/formal_raw_verification.json`; `docs/stage_reports/03_dynamic_sampling.md` | G4，固定SFT与奖励；optimizer_updates=0；不是RL训练预算 | YES, after final Stage3 receipt PASS |
+| 实测sampling amplification1.9375倍，保留拒绝组234,982输出tokens，accepted token fraction50.638% | `experiments/stage3/cost_summary.json`及完整raw batch commits | 已生成成本，不能称节省rollout compute或GPU利用率 | YES, after final Stage3 receipt PASS |
+| 验证sampler真实SIGTERM/new-process恢复，保留计数、下一批题与成本 | `s3_smoke_20260909T052408_5114dc`; `experiments/stage3/smoke_verification.json` | 提交边界恢复；不宣称所有in-flight/断电场景或逐token随机重生成一致 | YES |
+
+禁止由Stage3写出accuracy提升、GSPO训练完成、临床可靠或零生成开销等结论；Stage4–6仍NOT_STARTED。

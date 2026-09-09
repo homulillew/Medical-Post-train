@@ -52,12 +52,17 @@ def main():
             observation=f"Accuracy vector {stats[chosen['group_id']]['acc_vector']}; disposition {stats[chosen['group_id']]['disposition']}; full raw responses retained.",
             hypothesis=None,alternative_explanations=['Parser failure may contribute accuracy=0; embedding similarity is not clinical correctness.'],
             followup='Monitor this slice per future policy window; no prompt blacklist or reward changes.',clinical_validation=False))
+    categories['repeated_prompt_category_change']=dict(status='NOT_OBSERVED',case_id=None,reason='Formal stream did not revisit a prompt; cyclic support tested deterministically')
+    categories['policy_updated_category_change']=dict(status='NOT_OBSERVED',case_id=None,reason='Fixed SFT policy and zero optimizer updates')
+    categories['formal_starvation']=dict(status='NOT_OBSERVED',case_id=None,reason='Target256 was reached; bounded starvation branch covered by unit test')
     write_json(INDEX/'case_coverage.json',dict(run_id=formal.name,categories=categories,cases=cases,selection='Descriptive category mining, not representative prevalence or clinical validation'))
     review_ids=list(dict.fromkeys(c['group']['group_id'] for c in cases))
     for g in groups:
         if len(review_ids)>=14:break
         if g['group_id'] not in review_ids:review_ids.append(g['group_id'])
-    write_json(INDEX/'manual_review_selection.json',dict(group_ids=review_ids,trajectory_count=len(review_ids)*4,selection='Category coverage followed by earliest groups, chosen after run; no model or experiment selection'))
+    if (INDEX/'manual_review_worklog.json').exists():
+        review_ids=list(dict.fromkeys(e['group_id'] for e in read(INDEX/'manual_review_worklog.json')['entries']))
+    write_json(INDEX/'manual_review_selection.json',dict(group_ids=review_ids,trajectory_count=len(review_ids)*4,selection='Manually read committed prefix0..15 plus groups16,20,45 while formal continued; covers all correctness buckets, mixed subtypes and multi-select; no model/experiment selection'))
     packet=[]
     for gid in review_ids:
         g=byid[gid];s=stats[gid]
@@ -71,8 +76,15 @@ def main():
     write_json(INDEX/'stream_overlap.json',dict(stage2_formal_prompt_overlap=summary['exposure']['stage2_formal_overlap'],
         smoke_formal_prompt_overlap=len(set(smoke['exposure']['prompt_exposure_count'])&set(summary['exposure']['prompt_exposure_count'])),
         scope='Prompt identity overlap only; separate run IDs, domain, encounter seeds and fresh generation; no smoke groups counted toward256'))
+    failure_costs={}
+    for name,path in paths.items():
+        if not name.startswith('failed_'):continue
+        recovered=INDEX/path.name/'recovered_cost_summary.json'
+        failure_costs[name]=read(recovered)['costs'] if recovered.exists() else read(path/'observations.json')
     tokens=5000*summary['sampling_amplification']*4*summary['lengths']['mean']
-    write_json(INDEX/'compute_calibration.json',dict(source=record(formal/'summary.json'),stage3_formal_costs=summary['costs'],stage3_smoke_costs=smoke['costs'],
+    write_json(INDEX/'compute_calibration.json',dict(source=record(formal/'summary.json'),stage3_formal_costs=summary['costs'],stage3_smoke_costs=smoke['costs'],stage3_failed_run_costs=failure_costs,
+        total_recorded_rollout_output_tokens=summary['costs']['generated_output_tokens']+smoke['costs']['generated_output_tokens']+sum(v['generated_output_tokens'] for v in failure_costs.values()),
+        failed_lifecycle_time_scope='Failed-summary worker retained GPU during later failed-startup attempt; do not sum overlapping wall intervals as GPU hours. Active runtime checkpoints omit human pause/cleanup gaps; startup failure launch-to-error wall separately retained.',
         measured_amplification=summary['sampling_amplification'],stage4_dynamic_output_tokens=tokens,
         stage4_dynamic_generation_hours=tokens/summary['costs']['output_tokens_per_second']/3600,
         stage4_vanilla_contract_groups=5000,stage4_dynamic_contract_accepted_groups=5000,

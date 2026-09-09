@@ -56,18 +56,19 @@
       "interview_story": "docs/stage_reports/02_reward_rollout.md"
     },
     "3": {
-      "status": "SMOKE_PASS",
+      "status": "FULL_PASS",
       "run_ids": [
         "s3_smoke_20260909T052408_5114dc",
         "s3_smoke_20260909T051456_a53a8c",
-        "s3_smoke_20260909T052138_e6717b"
+        "s3_smoke_20260909T052138_e6717b",
+        "s3_formal_20260909T053101_d99393"
       ],
       "progress": {
-        "accepted_integration_mixed_groups": 0
+        "accepted_integration_mixed_groups": 256
       },
       "verification_receipt": null,
-      "stage_report": null,
-      "interview_story": null
+      "stage_report": "docs/stage_reports/03_dynamic_sampling.md",
+      "interview_story": "docs/stage_reports/03_dynamic_sampling.md"
     },
     "4": {
       "status": "NOT_STARTED",

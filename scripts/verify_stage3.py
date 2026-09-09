@@ -65,6 +65,7 @@ def runtime_gate(path, mode):
             assert len(g['responses'])==len(sg['responses'])==4
             for r,original in zip(sg['responses'],g['responses']):
                 assert all(r[k]==v for k,v in original.items())
+                assert r['run_id']==path.name
                 assert r['trajectory_id'] not in seen;seen.add(r['trajectory_id']);allrows.append(r)
                 assert r['trajectory_id']==e['group_id']+':'+str(r['member_index']) and r['member_index'] in range(4)
                 assert r['prompt_id']==e['prompt_id'] and r['group_id']==e['group_id'] and r['request_seed']==e['request_seed']
@@ -160,6 +161,9 @@ def verify(smoke_only=False):
         assert sha256('contracts/stage_budgets.json')==state['contract_sha256']=='8ba60bd2e724fbbb74e26f4ef677eb6c6d51eaafcba6eb3bcb0b2eb588a51f24'
         for k in ('1','2'):
             ref=state['stages'][k]['verification_receipt'];assert sha256(ref['path'])==ref['sha256'] and read(ref['path'])['result']=='PASS'
+        if state['stages']['3']['status'] in ('VERIFIED','DONE'):
+            ref=state['stages']['3']['verification_receipt']
+            assert sha256(ref['path'])==ref['sha256'] and read(ref['path'])['result']=='PASS'
         assert read(INDEX/'prerequisite-stage2.json')['result']=='PASS'
         base=read('experiments/stage0/s0_snapshot_20260908T132515_ec08e3/attempt_001/snapshot_manifest.json')
         for f in base['files']+read('experiments/stage1/initialization_manifest.json')['files']+read('experiments/stage2/reward_manifest.json')['model_files']:
@@ -168,6 +172,13 @@ def verify(smoke_only=False):
     def tests():
         result=subprocess.run(['.venv-analysis/bin/python','-m','pytest','tests/test_dynamic_sampling.py','-q'],capture_output=True,text=True)
         assert result.returncode==0,result.stdout+result.stderr
+        import ast
+        for source in ('src/medical_posttrain/sampling/stage3.py','src/medical_posttrain/sampling/dynamic.py','scripts/run_stage3.py'):
+            calls=[n.func.attr for n in ast.walk(ast.parse(Path(source).read_text())) if isinstance(n,ast.Call) and isinstance(n.func,ast.Attribute)]
+            assert not {'backward','step','zero_grad'}&set(calls),source
+        receipt=read(INDEX/'tests-final.json');assert receipt['exit_code']==0
+        assert sha256(receipt['log']['path'])==receipt['log']['sha256']
+        for name,digest in receipt['test_hashes'].items():assert sha256(name)==digest,name
         return result.stdout
     gate('sixteen_patterns_reward_independence_validity_stream_overflow_resume_starvation',tests)
     path=lambda name:Path(read(INDEX/selected[name]/'manifest.json')['artifact_root'])
@@ -203,6 +214,14 @@ def verify(smoke_only=False):
             for case in coverage['cases']:
                 assert case['group']==allgroups[case['group']['group_id']]
             assert 2<=len(review['frontier_group_ids'])<=5 and all(gid in allgroups for gid in review['frontier_group_ids'])
+            decisions={d['group_id']:d for batch in sorted((formal/'batches').glob('*')) for d in read(batch/'commit.json')['decisions']}
+            reviewed_groups={e['group_id'] for e in entries}
+            assert {0,1,2,3,4}<={decisions[gid]['correct_count'] for gid in reviewed_groups}
+            assert {'mixed_parsed_wrong','mixed_unparseable_only','mixed_both'}<={decisions[gid]['mixed_subtype'] for gid in reviewed_groups}
+            assert any(len(allgroups[gid]['responses'][0]['ground_truth'])>1 for gid in reviewed_groups)
+            for case in read(INDEX/'frontier_case_notes.json')['cases']:
+                assert case['group']==allgroups[case['group_id']] and decisions[case['group_id']]['disposition']=='accepted'
+                assert case['group_id'] in reviewed_groups
             report=Path('docs/stage_reports/03_dynamic_sampling.md').read_text()
             assert len(report)>4000
             for text in (formal.name,smoke.name,'30秒','2分钟','READY_FOR_STAGE4','限制','256'):assert text in report
@@ -227,6 +246,13 @@ def verify(smoke_only=False):
             actual=summarize(failed)
             for k,v in actual.items():assert recovered[k]==v,k
             assert actual['generated_groups']==32
+            startup=path_from_id(selected['failed_startup']);assert read(startup/'status.json')['status']=='FAILED'
+            assert not list((startup/'batches').glob('*/raw.json'))
+            assert read(startup/'observations.json')['generated_group_attempts']==0
+            for old in (failed,startup):
+                manifest=read(old/'manifest.json');assert sha256(old/'config.json')==manifest['config_sha256']
+                with zipfile.ZipFile(old/'source.zip') as archive:
+                    for name,digest in manifest['source_hashes'].items():assert hashlib.sha256(archive.read(name)).hexdigest()==digest
         gate('negative_smoke_run_raw_costs_retained',failed_runs)
     return dict(stage=3,result='FAIL' if errors else 'PASS',scope='SMOKE_AND_RESUME' if smoke_only else 'FULL',timestamp=now(),gates=gates,errors=errors,counts=counts,
                 verifier_sha256=sha256(__file__),contract_sha256=sha256('contracts/stage_budgets.json'),selected_runs=selected)

@@ -1,0 +1,23 @@
+{
+  "generated_output_tokens": 478117,
+  "output_tokens_by_disposition": {
+    "accepted": 242109,
+    "rejected_all_wrong": 133489,
+    "rejected_all_correct": 101493,
+    "overflow_eligible": 1026,
+    "invalid": 0
+  },
+  "rejected_output_tokens": 234982,
+  "accepted_token_fraction": 0.5063802374732544,
+  "prompt_tokens_shared_prefill": 66501,
+  "logical_prompt_tokens_all_trajectories": 266004,
+  "generation_wall_seconds": 1947.643868769519,
+  "output_tokens_per_second": 245.48481766436305,
+  "semantic_scoring_seconds": 36.67398768989369,
+  "gpu_worker_active_seconds": 2039.387754749041,
+  "worker_time_scope": "Sum of active worker runtime through final/pause checkpoints; excludes human pause gap, includes engine loading and scoring; not measured GPU kernel busy time",
+  "control_output_tokens": 40,
+  "control_prompt_tokens": 580,
+  "control_generation_seconds": 2.7102917921729386,
+  "unknown_inflight_attempts": 0
+}

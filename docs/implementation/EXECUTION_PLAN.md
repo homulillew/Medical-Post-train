@@ -160,3 +160,10 @@ vllm serve /durable/pinned-qwen3-base --host 127.0.0.1 --port 8000 \
 Stage 4 records `generated_unique_prompts`, `accepted_unique_prompts`, `prompt_repeat_histogram`, and `max_prompt_exposure` under `schemas/prompt_exposure.schema.json`. Prompt identity is the immutable train record ID, independent of rollout group UUID; a repeated cyclic draw increments exposure once per prompt group, not four times for G=4. Histograms and maxima have separate generated and accepted views. Rejected/overflow groups count toward generated cost; only groups consumed by an optimizer update count toward accepted effective exposure.
 
 The future Stage 4 verifier must recompute these from raw prompt/group/update lineage: sum(histogram frequencies)=unique prompts; sum(exposure*frequency)=generated or accepted groups; maximum occupied bin=max exposure; accepted unique <= generated unique. Crash attempts retain physical generated cost, while effective accepted lineage excludes rolled-back updates. Report per-window and cumulative distributions for both conditions. No synthetic Stage 0 exposure is backfilled as a formal measurement.
+
+
+## Stage 3 execution handoff (2026-09-09)
+
+Actual implementation and lifecycle decisions: `STAGE3_PLAN.md`; full report `../stage_reports/03_dynamic_sampling.md`; receipt `../../experiments/stage3/verification-final.json`; readiness `../../experiments/stage3/readiness.json`. Fixed-SFT inference-only integration generated496 validG4 groups, accepted256 mixed, retained1 overflow and all239 rejected groups. Real committed-state process restart passed in independent32-prompt smoke. No optimizer update occurred.
+
+Measured1.9375x amplification and245.485 output tokens/s give an initial Stage4 Dynamic generation-only projection10.567h for5000 accepted groups. Formal memory32.606GiB reflects vLLM+BGE coexistence without actor. These measurements replace initial Stage3 forecasts, not mandatory budgets or later actor feasibility checks. Stage4–6 remainNOT_STARTED; Stage4 must keep the same SFT initialization and shared principal reward/GSPO settings for Vanilla versus Dynamic.

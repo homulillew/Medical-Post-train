@@ -80,15 +80,17 @@ Stage3 observed P_mixed={p:.4%}，Stage2为53.1%；Stage2一阶预估1/0.531=1.8
 
 output总数{c['generated_output_tokens']}，accepted token fraction={c['accepted_token_fraction']:.4%}。这是rollout token eligibility fraction，不是GPU利用率、MFU或occupancy。过滤发生在生成之后，被拒绝的{c['rejected_output_tokens']} tokens已付出生成成本；不能声称这些token被节省。
 
-prompt tokens同时记录共享prefill口径{c['prompt_tokens_shared_prefill']}和4轨迹逻辑口径{c['logical_prompt_tokens_all_trajectories']}。policy identity controls另产生{c['control_output_tokens']}输出tokens，不混入正式G4分布。generation wall={c['generation_wall_seconds']:.3f}s，throughput={c['output_tokens_per_second']:.3f} tokens/s；BGE计分={c['semantic_scoring_seconds']:.3f}s；active worker={c['gpu_worker_active_seconds']:.3f}s含模型加载/身份检查/评分，排除人工pause空档，并不等同GPU kernel busy time。原始run start/end和各进程日志保留用于其他wall口径。
+prompt tokens同时记录共享prefill口径{c['prompt_tokens_shared_prefill']}和4轨迹逻辑口径{c['logical_prompt_tokens_all_trajectories']}。policy identity controls另产生{c['control_output_tokens']}输出tokens，不混入正式G4分布。generation wall={c['generation_wall_seconds']:.3f}s，throughput={c['output_tokens_per_second']:.3f} tokens/s；BGE计分={c['semantic_scoring_seconds']:.3f}s；active worker={c['gpu_worker_active_seconds']:.3f}s含模型加载/身份检查/评分，排除人工pause空档，并不等同GPU kernel busy time。正式NVML峰值{max(r['nvml_peak_bytes'] for r in s['runtimes'])/1024**3:.3f}GiB。Stage2请求批次为4题，Stage3为16题，吞吐差异不能单独归因于过滤算法。原始run start/end和各进程日志保留用于其他wall口径。成功smoke与两个失败run的成本也在compute calibration分别保留，全部已返回rollout共{cal['total_recorded_rollout_output_tokens']}输出tokens；失败worker占用与随后startup尝试有时间重叠，不把两者wall直接相加成GPU小时。
 
 全体均长{s['lengths']['mean']:.3f}，P95={s['lengths']['p95']:.3f}，P99={s['lengths']['p99']:.3f}，max={s['lengths']['max']}；截断率{s['truncation_rate']:.4%}。length完成标志仍属于valid generation，无法解析答案时按冻结规则acc0，不额外添加超长惩罚。
+
+![Refill and retained output-token costs](../../experiments/stage3/figures/refill_costs.png)
 
 ## 6. Parser contrast 与多选切片
 
 {subtype_table}
 
-全部mixed中包含parsed-wrong的组{s['mixed_with_parsed_wrong']}；accepted中包含parsed-wrong的组{s['accepted_with_parsed_wrong']}，unparseable-only={unparsed}/256={unparsed/256:.4%}。mixed_parsed_wrong表示只有可解析错误答案形成错误侧；mixed_both同时有parsed-wrong和unparseable。三者互斥，两个包含parsed-wrong的类别合并成mixed_with_parsed_wrong。Stage2的153/531=28.8136% unparseable-only以全部mixed为分母，比较时需保持同一口径。
+全部mixed中包含parsed-wrong的组{s['mixed_with_parsed_wrong']}；accepted中包含parsed-wrong的组{s['accepted_with_parsed_wrong']}，unparseable-only={unparsed}/256={unparsed/256:.4%}。mixed_parsed_wrong表示只有可解析错误答案形成错误侧；mixed_both同时有parsed-wrong和unparseable。三者互斥，两个包含parsed-wrong的类别合并成mixed_with_parsed_wrong。Stage3全部mixed中unparseable-only为78/257=30.3502%。Stage2的153/531=28.8136% unparseable-only以全部mixed为分母，比较时需保持同一口径。
 
 无法解析的response仍是acc0，包括 `[1,1,1,unparseable]` 的mixed。只做analysis slice，不改变资格。如果未来policy修复格式，这部分contrast可能减少，P_mixed和refill成本可能变化；本阶段未验证变化方向。strict format={s['strict_format_rate']:.4%}，unparseable={s['unparseable_rate']:.4%}，ambiguous={s['ambiguous_rate']:.4%}；parse errors `{s['parse_errors']}`。
 

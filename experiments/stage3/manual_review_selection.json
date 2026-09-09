@@ -1,0 +1,25 @@
+{
+  "group_ids": [
+    "s3_formal_20260909T053101_d99393:cdb99bc34f05:encounter:00000000",
+    "s3_formal_20260909T053101_d99393:cdb99bc34f05:encounter:00000001",
+    "s3_formal_20260909T053101_d99393:cdb99bc34f05:encounter:00000002",
+    "s3_formal_20260909T053101_d99393:cdb99bc34f05:encounter:00000003",
+    "s3_formal_20260909T053101_d99393:cdb99bc34f05:encounter:00000004",
+    "s3_formal_20260909T053101_d99393:cdb99bc34f05:encounter:00000005",
+    "s3_formal_20260909T053101_d99393:cdb99bc34f05:encounter:00000006",
+    "s3_formal_20260909T053101_d99393:cdb99bc34f05:encounter:00000007",
+    "s3_formal_20260909T053101_d99393:cdb99bc34f05:encounter:00000008",
+    "s3_formal_20260909T053101_d99393:cdb99bc34f05:encounter:00000009",
+    "s3_formal_20260909T053101_d99393:cdb99bc34f05:encounter:00000010",
+    "s3_formal_20260909T053101_d99393:cdb99bc34f05:encounter:00000011",
+    "s3_formal_20260909T053101_d99393:cdb99bc34f05:encounter:00000012",
+    "s3_formal_20260909T053101_d99393:cdb99bc34f05:encounter:00000013",
+    "s3_formal_20260909T053101_d99393:cdb99bc34f05:encounter:00000014",
+    "s3_formal_20260909T053101_d99393:cdb99bc34f05:encounter:00000015",
+    "s3_formal_20260909T053101_d99393:cdb99bc34f05:encounter:00000016",
+    "s3_formal_20260909T053101_d99393:cdb99bc34f05:encounter:00000020",
+    "s3_formal_20260909T053101_d99393:cdb99bc34f05:encounter:00000045"
+  ],
+  "trajectory_count": 76,
+  "selection": "Manually read committed prefix0..15 plus groups16,20,45 while formal continued; covers all correctness buckets, mixed subtypes and multi-select; no model/experiment selection"
+}

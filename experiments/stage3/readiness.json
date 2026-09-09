@@ -1,0 +1,89 @@
+{
+  "READY_FOR_STAGE4": "YES",
+  "scope": "Sampler/refill handoff ready; no Stage4 training or optimizer configuration chosen",
+  "sampler_verified": true,
+  "refill_verified": true,
+  "resume_verified": true,
+  "cost_accounting_complete": true,
+  "accepted_integration_mixed_groups": 256,
+  "sampling_metric": "acc",
+  "G": 4,
+  "optimizer_updates": 0,
+  "formal_run": "s3_formal_20260909T053101_d99393",
+  "policy_version": "cdb99bc34f05c71a7ec6411c19e7091562e8f8b3277961ceb83d33e8393a9ff1",
+  "initialization": {
+    "path": "/data/WSH/post-train/experiments/stage1/initialization_manifest.json",
+    "sha256": "6fb9e83dba72e4fcbc76548c515a555b46f9c415a280409224e6028067d1059c",
+    "bytes": 1850
+  },
+  "candidate_pool": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/candidate_pool.jsonl",
+    "sha256": "6fa3e114f47c51977d940ca01b4e0d6510a03a390fe1f1495fe5d0820bf41262",
+    "bytes": 17377597
+  },
+  "reward_manifest": {
+    "path": "/data/WSH/post-train/experiments/stage2/reward_manifest.json",
+    "sha256": "cc72be1c2348d20f58bf978d047b9b4a2f200d8c70c39f0d0d98506528bfb905",
+    "bytes": 7541
+  },
+  "sampling": {
+    "n": 4,
+    "temperature": 0.6,
+    "top_p": 1.0,
+    "top_k": -1,
+    "min_p": 0.0,
+    "max_tokens": 1024,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "repetition_penalty": 1.0
+  },
+  "engine": {
+    "dtype": "bfloat16",
+    "tensor_parallel_size": 1,
+    "max_model_len": 4096,
+    "max_num_seqs": 16,
+    "gpu_memory_utilization": 0.65,
+    "enable_lora": true,
+    "max_lora_rank": 32,
+    "enable_sleep_mode": true,
+    "enforce_eager": true,
+    "seed": 42,
+    "enable_prefix_caching": false,
+    "generation_config": "vllm"
+  },
+  "controller_hashes": {
+    "src/medical_posttrain/sampling/dynamic.py": "e913036236dd1c7a09637525475e02bd2084685b8dc1222c05f0a772cd2405cd",
+    "src/medical_posttrain/sampling/stage3.py": "013159ca1dad07eb77935ec715c6664ead0a2de166105dc008f4d75f47bebae8",
+    "src/medical_posttrain/sampling/analysis.py": "e481c551589d1d3b409bda37631d6d2da7e6780de70fc95c1b5f57d0e4dba73b",
+    "src/medical_posttrain/evidence/stage3.py": "b8e219372cc0664e4165ebf07dbcc6caeb7f90c0dd201578dd23360d1cbe8590",
+    "scripts/run_stage3.py": "dde51711b487d1a75c93220f5b4c2c580109459762f1ab58a6d9ef8eb4fd1513"
+  },
+  "raw_verification": {
+    "path": "/data/WSH/post-train/experiments/stage3/formal_raw_verification.json",
+    "sha256": "4eb6b054086ce0af4b022dcb8e377a4808a197468de1ed0be66d48fd54b0bca5",
+    "bytes": 446
+  },
+  "smoke_resume_verification": {
+    "path": "/data/WSH/post-train/experiments/stage3/smoke_verification.json",
+    "sha256": "c7575b4e7790ee663830b3562b163d6a528ba90e9b13f5a2c54612b874ce2232",
+    "bytes": 805
+  },
+  "formal_summary": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_formal_20260909T053101_d99393/summary.json",
+    "sha256": "914e2e94c1109c5dd40bc86c33b4bcb6ab07477fdfd3668198b0b8470827c91f",
+    "bytes": 861639
+  },
+  "future_metrics": [
+    "P_all_wrong",
+    "P_mixed",
+    "P_all_correct",
+    "mixed_parsed_wrong",
+    "mixed_unparseable_only",
+    "mixed_both",
+    "sampling_amplification",
+    "attempt_amplification",
+    "generated_and_accepted_tokens"
+  ],
+  "stage4_to_6_status": "NOT_STARTED",
+  "timestamp": "2026-09-09T06:10:02.669367+00:00"
+}

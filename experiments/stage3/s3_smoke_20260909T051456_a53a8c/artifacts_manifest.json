@@ -1,5 +1,10 @@
 [
   {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s3_smoke_20260909T051456_a53a8c/RUN_REPORT.md",
+    "sha256": "4f8241e61bea47fbf70acc1748998517acc36d66671f745d74bfaa16131a56e6",
+    "bytes": 1203
+  },
+  {
     "path": "/data/WSH/medical-post-train-artifacts/runs/s3_smoke_20260909T051456_a53a8c/attempt_001/code.json",
     "sha256": "4d61d3d357eee897ad77049fb2d78968f309a14ba575ea18c8dfa582bfdf1ad1",
     "bytes": 9298
