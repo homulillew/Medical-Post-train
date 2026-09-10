@@ -1,0 +1,13 @@
+{
+  "timestamp_ns": 1789020595697281200,
+  "pid": 2529625,
+  "command": [
+    "/data/WSH/post-train/.venv-train/bin/python",
+    "/data/WSH/post-train/scripts/resume_stage4_formal_incident.py"
+  ],
+  "logs": "/data/WSH/medical-post-train-artifacts/stage4-formal-recovery/incident_001_attempt_002",
+  "detached": true,
+  "replaces_read_only_audit_pid": 2516672,
+  "restore_policy": "COMMIT_CHAIN_AND_FULL_LOAD_BOUNDARY",
+  "decision": "docs/implementation/STAGE4_RECOVERY_IO_DECISION.md"
+}

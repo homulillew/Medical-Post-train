@@ -1,0 +1,56 @@
+{
+  "result": "PASS",
+  "timestamp": "2026-09-10T06:11:08.470623+00:00",
+  "scope": "CPU regression tests and real 303-window metadata/full-boundary integrity; GPU resume pending",
+  "tests": {
+    "passed": 22,
+    "failed": 0,
+    "seconds": 12.39,
+    "junit": {
+      "path": "/data/WSH/post-train/experiments/stage4/resume_boundary_tests_001.xml",
+      "sha256": "1f549f75c9326e545c6c51aa69da1c4b0785902e905ab690831ce650f1bd2cde",
+      "bytes": 3158
+    },
+    "environment_note": "Tests ran with .venv-train Python and pytest loaded from .venv-analysis site-packages. Initial invocations found pytest absent in train and torch absent in analysis; no dependencies were changed."
+  },
+  "real_audit": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/boundary_restore_audits/1789020617061801459.json",
+    "sha256": "0d0bf8cf1980e3f77e797d30bc2ecf8b72acb82d5a2b30347497e52674271a51",
+    "bytes": 423993
+  },
+  "audit_seconds": 17.83559540612623,
+  "boundary_payload_bytes_hashed": 1409397133,
+  "commit_artifact_bytes_hashed": 202982445,
+  "frozen_execution_files_unchanged": 49,
+  "scientific_config_unchanged": true,
+  "runtime_restore_override": true,
+  "sources": [
+    {
+      "path": "/data/WSH/post-train/scripts/stage4_resume_boundary.py",
+      "sha256": "ee8fd523b01b33e31db0e7dde52618ad12135c1ab3bfb0a3ca51307095f6372b",
+      "bytes": 4056
+    },
+    {
+      "path": "/data/WSH/post-train/scripts/stage4_resume_runtime.py",
+      "sha256": "aab51f8da53c244c92c4ec5b9e9c9ffeca4ea72b81f0e9a4427818b50942a144",
+      "bytes": 3290
+    },
+    {
+      "path": "/data/WSH/post-train/scripts/resume_stage4_formal_incident.py",
+      "sha256": "a5b56eef21ba80e2833045d1840e7c09d833e5b5b4cff54a046f00e54e138fec",
+      "bytes": 6606
+    },
+    {
+      "path": "/data/WSH/post-train/tests/test_stage4_resume_boundary.py",
+      "sha256": "6415721cd2819f62185c33b07f9772e81de15f537b05c2e2b404eddaf238efdc",
+      "bytes": 5690
+    },
+    {
+      "path": "/data/WSH/post-train/docs/implementation/STAGE4_RECOVERY_IO_DECISION.md",
+      "sha256": "15efca73119178bb8bc9520d9a607bc3e0dbf2e7f2137155395bb4133ab2f2cc",
+      "bytes": 4755
+    }
+  ],
+  "training_resumed": false,
+  "historical_checkpoint_payload_hashes_verified": false
+}

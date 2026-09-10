@@ -1,0 +1,14 @@
+{
+  "timestamp_ns": 1789020332898800045,
+  "pid": 2516672,
+  "status": {
+    "status": "VERIFYING_CHECKPOINT_HISTORY",
+    "timestamp": "2026-09-10T06:05:23.171058+00:00",
+    "pid": 2516672,
+    "run_id": "s4_formal_vanilla_20260909T155928_24aec5",
+    "committed_training_groups": 2424
+  },
+  "io": "rchar: 289647057616\nwchar: 30514\nsyscr: 46804\nsyscw: 146\nread_bytes: 191196033024\nwrite_bytes: 598016\ncancelled_write_bytes: 0\n",
+  "open_file": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0164/checkpoint/native/model_world_size_1_rank_0.pt",
+  "reason": "Replace read-only whole-history scan with audited boundary restoration; no training process terminated; no completed per-file audit receipts exist to reuse."
+}

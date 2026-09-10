@@ -17,9 +17,12 @@ Stage 3 is **DONE**:496 newly generated groups,256 accepted mixed and1 retained 
 with1.9375× measured amplification and all nine verifier gates passing.
 Stage 4 is **FULL_RUNNING and incomplete**: Vanilla committed2424/5000 groups,
 303 windows/606 optimizer steps. It stopped on a GPU-residue guard before the
-next actor update; detached checkpoint verification/recovery is in progress
-(snapshot2026-09-10 13:41 Asia/Shanghai). Dynamic remains prepared at0/5000.
-The frozen shared config/code remains unchanged; complete inflight rollout and
+next actor update. Boundary recovery verification passed in17.84 seconds; the
+detached supervisor now waits for another project's GPU evaluation to release
+approximately5GB (snapshot2026-09-10 14:11 Asia/Shanghai). Dynamic remains at0/5000.
+An explicit operational restore wrapper avoids rehashing historical payloads on
+every restart; the full acceptance audit remains mandatory. The49 frozen execution
+files and scientific config remain unchanged; complete inflight rollout and
 failure evidence are retained. Latest completed monitor512 at2048 groups is
 62.89% versus55.08% SFT; these are intermediate validation results. Readiness
 for Stage5 remains NO. See the current progress/recovery artifacts below.

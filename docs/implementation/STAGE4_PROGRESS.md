@@ -1,5 +1,13 @@
 # Stage4 progress and continuation
 
+## Update 2026-09-10 14:10 Asia/Shanghai — boundary verified, waiting for GPU
+
+The recovery I/O fix passed 22 tests and the real 303-window metadata chain plus full checkpoint 0302 verification in **17.8356 seconds**. It hashed 202,982,445 bytes of commit artifacts and 1,409,397,133 bytes of boundary payloads. Historical payload contents are deferred to the unchanged full raw acceptance verifier; this is not a full-history PASS.
+
+Detached supervisor **2529625** now reports `WAITING_FOR_GPU_RELEASE`. Another project's answer-quality evaluation PID2524217 holds approximately5GB on the shared GPU. No foreign process was terminated. The supervisor automatically recovers and starts the original run after GPU release, using an explicit operational restore wrapper around the unchanged frozen worker. All49 frozen execution files and scientific settings remain byte-identical; the runtime restore override is recorded, not hidden. The first resumed commit must still be verified before claiming resumed GPU training. Vanilla remains2424/5000, Dynamic0/5000.
+
+The old assistant-owned read-only history scan PID2516672 was stopped with I/O/state evidence retained. It had no persistent per-file verification cache; its partial scan is not counted as a completed audit. Current logs: `/data/WSH/medical-post-train-artifacts/stage4-formal-recovery/incident_001_attempt_002/`. Evidence: `experiments/stage4/resume_boundary_verification_001.json`, `formal_recovery_launch_002.json`, `formal_recovery_status.json`. Design/trade-offs: [recovery I/O decision](STAGE4_RECOVERY_IO_DECISION.md).
+
 ## Update2026-09-10 13:41 Asia/Shanghai — recovery in progress
 
 Vanilla has committed **2424/5000 groups (48.48%)**,303 policy windows and606 optimizer steps. Dynamic remains PREPARED at0/5000. Vanilla stopped at10:32 after the next rollout/reward batch, before actor launch, on `Unexpected GPU residue before actor load`. The original failure and queue failure remain retained. The303 committed windows each measured1.608GiB sleep residue; the failure log suddenly reported5.76GiB at engine level. The source of extra allocation is NOT_ESTABLISHED (external allocation and transient runtime retention are hypotheses). Current GPU was idle at inspection.
