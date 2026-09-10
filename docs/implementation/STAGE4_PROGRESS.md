@@ -1,5 +1,19 @@
 # Stage4 progress and continuation
 
+## Update2026-09-10 13:41 Asia/Shanghai — recovery in progress
+
+Vanilla has committed **2424/5000 groups (48.48%)**,303 policy windows and606 optimizer steps. Dynamic remains PREPARED at0/5000. Vanilla stopped at10:32 after the next rollout/reward batch, before actor launch, on `Unexpected GPU residue before actor load`. The original failure and queue failure remain retained. The303 committed windows each measured1.608GiB sleep residue; the failure log suddenly reported5.76GiB at engine level. The source of extra allocation is NOT_ESTABLISHED (external allocation and transient runtime retention are hypotheses). Current GPU was idle at inspection.
+
+The uncommitted window303 contains8 complete groups and8053 output tokens, with no actor launch or optimizer step. It will be reused exactly. Independent detached recovery supervisor PID2516672 is checking the full historical checkpoint chain using the unchanged frozen recovery code. It then launches the original run and reattaches the unchanged formal queue, and verifies the first resumed window's native state, budget and raw-data identity. Cold storage checks read hundreds of GB and are still running; training has **not yet resumed** at this snapshot. Inspect `experiments/stage4/formal_recovery_status.json`; logs are under `/data/WSH/medical-post-train-artifacts/stage4-formal-recovery/incident_001/`. Successful recovery will write `vanilla_formal_resume_verified_001.json`. The helper stops and retains a failure if recovery checks or the new worker fail.
+
+Latest completed monitor512:2048 groups,62.890625% versus initial SFT55.078125%. Earlier measured points include1536 groups64.6484375%; no checkpoint is selected from these measurements. All seven scheduled measurements through256 windows are complete, including first1M/2M token crossings at windows104/207. Current committed training rollout tokens:324153 physical prompt +2593112 output =2917265. Inflight costs remain additional paid work until committed.
+
+Across303 committed windows, mean second-mini clip34.73597%, maximum75%; sequence ratios0.961165–1.029966; recorded optimizer scalars finite. Last32 windows average entropy0.714923 and response length261.79 tokens, largest window P95428.35. No persistent clipping/length pause was triggered. Mean measured training phase103.535s/window projects about9.26h remaining Vanilla training, excluding remaining validation, checksum recovery and verification. Dynamic runtime remains conditional on its actual amplification. Stage4 is incomplete, READY_FOR_STAGE5=NO, Stage5/6 NOT_STARTED.
+
+Evidence: `vanilla_formal_incident_001.json`, original attempt failure, immutable commits/update logs and validation summaries. No scientific config or frozen runtime module was changed. The added supervisor is operational orchestration of existing recovery/launch/queue entry points.
+
+## Retained launch snapshot
+
 Snapshot2026-09-10 00:01 Asia/Shanghai: **FULL_RUNNING; incomplete.** Stage0 VERIFIED, Stage1–3 DONE, Stage5–6 NOT_STARTED. READY_FOR_STAGE5=NO.
 
 | Formal run | Actual state at launch snapshot | Required budget |

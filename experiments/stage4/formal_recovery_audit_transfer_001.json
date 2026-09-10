@@ -1,0 +1,7 @@
+{
+  "timestamp": "2026-09-10T05:40:10.599076+00:00",
+  "old_audit_pid": 2514678,
+  "old_command": ".venv-train/bin/python - ",
+  "read_only_file_at_transfer": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0028/checkpoint/native/optim_world_size_1_rank_0.pt",
+  "action": "Stop only the assistant-owned foreground read-only checksum audit and restart under a detached recovery supervisor; no training process/counter/data altered."
+}

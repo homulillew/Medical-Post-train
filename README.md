@@ -15,14 +15,14 @@ and all eight verifier gates passing. Measured train-sample accuracy is 51.775%,
 mixed groups 53.1%, and truncation 0%. Stage2 performed no policy optimization.
 Stage 3 is **DONE**:496 newly generated groups,256 accepted mixed and1 retained overflow,
 with1.9375× measured amplification and all nine verifier gates passing.
-Stage 4 is **FULL_RUNNING**: three real checkpoint transaction fault tests passed,
-and the shared formal pair is frozen at clean source commit`540b777`.
-Vanilla fresh-SFT formal launched at2026-09-10 00:00 Asia/Shanghai; Dynamic is
-prepared in the persistent queue. Each must complete5000 groups/625 windows/
-1250 optimizer steps. Group milestones and first-crossing1M training-token
-milestones use the same monitor512 protocol. Launch snapshot:0/5000 each,
-Vanilla performing initial monitor evaluation. Stage4 is incomplete and
-READY_FOR_STAGE5=NO. Completed pilot results remain separately documented.
+Stage 4 is **FULL_RUNNING and incomplete**: Vanilla committed2424/5000 groups,
+303 windows/606 optimizer steps. It stopped on a GPU-residue guard before the
+next actor update; detached checkpoint verification/recovery is in progress
+(snapshot2026-09-10 13:41 Asia/Shanghai). Dynamic remains prepared at0/5000.
+The frozen shared config/code remains unchanged; complete inflight rollout and
+failure evidence are retained. Latest completed monitor512 at2048 groups is
+62.89% versus55.08% SFT; these are intermediate validation results. Readiness
+for Stage5 remains NO. See the current progress/recovery artifacts below.
 Stage 5–6 remain **NOT_STARTED**.
 No examination test scoring has run. Current stage status is recorded in
 [`project_state.json`](project_state.json).

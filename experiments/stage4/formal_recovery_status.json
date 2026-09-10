@@ -1,0 +1,7 @@
+{
+  "status": "VERIFYING_CHECKPOINT_HISTORY",
+  "timestamp": "2026-09-10T05:42:13.742123+00:00",
+  "pid": 2516672,
+  "run_id": "s4_formal_vanilla_20260909T155928_24aec5",
+  "committed_training_groups": 2424
+}

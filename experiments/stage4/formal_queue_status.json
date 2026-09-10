@@ -1,10 +1,7 @@
 {
-  "status": "FULL_RUNNING",
-  "variant": "vanilla",
-  "run_id": "s4_formal_vanilla_20260909T155928_24aec5",
-  "owner_pid": 2297533,
-  "pid": 2297463,
-  "timestamp": "2026-09-09T16:02:06.698609+00:00",
-  "committed": null,
+  "status": "NEEDS_DIAGNOSIS",
+  "timestamp": "2026-09-10T02:33:09.660658+00:00",
+  "error": "AssertionError(('vanilla', 'FAILED', 'No automatic scientific changes'))",
+  "next": "Inspect owner, heartbeat, retained failure, checkpoint and paid inflight work before recovery. Never restart a fresh replacement implicitly.",
   "READY_FOR_STAGE5": "NO"
 }

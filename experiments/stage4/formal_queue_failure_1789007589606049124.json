@@ -1,0 +1,5 @@
+{
+  "error": "AssertionError(('vanilla', 'FAILED', 'No automatic scientific changes'))",
+  "traceback": "Traceback (most recent call last):\n  File \"/data/WSH/post-train/scripts/continue_stage4_formal.py\", line 49, in run\n    assert status=='RUNNING' or status=='PREPARED', (variant,status,'No automatic scientific changes')\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ('vanilla', 'FAILED', 'No automatic scientific changes')\n",
+  "timestamp": "2026-09-10T02:33:09.631524+00:00"
+}
