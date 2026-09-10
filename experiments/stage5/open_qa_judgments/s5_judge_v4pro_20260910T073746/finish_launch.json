@@ -1,0 +1,16 @@
+{
+  "pid": 2571775,
+  "timestamp": "2026-09-10T07:39:23.217317+00:00",
+  "command": [
+    "/data/WSH/post-train/.venv-analysis/bin/python",
+    "/data/WSH/post-train/scripts/stage5_open_qa_judge.py",
+    "finish",
+    "--run",
+    "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746"
+  ],
+  "source": {
+    "path": "/data/WSH/post-train/scripts/stage5_open_qa_judge.py",
+    "sha256": "88d3ed3974dd33d023f802cb35fe331cd164cf54cd34a47748ee1eddba7fd9b1",
+    "bytes": 20958
+  }
+}

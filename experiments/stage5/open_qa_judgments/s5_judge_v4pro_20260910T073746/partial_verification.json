@@ -1,0 +1,13 @@
+{
+  "result": "PASS_FOR_OBSERVED_SUBSET_ONLY",
+  "timestamp": "2026-09-10T07:46:05.217166+00:00",
+  "completed": 69,
+  "valid": 69,
+  "full_run_complete": false,
+  "human_audit": "PENDING",
+  "summary": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/partial_summary.json",
+    "sha256": "55568497d3481c7b18b8652722cee7be520b64b72c3a9c551d518d736ebd07bf",
+    "bytes": 5523
+  }
+}

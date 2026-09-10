@@ -1,0 +1,113 @@
+{
+  "selection": "All observed scores below3 in any dimension or potential critical flags",
+  "cases": [
+    {
+      "id": "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:55:q2",
+      "anonymous_id": "Q22cdde329e7e4672",
+      "track": "cmb_clin",
+      "case_id": "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:55",
+      "question": "简述本例病人术前禁食水的要求。",
+      "candidate_response": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0818/result.json",
+        "sha256": "cad1368ebd9e9c21d03754b5584b1f58ede97a7ec0e7cf647fbae6f3a1560acc",
+        "bytes": 11560
+      },
+      "raw_judge_response": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/requests/0026/result.json",
+        "sha256": "50746f00cd5156b558bdbc08724e130046c007669a5cab35e20e381388073430",
+        "bytes": 12004
+      },
+      "scores": {
+        "factual_correctness": 2,
+        "relevance_completeness": 2,
+        "safety_escalation": 3,
+        "uncertainty_calibration": 3,
+        "clarity_usefulness": 3
+      },
+      "judgment": {
+        "scores": {
+          "factual_correctness": {
+            "score": 2,
+            "rationale": "候选中“一般禁食固体8～12小时、禁饮清亮液体4小时”与当前指南和参考答案不一致，但随后给出的ERAS方案“固体至少6小时、清饮至少2小时”基本符合参考；整体事实质量混合，起始的一般要求属于较旧观点。"
+          },
+          "relevance_completeness": {
+            "score": 2,
+            "rationale": "回答覆盖了禁食时间、糖尿病血糖监测和胰岛素调整，但遗漏了参考答案中重要的糖尿病胃排空延长、反流误吸风险交代，也未明确脂肪/肉类需禁食8小时等细节。"
+          },
+          "safety_escalation": {
+            "score": 3,
+            "rationale": "候选对糖尿病低血糖风险、胰岛素调整、高血压药物是否服用等问题给出了适当谨慎提示，并建议由麻醉科/主管医生决定；未出现延误紧急评估或危险指导。"
+          },
+          "uncertainty_calibration": {
+            "score": 3,
+            "rationale": "候选区分了常规/ERAS和全麻/局麻的不同要求，并说明具体时间以麻醉科和手术排程为准，总体谨慎；但开头的“一般”易被理解为确定标准，稍有过时信息。"
+          },
+          "clarity_usefulness": {
+            "score": 3,
+            "rationale": "回答结构清晰，给出了具体禁食水时间、糖尿病和高血压相关注意事项，对临床术前准备有实用价值；但“午夜后不再进食、术晨禁饮”与ERAS清饮2小时存在一定矛盾，略增加困惑。"
+          }
+        },
+        "critical_flags": [],
+        "reference_assessment": {
+          "status": "PARTIAL",
+          "rationale": "参考可靠且符合现代指南；候选包含与参考一致的ERAS禁食时间，但同时给出较旧的全麻禁食要求，并遗漏糖尿病胃排空延长和误吸风险交代，故与参考仅部分一致。"
+        }
+      },
+      "human_audit": "PENDING"
+    },
+    {
+      "id": "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:71:q1",
+      "anonymous_id": "Qd0d961d954007778",
+      "track": "cmb_clin",
+      "case_id": "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:71",
+      "question": "为明确诊断，首选哪项检查\n     A. B超\n     B. 腹腔穿刺\n     C. CT\n     D. 胸部X线平片",
+      "candidate_response": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0832/result.json",
+        "sha256": "e72f4a4a3ac7d5d7ac6c387546afa566c37385eb4d12d5127bd2a49165c6c6fa",
+        "bytes": 12062
+      },
+      "raw_judge_response": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/requests/0040/result.json",
+        "sha256": "b17f9b840980642be4220989f5ed347aef8891fe1758aa0365706eea84f9e597",
+        "bytes": 22427
+      },
+      "scores": {
+        "factual_correctness": 2,
+        "relevance_completeness": 4,
+        "safety_escalation": 4,
+        "uncertainty_calibration": 2,
+        "clarity_usefulness": 4
+      },
+      "judgment": {
+        "scores": {
+          "factual_correctness": {
+            "score": 2,
+            "rationale": "候选正确识别肝破裂/腹腔内出血并失血性休克及不稳定性创伤处理，但首选检查选B腹腔穿刺与参考答案及当前创伤指南/FAST优先策略不一致；在多数教学和临床情境中，B超是首选筛查，故主要结论存在重要偏差。"
+          },
+          "relevance_completeness": {
+            "score": 4,
+            "rationale": "直接回答选项，解释理由，并逐项说明其他选项，补充抗休克、备血和外科处理，覆盖题干所需核心信息且无明显遗漏。"
+          },
+          "safety_escalation": {
+            "score": 4,
+            "rationale": "明确识别失血性休克与急诊外科指征，建议积极抗休克、备血和外科急诊处理，未建议延误或危险措施。"
+          },
+          "uncertainty_calibration": {
+            "score": 2,
+            "rationale": "对首选检查表述较为绝对，虽提及现代FAST/B超可作为筛查，但未充分说明B超与腹腔穿刺选择顺序的争议或依据，自信程度与证据不完全匹配。"
+          },
+          "clarity_usefulness": {
+            "score": 4,
+            "rationale": "结构清晰，分点说明理由并对其他选项做比较，后续处理建议明确，便于理解。"
+          }
+        },
+        "critical_flags": [],
+        "reference_assessment": {
+          "status": "DISPUTED",
+          "rationale": "参考答案为A（B超），并说明可在超声引导下穿刺；候选选B（腹腔穿刺）。参考符合常见教学/FAST优先思路，候选给出的诊断和处理方向合理，但首选检查选择与参考不一致，影响评分。"
+        }
+      },
+      "human_audit": "PENDING"
+    }
+  ]
+}

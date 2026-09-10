@@ -1,0 +1,48 @@
+{
+  "run_id": "s5_judge_v4pro_20260910T073746",
+  "run_class": "EVALUATION",
+  "stage": 5,
+  "timestamp": "2026-09-10T07:37:46.878007+00:00",
+  "purpose": "Anonymous single-candidate independent-model rubric judging",
+  "config": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/config.json",
+    "sha256": "015578f7548eb6a98dcd19a01d47e73e6b9fe2919d7c28f6c9ab83dfc2a9000e",
+    "bytes": 1725
+  },
+  "code": [
+    {
+      "path": "/data/WSH/post-train/scripts/run_stage5_external.py",
+      "sha256": "175a5eb3f05be7e0e36630b0c2426d420a1a98aeadc9c81334c49a539303b9fe",
+      "bytes": 10453
+    },
+    {
+      "path": "/data/WSH/post-train/scripts/stage5_open_qa_judge.py",
+      "sha256": "88d3ed3974dd33d023f802cb35fe331cd164cf54cd34a47748ee1eddba7fd9b1",
+      "bytes": 20958
+    },
+    {
+      "path": "/data/WSH/post-train/configs/stages/s5_open_qa_rubric_v1.json",
+      "sha256": "f6d3b6ecd54319e6cd7f99f67b9bf95bd7343f6c9f423974dc487cbf38dace6f",
+      "bytes": 5026
+    }
+  ],
+  "source_archive": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/source.zip",
+    "sha256": "fb2b39faf7f64da770e4d238faf342f7e301d881612c9818b742925fe68b1365",
+    "bytes": 14015
+  },
+  "candidate_summary": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/summary.json",
+    "sha256": "dd3016f64a6ef44d80a0f0307746c3a9a9eb943a9b9a7ce98442f459ab2f3bcc",
+    "bytes": 9602
+  },
+  "items": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/items.jsonl",
+    "sha256": "f7bc4eb566b2936a23ff5e8d8468bdec600635f8efdd7952302f7403eac038ce",
+    "bytes": 1811023
+  },
+  "git_commit": "8e0e9bc60118ab385a87ecdab6cb460fdc4001b4",
+  "dirty_state": " M experiments/stage4/formal_queue_heartbeat.json\n M experiments/stage4/formal_queue_status.json\n M experiments/stage4/s4_formal_vanilla_20260909T155928_24aec5/progress.json\n M project_state.json\n?? experiments/stage5/open_qa_judge_tests_001.xml\n?? experiments/stage5/open_qa_judgments/\n?? scripts/stage5_open_qa_judge.py\n?? tests/test_stage5_open_qa_judge.py\n",
+  "first_attempt_reservation_usd": 23.82321084,
+  "real_human_audit": "PENDING"
+}

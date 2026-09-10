@@ -1,0 +1,54 @@
+{
+  "model": "deepseek-v4-pro",
+  "provider_documented_version": "DeepSeek-V4-Pro-0813",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "parameters": {
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 16384,
+    "response_format": {
+      "type": "json_object"
+    },
+    "tool_choice": "none",
+    "stream": false
+  },
+  "request_file": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/judge_requests.jsonl",
+    "sha256": "2be99f4b60c6378628b4b2dd3935a7fec028be299d479c597764534ab68bdd31",
+    "bytes": 2950459
+  },
+  "evaluation_protocol": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/protocol.json",
+    "sha256": "34d643ec9e50d9b401a98bfeede9387c866da4eb22715ab9efc8a15ad87cfb7a",
+    "bytes": 11690
+  },
+  "request_count": 306,
+  "concurrency": 12,
+  "max_transport_attempts": 3,
+  "timeout_seconds": 300,
+  "conservative_reservation_cap_usd": 40,
+  "pricing": {
+    "peak_usd_per_million": {
+      "input_cache_hit": 0.044,
+      "input_cache_miss": 1.32,
+      "output": 3.96
+    },
+    "off_peak_usd_per_million": {
+      "input_cache_hit": 0.022,
+      "input_cache_miss": 0.66,
+      "output": 1.98
+    },
+    "source": {
+      "path": "/data/WSH/medical-post-train-artifacts/stage5-api-preflight/20260910T065050/pricing_docs.txt",
+      "sha256": "100ca51f2755b35297adda34c2d882483f26b4e2f4f72977d7468dd7d843a356",
+      "bytes": 23454
+    },
+    "source_url": "https://api-docs.deepseek.com/quick_start/pricing"
+  },
+  "no_web_search": true,
+  "no_tools": true,
+  "candidate_run": "s5_external_deepseek_flash_20260910T065617",
+  "stage5_status": "NOT_STARTED"
+}

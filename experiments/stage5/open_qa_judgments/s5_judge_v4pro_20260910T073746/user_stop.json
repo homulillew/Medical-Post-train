@@ -1,0 +1,27 @@
+{
+  "status": "PARTIAL_USER_STOPPED_BUDGET",
+  "timestamp": "2026-09-10T07:44:12.773124+00:00",
+  "reason": "User requested immediate stop due to budget; summarize existing judgments only.",
+  "worker_pids_stopped": [
+    2571761,
+    2571775
+  ],
+  "completed_results": 69,
+  "reserved_attempts": 81,
+  "inflight_unknown_outcomes": [
+    "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/requests/0080/attempts/001",
+    "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/requests/0079/attempts/001",
+    "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/requests/0069/attempts/001",
+    "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/requests/0074/attempts/001",
+    "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/requests/0057/attempts/001",
+    "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/requests/0073/attempts/001",
+    "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/requests/0075/attempts/001",
+    "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/requests/0076/attempts/001",
+    "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/requests/0077/attempts/001",
+    "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/requests/0072/attempts/001",
+    "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/requests/0071/attempts/001",
+    "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/requests/0078/attempts/001"
+  ],
+  "key_removed": true,
+  "stage5_status": "NOT_STARTED"
+}

@@ -1,0 +1,17 @@
+{
+  "preflight": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/preflight_response.json",
+    "sha256": "25b64a7d8abf6c56b549af00f3a0db5b938aefe500793b14a661590b661d335e",
+    "bytes": 889
+  },
+  "tests": {
+    "path": "/data/WSH/post-train/experiments/stage5/open_qa_judge_tests_001.xml",
+    "sha256": "fdd7608fb1a5226c82d0c9828da69fc4140637bb3d8074b9c1557fbcb612585a",
+    "bytes": 1890
+  },
+  "protocol_plan": {
+    "path": "/data/WSH/post-train/docs/implementation/STAGE5_OPEN_QA_JUDGE_PROTOCOL.md",
+    "sha256": "7317c014648d7847c629a7c75c89740fdf427c724583034fa78597e0f5e70ee0",
+    "bytes": 4371
+  }
+}

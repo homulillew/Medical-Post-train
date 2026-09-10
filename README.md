@@ -37,6 +37,9 @@ and remain in the denominator. See the
 [external API report](docs/implementation/STAGE5_EXTERNAL_DEEPSEEK_FLASH.md),
 [dataset preparation report](docs/implementation/STAGE5_DATASET_PREPARATION_REPORT.md)
 and [frozen manifest](experiments/stage5/dataset_freeze_v1.json).
+The subsequent anonymous V4 Pro open-QA judge was stopped at the user's budget
+request after69 clinical answers /26 cases. [Partial scores](docs/implementation/STAGE5_OPEN_QA_JUDGE_PARTIAL_RESULTS.md)
+are retained; the retention-set judge and real human audit remain incomplete.
 No project-model final-test scoring has run. Current stage status is recorded in
 [`project_state.json`](project_state.json).
 

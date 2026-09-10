@@ -1,0 +1,13 @@
+{
+  "pid": 2571761,
+  "timestamp": "2026-09-10T07:39:22.940414+00:00",
+  "command": [
+    "/data/WSH/post-train/.venv-analysis/bin/python",
+    "/data/WSH/post-train/scripts/run_stage5_external.py",
+    "--run",
+    "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746",
+    "--key-file",
+    "/dev/shm/medical-posttrain-deepseek-judge-key"
+  ],
+  "detached": true
+}

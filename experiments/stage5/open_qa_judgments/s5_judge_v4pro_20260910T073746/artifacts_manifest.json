@@ -1,0 +1,12 @@
+{
+  "manifest": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/artifacts_manifest.json",
+    "sha256": "4f1c27d266a4a4a02ab9f6cb5a159ae2c108d41a7c5c3b67bcabc60e858e38b1",
+    "bytes": 77763
+  },
+  "archive": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746_partial_evidence.zip",
+    "sha256": "f870dcc66db8abe7d2ae1c18b016c65b504505814edc2da3236fa24ef9fd7cf9",
+    "bytes": 2062738
+  }
+}
