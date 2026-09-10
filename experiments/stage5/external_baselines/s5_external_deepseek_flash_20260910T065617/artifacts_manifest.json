@@ -1,0 +1,25 @@
+{
+  "run_id": "s5_external_deepseek_flash_20260910T065617",
+  "artifact_root": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617",
+  "manifest": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/artifacts_manifest.json",
+    "sha256": "0b3963286e9cb927f50965bb6c0ae6fe70cf1f46c628bf5e6d3d1bf36934d079",
+    "bytes": 1127303
+  },
+  "archive": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617_evidence.zip",
+    "sha256": "35016ef59dbdee0e2dfa6f8b1c91d03d4f0e98a9dcf9a816ea7c9231dc6c0e6d",
+    "bytes": 8503220
+  },
+  "raw_files": 4418,
+  "analysis_source": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/analysis_source.zip",
+    "sha256": "c08d9855edbee67bd47f6dd0b406080cf6498a14d617776c8c192dddc4ed5435",
+    "bytes": 4502
+  },
+  "final_audit": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/final_audit.json",
+    "sha256": "4689357f3eb7e2bc77121ebe537873dc79d0079cf6f088b309dce0cd2032c92a",
+    "bytes": 520
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-09-10T06:59:54.891534+00:00",
+  "pid": 2560866,
+  "command": [
+    "/data/WSH/post-train/.venv-analysis/bin/python",
+    "/data/WSH/post-train/scripts/finish_stage5_external.py",
+    "--run",
+    "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617"
+  ],
+  "source": {
+    "path": "/data/WSH/post-train/scripts/finish_stage5_external.py",
+    "sha256": "5c2b8afb063bad96c2dd70d91e011310aa20bf85b04000faf58ec9e3809d6215",
+    "bytes": 1647
+  },
+  "detached": true
+}

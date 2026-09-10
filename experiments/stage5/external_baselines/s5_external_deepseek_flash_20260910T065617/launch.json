@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-09-10T06:56:17.504176+00:00",
+  "run_id": "s5_external_deepseek_flash_20260910T065617",
+  "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617",
+  "pid": 2559741,
+  "command": [
+    "/data/WSH/post-train/.venv-analysis/bin/python",
+    "/data/WSH/post-train/scripts/run_stage5_external.py",
+    "--run",
+    "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617",
+    "--key-file",
+    "/dev/shm/medical-posttrain-deepseek-key"
+  ],
+  "detached": true
+}

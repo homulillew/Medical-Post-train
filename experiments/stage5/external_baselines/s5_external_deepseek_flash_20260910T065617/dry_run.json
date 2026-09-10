@@ -1,0 +1,11 @@
+{
+  "request_count": 1100,
+  "first_attempt_conservative_peak_reservation_usd": 11.152120199999999,
+  "output_token_cap_total": 9011200,
+  "reservation_cap_usd": 15,
+  "input_proxy": "UTF8 message bytes+256/request; not actual billing",
+  "no_web_search": true,
+  "no_tools": true,
+  "no_retrieval": true,
+  "preflight_calls": 1
+}

@@ -1,0 +1,67 @@
+{
+  "provider": "DeepSeek official API",
+  "model": "deepseek-flash",
+  "provider_documented_version": "DeepSeek-V4.1-Flash",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "parameters": {
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 8192,
+    "tool_choice": "none",
+    "stream": false
+  },
+  "request_file": {
+    "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/requests/external_probe_all.jsonl",
+    "sha256": "a8c0420be739ea38e2eea4bca46073fcbb6ad15fb3130c48c5a81a71682d4325",
+    "bytes": 954491
+  },
+  "evaluation_protocol": {
+    "path": "/data/WSH/post-train/experiments/stage5/evaluation_protocol.json",
+    "sha256": "f6ecc0974d8d94c19a04ca8ccc4019333173845ddac9fd52d7facaeb9aba6f6d",
+    "bytes": 2929
+  },
+  "dataset_freeze": {
+    "path": "/data/WSH/post-train/experiments/stage5/dataset_freeze_v1.json",
+    "sha256": "5290257edc025f97e1078f343df1d9b8b5b2b5742be1995d2bb72ee40ad10480",
+    "bytes": 4589
+  },
+  "request_count": 1100,
+  "concurrency": 12,
+  "max_transport_attempts": 3,
+  "timeout_seconds": 180,
+  "conservative_reservation_cap_usd": 15,
+  "pricing": {
+    "currency": "USD",
+    "unit": "per_million_tokens",
+    "peak_usd_per_million": {
+      "input_cache_hit": 0.006,
+      "input_cache_miss": 0.3,
+      "output": 1.2
+    },
+    "off_peak_usd_per_million": {
+      "input_cache_hit": 0.003,
+      "input_cache_miss": 0.15,
+      "output": 0.6
+    },
+    "peak_schedule_utc": "Monday-Friday 01:00-04:00 and 06:00-10:00",
+    "source_url": "https://api-docs.deepseek.com/quick_start/pricing",
+    "source": {
+      "path": "/data/WSH/medical-post-train-artifacts/stage5-api-preflight/20260910T065050/pricing_docs.txt",
+      "sha256": "100ca51f2755b35297adda34c2d882483f26b4e2f4f72977d7468dd7d843a356",
+      "bytes": 23454
+    }
+  },
+  "no_web_search": true,
+  "no_tools": true,
+  "no_retrieval": true,
+  "accepted_parameters_preflight": {
+    "path": "/data/WSH/medical-post-train-artifacts/stage5-api-preflight/20260910T065050/connectivity_response.json",
+    "sha256": "471750d0596f7b2b26e13606409aae52239105a595add7c6b10bfded39ed4d25",
+    "bytes": 840
+  },
+  "sampling_note": "Temperature omitted: documented ignored in thinking mode; high reasoning fixed before any benchmark response. One returned answer per item, never best-of-N.",
+  "local_model_evaluation": false,
+  "stage5_status": "NOT_STARTED"
+}

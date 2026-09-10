@@ -1,0 +1,19 @@
+{
+  "result": "PASS",
+  "timestamp": "2026-09-10T07:10:16.570703+00:00",
+  "summary": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/summary.json",
+    "sha256": "dd3016f64a6ef44d80a0f0307746c3a9a9eb943a9b9a7ce98442f459ab2f3bcc",
+    "bytes": 9602
+  },
+  "responses": 1100,
+  "source_request_identity": "PASS",
+  "raw_response_identity": "PASS",
+  "parser_reference": {
+    "path": "/data/WSH/post-train/src/medical_posttrain/reward/parser.py",
+    "sha256": "c3dfb9b4f0ff71334f7b2f19d5e265d7341c5d93baec2b00d9f40212329c8bdc",
+    "bytes": 3991
+  },
+  "no_tool_calls": true,
+  "open_qa_judgment": "PENDING"
+}

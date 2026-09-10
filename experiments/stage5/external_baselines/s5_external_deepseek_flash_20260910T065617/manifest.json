@@ -1,0 +1,53 @@
+{
+  "run_id": "s5_external_deepseek_flash_20260910T065617",
+  "run_class": "EVALUATION",
+  "purpose": "External contextual reference probe",
+  "stage": 5,
+  "stage5_status": "NOT_STARTED",
+  "timestamp": "2026-09-10T06:56:17.352720+00:00",
+  "config": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/config.json",
+    "sha256": "30eb3846406cf99b4e2009770f741739a1990b6cdcf0bc933f39d17204deb1bb",
+    "bytes": 2453
+  },
+  "code": [
+    {
+      "path": "/data/WSH/post-train/scripts/run_stage5_external.py",
+      "sha256": "175a5eb3f05be7e0e36630b0c2426d420a1a98aeadc9c81334c49a539303b9fe",
+      "bytes": 10453
+    }
+  ],
+  "source_archive": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/source.zip",
+    "sha256": "c4f0b5741d5b7b39226a08d0cd1d1136c3b66844d10d948b56bf3d09c1911db7",
+    "bytes": 10595
+  },
+  "git_commit": "4b736e5e798ccc259d0aeb9003fed73a7e5134b4",
+  "dirty_state": " M experiments/stage4/formal_queue_heartbeat.json\n M experiments/stage4/formal_queue_status.json\n M experiments/stage4/s4_formal_vanilla_20260909T155928_24aec5/progress.json\n M project_state.json\n?? experiments/stage5/external_runner_tests_001.xml\n?? scripts/run_stage5_external.py\n?? tests/test_stage5_external.py\n",
+  "model_list": {
+    "path": "/data/WSH/medical-post-train-artifacts/stage5-api-preflight/20260910T065050/models.txt",
+    "sha256": "0c5d2ba6ebb791e893b0e7efed32c64415a633ed774e8d89dad8e33c4d69ae77",
+    "bytes": 153
+  },
+  "api_docs": {
+    "path": "/data/WSH/medical-post-train-artifacts/stage5-api-preflight/20260910T065050/chat_api_docs.txt",
+    "sha256": "3379b08ae03838bfdb145e91ff51123c948ab83806da6447f6d1e02c7b2dfe6d",
+    "bytes": 147737
+  },
+  "connectivity_control_request": {
+    "path": "/data/WSH/medical-post-train-artifacts/stage5-api-preflight/20260910T065050/connectivity_request.json",
+    "sha256": "bb0f8baea6a38975a6acba0be52069882738031d9448abf54cb104e88adfa57a",
+    "bytes": 542
+  },
+  "connectivity_control_response": {
+    "path": "/data/WSH/medical-post-train-artifacts/stage5-api-preflight/20260910T065050/connectivity_response.json",
+    "sha256": "471750d0596f7b2b26e13606409aae52239105a595add7c6b10bfded39ed4d25",
+    "bytes": 840
+  },
+  "tests": {
+    "path": "/data/WSH/post-train/experiments/stage5/external_runner_tests_001.xml",
+    "sha256": "131597ca5e71c80ae880b6606ce9f4a5beb95b74b02434cb6e1a3563a69cae91",
+    "bytes": 2202
+  },
+  "credential_policy": "Read only from private0600 tmpfs file, no secret in artifact/command/env snapshot; remove dedicated file when worker finishes."
+}

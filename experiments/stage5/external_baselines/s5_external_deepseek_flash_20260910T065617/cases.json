@@ -1,0 +1,669 @@
+{
+  "run_id": "s5_external_deepseek_flash_20260910T065617",
+  "cases": [
+    {
+      "case_id": "EXT-DSF-0000",
+      "run_id": "s5_external_deepseek_flash_20260910T065617",
+      "stage": 5,
+      "category": "GOOD_CASE",
+      "subtype": "canonical_answer_correct",
+      "prompt_id": "cmexam_test:fadb22c89beb1b7115dc36460ba792eb96b7b972:1593",
+      "prompt": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0000/request.json",
+        "sha256": "802530b63e7858ea92d72701f70a1ec7c853ce41237c4d583966009d6dfea580",
+        "bytes": 774
+      },
+      "responses": [
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0000/result.json",
+          "sha256": "847611e71b9ff7ae99bf5c6aa51e1da2bcbdca2e68c7276df37e6bc14361e5a0",
+          "bytes": 3790
+        }
+      ],
+      "ground_truth": "A",
+      "parsed_answers": [
+        {
+          "answer_set": "A",
+          "strict_match": false,
+          "fallback_match": true,
+          "valid_format": false,
+          "ambiguous": false,
+          "error_type": null,
+          "matched_span": [
+            5,
+            6
+          ]
+        }
+      ],
+      "observation": {
+        "finish_reason": "stop",
+        "empty_visible_answer": false,
+        "correct": true
+      },
+      "why_interesting": "All truncation/parser failures, plus first canonical correct and wrong example per exam track; no medical review implied.",
+      "hypothesis": null,
+      "alternative_explanations": [],
+      "followup": "Independent clinical judgment pending; preserve frozen headline denominator and parser.",
+      "created_at": "2026-09-10T07:11:49.312110+00:00"
+    },
+    {
+      "case_id": "EXT-DSF-0001",
+      "run_id": "s5_external_deepseek_flash_20260910T065617",
+      "stage": 5,
+      "category": "BAD_CASE",
+      "subtype": "canonical_answer_wrong",
+      "prompt_id": "cmexam_test:fadb22c89beb1b7115dc36460ba792eb96b7b972:5174",
+      "prompt": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0001/request.json",
+        "sha256": "c088593bbe630dbdb0c2ec293bc0d7b9a8b508c7b5d72177e383701d2750c329",
+        "bytes": 793
+      },
+      "responses": [
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0001/result.json",
+          "sha256": "2b509eb2fa03d315184d11428312459552c7a13274e3540f928932169fb4da54",
+          "bytes": 3317
+        }
+      ],
+      "ground_truth": "E",
+      "parsed_answers": [
+        {
+          "answer_set": "C",
+          "strict_match": false,
+          "fallback_match": true,
+          "valid_format": false,
+          "ambiguous": false,
+          "error_type": null,
+          "matched_span": [
+            5,
+            6
+          ]
+        }
+      ],
+      "observation": {
+        "finish_reason": "stop",
+        "empty_visible_answer": false,
+        "correct": false
+      },
+      "why_interesting": "All truncation/parser failures, plus first canonical correct and wrong example per exam track; no medical review implied.",
+      "hypothesis": null,
+      "alternative_explanations": [],
+      "followup": "Independent clinical judgment pending; preserve frozen headline denominator and parser.",
+      "created_at": "2026-09-10T07:11:49.312268+00:00"
+    },
+    {
+      "case_id": "EXT-DSF-0040",
+      "run_id": "s5_external_deepseek_flash_20260910T065617",
+      "stage": 5,
+      "category": "BAD_CASE",
+      "subtype": "output_cap_empty_visible_answer",
+      "prompt_id": "cmexam_test:fadb22c89beb1b7115dc36460ba792eb96b7b972:4466",
+      "prompt": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0040/request.json",
+        "sha256": "9b173caf1f56e3348e897349cbf816c9184178ee8074c41686e2a95ced19e276",
+        "bytes": 855
+      },
+      "responses": [
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0040/result.json",
+          "sha256": "0507e4d37b0f1496be6cfa887d5ab261c43d106e4bd2d2cf82ba171af08fb3d8",
+          "bytes": 38706
+        }
+      ],
+      "ground_truth": "A",
+      "parsed_answers": [
+        {
+          "answer_set": null,
+          "strict_match": false,
+          "fallback_match": false,
+          "valid_format": false,
+          "ambiguous": false,
+          "error_type": "no_final_answer",
+          "matched_span": null
+        }
+      ],
+      "observation": {
+        "finish_reason": "length",
+        "empty_visible_answer": true,
+        "correct": false
+      },
+      "why_interesting": "All truncation/parser failures, plus first canonical correct and wrong example per exam track; no medical review implied.",
+      "hypothesis": null,
+      "alternative_explanations": [],
+      "followup": "Independent clinical judgment pending; preserve frozen headline denominator and parser.",
+      "created_at": "2026-09-10T07:11:49.312412+00:00"
+    },
+    {
+      "case_id": "EXT-DSF-0056",
+      "run_id": "s5_external_deepseek_flash_20260910T065617",
+      "stage": 5,
+      "category": "BAD_CASE",
+      "subtype": "output_cap_empty_visible_answer",
+      "prompt_id": "cmexam_test:fadb22c89beb1b7115dc36460ba792eb96b7b972:2486",
+      "prompt": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0056/request.json",
+        "sha256": "523c7e73fdca7baff31815cb7f87ee4fff4a42fd7225da2361766c21d33264e4",
+        "bytes": 981
+      },
+      "responses": [
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0056/result.json",
+          "sha256": "7deb53dd859bb2588ac2275134b1011809d3632b4a815d145a1416ffd0a8ed64",
+          "bytes": 36675
+        }
+      ],
+      "ground_truth": "D",
+      "parsed_answers": [
+        {
+          "answer_set": null,
+          "strict_match": false,
+          "fallback_match": false,
+          "valid_format": false,
+          "ambiguous": false,
+          "error_type": "no_final_answer",
+          "matched_span": null
+        }
+      ],
+      "observation": {
+        "finish_reason": "length",
+        "empty_visible_answer": true,
+        "correct": false
+      },
+      "why_interesting": "All truncation/parser failures, plus first canonical correct and wrong example per exam track; no medical review implied.",
+      "hypothesis": null,
+      "alternative_explanations": [],
+      "followup": "Independent clinical judgment pending; preserve frozen headline denominator and parser.",
+      "created_at": "2026-09-10T07:11:49.312528+00:00"
+    },
+    {
+      "case_id": "EXT-DSF-0101",
+      "run_id": "s5_external_deepseek_flash_20260910T065617",
+      "stage": 5,
+      "category": "BAD_CASE",
+      "subtype": "output_cap_empty_visible_answer",
+      "prompt_id": "cmexam_test:fadb22c89beb1b7115dc36460ba792eb96b7b972:6496",
+      "prompt": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0101/request.json",
+        "sha256": "1838ed8b8f06dc0618d14d550a7fe302bafc58619d537b5067efaa16e916ff66",
+        "bytes": 816
+      },
+      "responses": [
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0101/result.json",
+          "sha256": "bd111688c4a46aca9f2fd75109bf8232fd86e93c06f30c346bc59639bd0b75a3",
+          "bytes": 34065
+        }
+      ],
+      "ground_truth": "D",
+      "parsed_answers": [
+        {
+          "answer_set": null,
+          "strict_match": false,
+          "fallback_match": false,
+          "valid_format": false,
+          "ambiguous": false,
+          "error_type": "no_final_answer",
+          "matched_span": null
+        }
+      ],
+      "observation": {
+        "finish_reason": "length",
+        "empty_visible_answer": true,
+        "correct": false
+      },
+      "why_interesting": "All truncation/parser failures, plus first canonical correct and wrong example per exam track; no medical review implied.",
+      "hypothesis": null,
+      "alternative_explanations": [],
+      "followup": "Independent clinical judgment pending; preserve frozen headline denominator and parser.",
+      "created_at": "2026-09-10T07:11:49.312685+00:00"
+    },
+    {
+      "case_id": "EXT-DSF-0250",
+      "run_id": "s5_external_deepseek_flash_20260910T065617",
+      "stage": 5,
+      "category": "BAD_CASE",
+      "subtype": "output_cap_empty_visible_answer",
+      "prompt_id": "cmexam_test:fadb22c89beb1b7115dc36460ba792eb96b7b972:4968",
+      "prompt": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0250/request.json",
+        "sha256": "7c243efbb5d137e116fd0d03064b88963d36554725b1827de2dc4830383c3464",
+        "bytes": 864
+      },
+      "responses": [
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0250/result.json",
+          "sha256": "fdfb6076f573fe9c2c412ec2c2a71db8f31d6be380e7d2741451e47610c9f552",
+          "bytes": 32634
+        }
+      ],
+      "ground_truth": "A",
+      "parsed_answers": [
+        {
+          "answer_set": null,
+          "strict_match": false,
+          "fallback_match": false,
+          "valid_format": false,
+          "ambiguous": false,
+          "error_type": "no_final_answer",
+          "matched_span": null
+        }
+      ],
+      "observation": {
+        "finish_reason": "length",
+        "empty_visible_answer": true,
+        "correct": false
+      },
+      "why_interesting": "All truncation/parser failures, plus first canonical correct and wrong example per exam track; no medical review implied.",
+      "hypothesis": null,
+      "alternative_explanations": [],
+      "followup": "Independent clinical judgment pending; preserve frozen headline denominator and parser.",
+      "created_at": "2026-09-10T07:11:49.312912+00:00"
+    },
+    {
+      "case_id": "EXT-DSF-0391",
+      "run_id": "s5_external_deepseek_flash_20260910T065617",
+      "stage": 5,
+      "category": "BAD_CASE",
+      "subtype": "output_cap_empty_visible_answer",
+      "prompt_id": "cmexam_test:fadb22c89beb1b7115dc36460ba792eb96b7b972:2410",
+      "prompt": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0391/request.json",
+        "sha256": "a69adbfb005d4f5372818dfcb4b1377d01777f15c8ff3976633099c062f46117",
+        "bytes": 885
+      },
+      "responses": [
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0391/result.json",
+          "sha256": "fd549b654abf2b75c52c438d6a00bba3aa6fcd0f24692c26a5e5a398d464a3ea",
+          "bytes": 30220
+        }
+      ],
+      "ground_truth": "E",
+      "parsed_answers": [
+        {
+          "answer_set": null,
+          "strict_match": false,
+          "fallback_match": false,
+          "valid_format": false,
+          "ambiguous": false,
+          "error_type": "no_final_answer",
+          "matched_span": null
+        }
+      ],
+      "observation": {
+        "finish_reason": "length",
+        "empty_visible_answer": true,
+        "correct": false
+      },
+      "why_interesting": "All truncation/parser failures, plus first canonical correct and wrong example per exam track; no medical review implied.",
+      "hypothesis": null,
+      "alternative_explanations": [],
+      "followup": "Independent clinical judgment pending; preserve frozen headline denominator and parser.",
+      "created_at": "2026-09-10T07:11:49.313125+00:00"
+    },
+    {
+      "case_id": "EXT-DSF-0405",
+      "run_id": "s5_external_deepseek_flash_20260910T065617",
+      "stage": 5,
+      "category": "BAD_CASE",
+      "subtype": "output_cap_empty_visible_answer",
+      "prompt_id": "cmexam_test:fadb22c89beb1b7115dc36460ba792eb96b7b972:275",
+      "prompt": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0405/request.json",
+        "sha256": "3e16f333d5c89dbb9c8033a4b0d467229b7157504550ecd65b81886a1baa2c1e",
+        "bytes": 863
+      },
+      "responses": [
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0405/result.json",
+          "sha256": "f9b56794e8345a5ce37fe1a478e979e283762784af4875a24121c4ee274e6d3d",
+          "bytes": 39977
+        }
+      ],
+      "ground_truth": "C",
+      "parsed_answers": [
+        {
+          "answer_set": null,
+          "strict_match": false,
+          "fallback_match": false,
+          "valid_format": false,
+          "ambiguous": false,
+          "error_type": "no_final_answer",
+          "matched_span": null
+        }
+      ],
+      "observation": {
+        "finish_reason": "length",
+        "empty_visible_answer": true,
+        "correct": false
+      },
+      "why_interesting": "All truncation/parser failures, plus first canonical correct and wrong example per exam track; no medical review implied.",
+      "hypothesis": null,
+      "alternative_explanations": [],
+      "followup": "Independent clinical judgment pending; preserve frozen headline denominator and parser.",
+      "created_at": "2026-09-10T07:11:49.313232+00:00"
+    },
+    {
+      "case_id": "EXT-DSF-0431",
+      "run_id": "s5_external_deepseek_flash_20260910T065617",
+      "stage": 5,
+      "category": "BAD_CASE",
+      "subtype": "output_cap_empty_visible_answer",
+      "prompt_id": "cmexam_test:fadb22c89beb1b7115dc36460ba792eb96b7b972:4816",
+      "prompt": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0431/request.json",
+        "sha256": "ae2eeda2d8027be998e0f3ec9c297b16cbd8e4bbbb2c17e2eb2212f8a8bd57ce",
+        "bytes": 840
+      },
+      "responses": [
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0431/result.json",
+          "sha256": "29aa4ae7664082f34a9c46e363403204d1aa17c81fef87fc53ffe111c7a7d061",
+          "bytes": 29131
+        }
+      ],
+      "ground_truth": "E",
+      "parsed_answers": [
+        {
+          "answer_set": null,
+          "strict_match": false,
+          "fallback_match": false,
+          "valid_format": false,
+          "ambiguous": false,
+          "error_type": "no_final_answer",
+          "matched_span": null
+        }
+      ],
+      "observation": {
+        "finish_reason": "length",
+        "empty_visible_answer": true,
+        "correct": false
+      },
+      "why_interesting": "All truncation/parser failures, plus first canonical correct and wrong example per exam track; no medical review implied.",
+      "hypothesis": null,
+      "alternative_explanations": [],
+      "followup": "Independent clinical judgment pending; preserve frozen headline denominator and parser.",
+      "created_at": "2026-09-10T07:11:49.313350+00:00"
+    },
+    {
+      "case_id": "EXT-DSF-0512",
+      "run_id": "s5_external_deepseek_flash_20260910T065617",
+      "stage": 5,
+      "category": "GOOD_CASE",
+      "subtype": "canonical_answer_correct",
+      "prompt_id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:9139",
+      "prompt": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0512/request.json",
+        "sha256": "07fc3238e71ab3d8c6271941029a4eb7c3acc576951de14ecfcb43d8e9cdb124",
+        "bytes": 867
+      },
+      "responses": [
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0512/result.json",
+          "sha256": "1b92f5d74de5570f2b92f8c41dfff49f6e1f275afa17f14f362401428e08c6c0",
+          "bytes": 7842
+        }
+      ],
+      "ground_truth": "B",
+      "parsed_answers": [
+        {
+          "answer_set": "B",
+          "strict_match": false,
+          "fallback_match": true,
+          "valid_format": false,
+          "ambiguous": false,
+          "error_type": null,
+          "matched_span": [
+            5,
+            6
+          ]
+        }
+      ],
+      "observation": {
+        "finish_reason": "stop",
+        "empty_visible_answer": false,
+        "correct": true
+      },
+      "why_interesting": "All truncation/parser failures, plus first canonical correct and wrong example per exam track; no medical review implied.",
+      "hypothesis": null,
+      "alternative_explanations": [],
+      "followup": "Independent clinical judgment pending; preserve frozen headline denominator and parser.",
+      "created_at": "2026-09-10T07:11:49.313516+00:00"
+    },
+    {
+      "case_id": "EXT-DSF-0514",
+      "run_id": "s5_external_deepseek_flash_20260910T065617",
+      "stage": 5,
+      "category": "BAD_CASE",
+      "subtype": "canonical_answer_wrong",
+      "prompt_id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:5823",
+      "prompt": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0514/request.json",
+        "sha256": "d4ed2b460ac38086143212a44831ba34c4a1225f79d18bee6c6554f3e46579de",
+        "bytes": 759
+      },
+      "responses": [
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0514/result.json",
+          "sha256": "2b31a0ce11123a903ec9ade1602f185b1f4f276ff8697632cd3232439ee7d966",
+          "bytes": 23569
+        }
+      ],
+      "ground_truth": "A",
+      "parsed_answers": [
+        {
+          "answer_set": "B",
+          "strict_match": false,
+          "fallback_match": true,
+          "valid_format": false,
+          "ambiguous": false,
+          "error_type": null,
+          "matched_span": [
+            5,
+            6
+          ]
+        }
+      ],
+      "observation": {
+        "finish_reason": "stop",
+        "empty_visible_answer": false,
+        "correct": false
+      },
+      "why_interesting": "All truncation/parser failures, plus first canonical correct and wrong example per exam track; no medical review implied.",
+      "hypothesis": null,
+      "alternative_explanations": [],
+      "followup": "Independent clinical judgment pending; preserve frozen headline denominator and parser.",
+      "created_at": "2026-09-10T07:11:49.313612+00:00"
+    },
+    {
+      "case_id": "EXT-DSF-0588",
+      "run_id": "s5_external_deepseek_flash_20260910T065617",
+      "stage": 5,
+      "category": "BAD_CASE",
+      "subtype": "output_cap_empty_visible_answer",
+      "prompt_id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:7514",
+      "prompt": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0588/request.json",
+        "sha256": "cdb402c2a2a1e60aeb9dbd5911c5693d17ff92931a74010f4da88a5507301a44",
+        "bytes": 984
+      },
+      "responses": [
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0588/result.json",
+          "sha256": "06ab09e537d515e06f4b9ed0f1ad9e16bb4cf3337e123f9ec13392614d215e97",
+          "bytes": 38009
+        }
+      ],
+      "ground_truth": "B",
+      "parsed_answers": [
+        {
+          "answer_set": null,
+          "strict_match": false,
+          "fallback_match": false,
+          "valid_format": false,
+          "ambiguous": false,
+          "error_type": "no_final_answer",
+          "matched_span": null
+        }
+      ],
+      "observation": {
+        "finish_reason": "length",
+        "empty_visible_answer": true,
+        "correct": false
+      },
+      "why_interesting": "All truncation/parser failures, plus first canonical correct and wrong example per exam track; no medical review implied.",
+      "hypothesis": null,
+      "alternative_explanations": [],
+      "followup": "Independent clinical judgment pending; preserve frozen headline denominator and parser.",
+      "created_at": "2026-09-10T07:11:49.313782+00:00"
+    },
+    {
+      "case_id": "EXT-DSF-0708",
+      "run_id": "s5_external_deepseek_flash_20260910T065617",
+      "stage": 5,
+      "category": "BAD_CASE",
+      "subtype": "output_cap_empty_visible_answer",
+      "prompt_id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:9748",
+      "prompt": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0708/request.json",
+        "sha256": "8af47743e152b6aaba7edcbd2a6f874ff82ae46ef6e7e1e0887a94b335b93c50",
+        "bytes": 1173
+      },
+      "responses": [
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0708/result.json",
+          "sha256": "7e86a4093c8c5c93e1b8241b88faca4ccebdb019e82706a8141614f7a3a904ad",
+          "bytes": 35441
+        }
+      ],
+      "ground_truth": "E",
+      "parsed_answers": [
+        {
+          "answer_set": null,
+          "strict_match": false,
+          "fallback_match": false,
+          "valid_format": false,
+          "ambiguous": false,
+          "error_type": "no_final_answer",
+          "matched_span": null
+        }
+      ],
+      "observation": {
+        "finish_reason": "length",
+        "empty_visible_answer": true,
+        "correct": false
+      },
+      "why_interesting": "All truncation/parser failures, plus first canonical correct and wrong example per exam track; no medical review implied.",
+      "hypothesis": null,
+      "alternative_explanations": [],
+      "followup": "Independent clinical judgment pending; preserve frozen headline denominator and parser.",
+      "created_at": "2026-09-10T07:11:49.313975+00:00"
+    },
+    {
+      "case_id": "EXT-DSF-0756",
+      "run_id": "s5_external_deepseek_flash_20260910T065617",
+      "stage": 5,
+      "category": "BAD_CASE",
+      "subtype": "frozen_parser_rejection",
+      "prompt_id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:10778",
+      "prompt": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0756/request.json",
+        "sha256": "e9865c3e1b3caefbf74de1564fb931ca4eb315ba9575beb9a34e264b60ea455f",
+        "bytes": 789
+      },
+      "responses": [
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0756/result.json",
+          "sha256": "34f876077bddb5600a1373b99abfe0158c054009307d03d961b0004543cb9209",
+          "bytes": 2715
+        }
+      ],
+      "ground_truth": "D",
+      "parsed_answers": [
+        {
+          "answer_set": null,
+          "strict_match": false,
+          "fallback_match": false,
+          "valid_format": false,
+          "ambiguous": false,
+          "error_type": "unknown_or_malformed_tags",
+          "matched_span": null
+        }
+      ],
+      "observation": {
+        "finish_reason": "stop",
+        "empty_visible_answer": false,
+        "correct": false
+      },
+      "why_interesting": "All truncation/parser failures, plus first canonical correct and wrong example per exam track; no medical review implied.",
+      "hypothesis": null,
+      "alternative_explanations": [],
+      "followup": "Independent clinical judgment pending; preserve frozen headline denominator and parser.",
+      "created_at": "2026-09-10T07:11:49.314111+00:00"
+    },
+    {
+      "case_id": "EXT-DSF-0878",
+      "run_id": "s5_external_deepseek_flash_20260910T065617",
+      "stage": 5,
+      "category": "BAD_CASE",
+      "subtype": "output_cap_empty_visible_answer",
+      "prompt_id": "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:54:q1",
+      "prompt": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0878/request.json",
+        "sha256": "c2fabd74f78d59a0c1678556627e092258e3a3906e3a651d7fc8567d876dbb79",
+        "bytes": 1901
+      },
+      "responses": [
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/0878/result.json",
+          "sha256": "af4c9f865119e658a99b97704955c6c8f4722eaf34a6b610486a330c73188201",
+          "bytes": 39185
+        }
+      ],
+      "ground_truth": null,
+      "parsed_answers": [],
+      "observation": {
+        "finish_reason": "length",
+        "empty_visible_answer": true,
+        "correct": null
+      },
+      "why_interesting": "All truncation/parser failures, plus first canonical correct and wrong example per exam track; no medical review implied.",
+      "hypothesis": null,
+      "alternative_explanations": [],
+      "followup": "Independent clinical judgment pending; preserve frozen headline denominator and parser.",
+      "created_at": "2026-09-10T07:11:49.314278+00:00"
+    },
+    {
+      "case_id": "EXT-DSF-1049",
+      "run_id": "s5_external_deepseek_flash_20260910T065617",
+      "stage": 5,
+      "category": "BAD_CASE",
+      "subtype": "output_cap_empty_visible_answer",
+      "prompt_id": "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:16554",
+      "prompt": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/1049/request.json",
+        "sha256": "3dc4ebb6704e71b339f2a5f50827f8348ed4c37709ce1376e010036f92cf841f",
+        "bytes": 898
+      },
+      "responses": [
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/requests/1049/result.json",
+          "sha256": "b8ef79360bdf0775cc2fab1f8b0c84f7807dd26a26c0ef51d1e9314899f89904",
+          "bytes": 29130
+        }
+      ],
+      "ground_truth": null,
+      "parsed_answers": [],
+      "observation": {
+        "finish_reason": "length",
+        "empty_visible_answer": true,
+        "correct": null
+      },
+      "why_interesting": "All truncation/parser failures, plus first canonical correct and wrong example per exam track; no medical review implied.",
+      "hypothesis": null,
+      "alternative_explanations": [],
+      "followup": "Independent clinical judgment pending; preserve frozen headline denominator and parser.",
+      "created_at": "2026-09-10T07:11:49.314454+00:00"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "status": "EXTERNAL_PROBE_VERIFIED",
+  "timestamp": "2026-09-10T07:10:16.634320+00:00",
+  "completed": 1100,
+  "planned": 1100,
+  "open_qa_judge": "PENDING",
+  "stage5_status": "NOT_STARTED"
+}

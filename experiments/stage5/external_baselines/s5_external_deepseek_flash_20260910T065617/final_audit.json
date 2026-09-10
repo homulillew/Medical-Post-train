@@ -1,0 +1,18 @@
+{
+  "result": "PASS",
+  "timestamp": "2026-09-10T07:11:49.377187+00:00",
+  "completed": 1100,
+  "raw_usage_independent_sum": {
+    "prompt_tokens": 220566,
+    "completion_tokens": 1505137,
+    "prompt_cache_hit_tokens": 29312,
+    "prompt_cache_miss_tokens": 191254
+  },
+  "recomputed_peak_price_cost_usd": 1.863716472,
+  "wall_seconds": 836.77111,
+  "stage4_frozen_source_files_verified": 121,
+  "stage4_config_unchanged": true,
+  "credential_tmpfs_removed": true,
+  "cases": 16,
+  "credential_pattern_scan": "PASS"
+}

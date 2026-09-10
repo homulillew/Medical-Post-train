@@ -1,0 +1,375 @@
+{
+  "result": "PASS",
+  "scope": "External probe generation and exact-answer exam scoring only",
+  "timestamp": "2026-09-10T07:10:16.112014+00:00",
+  "run_id": "s5_external_deepseek_flash_20260910T065617",
+  "model": "deepseek-flash",
+  "provider_documented_version": "DeepSeek-V4.1-Flash",
+  "tracks": {
+    "cmexam_sota_probe_512": {
+      "completed": 512,
+      "length_limited": 7,
+      "empty_visible_answers": 7,
+      "correct": 458,
+      "parse_success": 505,
+      "accuracy": 0.89453125,
+      "parse_success_rate": 0.986328125,
+      "accuracy_wilson_95": [
+        0.8649245176143979,
+        0.9182618531042649
+      ]
+    },
+    "cmb_sota_probe_280": {
+      "completed": 280,
+      "length_limited": 2,
+      "empty_visible_answers": 2,
+      "correct": 250,
+      "parse_success": 277,
+      "accuracy": 0.8928571428571429,
+      "parse_success_rate": 0.9892857142857143,
+      "accuracy_wilson_95": [
+        0.8511677924596102,
+        0.9239127786241812
+      ]
+    },
+    "cmb_clin": {
+      "completed": 208,
+      "length_limited": 1,
+      "empty_visible_answers": 1,
+      "quality_evaluation": "PENDING_INDEPENDENT_JUDGE_AND_HUMAN_AUDIT"
+    },
+    "open_qa_sota_probe_100": {
+      "completed": 100,
+      "length_limited": 1,
+      "empty_visible_answers": 1,
+      "quality_evaluation": "PENDING_INDEPENDENT_JUDGE_AND_HUMAN_AUDIT"
+    }
+  },
+  "tokens": {
+    "prompt_tokens": 220566,
+    "completion_tokens": 1505137,
+    "prompt_cache_hit_tokens": 29312,
+    "prompt_cache_miss_tokens": 191254,
+    "reasoning_tokens": 1325805
+  },
+  "missing_usage_responses": 0,
+  "successful_response_calculated_cost_usd": 1.8637164720000012,
+  "cost_scope": "Published prices applied to returned usage; excludes separately retained connectivity control and unknown billed transport outcomes. Not an account invoice.",
+  "physical_request_attempts": 1100,
+  "transport_error_responses": [],
+  "unknown_outcomes": 0,
+  "no_tools_verified": true,
+  "no_web_search_enabled": true,
+  "expected_responses": 1100,
+  "completed_responses": 1100,
+  "mean_request_latency_seconds": 8.666061872502958,
+  "category_and_difficulty_slices": {
+    "cmexam_sota_probe_512": {
+      "Difficulty level:1": {
+        "n": 128,
+        "correct": 125
+      },
+      "Clinical Department:耳鼻咽喉科": {
+        "n": 14,
+        "correct": 14
+      },
+      "Difficulty level:4": {
+        "n": 92,
+        "correct": 76
+      },
+      "Clinical Department:职业病科": {
+        "n": 18,
+        "correct": 16
+      },
+      "Difficulty level:3": {
+        "n": 120,
+        "correct": 105
+      },
+      "Clinical Department:眼科": {
+        "n": 15,
+        "correct": 13
+      },
+      "Clinical Department:疼痛科": {
+        "n": 8,
+        "correct": 8
+      },
+      "Clinical Department:妇女保健": {
+        "n": 14,
+        "correct": 10
+      },
+      "Clinical Department:预防保健科": {
+        "n": 18,
+        "correct": 16
+      },
+      "Clinical Department:临床营养科": {
+        "n": 18,
+        "correct": 16
+      },
+      "Clinical Department:运动医学科": {
+        "n": 12,
+        "correct": 8
+      },
+      "Clinical Department:结核病科": {
+        "n": 19,
+        "correct": 19
+      },
+      "Clinical Department:中医科": {
+        "n": 22,
+        "correct": 19
+      },
+      "Difficulty level:5": {
+        "n": 45,
+        "correct": 31
+      },
+      "Clinical Department:传染科": {
+        "n": 21,
+        "correct": 18
+      },
+      "Clinical Department:精神科": {
+        "n": 21,
+        "correct": 20
+      },
+      "Difficulty level:2": {
+        "n": 127,
+        "correct": 121
+      },
+      "Clinical Department:全科医疗": {
+        "n": 5,
+        "correct": 4
+      },
+      "Clinical Department:医学影像科": {
+        "n": 16,
+        "correct": 16
+      },
+      "Clinical Department:地方病科": {
+        "n": 8,
+        "correct": 8
+      },
+      "Clinical Department:特种医学与军事医学科": {
+        "n": 3,
+        "correct": 2
+      },
+      "Clinical Department:口腔科": {
+        "n": 20,
+        "correct": 15
+      },
+      "Clinical Department:妇产科": {
+        "n": 20,
+        "correct": 19
+      },
+      "Clinical Department:病理科": {
+        "n": 16,
+        "correct": 14
+      },
+      "Clinical Department:儿科": {
+        "n": 21,
+        "correct": 18
+      },
+      "Clinical Department:内科": {
+        "n": 24,
+        "correct": 21
+      },
+      "Clinical Department:急诊医学科": {
+        "n": 18,
+        "correct": 17
+      },
+      "Clinical Department:儿童保健科": {
+        "n": 13,
+        "correct": 12
+      },
+      "Clinical Department:不符合": {
+        "n": 24,
+        "correct": 22
+      },
+      "Clinical Department:外科": {
+        "n": 21,
+        "correct": 19
+      },
+      "Clinical Department:皮肤科": {
+        "n": 18,
+        "correct": 18
+      },
+      "Clinical Department:肿瘤科": {
+        "n": 20,
+        "correct": 17
+      },
+      "Clinical Department:民族医学科": {
+        "n": 3,
+        "correct": 3
+      },
+      "Clinical Department:医学检验科": {
+        "n": 23,
+        "correct": 22
+      },
+      "Clinical Department:临终关怀科": {
+        "n": 5,
+        "correct": 4
+      },
+      "Clinical Department:儿童外科": {
+        "n": 4,
+        "correct": 4
+      },
+      "Clinical Department:中西医结合科": {
+        "n": 10,
+        "correct": 7
+      },
+      "Clinical Department:康复医学科": {
+        "n": 2,
+        "correct": 2
+      },
+      "Clinical Department:麻醉科": {
+        "n": 12,
+        "correct": 12
+      },
+      "Clinical Department:重症医学科": {
+        "n": 3,
+        "correct": 2
+      },
+      "Clinical Department:医疗美容科": {
+        "n": 3,
+        "correct": 3
+      }
+    },
+    "cmb_sota_probe_280": {
+      "exam_class:预防医学与公共卫生学": {
+        "n": 10,
+        "correct": 10
+      },
+      "exam_class:执业助理医师": {
+        "n": 10,
+        "correct": 10
+      },
+      "exam_class:初级中药师": {
+        "n": 10,
+        "correct": 9
+      },
+      "exam_class:主管技师": {
+        "n": 10,
+        "correct": 10
+      },
+      "exam_class:主管护师": {
+        "n": 10,
+        "correct": 9
+      },
+      "exam_class:初级中药士": {
+        "n": 10,
+        "correct": 10
+      },
+      "exam_class:执业医师": {
+        "n": 10,
+        "correct": 9
+      },
+      "exam_class:医技师": {
+        "n": 10,
+        "correct": 7
+      },
+      "exam_class:主管药师": {
+        "n": 10,
+        "correct": 9
+      },
+      "exam_class:执业中药师": {
+        "n": 10,
+        "correct": 7
+      },
+      "exam_class:考研政治": {
+        "n": 10,
+        "correct": 10
+      },
+      "exam_class:医技士": {
+        "n": 10,
+        "correct": 9
+      },
+      "exam_class:高级职称": {
+        "n": 10,
+        "correct": 8
+      },
+      "exam_class:中医学与中药学": {
+        "n": 10,
+        "correct": 10
+      },
+      "exam_class:临床医学": {
+        "n": 10,
+        "correct": 8
+      },
+      "exam_class:执业西药师": {
+        "n": 10,
+        "correct": 10
+      },
+      "exam_class:护理学": {
+        "n": 10,
+        "correct": 9
+      },
+      "exam_class:初级药士": {
+        "n": 10,
+        "correct": 8
+      },
+      "exam_class:主管中药师": {
+        "n": 10,
+        "correct": 10
+      },
+      "exam_class:规培结业": {
+        "n": 10,
+        "correct": 7
+      },
+      "exam_class:基础医学": {
+        "n": 10,
+        "correct": 9
+      },
+      "exam_class:护师执业资格": {
+        "n": 10,
+        "correct": 9
+      },
+      "exam_class:中医综合": {
+        "n": 10,
+        "correct": 8
+      },
+      "exam_class:中级职称": {
+        "n": 10,
+        "correct": 10
+      },
+      "exam_class:高级护师": {
+        "n": 10,
+        "correct": 8
+      },
+      "exam_class:初级药师": {
+        "n": 10,
+        "correct": 10
+      },
+      "exam_class:西医综合": {
+        "n": 10,
+        "correct": 7
+      },
+      "exam_class:护士执业资格": {
+        "n": 10,
+        "correct": 10
+      }
+    }
+  },
+  "predictions": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/scored_predictions.jsonl",
+    "sha256": "de4dfe980a545f4ddc36200e0a2c86c33c6ef766103090a85b24e2b8f5332d47",
+    "bytes": 1599237
+  },
+  "config": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/config.json",
+    "sha256": "30eb3846406cf99b4e2009770f741739a1990b6cdcf0bc933f39d17204deb1bb",
+    "bytes": 2453
+  },
+  "analyzer": {
+    "path": "/data/WSH/post-train/scripts/analyze_stage5_external.py",
+    "sha256": "615664d79586e0a7ff31ac8a84aa435a212291c965f7c378e6baa3df1f185bd3",
+    "bytes": 9716
+  },
+  "parser": {
+    "path": "/data/WSH/post-train/src/medical_posttrain/reward/parser.py",
+    "sha256": "c3dfb9b4f0ff71334f7b2f19d5e265d7341c5d93baec2b00d9f40212329c8bdc",
+    "bytes": 3991
+  },
+  "stage5_status": "NOT_STARTED",
+  "caveats": [
+    "External API contextual reference; not a controlled model-scale/training comparison.",
+    "Probe accuracy applies to frozen stratified subsets; compare local models on identical IDs later.",
+    "Open-ended response generation is complete; medical quality and safety have not been judged.",
+    "Provider documented version is pinned as a documentation snapshot, not a verifiable weight hash."
+  ]
+}

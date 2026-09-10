@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-09-10T07:10:15.190905+00:00",
+  "analyzer": {
+    "path": "/data/WSH/post-train/scripts/analyze_stage5_external.py",
+    "sha256": "615664d79586e0a7ff31ac8a84aa435a212291c965f7c378e6baa3df1f185bd3",
+    "bytes": 9716
+  },
+  "command": [
+    "/data/WSH/post-train/.venv-analysis/bin/python",
+    "/data/WSH/post-train/scripts/analyze_stage5_external.py",
+    "--run",
+    "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617"
+  ]
+}

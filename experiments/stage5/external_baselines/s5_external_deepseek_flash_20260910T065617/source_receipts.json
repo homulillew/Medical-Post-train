@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-09-10T07:01:21.017317+00:00",
+  "environment": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/environment.json",
+    "sha256": "6fec4d61e253644b37b13baaa75174516e4a20800c2f231c986a7b2dc9c62864",
+    "bytes": 437
+  },
+  "preflight": {
+    "path": "/data/WSH/medical-post-train-artifacts/stage5-api-preflight/20260910T065050/connectivity_response.json",
+    "sha256": "471750d0596f7b2b26e13606409aae52239105a595add7c6b10bfded39ed4d25",
+    "bytes": 840
+  },
+  "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
+  "api_url": "https://api-docs.deepseek.com/api/create-chat-completion",
+  "user_requested_model": "deepseek-flash",
+  "no_search_enabled": true,
+  "evidence_scope": "Direct official API/model/documentation requests only; no web-search tool or model search integration used"
+}

@@ -29,11 +29,15 @@ for Stage5 remains NO. See the current progress/recovery artifacts below.
 Stage 5–6 remain **NOT_STARTED**.
 Stage5 evaluation datasets are **prepared and frozen**: CMExam official6811
 (6809 scorable), CMB2000, clinical74 cases/208 questions, retention200, and a
-111-question source-risk slice. The external API probe has1100 requests;
-no API calls or project-model test evaluation have run. See the
+111-question source-risk slice. The DeepSeek Flash external reference probe
+completed all1100 requests with search/tools disabled: CMExam458/512 (89.45%),
+CMB250/280 (89.29%), and308 open-ended responses retained for independent judging.
+Calculated probe cost was USD1.8637;11 capped responses had empty visible answers
+and remain in the denominator. See the
+[external API report](docs/implementation/STAGE5_EXTERNAL_DEEPSEEK_FLASH.md),
 [dataset preparation report](docs/implementation/STAGE5_DATASET_PREPARATION_REPORT.md)
 and [frozen manifest](experiments/stage5/dataset_freeze_v1.json).
-No examination test scoring has run. Current stage status is recorded in
+No project-model final-test scoring has run. Current stage status is recorded in
 [`project_state.json`](project_state.json).
 
 - [Stage 0 report](docs/stage_reports/00_runtime_compatibility.md)
@@ -148,7 +152,8 @@ Current progress is authoritative in
 [`experiments/stage1/selected_runs.json`](experiments/stage1/selected_runs.json).
 Stage 2 is **DONE**, including full profiling, scoring, analysis and verification; selected runs are in
 [`experiments/stage2/selected_runs.json`](experiments/stage2/selected_runs.json).
-Stage 3–6 have not started. Historical planning/Stage 0/Stage 1 validators intentionally check their original stage-isolation boundaries; their archived receipts are preserved.
+Stage 3 is **DONE**, Stage 4 is **FULL_RUNNING**, and Stage 5–6 remain **NOT_STARTED**.
+Historical planning/Stage 0/Stage 1 validators intentionally check their original stage-isolation boundaries; their archived receipts are preserved.
 
 Use the independent training environment and real Stage 1 entry points:
 
