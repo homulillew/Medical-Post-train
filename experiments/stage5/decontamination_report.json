@@ -1,0 +1,50 @@
+{
+  "method": "Inherited sealed Stage1 clusters + same-rule graph extension for clinical cases",
+  "thresholds": {
+    "char3_candidate": 0.65,
+    "char5_confirm": 0.85,
+    "sequence_confirm": 0.9
+  },
+  "semantic_decontamination": false,
+  "inputs": {
+    "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/inputs.json",
+    "sha256": "7d9796f9927e24cf8ec3983316f6fd3d3c3a154f5a08889a6676d5402acda245",
+    "bytes": 6232
+  },
+  "extended_clusters": {
+    "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/extended_clusters.jsonl",
+    "sha256": "85511f5d163c3dc20c66755fa6784ac6b9e364fdd11812e943864b7d571a9a3f",
+    "bytes": 37907196
+  },
+  "new_edges": {
+    "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/new_duplicate_edges.jsonl",
+    "sha256": "347856fecb3404cb455fdb4f1774fbe6ac9c461c29529bccd9c321e2d9db5011",
+    "bytes": 2027089
+  },
+  "exclusions": {
+    "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/exclusions.jsonl",
+    "sha256": "641781e364e9f9a5c6db8bfff88ab8ed273283a3cccedcc021a744168e05fd04",
+    "bytes": 7249316
+  },
+  "exclusion_counts": {
+    "cmexam:within_track_duplicate_cluster": 77,
+    "cmexam:invalid_exam_schema": 2,
+    "cmb_exam:cross_track_cmexam_overlap": 132,
+    "cmb_exam:within_track_duplicate_cluster": 153,
+    "medical_o1:sft_train_or_validation_used": 10500,
+    "medical_o1:choice_format_not_open_qa": 1392,
+    "medical_o1:unavailable_visual_or_attachment_reference": 12,
+    "huatuo:sft_train_or_validation_used": 10500,
+    "huatuo:unavailable_visual_or_attachment_reference": 1123
+  },
+  "source_anomalies": {
+    "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/source_anomalies.json",
+    "sha256": "a0b4d08ab995bbc1c3954ced914b4abd4c4065deafe3047e23607b0c2a9b1ad3",
+    "bytes": 2746
+  },
+  "clinical_source_cases": 74,
+  "clinical_source_questions": 208,
+  "clinical_retained_cases": 74,
+  "clinical_retained_questions": 208,
+  "caveat": "CMExam official full/scorable sets retain source duplicate membership; only clean sets and probes claim cluster exclusions. Clinical questions within a case are correlated."
+}

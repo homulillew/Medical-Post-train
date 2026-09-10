@@ -1,0 +1,80 @@
+[
+  {
+    "id": "cmexam_test:fadb22c89beb1b7115dc36460ba792eb96b7b972:2866",
+    "reason": "noncontiguous_options",
+    "raw_options": "B 多潘立酮\nC 盐酸昂司丹琼\nD 四氧氯普胺\nE 盐酸格拉司琼",
+    "raw_answer": "A"
+  },
+  {
+    "id": "cmexam_test:fadb22c89beb1b7115dc36460ba792eb96b7b972:5331",
+    "reason": "noncontiguous_options",
+    "raw_options": "B 保泰松\nC 卡马西平\nD 苯妥英钠\nE 阿苯达唑",
+    "raw_answer": "BCE"
+  },
+  {
+    "id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:2922",
+    "reason": "question_type_version_mismatch",
+    "question_type": "C型选择题",
+    "gold_metadata_type": "单项选择题"
+  },
+  {
+    "id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:2940",
+    "reason": "question_type_version_mismatch",
+    "question_type": "C型选择题",
+    "gold_metadata_type": "单项选择题"
+  },
+  {
+    "id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:2962",
+    "reason": "question_type_version_mismatch",
+    "question_type": "C型选择题",
+    "gold_metadata_type": "单项选择题"
+  },
+  {
+    "id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:2977",
+    "reason": "question_type_version_mismatch",
+    "question_type": "C型选择题",
+    "gold_metadata_type": "单项选择题"
+  },
+  {
+    "id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:2980",
+    "reason": "question_type_version_mismatch",
+    "question_type": "C型选择题",
+    "gold_metadata_type": "单项选择题"
+  },
+  {
+    "id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:3060",
+    "reason": "question_type_version_mismatch",
+    "question_type": "C型选择题",
+    "gold_metadata_type": "单项选择题"
+  },
+  {
+    "id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:3064",
+    "reason": "question_type_version_mismatch",
+    "question_type": "C型选择题",
+    "gold_metadata_type": "单项选择题"
+  },
+  {
+    "id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:3150",
+    "reason": "question_type_version_mismatch",
+    "question_type": "C型选择题",
+    "gold_metadata_type": "单项选择题"
+  },
+  {
+    "id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:3154",
+    "reason": "question_type_version_mismatch",
+    "question_type": "C型选择题",
+    "gold_metadata_type": "单项选择题"
+  },
+  {
+    "id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:3165",
+    "reason": "question_type_version_mismatch",
+    "question_type": "C型选择题",
+    "gold_metadata_type": "单项选择题"
+  },
+  {
+    "id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:3183",
+    "reason": "question_type_version_mismatch",
+    "question_type": "C型选择题",
+    "gold_metadata_type": "单项选择题"
+  }
+]

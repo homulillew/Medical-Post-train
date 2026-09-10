@@ -1,0 +1,12 @@
+{
+  "run_id": "s5_data_20260910T062845_v1",
+  "pid": 2541442,
+  "command": [
+    "/data/WSH/post-train/.venv-analysis/bin/python",
+    "/data/WSH/post-train/scripts/prepare_stage5_datasets.py",
+    "--run-id",
+    "s5_data_20260910T062845_v1"
+  ],
+  "logs": "/data/WSH/medical-post-train-artifacts/data/stage5/launches/s5_data_20260910T062845_v1",
+  "artifact_root": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T062845_v1"
+}

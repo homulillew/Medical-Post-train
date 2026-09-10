@@ -1,0 +1,19 @@
+{
+  "external_probe_request_count": 1100,
+  "external_probe": {
+    "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/requests/external_probe_all.jsonl",
+    "sha256": "a8c0420be739ea38e2eea4bca46073fcbb6ad15fb3130c48c5a81a71682d4325",
+    "bytes": 954491
+  },
+  "project_requests_per_model": 9217,
+  "project_requests_three_models": 27651,
+  "external_probe_tracks": {
+    "cmexam_sota_probe_512": 512,
+    "cmb_sota_probe_280": 280,
+    "cmb_clin": 208,
+    "open_qa_sota_probe_100": 100
+  },
+  "deduplicate_safety_requests": true,
+  "api_cost_incurred": 0,
+  "note": "Safety is a view of existing open QA requests, not extra generation. API token/cost estimate requires chosen provider/tokenizer and output cap."
+}

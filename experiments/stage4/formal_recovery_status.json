@@ -1,7 +1,8 @@
 {
-  "status": "WAITING_FOR_GPU_RELEASE",
-  "timestamp": "2026-09-10T06:11:36.287258+00:00",
-  "pid": 2529625,
+  "status": "RESUMED_WINDOW_RAW_IDENTITY_VERIFIED",
+  "timestamp": "2026-09-10T06:24:26.248266+00:00",
+  "worker_pid": 2533414,
+  "queue_pid": 2533541,
   "run_id": "s4_formal_vanilla_20260909T155928_24aec5",
-  "committed_training_groups": 2424
+  "committed_training_groups": 2432
 }

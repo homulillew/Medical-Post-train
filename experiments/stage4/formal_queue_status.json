@@ -1,7 +1,19 @@
 {
-  "status": "NEEDS_DIAGNOSIS",
-  "timestamp": "2026-09-10T02:33:09.660658+00:00",
-  "error": "AssertionError(('vanilla', 'FAILED', 'No automatic scientific changes'))",
-  "next": "Inspect owner, heartbeat, retained failure, checkpoint and paid inflight work before recovery. Never restart a fresh replacement implicitly.",
+  "status": "FULL_RUNNING",
+  "variant": "vanilla",
+  "run_id": "s4_formal_vanilla_20260909T155928_24aec5",
+  "owner_pid": 2533414,
+  "pid": 2533541,
+  "timestamp": "2026-09-10T06:46:21.646061+00:00",
+  "committed": {
+    "policy_version": "27f12d10f8c4bdce0a72c2dcbf647a41ebf9df9eb9a2b553faeda036790524b4",
+    "cursor": 2496,
+    "policy_windows": 312,
+    "optimizer_steps": 624,
+    "training_groups": 2496,
+    "generated_groups": 2496,
+    "output_tokens": 2669045,
+    "prompt_tokens": 333691
+  },
   "READY_FOR_STAGE5": "NO"
 }

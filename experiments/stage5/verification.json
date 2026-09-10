@@ -1,0 +1,45 @@
+{
+  "result": "PASS",
+  "timestamp": "2026-09-10T06:43:22.470541+00:00",
+  "scope": "Evaluation dataset preparation only",
+  "counts": {
+    "cmexam_test_full": 6811,
+    "cmexam_test_scorable": 6809,
+    "cmexam_test_clean": 6732,
+    "cmexam_sota_probe_512": 512,
+    "cmb_exam_clean_2000": 2000,
+    "cmb_sota_probe_280": 280,
+    "cmb_clin": 208,
+    "open_qa_retention_200": 200,
+    "open_qa_sota_probe_100": 100,
+    "safety_slice": 111
+  },
+  "clinical_cases": 74,
+  "clinical_questions": 208,
+  "external_probe_requests": 1100,
+  "source_join_checks": "PASS",
+  "decontamination_checks": "PASS",
+  "subset_and_quota_checks": "PASS",
+  "reverse_order_selection_replay": "PASS",
+  "request_reference_isolation": "PASS",
+  "frozen_stage4_files_unchanged": 49,
+  "stage5_status": "NOT_STARTED",
+  "api_calls": 0,
+  "model_generations": 0,
+  "historical_source_anomalies_disclosed": {
+    "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/source_anomalies.json",
+    "sha256": "a0b4d08ab995bbc1c3954ced914b4abd4c4065deafe3047e23607b0c2a9b1ad3",
+    "bytes": 2746
+  },
+  "seconds": 7.332798097282648,
+  "verifier": {
+    "path": "/data/WSH/post-train/scripts/verify_stage5_datasets.py",
+    "sha256": "60b6fe16531aee568b9554627563038cb1e68f91bacce5ca7e26109f5850d07a",
+    "bytes": 10455
+  },
+  "summary": {
+    "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/summary.json",
+    "sha256": "4716b7ed26f9935ad428d80a8fbe75638fae7ef6d88340e23d165d2189a0647a",
+    "bytes": 7040
+  }
+}

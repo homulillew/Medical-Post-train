@@ -1,0 +1,19 @@
+{
+  "result": "PASS",
+  "timestamp": "2026-09-10T06:46:03.500520+00:00",
+  "freeze": {
+    "path": "/data/WSH/post-train/experiments/stage5/dataset_freeze_v1.json",
+    "sha256": "5290257edc025f97e1078f343df1d9b8b5b2b5742be1995d2bb72ee40ad10480",
+    "bytes": 4589
+  },
+  "freeze_refs_verified": 20,
+  "dataset_count": 10,
+  "tar_request_matches_source": true,
+  "api_requests": 1100,
+  "stage5_status": "NOT_STARTED",
+  "tests": {
+    "path": "/data/WSH/post-train/experiments/stage5/data_preparation_tests.xml",
+    "sha256": "80ca1f4685121ba857deddccf187f219415e197860ac74b5612ed759629d7bb2",
+    "bytes": 1502
+  }
+}

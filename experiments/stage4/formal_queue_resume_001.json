@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-09-10T06:19:46.086704+00:00",
+  "pid": 2533541,
+  "worker_pid": 2533414,
+  "logs": "/data/WSH/medical-post-train-artifacts/stage4-formal-queue/stage4_formal_8fb878a48ba4/attempt_002",
+  "command": [
+    "/data/WSH/post-train/.venv-train/bin/python",
+    "/data/WSH/post-train/scripts/continue_stage4_formal.py"
+  ],
+  "detached": true
+}

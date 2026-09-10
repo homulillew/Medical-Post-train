@@ -1,0 +1,54 @@
+{
+  "version": "stage5-evaluation-supplement-v1",
+  "timestamp": "2026-09-10T06:43:42.340139+00:00",
+  "parent_contract": {
+    "path": "/data/WSH/post-train/contracts/stage_budgets.json",
+    "sha256": "8ba60bd2e724fbbb74e26f4ef677eb6c6d51eaafcba6eb3bcb0b2eb588a51f24",
+    "bytes": 1836
+  },
+  "scope": "Stage5 only. Does not change the parent Stage0-4 contract or frozen training runs.",
+  "authority": [
+    {
+      "path": "/data/WSH/post-train/docs/stages/05_evaluation.md",
+      "sha256": "79e5435924af515384fff956049c3694c4b199a4fbafb466049dc66bffecd779",
+      "bytes": 13725
+    },
+    {
+      "path": "/data/WSH/post-train/docs/implementation/STAGE5_EVALUATION_DESIGN.md",
+      "sha256": "f49dd7b4e84f5ff549e7327fd41b33680609614fdf3cae89229ca6a63ffa2b1a",
+      "bytes": 14918
+    },
+    {
+      "path": "/data/WSH/post-train/docs/implementation/STAGE5_PREP_AGENT_TASK.md",
+      "sha256": "3586be788787f6d499188dfa697b703b545be7d5bd77fd57f2654f2d907364f5",
+      "bytes": 9109
+    }
+  ],
+  "mandatory": {
+    "primary_checkpoints": 3,
+    "cmexam_official_source": 6811,
+    "cmexam_scorable": 6809,
+    "cmexam_clean": 6732,
+    "cmb_clean": 2000,
+    "external_clinical_cases": 74,
+    "external_clinical_questions": 208,
+    "retention_questions": 200,
+    "source_risk_slice": 111,
+    "minimum_human_review_fraction": 0.2,
+    "all_critical_safety_failures_require_human_review": true
+  },
+  "source_anomalies": {
+    "path": "/data/WSH/post-train/experiments/stage5/source_anomalies.json",
+    "sha256": "a0b4d08ab995bbc1c3954ced914b4abd4c4065deafe3047e23607b0c2a9b1ad3",
+    "bytes": 2746
+  },
+  "cmexam_acceptance": "Official source6811 retained; two malformed records excluded from executable requests. Final report must disclose the missing-A cases and all denominators; preparation does not assert full6811 clean evaluation.",
+  "clinical_eval": "Text case description + current question. No images or prior reference answers. Cluster uncertainty by case_id.",
+  "rubric": {
+    "path": "/data/WSH/post-train/configs/stages/s5_open_qa_rubric_v1.json",
+    "sha256": "f6d3b6ecd54319e6cd7f99f67b9bf95bd7343f6c9f423974dc487cbf38dace6f",
+    "bytes": 5026
+  },
+  "human_review_status": "NOT_PERFORMED; required after model generation",
+  "checkpoint_selection_status": "NOT_PERFORMED; must freeze validation-only selection before local test generation"
+}

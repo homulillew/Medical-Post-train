@@ -1,0 +1,30 @@
+{
+  "result": "PASS",
+  "previous": {
+    "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T063500_v3/summary.json",
+    "sha256": "edb8eb6da136e0579582e8ec728716d09986375241499567d41739a90174aafe",
+    "bytes": 7040
+  },
+  "current": {
+    "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/summary.json",
+    "sha256": "4716b7ed26f9935ad428d80a8fbe75638fae7ef6d88340e23d165d2189a0647a",
+    "bytes": 7040
+  },
+  "byte_identical": {
+    "cmexam_test_full": true,
+    "cmexam_test_scorable": true,
+    "cmexam_test_clean": true,
+    "cmexam_sota_probe_512": true,
+    "cmb_exam_clean_2000": true,
+    "cmb_sota_probe_280": true,
+    "cmb_clin": true,
+    "open_qa_retention_200": false,
+    "open_qa_sota_probe_100": false,
+    "safety_slice": false
+  },
+  "intentional_changes": [
+    "retention source eligibility: no MC option blocks/unavailable attachments",
+    "source-risk tags: exclude pregnancy similes; follow updated retention membership"
+  ],
+  "model_outputs_observed": false
+}

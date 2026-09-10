@@ -1,5 +1,9 @@
 # Stage4 progress and continuation
 
+## Update 2026-09-10 14:46 Asia/Shanghai — training resumed
+
+The boundary recovery succeeded after the other GPU task released memory. Worker2533414 and queue2533541 are active. The first recovered window committed2432 groups /304 windows /608 steps at14:24, with native optimizer/RNG continuity and exactly preserved inflight rollout verified in `experiments/stage4/vanilla_formal_resume_verified_001.json`. Current queue snapshot is2496/5000 groups,312 windows,624 optimizer steps. Dynamic remains prepared0/5000. Earlier failure, partial scan and GPU wait evidence are retained. The Stage5 dataset preparation used CPU only and left all49 frozen execution files unchanged; no project-model test evaluation ran.
+
 ## Update 2026-09-10 14:10 Asia/Shanghai — boundary verified, waiting for GPU
 
 The recovery I/O fix passed 22 tests and the real 303-window metadata chain plus full checkpoint 0302 verification in **17.8356 seconds**. It hashed 202,982,445 bytes of commit artifacts and 1,409,397,133 bytes of boundary payloads. Historical payload contents are deferred to the unchanged full raw acceptance verifier; this is not a full-history PASS.

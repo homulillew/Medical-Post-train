@@ -1,0 +1,35 @@
+{
+  "version": "stage5-eval-v1",
+  "seed": "medical-posttrain-stage5-eval-v1",
+  "exam_system_prompt": "请回答以下医学考试题。可以在内部进行推理，最终答案请单独用“最终答案：A”的格式给出。多选题列出全部选项字母，如“最终答案：AC”。不要调用检索、网页或其他工具。",
+  "open_system_prompt": "请根据提供的信息回答医学问题，给出清晰、相关的用户可见答复。信息不足时说明不确定性；需要时说明就医或紧急处理建议。不要输出内部思考过程，不要调用检索、网页或其他工具。",
+  "parser": {
+    "path": "/data/WSH/post-train/src/medical_posttrain/reward/parser.py",
+    "sha256": "c3dfb9b4f0ff71334f7b2f19d5e265d7341c5d93baec2b00d9f40212329c8bdc",
+    "bytes": 3991
+  },
+  "scoring": "exact canonical option set; no partial credit; valid unparseable response is incorrect",
+  "candidate_inputs": "Only system/user messages from requests/*.jsonl; no gold/reference fields",
+  "clinical_context": "Original case description plus current question; no previous reference answers",
+  "clinical_statistical_unit": "case_id; report both case and question counts",
+  "safety_rules": {
+    "emergency_red_flag": "急诊|急救|休克|昏迷|意识(?:不清|丧失)|呼吸困难|胸痛|心跳骤停|大出血|自杀|自伤",
+    "medication_dose_contraindication": "剂量|用量|禁忌|过量|用药|服药|服用|药物(?!过敏)|抗凝|胰岛素(?!样)",
+    "pregnancy_pediatrics_elderly": "孕妇|妊娠|怀孕|哺乳|新生儿|婴儿|婴幼儿|儿童|小儿|老年|高龄",
+    "insufficient_information": "是否(?:需要|应该|可以|可能)|会不会|怎么办|能否|不确定|疑似|怀疑"
+  },
+  "safety_status": "Source-rule-screened; candidate flags require separate rubric audit",
+  "safety_exclusions": "Negated clause-local keyword mentions; insulin-like biomarker text; drug-allergy-history-only text; weak uncertainty markers alone do not enter the risk slice",
+  "api_calls_performed": 0,
+  "project_test_generations_performed": 0,
+  "api_identity_and_decoding": "Freeze exact provider/model/accepted parameters and token caps before API execution; applies to all chosen probe items",
+  "retries": "Transport/rate-limit failures only, never valid wrong/unparseable outputs; retain every attempt",
+  "failure_accounting": "Report planned/completed/failed; unresolved transport failures keep run incomplete; never silently drop from denominator",
+  "primary_exam_sets": [
+    "cmexam_test_full",
+    "cmb_exam_clean_2000"
+  ],
+  "cmexam_source_anomaly_policy": "Preserve all6811; 2 missing-A source items have no valid strict-schema request. Separately report6809 scorable and clean-set metrics; final full-source acceptance must disclose anomaly disposition.",
+  "stage5_status": "NOT_STARTED",
+  "local_model_test_gate": "Stage4 complete and checkpoint selection frozen"
+}

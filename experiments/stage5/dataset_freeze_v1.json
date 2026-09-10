@@ -1,0 +1,114 @@
+{
+  "status": "DATASETS_FROZEN",
+  "timestamp": "2026-09-10T06:43:44.556601+00:00",
+  "run_id": "s5_data_20260910T064143_v4",
+  "artifact_root": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4",
+  "bundle": {
+    "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/evaluation_dataset_bundle.tar.gz",
+    "sha256": "7eba62831daa86e790bfbb53de49b0e1fde822be64e898d383bdbdac493ee221",
+    "bytes": 16758156
+  },
+  "verification": {
+    "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/verification.json",
+    "sha256": "7af307535decdfbf6e565a95780fc944ecd30907979c81d25b00884cc113869e",
+    "bytes": 1560
+  },
+  "dataset_manifests": [
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/manifests/cmb_clin.json",
+      "sha256": "9a3a5d00523b00fda6e6002cb06f7ea7e5b2b07e881beb681fd00eaf91b544cd",
+      "bytes": 13863
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/manifests/cmb_exam_clean_2000.json",
+      "sha256": "d67cbccab7acb4bfc210e6973c5c671836ca98468cb001024fa365d7073e39d7",
+      "bytes": 124842
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/manifests/cmb_sota_probe_280.json",
+      "sha256": "43043659c3731c6c8f1d81f6e8614b61478f6a872f0ac513761f8db81aaa4082",
+      "bytes": 18175
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/manifests/cmexam_sota_probe_512.json",
+      "sha256": "e315f14689d38853b6947508f66bb5b60e98ce6a5b8732940d53ab7dc2d202f7",
+      "bytes": 34036
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/manifests/cmexam_test_clean.json",
+      "sha256": "1e923924e27075b50683cc781806c828f7ef49ed5ffb15f2b4d0e64617f44646",
+      "bytes": 437298
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/manifests/cmexam_test_full.json",
+      "sha256": "e0f4eee53eb64162c10c484c4319a23a18e293b7becd25cda87e760eef5540b7",
+      "bytes": 442423
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/manifests/cmexam_test_scorable.json",
+      "sha256": "493a05e9f5521794debfe30189c8c95d44f149a62d82139e6bf817608eb4c8e8",
+      "bytes": 442305
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/manifests/open_qa_retention_200.json",
+      "sha256": "a1e980bd4b503d1f62f4e2803086355e3e64cbb2c6c09a853c875702df87901d",
+      "bytes": 13404
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/manifests/open_qa_sota_probe_100.json",
+      "sha256": "8762d5cfb327048387e98138d38126374a49082595cc0ead55a2622af9164b5d",
+      "bytes": 7114
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/manifests/safety_slice.json",
+      "sha256": "e22b893cf90708cf170a7cc8ee8edac65adf046f35ad1373365e854d8bf5feb6",
+      "bytes": 7784
+    }
+  ],
+  "external_probe": {
+    "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/requests/external_probe_all.jsonl",
+    "sha256": "a8c0420be739ea38e2eea4bca46073fcbb6ad15fb3130c48c5a81a71682d4325",
+    "bytes": 954491
+  },
+  "external_probe_requests": 1100,
+  "protocol": {
+    "path": "/data/WSH/post-train/experiments/stage5/evaluation_protocol.json",
+    "sha256": "f6ecc0974d8d94c19a04ca8ccc4019333173845ddac9fd52d7facaeb9aba6f6d",
+    "bytes": 2929
+  },
+  "contract_supplement": {
+    "path": "/data/WSH/post-train/contracts/stage5_evaluation_supplement_v1.json",
+    "sha256": "9b6035310c111c8c44b3cb0eff5cfc6df1f9b21c1328c81f9b0935cfd26ab139",
+    "bytes": 2376
+  },
+  "stage5_status": "NOT_STARTED",
+  "api_calls": 0,
+  "project_model_test_generations": 0,
+  "source_files": [
+    {
+      "path": "/data/WSH/post-train/scripts/prepare_stage5_datasets.py",
+      "sha256": "8477df3f293e886e8c15d136621d4c55e2f139dd3176cf4819bca248d5916c34",
+      "bytes": 23315
+    },
+    {
+      "path": "/data/WSH/post-train/scripts/stage5_eval_data.py",
+      "sha256": "b8fa13c7e89396b8f7cf5dcb47a4ce2005459992f3dbee288b06ba106d167cc1",
+      "bytes": 4264
+    },
+    {
+      "path": "/data/WSH/post-train/scripts/verify_stage5_datasets.py",
+      "sha256": "60b6fe16531aee568b9554627563038cb1e68f91bacce5ca7e26109f5850d07a",
+      "bytes": 10455
+    },
+    {
+      "path": "/data/WSH/post-train/scripts/fetch_stage5_sources.py",
+      "sha256": "4c8de16d96de9777ef7502f1ee6c33b886a21c8fffa3f270e6898307de1f910f",
+      "bytes": 2225
+    },
+    {
+      "path": "/data/WSH/post-train/scripts/freeze_stage5_datasets.py",
+      "sha256": "b02ea60e652d6cd3903dba0fb858abc565c5aef1fb2687e50e6b64eb2d44ff88",
+      "bytes": 8080
+    }
+  ]
+}

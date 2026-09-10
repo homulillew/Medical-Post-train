@@ -1,0 +1,76 @@
+[
+  {
+    "run_id": "s5_data_20260910T062845_v1",
+    "launch": {
+      "path": "/data/WSH/post-train/experiments/stage5/s5_data_20260910T062845_v1_launch.json",
+      "sha256": "468eae195f916e37ea3bbc509a292db8abf4bd9175b4b691a3dde27704bc7b02",
+      "bytes": 449
+    },
+    "status_snapshot": {
+      "status": "FAILED",
+      "error": "AssertionError()",
+      "traceback": "Traceback (most recent call last):\n  File \"/data/WSH/post-train/scripts/prepare_stage5_datasets.py\", line 389, in main\n    summary = prepare(out)\n              ^^^^^^^^^^^^\n  File \"/data/WSH/post-train/scripts/prepare_stage5_datasets.py\", line 201, in prepare\n    assert 2 <= len(options) <= 5 and set(options) <= set('ABCDE')\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "timestamp": "2026-09-10T06:29:49.892765+00:00"
+    },
+    "run": {
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T062845_v1/run.json",
+      "sha256": "efdcb9c76792c9339a8f1f0cd09bfe49daccbad6ec56059a76f62efce29743e5",
+      "bytes": 2037
+    },
+    "disposition": "RETAINED_FAILED_OR_SUPERSEDED_PREPARATION"
+  },
+  {
+    "run_id": "s5_data_20260910T063154_v2",
+    "launch": {
+      "path": "/data/WSH/post-train/experiments/stage5/s5_data_20260910T063154_v2_launch.json",
+      "sha256": "fd48217c1f8eb6d50f28f0a3b0b6659014f1073ab4af42e841cccb843d3f1c2e",
+      "bytes": 449
+    },
+    "status_snapshot": {
+      "status": "PREPARED_UNVERIFIED",
+      "timestamp": "2026-09-10T06:33:03.264402+00:00"
+    },
+    "run": {
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T063154_v2/run.json",
+      "sha256": "dade0d92e71053db887a7f692b965b2cf7cacd8d23f7081a37c808b3490f3abe",
+      "bytes": 2075
+    },
+    "disposition": "RETAINED_FAILED_OR_SUPERSEDED_PREPARATION"
+  },
+  {
+    "run_id": "s5_data_20260910T063500_v3",
+    "launch": {
+      "path": "/data/WSH/post-train/experiments/stage5/s5_data_20260910T063500_v3_launch.json",
+      "sha256": "bd1dd909f591c73987486085e1bb7f0de08cd4bf4a546506dab94e23e0d3354b",
+      "bytes": 449
+    },
+    "status_snapshot": {
+      "status": "PREPARED_UNVERIFIED",
+      "timestamp": "2026-09-10T06:36:08.843314+00:00"
+    },
+    "run": {
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T063500_v3/run.json",
+      "sha256": "bdabf91183f0dfa611640818ec8e809c9864fe6d74d041fb5a9d5cb043751fd4",
+      "bytes": 2120
+    },
+    "disposition": "RETAINED_FAILED_OR_SUPERSEDED_PREPARATION"
+  },
+  {
+    "run_id": "s5_data_20260910T064143_v4",
+    "launch": {
+      "path": "/data/WSH/post-train/experiments/stage5/s5_data_20260910T064143_v4_launch.json",
+      "sha256": "a61a9c5237f9714faa361d358370f228c0cf9d3c27a04d23756a900feb41203d",
+      "bytes": 449
+    },
+    "status_snapshot": {
+      "status": "PREPARED_UNVERIFIED",
+      "timestamp": "2026-09-10T06:42:51.874725+00:00"
+    },
+    "run": {
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/run.json",
+      "sha256": "c7a15a4f3ea1a7f80acea95a60f1fe521d9cb124ff78c92bbd21d6b0229a7193",
+      "bytes": 2156
+    },
+    "disposition": "FROZEN_CURRENT"
+  }
+]

@@ -1,0 +1,181 @@
+{
+  "sources": [
+    {
+      "source": "medical_o1",
+      "revision": "fc2c9e8a37b38f38da6d449564a8c350b244aef4",
+      "url": "https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT/resolve/fc2c9e8a37b38f38da6d449564a8c350b244aef4/medical_o1_sft_Chinese.json",
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage1/raw/medical_o1.json",
+      "sha256": "e64b1426723b63899287236d20e9bbaec9f185e1ce4b24e9b61f610facb4369a",
+      "bytes": 50634791,
+      "raw_count": 20171,
+      "fields": [
+        "Question",
+        "Complex_CoT",
+        "Response"
+      ],
+      "purpose": "source/exclusion",
+      "source_split": "medical_o1"
+    },
+    {
+      "source": "huatuo",
+      "revision": "4077ffaeb123e49b8b8a0283f42957a5570a52ce",
+      "url": "https://huggingface.co/datasets/FreedomIntelligence/HuatuoGPT2-SFT-GPT4-140K/resolve/4077ffaeb123e49b8b8a0283f42957a5570a52ce/HuatuoGPT2-GPT4-SFT-140K.json",
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage1/raw/huatuo.json",
+      "sha256": "8fbd78692ea9b80727c9e94bfd0eaacc283fe03fdec8e7730bdb2bc550a975be",
+      "bytes": 245833100,
+      "raw_count": 142248,
+      "fields": [
+        "id",
+        "conversations"
+      ],
+      "purpose": "source/exclusion",
+      "source_split": "huatuo"
+    },
+    {
+      "source": "cmb_test",
+      "revision": "935fbc09edf1303d89872b21265ff597f426ac0d",
+      "url": "https://huggingface.co/datasets/FreedomIntelligence/CMB/resolve/935fbc09edf1303d89872b21265ff597f426ac0d/CMB-Exam/CMB-test/CMB-test-choice-question-merge.json",
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage1/raw/cmb_test.json",
+      "sha256": "99e6e858dd1955fe2b27fd1da75a7be8fbf6d27059fdb8cf61bc28383a68129c",
+      "bytes": 6009783,
+      "raw_count": 11200,
+      "fields": [
+        "id",
+        "exam_type",
+        "exam_class",
+        "exam_subject",
+        "question",
+        "question_type",
+        "option"
+      ],
+      "purpose": "source/exclusion",
+      "source_split": "cmb_test"
+    },
+    {
+      "source": "cmexam_train",
+      "revision": "fadb22c89beb1b7115dc36460ba792eb96b7b972",
+      "url": "https://raw.githubusercontent.com/williamliujl/CMExam/fadb22c89beb1b7115dc36460ba792eb96b7b972/data/train.csv",
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage1/raw/cmexam_train.csv",
+      "sha256": "3d6ca5e2499c510956534740c95179c483d9d47d2531e39fc5069333ffd23724",
+      "bytes": 40576549,
+      "raw_count": 54497,
+      "fields": [
+        "Question",
+        "Options",
+        "Answer",
+        "Explanation"
+      ],
+      "purpose": "source/exclusion",
+      "source_split": "cmexam_train"
+    },
+    {
+      "source": "cmexam_val",
+      "revision": "fadb22c89beb1b7115dc36460ba792eb96b7b972",
+      "url": "https://raw.githubusercontent.com/williamliujl/CMExam/fadb22c89beb1b7115dc36460ba792eb96b7b972/data/val.csv",
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage1/raw/cmexam_val.csv",
+      "sha256": "58cc9776b2f17fdc3a235ceec9ae153ee3f617703293dda661c6decbffb1f190",
+      "bytes": 5126392,
+      "raw_count": 6811,
+      "fields": [
+        "Question",
+        "Options",
+        "Answer",
+        "Explanation"
+      ],
+      "purpose": "source/exclusion",
+      "source_split": "cmexam_val"
+    },
+    {
+      "source": "cmexam_test",
+      "revision": "fadb22c89beb1b7115dc36460ba792eb96b7b972",
+      "url": "https://raw.githubusercontent.com/williamliujl/CMExam/fadb22c89beb1b7115dc36460ba792eb96b7b972/data/test_with_annotations.csv",
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage1/raw/cmexam_test.csv",
+      "sha256": "e998f69b3f8108bf08bcb8cc9a2a6ed276afeabde6ba3caa3015789b1f6fd407",
+      "bytes": 5857392,
+      "raw_count": 6811,
+      "fields": [
+        "Question",
+        "Options",
+        "Answer",
+        "Explanation",
+        "Disease Group",
+        "Area of Competency",
+        "Clinical Department",
+        "Medical Discipline",
+        "Difficulty level"
+      ],
+      "purpose": "source/exclusion",
+      "source_split": "cmexam_test"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage5/raw/6c8ece46097dae736c6805dd3b831e1a38c08971/CMB-test-choice-answer.json",
+      "sha256": "42130b20f7660a83dd92f3c005eb6a8ef1221c98d9b27d3351204143944b532f",
+      "bytes": 2601052,
+      "url": "https://raw.githubusercontent.com/FreedomIntelligence/CMB/6c8ece46097dae736c6805dd3b831e1a38c08971/data/CMB-test-choice-answer.json",
+      "revision": "6c8ece46097dae736c6805dd3b831e1a38c08971",
+      "raw_count": 11200,
+      "fields": [
+        "id",
+        "exam_type",
+        "exam_class",
+        "exam_subject",
+        "question_type",
+        "answer"
+      ],
+      "purpose": "gold_key"
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage5/raw/6c8ece46097dae736c6805dd3b831e1a38c08971/CMB-Clin-qa.json",
+      "sha256": "fc4d8d2dbfe7f647e257ceefddc9ab467576e2c4c2978fecba70f38d3c27c07e",
+      "bytes": 261255,
+      "archive_member": "CMB/CMB-Clin/CMB-Clin-qa.json",
+      "archive_sha256": "c2e4288127fa5e6c03cc3659d893b0bbb19e699f74fdadce8e7fa10ac5bfdd94",
+      "revision": "6c8ece46097dae736c6805dd3b831e1a38c08971",
+      "raw_count": 74,
+      "fields": [
+        "id",
+        "title",
+        "description",
+        "QA_pairs"
+      ],
+      "purpose": "clinical_source"
+    }
+  ],
+  "input_hashes": {
+    "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/inputs.json",
+    "sha256": "7d9796f9927e24cf8ec3983316f6fd3d3c3a154f5a08889a6676d5402acda245",
+    "bytes": 6232
+  },
+  "used_sft_train": 20000,
+  "used_sft_validation": 1000,
+  "rl_pool": 15000,
+  "monitor": 512,
+  "selection": 1024,
+  "actual_cmb_schema": {
+    "exam_type": 6,
+    "exam_class": 28,
+    "exam_subject": 173,
+    "source_question_types": {
+      "单项选择题": 9999,
+      "多项选择题": 1190,
+      "C型选择题": 11
+    },
+    "six_option_questions": 42,
+    "answer_id_join": "11200/11200",
+    "metadata_type_discrepancies": 11
+  },
+  "clinical_cases": 74,
+  "clinical_questions": 208,
+  "final_counts": {
+    "cmexam_test_full": 6811,
+    "cmexam_test_scorable": 6809,
+    "cmexam_test_clean": 6732,
+    "cmexam_sota_probe_512": 512,
+    "cmb_exam_clean_2000": 2000,
+    "cmb_sota_probe_280": 280,
+    "cmb_clin": 208,
+    "open_qa_retention_200": 200,
+    "open_qa_sota_probe_100": 100,
+    "safety_slice": 111
+  }
+}

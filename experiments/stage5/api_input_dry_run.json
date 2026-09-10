@@ -1,0 +1,53 @@
+{
+  "timestamp": "2026-09-10T06:45:27.773080+00:00",
+  "status": "INPUTS_READY_NO_CALLS",
+  "requests": 1100,
+  "request_file": {
+    "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/requests/external_probe_all.jsonl",
+    "sha256": "a8c0420be739ea38e2eea4bca46073fcbb6ad15fb3130c48c5a81a71682d4325",
+    "bytes": 954491
+  },
+  "tracks": {
+    "cmexam_sota_probe_512": {
+      "requests": 512,
+      "input_characters_total": 83290,
+      "maximum_request_characters": 372
+    },
+    "cmb_sota_probe_280": {
+      "requests": 280,
+      "input_characters_total": 43697,
+      "maximum_request_characters": 321
+    },
+    "cmb_clin": {
+      "requests": 208,
+      "input_characters_total": 146704,
+      "maximum_request_characters": 1831
+    },
+    "open_qa_sota_probe_100": {
+      "requests": 100,
+      "input_characters_total": 16651,
+      "maximum_request_characters": 406
+    }
+  },
+  "answer_or_reference_fields_exported": false,
+  "actual_cost": 0,
+  "model_id": null,
+  "provider": null,
+  "token_and_monetary_budget": "Pending provider/model/output-cap selection; characters are not billed tokens",
+  "output_token_envelopes": [
+    {
+      "cap_per_request": 512,
+      "maximum_output_tokens": 563200
+    },
+    {
+      "cap_per_request": 1024,
+      "maximum_output_tokens": 1126400
+    },
+    {
+      "cap_per_request": 2048,
+      "maximum_output_tokens": 2252800
+    }
+  ],
+  "envelope_note": "Illustrative uniform caps only; no decoding setting has been selected. Provider reasoning tokens/retries may add cost.",
+  "stage5_status": "NOT_STARTED"
+}

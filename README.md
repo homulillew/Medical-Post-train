@@ -15,11 +15,11 @@ and all eight verifier gates passing. Measured train-sample accuracy is 51.775%,
 mixed groups 53.1%, and truncation 0%. Stage2 performed no policy optimization.
 Stage 3 is **DONE**:496 newly generated groups,256 accepted mixed and1 retained overflow,
 with1.9375× measured amplification and all nine verifier gates passing.
-Stage 4 is **FULL_RUNNING and incomplete**: Vanilla committed2424/5000 groups,
-303 windows/606 optimizer steps. It stopped on a GPU-residue guard before the
-next actor update. Boundary recovery verification passed in17.84 seconds; the
-detached supervisor now waits for another project's GPU evaluation to release
-approximately5GB (snapshot2026-09-10 14:11 Asia/Shanghai). Dynamic remains at0/5000.
+Stage 4 is **FULL_RUNNING and incomplete**: Vanilla committed2496/5000 groups,
+312 windows/624 optimizer steps (snapshot2026-09-10 14:46 Asia/Shanghai).
+Boundary recovery verification passed in17.84 seconds. Training resumed and the
+first resumed window passed exact retained-rollout and native-state continuity
+checks; the persistent queue is active. Dynamic remains at0/5000.
 An explicit operational restore wrapper avoids rehashing historical payloads on
 every restart; the full acceptance audit remains mandatory. The49 frozen execution
 files and scientific config remain unchanged; complete inflight rollout and
@@ -27,6 +27,12 @@ failure evidence are retained. Latest completed monitor512 at2048 groups is
 62.89% versus55.08% SFT; these are intermediate validation results. Readiness
 for Stage5 remains NO. See the current progress/recovery artifacts below.
 Stage 5–6 remain **NOT_STARTED**.
+Stage5 evaluation datasets are **prepared and frozen**: CMExam official6811
+(6809 scorable), CMB2000, clinical74 cases/208 questions, retention200, and a
+111-question source-risk slice. The external API probe has1100 requests;
+no API calls or project-model test evaluation have run. See the
+[dataset preparation report](docs/implementation/STAGE5_DATASET_PREPARATION_REPORT.md)
+and [frozen manifest](experiments/stage5/dataset_freeze_v1.json).
 No examination test scoring has run. Current stage status is recorded in
 [`project_state.json`](project_state.json).
 
