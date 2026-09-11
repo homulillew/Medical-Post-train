@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-09-11T02:25:16.607319+00:00",
+  "incident": {
+    "path": "/data/WSH/post-train/experiments/stage4/vanilla_formal_incident_002.json",
+    "sha256": "1ff0e0b6fabd527554627160aeeba969cf4aeaed9cbbb87bd706c275bfd91796",
+    "bytes": 6123
+  },
+  "recovery": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0402/recovery/002/recovery.json",
+    "sha256": "8e049f4925da06b8e211a5b634647f898884e15409a08b89fb7914a28725d180",
+    "bytes": 462775
+  },
+  "action": "Adopt complete renamed native actor transaction; no optimizer replay; validate reload then sync",
+  "pending_checkpoint": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0402/checkpoint/COMMITTED.json",
+    "sha256": "42f7f8b7c9350a9bb29b33602712e21b3169e9478d4d923f2a30d29d8dcae637",
+    "bytes": 2988
+  },
+  "optimizer_steps_to_reexecute": 0
+}

@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-09-11T02:33:09.006172+00:00",
+  "result": "RECOVERY_VERIFIED_TRAINING_CONTINUES",
+  "artifacts": [
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/attempt_003/operational_source.zip",
+      "sha256": "50e326b784e2497dfc8365504934b64369b401ce58b2aaac6e89fb90648cf8fa",
+      "bytes": 4350
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/attempt_003/operational_runtime.json",
+      "sha256": "a75972657d24b15070a6deddbaad5306d42182a5a48e6b1ed90815e591afab1b",
+      "bytes": 1256
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/attempt_003/command.json",
+      "sha256": "7ca2b2306403dd85c8081759a63624573d1abac3d021f45c1ba45979c0b0c105",
+      "bytes": 337
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/attempt_003/launch.json",
+      "sha256": "863c716afef251158c9df67a87f090f3efcdf502dc833b7bb89e6d5af52d1746",
+      "bytes": 92
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/attempt_003/environment.json",
+      "sha256": "d0a14aa4b869c0f91dba5392f84cac93f5bf87f6208a39c461d93e72b0b984f9",
+      "bytes": 7848
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/attempt_003/resume_start.json",
+      "sha256": "58c69cac9e5c34a569a2809cc336a71da80efac3586fc7bbeb3e603363916422",
+      "bytes": 464838
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/validation/0384/summary.json",
+      "sha256": "351e3a9620ae3aa83c4c596d15ba22e8738e23504dfe92866e471d2df4d60e5c",
+      "bytes": 1078
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/gpu_release_system_case_002.json",
+      "sha256": "2a179988309f7327ede49fd1f534ef1b7ca81d27d48a3859c6e53b439b1501d5",
+      "bytes": 1793
+    }
+  ],
+  "frozen_source_files_verified": 121,
+  "active_worker_pid": 2811475,
+  "active_queue_pid": 2811546,
+  "api_judge_remains_stopped": true
+}

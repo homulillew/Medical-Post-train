@@ -1,0 +1,126 @@
+{
+  "timestamp": "2026-09-11T02:22:59.452593+00:00",
+  "run_id": "s4_formal_vanilla_20260909T155928_24aec5",
+  "window": "0402",
+  "previous_state": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/checkpoint.json",
+    "sha256": "4d0a71de57e9de30b8f0ca39a7b082c7f9218bb6f5fb3060cdef43c0be8250e9",
+    "bytes": 462536
+  },
+  "pending_before": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0402/state_before.json",
+    "sha256": "019df0da68d8ca7694e489cf5627a843d90cab0b97988713d32e4b09528c0508",
+    "bytes": 449257
+  },
+  "preserved_sources": [
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0402/batches/000/dispositions.json",
+      "sha256": "302385d39a5710d2df82d4db550a01ba667e7b9804eb4ddecde4e3fca1a2ca31",
+      "bytes": 3139
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0402/batches/000/raw.json",
+      "sha256": "aa11d7d8bc807b942f521604a3bd6148c6820ca1de299a0f456bdaec5c6f8f56",
+      "bytes": 605105
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0402/batches/000/reservation.json",
+      "sha256": "079f0048500dbfd037985e791a28004d054b76188b02ec284925c61f923beb00",
+      "bytes": 15455
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0402/batches/000/reward_runtime.json",
+      "sha256": "38b9991eed3d4891fc4aae5118d390418b42222dd30e684f3c19673541f7c105",
+      "bytes": 36
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0402/batches/000/scored.json",
+      "sha256": "50c0eb8d739a81cae9878293567a042e46cfa21cd55c5a3ef4f6079e5be53adc",
+      "bytes": 364857
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0402/batches/000/semantic_encoding.json",
+      "sha256": "cb98ea1ecb581a33a6251747dbba0caacd7f17c07f959553579052311da30fb4",
+      "bytes": 51456
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0402/batches/000/semantic_vectors.npy",
+      "sha256": "82fcbda8ccaae7641e0348fefe6705e623ad2b8de3e84a98019d677ef71a24f7",
+      "bytes": 163968
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0402/selection.json",
+      "sha256": "215d40f4c220ea4e0422805a17101e0815530ad56485224ac6054281ce23dc98",
+      "bytes": 640012
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0402/state_before.json",
+      "sha256": "019df0da68d8ca7694e489cf5627a843d90cab0b97988713d32e4b09528c0508",
+      "bytes": 449257
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0402/rollout_metrics.json",
+      "sha256": "1a34e54d33bd7f8f8650db32e794105bdda45229a9913d376d6b17634a64ec07",
+      "bytes": 1210
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0402/update/update.json",
+      "sha256": "237479ac341ba5c42db3fea1cea6ee77b1d13dac8a5d66fdd19584586059f7b4",
+      "bytes": 2634
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0402/update/old_frozen.json",
+      "sha256": "df8278e209370a479cc7d0780e0fb16c5533d79ad4e9aa004f966dd88c2c0e2e",
+      "bytes": 3099
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0402/actor_result.json",
+      "sha256": "c4a98afdf4f2189b81c344c35c9903afe8f5d57bd5676f7db5f9ff835a9e6025",
+      "bytes": 3321
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0402/checkpoint/COMMITTED.json",
+      "sha256": "42f7f8b7c9350a9bb29b33602712e21b3169e9478d4d923f2a30d29d8dcae637",
+      "bytes": 2988
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0402/checkpoint/controller.json",
+      "sha256": "652a9d6f0fea7a695dad9a9af4a99091cb60faeb9990e60987aab0ba304aed98",
+      "bytes": 462959
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0402/actor_exit.json",
+      "sha256": "157f803d4711eddc993ed62bab90274e702188175518a4bb34d5555b88c4e39f",
+      "bytes": 105
+    }
+  ],
+  "original_failure": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/attempt_002/failure.json",
+    "sha256": "78f9cb5c344e37638711d8dc7135a38deaf79fd031995cb1efc70b760c4bf7f0",
+    "bytes": 580
+  },
+  "run_status": {
+    "status": "FAILED",
+    "timestamp": "2026-09-10T09:56:14.566151+00:00"
+  },
+  "queue_status": {
+    "status": "NEEDS_DIAGNOSIS",
+    "timestamp": "2026-09-10T09:56:16.191465+00:00",
+    "error": "AssertionError(('vanilla', 'FAILED', 'No automatic scientific changes'))",
+    "next": "Inspect owner, heartbeat, retained failure, checkpoint and paid inflight work before recovery. Never restart a fresh replacement implicitly.",
+    "READY_FOR_STAGE5": "NO"
+  },
+  "project_status": "FULL_RUNNING",
+  "root_cause_assessment": "Consistent with delayed GPU teardown after clean actor exit; exact original NVML value was not logged.",
+  "frozen_source_count": 121,
+  "tests": {
+    "path": "/data/WSH/post-train/experiments/stage4/gpu_release_guard_tests_001.xml",
+    "sha256": "bdf0b800a5d712ef7a84bcc6375bc77b29394aba3933fd81d557ca2b73af3fdb",
+    "bytes": 2465
+  },
+  "decision": {
+    "path": "/data/WSH/post-train/docs/implementation/STAGE4_GPU_RELEASE_RECOVERY.md",
+    "sha256": "0b0340f587c0ec97112f25f8fe657ff7e2546f6213136633b414100085ee1519",
+    "bytes": 3572
+  }
+}

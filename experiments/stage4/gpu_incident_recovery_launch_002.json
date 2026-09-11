@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-09-11T02:24:15.326246+00:00",
+  "pid": 2811179,
+  "command": [
+    "/home/ubuntu/anaconda3/bin/python3.12",
+    "/data/WSH/post-train/scripts/resume_stage4_gpu_incident.py"
+  ],
+  "logs": "/data/WSH/medical-post-train-artifacts/stage4-formal-recovery/incident_002",
+  "source": {
+    "path": "/data/WSH/post-train/scripts/resume_stage4_gpu_incident.py",
+    "sha256": "73e850f6abf4f698f1739824aeab829b20d1eb48efc1a3908d358c558db2856d",
+    "bytes": 5969
+  }
+}

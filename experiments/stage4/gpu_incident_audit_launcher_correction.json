@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-09-11T02:25:06.314256+00:00",
+  "stopped_pid": 2811179,
+  "reason": "Path.resolve dereferenced the venv Python symlink; stopped read-only audit before worker/attempt creation and relaunched through the venv path.",
+  "training_started": false,
+  "original_launch": {
+    "path": "/data/WSH/post-train/experiments/stage4/gpu_incident_recovery_launch_002.json",
+    "sha256": "407ea642258f2d40e4b63bc573f35ee87ea858dd3ace8239a14352422efe1fe6",
+    "bytes": 483
+  }
+}

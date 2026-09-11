@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-09-11T02:25:17.833279+00:00",
+  "pid": 2811546,
+  "worker_pid": 2811475,
+  "command": [
+    "/data/WSH/post-train/.venv-train/bin/python",
+    "/data/WSH/post-train/scripts/stage4_queue_runtime.py"
+  ],
+  "logs": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/attempt_003/queue",
+  "runtime": {
+    "path": "/data/WSH/post-train/scripts/stage4_queue_runtime.py",
+    "sha256": "201498c69362f0956a8ac521664548fddbc55206490e90bf0f4f2bea05773662",
+    "bytes": 1454
+  }
+}

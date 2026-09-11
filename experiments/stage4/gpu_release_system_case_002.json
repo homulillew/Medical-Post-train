@@ -1,0 +1,38 @@
+{
+  "case_id": "S4-GPU-RELEASE-002",
+  "run_id": "s4_formal_vanilla_20260909T155928_24aec5",
+  "stage": 4,
+  "category": "SYSTEM_CASE",
+  "subtype": "post_actor_gpu_release_assertion",
+  "created_at": "2026-09-11T02:33:08.905126+00:00",
+  "observation": "Actor exited0 after optimizer steps805/806 and saved checkpoint, but immediate GPU-release assertion failed before controller commit; unattended run remained down overnight.",
+  "hypothesis": "Delayed CUDA/driver cleanup after process exit; original failing NVML reading unavailable.",
+  "alternative_explanations": [
+    "Another transient GPU allocation cannot be excluded from the retained failure record."
+  ],
+  "resolution": "Bounded real-NVML wait with original4GiB threshold; same-run native checkpoint adoption without optimizer replay; one fresh committed window verified.",
+  "formal_training_groups_at_verified_recovery": 3232,
+  "stage_complete": false,
+  "artifact_refs": [
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/vanilla_formal_incident_002.json",
+      "sha256": "1ff0e0b6fabd527554627160aeeba969cf4aeaed9cbbb87bd706c275bfd91796",
+      "bytes": 6123
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/vanilla_formal_resume_verified_002.json",
+      "sha256": "cb7ee55cddfd45ef82f03855b48feef8609352c25345186afa02518f34bfb475",
+      "bytes": 1184
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/vanilla_formal_fresh_guard_verified_002.json",
+      "sha256": "de13ca006f1783d59fb393ff113c7e0330087de9f033e3abe85d90b243988951",
+      "bytes": 952
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/gpu_release_guard_tests_001.xml",
+      "sha256": "bdf0b800a5d712ef7a84bcc6375bc77b29394aba3933fd81d557ca2b73af3fdb",
+      "bytes": 2465
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "result": "PASS",
+  "timestamp": "2026-09-11T02:29:38.068398+00:00",
+  "run_id": "s4_formal_vanilla_20260909T155928_24aec5",
+  "worker_pid": 2811475,
+  "queue_pid": 2811546,
+  "adopted_window": "0402",
+  "committed_training_groups": 3224,
+  "optimizer_steps": 806,
+  "optimizer_steps_reexecuted": 0,
+  "original_rollout_selection_update_checkpoint_unchanged": true,
+  "commit": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0402/commit.json",
+    "sha256": "5f99f4810d0f408c5913d0f37d6eded902b016026a0a30f9e7bc05dd975b2443",
+    "bytes": 929133
+  },
+  "reload": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0402/recovered_actor/result.json",
+    "sha256": "b600a1f5f32a54d6bbe937053df9c2c56360e489da11cbfdfc77c3970dcf7743",
+    "bytes": 1324
+  },
+  "guard_receipts": [
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0402/gpu_release_observations/1789093768121387048.json",
+      "sha256": "328b01d640332b43d867c0e03af2b39a7020e60e3fd5da3e8b918d742b851345",
+      "bytes": 377
+    }
+  ]
+}

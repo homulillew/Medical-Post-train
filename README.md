@@ -15,16 +15,19 @@ and all eight verifier gates passing. Measured train-sample accuracy is 51.775%,
 mixed groups 53.1%, and truncation 0%. Stage2 performed no policy optimization.
 Stage 3 is **DONE**:496 newly generated groups,256 accepted mixed and1 retained overflow,
 with1.9375× measured amplification and all nine verifier gates passing.
-Stage 4 is **FULL_RUNNING and incomplete**: Vanilla committed2496/5000 groups,
-312 windows/624 optimizer steps (snapshot2026-09-10 14:46 Asia/Shanghai).
-Boundary recovery verification passed in17.84 seconds. Training resumed and the
-first resumed window passed exact retained-rollout and native-state continuity
-checks; the persistent queue is active. Dynamic remains at0/5000.
-An explicit operational restore wrapper avoids rehashing historical payloads on
-every restart; the full acceptance audit remains mandatory. The49 frozen execution
-files and scientific config remain unchanged; complete inflight rollout and
-failure evidence are retained. Latest completed monitor512 at2048 groups is
-62.89% versus55.08% SFT; these are intermediate validation results. Readiness
+Stage 4 is **FULL_RUNNING and incomplete**: Vanilla committed3232/5000 groups,
+404 windows/808 optimizer steps (snapshot2026-09-11 10:31 Asia/Shanghai).
+A GPU-release assertion stopped training at3216 groups on September10 17:56;
+the overnight failure and stale project status are retained. The saved next
+checkpoint was adopted without optimizer replay, and a fresh window passed.
+The persistent queue is active; Dynamic remains at0/5000. See the
+[incident, recovery and progress analysis](docs/implementation/STAGE4_GPU_RELEASE_RECOVERY.md).
+Operational wrappers restore the audited boundary and wait at most60 seconds for
+real actor GPU release, preserving the original4GiB threshold. The full acceptance
+audit remains mandatory. The49 frozen execution files and scientific config
+remain unchanged; complete inflight rollout and failure evidence are retained.
+Latest completed monitor512 at3072 groups is64.06% versus55.08% SFT;
+these are intermediate validation results. Readiness
 for Stage5 remains NO. See the current progress/recovery artifacts below.
 Stage 5–6 remain **NOT_STARTED**.
 Stage5 evaluation datasets are **prepared and frozen**: CMExam official6811

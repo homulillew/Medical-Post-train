@@ -1,0 +1,24 @@
+{
+  "result": "PASS",
+  "timestamp": "2026-09-11T02:31:48.149450+00:00",
+  "window": "0403",
+  "training_groups": 3232,
+  "optimizer_steps": 808,
+  "commit": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0403/commit.json",
+    "sha256": "c4d017ff66df3dcae06a678bfec5f053a0dcbfb8a18a17caf22b7a3c3be593b0",
+    "bytes": 931426
+  },
+  "resume": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0403/actor/resume_receipt.json",
+    "sha256": "343eed9a4b2f80bae3a1c7df3e6d91971f260dc2029e7a110e25592864495093",
+    "bytes": 464846
+  },
+  "guards": [
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0403/gpu_release_observations/1789093900906953337.json",
+      "sha256": "0452cbfdbe76fdd4a546e53d4702f15d3c2dea93284d2a35f77ef4b22f53c545",
+      "bytes": 378
+    }
+  ]
+}
