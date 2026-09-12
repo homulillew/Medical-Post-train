@@ -1,19 +1,19 @@
 {
   "status": "FULL_RUNNING",
-  "variant": "vanilla",
-  "run_id": "s4_formal_vanilla_20260909T155928_24aec5",
-  "owner_pid": 2811475,
+  "variant": "dynamic",
+  "run_id": "s4_formal_dynamic_20260909T155929_18b61a",
+  "owner_pid": 3011277,
   "pid": 2811546,
-  "timestamp": "2026-09-11T02:33:23.687006+00:00",
+  "timestamp": "2026-09-12T06:18:20.396640+00:00",
   "committed": {
-    "policy_version": "622f0b905bffed64716e6c3e4c1ed5a2b5adca3b8bfd59825fe6e63d067385f5",
-    "cursor": 3232,
-    "policy_windows": 404,
-    "optimizer_steps": 808,
-    "training_groups": 3232,
-    "generated_groups": 3232,
-    "output_tokens": 3459192,
-    "prompt_tokens": 433450
+    "policy_version": "52a52b208d643acbf459e865333cf27a920c023169ea6661e5f137115a977d1b",
+    "cursor": 6632,
+    "policy_windows": 287,
+    "optimizer_steps": 574,
+    "training_groups": 2296,
+    "generated_groups": 6632,
+    "output_tokens": 6983590,
+    "prompt_tokens": 893654
   },
   "READY_FOR_STAGE5": "NO"
 }

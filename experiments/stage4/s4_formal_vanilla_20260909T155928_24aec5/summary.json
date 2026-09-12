@@ -1,4 +1,6 @@
 {
+  "status": "FULL_PASS",
+  "run_id": "s4_formal_vanilla_20260909T155928_24aec5",
   "state": {
     "policy_version": "6d3ea0f40d1e3657b1feae5fd2f37cb68835fdbaf6d670ebf4193f7eebbe4eea",
     "cursor": 5000,
@@ -10013,70 +10015,6 @@
       "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31063": 1
     }
   },
-  "last_window": {
-    "generated_groups": 8,
-    "valid_generated_groups": 8,
-    "generated_trajectories": 32,
-    "selected_groups": 8,
-    "group_counts": {
-      "mixed": 4,
-      "all_wrong": 1,
-      "all_correct": 3
-    },
-    "correct_count_histogram": {
-      "3": 3,
-      "0": 1,
-      "4": 3,
-      "2": 1
-    },
-    "mixed_subtypes": {
-      "mixed_parsed_wrong": 4
-    },
-    "output_tokens": 8420,
-    "output_tokens_by_disposition": {
-      "selected": 8420
-    },
-    "prompt_tokens": 1068,
-    "logical_trajectory_prompt_tokens": 4272,
-    "sampling_amplification": 1.0,
-    "reward": {
-      "mean": 0.7038192410022022,
-      "std": 0.41060180644108313,
-      "min": 0.05,
-      "max": 0.9895308285951615,
-      "p05": 0.05,
-      "p50": 0.9693550422787667,
-      "p95": 0.9840414026379586,
-      "p99": 0.9883913590610028
-    },
-    "acc": 0.71875,
-    "semantic": 0.727821072563529,
-    "semantic_contribution": 0.07881924100220203,
-    "strict_format": 1.0,
-    "unparseable": 0.0,
-    "think_closure": 1.0,
-    "answer_closure": 1.0,
-    "truncation": 0.0,
-    "response_length": {
-      "mean": 263.125,
-      "std": 57.520512645490214,
-      "min": 153.0,
-      "max": 385.0,
-      "p05": 175.4,
-      "p50": 259.0,
-      "p95": 362.2,
-      "p99": 384.07
-    },
-    "sleep_seconds": 0.8424713336862624,
-    "wake_seconds": 1.1178257148712873,
-    "actor_process_seconds": 61.61667097499594,
-    "sleeping_memory_bytes": 1726939136,
-    "sync_seconds": 2.244638856034726,
-    "nvml_peak_bytes": 35178610688,
-    "allocated_peak_bytes": 2632574976,
-    "reserved_peak_bytes": 3030384640,
-    "remaining_at_peak_bytes": 13127188480,
-    "total_bytes": 48305799168
-  },
-  "timestamp": "2026-09-11T10:10:16.169103+00:00"
+  "mode": "formal",
+  "sampling_mode": "vanilla"
 }

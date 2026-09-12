@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-09-12T06:18:40.287499+00:00",
+  "stage4_status": "FULL_RUNNING",
+  "vanilla_verification": {
+    "path": "/data/WSH/post-train/experiments/stage4/vanilla_formal_verification.json",
+    "sha256": "a3809ce426991c355e78436e4eac2245c39cef247c4d5a19746043fd3c2de086",
+    "bytes": 738478
+  },
+  "vanilla_final_monitor": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/validation/0625/summary.json",
+    "sha256": "b0c8d410d3adc9e859397aab8025c05e5cd6bb5e248dc131316cf342209fdaaf",
+    "bytes": 1065
+  },
+  "dynamic_state": {
+    "training_groups": 2296,
+    "generated_groups": 6632,
+    "policy_windows": 287,
+    "optimizer_steps": 574,
+    "output_tokens": 6983590,
+    "prompt_tokens": 893654
+  },
+  "dynamic_monitor": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/validation/0257/summary.json",
+    "sha256": "6822bef008c67b038b32d3a2cc84e521d73dcd0bae03b9806aba0da031ad9e28",
+    "bytes": 1096
+  },
+  "dynamic_commit": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0286/commit.json",
+    "sha256": "d817546d5f6060e37a36c655c7f92a9c70935424c4fc10f6d500127d9deea0ab",
+    "bytes": 1284788
+  },
+  "api_judge_status": "PARTIAL_USER_STOPPED_BUDGET",
+  "stage5_status": "NOT_STARTED"
+}

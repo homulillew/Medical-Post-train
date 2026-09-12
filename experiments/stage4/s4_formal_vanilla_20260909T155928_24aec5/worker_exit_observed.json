@@ -1,0 +1,12 @@
+{
+  "pid": 2811475,
+  "observed_at": "2026-09-11T11:57:48.259193+00:00",
+  "alive": false,
+  "poll_interval_seconds": 5,
+  "launch": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/attempt_003/launch.json",
+    "sha256": "863c716afef251158c9df67a87f090f3efcdf502dc833b7bb89e6d5af52d1746",
+    "bytes": 92
+  },
+  "note": "Observed process termination after artifact sealing; timestamp is an observation, not an invented exact exit time"
+}
