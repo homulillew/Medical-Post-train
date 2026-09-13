@@ -1,0 +1,15 @@
+{
+  "pid": 3556545,
+  "command": [
+    "/data/WSH/post-train/.venv-analysis/bin/python",
+    "/data/WSH/post-train/scripts/finish_frontier_handoff.py"
+  ],
+  "timestamp": "2026-09-13T08:10:35.446708+00:00",
+  "script_sha256": "1976dd3dcbfd5e938e32c024e1bf39c8a0db2115d994fc43b8cfd1109c9f1866",
+  "actions": [
+    "Wait for existing diagnostic outcome",
+    "Build versioned machine handoff",
+    "Commit and push evidence if branch/index permit; no force push"
+  ],
+  "new_inference_or_training": false
+}
