@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-09-13T08:04:08.032776+00:00",
+  "scope": "Postformal scientific analysis and validation frontier diagnostic; no new training",
+  "phases": {
+    "A": "Both existing raw receipts PASS; queue finished, no repeated full verifier",
+    "B": "Rebuild exact group/token milestones and per-window sampling/cost/health/exposure using committed evidence",
+    "C": "Frozen disjoint1000 x3 final policies xG4; raw replay and paired bootstrap; zero updates",
+    "D": "Source instruction truncated; retain visible Random-3x constraints, no training and no invented protocol completion"
+  },
+  "narrative_owner": "ChatGPT/user; this agent supplies machine-readable evidence and handoff",
+  "scientific_sources_mutable": false,
+  "test_and_selection_inference_allowed": false,
+  "expected_resources": {
+    "gpu": "One RTX5880 48GB, sequential policies, engine gpu_memory_utilization .65",
+    "responses": 12000,
+    "output_token_cap": 12288000,
+    "expected_output_tokens_approx": 3000000,
+    "wall_time": "Several hours; estimate from observed completed batches, no shortened budget",
+    "cpu": "Read-only analysis; do not rerun full formal raw verifier"
+  },
+  "failure_policy": "Preserve failures; no silent retries or gate relaxation",
+  "owner_request_attachment_sha256": "a2b422076711421ed6df45868b20b0c57498e641ebad3adb4392f2d1852766bb"
+}
