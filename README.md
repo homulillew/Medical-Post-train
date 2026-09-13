@@ -15,16 +15,15 @@ and all eight verifier gates passing. Measured train-sample accuracy is 51.775%,
 mixed groups 53.1%, and truncation 0%. Stage2 performed no policy optimization.
 Stage 3 is **DONE**:496 newly generated groups,256 accepted mixed and1 retained overflow,
 with1.9375× measured amplification and all nine verifier gates passing.
-Stage 4 is **FULL_RUNNING and incomplete** (snapshot2026-09-12 14:16 Asia/Shanghai).
-Vanilla reached **5000/5000 groups**,625 windows/1250 optimizer steps, on
-September11 18:21; its full raw verification passed at21:39 and final checkpoint
-reload passed. [Verification receipt](experiments/stage4/vanilla_formal_verification.json).
-The queue automatically launched Dynamic at21:40. Dynamic has **2296/5000 accepted
-mixed groups (45.92%)**,287 windows/574 optimizer steps, from6632 generated groups:
-measured sampling amplification is2.89×, with6,983,590 generated output tokens.
-Its287 GPU-release observations have no timeouts. At the recent136 accepted
-groups/hour, remaining training/routine validation is roughly20 hours; final
-verification is additional and this is a rate estimate, not a completion guarantee.
+Stage 4 remains **incomplete** (snapshot 2026-09-13 13:49 Asia/Shanghai).
+Both Vanilla and Dynamic reached **5000/5000 training groups**, each with
+625 windows and 1250 optimizer steps. Vanilla's full raw verification passed;
+Dynamic's worker reports FULL_PASS and its full raw verification is still running.
+The queue state is `RAW_VERIFYING`; Stage 4 acceptance and reports remain pending.
+Dynamic generated **14,872 groups** for 5,000 accepted mixed groups (**2.9744×**
+group amplification), with **15,441,512 output tokens** and **2,001,832 prompt tokens**.
+See the [dated progress and evidence snapshot](experiments/stage4/progress_snapshot_20260913T054926Z.json)
+and [Vanilla verification receipt](experiments/stage4/vanilla_formal_verification.json).
 A GPU-release assertion stopped training at3216 groups on September10 17:56;
 the overnight failure and stale project status are retained. The saved next
 checkpoint was adopted without optimizer replay, and a fresh window passed.
@@ -34,11 +33,14 @@ Operational wrappers restore the audited boundary and wait at most60 seconds for
 real actor GPU release, preserving the original4GiB threshold. The full acceptance
 audit remains mandatory. The49 frozen execution files and scientific config
 remain unchanged; complete inflight rollout and failure evidence are retained.
-Vanilla's final monitor512 at5000 groups is67.58% versus55.08% SFT.
-Dynamic's latest monitor512 at2056 accepted groups is66.41%. These are monitoring
-validation results at different budgets; the controlled final comparison is pending.
-Readiness
-for Stage5 remains NO. See the current progress/recovery artifacts below.
+At the final 5000-group checkpoints, fixed monitor512 accuracy is **67.58% for
+Vanilla** and **68.55% for Dynamic**: a **0.98 percentage-point gain (5 questions)**.
+Dynamic consumed **17,443,344** rollout prompt-plus-output tokens versus Vanilla's
+**5,964,478** (**2.925×**). These counters exclude validation and optimizer compute;
+the ratio is not a GPU-hour or monetary-cost ratio. This single-seed validation
+result does not establish a compute-efficiency advantage or a held-out test gain.
+Final-budget checkpoints are reported without selecting an earlier validation peak.
+Readiness for Stage 5 remains **NO**.
 Stage 5–6 remain **NOT_STARTED**.
 Stage5 evaluation datasets are **prepared and frozen**: CMExam official6811
 (6809 scorable), CMB2000, clinical74 cases/208 questions, retention200, and a

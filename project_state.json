@@ -94,7 +94,7 @@
       ],
       "progress": {
         "vanilla_training_groups": 5000,
-        "dynamic_accepted_mixed_groups": 2296
+        "dynamic_accepted_mixed_groups": 5000
       },
       "verification_receipt": null,
       "stage_report": null,

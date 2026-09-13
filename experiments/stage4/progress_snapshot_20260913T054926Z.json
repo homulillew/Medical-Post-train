@@ -1,0 +1,177 @@
+{
+  "timestamp": "2026-09-13T05:49:26.646099+00:00",
+  "kind": "READ_ONLY_PROGRESS_SNAPSHOT",
+  "pair": {
+    "path": "/data/WSH/post-train/experiments/stage4/formal_pair.json",
+    "sha256": "95e2022605ff54ee5c264887e3d7a4421d4087d224b7dda8d85fe788cccd86b8",
+    "bytes": 15286
+  },
+  "queue": {
+    "status": "RAW_VERIFYING",
+    "variant": "dynamic",
+    "run_id": "s4_formal_dynamic_20260909T155929_18b61a",
+    "pid": 2811546,
+    "timestamp": "2026-09-13T04:11:52.617177+00:00",
+    "READY_FOR_STAGE5": "NO"
+  },
+  "project_stage4": {
+    "status": "FULL_RUNNING",
+    "run_ids": [
+      "s4_optimization_diagnostic_20260909T065945_66b040",
+      "s4_optimization_diagnostic_20260909T070249_a3a605",
+      "s4_smoke_dynamic_20260909T071807_adad34",
+      "s4_smoke_vanilla_20260909T070935_4a09cb",
+      "s4_smoke_vanilla_20260909T071222_ef95d2",
+      "s4_pilot_vanilla_20260909T075203_95a6e9",
+      "s4_pilot_dynamic_20260909T075204_3e449e",
+      "s4_recovery_a_20260909T153057_987d5a",
+      "s4_recovery_b_20260909T153059_e39b9b",
+      "s4_recovery_c_20260909T153059_f621ea",
+      "s4_formal_vanilla_20260909T155928_24aec5",
+      "s4_formal_dynamic_20260909T155929_18b61a"
+    ],
+    "progress": {
+      "vanilla_training_groups": 5000,
+      "dynamic_accepted_mixed_groups": 5000
+    },
+    "verification_receipt": null,
+    "stage_report": null,
+    "interview_story": null
+  },
+  "runs": {
+    "vanilla": {
+      "run_id": "s4_formal_vanilla_20260909T155928_24aec5",
+      "status": "FULL_PASS",
+      "state": {
+        "policy_version": "6d3ea0f40d1e3657b1feae5fd2f37cb68835fdbaf6d670ebf4193f7eebbe4eea",
+        "cursor": 5000,
+        "policy_windows": 625,
+        "optimizer_steps": 1250,
+        "training_groups": 5000,
+        "generated_groups": 5000,
+        "output_tokens": 5291850,
+        "prompt_tokens": 672628
+      },
+      "summary": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/summary.json",
+        "sha256": "36ebcc4070d159f733668e7bfc19bac88e94676433460471d7d9a7819cf61198",
+        "bytes": 718470
+      },
+      "final_monitor": {
+        "policy_version": "6d3ea0f40d1e3657b1feae5fd2f37cb68835fdbaf6d670ebf4193f7eebbe4eea",
+        "policy_windows": 625,
+        "optimizer_steps": 1250,
+        "training_groups": 5000,
+        "n": 512,
+        "accuracy": 0.67578125,
+        "strict_format": 0.998046875,
+        "answer_closure": 1.0,
+        "think_closure": 1.0,
+        "response_length": {
+          "mean": 243.0625,
+          "std": 59.40683357156818,
+          "min": 105.0,
+          "max": 549.0,
+          "p05": 156.65,
+          "p50": 237.0,
+          "p95": 348.0,
+          "p99": 408.0
+        },
+        "truncation": 0.0,
+        "cumulative_generated_prompt_tokens": 672628,
+        "cumulative_generated_logical_prompt_tokens": 2690512,
+        "cumulative_generated_output_tokens": 5291850,
+        "cumulative_generated_total_tokens": 5964478,
+        "validation_output_tokens": 124448,
+        "validation_prompt_tokens": 69019,
+        "seconds": 633.0454898634925,
+        "protocol": {
+          "path": "/data/WSH/post-train/experiments/stage4/formal_validation_protocol.json",
+          "sha256": "fa9f2a4b36659488ee64ee530104b3cc963c4c0c403480f13e5dc7cc7475fc36",
+          "bytes": 34602
+        },
+        "test_used": false,
+        "selection_used": false
+      },
+      "final_monitor_source": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/validation/0625/summary.json",
+        "sha256": "b0c8d410d3adc9e859397aab8025c05e5cd6bb5e248dc131316cf342209fdaaf",
+        "bytes": 1065
+      },
+      "full_verification": {
+        "path": "/data/WSH/post-train/experiments/stage4/vanilla_formal_verification.json",
+        "sha256": "a3809ce426991c355e78436e4eac2245c39cef247c4d5a19746043fd3c2de086",
+        "bytes": 738478
+      }
+    },
+    "dynamic": {
+      "run_id": "s4_formal_dynamic_20260909T155929_18b61a",
+      "status": "FULL_PASS",
+      "state": {
+        "policy_version": "6b7b95025da5a4dbb65594b5128f92cc24812f1a2422bc4384804984d9ba6dad",
+        "cursor": 14872,
+        "policy_windows": 625,
+        "optimizer_steps": 1250,
+        "training_groups": 5000,
+        "generated_groups": 14872,
+        "output_tokens": 15441512,
+        "prompt_tokens": 2001832
+      },
+      "summary": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/summary.json",
+        "sha256": "2d3dc3097920c4fb609207f6fb5efcb57d844bfe95f5888e0eff23ec8e759a06",
+        "bytes": 1427123
+      },
+      "final_monitor": {
+        "policy_version": "6b7b95025da5a4dbb65594b5128f92cc24812f1a2422bc4384804984d9ba6dad",
+        "policy_windows": 625,
+        "optimizer_steps": 1250,
+        "training_groups": 5000,
+        "n": 512,
+        "accuracy": 0.685546875,
+        "strict_format": 0.994140625,
+        "answer_closure": 0.998046875,
+        "think_closure": 0.998046875,
+        "response_length": {
+          "mean": 245.083984375,
+          "std": 67.9200096602596,
+          "min": 103.0,
+          "max": 1024.0,
+          "p05": 155.0,
+          "p50": 238.0,
+          "p95": 357.45,
+          "p99": 400.3399999999999
+        },
+        "truncation": 0.001953125,
+        "cumulative_generated_prompt_tokens": 2001832,
+        "cumulative_generated_logical_prompt_tokens": 8007328,
+        "cumulative_generated_output_tokens": 15441512,
+        "cumulative_generated_total_tokens": 17443344,
+        "validation_output_tokens": 125483,
+        "validation_prompt_tokens": 69019,
+        "seconds": 679.4076334666461,
+        "protocol": {
+          "path": "/data/WSH/post-train/experiments/stage4/formal_validation_protocol.json",
+          "sha256": "fa9f2a4b36659488ee64ee530104b3cc963c4c0c403480f13e5dc7cc7475fc36",
+          "bytes": 34602
+        },
+        "test_used": false,
+        "selection_used": false
+      },
+      "final_monitor_source": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/validation/0625/summary.json",
+        "sha256": "4cfd99b380700f0113395756340b1e7693e87c4f40853ecc9fe551fcb6855275",
+        "bytes": 1110
+      },
+      "full_verification": null
+    }
+  },
+  "comparison": {
+    "validation_accuracy_delta_percentage_points": 0.9765625,
+    "generated_total_token_ratio": 2.924538241234187,
+    "dynamic_generated_groups_per_training_group": 2.9744,
+    "test_used": false,
+    "checkpoint_selection_used": false,
+    "interpretation": "Single-seed monitoring validation: small final accuracy gain at substantially higher rollout token cost; no demonstrated compute-efficiency advantage. Stage acceptance and held-out evaluation remain pending."
+  }
+}

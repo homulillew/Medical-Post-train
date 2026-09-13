@@ -1,4 +1,6 @@
 {
+  "status": "FULL_PASS",
+  "run_id": "s4_formal_dynamic_20260909T155929_18b61a",
   "state": {
     "policy_version": "6b7b95025da5a4dbb65594b5128f92cc24812f1a2422bc4384804984d9ba6dad",
     "cursor": 14872,
@@ -19885,74 +19887,6 @@
       "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26126": 1
     }
   },
-  "last_window": {
-    "generated_groups": 24,
-    "valid_generated_groups": 24,
-    "generated_trajectories": 96,
-    "selected_groups": 8,
-    "group_counts": {
-      "mixed": 10,
-      "all_correct": 11,
-      "all_wrong": 3
-    },
-    "correct_count_histogram": {
-      "3": 4,
-      "4": 11,
-      "0": 3,
-      "2": 4,
-      "1": 2
-    },
-    "mixed_subtypes": {
-      "mixed_parsed_wrong": 10
-    },
-    "output_tokens": 22896,
-    "output_tokens_by_disposition": {
-      "selected": 7783,
-      "rejected_all_correct": 10014,
-      "rejected_all_wrong": 3259,
-      "overflow_eligible": 1840
-    },
-    "prompt_tokens": 3055,
-    "logical_trajectory_prompt_tokens": 12220,
-    "sampling_amplification": 3.0,
-    "reward": {
-      "mean": 0.6681688093269864,
-      "std": 0.4201760820880364,
-      "min": 0.0,
-      "max": 0.9916838556528093,
-      "p05": 0.05,
-      "p50": 0.9620186910033226,
-      "p95": 0.9881316386163236,
-      "p99": 0.9904262755811215
-    },
-    "acc": 0.6875,
-    "semantic": 0.6708287876099348,
-    "semantic_contribution": 0.06868964266031981,
-    "strict_format": 0.9895833333333334,
-    "unparseable": 0.010416666666666666,
-    "think_closure": 1.0,
-    "answer_closure": 1.0,
-    "truncation": 0.0,
-    "response_length": {
-      "mean": 238.5,
-      "std": 55.11748815031396,
-      "min": 105.0,
-      "max": 409.0,
-      "p05": 150.0,
-      "p50": 228.5,
-      "p95": 332.0,
-      "p99": 369.0999999999999
-    },
-    "sleep_seconds": 0.8477805047295988,
-    "wake_seconds": 1.1218378986231983,
-    "actor_process_seconds": 62.816353593952954,
-    "sleeping_memory_bytes": 1726939136,
-    "sync_seconds": 1.7255296232178807,
-    "nvml_peak_bytes": 35872768000,
-    "allocated_peak_bytes": 2632443904,
-    "reserved_peak_bytes": 3661627392,
-    "remaining_at_peak_bytes": 12433031168,
-    "total_bytes": 48305799168
-  },
-  "timestamp": "2026-09-13T02:30:38.600171+00:00"
+  "mode": "formal",
+  "sampling_mode": "dynamic"
 }
