@@ -1,0 +1,31 @@
+{
+  "result": "PASS",
+  "timestamp": "2026-09-13T15:04:55.824206+00:00",
+  "old_pid": 3644926,
+  "new_pid": 3649651,
+  "restored_groups": 32,
+  "restored_optimizer_steps": 8,
+  "next_committed_optimizer_steps": 10,
+  "optimizer_replayed": false,
+  "controller_rng_scheduler_optimizer_continuous": true,
+  "pause": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/pause_ready.json",
+    "sha256": "5587df0631a548659e7a0e1310b6329bc1b94f2de5f801c3a6d4dce03e9c4fc1",
+    "bytes": 10444
+  },
+  "restart": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/attempt_002/resume_start.json",
+    "sha256": "cc1fb187585e706940de247393f0b10b595a605bc4096e75f54e80e98ef815f0",
+    "bytes": 10444
+  },
+  "native_resume": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/windows/0004/actor/resume_receipt.json",
+    "sha256": "b77ffe632ea654fe5ae2157452304d149340e580442392dde673890505d27804",
+    "bytes": 9345
+  },
+  "frozen_selection_schedule": {
+    "path": "/data/WSH/post-train/experiments/stage5/aux_random3x_dynamic_schedule_v1.json",
+    "sha256": "b28471844abc022365cbb636b5e3e31a85b79666129563bf36b52ef284ec1cb4",
+    "bytes": 540947
+  }
+}

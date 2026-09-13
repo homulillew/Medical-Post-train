@@ -1,0 +1,39 @@
+{
+  "timestamp": "2026-09-13T15:05:48.045430+00:00",
+  "status": "INCOMPLETE_RUNNING",
+  "success_stop_conditions_met": false,
+  "run_id": "s4_aux_random3x_20260913T144225_cb7dc9",
+  "committed": {
+    "policy_version": "c294f7b6b259b9d4cba225a6cb3442141d232fd59b3fe0ea6db395e316273d73",
+    "cursor": 88,
+    "policy_windows": 5,
+    "optimizer_steps": 10,
+    "training_groups": 40,
+    "generated_groups": 88,
+    "output_tokens": 86953,
+    "prompt_tokens": 12254
+  },
+  "integration": {
+    "path": "/data/WSH/post-train/experiments/stage5/aux_random3x_integration_v1.json",
+    "sha256": "81b9d403eb2ae0560d190185bd9fbfb14fb15620b45a984944980cf34d686363",
+    "bytes": 21238
+  },
+  "resume": {
+    "path": "/data/WSH/post-train/experiments/stage5/aux_random3x_resume_v1.json",
+    "sha256": "0917b1796141407142094be562ee308d3d761c2bb71151a375076731a6e765e3",
+    "bytes": 1283
+  },
+  "pending": [
+    "Full512 training groups",
+    "Full auxiliary raw verifier and final reload",
+    "Four-policy independent evaluation and paired analysis",
+    "Final causal-ablation machine handoff and publication"
+  ],
+  "supervisor_pid": 3644905,
+  "worker_pid": 3649651,
+  "stage4_state": "FULL_PASS",
+  "Stage5": "NOT_STARTED",
+  "selection1024_untouched": true,
+  "final_tests_untouched": true,
+  "paid_api_new_calls": 0
+}
