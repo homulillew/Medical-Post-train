@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-09-13T14:30:38.088147+00:00",
+  "epsilon": 1e-06,
+  "definitions": {
+    "correctness_contrast_density": "mixed selected groups / all selected groups",
+    "nonzero_advantage_density": "groups with any trajectory abs(A)>1e-6 / all selected groups",
+    "correctness_discriminative_density": "mixed groups whose mean A(correct)>mean A(wrong) / all selected groups",
+    "effective_signal_amplification": "Dynamic discriminative density / Vanilla discriminative density; not gradient amplification"
+  },
+  "report_reward_std_ddof": 0,
+  "native_advantage_std_ddof": 1,
+  "advantage_weighting": "One outcome advantage per trajectory; no length weighting",
+  "protocol_frozen_before_new_analysis": true
+}

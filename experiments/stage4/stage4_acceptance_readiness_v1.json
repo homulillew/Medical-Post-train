@@ -1,0 +1,96 @@
+{
+  "timestamp": "2026-09-13T14:30:38.088147+00:00",
+  "scope": "READINESS_AUDIT_NOT_FULL_VERIFIER_PASS",
+  "current_state": "FULL_PASS",
+  "READY_FOR_STAGE5": "NO",
+  "full_verifier_can_pass": false,
+  "full_verifier_run": false,
+  "reason_not_run": "Known missing report/manual/deliverables gate; avoid redundant full checkpoint audit",
+  "verifier": {
+    "path": "/data/WSH/post-train/scripts/verify_stage4.py",
+    "sha256": "1485b522185436548ffb903ecd042c2e338f9db82298abc23ae1c9c0f953e4ab",
+    "bytes": 27308
+  },
+  "passed_evidence": {
+    "vanilla": {
+      "raw_receipt": {
+        "path": "/data/WSH/post-train/experiments/stage4/vanilla_formal_verification.json",
+        "sha256": "a3809ce426991c355e78436e4eac2245c39cef247c4d5a19746043fd3c2de086",
+        "bytes": 738478
+      },
+      "native_reload": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/final_reload/result.json",
+        "sha256": "6b1abadce663f28a09625604222b4dc556e5ae02fa07a275f613f78053a372f7",
+        "bytes": 1552
+      }
+    },
+    "dynamic": {
+      "raw_receipt": {
+        "path": "/data/WSH/post-train/experiments/stage4/dynamic_formal_verification.json",
+        "sha256": "27c884891bad143513e2c51b9b8a9fd04fe3f428663b62db3416c67b2a8dcb3d",
+        "bytes": 1462346
+      },
+      "native_reload": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/final_reload/result.json",
+        "sha256": "9cde7af83543a5fa3983a48efed7a904594a23d30fbe8899a12258c560bef25e",
+        "bytes": 1552
+      }
+    }
+  },
+  "additional_existing_evidence": {
+    "recovery_fault_injections.json": {
+      "path": "/data/WSH/post-train/experiments/stage4/recovery_fault_injections.json",
+      "sha256": "b112f409cad9830ea89d6da79431ba1563482d4d4a0d1a15337338de2c86abb9",
+      "bytes": 29084
+    },
+    "pilot_review.json": {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_review.json",
+      "sha256": "b800a99037c56eec59676108878b81fcccaceb79a8a598204de96e850f2b50bc",
+      "bytes": 1257
+    },
+    "formal_checkpoint_index.json": {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_checkpoint_index.json",
+      "sha256": "5aed298dd548c51b19b9b5778ff41b1e2965791c110b517f054d236e1da2f581",
+      "bytes": 45255
+    },
+    "formal_plots/manifest.json": {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/manifest.json",
+      "sha256": "ee6a72c59ee4ea03687e151a161ae9d5cf19d05f77cfee040391cedebcdb9428",
+      "bytes": 7700
+    },
+    "frontier_diagnostic_v1/verification.json": {
+      "path": "/data/WSH/post-train/experiments/stage4/frontier_diagnostic_v1/verification.json",
+      "sha256": "89fd76aba8a0b9ffcc0800401fa47b2c1efb10d141ed9b7cef1133117644b2f2",
+      "bytes": 190098
+    }
+  },
+  "unmet_gate": {
+    "name": "reports_cases_curves_readiness",
+    "manifest_path": "/data/WSH/post-train/experiments/stage4/deliverables.json",
+    "required_manifest_keys": [
+      "stage_report",
+      "interview_story",
+      "cases",
+      "resume_evidence",
+      "plots",
+      "checkpoint_index",
+      "pilot_review"
+    ],
+    "requirements": [
+      "All references match exact hashes",
+      "Report mentions both formal run IDs",
+      "At least2 manual_reviews with read_in_full=true, observation and valid source references",
+      "Manifest READY_FOR_STAGE5=YES only when its deliverables actually satisfy gates"
+    ],
+    "suggested_missing_paths": [
+      "/data/WSH/post-train/experiments/stage4/deliverables.json",
+      "/data/WSH/post-train/docs/stage_reports/04_gspo.md",
+      "/data/WSH/post-train/experiments/stage4/formal_manual_cases_v1.json"
+    ],
+    "path_note": "Only deliverables.json path is hardcoded; report/case paths are suggested and must be declared in the completed manifest",
+    "narrative_owner": "ChatGPT/user",
+    "manual_review_fabricated": false
+  },
+  "frontier_is_additional_diagnostic_not_existing_full_verifier_gate": true,
+  "already_passed_receipts_are_not_a_new_full_acceptance_receipt": true
+}
