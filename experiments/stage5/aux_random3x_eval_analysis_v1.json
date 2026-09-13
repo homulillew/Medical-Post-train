@@ -1,0 +1,1366 @@
+{
+  "timestamp": "2026-09-13T19:01:21.444532+00:00",
+  "scope": "VALIDATION_AUXILIARY_ABLATION",
+  "manifest": {
+    "path": "/data/WSH/post-train/experiments/stage5/ablation_eval_512_v1.json",
+    "sha256": "1a58c598ce9623c443eafd9ce5f1c6b451beecc99fd0c4b2b06c941ddca6d0c3",
+    "bytes": 35538
+  },
+  "summary": {
+    "sft": {
+      "n": 512,
+      "correct": 307,
+      "accuracy": 0.599609375,
+      "strict_format": 0.978515625,
+      "unparseable": 0.021484375,
+      "truncation": 0.005859375,
+      "mean_output_length": 256.234375,
+      "p95_output_length": 353.9,
+      "output_tokens": 131192,
+      "seconds": 719.4628338385373,
+      "policy": {
+        "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s1_formal_20260908T152119_60040b/checkpoints/final/adapter",
+        "adapter_sha256": "1601e97891e51940bd4b575d8811a77d8278cbeb296c044b7004e41da6d9ea64"
+      }
+    },
+    "vanilla": {
+      "n": 512,
+      "correct": 327,
+      "accuracy": 0.638671875,
+      "strict_format": 0.99609375,
+      "unparseable": 0.00390625,
+      "truncation": 0.001953125,
+      "mean_output_length": 257.966796875,
+      "p95_output_length": 368.0,
+      "output_tokens": 132079,
+      "seconds": 724.935134945903,
+      "policy": {
+        "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0063/checkpoint/adapter",
+        "adapter_sha256": "8e101f3830b28c34d0a4b9c78fe33a0fd7867f7f99417054a5350a1d6f812a7f"
+      }
+    },
+    "random3x": {
+      "n": 512,
+      "correct": 320,
+      "accuracy": 0.625,
+      "strict_format": 0.986328125,
+      "unparseable": 0.013671875,
+      "truncation": 0.0078125,
+      "mean_output_length": 262.375,
+      "p95_output_length": 364.0,
+      "output_tokens": 134336,
+      "seconds": 810.5142342257313,
+      "policy": {
+        "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/windows/0063/checkpoint/adapter",
+        "adapter_sha256": "c288cac30356cb64ea9d409f62f9e26a519f380958693f59a051ef0f7550b1aa"
+      }
+    },
+    "dynamic": {
+      "n": 512,
+      "correct": 331,
+      "accuracy": 0.646484375,
+      "strict_format": 0.9921875,
+      "unparseable": 0.0078125,
+      "truncation": 0.005859375,
+      "mean_output_length": 260.0,
+      "p95_output_length": 363.9,
+      "output_tokens": 133120,
+      "seconds": 791.0120055610314,
+      "policy": {
+        "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0063/checkpoint/adapter",
+        "adapter_sha256": "95fa149916139a1656a759e06e85aca1f08cbfcb4058b3e55b7881536e6a2972"
+      }
+    }
+  },
+  "paired": {
+    "dynamic_minus_random3x": {
+      "wrong_to_correct": 43,
+      "correct_to_wrong": 32,
+      "gained_ids": [
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1377",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:821",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1391",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:895",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2887",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:306",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4617",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1177",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6560",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2253",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4358",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:315",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5561",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4629",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:376",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:314",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:917",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6295",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:197",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2316",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6303",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1621",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1168",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4385",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4613",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3981",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3492",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4370",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5771",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4761",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1696",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1797",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2913",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5959",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3042",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5970",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2959",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1444",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6055",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1154",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6505",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3095",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:907"
+      ],
+      "regressed_ids": [
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4043",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4296",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:599",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:863",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3093",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:104",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:626",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1342",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1948",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1436",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5317",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:58",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6339",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4224",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2647",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4989",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1825",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5562",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3325",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3757",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1833",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1971",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1846",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5094",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3653",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4804",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1311",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3586",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5510",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4722",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2990",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1346"
+      ],
+      "exact_mcnemar": 0.24804574189252795,
+      "bootstrap": {
+        "n": 512,
+        "a_mean": 0.625,
+        "b_mean": 0.646484375,
+        "delta": 0.021484375,
+        "ci95": [
+          -0.01171875,
+          0.0546875
+        ]
+      }
+    },
+    "random3x_minus_vanilla": {
+      "wrong_to_correct": 42,
+      "correct_to_wrong": 49,
+      "gained_ids": [
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6574",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5431",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1870",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1939",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1167",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3193",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5220",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3843",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1284",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4943",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5706",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:104",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:626",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1342",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1948",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:729",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:181",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5317",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3395",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6339",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1907",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4224",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2647",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2680",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5562",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3325",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3849",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3757",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1971",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1044",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1846",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6810",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6140",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3653",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3458",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5510",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:791",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4722",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2990",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:918",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3943",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1346"
+      ],
+      "regressed_ids": [
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1377",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:821",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6461",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4531",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2253",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2981",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6098",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6779",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4358",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:871",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1899",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3860",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4629",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:376",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3837",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1863",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:314",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4357",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6295",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:197",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:111",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2316",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1621",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:978",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:469",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4613",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3161",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3492",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3965",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6138",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:925",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5771",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2567",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4761",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:253",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1696",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1797",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2913",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5959",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:77",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3263",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5367",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5970",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1444",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1263",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1154",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6505",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:906",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:907"
+      ],
+      "exact_mcnemar": 0.5296020954762451,
+      "bootstrap": {
+        "n": 512,
+        "a_mean": 0.638671875,
+        "b_mean": 0.625,
+        "delta": -0.013671875,
+        "ci95": [
+          -0.05078125,
+          0.021484375
+        ]
+      }
+    },
+    "dynamic_minus_vanilla": {
+      "wrong_to_correct": 43,
+      "correct_to_wrong": 39,
+      "gained_ids": [
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6574",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1391",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:895",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2887",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5431",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:306",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1870",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4617",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1177",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1939",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6560",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1167",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3193",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5220",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3843",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1284",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:315",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4943",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5706",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5561",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:729",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:181",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3395",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1907",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:917",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2680",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6303",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1168",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4385",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3849",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3981",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4370",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1044",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6810",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6140",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3458",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3042",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:791",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2959",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6055",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:918",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3943",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3095"
+      ],
+      "regressed_ids": [
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4043",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4296",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6461",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:599",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:863",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4531",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2981",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6098",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6779",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:871",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3093",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1899",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3860",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3837",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1436",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1863",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:58",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4357",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:111",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:978",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:469",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4989",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1825",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3161",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1833",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3965",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6138",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:925",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5094",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2567",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4804",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1311",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:253",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3586",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:77",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3263",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5367",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1263",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:906"
+      ],
+      "exact_mcnemar": 0.7406528413457828,
+      "bootstrap": {
+        "n": 512,
+        "a_mean": 0.638671875,
+        "b_mean": 0.646484375,
+        "delta": 0.0078125,
+        "ci95": [
+          -0.02734375,
+          0.041015625
+        ]
+      }
+    },
+    "vanilla_minus_sft": {
+      "wrong_to_correct": 57,
+      "correct_to_wrong": 37,
+      "gained_ids": [
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4296",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2158",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:863",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5399",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4531",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2981",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5723",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6098",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6779",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:871",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1899",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4163",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4878",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3449",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5943",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4629",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5302",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3837",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:391",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1863",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6250",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:58",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1646",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4744",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:314",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3271",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:343",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6295",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:197",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:978",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:469",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4989",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5958",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6245",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1833",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3965",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5304",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:609",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3097",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1431",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5224",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:925",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5127",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2567",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5712",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1311",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:253",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1696",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3263",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5367",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3731",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4245",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5970",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1444",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1263",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1154",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:906"
+      ],
+      "regressed_ids": [
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1277",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1870",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1167",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3193",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6661",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5220",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4943",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5706",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6440",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:104",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1948",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:729",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6459",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4311",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3395",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1907",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4224",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6100",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2647",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2057",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6303",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3187",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3325",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3757",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3981",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6139",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5414",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1044",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6810",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6140",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:278",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3042",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4722",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2959",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6055",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:918",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3943"
+      ],
+      "exact_mcnemar": 0.04945006525317994,
+      "bootstrap": {
+        "n": 512,
+        "a_mean": 0.599609375,
+        "b_mean": 0.638671875,
+        "delta": 0.0390625,
+        "ci95": [
+          0.001953125,
+          0.076171875
+        ]
+      }
+    },
+    "dynamic_minus_sft": {
+      "wrong_to_correct": 57,
+      "correct_to_wrong": 33,
+      "gained_ids": [
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6574",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1391",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:895",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2887",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5431",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:306",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2158",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4617",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1177",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1939",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6560",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5399",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5723",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3843",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1284",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:315",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4163",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4878",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5561",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3449",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5943",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4629",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5302",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:391",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:181",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6250",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1646",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4744",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:314",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3271",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:343",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:917",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6295",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:197",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2680",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1168",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4385",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3849",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5958",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6245",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5304",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:609",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3097",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1431",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5224",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4370",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5127",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5712",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1696",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3458",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3731",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4245",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:791",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5970",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1444",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1154",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3095"
+      ],
+      "regressed_ids": [
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4043",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1277",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6461",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:599",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6661",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3093",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3860",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6440",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:104",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1948",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1436",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6459",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4311",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4224",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4357",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6100",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2647",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:111",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2057",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3187",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1825",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3161",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3325",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3757",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6139",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5414",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6138",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5094",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4804",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3586",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:278",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:77",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4722"
+      ],
+      "exact_mcnemar": 0.014866752945626244,
+      "bootstrap": {
+        "n": 512,
+        "a_mean": 0.599609375,
+        "b_mean": 0.646484375,
+        "delta": 0.046875,
+        "ci95": [
+          0.009765625,
+          0.08203125
+        ]
+      }
+    },
+    "random3x_minus_sft": {
+      "wrong_to_correct": 52,
+      "correct_to_wrong": 39,
+      "gained_ids": [
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6574",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4296",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5431",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2158",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1939",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:863",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5399",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5723",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3843",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1284",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4163",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4878",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3449",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5943",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:626",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5302",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1342",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:391",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:181",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5317",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6250",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:58",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6339",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1646",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4744",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3271",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:343",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2680",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4989",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5562",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3849",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5958",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6245",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1833",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1971",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5304",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:609",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3097",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1431",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5224",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1846",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5127",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3653",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5712",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1311",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3458",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5510",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3731",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4245",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:791",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2990",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1346"
+      ],
+      "regressed_ids": [
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1377",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:821",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1277",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6461",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6661",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2253",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4358",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3860",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6440",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:376",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6459",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4311",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4357",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6100",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:111",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2316",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2057",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6303",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1621",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3187",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4613",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3161",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3981",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3492",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6139",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5414",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6138",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5771",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:4761",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1797",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2913",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:5959",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:278",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:3042",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:77",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:2959",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6055",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6505",
+        "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:907"
+      ],
+      "exact_mcnemar": 0.20817442238117587,
+      "bootstrap": {
+        "n": 512,
+        "a_mean": 0.599609375,
+        "b_mean": 0.625,
+        "delta": 0.025390625,
+        "ci95": [
+          -0.01171875,
+          0.0625
+        ]
+      }
+    }
+  },
+  "bootstrap": {
+    "seed": 20260914,
+    "resamples": 10000,
+    "unit": "paired prompt",
+    "confidence": 0.95,
+    "interval": "percentile",
+    "multiple_comparisons": "Exploratory unadjusted"
+  },
+  "raw_sources": [
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_000.json",
+      "sha256": "5725229c5c9a30458d2523f4eecbf9e1d13941d56d7e6fa041b802592c3665ae",
+      "bytes": 122465
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_001.json",
+      "sha256": "f53116cc2d4877b2718827312d06ff3f1022cbc1a422653409c4925cf51ed688",
+      "bytes": 117817
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_002.json",
+      "sha256": "b6797a977f4c5b92026f5938dc1838d3c7069cce317af5c96fefa40d684ea8fb",
+      "bytes": 134864
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_003.json",
+      "sha256": "e50e3fd73c09c6816f785221f90c4e2c4983786d220aaa2c11fd3ba42a59af95",
+      "bytes": 115518
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_004.json",
+      "sha256": "055f6ea4c8d051afd7d0de90917fd23a782e57f81dda2251c3be845b3d9e7874",
+      "bytes": 114019
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_005.json",
+      "sha256": "84c96da899e8139dcffd6a85c15e71109ca1afb44a2781db2255afaf289b2bf5",
+      "bytes": 109918
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_006.json",
+      "sha256": "574e7c6ccaa1564a5d482ff7c40188c5d1a654430aa35bafe358c84bbbae31bb",
+      "bytes": 111657
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_007.json",
+      "sha256": "f38b3d3ad4f536af42820cf424b0dc1480332ea60d726d9fbad37a809dc692d9",
+      "bytes": 119191
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_008.json",
+      "sha256": "bfb1bedc582b3f03c2d05fd18e4e1f697ba14cf4ee25fd94d0d32ecceb501216",
+      "bytes": 109348
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_009.json",
+      "sha256": "8a61d5d2243c68b0487944b7c6d734c7c475bef3e130ea1be0f8e6eb354ba91f",
+      "bytes": 121164
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_010.json",
+      "sha256": "716e803528795e914954d9e4e9e5269b4d736aa0ded25a55272745d6eb8031e0",
+      "bytes": 122483
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_011.json",
+      "sha256": "1dc6e6c75905183e086853516d4d6c68833f6f2b588f9b52e76b0b18457452da",
+      "bytes": 115585
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_012.json",
+      "sha256": "3de3736600a104e31515f434bdfd663d197138a4d34dce262916804f21c21915",
+      "bytes": 111935
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_013.json",
+      "sha256": "f9ff7b439c1635f809f860720f6307d69a7f652ad75f89337df492a0ae06b72e",
+      "bytes": 108058
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_014.json",
+      "sha256": "8496d6d9235dc2bc15b4e602b3a127672a194b361d8418b01b61cdad2ce1d161",
+      "bytes": 130399
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_015.json",
+      "sha256": "8063a6a4b634557785ae0924ecc406699cee0d94ce3df5c24a606e30e0e79454",
+      "bytes": 108989
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_016.json",
+      "sha256": "a47cc04308b87076f019bf7bf5ee6b415334d68c946d0ab2e3f6e1c9123d474d",
+      "bytes": 123721
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_017.json",
+      "sha256": "b3142ca420b9ef1b40a67f407914902c25d326fc3be3bdf49e28f9bf88d23dd3",
+      "bytes": 113569
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_018.json",
+      "sha256": "17b18383f67559df2d800fbfe423631bbfff23393b0c574103a7856380e1d1fa",
+      "bytes": 111149
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_019.json",
+      "sha256": "5ba8cb7d5fce618a4025ff0cdf03972349f2dcb598e3c9889586a4118b92e448",
+      "bytes": 118355
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_020.json",
+      "sha256": "0d4a35df53e47bb5993c120ef5dafc699c35a3e895078366bbb45ac2054783cc",
+      "bytes": 124801
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_021.json",
+      "sha256": "1b8448c97cf16bf291511ffa7796e2b22bd5e64a1c7a9d52aacef9bb59ea5e64",
+      "bytes": 126250
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_022.json",
+      "sha256": "97cd18c7c28f8246e67216fc103be8a2500912ffa7ff0ca9d33268ce86f16f61",
+      "bytes": 122273
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_023.json",
+      "sha256": "33fd0e56a2aa53b74a0199b2553fcc7bfc40570e0082c078f29910c74585ea10",
+      "bytes": 145880
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_024.json",
+      "sha256": "ad5d5330534614757c7020c4fc52b51724552ed753aabe5b82bd62fa888fa735",
+      "bytes": 115518
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_025.json",
+      "sha256": "716a23971260735523716fa26051342dfa470aeef8f7af812b444f6758e14cad",
+      "bytes": 125536
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_026.json",
+      "sha256": "3671f99f53bc39464f394a6f1866713ca13933aba9b753da5fd39f051b72eab7",
+      "bytes": 109303
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_027.json",
+      "sha256": "0916a858b46aca9f49d08b0b7ce83865de79f6f6bae3e6e7e9da2b7f5cd7f3dc",
+      "bytes": 126480
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_028.json",
+      "sha256": "ebfdfd677a2da3965aec2a0859a3a4c87c8b546c6cd8eeee78fe34c471946c21",
+      "bytes": 119026
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_029.json",
+      "sha256": "99fbd5ca34a0b8eb76e9f06fa06956c296eb8d72d9189cd013464b3ee13f021d",
+      "bytes": 116940
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_030.json",
+      "sha256": "5a2dde6e5640ea6ad5633bb5aaf72de37612883c4dbb6cda0d799636467e7843",
+      "bytes": 114188
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_031.json",
+      "sha256": "df10ebe88b37ded1b13e194b6f30abf14f6ca2c174aef761a97937deae39ae0c",
+      "bytes": 112568
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_000.json",
+      "sha256": "e81e2df9d4136a67500940c380cb6c2b751c1a3f5c293fbd98dde2debfaecf19",
+      "bytes": 122378
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_001.json",
+      "sha256": "a5c83a828835d52a96e2d0d48bec69c884f06c99bbd182155cf9b1a42fccc853",
+      "bytes": 114659
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_002.json",
+      "sha256": "f441a828ffe0cb7ff31f9a925eac2bc1927f4fef50eb4a70d839e6adfe3b4aa5",
+      "bytes": 127228
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_003.json",
+      "sha256": "9a3c3bc096a092217a3f3631a610c5eeab5117aff88036240586fea952232ba5",
+      "bytes": 121432
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_004.json",
+      "sha256": "86ab3cc8d703a90d59e7e890eed2d3f79fd56880cf5851267b15650c4206cf57",
+      "bytes": 117887
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_005.json",
+      "sha256": "537e0c2ad2371c1e06d8cc86ba539e500565cc1426c94e2aadc22a2ed1bac88d",
+      "bytes": 115374
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_006.json",
+      "sha256": "1a8c31e9d69f98a0b5f35b296a979e858466f1145a7cf1fdeb359b9bf3f94088",
+      "bytes": 106793
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_007.json",
+      "sha256": "c2207b82ed9525ed7ec1c45c390d990710e23cdda1c5d04f1dd3f45b4f712eaf",
+      "bytes": 118695
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_008.json",
+      "sha256": "2aeeeb82665b2079c36d92f584e435908589426827f34e5c2d69173e4a6099d4",
+      "bytes": 123486
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_009.json",
+      "sha256": "2d748375eef3daccca16163ef2010966e19b00898b09f54f91c68cf6890ff474",
+      "bytes": 126008
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_010.json",
+      "sha256": "0bc7d0245b9386536fc17af4db3896138bb9b95b0de9e49c72ef957008985e65",
+      "bytes": 115858
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_011.json",
+      "sha256": "572b6339b1bc4705ef9f6b8ab3c51c1f1b302c7b3e47e730e6dea7784564ae1a",
+      "bytes": 118105
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_012.json",
+      "sha256": "b24b9b2e5f7f2026186fd77e47cf010a4cae631056b0fb8b2920b2af6381add0",
+      "bytes": 113067
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_013.json",
+      "sha256": "f8ef39eea42bc98f702a96da949aa14eda1302707532d23607b8ef6ce74eba5d",
+      "bytes": 111633
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_014.json",
+      "sha256": "8f4f0019a3c310dbef827cb60019f2d38d0bf8427c06ae9dc0b05881fca61523",
+      "bytes": 114644
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_015.json",
+      "sha256": "07b568df315edb562f30064ec76c8ea9a3e04548f2132b90f0549e956158684a",
+      "bytes": 115328
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_016.json",
+      "sha256": "bbb3bd17a298a8c9e69574d0946f271d64e6153c1e898e8b9dbbd1810f92ac27",
+      "bytes": 126054
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_017.json",
+      "sha256": "90d9756d7f4470aa21594d6c0efaa0fef2c5c51f0e94ee399c647c44b360075b",
+      "bytes": 113347
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_018.json",
+      "sha256": "821880e015f24078bb92772a0ab637c349fa0e4363a55458d117572f51eaa42b",
+      "bytes": 115291
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_019.json",
+      "sha256": "c873153a28acc9c34eddb5342146bee54636a751534cab31565efff779f8b56b",
+      "bytes": 117789
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_020.json",
+      "sha256": "f4c8b6822bdc580577dd1385b820ae279fba81f9a3e04697330125ed1a38b42a",
+      "bytes": 131232
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_021.json",
+      "sha256": "440e14dedcc1924056600c113a9173771a15ba1df31cf90437e9abab8369455d",
+      "bytes": 124618
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_022.json",
+      "sha256": "54f3319b1cdf48be1fed3f6321131077db4d8b26de2b93e5674dbd5dae7bcabd",
+      "bytes": 126419
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_023.json",
+      "sha256": "2a57d9facd6a62df074c65217e172bb1bcf098f38bb5aecb1bd365a4b0a4e9bc",
+      "bytes": 129020
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_024.json",
+      "sha256": "06dcf0031d9693271a89ae9e3230cbf8c82e082681164426757289eb357f8bc7",
+      "bytes": 108652
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_025.json",
+      "sha256": "18a7f4e92bd1d6772bd1aa7a4a83fcdc1b859fcad1bb038dd2fe4ee4be4dae88",
+      "bytes": 125124
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_026.json",
+      "sha256": "fe4731130bc2bebeb88a585fd975128b032da2a24491277d403aff357785ec0d",
+      "bytes": 112399
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_027.json",
+      "sha256": "fa1e25c689575907f37699bfeca47776fe99748ff9e39f338b66ad534476216e",
+      "bytes": 128819
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_028.json",
+      "sha256": "af9403453e1f2c61f9467cc60b297abecc5aad59b06a447dd935608cc19a0e9e",
+      "bytes": 115104
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_029.json",
+      "sha256": "326cb7330e73a9243b8305c554544855c0d445a6017d7333f1d956f94a6fe1cb",
+      "bytes": 132380
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_030.json",
+      "sha256": "bb049ec142bce72c5eef198ca370c3e84fcbdc9f71d581d7bde579ab0293f035",
+      "bytes": 115804
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_031.json",
+      "sha256": "335f0524e44d6bcf5f516b509250584554efcf25c1ee71e9e9eceea9372d2fd0",
+      "bytes": 108403
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_000.json",
+      "sha256": "3b61c339d1335dcb5e5ccfb91698b787ce029111dc287bdae57d220e75413ef4",
+      "bytes": 123104
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_001.json",
+      "sha256": "b8deeb99123d50ac0a5b8a92831ca9fb1702b14a23e2f7410bbaa2e348fd888a",
+      "bytes": 112444
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_002.json",
+      "sha256": "ba8850a99b89fe86db3f27cf120441fe7ecbb02cd9207711b38af5708cd74e89",
+      "bytes": 145222
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_003.json",
+      "sha256": "88c45cb1b7dd792a9d2bb2cb6a5bc80fec4e8fdeb3df7b79c25fb2119bdfc563",
+      "bytes": 114507
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_004.json",
+      "sha256": "a4792a56a58d565352c28fd6b5df504e0b978efe258c4bc6132753309dbc7fd3",
+      "bytes": 118027
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_005.json",
+      "sha256": "cc839b9b7dbc755e156fc9bf16a0c6039fee106ae69d9cb2c0e6c1ab630ef7f8",
+      "bytes": 133658
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_006.json",
+      "sha256": "fa9d368135989113725c9b6aea512b3a33dde97010356958b2535403271dff2b",
+      "bytes": 109050
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_007.json",
+      "sha256": "b7f06d32b4bd9276cf6dad00bc2cd55c6c41444722c3d8a42eba6434cb5fde6d",
+      "bytes": 117058
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_008.json",
+      "sha256": "2ecca306a1a555e2b0fb68f4f14ec18d3ecb9c056e0498359f3166bb98276809",
+      "bytes": 123157
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_009.json",
+      "sha256": "4c963b4df1fc358b5d95c2a8927c527cf5a760a10747816298c0ca31a0f48798",
+      "bytes": 126473
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_010.json",
+      "sha256": "c59fe81e9d223711dd9e55b77de90ff54f0aed8aaf2d5fdd740d2bfd6bdcd62b",
+      "bytes": 115828
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_011.json",
+      "sha256": "6c2a3caeaa31760489a4ca9ac3723f65d4f8c3678bb9ed68ffd15adc3f997dc0",
+      "bytes": 114403
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_012.json",
+      "sha256": "42280fa318badba50af31f9cd2edb4c2f50bb5653f1e2af3f7fb3dfa8296e3f9",
+      "bytes": 118305
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_013.json",
+      "sha256": "b793ca2725281ed26ac751abf085217ac41064dc05373939fd3c4a0ad6aa97fe",
+      "bytes": 109133
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_014.json",
+      "sha256": "4e1bc29c39d05c2d2af3c43fca85a85f84ba3be99f7c027b4ef86a7d2d5c8d4e",
+      "bytes": 116327
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_015.json",
+      "sha256": "9a998fa2b7a960f05b92d1b42d8a2c822b3c2bc0e1667b1c241685488ad3ab6e",
+      "bytes": 112864
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_016.json",
+      "sha256": "bbc35016875d638ed9fe66e488a9a9a1a308a4823d39ffdf0f448bca5253608a",
+      "bytes": 127869
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_017.json",
+      "sha256": "e6acbc3901e6f87862e024f373e4c2ccf0e52f42bbabfcc46c850e09623e3eca",
+      "bytes": 119673
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_018.json",
+      "sha256": "7496c8c73465f9a7e35393841d2971eda65fdde2371cde52e001b560dbe9f072",
+      "bytes": 110664
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_019.json",
+      "sha256": "11978725cc7b20364262724dfd1f0ccdc82edd3f9b8a3bf555216f3380acc975",
+      "bytes": 125216
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_020.json",
+      "sha256": "6821d3baca28078a5e78f45db528194c763bfb8ec86a8eb677a01a7e4cd4f2be",
+      "bytes": 132715
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_021.json",
+      "sha256": "7828d633aa24ebe02b713296d1d65ae81be9f04fd049446118a6f0f228f18af2",
+      "bytes": 132493
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_022.json",
+      "sha256": "3e808591d47aac21f18170b76dfbee6362d8e6317fc796fcc759246aef6e5b3b",
+      "bytes": 126113
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_023.json",
+      "sha256": "2f186de36469713e700bcd9a816447f881231b53bfb19e6673e251acedb78d69",
+      "bytes": 130524
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_024.json",
+      "sha256": "7a87a5c7b65f88edcfbcd5bb3916b8461fbceac9d93afe9d8d8d440a4aa3e420",
+      "bytes": 111166
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_025.json",
+      "sha256": "8aaa0f5ebe4035ae34caac2f71f90a6a930d870f42a9b97b0018e72949b67a53",
+      "bytes": 116198
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_026.json",
+      "sha256": "7f8403b2329ec558e949f06aa377527539e6e027e9f4caed3278703ccb869826",
+      "bytes": 120066
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_027.json",
+      "sha256": "8405955a4618f2e3d281a3df7de501a2c769e54aa0e78b07b07359146508a493",
+      "bytes": 129714
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_028.json",
+      "sha256": "20919ba7df431152c07831386c760b066b459b6ff374ed0bac51011027a1a0f4",
+      "bytes": 116397
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_029.json",
+      "sha256": "39fcdcbeaa76a30a34c78dea1ef914a895a56b5cbf4cd335efe89d53a908521c",
+      "bytes": 123538
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_030.json",
+      "sha256": "e60e892e4a4ff23ccc48687d74afe78f64618ce600369e064064096bb52b6df5",
+      "bytes": 118174
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_031.json",
+      "sha256": "136f7ad1fe84272cb7cf9d90e40805c7f3fdf93c0c87b95c2d05c46a41d903e5",
+      "bytes": 108403
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_000.json",
+      "sha256": "077390f9bffc222d282b8c33ce457f0bd0e412116397e3dd7e6b524a3c8f4fb5",
+      "bytes": 120036
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_001.json",
+      "sha256": "b7b7cd0f27dfc1d01cba2c064397df937bae0cdf32d930ba88a4099e77707984",
+      "bytes": 117528
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_002.json",
+      "sha256": "f1c1703fd87340f8d1f649b7c5388432df70aea0a6f3b8c946c87083e6850a22",
+      "bytes": 140283
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_003.json",
+      "sha256": "d84fc30c97ea68480a04363bffd01821b628482d866258e75574c66253057c6c",
+      "bytes": 110733
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_004.json",
+      "sha256": "977256574b7c6deba398349983b36bc3ba3b7e2d2839fd9867a2185e27673b28",
+      "bytes": 114508
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_005.json",
+      "sha256": "7a4812f79386d533e4e917d88d041566965d6b9f944845141025750aa31540a9",
+      "bytes": 133449
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_006.json",
+      "sha256": "5bd7d7de57d82afe450473f54b6c6ec340058ff28e70ef723d5f9316995cb4f4",
+      "bytes": 112485
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_007.json",
+      "sha256": "89326a6943bfc7a777414b6df22e8ff1043d9bef186aaa0ce2db980f822ab837",
+      "bytes": 117908
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_008.json",
+      "sha256": "cb95c1ff63969016f69cb2c6020c12f84297dc7e90555b6644ef085963e5ceea",
+      "bytes": 119925
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_009.json",
+      "sha256": "4242c0fca19612ce57ac443c5f2cd12e0e622d972642723334a60ec45092359a",
+      "bytes": 128836
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_010.json",
+      "sha256": "905be40f45c72b2b265c626c5e7cb413a89eabebd4830dacb9dffd122d2ab305",
+      "bytes": 115072
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_011.json",
+      "sha256": "8bd8e584244e8c4f226b20de87e64055dbcf82e9a125bfc52da00f4adcf27060",
+      "bytes": 115292
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_012.json",
+      "sha256": "15fb87ec3edebec1805f1c03e885a0ce206469b619fe8dfd4f102b56cec20ba6",
+      "bytes": 116976
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_013.json",
+      "sha256": "aac787f1941a83a77201c11033f83391eb02d007bd216ed72622492629042d0f",
+      "bytes": 122402
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_014.json",
+      "sha256": "996591fb36b873073fd4eee78596ea80796046b893f8f26253b596bb1c325e39",
+      "bytes": 113837
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_015.json",
+      "sha256": "37e914660358acf61c84edf98a07e5ddc119655152b4db8d854ed67b1725a81f",
+      "bytes": 114600
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_016.json",
+      "sha256": "5458399cc7d870160d712e6fe377b15a3f8439e6eb17892d954bb438a65d4827",
+      "bytes": 126901
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_017.json",
+      "sha256": "0707a5f43dd3c34b6cbde328e222af78de888b66158459e501e2a904ff2074cc",
+      "bytes": 115066
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_018.json",
+      "sha256": "35ce571f5761bab17066f54d5af90138d338f6ae1e6da6ec8eff448df2c783de",
+      "bytes": 113030
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_019.json",
+      "sha256": "49452e9c85c20910132f533c9835a6c412b32ba315e5ece4ba3e4557387f4a2d",
+      "bytes": 116130
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_020.json",
+      "sha256": "e36e498d135e1f95c48aa6ec939bcc859b137e065c0d0f479f077bb7366d8039",
+      "bytes": 128732
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_021.json",
+      "sha256": "0d63f9ee83db6c59fd7fe1966634114fb18704845dc48ee023ae560624e85e59",
+      "bytes": 126591
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_022.json",
+      "sha256": "19c3ef2453122d4f16747b86470dc4da4325030412c572b950e6a1a0e2e9dc4d",
+      "bytes": 129181
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_023.json",
+      "sha256": "ff0290baa030825126ded4c57158395aca3f8af659a07477ac329e4628dca117",
+      "bytes": 125340
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_024.json",
+      "sha256": "552d0b3a7f2cf0a8b176756f05cfcf3ee0dc737d63e17add10a0b4fd3a419433",
+      "bytes": 113906
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_025.json",
+      "sha256": "eb7ce46954023e0d89e98513eb0d715cfc2f63caa7f7d1f184177aa0cc7734e0",
+      "bytes": 122306
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_026.json",
+      "sha256": "d524659dcb89431963ef278f3fb67528c3f66c6ad833d1c4a8bbbddb30491637",
+      "bytes": 110776
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_027.json",
+      "sha256": "42e4a2091d1534f7418f88b24925bf8eb9a79168bfd214859f6e508411507dd4",
+      "bytes": 131001
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_028.json",
+      "sha256": "aa78d60de78a5ff404936d9af6a701b7992e91120e33aaf18abb5c197105bf2d",
+      "bytes": 113977
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_029.json",
+      "sha256": "b5f4f24d9c23d362b0b04b1cbfe36b3abd0bf8f0fde8a19d899401c95a694331",
+      "bytes": 123024
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_030.json",
+      "sha256": "4f071c2fefd96f38e031f53becca4b472543ef7370685af857a0ea902c18d295",
+      "bytes": 115244
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_031.json",
+      "sha256": "0e6ac8c6cf848a568ea9004eb33e0fd26928582f743056d6608b58e6dc158107",
+      "bytes": 108198
+    }
+  ],
+  "selection1024_used": false,
+  "final_test_used": false
+}
