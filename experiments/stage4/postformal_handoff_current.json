@@ -1,10 +1,10 @@
 {
   "handoff": {
-    "path": "/data/WSH/post-train/experiments/stage4/postformal_handoff_20260913T080651Z.json",
-    "sha256": "d04bea435f6478920e3cc6a36910ec05c7c0e5d239185d3accc61e383810e12b",
-    "bytes": 7908
+    "path": "/data/WSH/post-train/experiments/stage4/postformal_handoff_20260913T115535Z.json",
+    "sha256": "d52f89c5b525cbdd804f1baa48ea70c59b8db9bd858e4ab67022128984b6f5e7",
+    "bytes": 8289
   },
-  "timestamp": "2026-09-13T08:06:51.342382+00:00",
-  "frontier_complete": false,
+  "timestamp": "2026-09-13T11:55:36.006719+00:00",
+  "frontier_complete": true,
   "stage4_done": false
 }

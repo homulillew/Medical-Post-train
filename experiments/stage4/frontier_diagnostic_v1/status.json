@@ -1,9 +1,8 @@
 {
-  "status": "RUNNING",
-  "policy": "sft",
-  "completed_policy_groups": 32,
-  "timestamp": "2026-09-13T08:09:31.572780+00:00",
-  "worker_pid": 3554189,
+  "status": "DIAGNOSTIC_VERIFIED",
+  "timestamp": "2026-09-13T11:55:34.154175+00:00",
   "run_id": "s4_frontier_diagnostic_20260913T080052Z",
-  "optimizer_updates": 0
+  "optimizer_updates": 0,
+  "stage4_done": false,
+  "stage5_ready": false
 }

@@ -1,6 +1,6 @@
 {
   "pid": 3554108,
-  "policy": "sft",
-  "child_pid": 3554189,
-  "timestamp": "2026-09-13T08:09:54.066989+00:00"
+  "policy": "dynamic",
+  "child_pid": 3583172,
+  "timestamp": "2026-09-13T11:55:06.197666+00:00"
 }

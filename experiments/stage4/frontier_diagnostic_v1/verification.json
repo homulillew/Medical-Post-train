@@ -1,0 +1,3782 @@
+{
+  "result": "PASS",
+  "timestamp": "2026-09-13T11:55:33.505899+00:00",
+  "scope": "FRONTIER_DIAGNOSTIC_RAW_REPLAY",
+  "responses": 12000,
+  "prompts_per_policy": 1000,
+  "optimizer_updates": 0,
+  "checks": [
+    "preregistration/source/adapter hashes",
+    "disjoint frozen dataset",
+    "complete unique matched prompt IDs",
+    "exact encounter seeds",
+    "prompt token identity",
+    "token decode",
+    "frozen parser/classification",
+    "finite logprobs",
+    "all raw batches and successful process exits",
+    "no optimizer instantiated"
+  ],
+  "sources": [
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0000/raw.json",
+      "sha256": "9653f631c857b0e9c3ac7ab7aeffe550d4fec16686d9b741e4e0db7203d04af7",
+      "bytes": 549808
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0000/reservation.json",
+      "sha256": "421d64725b35a9ce95a11e69808a40f3c3bf5551e111fe99421db479dc5a457b",
+      "bytes": 14584
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0001/raw.json",
+      "sha256": "364f7a176e764df2ca5c9473c6402e01da9f35886b6c7251f222fdb66711cf5c",
+      "bytes": 566995
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0001/reservation.json",
+      "sha256": "aa0ce2de75605fffb66326e6c381d8dd24b741362203d966adcaa2b6ca5db771",
+      "bytes": 16073
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0002/raw.json",
+      "sha256": "8505c383d5ea123bdb009df013cf51f5104ee27c4efbf30bb2896412dad8c5a8",
+      "bytes": 582520
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0002/reservation.json",
+      "sha256": "687b0036516521bfbf8d918d0d9c4039ff0a124a1dbeb7568aaaa0a8f552630f",
+      "bytes": 17467
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0003/raw.json",
+      "sha256": "a0ee0dfeb5573d496d94afbc6f046364b44d3fe8ae41ea9db6b907312015a456",
+      "bytes": 668756
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0003/reservation.json",
+      "sha256": "b8cd1c2666f3f982a9ba94533d3f8e964c936c94dd16c7ba4b4e703e1f3be95a",
+      "bytes": 16533
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0004/raw.json",
+      "sha256": "7906d097b3490584fc169eded86ec22c89a025cc184d6e6741c1458b1ebdab7e",
+      "bytes": 590656
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0004/reservation.json",
+      "sha256": "e5366edd44dcda17f99e44dc23b8938a24aa399d7fa603c4b961776df684a0ca",
+      "bytes": 16957
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0005/raw.json",
+      "sha256": "16ad09e223fe2ab3bee2413596b68117724b6869d043f20ff8f4fee69ebc6e6a",
+      "bytes": 564774
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0005/reservation.json",
+      "sha256": "b3f11154ea7b06c29b2699e2c0e233dfe81b384ba2b8e40bcf257eecb0c58cb4",
+      "bytes": 15820
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0006/raw.json",
+      "sha256": "33398f2df7870b755c147f1bbd42df5ba1fd414d61f57bd6c30b2ffd1b7a454a",
+      "bytes": 567927
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0006/reservation.json",
+      "sha256": "9c1555d79770e494cfdeda2d5415296acde0e62e1c6257491512d1cdd7c6f3ca",
+      "bytes": 15835
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0007/raw.json",
+      "sha256": "add652c0d93acc6b9edfd8c59008a140a500ff9298dd95d830675dc2ff65f13c",
+      "bytes": 529843
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0007/reservation.json",
+      "sha256": "1b5372142977f0f194609bce35ec53625053e333f59aed33530a6a4675e2ed20",
+      "bytes": 14971
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0008/raw.json",
+      "sha256": "6c2e0172db8d35f92e7d777bcfd0662e5e0df681e36133efc7ac4d01d57b42fd",
+      "bytes": 576223
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0008/reservation.json",
+      "sha256": "e41e9c9bddd28964484b3a90bb0e327697a09cadaa476d6bed3bf3e74c9ea2c6",
+      "bytes": 14980
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0009/raw.json",
+      "sha256": "aca7054897e647f2d9f6d42baa42de42d97633a4a3dd4205ea7c57fbdaf54067",
+      "bytes": 632815
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0009/reservation.json",
+      "sha256": "3895acf160a7e73af981027369d3a760f8e5e8d1fccc8c4c6ba79cf12737350e",
+      "bytes": 15206
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0010/raw.json",
+      "sha256": "28f73820e711c14698719d3ecc661569991d893ff99a6efea131d699fc675576",
+      "bytes": 591067
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0010/reservation.json",
+      "sha256": "4e98603816d32b97b400e5b43e86ddc54bad4e662da67121cbddac6e8a2ee0a6",
+      "bytes": 15040
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0011/raw.json",
+      "sha256": "01ec474d3f46733c8e737863859960f4fcc6c0f66ab02033d0b29ec713c4a4e4",
+      "bytes": 514594
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0011/reservation.json",
+      "sha256": "9cb6555fbcae3cd08b10d5cff4c7503b4361766fd812987967f78d1131466816",
+      "bytes": 17098
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0012/raw.json",
+      "sha256": "f303b7b7d43b26025225ce3a099fa8aaae24d35cbdaa863965871a7b4bcbb9f4",
+      "bytes": 654003
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0012/reservation.json",
+      "sha256": "ca549e844cfeb94ca7afe1bef1288e20c188f0f5e4c83b7085e86f54373d1ac3",
+      "bytes": 18421
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0013/raw.json",
+      "sha256": "8016b98606bcd73618fdc5a64d45bbcafc33ad2f48ab85f63f4ddf232b023d50",
+      "bytes": 579717
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0013/reservation.json",
+      "sha256": "76dcb4376e6371ef30d4ebf6349149915c816406724b982029a32d6de5258f47",
+      "bytes": 16908
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0014/raw.json",
+      "sha256": "f4179ef47aa4bfd974bc60943b6156165ae6102a7af29c95db844ea5888cb106",
+      "bytes": 628892
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0014/reservation.json",
+      "sha256": "f28d31189e6b709fa151610fe6cae01af86e308337f48bb5e9eee6ac7d421446",
+      "bytes": 16380
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0015/raw.json",
+      "sha256": "d3ff1726c786340cd69a1677fae060f6c4b8f9852ef47a367021e6cb69d06b90",
+      "bytes": 587010
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0015/reservation.json",
+      "sha256": "c3df860e5a468923d7001a9135e3a6dcb81de9b3dd02c9ff0fec0ca20ab24804",
+      "bytes": 17537
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0016/raw.json",
+      "sha256": "097a77e5dea419d01040e834133658623aa8a3d61bbff536659c296fec420000",
+      "bytes": 554068
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0016/reservation.json",
+      "sha256": "13d8b270dbbc286393873f7b80e2e2831528c5858a76f2012a5a99311ed62fbb",
+      "bytes": 15640
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0017/raw.json",
+      "sha256": "91d4143a1c8f1bc02d62f15c78f58f15f15c63c1ac9e7bffab15e3160e624109",
+      "bytes": 539394
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0017/reservation.json",
+      "sha256": "5c30aadbb9ce9fa5c7dd452b3f70796541c006b33be5d6a5cb262a2b978ce3e4",
+      "bytes": 16503
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0018/raw.json",
+      "sha256": "7f9e15b8302cd7de635ad51d071d904a902c964bdcfc943658f45513284e1034",
+      "bytes": 580915
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0018/reservation.json",
+      "sha256": "67afec3b38d83846e8d953575695221d7a60ec98238bd4b32510e0c831a3d3f9",
+      "bytes": 16547
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0019/raw.json",
+      "sha256": "60247cd3b8d6b92993778a823042556ab6cc0aa52572288cdf9590a138e4af75",
+      "bytes": 575542
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0019/reservation.json",
+      "sha256": "2a4d1c87d99fb53bab4fa387feed03d5c237c264def6c8aec0d7b528f66eab70",
+      "bytes": 14731
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0020/raw.json",
+      "sha256": "231d6ba254ca697eb0c29a648f07d33a712f6fef5bfe7673f4ced7438e036750",
+      "bytes": 546365
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0020/reservation.json",
+      "sha256": "04acde9eb3d600f397adfa4d95db7af13fcc30b22bdacfcd2ee7d2c8bc1e1cd7",
+      "bytes": 16299
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0021/raw.json",
+      "sha256": "8182da4ef57dc9594cd6bb93af70b9d00d88217acb78d93d3e93cbd6570b9bd4",
+      "bytes": 575671
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0021/reservation.json",
+      "sha256": "7c11838c8c838b8a8a40f3a4f0e4c746218d36b44bbb9f30f18c06f0ea9080c0",
+      "bytes": 19177
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0022/raw.json",
+      "sha256": "3431ca497ffa56fc2d7a719df5924e9cf430f204288a2293fc5a1e6bed136408",
+      "bytes": 495319
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0022/reservation.json",
+      "sha256": "d088e11f692ec2234d7d4ff136363c71b7d97437f1ba3b76836f02b8f9754d33",
+      "bytes": 17743
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0023/raw.json",
+      "sha256": "265f7e6470f79466b95576248523b0432e24e104914b56b6bfbd68e85e65c228",
+      "bytes": 612722
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0023/reservation.json",
+      "sha256": "b2b50d3ff7d4c1a361e01d8872c3feafab61a7d5caa31c67140591d7a7154c81",
+      "bytes": 16697
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0024/raw.json",
+      "sha256": "5b0fbfb1cd54b7384690c330bf47a9eb982d9b33fafa3d109b1e7944bb4b5814",
+      "bytes": 546826
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0024/reservation.json",
+      "sha256": "22256b93b9ae0a803718832afb1a40a42135dd09085efc328247e6bd971bd5d6",
+      "bytes": 17035
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0025/raw.json",
+      "sha256": "1de3d837b054e1481701604cab63ac757d82c4aa68fbc0346c8dd39e69233e85",
+      "bytes": 573906
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0025/reservation.json",
+      "sha256": "d389326580f9b32a4587422f223f8c5a8183cb27e338a3b64f1ce5a5282afe33",
+      "bytes": 16748
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0026/raw.json",
+      "sha256": "6b0dd933c0f50434bf279b1a32b9009f6aa3ff0819faae4c9ecc3e763f63c979",
+      "bytes": 600778
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0026/reservation.json",
+      "sha256": "91d90bd5657ef59cf83682e5055a3cec4ab15ed434770ff756280eb7dc8652cb",
+      "bytes": 17966
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0027/raw.json",
+      "sha256": "ddd558b3e2f78bbe5b11bbf703f41eb654e1e74b228227fd3147dce50242e600",
+      "bytes": 581113
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0027/reservation.json",
+      "sha256": "e94cc4f69eb1f20890c65df934006673f8595929b2d0c16773ade1e3c99a5df9",
+      "bytes": 15481
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0028/raw.json",
+      "sha256": "f50aa43c932d22578295591ef787873a1438bdb59ad4b958f55326f09165d48c",
+      "bytes": 573618
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0028/reservation.json",
+      "sha256": "8c7ffeb1c05c5d105629c49e1def2d12d56df5cace39d62457a514d461528ee0",
+      "bytes": 15493
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0029/raw.json",
+      "sha256": "09c119eb8b33a04e62ad16d038893c9601c687800ea46177f20ad389464ad5ae",
+      "bytes": 544917
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0029/reservation.json",
+      "sha256": "24119f8fd5f6cb145de3aada4280d6110a3c21c17db720de82beaeb58da1c7a2",
+      "bytes": 16047
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0030/raw.json",
+      "sha256": "322b018aa8f29b028cb1cfe6cbb2a3e7d360a949cc676aa215a990fe617d68b2",
+      "bytes": 586606
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0030/reservation.json",
+      "sha256": "44908608ac21009e742380efcbb9e2155b0b7c24676a47b2fdb88d12fe231504",
+      "bytes": 16852
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0031/raw.json",
+      "sha256": "c1117c6e59255c27a79785aed49ae0f91bac7ee7808d95adc5737de37620dc5b",
+      "bytes": 537035
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0031/reservation.json",
+      "sha256": "0bc1fedaae674960dddf0913e7780ea776a248567ee3370d42937ffe13c00d4c",
+      "bytes": 15512
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0032/raw.json",
+      "sha256": "5c58a14a3fc54cc845f5fda70318fdd0475b779ac0f0f440442738071ef2bb51",
+      "bytes": 545181
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0032/reservation.json",
+      "sha256": "be94f7155bfe38f1a23a06734492a46b93d745fa8beabff70382c10736b05dcf",
+      "bytes": 14157
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0033/raw.json",
+      "sha256": "5c5367a320dca646d5c5a98d1503a86a8150b00cf476bd56c794c22fb85c3feb",
+      "bytes": 621333
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0033/reservation.json",
+      "sha256": "7b86c6ee02a26ed916732edb89b37ef6cdc0b5ec4f6abb9e89ee35b7d754e050",
+      "bytes": 16419
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0034/raw.json",
+      "sha256": "46a3c0c6430b4394fd0d63c49ab4bbf060555c042266d97b7a106970c9fc3120",
+      "bytes": 667805
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0034/reservation.json",
+      "sha256": "6a52143598837afe8a9f169b576aa8d486c19890b1c1b5051e730f598bbc46cc",
+      "bytes": 15723
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0035/raw.json",
+      "sha256": "c49404238c61621c5b2965a09854229e2504a1a141b047779b2a027408248472",
+      "bytes": 507252
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0035/reservation.json",
+      "sha256": "b0f29ef445131d5880223e80374dd0c3ae571a1d11a34d931658f491d4e32307",
+      "bytes": 16877
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0036/raw.json",
+      "sha256": "19cf6355a85c0882c730fcfb12ec5e795cc181ba5d19aa47cf1a8d18b8cec342",
+      "bytes": 522811
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0036/reservation.json",
+      "sha256": "e625f62d5de3ef9332535c293740773764704a9803ef279bbc8013093d7b75cf",
+      "bytes": 16141
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0037/raw.json",
+      "sha256": "ff3c623c5b1227089d2e0c27d2129d1afcb4a392ea8cdedebd2ef89b257d8597",
+      "bytes": 519605
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0037/reservation.json",
+      "sha256": "be012345c84050034a4aa0cccb60aaf21cf8779c4a978575a9ef1383316c9248",
+      "bytes": 15268
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0038/raw.json",
+      "sha256": "cb5566361299974d462526ec3180621be4f963275d1097197bb6e4d3274ecdfd",
+      "bytes": 589024
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0038/reservation.json",
+      "sha256": "4054e6527cd2b6a3231adf1c019d89183e81f81946ed65aaca808bf64c5c55a5",
+      "bytes": 17677
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0039/raw.json",
+      "sha256": "870613838a3f93f3801320b92a6d869052d0c9ddfecdf8a5c5701648c8cded04",
+      "bytes": 617874
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0039/reservation.json",
+      "sha256": "895929a7fb30ed0888e1097356984b38634dc583893042741ff83b0cd90c4872",
+      "bytes": 18612
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0040/raw.json",
+      "sha256": "f6c12b9e97ce4c83e8c11c10307725df877295184cc01bfe7d7700af2b4f269c",
+      "bytes": 528082
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0040/reservation.json",
+      "sha256": "395372d4829b1521d1d32a676576ff014840a298e97eeaca2ab0925a4626a38c",
+      "bytes": 15646
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0041/raw.json",
+      "sha256": "bb7d2c1ad8e164a4a761222b262ca2031b86e69107bfd9efd3c8176ae07c43da",
+      "bytes": 570869
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0041/reservation.json",
+      "sha256": "e104945f2b841450fa8f7fb5b5bb725c76f1ccfced786b5e26c8b7b4af544dcd",
+      "bytes": 15939
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0042/raw.json",
+      "sha256": "d83f9aa68645db8b3c16871ae6ab7c3c402c6aa0ba5ad150eaedd03f0a2a4bc9",
+      "bytes": 612327
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0042/reservation.json",
+      "sha256": "ad5a56708d533332dcac70bc55e90a92faf62b91083306053a49da89172c70e1",
+      "bytes": 16804
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0043/raw.json",
+      "sha256": "17aae6931c349e1186a4665afde2af81611228959eb8af4ac17f2dd8f141aca0",
+      "bytes": 528250
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0043/reservation.json",
+      "sha256": "8a5f7406210748f37b78de08710ab02e8c128707bc20efdf994e6e0cce979d4c",
+      "bytes": 16002
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0044/raw.json",
+      "sha256": "57a59d9a1ae7a2cc5f7e5fd1eb2c224ba7dfb3e81c8aebe1f0ff84cf8ce9558e",
+      "bytes": 607196
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0044/reservation.json",
+      "sha256": "1e464b5f43bbfa895eb57210889374fa09ecd7716443ea67917e868077bc85d7",
+      "bytes": 17342
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0045/raw.json",
+      "sha256": "43b850cd1f486a746f26a41b59eef24c0b8c7efae23b138257586cb03bdbe7e4",
+      "bytes": 598289
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0045/reservation.json",
+      "sha256": "febb0f141182c7440301c1d87e7d712bb7f4b4af8601f63b4e8ef785717eacb8",
+      "bytes": 15168
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0046/raw.json",
+      "sha256": "2dc8c348153af374d07124cd01c02fd4ee318faeca2d3fc2a6b6d90b4e71572d",
+      "bytes": 595490
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0046/reservation.json",
+      "sha256": "6486459673f311fec089ad089ef66ef95782534393a5bc15b95d2174160b7dd2",
+      "bytes": 16567
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0047/raw.json",
+      "sha256": "674c38c183f201e9b3b2570a11bea28be26475ff6b47e56bb74a5f79995fdf36",
+      "bytes": 615330
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0047/reservation.json",
+      "sha256": "ac247155ab1192b1adaade175ba657ec2ed37fae81135f4106717b72fa05dc9d",
+      "bytes": 16194
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0048/raw.json",
+      "sha256": "8d4c46e922a74e994cb2515c65b161d1a09c48c8398978e2e7c36d5c769cbfa4",
+      "bytes": 601770
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0048/reservation.json",
+      "sha256": "5082f73965edaa1ea144657e942397c547cf42256396e99a5a8e54d5874509cf",
+      "bytes": 17114
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0049/raw.json",
+      "sha256": "d89b0f922a8763eeb1007cbbfad1874c40e07290f2cc4de47088bddc237f1ea7",
+      "bytes": 665446
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0049/reservation.json",
+      "sha256": "2bb32a39767b3bb2a522607fb59d2d839a827b061931b9707da2e2df185a892a",
+      "bytes": 16824
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0050/raw.json",
+      "sha256": "fad8c477181050d0cf5e36add4109b5795204679414705a4a18ee75b621ef03a",
+      "bytes": 648204
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0050/reservation.json",
+      "sha256": "54ec9b7c4ad0f9e60990a421b19bdb38899ed7259bce3962b95631a5290266c8",
+      "bytes": 17431
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0051/raw.json",
+      "sha256": "e7777b2d651c2fd4c3bf24b20421ab6fe1891960352e2dbda7273f7922937e59",
+      "bytes": 548886
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0051/reservation.json",
+      "sha256": "5797113ef962ec01e02e82c18418ce93a378ee1b4ffb623d86dae50d70bf2557",
+      "bytes": 15899
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0052/raw.json",
+      "sha256": "30d27423f8a7e35e87cc069fb39fc07f8825ae27ba646da674c9e7571cda2a35",
+      "bytes": 590277
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0052/reservation.json",
+      "sha256": "57701087e0172a37eb3ae2b21d6d087db2c3ce072e6c8bafdbfc21cfac4b6ed3",
+      "bytes": 18438
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0053/raw.json",
+      "sha256": "4d7b44dc47115b1307565ad28ee42f085f58d868fae8c8461f001a1af3ebbb05",
+      "bytes": 584160
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0053/reservation.json",
+      "sha256": "34d2883c1dbf111c7fe18df61ec2ccffba25edcf05651b97cf5c38e9daec8205",
+      "bytes": 16059
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0054/raw.json",
+      "sha256": "c0f2682b6cb8b7780b24646c609e81a4be78cafe2b2554f89b8283fc9fbdca98",
+      "bytes": 526706
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0054/reservation.json",
+      "sha256": "e74cc8dfcc952cc2903741716e159544c11c8dc7ccde1f1fe88dbebec04fcfff",
+      "bytes": 17978
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0055/raw.json",
+      "sha256": "a77440ba3e2dbb4b09f375fa4d581019047de1db0e0f08030871ab4429295cb5",
+      "bytes": 566871
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0055/reservation.json",
+      "sha256": "33e858c6f6ce2a01b786e4662403bd5394e18b91e6e7cf1ed49d64387486a4c8",
+      "bytes": 17044
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0056/raw.json",
+      "sha256": "d20da82ea88f32908f988101b606916d01bf7842938f142ce260c9a63e15c738",
+      "bytes": 555119
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0056/reservation.json",
+      "sha256": "7acb97c94d33b4a11504b3530338bdd5167e6ac111f1041b51c6d5f756615b01",
+      "bytes": 16208
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0057/raw.json",
+      "sha256": "2b6f15acdd8be0465e801f21fdf3a07828b81328d46faf52fea5fe634a3ac682",
+      "bytes": 567439
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0057/reservation.json",
+      "sha256": "ba8857ed1301429fc1b7a3ed5bb6df9b47ac1604a17a2c1a6eb1dcaf71651282",
+      "bytes": 15902
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0058/raw.json",
+      "sha256": "0f837ff804484cdb2a9a43dabfee0fa65c12d9b8e785d49643ae291e784586f5",
+      "bytes": 588192
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0058/reservation.json",
+      "sha256": "007f5bf68f5f712510563e527f59a24d09b8451d9ef9f26a1904f288e292b45e",
+      "bytes": 16345
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0059/raw.json",
+      "sha256": "145fe96b34bf737a220934a263815ee91fdc9a1d55775b4bfdd64b287ca265b3",
+      "bytes": 575821
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0059/reservation.json",
+      "sha256": "6d1b99b2d7b7028081d907c83639717194e3e2e522e4570e2826f8e77940983f",
+      "bytes": 15847
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0060/raw.json",
+      "sha256": "6c64e3fc79f7258b379675efd326066d8213a9783e1310d097362a4458c775fe",
+      "bytes": 548391
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0060/reservation.json",
+      "sha256": "2f2b03a0e833173cd071580edbe1a77cb8ee26f32931f074f6f95072ff31747d",
+      "bytes": 15044
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0061/raw.json",
+      "sha256": "1696bf6f9dc6442e24cfbe97bd8ef47870da8af942f673a90e5b2465861e038b",
+      "bytes": 545214
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0061/reservation.json",
+      "sha256": "a2ec4e7ad4c5444b7ab64a885a59db135c7a45bb648cd2d08d94a8da83ae587c",
+      "bytes": 16947
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0062/raw.json",
+      "sha256": "0e203d118e1febe184b58a426476699cc08448e0ef21ff21851887e25345c7c4",
+      "bytes": 516167
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0062/reservation.json",
+      "sha256": "015b86b711d0ca2edf98d0a1a882e1ec16ce5f6a4deb48e6ce08ee93372f2b97",
+      "bytes": 16121
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0063/raw.json",
+      "sha256": "d4155e4c4f36e8a21b6c7be6c7feeba0724e865df351a515273e79bb7b0a5704",
+      "bytes": 567133
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0063/reservation.json",
+      "sha256": "b98e2cf83925fe37389d8ffe82fd937056e02b7347fdad161933f83f2ecf64bb",
+      "bytes": 15690
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0064/raw.json",
+      "sha256": "19cddae8afe883a7e46b5aecb2c5dea7b3aa63ad8a334eeee5319abe5b015fcc",
+      "bytes": 587127
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0064/reservation.json",
+      "sha256": "69d19933ebf8e4a9c64e056385d80cdd319d8556712851766b16b22faac6ade8",
+      "bytes": 16176
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0065/raw.json",
+      "sha256": "8571983fcdc20f6bebd9f1b4beb3da21abdeecb2e206c40b020522ee5d5aec88",
+      "bytes": 582880
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0065/reservation.json",
+      "sha256": "a5d9d2f1eac326f84ee7f7309e7c5fb7303c518a9a8878abc661ad31be84dd09",
+      "bytes": 15947
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0066/raw.json",
+      "sha256": "77dbee9ef32eedb94ced8d525dc3723edc7e703ecbb7e8c65b519af3d1bdd5be",
+      "bytes": 554428
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0066/reservation.json",
+      "sha256": "ca6ead3f83c42a76c680b44970417edf45a4f95253a0068e05dec1b762575ccf",
+      "bytes": 15762
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0067/raw.json",
+      "sha256": "22a4152d82a58c77b4767d45b550e8e4de7fe659f5fce9a546b4002fc421c245",
+      "bytes": 545049
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0067/reservation.json",
+      "sha256": "23d623a14c73c3c88274ee0795aac1eac189fedc9ffd53bf2866c14dd933c739",
+      "bytes": 16033
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0068/raw.json",
+      "sha256": "fd6a1abb200026452112c67352df4e624c766ae9497da739dacbe9ed8fcf6ee3",
+      "bytes": 603707
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0068/reservation.json",
+      "sha256": "fb60275f6cea12d41e20bac9a8ea48e2e878b639d30588f57d3dca1eb4206af2",
+      "bytes": 16283
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0069/raw.json",
+      "sha256": "f6dceccaa9849fdb1b1116589142ce21e4b25eb677e0f7664610361e35edf22c",
+      "bytes": 588026
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0069/reservation.json",
+      "sha256": "528b5f724ac7f6f4ac8ec1a26933eeb8a71cef814fb737a29c2219340d794c65",
+      "bytes": 15938
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0070/raw.json",
+      "sha256": "ed1f45f176ac3700a0363abd844e1238c4912dda3111b16f8fd6e95dcc5c6227",
+      "bytes": 653345
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0070/reservation.json",
+      "sha256": "5c54083c4c87adb29f03f4596c2090a316e5cd7aadb1a09665c8a27497fde726",
+      "bytes": 18381
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0071/raw.json",
+      "sha256": "a17a52e95d0b7926ee646f474782e13b2ffad9121084ae57856bd046a9ab6203",
+      "bytes": 548304
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0071/reservation.json",
+      "sha256": "c86422d0aa8836706739235f0c3b5029875f4a088418abaf9ec10d4a4451102f",
+      "bytes": 15566
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0072/raw.json",
+      "sha256": "172a821b10f89a227995d7cb9284fbcfc65f3dfa6571f67abf06f15672728e01",
+      "bytes": 590045
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0072/reservation.json",
+      "sha256": "9d594034a6a84e26017187386b7bb7d96e21e846aa802ab1f03d51a8c1838965",
+      "bytes": 15961
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0073/raw.json",
+      "sha256": "1660a4fa9573a1a7e04d934d5af6e1e069c1108d77af6df00f505adb6f063f23",
+      "bytes": 613565
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0073/reservation.json",
+      "sha256": "2f7ff4f7bf948c312df58217d4635f549d7afd8bdc313af056224b41a587167f",
+      "bytes": 15349
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0074/raw.json",
+      "sha256": "1e1f287e34bae0a20de88c2e1f7d69f430d24c0f1b380532b3c812e8ea482e87",
+      "bytes": 585746
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0074/reservation.json",
+      "sha256": "85f88a11ab4e8c520b993ed96f508113d8020927dcfbca1bf371dcc10026fda1",
+      "bytes": 15857
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0075/raw.json",
+      "sha256": "2c026fda744d03f639524b9a4b0a7ef0bb8497940025a26bf213223274c1c796",
+      "bytes": 591970
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0075/reservation.json",
+      "sha256": "ab6498c44ba6a32aabb73ac64d01ad4f850e79bb82ee89836ca1697d3a502c18",
+      "bytes": 15009
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0076/raw.json",
+      "sha256": "1ad008b2669e73f8246171283ac12273ce3723abd3f5cc103cab38cde0d191c1",
+      "bytes": 551020
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0076/reservation.json",
+      "sha256": "3a289ff70277672af2537cb8d31d50d7ed4c4e9ae471a559e8267beab5a9e77a",
+      "bytes": 14425
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0077/raw.json",
+      "sha256": "8a5e714cef22785214db2537f4533fd326a55e8e3c3003b6ddf09eb17e075c1f",
+      "bytes": 551883
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0077/reservation.json",
+      "sha256": "84eb4f5cbb3ac7a26908ffe03ad1aab8a4e0c4ba83bc107984ace91301793263",
+      "bytes": 15347
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0078/raw.json",
+      "sha256": "35371d4b1933c75d1b6f0e1357b96fbf6832cef882cbf4eb53ea3417341ed2c5",
+      "bytes": 577296
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0078/reservation.json",
+      "sha256": "e7c6671bc80c252ff1e808b66dea26726cda5bd8049e938077731b9a24048980",
+      "bytes": 16704
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0079/raw.json",
+      "sha256": "2aa6c1cddb39cbd29e98f8b18d9d4931672d866cc35936b88b80ce7ac7ab6a2c",
+      "bytes": 551093
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0079/reservation.json",
+      "sha256": "32d42f4e741a968bddc53763baf72ff21c0420a97218f0e82e193c91e9a037b2",
+      "bytes": 15690
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0080/raw.json",
+      "sha256": "c573370890e7851217da31bc0f8dfc06cd118510f609f016aa498c3fcba09fc4",
+      "bytes": 563675
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0080/reservation.json",
+      "sha256": "f09122c87f33b42382c7c6c8254120d44f7289926019441694bf3da7c3cf4f89",
+      "bytes": 17580
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0081/raw.json",
+      "sha256": "8e01a5ebdb64d024afcbb54789d1f819a21985c86f8371814a9c657a507ba3ca",
+      "bytes": 605074
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0081/reservation.json",
+      "sha256": "443edcb36d231285a1dde1f8d04f7fb21ed5bb5dc899d34307f0e60d740b41ff",
+      "bytes": 16440
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0082/raw.json",
+      "sha256": "a495b02151c287c50254e81a75a92d6fda9634bdb5eba3ab286e6aaf69bf0d1e",
+      "bytes": 554065
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0082/reservation.json",
+      "sha256": "bdbe997446c08cb39fa8b78a1961023c7bc114bd51f7b6b6382aa35732e7da2e",
+      "bytes": 17391
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0083/raw.json",
+      "sha256": "0a52b51266a0078a8220bd0f0e2c92348642744759ee088d4e8a0617fb6353e3",
+      "bytes": 554235
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0083/reservation.json",
+      "sha256": "47582fb366377282d387063f0a658be736a72f162334d3cb3f1d7c23121c3e40",
+      "bytes": 15591
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0084/raw.json",
+      "sha256": "784e2e12f80ae6c042409b70b3d5861cd193a04f8a6c4bd1aa300f8f5ea511c3",
+      "bytes": 589817
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0084/reservation.json",
+      "sha256": "9e10b66c65c73bf1a55c24e1757e979de7e250e2ac04429f916d71e8233fcf06",
+      "bytes": 15589
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0085/raw.json",
+      "sha256": "9a0486c4b7398d5ec9783a7480ca39df1c5985c085f78a95ccec082a94aa1d26",
+      "bytes": 538103
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0085/reservation.json",
+      "sha256": "1f22686f1ac2c1be58cca95119b27bb0f191786d095422dae3835d9c4671b3b5",
+      "bytes": 16794
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0086/raw.json",
+      "sha256": "38b500352864a2fcddbc946a52b3f51127e2006780d5ca59dcddd6e8f6b6779a",
+      "bytes": 544119
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0086/reservation.json",
+      "sha256": "7b261f4bbc9567f59d853345225b584a443aab8f1142ff71588cf2e3692a8c67",
+      "bytes": 18661
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0087/raw.json",
+      "sha256": "5a2b9098bc076ce393d2f59741c72a5c5ae52a49ddecfb7b51edb7d0d8bfcfca",
+      "bytes": 555934
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0087/reservation.json",
+      "sha256": "ce2d6770b76b948f61cc4fe2048cb4180ae31ceb5e4f36866842d3707219ac24",
+      "bytes": 15156
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0088/raw.json",
+      "sha256": "867c1d022f147ef495582580db62237b18ac7b4374feebfecce03dd38a01c0c5",
+      "bytes": 558135
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0088/reservation.json",
+      "sha256": "53bf98646744e11680d7cdf789937f770c640ac28ab6209f70683ee8069b6cb1",
+      "bytes": 17590
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0089/raw.json",
+      "sha256": "baf987e3c0d19d2bbf0392a1cb67f8465ce517a4184016163157a1a3255bbac1",
+      "bytes": 542778
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0089/reservation.json",
+      "sha256": "1634f3cf650bc19f1024ace176a2e9c693ba56af18c0c05cbd7ec6eba85c5855",
+      "bytes": 16264
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0090/raw.json",
+      "sha256": "e710975f79edd230c0b28d029fa122f2347d3529cff528a23c618294e8f2a127",
+      "bytes": 501156
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0090/reservation.json",
+      "sha256": "010ded261abd4c30f26eb433bfa61f29b2ab3d7897d56e24ac4f72ca97dd5535",
+      "bytes": 14333
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0091/raw.json",
+      "sha256": "83bf03e38693a558ee20b7eb3a337c11a9e74b07dba86b40e75e619913d7f2ab",
+      "bytes": 552365
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0091/reservation.json",
+      "sha256": "72b74d13a16feba3a7cad796a71bacf058ce9a1d257f2e2d0961f00c3e9ae650",
+      "bytes": 16042
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0092/raw.json",
+      "sha256": "9e36f1c350fb47daa3d836dff2ae863dbe81086962d1956b5a246ac4d58996a6",
+      "bytes": 592933
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0092/reservation.json",
+      "sha256": "03741cab06efc49cb0e68cc550bc41648e779cc1b90512b87ad377f44fb28a58",
+      "bytes": 15301
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0093/raw.json",
+      "sha256": "d9f76fd8cdc534a738fbfaeb029e23ef6f66c0b5a40a85577305fbdcd94a9f67",
+      "bytes": 550004
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0093/reservation.json",
+      "sha256": "6ff6116f4c9f2cbc12d1175e95b7d312aead063ca16fc3984fe021c533b60df7",
+      "bytes": 14771
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0094/raw.json",
+      "sha256": "0d2395a6824ebc4b05d84aa2af16f5709173cf1f44388b8e8a540d72a9f3e14b",
+      "bytes": 556185
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0094/reservation.json",
+      "sha256": "55308161869065a7eaa41012a7267d1e523b9000f671c2e798e68269040c82ee",
+      "bytes": 18475
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0095/raw.json",
+      "sha256": "949538c9c48c6f5360c4126a952b3def875da4adbc8d3a8fabf0fdf6696507ab",
+      "bytes": 577382
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0095/reservation.json",
+      "sha256": "b403aa08c115e1ed2ea2acd50e0b05e61a2a85baf9caca07854816d7294b9153",
+      "bytes": 14811
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0096/raw.json",
+      "sha256": "d4db8ffb7c61babe8f453eabd9911b13b87e4f99fa1f6e00c6133cddeb1cd792",
+      "bytes": 538956
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0096/reservation.json",
+      "sha256": "dd016e0ad2725d84a61c163d3faa8efe37d2db800c10005760fe1105ae5025a9",
+      "bytes": 15761
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0097/raw.json",
+      "sha256": "70ae5b3c9cbd97663bbd170a38e493653579a0ba0539c90b0b30b8f0fd632a9e",
+      "bytes": 559166
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0097/reservation.json",
+      "sha256": "aad233536a5ad9e1b2f6ad87b45ca639657a27c9b9698b5a6c71a9955aee31e6",
+      "bytes": 15521
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0098/raw.json",
+      "sha256": "385b3f61a8bade325bff4f6df708d1c00316588cf4abafd5800d9faaea0cc371",
+      "bytes": 515280
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0098/reservation.json",
+      "sha256": "10a06c505b953243a41a5d814015ee71ef275fd31bb52992593b262cb9b58756",
+      "bytes": 16086
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0099/raw.json",
+      "sha256": "cc7d81e191dfe4d9c2e78420511b45c001e7b4dd2339b4f1cc50428421474892",
+      "bytes": 554466
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0099/reservation.json",
+      "sha256": "9fd8deb42fa9972e5663e3ffc5c5f17a0eeb9474364c6642643861a434f34fed",
+      "bytes": 15708
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0100/raw.json",
+      "sha256": "c664a901673f66f3e6cda46df85a439c15bce4be2d1603edfac81a1806f924d4",
+      "bytes": 592249
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0100/reservation.json",
+      "sha256": "f15bfb0f7bb804c5a2ca32e61ddd510ac9119f72fa095eeba897c31ee65854be",
+      "bytes": 15638
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0101/raw.json",
+      "sha256": "3eac180f97d910e1f41c458865d1b4d27b05b970606e01fe7fde2272bf61ea06",
+      "bytes": 572564
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0101/reservation.json",
+      "sha256": "0e53852bb9301b428b8f280cbf3f3a7fd1619cdc087ec39a69f8723d208ca50d",
+      "bytes": 16989
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0102/raw.json",
+      "sha256": "993f9f0587f5771093475c8ef3f4f3fbebd768c586dfbd0b063984f03e8182de",
+      "bytes": 597092
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0102/reservation.json",
+      "sha256": "9edb870026ee1dc8ee1e89cb7e3734ad7d71415a02aa370489e48f0738bc86ce",
+      "bytes": 14673
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0103/raw.json",
+      "sha256": "6d77b05d474606631c939265b8c1caa53b36faa197647f5cdde7754707824a1c",
+      "bytes": 587761
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0103/reservation.json",
+      "sha256": "68fc035cdd5dbb0f9654e0686752b20783912f62c01a39f6c30eff48876653bb",
+      "bytes": 18228
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0104/raw.json",
+      "sha256": "d7a209b21fa9cdcf65e650da3b534be00671745995811007c298c29fe83ab8ca",
+      "bytes": 577015
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0104/reservation.json",
+      "sha256": "e8bfa9e970c677d1ddff5d7d085647df8f47e6b65c49d9a8e2532b6dca5b4982",
+      "bytes": 17108
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0105/raw.json",
+      "sha256": "c26f15e2d2018fae145a356c38e16769409571a16137f6de1c1361993e78f356",
+      "bytes": 574104
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0105/reservation.json",
+      "sha256": "a62e8eb3df0fab833f0b538608e2b61f408a921bb845b3ac0be96dedd4730f85",
+      "bytes": 17058
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0106/raw.json",
+      "sha256": "4c956b2ad2b9b3ae1aa627afb5552c1ffa21369bcfa8e8f089383c542276bc56",
+      "bytes": 544714
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0106/reservation.json",
+      "sha256": "8a0f7977a95b21a2a372ca44351102283eb2c88298b57fdaa6009023ef27d540",
+      "bytes": 14188
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0107/raw.json",
+      "sha256": "9838e796a781c6dddb9f2390d574137867e4b0395734a8b3751555745a84abe2",
+      "bytes": 570573
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0107/reservation.json",
+      "sha256": "12c830850bb73e96991788831665a289c6750e1a537f509fa20bacb683ae8f12",
+      "bytes": 16880
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0108/raw.json",
+      "sha256": "2ea32f629c31a36bf2dbba35de73782d1caa630175022cee4ff127731bf55015",
+      "bytes": 479867
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0108/reservation.json",
+      "sha256": "b01bb0b52a26335aabe7b13378364cad9202e63d3bc82becde85d39c745c2d7d",
+      "bytes": 17204
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0109/raw.json",
+      "sha256": "81a7e1f51fd2858a4d7f50022a2a8dc7c459f1527da4892949ffbb504a669363",
+      "bytes": 560341
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0109/reservation.json",
+      "sha256": "1dd71ac6928adfcf984590af5e30efd469f1d9c59d51b817618e4710581b72fd",
+      "bytes": 17493
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0110/raw.json",
+      "sha256": "a2ac7fa78dd3f71d3bb0ac5d0cb0d785478c3d282b6d7bfea7dfff758e67db6d",
+      "bytes": 543228
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0110/reservation.json",
+      "sha256": "b372a22d3bce240c61a0c6e14c0f0db286f92e233c77dacae36f863730e5668a",
+      "bytes": 14768
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0111/raw.json",
+      "sha256": "043c1dfcaaf0122be40eb809ab63831cb5d4bfae341dc2b583aa963e8e02ee48",
+      "bytes": 585852
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0111/reservation.json",
+      "sha256": "3f51e4de74d107863e0efb9c744c2a97306e60e8880baa857608a546c427f252",
+      "bytes": 15801
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0112/raw.json",
+      "sha256": "76f8d03162a199a9ff6fef921a406d5d14acb110981bc074cbe4802409f8dd08",
+      "bytes": 639484
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0112/reservation.json",
+      "sha256": "5f466873ca20f081bdacd0ce804db4018b386d69d80b39cae8b794258999f663",
+      "bytes": 17195
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0113/raw.json",
+      "sha256": "24e9f7d9b1daf5ad0788cafa706c25a03a80637688e919f2672c1987e8fdc2c2",
+      "bytes": 543773
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0113/reservation.json",
+      "sha256": "6a1333935b152413838b2901868dd99d91e140057b15a3d477c0a329904f0d61",
+      "bytes": 16049
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0114/raw.json",
+      "sha256": "b7554cc1adb076e4566cfbd97187bb8530aa4d294d8a3f83bfb00e8c20644e46",
+      "bytes": 603788
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0114/reservation.json",
+      "sha256": "36f3187ca487cea0f78d9f7cea2ea2f2217c2ecbfd5200aa5cc2f6f6f9c790f0",
+      "bytes": 15720
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0115/raw.json",
+      "sha256": "97022e7b26e6bcce78acb1a19cee289e0ea238e68ad61f501bf6247c9a8fc425",
+      "bytes": 543163
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0115/reservation.json",
+      "sha256": "6ffb4cf8ff75b1bdff2db8a394baa2bd0be878de8394e88aaa9ec6dae8a884d9",
+      "bytes": 14429
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0116/raw.json",
+      "sha256": "2aadad8b69bc7ddc22b9f14497a7413dd9424892e89f6682cb0d9030093655cb",
+      "bytes": 610377
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0116/reservation.json",
+      "sha256": "0355a1faaa9e1c01fa1836e8e51be935ac0af90bd6f3027590547c56cf56dab0",
+      "bytes": 16985
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0117/raw.json",
+      "sha256": "846fc5c79fe7f0795ba91f8184be86eb5c3d22e726541e1de62c40c8d578d7a1",
+      "bytes": 549548
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0117/reservation.json",
+      "sha256": "cb4a06065e22e7d87524520fc5d1dbb3b7d65cd653630bfa912fa5dd5a9d8ed9",
+      "bytes": 17283
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0118/raw.json",
+      "sha256": "7e9c538e609a82778384a16e80d97265aacda94aceaf5663ef14f8ca57239419",
+      "bytes": 594167
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0118/reservation.json",
+      "sha256": "64256b0397e4b604499d907b092155284e2d3d20165c7a862f7c6ffe86c74cac",
+      "bytes": 17454
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0119/raw.json",
+      "sha256": "54ae9a3cd04972318d862c1abac995fd86db2acf1c8634d4a5f678145ecee165",
+      "bytes": 608168
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0119/reservation.json",
+      "sha256": "f6e03590c3dcca3af4b61ed9cb2fa3686bcf663f28aab69e9f45013c97f2e0df",
+      "bytes": 18118
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0120/raw.json",
+      "sha256": "1f505a2ffdfc39a8556993ddb5e2231c434873c43d12737c4044cc111164daa4",
+      "bytes": 571475
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0120/reservation.json",
+      "sha256": "50c9d5a2321aa31f5fd24798ab59ba54d8dc0b6b9525b2a7fb472ec62d38e18a",
+      "bytes": 15777
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0121/raw.json",
+      "sha256": "7158ed0cc80202ec881a768b8407003028697ae117969cd680a9bd906b8874d6",
+      "bytes": 550494
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0121/reservation.json",
+      "sha256": "023e4b0b09ec4dfe82f7dc762fc319a4e304a779a232eb2f031d6741755f9ade",
+      "bytes": 16313
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0122/raw.json",
+      "sha256": "f2db3656eafc96c941115e658aba7e38e7df3eaf00dd6a1230eb3bfc2880abf2",
+      "bytes": 568473
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0122/reservation.json",
+      "sha256": "c928c5f44fd7aae72bc415daafd057ed226ad50ee9a6b9e8d8bb37042d6ad26d",
+      "bytes": 17573
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0123/raw.json",
+      "sha256": "12b619459491a9deeb2844325c2fcf916e2571b676a3753d9fcf97108e2acfdf",
+      "bytes": 519149
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0123/reservation.json",
+      "sha256": "b95bfae97375b219774c28e9f461002211debe85fb6c34e75e332b9f47510e18",
+      "bytes": 15316
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0124/raw.json",
+      "sha256": "868799315b85c2540029d13fcdf78dcef9ba07aafe2aa0d4c4b366c54b9635c3",
+      "bytes": 692719
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0124/reservation.json",
+      "sha256": "3f116382dbf1e74575ed035970e8d264540ef7d2675c826876320ee23a9a7159",
+      "bytes": 19766
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0000/raw.json",
+      "sha256": "7e0b52801dd3cfb160389b3b1ab72cbbc27f67ef87a77e2fc3dc3f325ef8ca3b",
+      "bytes": 601340
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0000/reservation.json",
+      "sha256": "412720762e2d31a2aeb43cd3245d4c6ca46c86eae7dd23f29bf715f965f6569c",
+      "bytes": 14630
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0001/raw.json",
+      "sha256": "6f8ae4ea491b1d5ec9a20ba1ea8b6c8f9debc4631b59e744ef05306fa87d8c44",
+      "bytes": 566534
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0001/reservation.json",
+      "sha256": "ef3b42df37e66b7361741ba3208b6adcad98c934bbd206113940e38616c63de7",
+      "bytes": 16119
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0002/raw.json",
+      "sha256": "81c6bceae6019472444d4986a67cd16544df495b090b030584af9005891d7522",
+      "bytes": 624603
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0002/reservation.json",
+      "sha256": "a8ff07eac0382c203e5428484f36464dbadda5770cfe591891023a1fce0e1bcf",
+      "bytes": 17513
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0003/raw.json",
+      "sha256": "9f676e90cb9f5295a04aad4dfdd6a9169c232a47041ade67b689b75652ca5293",
+      "bytes": 643440
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0003/reservation.json",
+      "sha256": "afdae098001b06045d2cdc07df0e2c2688a02f23c1f3cd61bc990f09b9c9513e",
+      "bytes": 16579
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0004/raw.json",
+      "sha256": "031db710bcade2a90b0f6e276d7badca200eb6ec93944e6816d88968ab70e54c",
+      "bytes": 598496
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0004/reservation.json",
+      "sha256": "8f35c61dee84bb10b91fbfe054089488d016d55b2848fb57a4f799160639bbdd",
+      "bytes": 17003
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0005/raw.json",
+      "sha256": "cea3dc321e957c2026f31fe9e97207b2d5eb0237d96e0f9709a729ad169f1f3f",
+      "bytes": 564348
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0005/reservation.json",
+      "sha256": "e6e95e72bdb9b59385d048e9d0e52da378a31346dc7b1c58d82b12020f101ee2",
+      "bytes": 15866
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0006/raw.json",
+      "sha256": "d33409d52f779bb4ebd1099850ac2f381853498135ccdec9f7b07fc91cb8897a",
+      "bytes": 588469
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0006/reservation.json",
+      "sha256": "9e0db383f618f219165b3b9933f84f2c4c4e14cf097a877d8a5648e4300e4591",
+      "bytes": 15881
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0007/raw.json",
+      "sha256": "9f90e14c63c0bf4e89123ea7801816ab6bb99349f0bb82481ce44f0297a79aab",
+      "bytes": 565601
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0007/reservation.json",
+      "sha256": "5a1b825bb1614ca83b65229efceda221a8feb4f91713340f0b9ed01318513d21",
+      "bytes": 15017
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0008/raw.json",
+      "sha256": "f34cc874a6317b10e76d04e467cf4926a4192b1ccae688285efa508fb0eb1c4b",
+      "bytes": 558717
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0008/reservation.json",
+      "sha256": "764e6c2056c7956401ff8fab66b9eea4ec5b214284632559ffe6e23586b90c6f",
+      "bytes": 15026
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0009/raw.json",
+      "sha256": "d96c8eb76cfa5ddf912eb1ee482492c7f46fe8081a9edd6468c27fcc9ce59389",
+      "bytes": 592121
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0009/reservation.json",
+      "sha256": "9e79efc036ff192608c27469420132470f78fc602dc6866cff5a8980a2711b46",
+      "bytes": 15252
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0010/raw.json",
+      "sha256": "0eb0426eeacf10ca18ede5a63a547da59b29577793c722beb1bc781c56298aa3",
+      "bytes": 627184
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0010/reservation.json",
+      "sha256": "998002212ecb87eba9354d4cf65935ee04565bc56bea4d303bc7ad7fbad6d215",
+      "bytes": 15086
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0011/raw.json",
+      "sha256": "ad1e4415ef346e220d9fde584c05a6345d63908f754d3bb7d0716fd05bc2e9a5",
+      "bytes": 614774
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0011/reservation.json",
+      "sha256": "447f527e711678a6eeef56d526f5e171e21ab32d47d5632dfa935a975ea4a2ef",
+      "bytes": 17144
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0012/raw.json",
+      "sha256": "190b6f24ebf2c141a0cc31e3e15d9168f8e605652ac98724a52c70cddc72e620",
+      "bytes": 653280
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0012/reservation.json",
+      "sha256": "f09275e61c9b3ed4925d6dedda5574320837aede532c346c1bc593109bf88f7f",
+      "bytes": 18467
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0013/raw.json",
+      "sha256": "81cc2f8839b601b2bc995cbe4199c6af48619f6c8f22bf84414321fbe0e71a1f",
+      "bytes": 589691
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0013/reservation.json",
+      "sha256": "b303971201dcb2dbb085bba5745c06a302c2a9e9cc35fee8289af664ae98467c",
+      "bytes": 16954
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0014/raw.json",
+      "sha256": "b2407507eaa66b433f751fadfe676f4dbb5af7ed87948b7ba7ce150e9f46e545",
+      "bytes": 637997
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0014/reservation.json",
+      "sha256": "e6639639ae1faf61b2b4070819c2f33bca9dd2f6674f29d9d33b66aca86fa637",
+      "bytes": 16426
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0015/raw.json",
+      "sha256": "caab3c75a3d6f420d5157ad34b2caf34e0be1abe95de9fedbdad50b61cceebfc",
+      "bytes": 592190
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0015/reservation.json",
+      "sha256": "b03d89165ec09e26162e79c49fce078cc65a714cdf9c562f2131870860ceb924",
+      "bytes": 17583
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0016/raw.json",
+      "sha256": "01b1abe1fbae431fcd68af7a0a92707cdc22d445f030a306ba4b106fb9384ff9",
+      "bytes": 570354
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0016/reservation.json",
+      "sha256": "f520015158ab940d52e3551d68ab2e201df35342f6c8f5295712ad28a38a62b3",
+      "bytes": 15686
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0017/raw.json",
+      "sha256": "ed0adf81745d42ea9f0625d6833461939bd556569c706efbf9e62c2a34274a3b",
+      "bytes": 605935
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0017/reservation.json",
+      "sha256": "285efff59de81901c8b586bf30313a7fe4de6427eed39fc346fa719fc8448e27",
+      "bytes": 16549
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0018/raw.json",
+      "sha256": "67dcc69abcbdf778bdc91243a6b96611785b5c2733c060190d0cf8e63d8bfef7",
+      "bytes": 601955
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0018/reservation.json",
+      "sha256": "071cc48600166d6bdd186bb67ed7b73ed36b88515b5b827def82228b9c913962",
+      "bytes": 16593
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0019/raw.json",
+      "sha256": "158b35ff489f2447116d49a858f716145bb11c56aed7102a7a93d3c23b06aef2",
+      "bytes": 548038
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0019/reservation.json",
+      "sha256": "c363005a205b5afd730203385f5ba2cc424009be32987a37121ccab8691b38ff",
+      "bytes": 14777
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0020/raw.json",
+      "sha256": "a31dce9f2a472b2ff391c42d079c6a13928522ab8b3e4ab72e9964c8d13853be",
+      "bytes": 594637
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0020/reservation.json",
+      "sha256": "1faaa75bad04d4cdb2f02760aab57ce2d37792b793321dfcc93b8d9cb105ffe8",
+      "bytes": 16345
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0021/raw.json",
+      "sha256": "b6347bb906d8866a5dc80005b27c8bf43c0c4f8c418c48fc32fa195f778fb0a9",
+      "bytes": 665045
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0021/reservation.json",
+      "sha256": "94768b87f17824516067e89aab4df270935589784ccbf3359afff4ca77e8efea",
+      "bytes": 19223
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0022/raw.json",
+      "sha256": "cb5efaede83fa2e860b94d0b92cfc082d92af759e577b96b39ed439a3da4d656",
+      "bytes": 599249
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0022/reservation.json",
+      "sha256": "e963347709a8f42571d53a78b36f8aa384b29761ae646aa38eab53753500cccc",
+      "bytes": 17789
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0023/raw.json",
+      "sha256": "9f3b453a5f63072c71a8159bb9929d379777a58f55544cc36f9ce7f93742f8ce",
+      "bytes": 612759
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0023/reservation.json",
+      "sha256": "2c20db200fe49c36eca734e6989580e0f1bc1b03320c2ea6d11542fa48e9e607",
+      "bytes": 16743
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0024/raw.json",
+      "sha256": "3afc1ce68d2e052dd2d22c8bd1756d2f8d7e0dc2f05e6b7dc679a239847ede75",
+      "bytes": 578285
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0024/reservation.json",
+      "sha256": "2aaeec840b44268f653d04cb1ca8fab9004724781d6765319dc09a7f7d209690",
+      "bytes": 17081
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0025/raw.json",
+      "sha256": "e4572ef4687a354d261ae19aadb9d9ea8d85abb5ba281e1f9c3ed335027debc1",
+      "bytes": 585582
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0025/reservation.json",
+      "sha256": "7be9bc892bfc8d6f3d79d5a56afba0b3ec2418e5363cda333d16db807b75b6be",
+      "bytes": 16794
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0026/raw.json",
+      "sha256": "1dc8f6b9e6a224af6440584b63061d54db76ef12061786b920743559420298cd",
+      "bytes": 607930
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0026/reservation.json",
+      "sha256": "ce2fc99e084d7b9ed0b528cd9a82ef9435f3e663d1b2519df44006a10d966286",
+      "bytes": 18012
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0027/raw.json",
+      "sha256": "d2a237501d57fb5328c55ffbf9a78c5036f185012a9f4989b6cf0e99bf787680",
+      "bytes": 616078
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0027/reservation.json",
+      "sha256": "becac7daaa6814e1c446f4961861ba778d078dbad03ad530381d09e5307ea378",
+      "bytes": 15527
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0028/raw.json",
+      "sha256": "2462cec71973f1407a266225390e076c29122da2a6f5a2d4ed6ef55ec1499d4e",
+      "bytes": 592056
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0028/reservation.json",
+      "sha256": "6d6b4191e8c807f9778e6db21d96f5d3eccdbb3fd2ba4c370fff981c6c5fe270",
+      "bytes": 15539
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0029/raw.json",
+      "sha256": "a161942e05cdce05878acf1c0a7a069f6dcc2b5a3aa711ae39a4254b808ce2d3",
+      "bytes": 559938
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0029/reservation.json",
+      "sha256": "99dca0912f5ded8445cbe5302ec33caaca16c9a1ddf3dca945f1d48b2e6f74fd",
+      "bytes": 16093
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0030/raw.json",
+      "sha256": "2c2ef3f3ba2aaeb2fe34ebe046ea5b8b9de89ec2b2f608bed0c5b6681ff5cee3",
+      "bytes": 633894
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0030/reservation.json",
+      "sha256": "9d27215c4e5541de6fc45407a022b771168e786b348e2e82dacbf1734d188ba5",
+      "bytes": 16898
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0031/raw.json",
+      "sha256": "3b1f4d16d186134a71f19db99d703bf943065f39b3328276726f6e334c174a44",
+      "bytes": 576920
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0031/reservation.json",
+      "sha256": "5ad1e14c5955a84fd042bcdfbef689bb3a3ba65914fe45713bac4e6662b72994",
+      "bytes": 15558
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0032/raw.json",
+      "sha256": "014759ae502c1f5879e7918973e73474d38dcf2f528f617eece1336424d4fb03",
+      "bytes": 546142
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0032/reservation.json",
+      "sha256": "578cbf8c9c901d4f6403bd61b17bdd11ddaf19402713aac1e344f01294f9f05b",
+      "bytes": 14203
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0033/raw.json",
+      "sha256": "70573ff4d11bc35f87770fc8a63a38bd576940bff70231f1435f5b63db270485",
+      "bytes": 605585
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0033/reservation.json",
+      "sha256": "f938dafce6d09bdb70e6c78e6b56b79c310630b5c57f4da1960127649e242bc5",
+      "bytes": 16465
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0034/raw.json",
+      "sha256": "8fb73be5d27893574dd3c1c69405bd2f0259bbe96d3634a07d0e2793733041d2",
+      "bytes": 628094
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0034/reservation.json",
+      "sha256": "9a69730e7c044d98212b4020ea32a365b5230ef9123ee0dab1db962588d67582",
+      "bytes": 15769
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0035/raw.json",
+      "sha256": "831b961810591ac2f57b3dd87b2f4ca500837290a6520ac0d33e1542788b4e1d",
+      "bytes": 600472
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0035/reservation.json",
+      "sha256": "8c8d9f686c5e7682ed606a8bbf0fab54ea6c7adf665276981df9ef373f824397",
+      "bytes": 16923
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0036/raw.json",
+      "sha256": "374fcce329bffc928f0e1236b2ba84199b85ebc6d7c248c4f4adf70da0152a8f",
+      "bytes": 554792
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0036/reservation.json",
+      "sha256": "d6531af323082428f54390f094fcc6a411477db5c717f3f854efd708cd107c1d",
+      "bytes": 16187
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0037/raw.json",
+      "sha256": "0727b3312c63f4990241f122dd9212c23bb451622b3136104ad04ad72150626c",
+      "bytes": 566548
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0037/reservation.json",
+      "sha256": "40213809e3bf54809f70e1b5a02442d560880a6d9194d6c3c069502134a93c3b",
+      "bytes": 15314
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0038/raw.json",
+      "sha256": "d40282c2267d058c9b7238e4973f1f13d81f30a0338b9a57f0fc4f77a426f6e3",
+      "bytes": 609927
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0038/reservation.json",
+      "sha256": "5aed4a828b237595d3e5d4ce6bf7863cbe198877a2f526117e7585d6788d35de",
+      "bytes": 17723
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0039/raw.json",
+      "sha256": "f8c6f613ea79ed1b7e4379c8cd1355ac2f590a31a8fa6b9ae7e435e4efb6224e",
+      "bytes": 645408
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0039/reservation.json",
+      "sha256": "f4a734b125ebcb805cc216ad343203497c6f35c25884ad1409208191f4f49085",
+      "bytes": 18658
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0040/raw.json",
+      "sha256": "9b0c9997424135502e619f1c76651b9e80efb7cfaf72866a236589ef4b09d0bb",
+      "bytes": 580058
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0040/reservation.json",
+      "sha256": "fd3c803e38cee0fd02c91d4de1db0b37241dbf765c6882a21649a71993a342d4",
+      "bytes": 15692
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0041/raw.json",
+      "sha256": "0f874386d688dfc119bb1f25ef8e6f8ab6075a9cb30d9f5fc8c2ca5f107257b8",
+      "bytes": 548676
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0041/reservation.json",
+      "sha256": "5fe8b3515f35f299bb0de3093a52df58a805ebb6d3d6fd068b5309343545411a",
+      "bytes": 15985
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0042/raw.json",
+      "sha256": "234493ada7ce3f5e5a06a88e5ccad1153f56e6ba0f8f25047af46d6d7f2e5bce",
+      "bytes": 611901
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0042/reservation.json",
+      "sha256": "b635c3731291f727301b5585e8ba5f53636e53e361103e15675f0c41ed67d9b9",
+      "bytes": 16850
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0043/raw.json",
+      "sha256": "0e9a64f40f957cdc4e229fc940a060b862666610a7294a4bde534ab564bd8f55",
+      "bytes": 583877
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0043/reservation.json",
+      "sha256": "fb64961144bbae49620f8b33a96a53c6fb4bbb9731b7d75b7f6ad32ed88c13d3",
+      "bytes": 16048
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0044/raw.json",
+      "sha256": "421ccefdb3be1298851182fc11ba140c8cb0e0c37df93ca76f6d769fdc8da1e9",
+      "bytes": 580431
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0044/reservation.json",
+      "sha256": "177a26c45403b53fd1efe0be028fc9bc7fdefa3dbf889823b774d4477ae57caf",
+      "bytes": 17388
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0045/raw.json",
+      "sha256": "d012aab02a3ca97af2347ce3a13709a481ca827a8e1514b24d6ea508ebb304fe",
+      "bytes": 573497
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0045/reservation.json",
+      "sha256": "343eba5f5cfb13abaa99f84dd12b1b80d1c498626fc31de0463563e057432e4b",
+      "bytes": 15214
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0046/raw.json",
+      "sha256": "28828adf5fbb1dd6b652a5af8d39b386bcbe173a99e0959c2fe906bca473ab72",
+      "bytes": 620720
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0046/reservation.json",
+      "sha256": "2ffe4e7616e9dad7094b8aec845740552022572caa9198e4cc5f16d8cbef088d",
+      "bytes": 16613
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0047/raw.json",
+      "sha256": "8e921e73cde7aee69e9fe8a9300895777486eed043cba0b9cac4e85057249b5f",
+      "bytes": 620362
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0047/reservation.json",
+      "sha256": "bd2e759d86a45f6b19cb02cfef668ae9238be10e02bea3e434838d471fae9815",
+      "bytes": 16240
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0048/raw.json",
+      "sha256": "be519c545d8034cb767985f798fced5ad9b1e176b1c77b47cdfd9fc168f0170c",
+      "bytes": 568701
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0048/reservation.json",
+      "sha256": "7a995af862e1b6db693ebbd759a3e14ed4df0af2c26a0b175df959018ef824ae",
+      "bytes": 17160
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0049/raw.json",
+      "sha256": "6d598e9c792c79b90f0d5bebeca522b52aefd78adc131e7d5efd03852e7f5cdb",
+      "bytes": 620579
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0049/reservation.json",
+      "sha256": "cf41d548a902761473fff2f3a266502a49fcff7b2f245ccb872fef158934f452",
+      "bytes": 16870
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0050/raw.json",
+      "sha256": "1deea34b1c6318f019f2c74c25bcc0e9ef7ece9606133f1ecf207e53c66db052",
+      "bytes": 601138
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0050/reservation.json",
+      "sha256": "6140725f29667760b8a8633484d826328266081442b5dab1702291a85c07ed86",
+      "bytes": 17477
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0051/raw.json",
+      "sha256": "6982719eec6a20b6dfcdabdce84523544d0eea9e6dcc3e08eb68e656fb7982a5",
+      "bytes": 581103
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0051/reservation.json",
+      "sha256": "4baa29f74c1298a066b1f978b457c33daf10ea109e821b5cca73573d485f5c30",
+      "bytes": 15945
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0052/raw.json",
+      "sha256": "1ea0286088d1c85314836504156d6401e004d8a730ccb9260b34cf04fa3e1dae",
+      "bytes": 614513
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0052/reservation.json",
+      "sha256": "aad1bb14e43db5ba62baec0732c79b0c2260830f440aa2ced596376f8df9a558",
+      "bytes": 18484
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0053/raw.json",
+      "sha256": "0f3e1eae8c027c9540799e3d8ff829570a8f871009c3679c2746ad7b34d21573",
+      "bytes": 585170
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0053/reservation.json",
+      "sha256": "7f96070e1459a6e8a182ec1b1d6d74ec746b6d102e899bc3193dbe35b43ab58f",
+      "bytes": 16105
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0054/raw.json",
+      "sha256": "c43ca03be20341484cdb7b89d47c02398986a76d5115e8e949297e3edaf0771c",
+      "bytes": 605353
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0054/reservation.json",
+      "sha256": "f3e08bf63abf19dd453c8c49b862d466085a7760f41c48685340724499774926",
+      "bytes": 18024
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0055/raw.json",
+      "sha256": "1fa7571514661a5a70acd0c8744f4596cb9efd0d2588911314eac2f948b03608",
+      "bytes": 590311
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0055/reservation.json",
+      "sha256": "70a29012e2499987baebffdd18c4d2339d1dba5ceef1d837554462cb3a565eac",
+      "bytes": 17090
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0056/raw.json",
+      "sha256": "062f8f90ed2eb5b485a538f7dba2b9f09fe5e3ebed7becf8a1c2fb73b78c0400",
+      "bytes": 605441
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0056/reservation.json",
+      "sha256": "2f8ee7db9b124473902230f81ac686eaecc2172b308ce419ec4d5131d8afd6d2",
+      "bytes": 16254
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0057/raw.json",
+      "sha256": "0f0a80050ed59e8e1907f8d87b7c8c4d229ac435638c756b6680a5706d78522f",
+      "bytes": 561254
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0057/reservation.json",
+      "sha256": "94492ed5b4ca3c7ccf673aef0cd28e8ba3521876267ea75b3764b0fd723b0344",
+      "bytes": 15948
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0058/raw.json",
+      "sha256": "1fb4593fd6e1e34e315e51138142cfc7668402ecd8763927aef5fd279dbbf7b7",
+      "bytes": 611548
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0058/reservation.json",
+      "sha256": "2cfebc992d82f022b4d250473938a567944603890b2df4feec650af1bea40661",
+      "bytes": 16391
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0059/raw.json",
+      "sha256": "4b1de2aa99caf9ac671c8c8789e59f0c6c864cd5e0e317ec1554c177adac6f75",
+      "bytes": 596177
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0059/reservation.json",
+      "sha256": "900e42f20c75f7692500687ebf6b3ee60247d617a754a95e68a8f349c43dc5de",
+      "bytes": 15893
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0060/raw.json",
+      "sha256": "a9eeaab7356a8c7bb362ec4841d7d344b6465480ccef17f52b61b662962e18e9",
+      "bytes": 581186
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0060/reservation.json",
+      "sha256": "bd335e9b240de6fa68ccffe78d564413759f54dd11e095faa97791a3f83c5b66",
+      "bytes": 15090
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0061/raw.json",
+      "sha256": "17c161031ea985e6039601cb9235e03e3a52e5893d07d18e8097a100ae98240c",
+      "bytes": 583320
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0061/reservation.json",
+      "sha256": "6de524c9f66576a715aaebe3d175b26c8754ebe7b98ab380b10a0d0e57914dfa",
+      "bytes": 16993
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0062/raw.json",
+      "sha256": "94ef199b5f9c362324211b3ea6a5b31abf13798f42d7666467abc5e8d3ce54ff",
+      "bytes": 614185
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0062/reservation.json",
+      "sha256": "4b0facf53878fa30f9ba2685cbd46cdb36160fd517da2b3b166cbd967901abdf",
+      "bytes": 16167
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0063/raw.json",
+      "sha256": "231c6107fad213bc7979340040f0926c0e42ad6299362b346c65dd2c5f5c132b",
+      "bytes": 564529
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0063/reservation.json",
+      "sha256": "60e91e83f2e524d8842c4769be4a01d00f5c577d5823516936b764c3256d0393",
+      "bytes": 15736
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0064/raw.json",
+      "sha256": "a90629a03139e8a8b5ac61a8a1ea64dbfd04b82783c80f923628f7d57721d88a",
+      "bytes": 623235
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0064/reservation.json",
+      "sha256": "6cafc29f5b5cbdd32497612033f769b8161d90aab93f113449e65c84a5ea88f9",
+      "bytes": 16222
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0065/raw.json",
+      "sha256": "bc6733e645a3374b8cf449bfc5cbd1c7df3732eddc1858560969c53a7300e4ce",
+      "bytes": 607190
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0065/reservation.json",
+      "sha256": "f5d3b22fc70c77d10590a12bbebcc5442c07795a144e1df02c75d733239f0ad3",
+      "bytes": 15993
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0066/raw.json",
+      "sha256": "105d386b6a1a889405d020e387b581d60c68e86fca8afb9b972e35e7715f736f",
+      "bytes": 602515
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0066/reservation.json",
+      "sha256": "1e7b79f03788bb8c00cc393b5ce00eed041c0515aefcaa8e5b390450671cdb83",
+      "bytes": 15808
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0067/raw.json",
+      "sha256": "47dab89ac582eaff6a60b47d996aca69def0ffef46bddbadadbb33142b1d2290",
+      "bytes": 580344
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0067/reservation.json",
+      "sha256": "196f92ca86db082ebf259458332ce6eb3ac04f0dc0e0463ad3fde38964159dc7",
+      "bytes": 16079
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0068/raw.json",
+      "sha256": "eaba370f9660f30c71ed167b58a9179636e18d95a4c415e6546a53cabdcb3dec",
+      "bytes": 597628
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0068/reservation.json",
+      "sha256": "fee60422bdd3dc8cc4915602b89c5aeca9c5eec5a27b4af1a0670160b00387fa",
+      "bytes": 16329
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0069/raw.json",
+      "sha256": "abd10eaccd598b05da52f4352009cf0fcee6f0a38313b29634d6f027724a9628",
+      "bytes": 640525
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0069/reservation.json",
+      "sha256": "a9b91868eff042b5cee97452b23eb1ecb4a85e869ebc3172bb23768b96284e32",
+      "bytes": 15984
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0070/raw.json",
+      "sha256": "b737e1cdcacc75b0676d45cdbf8d38c428cdc6841be83e7f5d41c87d7e20b77e",
+      "bytes": 614451
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0070/reservation.json",
+      "sha256": "94fb925359e09725dc186022dc602355a22a8c59ba3f9cdc2610da2c6afb73b3",
+      "bytes": 18427
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0071/raw.json",
+      "sha256": "faf5ecd3668a24d700990b8a03f28148e322d38c1f9244d80cde6ce9b7a380d3",
+      "bytes": 534206
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0071/reservation.json",
+      "sha256": "664cae2a32af1d6db05f7919ac6f452fb3d064ace08299e314cc00dc9df0bd63",
+      "bytes": 15612
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0072/raw.json",
+      "sha256": "163b0db12fe2bc75878b4591cfe6cea96238a3ba856377069f71c22c78a52bd7",
+      "bytes": 584392
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0072/reservation.json",
+      "sha256": "5814e019522d1089e45cdeb0a6fb4161e04e85cd1e98791ad155b6614b37ae7a",
+      "bytes": 16007
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0073/raw.json",
+      "sha256": "cd3a39a1fc055a4f37007f8a10cc767872e0cd0c3569b025f016c8ed6942c54b",
+      "bytes": 555659
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0073/reservation.json",
+      "sha256": "530f98d767a6d57999a254ef3ae5d7a447d5626b1ea29048b6b7edeba731071f",
+      "bytes": 15395
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0074/raw.json",
+      "sha256": "b02f040e9915d508846955cd5dfb0f909dc63400a5b009885e6af5b45d802c3d",
+      "bytes": 556345
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0074/reservation.json",
+      "sha256": "6b03df7af6d961435a6fa59c8c81b8c278714c6832dda2e87e2effd24293cbdc",
+      "bytes": 15903
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0075/raw.json",
+      "sha256": "16012fd44bd704f4cf3cbeab8013fbab5b1fa6f81e99e74a34cef5dfc042e784",
+      "bytes": 570373
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0075/reservation.json",
+      "sha256": "fd3fd1c93d4b80e19063b376b7a7cbe7b75dc9c3ec037dc0a41ee00bca5bc54b",
+      "bytes": 15055
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0076/raw.json",
+      "sha256": "d32b420f820e12fe942f97fa22de1dd37f87b6297bfc79e55947e451c0ff06ea",
+      "bytes": 551800
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0076/reservation.json",
+      "sha256": "89e2306914937aa20b1c8dbe711bab6f75cbdb965f607a466c7cc51341d297a0",
+      "bytes": 14471
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0077/raw.json",
+      "sha256": "07769d2547013dbc0c98681494847bc802fe334ef42bab6f41ad6ceff7f3d5a1",
+      "bytes": 578025
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0077/reservation.json",
+      "sha256": "8f985ee0680c544164adf9945976b9c302389a92b4424650aa8c7303d5d772d0",
+      "bytes": 15393
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0078/raw.json",
+      "sha256": "2be34959cda8937a0c309633906b6b9155750de79011ca904e262b6616d5d310",
+      "bytes": 626704
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0078/reservation.json",
+      "sha256": "09895b6d4287183f352f1dc463fbe1af05a0d9d4042a11506a16db81b51bbeec",
+      "bytes": 16750
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0079/raw.json",
+      "sha256": "5c4f8b83f616d843d2f042f97250d8f69bf2768564b603c460cbac87816fb8d1",
+      "bytes": 606044
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0079/reservation.json",
+      "sha256": "3fb4b5d5570cefe88b4a86556a9881ec4ec7b87ad24c4402c7e388428fbff322",
+      "bytes": 15736
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0080/raw.json",
+      "sha256": "80caac90dcb3423e9a962bef769be0ffff9a10030d2dbc7cfc3cf2fb624b0464",
+      "bytes": 628801
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0080/reservation.json",
+      "sha256": "05be7dc83806537880fde47f1d572773d9b9abf79c6c7b1acaf9726b44d3ce9a",
+      "bytes": 17626
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0081/raw.json",
+      "sha256": "86b93d28709297b605afec878da46f4415e99f8ad72215146113c8a8054beacd",
+      "bytes": 600400
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0081/reservation.json",
+      "sha256": "883a7dcb2aef6e79624851ed9c8568a657bf3435272c2d4a690d5d7d5e4bf8b3",
+      "bytes": 16486
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0082/raw.json",
+      "sha256": "96a29b89f82564f65234f3b133584de14f23924f7e6f2258a34956bdee2e5f53",
+      "bytes": 576884
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0082/reservation.json",
+      "sha256": "cd23ef1f69dcacea0d0e45f8a5ef75aba8272bed759f938b7bc68565d7265c82",
+      "bytes": 17437
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0083/raw.json",
+      "sha256": "3a49cf6a9ce88ac8e7976525bb4ed13daf7decd2aadde6bfd827efcdf1575b77",
+      "bytes": 580702
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0083/reservation.json",
+      "sha256": "ee98805c71652ad37cec19071d8220a47b4ef699f72a10b534ad176bdd8490fc",
+      "bytes": 15637
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0084/raw.json",
+      "sha256": "f65d4e72026283acf01b11f72b88faa55a9af37f19b8b6699a0654aad67dbe58",
+      "bytes": 595054
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0084/reservation.json",
+      "sha256": "bb401d1385f48512174b97f47ce9a1b99d7d9626a31f69695c4f164e50e841a7",
+      "bytes": 15635
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0085/raw.json",
+      "sha256": "6e5501185dbf8b32136a3094835d3b6343b4adedc29cdd18e0c97627b5c33396",
+      "bytes": 609977
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0085/reservation.json",
+      "sha256": "7beab75ab0d0b256c605c6cbd55ece65908f3229af0f393b19f61ce6d5d8e019",
+      "bytes": 16840
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0086/raw.json",
+      "sha256": "41ebce5fac8382a830ff5bd2e4bf3497de84aa82f9d9925336ca4adf176cb8e9",
+      "bytes": 601820
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0086/reservation.json",
+      "sha256": "3f8c928aa2ef5848e3d0af3f9ae6944c0d1449c05c2768e87d27d005e839060b",
+      "bytes": 18707
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0087/raw.json",
+      "sha256": "4b89518b8eb4a5eadff4d2b912243dba6295645cd9149eee6ce8a1fd11a6105c",
+      "bytes": 552947
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0087/reservation.json",
+      "sha256": "5e71c0be516c13a744519975cb8fedef004484607fbc3d4ba69c650e86cd2bce",
+      "bytes": 15202
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0088/raw.json",
+      "sha256": "1f9b7b3f61a266be2d89662e3d7b0220cceb099a6240c9f2ff5f410944e9fa03",
+      "bytes": 634219
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0088/reservation.json",
+      "sha256": "1cf00115e77d3cb4243a6ee1808e49b4370f8b606a64022bd94f2853e30239ab",
+      "bytes": 17636
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0089/raw.json",
+      "sha256": "71a394a259d44400c8a785a430bcb9f43782a1bd1ccc360711c3c9ad3f22b5b8",
+      "bytes": 599469
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0089/reservation.json",
+      "sha256": "eb083917110d8e413ebceabfde2b8cc59c59317b30fe5426d70249e63f714ee4",
+      "bytes": 16310
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0090/raw.json",
+      "sha256": "8df12059a87dc20f1150b9a258f2a484b704132752772829a7953a024d7241a7",
+      "bytes": 544834
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0090/reservation.json",
+      "sha256": "be036ba709f91798225138aae65b06aed70e75d226a20dae6c43737ea2ee4f71",
+      "bytes": 14379
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0091/raw.json",
+      "sha256": "6ff1986fcbe112144488d1ff60d5121eac76e8021764fd9215ec75ccdf8eea0c",
+      "bytes": 568075
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0091/reservation.json",
+      "sha256": "b10bfcf668e628eb4e81594944e93623a7901c977382163c0dc85295a316fbd1",
+      "bytes": 16088
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0092/raw.json",
+      "sha256": "ab928cef5adc3550cb977b37e168c31ec6856765cbbbe7b81ab1e82ade8b40d1",
+      "bytes": 589553
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0092/reservation.json",
+      "sha256": "2f1ce02500b3f9ccd22d7df3cec7ebf3a3e8c9dedcd0e73f2c90e9fd4aa1fd34",
+      "bytes": 15347
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0093/raw.json",
+      "sha256": "85f544682e1cc8e6282ce09e8e0736844444177204785b977b633a03d66c4b5c",
+      "bytes": 599341
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0093/reservation.json",
+      "sha256": "9be5d2228c97245e3d3936691a2431deda36774a664a4899b3acc9bfd960f91d",
+      "bytes": 14817
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0094/raw.json",
+      "sha256": "b41b68c91184ae2a6cf380ad113aac3c3443943ac1441f651440dba827dcb5af",
+      "bytes": 646409
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0094/reservation.json",
+      "sha256": "89501d07417f99b16f16ea5d041680ca92c051158b451b0bdf06a974034900c8",
+      "bytes": 18521
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0095/raw.json",
+      "sha256": "ab09b87f9dade43ca2a79aee0b668009b3e073e78b7bf19f1d1abdfb018dadcd",
+      "bytes": 525925
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0095/reservation.json",
+      "sha256": "91f6868f8be3a6e34c2150cbeb37de96390266bc60aa81947248c78d7dfca7bf",
+      "bytes": 14857
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0096/raw.json",
+      "sha256": "4373c18af26384635962bf8bdb3c0f5259f69ed2a924b99357dcdc97089f81c7",
+      "bytes": 557833
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0096/reservation.json",
+      "sha256": "da71d56eb1e2c4b34fdcc12c9cbc2e0cb63b5d637acd3532f2e0693f1383d0db",
+      "bytes": 15807
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0097/raw.json",
+      "sha256": "342a5db4fe14c638d24bf69e4dad5c593797ca0fc461569379a7539d846f6d27",
+      "bytes": 568118
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0097/reservation.json",
+      "sha256": "7bc670cb57167431ea2e475bd47468d69675ee113f8c693f1416d1beacbf891f",
+      "bytes": 15567
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0098/raw.json",
+      "sha256": "16261aa3f1b1ebc2576a2005aad8f577e3390bd8a0a173f048f1438031724e30",
+      "bytes": 570242
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0098/reservation.json",
+      "sha256": "2560768682f1376e62a6ce071cab712e7c4fff9f81a9532ed9fe59197a7f2054",
+      "bytes": 16132
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0099/raw.json",
+      "sha256": "b135e397842fdedc2acc5dfddb0102eabb2552ac145fc1f488d5805526f31544",
+      "bytes": 604597
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0099/reservation.json",
+      "sha256": "6bd3abafb36664485fab725e63123270f930cd2f88df9579f7664c529583e157",
+      "bytes": 15754
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0100/raw.json",
+      "sha256": "95210cc2421a6759979d7aea54b60d9c73b85fad199f83451480983a05dfb2c4",
+      "bytes": 609734
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0100/reservation.json",
+      "sha256": "06c7594c977d1b974f6a5e6050a8d6e403675a76047e379b2cebb63303cdfa3f",
+      "bytes": 15684
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0101/raw.json",
+      "sha256": "fcea7bcdaf017a28ffc743cff7279534dd72193d04fe3b335861e92d4d346d79",
+      "bytes": 585842
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0101/reservation.json",
+      "sha256": "86d5eaf6252b858aebcac6d8e3a65504a26316845ff11ecb313f28adcd08ea35",
+      "bytes": 17035
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0102/raw.json",
+      "sha256": "526236ef1b3e0104c78e8cc421a119b92e4ec4aa6af06a4f58bb24040a9b76f9",
+      "bytes": 573391
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0102/reservation.json",
+      "sha256": "a941467fa829c0e4531ddfc60a31076d277e1f845e2b6a22f3d4a966a8ca0d41",
+      "bytes": 14719
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0103/raw.json",
+      "sha256": "ceb6f3391d466ace331e3aa771dfb2c392a66255231be69d4a35b6709786d4a2",
+      "bytes": 648971
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0103/reservation.json",
+      "sha256": "6269af84050df4198eb608ccc399bd39b8ab9996edff31b045a2a2f355d53e39",
+      "bytes": 18274
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0104/raw.json",
+      "sha256": "17679ffcfd896e4df50e3b356c8f0856a0ec216fe07b6b2c19facbf8c126cd42",
+      "bytes": 623154
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0104/reservation.json",
+      "sha256": "9e010843859109b47bb42ef18a04cd8e3bb6c475eca92f571f1f3d9f9ac191f8",
+      "bytes": 17154
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0105/raw.json",
+      "sha256": "8ef8af1a9be6bb225a8511ffcf727bafc36e51d9ff4eb70b9ac1038b04926b66",
+      "bytes": 548746
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0105/reservation.json",
+      "sha256": "37469a0b915e9d50c01f6428d6099df19a1cd2ff0b6833c20ddc6debe2406062",
+      "bytes": 17104
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0106/raw.json",
+      "sha256": "5fbe641123842e8465ccdc95be04da8c3483b9acaf91a4ad23b470b2afec7c44",
+      "bytes": 502581
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0106/reservation.json",
+      "sha256": "ac13210b6d002feec9116be738a3a97a9e0c606d696d0fc1e3971c467c17d7de",
+      "bytes": 14234
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0107/raw.json",
+      "sha256": "cc88c5beafb7da1fd9a2ddf0074b90fe77fe8f914b5701c9073b51e0fb262dec",
+      "bytes": 627160
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0107/reservation.json",
+      "sha256": "13437878b4a52093ea4a7e8559ea0c639df97f0e81a1e7ed5009c2d45b970424",
+      "bytes": 16926
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0108/raw.json",
+      "sha256": "a5b1f652d8b1e6074dd047305308017c501f73ee564d918c6707f71a2752fe8b",
+      "bytes": 569421
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0108/reservation.json",
+      "sha256": "3785539aab40cb51b40b5eca73558e43948556601df2cbd03260cf30ade1a894",
+      "bytes": 17250
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0109/raw.json",
+      "sha256": "2ee5f15aeab8b47ab2c3c5322a2ec4c7c449d18df607100a6ce3669d09668949",
+      "bytes": 615406
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0109/reservation.json",
+      "sha256": "8f4c56df15d9ac160382afeaf80d10e336c788862d9bbb0943f2d895f33364da",
+      "bytes": 17539
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0110/raw.json",
+      "sha256": "dc403a6b315bf5b8d9f56c69afb377ac0750f317b40eb27138d1633303047c92",
+      "bytes": 538300
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0110/reservation.json",
+      "sha256": "59a42b45f736e69e4e941b1d0e5d49ea0624ada7c881cecab348cdb90825c358",
+      "bytes": 14814
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0111/raw.json",
+      "sha256": "facab0808d17ef9d3a2fd8464b262841efbc1862cfb79c765e1f63f055135855",
+      "bytes": 563819
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0111/reservation.json",
+      "sha256": "e68c8015e38050c3e5d782a3b7dd5d3203330bc6fafbfad272a9e1d8958fcdb4",
+      "bytes": 15847
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0112/raw.json",
+      "sha256": "71fc5faffd1ad8cc898cc82cbffde8399e8cc66f57557fdb08435f44441106b8",
+      "bytes": 667336
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0112/reservation.json",
+      "sha256": "0c3217b648d7feb8c0e17f17ad698d853023af67a31718b2325a717bea3c670a",
+      "bytes": 17241
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0113/raw.json",
+      "sha256": "deec0410f8da8e323c4a274831d84ac7d259de2c60aefd046127316950fb5240",
+      "bytes": 614883
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0113/reservation.json",
+      "sha256": "8d65fa924a3cd43dca97ed0b58a060e4625f75d233ed21fc313722f6b5558d2e",
+      "bytes": 16095
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0114/raw.json",
+      "sha256": "8af2dfceb6aee8b8cb375685a4f08734a0ea4cfa13c567ef757e0e4f22273dc0",
+      "bytes": 561131
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0114/reservation.json",
+      "sha256": "bdd68441f7c494b632d9432f24a3376e432ba11cb0b112ae7ccedd2b7958aa49",
+      "bytes": 15766
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0115/raw.json",
+      "sha256": "537e7ace2f649242e688460086cad77ada12c3b3bad6319c094cfa8045d8b854",
+      "bytes": 578987
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0115/reservation.json",
+      "sha256": "545fecbeb645e8a7ec1d0f93ae6e77d5fa474f3052d72851aeb6e0d41f6d9a79",
+      "bytes": 14475
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0116/raw.json",
+      "sha256": "64bc23f30f772f5bac28f15fab71f52ef37fb54a8146a90b7c2f1e88e2f34191",
+      "bytes": 619598
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0116/reservation.json",
+      "sha256": "c0fa168389dc52f851aebd8ab3ba5ca2829fe914eef1676f4af81238c09ffd13",
+      "bytes": 17031
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0117/raw.json",
+      "sha256": "dfbf2b9c1824dc6f582827237292bb3dde7986d3fcde6df6924cdef77f2c9fd9",
+      "bytes": 629553
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0117/reservation.json",
+      "sha256": "7e281dee16232dabf4356a0f3ac73c01ef72266d1e684b695bba5a13b4a5f96c",
+      "bytes": 17329
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0118/raw.json",
+      "sha256": "18f99a95be07397d94409bf34da0aa74d347b9b0009ff64ff2a6cdf05e9a7f67",
+      "bytes": 605622
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0118/reservation.json",
+      "sha256": "be9c539ccd2f5e82780aa84f37fcdb9de481b9bea0db8bbd78f8aa595122998c",
+      "bytes": 17500
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0119/raw.json",
+      "sha256": "d00d5014d3b3ff7706fc9232d5e1e5bef0284cb76b7f1103a9e714c0fc70663e",
+      "bytes": 620652
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0119/reservation.json",
+      "sha256": "e5a2aaf06df9a80b6f0a732ae086e76e9c70508f65f85fe4df66f7e27f09c0bb",
+      "bytes": 18164
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0120/raw.json",
+      "sha256": "beea68cea54d327e72cad352281319a40247615c5a90733039104bc3c05ef2c1",
+      "bytes": 627693
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0120/reservation.json",
+      "sha256": "2b4f2c3ff8b08a8cbec72df231cd8fd9d474914a86798bda5e9f726637a08a4c",
+      "bytes": 15823
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0121/raw.json",
+      "sha256": "a6378c98937a41dd6a36938d7fed178dcc44f6866781498847e01c417a96dcfb",
+      "bytes": 555608
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0121/reservation.json",
+      "sha256": "a80c7f3f6235e5730380324c0a83d68fcc43ac645d0f90131044bf3a2435cc8b",
+      "bytes": 16359
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0122/raw.json",
+      "sha256": "180b8ca2791a2f6f193a260618bf225265a24df6692e6145fe60f6ba5f746a63",
+      "bytes": 594543
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0122/reservation.json",
+      "sha256": "28dc9f8c2c821bdab8211cd8ef264320f76175c822698d8fa2d69fa5756b4b13",
+      "bytes": 17619
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0123/raw.json",
+      "sha256": "83fa1b2bcef9e15ca3c8246bab6ca6ce5966fa0e8cfda091e42499ff15fd5878",
+      "bytes": 547101
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0123/reservation.json",
+      "sha256": "aa619b6cde3f7f610c5dd4381607f8e8a8399c5261c587fdec979f805f234dc4",
+      "bytes": 15362
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0124/raw.json",
+      "sha256": "1138663b44e1bc94e393f5bd5c4ae8fca144817f8ee10e4b68593e78ca2b3501",
+      "bytes": 728197
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/vanilla/batches/0124/reservation.json",
+      "sha256": "995e79ed7a67e1a70e9b7a47fad66441746bae3ec2c0ddef3c7fe3571ce434eb",
+      "bytes": 19812
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0000/raw.json",
+      "sha256": "8410b3a8cb7ebc2fa86cf755bb9cc9a816528682fdce79cd5538208de6bda2fe",
+      "bytes": 542519
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0000/reservation.json",
+      "sha256": "f20252af479f5a90fa1bc98588be518e7523a607313171aba6b607ff52945a16",
+      "bytes": 14630
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0001/raw.json",
+      "sha256": "c5254f1074eaa35f5b51b6564907b29eca2ed762c296b7de3213e80002167848",
+      "bytes": 578072
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0001/reservation.json",
+      "sha256": "205c2b2d57d8aa6cd8f3ff673f9ed10527a48d6458633b052b9ec69f49eb643c",
+      "bytes": 16119
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0002/raw.json",
+      "sha256": "217fd08833af3efb9b27fade8c4693dbc9b0f1ced69fce6436036187afc1e957",
+      "bytes": 612052
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0002/reservation.json",
+      "sha256": "bf4dbaf00e595543bc30ee52af5116f6829a5acf5b24ba677c72fe34d0ac5e5e",
+      "bytes": 17513
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0003/raw.json",
+      "sha256": "5cfd758cf354c3ccc7e0ccfafc673f2f2744cc4a4df46cc6d26c6be2c2175c2c",
+      "bytes": 643239
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0003/reservation.json",
+      "sha256": "f5603951f36bcf46a94ad74d4e692e582ac318ca0bff2aed68b64e86c64aa883",
+      "bytes": 16579
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0004/raw.json",
+      "sha256": "0dadd16c46b788fdea4be12becb29a1967cb4f307e54dc35d56362c0d705fb22",
+      "bytes": 650632
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0004/reservation.json",
+      "sha256": "693a02db1d39ac3a8167b3a7793bd24660857c476976bc1caa146ac605b813b7",
+      "bytes": 17003
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0005/raw.json",
+      "sha256": "28dc7d0aa87401702fac23173d9833bb49bfe9587e504764dc496aa8e8d86c5f",
+      "bytes": 556311
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0005/reservation.json",
+      "sha256": "38cb37c89be50c058140a2b25a625b47f1f1daea9c32091ec878605ce645404a",
+      "bytes": 15866
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0006/raw.json",
+      "sha256": "6e38a44a6840ca0c60e2da75ec74e374b4b8f61b067440348892060f0a5b44dc",
+      "bytes": 584508
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0006/reservation.json",
+      "sha256": "81f9ef2a0068e092126e0ef49dc7107ed2c3709aa006077955e0faee28d0ea6b",
+      "bytes": 15881
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0007/raw.json",
+      "sha256": "82ba7b21dbbfb881a7766179de9e1d033394af750acd61d9736d09cfe77698e1",
+      "bytes": 567686
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0007/reservation.json",
+      "sha256": "fcd1ddf02c3ecb1cab7b141921f3cc7802f1e8911a6010cade2dc2ace356a21a",
+      "bytes": 15017
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0008/raw.json",
+      "sha256": "1c9e9b9c856dfe1787c8407a15cc25044af12c1949a407513b7b3bc3261182e7",
+      "bytes": 567880
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0008/reservation.json",
+      "sha256": "c5a3733134ec4584fb3c9bde66681e7e2a4b1f1546c34fd3d1f61e36ca6963d7",
+      "bytes": 15026
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0009/raw.json",
+      "sha256": "401239a3e621999c1b7474f97869d879325fc29591618e02e53685135bc75bff",
+      "bytes": 632971
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0009/reservation.json",
+      "sha256": "94b16fbb50571f6f1026a4e8bbdd0d3f1682a4c1fa08a535ad01d8e8d77f8dd2",
+      "bytes": 15252
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0010/raw.json",
+      "sha256": "373ece2d98ad8585a68abf8987bd567be2b2ec63aaec4f07e7ca2391b5827f76",
+      "bytes": 598167
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0010/reservation.json",
+      "sha256": "5daa27d779bc9c7aba54a9757ae5319515b93258c4e36edfdd2a493a6a092541",
+      "bytes": 15086
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0011/raw.json",
+      "sha256": "5b3a1419a2e18ee114964da58528fe2c18eac1c25e688b5b5b6ddb1b7793fe9a",
+      "bytes": 587704
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0011/reservation.json",
+      "sha256": "1ffd70fa18d76dec4375de83d09dd263c4f86653487aafb9473ada9693d44f7d",
+      "bytes": 17144
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0012/raw.json",
+      "sha256": "5c4bc25529ef2ed65f7b429fc164d1bd49b73ae1411d2c28126e7be8f66e9842",
+      "bytes": 648852
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0012/reservation.json",
+      "sha256": "9d3aac258ad7b6b61c7c08572fbe366cbcee61e8ae0761fbf37ac5a1a46d27a9",
+      "bytes": 18467
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0013/raw.json",
+      "sha256": "5dd3764a6912e6757fdb197224fcbed5c70765c1c33ee7e7d19d92e816a2b082",
+      "bytes": 603908
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0013/reservation.json",
+      "sha256": "e8d286d7f464666fc6739bbe3bcdb5eb20247e7307be08427ee565b775158b1b",
+      "bytes": 16954
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0014/raw.json",
+      "sha256": "cf5da63dd5910e8b077e3fcfc6ec6b2b5e5a2d726784e84e9144dd325ed4f4ec",
+      "bytes": 594203
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0014/reservation.json",
+      "sha256": "5fdb8f4d859a542fbe0b2cc843e6ffd41e70a6447de274a6af9686fcc5d81bd7",
+      "bytes": 16426
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0015/raw.json",
+      "sha256": "f0486b2ae0dca21915f827afadfbc757383d5351ffbf85fe341946c372a81f57",
+      "bytes": 612156
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0015/reservation.json",
+      "sha256": "b839e7286f327241a2d0d87e995186f5f9edd7769729e1606e2f73384b2a405d",
+      "bytes": 17583
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0016/raw.json",
+      "sha256": "7cf5dd5a61c8b55a2212516bcd1ec87c4f852e895e9da48c00751ee41f9ef891",
+      "bytes": 597058
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0016/reservation.json",
+      "sha256": "343c0274ba39d01243e3f456d4d01135f39cea99c2a4fd57c1c99801f6d1b844",
+      "bytes": 15686
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0017/raw.json",
+      "sha256": "e9e47e89e58b5b6f5ea832847cbdfcf139ba0fb2e3770f15fe196041f7a8499a",
+      "bytes": 595974
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0017/reservation.json",
+      "sha256": "0a42947940115a0c152e17dea33ee6540a9ac2001707bfe5b02b593d93863ab3",
+      "bytes": 16549
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0018/raw.json",
+      "sha256": "128eb58538ab2f76dc8d475fa61b7d0167905cf272fdab6091705d46a6eb37d9",
+      "bytes": 629665
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0018/reservation.json",
+      "sha256": "a484bf12f736848060bf03f1f5d0362cdeab6b3bd89fd24e0fc1dd96153b0bac",
+      "bytes": 16593
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0019/raw.json",
+      "sha256": "b5487ee50790d18cb253ca4b5fab29e2fb856bb5f556d174d40ca926ef0ddd82",
+      "bytes": 548322
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0019/reservation.json",
+      "sha256": "2d9e5fdaa5e4ef928400a9368aa1ac9f4448ff85ef849a53e343b4cd32bd4148",
+      "bytes": 14777
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0020/raw.json",
+      "sha256": "39570bb57812b481c68fcaadc90c7089c5731ad7af41729b046a72a1b852a7ad",
+      "bytes": 613223
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0020/reservation.json",
+      "sha256": "e588502994dbbf0f4b46d4b469a505c5b6e8ef50f21a5aaff7854b321d78a7a9",
+      "bytes": 16345
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0021/raw.json",
+      "sha256": "cb56a8bcd256bdb830ecbd9456da54bfb1136a4884e2c17ea7e4c82fb8f288f7",
+      "bytes": 665828
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0021/reservation.json",
+      "sha256": "760241ba10e1ed9ca35b3dbc4a0deb2a27bdc079e07b63252a57b13fdd723b88",
+      "bytes": 19223
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0022/raw.json",
+      "sha256": "f67dfb8497962341938e148bf8da5ef95820eae92f584321e9caf0c83fd20d2f",
+      "bytes": 629227
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0022/reservation.json",
+      "sha256": "0026b265bb6ba198d1f5e8bdeb076b17a92944a7dd83759ccc56c58e050476de",
+      "bytes": 17789
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0023/raw.json",
+      "sha256": "594c395c3fcde91371b0437100bf73604e0a3cd2075e8e15bbe6bf10b4a730ab",
+      "bytes": 635575
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0023/reservation.json",
+      "sha256": "1ea78a6aecbe2f99994b5c996577d9b3980814987ce2e4f840e9f47e01c4dcf0",
+      "bytes": 16743
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0024/raw.json",
+      "sha256": "d1ff03767d8d4ed235e4b8eecf79f11a424c151cb412b811824bc63c279a21a9",
+      "bytes": 588731
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0024/reservation.json",
+      "sha256": "4dc2dd41fe543cc84b8f55a3fcea29b183edc48e7d72a6e048a0c79da3e8ccf3",
+      "bytes": 17081
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0025/raw.json",
+      "sha256": "92bd374fae2aea05719f217e954622f5c877d75c289ab5d3237d59d540344b5c",
+      "bytes": 623841
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0025/reservation.json",
+      "sha256": "e9e92177a93530181493c2a0e5d0aaf764e686996437841391e7786107ced384",
+      "bytes": 16794
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0026/raw.json",
+      "sha256": "046c94080db957fcd336d596e128704c7821fefd2fdd85fd08d05af3cd0d6ae7",
+      "bytes": 650311
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0026/reservation.json",
+      "sha256": "33fe22ac1a30ab90d17ddfcd33a74bc552d1d052f21532bb6048e5db8b42062a",
+      "bytes": 18012
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0027/raw.json",
+      "sha256": "e9ea86c62dae25a969f412eb56d33715d32cc52c5666f8b09899f0695568ebf9",
+      "bytes": 585431
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0027/reservation.json",
+      "sha256": "e6e8fdaed9bbb4ce997be495289e464a3523a0c1f16f73c1fd95761b08123218",
+      "bytes": 15527
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0028/raw.json",
+      "sha256": "f697f0be266ac2421dd9f26deb383cde15500cab18a82dd5ed4702b5ad24d457",
+      "bytes": 610446
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0028/reservation.json",
+      "sha256": "53de150b4e97153fb987528c57248a056339ff975746c830e84a48eefb2d038a",
+      "bytes": 15539
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0029/raw.json",
+      "sha256": "0c4cff8544eab65ad907acb841eb80a6f9085cd2e23344d84dae677c189002a0",
+      "bytes": 604458
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0029/reservation.json",
+      "sha256": "f1fad9df14a96d9fee44ebe6281cc147cdaef497ea50bf2c0fabfb2e2bdb260d",
+      "bytes": 16093
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0030/raw.json",
+      "sha256": "92c9ec31035df6383460daee535c51e26b91466da9a3c111b7b51d0285168274",
+      "bytes": 618086
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0030/reservation.json",
+      "sha256": "55f25611d47b47f47bf4cea2780c30ce676eed7029a62fb217182c8b4187ee4d",
+      "bytes": 16898
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0031/raw.json",
+      "sha256": "8f80ab40b2cb22c82410d1556a3f5593f97ad0c562150a9ea42df9a840b29b2a",
+      "bytes": 564822
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0031/reservation.json",
+      "sha256": "757650449aa657ca60b4477c48e9f1ae3e6b098151422237852fe48f15906cb3",
+      "bytes": 15558
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0032/raw.json",
+      "sha256": "f1dc67547c4ecac49b75f73cc355c8295c9c236354a1b49af868258bbd969b00",
+      "bytes": 544067
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0032/reservation.json",
+      "sha256": "b4aaa5f4103c2ecc5985cf56f7a9fe4f34450a2726146cbd92bf6ff9bbda11da",
+      "bytes": 14203
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0033/raw.json",
+      "sha256": "23a9a3d201f93dd9891f74423cdd6daa1cc524a77b79e30a1dbcbfffbc257ff2",
+      "bytes": 602903
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0033/reservation.json",
+      "sha256": "addd6e144a93de31bd0ef3f274553db5fd86ff5d2ecd9523e338f34b69c541c7",
+      "bytes": 16465
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0034/raw.json",
+      "sha256": "9480ad76d3bbf0e867070c8ac7eb791d7242e90e2d013d333f382a57b92a82df",
+      "bytes": 671444
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0034/reservation.json",
+      "sha256": "ede8f1d284314dd33224eb835b5bf06a0b53c3fc05ef5c7642c5e67ade1e6977",
+      "bytes": 15769
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0035/raw.json",
+      "sha256": "a4d6bebd08546c89ab05da9bd11f18424088a9be6cc7b39e0a9dc8beb598f336",
+      "bytes": 600723
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0035/reservation.json",
+      "sha256": "9be1c4b104d7035feec6152a49968125436bd50c4ded5b372a1cdf6154f55ba5",
+      "bytes": 16923
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0036/raw.json",
+      "sha256": "72ac5d507668632fd3895ddaa1caaa4c1b6bf46d4e2f0594038e398104b922d3",
+      "bytes": 520443
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0036/reservation.json",
+      "sha256": "b3ca1d00ab9ace3c805391a3f0447550967b4a50917ed493dc60609b11dbaafe",
+      "bytes": 16187
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0037/raw.json",
+      "sha256": "28125562ca3b2773fc96ac760b688a036995360e9f06d25211410752de007371",
+      "bytes": 573909
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0037/reservation.json",
+      "sha256": "3bc75f3fa681b30579057da1ceff303155cc43846162b4557bd9ecdad07ed5f7",
+      "bytes": 15314
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0038/raw.json",
+      "sha256": "edd66d7b593d4f7becbc0d717af5c2dd8b00619abffa468f197149ebc3f91756",
+      "bytes": 593134
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0038/reservation.json",
+      "sha256": "c94dff7c26d00f77538f04312c7ef523670c4f0438b4059c2c6c688d22b9138a",
+      "bytes": 17723
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0039/raw.json",
+      "sha256": "b06dc84cb6d43ea88651097f1b5d1c736feb6199291e51aa5db3294304aa5090",
+      "bytes": 629488
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0039/reservation.json",
+      "sha256": "c7edf5ca9044745e3ae38d0574a50819bfa75d9c39129d79242d97c1cccc8ae3",
+      "bytes": 18658
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0040/raw.json",
+      "sha256": "e063f99cd86f38146279dc23a5b56dc7290c4124d3efbd8e36f569c47f9a475e",
+      "bytes": 595964
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0040/reservation.json",
+      "sha256": "2799a37d4ae408ced099972461fff072d7f388c0ba3585383801bf0ed4bff85b",
+      "bytes": 15692
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0041/raw.json",
+      "sha256": "8bee44c42f0c2c393d002a1e1e9d61d92632c69c3a4776f44ae86b1310ac930f",
+      "bytes": 554945
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0041/reservation.json",
+      "sha256": "01172b6f7bbf22c4557a469bb8127c91b7c85e707ebdb8b552edcfcc885ca1c7",
+      "bytes": 15985
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0042/raw.json",
+      "sha256": "a3beb697d1335381aa0b6fa221adc45b28d29ac300caa5f32437f100b89db62a",
+      "bytes": 631333
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0042/reservation.json",
+      "sha256": "f188650693a1313be31ba460b5756c625767785280d673fd3ef296c4e2140b6e",
+      "bytes": 16850
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0043/raw.json",
+      "sha256": "abf38009f45d037c27ec19d3266221c9678e61aee0fc1276aac38641da296191",
+      "bytes": 581366
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0043/reservation.json",
+      "sha256": "1232db6fe6ea0d0b3dc634d73127406a0d9ecdc2e94d519c001ea145f7aff6a6",
+      "bytes": 16048
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0044/raw.json",
+      "sha256": "3eb0210623a7d4d0e4f6a213cdb6a9ba41dc1ba6673a78484df4449868b2029f",
+      "bytes": 610753
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0044/reservation.json",
+      "sha256": "0ce74aaf99601bb8857e97012357cfc6c6b0894fffb3f48d140ab83a6a47bcbc",
+      "bytes": 17388
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0045/raw.json",
+      "sha256": "1397d320ab074b392519fcbed7afc2abc1b04271bf26dca8f504e9f7ed86f09d",
+      "bytes": 596355
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0045/reservation.json",
+      "sha256": "915ee59dae160bada686cb871205f9485f7b06357d4fc970dfa7bb544743f0a2",
+      "bytes": 15214
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0046/raw.json",
+      "sha256": "c5bd6b4ebd8737cbe7d6d8e798478ada61e576f603a73ee86d976a30cd58f3a7",
+      "bytes": 619045
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0046/reservation.json",
+      "sha256": "e284ddd0066d3062a83da9e9fbf2371ce6dbedf798252df847946f255894e218",
+      "bytes": 16613
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0047/raw.json",
+      "sha256": "38b148426fb9cbda3277c9cebcd97b1280c1f515f09f71aac52d74946a307d6c",
+      "bytes": 639969
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0047/reservation.json",
+      "sha256": "90485fff6703f1ad134a0b79a75af8a9e0f30502bb3359358afa879afd31b4d2",
+      "bytes": 16240
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0048/raw.json",
+      "sha256": "00f0739f64d91c8c8f68dfad1f4478a7c9105896a94f8fe5cb5545a7b26e87c7",
+      "bytes": 580224
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0048/reservation.json",
+      "sha256": "ed9722bd21c184b2ed82f86da0ae8fb395e195b0c89d747246f469027771535d",
+      "bytes": 17160
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0049/raw.json",
+      "sha256": "2bf6d294f3d17345d2fd299186a727f6127a701e3f34973c0e333cd54de32e01",
+      "bytes": 630823
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0049/reservation.json",
+      "sha256": "0ae06a51e772874bcd6348fa7974911afd328e02aae81b520c3c9737246aa1f8",
+      "bytes": 16870
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0050/raw.json",
+      "sha256": "f5a577e3dc8dd5b317fd0b3c3202eb29f15184d73f9fab6ecf829367a8a6f061",
+      "bytes": 599385
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0050/reservation.json",
+      "sha256": "2240ce3d1a9b4ed10faf01f56e265573c9b7edd670f299a184689ecf96acb3f6",
+      "bytes": 17477
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0051/raw.json",
+      "sha256": "b924efe4bd21bc589af72e6867905fba1d4dd9b883af972486ab3bec32c4686f",
+      "bytes": 593753
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0051/reservation.json",
+      "sha256": "89892546bd80c170e028c800f5c029f94c0d4b8e7574a852ac360e666adcc4ac",
+      "bytes": 15945
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0052/raw.json",
+      "sha256": "d96dedf15c79f02059e7d1d807814cf4d53569fab1c38adc64b6ac3341a63be2",
+      "bytes": 642153
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0052/reservation.json",
+      "sha256": "cd8c0c05d0ee2a0ffdbafc5fc12d30d36a8d2d5d2ac807752885ec2d321501f2",
+      "bytes": 18484
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0053/raw.json",
+      "sha256": "277ada33aeccdf6737a7a018dca0a36337882b0fb631e0021135d088659f4c93",
+      "bytes": 608495
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0053/reservation.json",
+      "sha256": "08249184544074489e2a286894061a204f635758d4d65523455215943d21285f",
+      "bytes": 16105
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0054/raw.json",
+      "sha256": "ac0de64f8e1affa985e12302601e4435ed4e93c5de81ff8030fee1ddec939d7a",
+      "bytes": 563515
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0054/reservation.json",
+      "sha256": "60f745aedf611dee257717f0f1b3dbb70e914a15c10ad27867e28599d8d06449",
+      "bytes": 18024
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0055/raw.json",
+      "sha256": "361850b4e227dc305fb9c04ab04548f84809d71bda9471fb4406f72ee81f6769",
+      "bytes": 620142
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0055/reservation.json",
+      "sha256": "10580d3ef87e20f7652c7e30512e9c6bfce1db9f12d186d10e4707ec4564b006",
+      "bytes": 17090
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0056/raw.json",
+      "sha256": "027f72f36c015ce576f24ae55ce4b09d9c15471f320d7e6b968599bf10990b26",
+      "bytes": 606106
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0056/reservation.json",
+      "sha256": "2ce2210106d4e0d9700c77a0a48eec9907833650f700a4d7986fb517018249f7",
+      "bytes": 16254
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0057/raw.json",
+      "sha256": "ca2e63b065fe9dfddb3b4dce9aebb9c3c127425c960c96d31b61dd96bd72c126",
+      "bytes": 583819
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0057/reservation.json",
+      "sha256": "c4dc69c13b2ebf0dab6d9f44a36573d6452719e8ea937d9c1cd615c7eff617c5",
+      "bytes": 15948
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0058/raw.json",
+      "sha256": "728563eefbe4ea9f5653625e8ad0ccb8b3522435d184a5e048f363773934870d",
+      "bytes": 604583
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0058/reservation.json",
+      "sha256": "63e646b350fd89d89f337dc75a5abdf27389cbb160bbf8f84445abd117bead0e",
+      "bytes": 16391
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0059/raw.json",
+      "sha256": "f1b5bf488326a79e16bd89c45a15b162be2994e505af22800496173e2aee19f7",
+      "bytes": 589286
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0059/reservation.json",
+      "sha256": "7a3014843341e548e8dacd7ad5646d61526172cc22af8b64c31e382093caf605",
+      "bytes": 15893
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0060/raw.json",
+      "sha256": "8e6e26ed1bf8c9ae774fe1c48986d4d76e869825933e799bee07884d7355013f",
+      "bytes": 540885
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0060/reservation.json",
+      "sha256": "92811a0d0201206bcc298444dfeefa16625ea55b679eaf6a25e30dc56c52a5cc",
+      "bytes": 15090
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0061/raw.json",
+      "sha256": "be34446674cca2e810148003ab7f80a26a44c6a252a9ff18da64de729aba533d",
+      "bytes": 599495
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0061/reservation.json",
+      "sha256": "3d9793f97f0407bbe7c67cf6a9c020cd174778d2636cb51295996b39224399f3",
+      "bytes": 16993
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0062/raw.json",
+      "sha256": "608f9521e35fa5c0e5fae91f3691e4f9f1a75e6fd43c62db19acfd0b4e604679",
+      "bytes": 654448
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0062/reservation.json",
+      "sha256": "9654a3b4e781aab1b5b9df5ef3080e6aaa8b9b7685b1b0e03c6f3b676ce3d702",
+      "bytes": 16167
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0063/raw.json",
+      "sha256": "517125485b70d213aebdf10eef89753a918a1d8025f1bd5925d739914b1655e2",
+      "bytes": 547557
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0063/reservation.json",
+      "sha256": "2b2463508f94f5db8598561ae5b0fd9b4e27df13465ffd51c90b914e3edc12a3",
+      "bytes": 15736
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0064/raw.json",
+      "sha256": "fceb58029ab1eb5ab7c860d5eb066a844b5d0f8961f9ee20ecb3dcd103170eca",
+      "bytes": 624782
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0064/reservation.json",
+      "sha256": "77ce994bc235ee6162816a3fecb1ed95b77a26ce208f7631b4919ecf2bf724d7",
+      "bytes": 16222
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0065/raw.json",
+      "sha256": "c3fdc8c55da8bc6a23b356313cf3eb1360e6bd1482f08975b879d78b29fed0ea",
+      "bytes": 635744
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0065/reservation.json",
+      "sha256": "cddd3359c5db6b513f14260b08bbaf0b3b8f978a71175807f537e73beeb258a8",
+      "bytes": 15993
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0066/raw.json",
+      "sha256": "0a2d8c1de926b62e68f3156a3f29084ccec4956b29043e45b1007372e69a09ae",
+      "bytes": 582264
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0066/reservation.json",
+      "sha256": "9453585dc1a6eae19bb63c4a0aea0c784710daa0bacaa97157805a3eb379471e",
+      "bytes": 15808
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0067/raw.json",
+      "sha256": "4ddfefa5923bb1531ebf8ab95441348081795f60280a6270ee35381b7635e1ee",
+      "bytes": 612899
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0067/reservation.json",
+      "sha256": "5fb70defa919d72641df9cf89d8617010c13f322ad9765ce260b8a2aede99dd7",
+      "bytes": 16079
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0068/raw.json",
+      "sha256": "ca1a7465ab533461586c76d15260e53a49cf843c37c37c00ee9a1eebf7af5be7",
+      "bytes": 644581
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0068/reservation.json",
+      "sha256": "0b8a27ebe2c87da9cd55f74949da64d0a5a4f33ce6abd634c6a46863559b14fe",
+      "bytes": 16329
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0069/raw.json",
+      "sha256": "638235787093e283b9307457c5156569e9eb0ae5b3450b7b17e3a1732c05242e",
+      "bytes": 622812
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0069/reservation.json",
+      "sha256": "8c6329acea5eb9832ba508c8e641db0f763f70fa83016b8d02368c8561b7c1a2",
+      "bytes": 15984
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0070/raw.json",
+      "sha256": "6c89429bba0ac97cfbab4d1602b9bef37e3254dc7d9a8182b377fe56e598b6ce",
+      "bytes": 629066
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0070/reservation.json",
+      "sha256": "613c1982b2c657e610505ba7c86dcefcea06f48f4f4cf5243647d03b1a3cf768",
+      "bytes": 18427
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0071/raw.json",
+      "sha256": "1d5b6e606504baeb516c1edd670136ed4aee41a1ee9971e96222d5133ca8eebf",
+      "bytes": 548874
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0071/reservation.json",
+      "sha256": "3e68058917c64060f0a915b1b3f3e60deb0ff07a28799e3965ec2435d388c064",
+      "bytes": 15612
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0072/raw.json",
+      "sha256": "838e9ee6c170f0a560771a2430268111725102a1ae199090592be686ac3f6885",
+      "bytes": 585705
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0072/reservation.json",
+      "sha256": "b66dee92b46d685e830174602bea81090806ac810e8070530b66b2f71a1d466b",
+      "bytes": 16007
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0073/raw.json",
+      "sha256": "242761ec73df6617620219745257b8c59a67f510d3335e70911fd17ca3f4e6ba",
+      "bytes": 581259
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0073/reservation.json",
+      "sha256": "bfbdfd4256ba48e5aa9d62a9411e1651e037f502eb9be44c3da1131483da9144",
+      "bytes": 15395
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0074/raw.json",
+      "sha256": "f652cba2540026456c73df85f512e4448894f9b8dae7ef44278415fba71efe27",
+      "bytes": 590449
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0074/reservation.json",
+      "sha256": "f834fe25ca299aa4a0619c70007621196b89b913a416f0b257a4329b23ebdc63",
+      "bytes": 15903
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0075/raw.json",
+      "sha256": "519021bd2fc947401cad739abcede38dafd7be49e33f02b2faca991fd3a66a15",
+      "bytes": 599346
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0075/reservation.json",
+      "sha256": "16b540edd6217458ae29c603a8184f1aa2d79baa5c985a4e56c329b417aefab7",
+      "bytes": 15055
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0076/raw.json",
+      "sha256": "09cabec73ca340851c1c34c7a6141ca52104cb60dbb884db8b0cfca619b270bc",
+      "bytes": 554947
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0076/reservation.json",
+      "sha256": "a56c5d5c6c78cb0a4e67c10e2fb4679117a526285146d996e3774e37f37dc899",
+      "bytes": 14471
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0077/raw.json",
+      "sha256": "6d6ce4939ac778e046a835fa8625eef6c4883d1b8709921bbc478271b3764898",
+      "bytes": 597688
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0077/reservation.json",
+      "sha256": "518f5a9f7a7cbb38047431a1da49329a0d9fb037f38a0e92f85f3ba27155367a",
+      "bytes": 15393
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0078/raw.json",
+      "sha256": "0e5a50dd3afcb4a86719f0607f3f66c9c677309b777b38d7e2a40338b5ca9903",
+      "bytes": 595688
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0078/reservation.json",
+      "sha256": "ab30cba2fc10732ee9c5e799bd329ab8d07d88ce28c119ec75a6d8cf8d3852d9",
+      "bytes": 16750
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0079/raw.json",
+      "sha256": "8e1e4f34207415a887b53d9361dde12960cf25a0f9dd210d91e83e174d92691c",
+      "bytes": 602084
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0079/reservation.json",
+      "sha256": "a870d1540ef69e7d8f68be3ef3c94d45e105121db56cd9183dda67369a9119ee",
+      "bytes": 15736
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0080/raw.json",
+      "sha256": "8b10bc89abfe3ff6f28f2969238586e91a3c9baadf9268b1598bb2f3e93a3221",
+      "bytes": 559841
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0080/reservation.json",
+      "sha256": "d2b3a9e3c03409419eb4d558760756a014cb740eff5e2e72fadd8e81f64b963e",
+      "bytes": 17626
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0081/raw.json",
+      "sha256": "be3bcf97b07daee3f281dbf3db8fff2574b1c9dc65967742d2cde298698ad89b",
+      "bytes": 568242
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0081/reservation.json",
+      "sha256": "3261b53640f1540d83711f123ed2ab2d0929f5270462641897e19ca4e645019f",
+      "bytes": 16486
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0082/raw.json",
+      "sha256": "619dfb84150949265ad63278f6d5464f386d5351c29874fed94c6156504ffc47",
+      "bytes": 573460
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0082/reservation.json",
+      "sha256": "122e1b6caca16a6a3c77ff0aac10721eacc009062f37f017d8cc4c85e5ee5bff",
+      "bytes": 17437
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0083/raw.json",
+      "sha256": "3e41a0d5d1bbc66ea91236f13f64db34830ee653344d778e0e002206afc440b2",
+      "bytes": 597695
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0083/reservation.json",
+      "sha256": "c801751e61ec60535322e99c19752127421717e079f48c40b23b69a79c774ec7",
+      "bytes": 15637
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0084/raw.json",
+      "sha256": "8543eeafbd1caca54d053ce189d28f6d29c80d7134e73c9109921ce3cbd71419",
+      "bytes": 607953
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0084/reservation.json",
+      "sha256": "7a154c11f39abd40c291515e705e25d90baf368e6781df0ec2cccb5f46f7723b",
+      "bytes": 15635
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0085/raw.json",
+      "sha256": "633077f351dc6e8a94820ec3e52f667f42f2b4cc622757290acab0d97eb3b470",
+      "bytes": 621093
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0085/reservation.json",
+      "sha256": "9ad74d01932d4570e1fb754ae132e0fb9e947f37fdf9d02e3205915c364a8b91",
+      "bytes": 16840
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0086/raw.json",
+      "sha256": "af60a75fba74ff714a54004ddfb4aff7e01fbb5484c31a058cecf8f55ae9e3d1",
+      "bytes": 636845
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0086/reservation.json",
+      "sha256": "74f3e39500badb363589691a1eeb618b9b3ae9f3797687ba050892281ced6cd7",
+      "bytes": 18707
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0087/raw.json",
+      "sha256": "16d1abf8228f0f35baf1d1daf31f346e2123a5f10eb67f232bfe58fa40caeee4",
+      "bytes": 598250
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0087/reservation.json",
+      "sha256": "93837870a40fdd40c116455cb2d52e677653caae1842db454e580e02b7fa6767",
+      "bytes": 15202
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0088/raw.json",
+      "sha256": "ebf3dcded4e8a90af8444fa51a147a28f41a0912d98f8d3d6bd8f13de902e3cb",
+      "bytes": 626281
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0088/reservation.json",
+      "sha256": "2823fda6cc91df3628287b87e1b4e0ca956480a3ca9287313ffe0a42e14bad55",
+      "bytes": 17636
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0089/raw.json",
+      "sha256": "ce1237a5367ac80c673df68772acd820ee9268a96e1327880dc25286a1e96ae4",
+      "bytes": 607705
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0089/reservation.json",
+      "sha256": "11f51051709c2e3f6aa94c68be0a0a545d964cc483d5bbdb74a46a361efaddd4",
+      "bytes": 16310
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0090/raw.json",
+      "sha256": "6a8a75a6f288d8695292e9247eb200514684b6c9bb7ed0d14d1cb9300e3500d2",
+      "bytes": 524492
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0090/reservation.json",
+      "sha256": "a5352a738518e42629b85c993e3af3dd6a967af29b17e4121fed5abc2bf56a60",
+      "bytes": 14379
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0091/raw.json",
+      "sha256": "60eeda150562973b1041f6fd791fcc672ccc5929addaec7accc7bfe95b58f971",
+      "bytes": 601323
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0091/reservation.json",
+      "sha256": "1efe0a1b9713b344adc29b1745d2eaf667c0f6be5b9f055e541c4b76be86a6ec",
+      "bytes": 16088
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0092/raw.json",
+      "sha256": "b7be1b481f938cb6ffeecf2221080d5435dcb0b85b0ce1d8f574139cfc73eafd",
+      "bytes": 596464
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0092/reservation.json",
+      "sha256": "a39aec29abdcf902eb573480afc18b34d31c3c7cf41635de72f9a965895b23ae",
+      "bytes": 15347
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0093/raw.json",
+      "sha256": "2ea73869cd6ed100b7c406c803a906fa327b3f524300ec84969487a77efed33f",
+      "bytes": 632517
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0093/reservation.json",
+      "sha256": "60c9b288c3ffc13cfc1b34b7527636a17725f3e992eaaccb1b37ad0c930d45fe",
+      "bytes": 14817
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0094/raw.json",
+      "sha256": "f00837718e69a4884893cf489e8f385b48c74d89ab45cf1ca222503a8ec56e9e",
+      "bytes": 632561
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0094/reservation.json",
+      "sha256": "c8a34056cd54cf670936efbd2dbb7286fec225004edfde623f3c1efaf58da327",
+      "bytes": 18521
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0095/raw.json",
+      "sha256": "ab642e3ddc73fe2dc121a434987ec3d6249590fbf855ff273175e40b111295a4",
+      "bytes": 549590
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0095/reservation.json",
+      "sha256": "9baa51d390f2c0afd03bcf7a4800389007ff2c3088d54f502572e5da3e85136f",
+      "bytes": 14857
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0096/raw.json",
+      "sha256": "86d44913954551b115ad5eb67cfc665088ad577b1a56093f1931d460510e8c3c",
+      "bytes": 553772
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0096/reservation.json",
+      "sha256": "60b62d64ddbdde0824e71113577b4c3f533815bbbcd1a31e2268c26059c06bdd",
+      "bytes": 15807
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0097/raw.json",
+      "sha256": "5d8ddbf3642dd0ac2498d827fbe9d446da0854ed82ef0076f0591f25abed62ac",
+      "bytes": 582658
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0097/reservation.json",
+      "sha256": "d082f1735d6a40e01c1589e3d6430f3b7c3dcadf310b1ea03a8cfdf6bbe23d3f",
+      "bytes": 15567
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0098/raw.json",
+      "sha256": "fe8ef4fc778c613ec120012af1273cda2fb4865f22186f5e0b72582c74a0a1ca",
+      "bytes": 526920
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0098/reservation.json",
+      "sha256": "5fa867a4c3757f6652a3a9818683181109a2a1c9e5b21b0a4027a6fe35940a6f",
+      "bytes": 16132
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0099/raw.json",
+      "sha256": "1b7dbbf31e40ae418ee5193343c78ad6cf8dbbf627901400db7e51f1eb9b0d4c",
+      "bytes": 643807
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0099/reservation.json",
+      "sha256": "1604073d30d6629bb846870dfe28ef132a0e94eb8c8b0c718026fbd052e8ba09",
+      "bytes": 15754
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0100/raw.json",
+      "sha256": "9b9a1fafeb33f31f275aa4b499dfcd3a9ccacd701446cd41d783d2c38605db03",
+      "bytes": 659691
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0100/reservation.json",
+      "sha256": "163d38e53a435886b73a37b786b965d656ce9d726bc47522eb31de2c4d2459c3",
+      "bytes": 15684
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0101/raw.json",
+      "sha256": "5eeb32d694ef3730f05cc00fbe12621e9e4a6589c892e21d0bf854466612ea9c",
+      "bytes": 579623
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0101/reservation.json",
+      "sha256": "3d7e9b407d8fea3e8ffbac40dc8d22744ba2c61ca751896bfec75603909c9ced",
+      "bytes": 17035
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0102/raw.json",
+      "sha256": "79f0a9f5e606fa4501f616c8a5e4d19b0c4b33fb1f3dbb0b2b5392b7648f2ea0",
+      "bytes": 595130
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0102/reservation.json",
+      "sha256": "118bf9a7e4d6b66cb100798716249d127e38b6d0e195ace69a8e1c545d6d02f0",
+      "bytes": 14719
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0103/raw.json",
+      "sha256": "c16af2a890ad287790171ab1a603201f2aa68ead93a40dcf4b8dd5972e58367c",
+      "bytes": 641683
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0103/reservation.json",
+      "sha256": "51bb48da8ece728e398042d3d3a34dde486fc7c074896b29e27aa6e60e70ae25",
+      "bytes": 18274
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0104/raw.json",
+      "sha256": "c0e1e89e8588165f4c8cebe390ca4e58c20efcf3b4ad4cbc929bcc357939d5e7",
+      "bytes": 623114
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0104/reservation.json",
+      "sha256": "008636d2531c26f2f9ad41431985a2990c652c177d45a834e37ca82694fb839e",
+      "bytes": 17154
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0105/raw.json",
+      "sha256": "ef05c873c4480d9d20258bc71c241f6a5edb4a973fe44e6ab8017890e99d31f5",
+      "bytes": 577001
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0105/reservation.json",
+      "sha256": "2f758a4b4f2c7b00d021502aef9bd5319f98fd4cd775b6c8d0d7d475a0e0a6e9",
+      "bytes": 17104
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0106/raw.json",
+      "sha256": "f8111f7a02f614800db25146bc45b691ffa6fd54db5552afa7f6a38db9afab64",
+      "bytes": 528464
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0106/reservation.json",
+      "sha256": "98011232ddaae8e25c09cb2115db5d8df1bc1949a6ac92fa3748d67101a7d294",
+      "bytes": 14234
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0107/raw.json",
+      "sha256": "328dd7fa9dbcbbab844f5eef4eb0e6ad977eba69092d532bc92e1dcbdb9f7e25",
+      "bytes": 604597
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0107/reservation.json",
+      "sha256": "1fcada35bcec0cdcb3315753b4f20cb88d49d3a4f88b34999cbf083ed2e92d20",
+      "bytes": 16926
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0108/raw.json",
+      "sha256": "ec1d992d4d48de0e4795d299eb1e4ea5d982edd00e5bf6b165e601637475919a",
+      "bytes": 603522
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0108/reservation.json",
+      "sha256": "5f0e8b0759856f8fa219374eb15156d3d614670a0a1209194be11582d01c426e",
+      "bytes": 17250
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0109/raw.json",
+      "sha256": "8527b2f3a45434a57c44161a043373590de13a63d934e09a7b9d62c87315b5ed",
+      "bytes": 625690
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0109/reservation.json",
+      "sha256": "615139761e4943abe58b748f7b9a056853df47377703374caae670fe0975e77a",
+      "bytes": 17539
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0110/raw.json",
+      "sha256": "659746bc9b5f5078f38826941be49593bdfce82a00c79991c7c2effbdffe8d7f",
+      "bytes": 541011
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0110/reservation.json",
+      "sha256": "4c529c7c6af783ae94711dc2f45b3de66d4d39f24b42befba84bec2a8e3cac0c",
+      "bytes": 14814
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0111/raw.json",
+      "sha256": "d9ebc5f22e721c0f136dfc507d87371c7e7dc9d1d1a6932fcc45695359f0173b",
+      "bytes": 573720
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0111/reservation.json",
+      "sha256": "a4c89b18fbd8f1aebfef8f5c9c09eb48a5c4064e6f13a94ca32cd7d21f88d5e5",
+      "bytes": 15847
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0112/raw.json",
+      "sha256": "ba00d21b5b6cf30424790e91118bda8feb88aeeb59b011c01f6149c306c65bbc",
+      "bytes": 631271
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0112/reservation.json",
+      "sha256": "a7129ca90017ef31bf2d97e8de5205273030a71968a8e24df3cd35f0e9b84016",
+      "bytes": 17241
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0113/raw.json",
+      "sha256": "47c480ff3dc914c1c67aa3043ab196e0735dd6efa6964adc3a301439a04c448e",
+      "bytes": 608902
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0113/reservation.json",
+      "sha256": "3c81a62529908bcf68a4b1aeb1d66838f1d997f2238600903340fcf83ada7e17",
+      "bytes": 16095
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0114/raw.json",
+      "sha256": "063bade7f0fd93bda292970232ca682567ada6c23a23720159ebf056a3836098",
+      "bytes": 610750
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0114/reservation.json",
+      "sha256": "29e709a56eea6ca7ea60476c635112a79d75ca159dc3944df35f9dfc0948a6f2",
+      "bytes": 15766
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0115/raw.json",
+      "sha256": "4847e1a5ae2d9b8958a2cd52b009955250c88869b859dc5151b9638cec2ae0fa",
+      "bytes": 534387
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0115/reservation.json",
+      "sha256": "b48d9d4ce3770d315ee485fc4896788f301d01b4e01094c5d5a5e189f3e253e0",
+      "bytes": 14475
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0116/raw.json",
+      "sha256": "765effce1f48940f0022a7d41f1f088c2415ef6a0b1cbdf6a4f6a1a4ea536cbd",
+      "bytes": 614845
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0116/reservation.json",
+      "sha256": "e0a785f0ca95589cbcee996478180122220bee765608f503eded7ed004ca2b2c",
+      "bytes": 17031
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0117/raw.json",
+      "sha256": "95dbda75e873b3560e69198611a4281f8a5e6aeb0c72f791d35d9b07ea65fa19",
+      "bytes": 601126
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0117/reservation.json",
+      "sha256": "172cafed889f1870a30079e7b95ddf53962a559e06e006fae1b7c7c605a45952",
+      "bytes": 17329
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0118/raw.json",
+      "sha256": "da86ac684a0fd9588ecde2d5d74ef1ab0ca3e25b514766ed1aac69b25583521e",
+      "bytes": 616162
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0118/reservation.json",
+      "sha256": "048fd7f94b6d25a3624714f6b3561f97aab56c1f862543407f698067fd2d2cc1",
+      "bytes": 17500
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0119/raw.json",
+      "sha256": "3ae54b3e99f552d47804bc4ac8407c623b92242dd5ca0d5dcfdde47c4a98ed24",
+      "bytes": 683101
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0119/reservation.json",
+      "sha256": "a4d60ff0a7925f24881f03a71c65d361b848f114cbb9f67246fbe21d85d7d188",
+      "bytes": 18164
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0120/raw.json",
+      "sha256": "a185fe321d10d95bbdc7afd607ccb12b32057faf8a56f91cde1173baa3779094",
+      "bytes": 613745
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0120/reservation.json",
+      "sha256": "e42ba392bff9e315de56986919b15f3748591d4374ff52460b87c3222a3ba14f",
+      "bytes": 15823
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0121/raw.json",
+      "sha256": "2d9e9ca92fb40d8cc3ed36849bc6a81737109ef0ab1f261ff72dfbffc1205317",
+      "bytes": 551667
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0121/reservation.json",
+      "sha256": "9f159923a389936c01db0a8ec07c5104e37ef4d948556139c02e6692a0dd44ff",
+      "bytes": 16359
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0122/raw.json",
+      "sha256": "64b65c5d334640bdbb7d13401249cd39da86f8e0057b93f0ec6cbc124d97f748",
+      "bytes": 586306
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0122/reservation.json",
+      "sha256": "c1ba7241e46d80d1f2f4d80f41a07cf4b9eab3fc610ee38f484945d4b10e5633",
+      "bytes": 17619
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0123/raw.json",
+      "sha256": "300fef83cd7439e443fc79e88b2b6a7e28a9828678fa4b391f1cc84060c5c0d4",
+      "bytes": 578632
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0123/reservation.json",
+      "sha256": "2ea2b6f1c1c5b548948ba5ec273f2bd0368fcd5814ef1a3d67bb5e8a5364b933",
+      "bytes": 15362
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0124/raw.json",
+      "sha256": "9658695162efbc4d443b5980c1aad0bddbc9703579d01a6cee2bd0f74de2ab87",
+      "bytes": 719300
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/dynamic/batches/0124/reservation.json",
+      "sha256": "b8a2ddd8e0ce149c33a8ea3749ece0aa643c9e11caf435f265cf034de02245f7",
+      "bytes": 19812
+    }
+  ],
+  "analysis": {
+    "path": "/data/WSH/post-train/experiments/stage4/frontier_diagnostic_v1/analysis.json",
+    "sha256": "6d9795a17fff4208fe9dfb5f6b0bad132ab7101dbac4c61ee080c8dda1b517d4",
+    "bytes": 14540
+  },
+  "verifier": {
+    "path": "/data/WSH/post-train/scripts/analyze_frontier.py",
+    "sha256": "c337e4713ca4ecb265268e8ac146c4170950ba6759cd6d279f4cf8138dd8eee9",
+    "bytes": 9893
+  }
+}

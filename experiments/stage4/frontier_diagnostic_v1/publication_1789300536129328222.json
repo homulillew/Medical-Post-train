@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-09-13T11:55:36.118265+00:00",
+  "diagnostic_status": "DIAGNOSTIC_VERIFIED",
+  "handoff": {
+    "path": "/data/WSH/post-train/experiments/stage4/postformal_handoff_20260913T115535Z.json",
+    "sha256": "d52f89c5b525cbdd804f1baa48ea70c59b8db9bd858e4ab67022128984b6f5e7",
+    "bytes": 8289
+  },
+  "stage4_done": false,
+  "files": [
+    "experiments/stage4/frontier_diagnostic_v1/tests.log",
+    "experiments/stage4/frontier_diagnostic_v1/raw_artifacts_manifest.json",
+    "experiments/stage4/frontier_diagnostic_v1/finalizer_launch.json",
+    "experiments/stage4/frontier_diagnostic_v1/launch.json",
+    "experiments/stage4/frontier_diagnostic_v1/analysis.json",
+    "experiments/stage4/frontier_diagnostic_v1/vanilla_prompt_metrics.json",
+    "experiments/stage4/frontier_diagnostic_v1/preregistration.json",
+    "experiments/stage4/frontier_diagnostic_v1/dynamic_prompt_metrics.json",
+    "experiments/stage4/frontier_diagnostic_v1/verification.json",
+    "experiments/stage4/frontier_diagnostic_v1/sft_prompt_metrics.json",
+    "experiments/stage4/frontier_diagnostic_v1/heartbeat.json",
+    "experiments/stage4/frontier_diagnostic_v1/manifest.json",
+    "experiments/stage4/frontier_diagnostic_v1/status.json",
+    "experiments/stage4/frontier_diagnostic_v1/prompt_ids.json",
+    "experiments/stage4/frontier_diagnostic_v1/preflight_verification.json",
+    "experiments/stage4/postformal_handoff_20260913T115535Z.json",
+    "experiments/stage4/postformal_handoff_current.json"
+  ],
+  "status": "READY_TO_COMMIT"
+}

@@ -1,0 +1,234 @@
+{
+  "timestamp": "2026-09-13T11:55:35.957513+00:00",
+  "kind": "MACHINE_READABLE_HANDOFF",
+  "narrative_author": "ChatGPT/user",
+  "stage4_done": false,
+  "stage5_ready": false,
+  "stage5_status": "NOT_STARTED",
+  "formal_pair": {
+    "path": "/data/WSH/post-train/experiments/stage4/formal_pair.json",
+    "sha256": "95e2022605ff54ee5c264887e3d7a4421d4087d224b7dda8d85fe788cccd86b8",
+    "bytes": 15286
+  },
+  "raw_receipts": {
+    "vanilla": {
+      "path": "/data/WSH/post-train/experiments/stage4/vanilla_formal_verification.json",
+      "sha256": "a3809ce426991c355e78436e4eac2245c39cef247c4d5a19746043fd3c2de086",
+      "bytes": 738478
+    },
+    "dynamic": {
+      "path": "/data/WSH/post-train/experiments/stage4/dynamic_formal_verification.json",
+      "sha256": "27c884891bad143513e2c51b9b8a9fd04fe3f428663b62db3416c67b2a8dcb3d",
+      "bytes": 1462346
+    }
+  },
+  "final_native_reloads": {
+    "vanilla": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/final_reload/result.json",
+      "sha256": "6b1abadce663f28a09625604222b4dc556e5ae02fa07a275f613f78053a372f7",
+      "bytes": 1552
+    },
+    "dynamic": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/final_reload/result.json",
+      "sha256": "9cde7af83543a5fa3983a48efed7a904594a23d30fbe8899a12258c560bef25e",
+      "bytes": 1552
+    }
+  },
+  "analysis": {
+    "path": "/data/WSH/post-train/experiments/stage4/postformal_analysis_v1.json",
+    "sha256": "f3070ba7010297c6b5d1a0c8c14025e4aef0773c17c90f29dac0dade71b96919",
+    "bytes": 1190762
+  },
+  "plot_data": {
+    "path": "/data/WSH/post-train/experiments/stage4/postformal_data_v1/manifest.json",
+    "sha256": "8df4b98a5769004cb948f38c81272e8396dab1a2b3a04d5527f22623357cc5c2",
+    "bytes": 1945
+  },
+  "existing_full_analysis": {
+    "path": "/data/WSH/post-train/experiments/stage4/formal_analysis_v1.json",
+    "sha256": "dae2001b9daf5f9511457619d45aeba73c824b6411a7944cb97d6f6ab84e92ab",
+    "bytes": 2210800
+  },
+  "checkpoint_inventory": {
+    "path": "/data/WSH/post-train/experiments/stage4/formal_checkpoint_index.json",
+    "sha256": "5aed298dd548c51b19b9b5778ff41b1e2965791c110b517f054d236e1da2f581",
+    "bytes": 45255
+  },
+  "supported_observations": {
+    "full_budget_reached": {
+      "vanilla": 5000,
+      "dynamic": 5000
+    },
+    "equal_update_deltas_pp": [
+      {
+        "groups": 0,
+        "delta": 0.0
+      },
+      {
+        "groups": 512,
+        "delta": 2.734375
+      },
+      {
+        "groups": 1024,
+        "delta": 1.5625
+      },
+      {
+        "groups": 1536,
+        "delta": 1.5625
+      },
+      {
+        "groups": 2048,
+        "delta": 3.515625
+      },
+      {
+        "groups": 2560,
+        "delta": 2.734375
+      },
+      {
+        "groups": 3072,
+        "delta": 1.7578125
+      },
+      {
+        "groups": 3584,
+        "delta": 3.3203125
+      },
+      {
+        "groups": 4096,
+        "delta": 4.1015625
+      },
+      {
+        "groups": 4608,
+        "delta": 3.3203125
+      },
+      {
+        "groups": 5000,
+        "delta": 0.9765625
+      }
+    ],
+    "maximum_observed_milestone_delta": {
+      "final_delta_pp": 0.9765625,
+      "largest_observed_group_milestone_delta_pp": 4.1015625,
+      "largest_delta_group_milestones": [
+        4096
+      ],
+      "dynamic_wins_shared_token_thresholds": [
+        4000000
+      ]
+    },
+    "final_difference": {
+      "delta_pp": 0.9765625,
+      "corrected": 44,
+      "regressed": 39,
+      "exact_p_exploratory": 0.6608836477612148,
+      "paired_bootstrap": {
+        "n": 512,
+        "a_mean": 0.67578125,
+        "b_mean": 0.685546875,
+        "delta": 0.009765625,
+        "ci95": [
+          -0.025390625,
+          0.044921875
+        ]
+      }
+    },
+    "costs": {
+      "group_ratio": 2.9744,
+      "output_tokens_per_group_ratio": 0.9810314391161138,
+      "total_rollout_token_ratio": 2.924538241234187
+    },
+    "repeated_generated_prompts": {
+      "vanilla": 0,
+      "dynamic": 0
+    },
+    "health": {
+      "vanilla": {
+        "first_mini_clips_all_zero": true,
+        "max_consecutive_clip_gt_09": 0,
+        "optimizer_inactive_windows": 0,
+        "nonfinite_values": 0
+      },
+      "dynamic": {
+        "first_mini_clips_all_zero": true,
+        "max_consecutive_clip_gt_09": 0,
+        "optimizer_inactive_windows": 0,
+        "nonfinite_values": 0
+      }
+    }
+  },
+  "unsupported_claims": [
+    "Statistically credible final monitor superiority",
+    "Universal superiority across training seeds",
+    "Lower rollout cost or stable equal-token advantage",
+    "Token ratio equals GPU-hour ratio",
+    "Observed advantage is confined to early/mid training: maximum measured group-grid delta is at4096",
+    "Training-population shifts prove individual prompts crossed a learned frontier"
+  ],
+  "hypotheses_to_test": [
+    "Frontier mixed resolution H1",
+    "Mixed-to-all-wrong regression H2",
+    "Parsed-wrong vs parser-only resolution H3",
+    "Hard all-wrong and mixed mass shifts H4"
+  ],
+  "frontier": {
+    "status": {
+      "status": "DIAGNOSTIC_VERIFIED",
+      "timestamp": "2026-09-13T11:55:34.154175+00:00",
+      "run_id": "s4_frontier_diagnostic_20260913T080052Z",
+      "optimizer_updates": 0,
+      "stage4_done": false,
+      "stage5_ready": false
+    },
+    "preregistration": {
+      "path": "/data/WSH/post-train/experiments/stage4/frontier_diagnostic_v1/preregistration.json",
+      "sha256": "2b3ef8ee35607c48ac072e5d1caaf46e2ba4ce16ce1e69fd017bead3c5f85f8e",
+      "bytes": 19681
+    },
+    "manifest": {
+      "path": "/data/WSH/post-train/experiments/stage4/frontier_diagnostic_v1/manifest.json",
+      "sha256": "fe5dc19838e9e424fb21647b397527ed247c431ec4791744894f7d85eb6a8328",
+      "bytes": 2790
+    },
+    "analysis": {
+      "path": "/data/WSH/post-train/experiments/stage4/frontier_diagnostic_v1/analysis.json",
+      "sha256": "6d9795a17fff4208fe9dfb5f6b0bad132ab7101dbac4c61ee080c8dda1b517d4",
+      "bytes": 14540
+    },
+    "verification": {
+      "path": "/data/WSH/post-train/experiments/stage4/frontier_diagnostic_v1/verification.json",
+      "sha256": "89fd76aba8a0b9ffcc0800401fa47b2c1efb10d141ed9b7cef1133117644b2f2",
+      "bytes": 190098
+    }
+  },
+  "case_evidence": {
+    "automatic_formal_cases": "formal_analysis_v1.json:runs.*.automatic_cases",
+    "raw_paired_disagreements": "postformal_analysis_v1.json:accuracy_vs_update_budget[*].paired.corrected_ids/regressed_ids",
+    "historical_system_failure": {
+      "path": "/data/WSH/post-train/docs/implementation/STAGE4_GPU_RELEASE_RECOVERY.md",
+      "sha256": "154902d188be7324c8c1567a60334a5cc847ceb804166ca4686bcaa8c1322f34",
+      "bytes": 6511
+    },
+    "human_manual_review": "Not backfilled; machine-mined cases are not human-reviewed cases"
+  },
+  "stage5_preparation": {
+    "dataset_freeze": {
+      "path": "/data/WSH/post-train/experiments/stage5/dataset_freeze_v1.json",
+      "sha256": "5290257edc025f97e1078f343df1d9b8b5b2b5742be1995d2bb72ee40ad10480",
+      "bytes": 4589
+    },
+    "dataset_hash_checks": "PASS",
+    "selection1024_inference_performed": false,
+    "project_model_test_inference_performed": false,
+    "final_endpoints_for_frontier": "formal_checkpoint_index.json:*:final; never deployment-selected endpoints",
+    "selection_policy": "Must be separately frozen before selection1024 inference; frontier outputs may not choose checkpoints",
+    "external_paid_judge_status": "STOPPED_BY_OWNER_BUDGET; no new API requests",
+    "unresolved_manual_audit": "Open-ended scoring/manual audits remain required; no clinician verification claim"
+  },
+  "pending": [
+    "ChatGPT-authored final stage narrative and interview story",
+    "Stage4 full acceptance verifier after narrative/manual-review deliverables are available",
+    "Stage5 validation-only deployment-checkpoint selection protocol and execution; selection1024 unconsumed",
+    "Stage5 project-model final test/open-QA inference and statistical/manual audits",
+    "Complete truncated owner PhaseD instruction before final Random-3x protocol freeze"
+  ],
+  "artifacts_retention": "Git stores machine evidence, hashes, plots and selected cases. Full raw output and checkpoint payloads remain at manifest artifact paths."
+}
