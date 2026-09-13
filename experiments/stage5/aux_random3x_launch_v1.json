@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-09-13T14:44:48.932475+00:00",
+  "pid": 3644905,
+  "command": [
+    "/data/WSH/post-train/.venv-train/bin/python",
+    "/data/WSH/post-train/scripts/random3x_runtime.py",
+    "supervise",
+    "--run",
+    "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9"
+  ],
+  "run_id": "s4_aux_random3x_20260913T144225_cb7dc9",
+  "code_commit": "f1251443b0537baf3bdbfe24fab5f8f1bd087a33",
+  "pre_generation_preregistration_commit": "f125144"
+}

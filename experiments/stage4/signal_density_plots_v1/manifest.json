@@ -1,0 +1,20 @@
+{
+  "source": {
+    "path": "/data/WSH/post-train/experiments/stage4/signal_density_analysis_v1.json",
+    "sha256": "3459883dc99c6d05466273802fac52131c09d0a7475bdcd8ce798845bd644802",
+    "bytes": 33983
+  },
+  "files": [
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/signal_density_plots_v1/signal_density.pdf",
+      "sha256": "bb52a467df4973ddd83a5f218c1e24d9ef11d152a074ad3a77a0c7ab9aaef04d",
+      "bytes": 15888
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/signal_density_plots_v1/signal_density.png",
+      "sha256": "4201034071e7f71757d2fe3db78a96eb1063d6736d2d6f22491fb14eb2a22cd7",
+      "bytes": 56180
+    }
+  ],
+  "scope": "Deterministic retained-tensor composition, not gradient-quality or test superiority"
+}

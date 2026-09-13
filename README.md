@@ -33,15 +33,33 @@ with 2.9744× group amplification and 2.92454× rollout-token cost relative to V
 Mean response length is 259.57 versus 264.59 tokens, so added cost comes primarily
 from more groups rather than longer responses.
 
-A separately [preregistered frontier diagnostic](experiments/stage4/frontier_diagnostic_v1/preregistration.json)
-is running on exactly 1000 clean validation-reserve prompts, three fixed final
-policies and G=4 (12,000 responses, **zero optimizer updates**). The frozen set has
-zero cluster overlap with monitor512, selection1024, RL pool, SFT train/validation,
-and sealed test clusters. Diagnostic generation and verification must finish before
-mechanism conclusions are made. [Machine-readable handoff](experiments/stage4/postformal_handoff_current.json).
-The Random-3× source schedule is retained; its full protocol awaits the truncated
-owner instruction. No auxiliary training has started. Final narrative authorship
-belongs to ChatGPT/user; machine evidence is not a substitute for completed review.
+The [preregistered frontier diagnostic](experiments/stage4/frontier_diagnostic_v1/preregistration.json)
+completed all 12,000 responses and passed [raw replay](experiments/stage4/frontier_diagnostic_v1/verification.json).
+Dynamic's trajectory accuracy is68.6% versus67.3% Vanilla, but the exploratory
+paired95% interval crosses zero. The SFT-mixed-to-all-correct hypothesis was not
+supported (261 versus264 prompts). These are validation diagnostic results.
+
+The [formal signal-density analysis](experiments/stage4/signal_density_analysis_v1.json)
+replayed retained native advantages/losses for all10,000 training groups.
+Correctness-discriminative group density is41.02% Vanilla versus100% Dynamic;
+nonzero-advantage density is75.7% versus100%. Of Vanilla all-correct groups,
+84.65% still have nonzero advantages. This is signal composition, not a claim
+about per-group gradient quality. [Verification](experiments/stage4/signal_density_verification_v1.json).
+
+The complete [Random-3x v2 auxiliary protocol](experiments/stage5/aux_random3x_protocol_v2.json)
+is frozen and the separate run is in progress:1360 scheduled generated groups,
+512 training groups,64 windows,128 optimizer steps. Hash-only selection was fixed
+before generation. A real process termination/resume is required after32 groups.
+The new [512-item auxiliary validation set](experiments/stage5/ablation_eval_512_v1.json)
+is disjoint from monitor512, selection1024, Frontier1000, RL/SFT pools and sealed
+test clusters. It will compare SFT, existing Vanilla512/Dynamic512 and Random3x512.
+Auxiliary training/evaluation is not Stage5 primary evaluation; Stage5 remains
+NOT_STARTED and no paid APIs are authorized. Completion requires real raw verifier,
+resume and auxiliary evaluation receipts, not merely a launched process.
+
+[Stage4 acceptance readiness](experiments/stage4/stage4_acceptance_readiness_v1.json)
+records missing narrative/manual-review deliverables. Final narrative authorship
+belongs to ChatGPT/user; no manual reviews have been fabricated.
 
 A GPU-release assertion stopped training at3216 groups on September10 17:56;
 the overnight failure and stale project status are retained. The saved next
