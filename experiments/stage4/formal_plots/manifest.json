@@ -1,0 +1,181 @@
+{
+  "pair": {
+    "path": "/data/WSH/post-train/experiments/stage4/formal_pair.json",
+    "sha256": "95e2022605ff54ee5c264887e3d7a4421d4087d224b7dda8d85fe788cccd86b8",
+    "bytes": 15286
+  },
+  "figures": [
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/validation_accuracy_vs_training_groups.svg",
+      "sha256": "60ed5a91a51e0ce0e962584d998981edd700d7c937122bd9d28650e331c73542",
+      "bytes": 44563
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/validation_accuracy_vs_training_groups.pdf",
+      "sha256": "fc6c0bae8a548ebce910dba99036cfa0435dbdbf0ee6a2acf78d99ab03ebdb7b",
+      "bytes": 17313
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/validation_accuracy_vs_generated_output_tokens.svg",
+      "sha256": "914761ea41412731ccf8080a4e190345fb89ce84e3c8f6f9c75da49e7a710b6f",
+      "bytes": 50031
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/validation_accuracy_vs_generated_output_tokens.pdf",
+      "sha256": "b62018e927689f10d4cf92b4b88e9b0e20ceb424500436ac81d431df09232ed1",
+      "bytes": 18108
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/validation_accuracy_vs_generated_total_tokens.svg",
+      "sha256": "bc2c5722031cf3ef6b077520ec6b529f83d87d17e3c61cb3724cd6ff5b554db3",
+      "bytes": 50720
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/validation_accuracy_vs_generated_total_tokens.pdf",
+      "sha256": "e35926ccf9b27c34873d6046c26ed983794a9db98f8246cf6549d2c6f0e94468",
+      "bytes": 18283
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/pre_filter_mixed.svg",
+      "sha256": "6637f161858c77781a1254521d408e00ce33f606c0e79b2d559cf1b78ea59062",
+      "bytes": 62537
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/pre_filter_mixed.pdf",
+      "sha256": "7186e6b24eb698486fa4d28d1fa988518106afb897ca4085768691ed5128d2e0",
+      "bytes": 23316
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/pre_filter_all_correct.svg",
+      "sha256": "54c61accfb0a24b8db8344305e41ea7d99982037a2095b5c7e9cdf0b1a0ca308",
+      "bytes": 63076
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/pre_filter_all_correct.pdf",
+      "sha256": "c55829085eff1f7065655ef79caf577c73dd5cd26c2df907600f09f22a1812e7",
+      "bytes": 23188
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/pre_filter_all_wrong.svg",
+      "sha256": "c7387aba95ec06623ba515bbc269f264b7d989fcdb4cb746ba9825af076af15a",
+      "bytes": 63705
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/pre_filter_all_wrong.pdf",
+      "sha256": "2e36cef85460756dc32802be75516b64029a9ac5fe836b83a87bd248c66d9592",
+      "bytes": 22916
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/sampling_amplification.svg",
+      "sha256": "c55d23f072fd0fcff5158473a9216e2228f492ef728b17ff4b6d24f7a6f6c1d5",
+      "bytes": 45804
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/sampling_amplification.pdf",
+      "sha256": "5778bb891c8f92064f813ce3623a64ad2c61cd920a2289268e48992564d1ca71",
+      "bytes": 19807
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/mixed_unparseable_only.svg",
+      "sha256": "74c374e82d2ee3ec6b0e301c006fbf310acb6e0aab8105c8883f34bd894dd003",
+      "bytes": 43502
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/mixed_unparseable_only.pdf",
+      "sha256": "213ac365ef2f61a2dfea4d0620f49df36e151c8b8754154c58aec8de392fe8f4",
+      "bytes": 17690
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/strict_format.svg",
+      "sha256": "e4c767b15e5eb35389e482dff8bb056aff0cc158c23153960d94493a2062c464",
+      "bytes": 55549
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/strict_format.pdf",
+      "sha256": "70373e1dcbf76d91f4c484f8c94be55da733e72820a715bde7334776a46d80fa",
+      "bytes": 20268
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/response_length_mean.svg",
+      "sha256": "85eb81f81bb7189fe25b592a3fce2a0b28e5003240ffa879284ebd0b84c9d99a",
+      "bytes": 64556
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/response_length_mean.pdf",
+      "sha256": "80601a13b61e9823f338ec58815f713f0182172e2315598adc31d33ca7e1061e",
+      "bytes": 26905
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/response_length_p95.svg",
+      "sha256": "653b777d7d3a3f0ed8a374965e0e67f56686515d128d4f0a990908c0bb5b42ec",
+      "bytes": 65516
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/response_length_p95.pdf",
+      "sha256": "7537823346a04abe6e4a10501224996011ae80f6fd170a4e9d8e90ac04cbbebc",
+      "bytes": 26909
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/entropy.svg",
+      "sha256": "95a75125c67fcfd44ee5872e32291fe3d0a040870cc9c75822ac558d65305b26",
+      "bytes": 65540
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/entropy.pdf",
+      "sha256": "ba0643ed1c95f52c81c384d28dd2c6b7e90c29951964b144a3440ce058aeaafb",
+      "bytes": 27695
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/objective_clip_second_mini.svg",
+      "sha256": "6c7853d03814a61d2a5dd8c66f8496019dc88e7a4dd1ff2d9c2f43966429616a",
+      "bytes": 63923
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/objective_clip_second_mini.pdf",
+      "sha256": "b881c29eadc09186f4c1c893fc3f477629b9732e38f872cff53474b79d5734ec",
+      "bytes": 22566
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/sequence_ratio_min.svg",
+      "sha256": "b6cbd5bb22ac45f47522fcd528f5946e654eb79b6168b10d388c09473ce2bda1",
+      "bytes": 67293
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/sequence_ratio_min.pdf",
+      "sha256": "f269392307244323cd0da8d124b3fb445b28af172cda659bddd2fb1d338e216c",
+      "bytes": 27478
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/sequence_ratio_max.svg",
+      "sha256": "27e2d99334f15f3362fa13d3637532a5433be80c16d8c42987a79d215917305a",
+      "bytes": 64374
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/sequence_ratio_max.pdf",
+      "sha256": "f240061106891321b3a56bed5e9677e55e7c61ada1b828f1c3e6a65124ebeb2e",
+      "bytes": 25920
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/gradient_norm.svg",
+      "sha256": "32ae70c911828c6d2010eaa094904b30f0d7300ec16e82828e9f9b0be74fc7a7",
+      "bytes": 60249
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/gradient_norm.pdf",
+      "sha256": "b4164aafbbd0e9991ad99595168b7c9a24e643cece479cbfdfc5680e1edbacbc",
+      "bytes": 25310
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/reward.svg",
+      "sha256": "83b0df23bd264ea9c6de0236724907c9b269d8e498e91f06ce618d72ac15db98",
+      "bytes": 65906
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/reward.pdf",
+      "sha256": "189cb8b19ee592477a5df3bf0619f347c84cfdc5c078eeb1fcd9cf88ef2588ad",
+      "bytes": 28675
+    }
+  ],
+  "scope": "Committed windows; no interpolation or missing-result backfill",
+  "costs": "Validation/control generations excluded from training rollout x axes and retained separately"
+}

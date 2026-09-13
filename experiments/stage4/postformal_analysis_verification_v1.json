@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-09-13T08:09:28.372368+00:00",
+  "result": "PASS",
+  "scope": "POSTFORMAL_ANALYSIS_COUNTS_AND_ACCOUNTING",
+  "analysis": {
+    "path": "/data/WSH/post-train/experiments/stage4/postformal_analysis_v1.json",
+    "sha256": "f3070ba7010297c6b5d1a0c8c14025e4aef0773c17c90f29dac0dade71b96919",
+    "bytes": 1190762
+  },
+  "checks": [
+    "11 exact frozen group milestones",
+    "5 shared first-crossing token thresholds",
+    "class/disposition/token conservation",
+    "correct-count paired deltas",
+    "all625windows per variant match original formal-analysis SHA256 source records"
+  ],
+  "monitor_bootstrap": {
+    "seed": 20260913,
+    "resamples": 10000,
+    "unit": "paired question",
+    "interval": "percentile95",
+    "scope": "exploratory validation, unadjusted"
+  },
+  "no_new_formal_verifier": true
+}

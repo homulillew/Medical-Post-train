@@ -15,15 +15,34 @@ and all eight verifier gates passing. Measured train-sample accuracy is 51.775%,
 mixed groups 53.1%, and truncation 0%. Stage2 performed no policy optimization.
 Stage 3 is **DONE**:496 newly generated groups,256 accepted mixed and1 retained overflow,
 with1.9375× measured amplification and all nine verifier gates passing.
-Stage 4 remains **incomplete** (snapshot 2026-09-13 13:49 Asia/Shanghai).
-Both Vanilla and Dynamic reached **5000/5000 training groups**, each with
-625 windows and 1250 optimizer steps. Vanilla's full raw verification passed;
-Dynamic's worker reports FULL_PASS and its full raw verification is still running.
-The queue state is `RAW_VERIFYING`; Stage 4 acceptance and reports remain pending.
-Dynamic generated **14,872 groups** for 5,000 accepted mixed groups (**2.9744×**
-group amplification), with **15,441,512 output tokens** and **2,001,832 prompt tokens**.
-See the [dated progress and evidence snapshot](experiments/stage4/progress_snapshot_20260913T054926Z.json)
-and [Vanilla verification receipt](experiments/stage4/vanilla_formal_verification.json).
+Stage 4 has reached **FULL_PASS**, with both formal runs at **5000/5000 groups**,
+625 windows and 1250 optimizer steps. Both original full raw verifiers and final
+native reloads passed. Stage-level acceptance and narrative/manual-review
+deliverables remain incomplete; Stage 5 readiness remains **NO**.
+
+The [postformal analysis](experiments/stage4/postformal_analysis_v1.json) rebuilds
+all frozen group milestones and first committed shared token crossings, with
+[CSV/figure sources](experiments/stage4/postformal_data_v1/manifest.json).
+Final Dynamic minus Vanilla monitor512 accuracy is +0.9765625 percentage points;
+the paired exploratory 95% bootstrap interval is [-2.54, +4.49] points and exact
+McNemar p=0.661. The largest observed group-grid gap is at 4096 groups (+4.10 points),
+not confined to early training. Dynamic wins only the 4M crossing among shared
+1M–5M token thresholds. These are single-seed validation observations, not test claims.
+Dynamic generated 14,872 unique prompts (no reuse in the actual exposure map),
+with 2.9744× group amplification and 2.92454× rollout-token cost relative to Vanilla.
+Mean response length is 259.57 versus 264.59 tokens, so added cost comes primarily
+from more groups rather than longer responses.
+
+A separately [preregistered frontier diagnostic](experiments/stage4/frontier_diagnostic_v1/preregistration.json)
+is running on exactly 1000 clean validation-reserve prompts, three fixed final
+policies and G=4 (12,000 responses, **zero optimizer updates**). The frozen set has
+zero cluster overlap with monitor512, selection1024, RL pool, SFT train/validation,
+and sealed test clusters. Diagnostic generation and verification must finish before
+mechanism conclusions are made. [Machine-readable handoff](experiments/stage4/postformal_handoff_current.json).
+The Random-3× source schedule is retained; its full protocol awaits the truncated
+owner instruction. No auxiliary training has started. Final narrative authorship
+belongs to ChatGPT/user; machine evidence is not a substitute for completed review.
+
 A GPU-release assertion stopped training at3216 groups on September10 17:56;
 the overnight failure and stale project status are retained. The saved next
 checkpoint was adopted without optimizer replay, and a fresh window passed.
@@ -170,7 +189,7 @@ Current progress is authoritative in
 [`experiments/stage1/selected_runs.json`](experiments/stage1/selected_runs.json).
 Stage 2 is **DONE**, including full profiling, scoring, analysis and verification; selected runs are in
 [`experiments/stage2/selected_runs.json`](experiments/stage2/selected_runs.json).
-Stage 3 is **DONE**, Stage 4 is **FULL_RUNNING**, and Stage 5–6 remain **NOT_STARTED**.
+Stage 3 is **DONE**, Stage 4 is **FULL_PASS** with acceptance deliverables pending, and Stage 5–6 remain **NOT_STARTED**.
 Historical planning/Stage 0/Stage 1 validators intentionally check their original stage-isolation boundaries; their archived receipts are preserved.
 
 Use the independent training environment and real Stage 1 entry points:

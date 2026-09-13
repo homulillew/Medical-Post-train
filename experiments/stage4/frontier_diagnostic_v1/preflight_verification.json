@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-09-13T08:09:28.364972+00:00",
+  "result": "PASS",
+  "scope": "PREPARATION_AND_FIRST_BATCH_SANITY_ONLY",
+  "unit_tests": 5,
+  "tests": {
+    "path": "/data/WSH/post-train/tests/test_frontier_diagnostic.py",
+    "sha256": "3299e86aba142fed7bd248068fb1721dae43935cce4f0b94954cbf3c24ebecfd",
+    "bytes": 2246
+  },
+  "test_log": {
+    "path": "/data/WSH/post-train/experiments/stage4/frontier_diagnostic_v1/tests.log",
+    "sha256": "7791de6b7317d38dc162c0e012af139a27deef9e8f97a56fd337448f59394c17",
+    "bytes": 674
+  },
+  "real_outputs_checked": 32,
+  "raw_source": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_frontier_diagnostic_20260913T080052Z/sft/batches/0000/raw.json",
+    "sha256": "9653f631c857b0e9c3ac7ab7aeffe550d4fec16686d9b741e4e0db7203d04af7",
+    "bytes": 549808
+  },
+  "real_checks": [
+    "prompt-aware DecodeStream exactly matches every raw_output",
+    "complete groups pass frozen correctness-only classification"
+  ],
+  "required_total_responses": 12000,
+  "full_diagnostic_complete": false
+}

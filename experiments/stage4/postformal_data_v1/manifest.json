@@ -1,0 +1,49 @@
+{
+  "analysis": {
+    "path": "/data/WSH/post-train/experiments/stage4/postformal_analysis_v1.json",
+    "sha256": "f3070ba7010297c6b5d1a0c8c14025e4aef0773c17c90f29dac0dade71b96919",
+    "bytes": 1190762
+  },
+  "files": [
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/postformal_data_v1/shared_token_budget.svg",
+      "sha256": "d2ba4439b2f7304791cabe7c27ab61aa5622776e96e295555aab3ac18c5da9fa",
+      "bytes": 41797
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/postformal_data_v1/update_budget.svg",
+      "sha256": "9827a69072411971e25c3f0bf4642deae7e8c10a22dc06ed5892fdf66daf5d70",
+      "bytes": 39863
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/postformal_data_v1/update_budget.csv",
+      "sha256": "eb079f592e4a7a0a5aef849ec1e7512d226105e61c4f732f0e3b4bc31c7d106d",
+      "bytes": 1962
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/postformal_data_v1/vanilla_windows.csv",
+      "sha256": "8f08d73636df78383362d55870faae07fec596659a6d97ea70ccd535e79c179c",
+      "bytes": 233948
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/postformal_data_v1/shared_token_budget.csv",
+      "sha256": "d71a3281c954fb86b9184d567f29d6a0105507791cc329c1d5d967791e63e3b7",
+      "bytes": 1036
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/postformal_data_v1/update_budget.pdf",
+      "sha256": "3b4d780f58ac6f7d95617c42162a537378a0e1733fb243756799c740929419d3",
+      "bytes": 16110
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/postformal_data_v1/shared_token_budget.pdf",
+      "sha256": "82bd6e369e23ac3f2993848340caf0f636f72c77b4f602c24d4556567ae4ea99",
+      "bytes": 17412
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/postformal_data_v1/dynamic_windows.csv",
+      "sha256": "0c1622f76119717618d67fd4fea09630ea3a07d8081b9f37488dd5dd8f83917c",
+      "bytes": 267639
+    }
+  ]
+}

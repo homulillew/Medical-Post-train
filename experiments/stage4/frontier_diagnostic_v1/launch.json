@@ -1,0 +1,11 @@
+{
+  "pid": 3554108,
+  "command": [
+    "/data/WSH/post-train/.venv-train/bin/python",
+    "/data/WSH/post-train/scripts/frontier_diagnostic.py",
+    "supervise"
+  ],
+  "timestamp": "2026-09-13T08:04:24.016418+00:00",
+  "code_commit": "a67d44dc7754d44d7410e55d26d2250c5063506d",
+  "run_id": "s4_frontier_diagnostic_20260913T080052Z"
+}

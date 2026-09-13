@@ -1,0 +1,10 @@
+test_classes (test_frontier_diagnostic.FrontierTests.test_classes) ... ok
+test_first_crossing_no_interpolation_or_future_substitution (test_frontier_diagnostic.FrontierTests.test_first_crossing_no_interpolation_or_future_substitution) ... ok
+test_invalid_group_and_policy_rejected (test_frontier_diagnostic.FrontierTests.test_invalid_group_and_policy_rejected) ... ok
+test_majority_tie_and_unparseable (test_frontier_diagnostic.FrontierTests.test_majority_tie_and_unparseable) ... ok
+test_paired_bootstrap (test_frontier_diagnostic.FrontierTests.test_paired_bootstrap) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.015s
+
+OK
