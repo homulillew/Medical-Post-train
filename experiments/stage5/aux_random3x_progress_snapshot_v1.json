@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-09-13T14:57:08.272009+00:00",
+  "status": "INCOMPLETE_RUNNING",
+  "success_stop_conditions_met": false,
+  "run_id": "s4_aux_random3x_20260913T144225_cb7dc9",
+  "committed": {
+    "policy_version": "ed7ad8566ed4af54478f3244a8a20be92e954714ed083b50284a5316d0784726",
+    "cursor": 32,
+    "policy_windows": 2,
+    "optimizer_steps": 4,
+    "training_groups": 16,
+    "generated_groups": 32,
+    "output_tokens": 30394,
+    "prompt_tokens": 4297
+  },
+  "first_window": {
+    "commit": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/windows/0000/commit.json",
+      "sha256": "072aa9e3d5ee0618d0f9167aa851aa569542e983ebdbb4d412ea414bc5542f7a",
+      "bytes": 6147
+    },
+    "native_parity": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/windows/0000/update/parity.json",
+      "sha256": "eb3b117cd1fdcc94687a6caef93add9354cd248096f516d923557808928a2f39",
+      "bytes": 817
+    },
+    "actor_exit": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/windows/0000/actor_exit.json",
+      "sha256": "4690404b8e53841259b2f3772a24c32be75cb56bc1ebc29a94bded40c0541b93",
+      "bytes": 105
+    },
+    "update": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/windows/0000/update/update.json",
+      "sha256": "02caf97cccc3b68f3f64a8a8285daf8165c2ea45a72fa29b1cb33e9fa67698bb",
+      "bytes": 2629
+    }
+  },
+  "completed": [
+    "Stage4 readiness audit",
+    "Verified formal signal-density analysis",
+    "Preregistered v2 and disjoint eval512",
+    "Seven preflight tests"
+  ],
+  "pending": [
+    "Real32-group integration/fresh-process resume",
+    "Full512training groups",
+    "Auxiliary full raw verifier",
+    "Four-policy independent evaluation and paired analysis",
+    "Final causal-ablation machine handoff"
+  ],
+  "stage4_state": "FULL_PASS",
+  "Stage5": "NOT_STARTED",
+  "selection1024_untouched": true,
+  "final_tests_untouched": true,
+  "paid_api_new_calls": 0
+}
