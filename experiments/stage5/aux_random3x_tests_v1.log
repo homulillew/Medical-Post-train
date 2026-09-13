@@ -1,0 +1,12 @@
+test_disjoint_frozen_eval_when_available (test_random3x.RandomTests.test_disjoint_frozen_eval_when_available) ... ok
+test_exact_frozen_schedule_and_identity_selection (test_random3x.RandomTests.test_exact_frozen_schedule_and_identity_selection) ... ok
+test_real_retained_native_advantage_and_group_accounting (test_random3x.RandomTests.test_real_retained_native_advantage_and_group_accounting) ... ok
+test_resume_rejects_optimizer_replay (test_random3x.RandomTests.test_resume_rejects_optimizer_replay) ... ok
+test_seed_determinism (test_random3x.RandomTests.test_seed_determinism) ... ok
+test_selection_independent_of_all_outcomes (test_random3x.RandomTests.test_selection_independent_of_all_outcomes) ... ok
+test_technical_failure_zero_retry (test_random3x.RandomTests.test_technical_failure_zero_retry) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 4.953s
+
+OK

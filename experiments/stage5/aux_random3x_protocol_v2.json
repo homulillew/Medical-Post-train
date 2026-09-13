@@ -1,0 +1,404 @@
+{
+  "status": "FROZEN_BEFORE_GENERATION",
+  "timestamp": "2026-09-13T14:42:31.633387+00:00",
+  "run_id": "s4_aux_random3x_20260913T144225_cb7dc9",
+  "artifact_path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9",
+  "run_class": "AUXILIARY_ABLATION",
+  "source_prior_protocol": {
+    "path": "/data/WSH/post-train/experiments/stage5/aux_random3x_protocol_v1.json",
+    "sha256": "bfa923723c0449b9605e29afe6fa3ba71c1eee17afff9107f52bda91b0a3b154",
+    "bytes": 1414
+  },
+  "formal_pair": {
+    "path": "/data/WSH/post-train/experiments/stage4/formal_pair.json",
+    "sha256": "95e2022605ff54ee5c264887e3d7a4421d4087d224b7dda8d85fe788cccd86b8",
+    "bytes": 15286
+  },
+  "config": {
+    "model": "/data/WSH/medical-post-train-artifacts/models/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218",
+    "initialization": {
+      "path": "/data/WSH/post-train/experiments/stage1/initialization_manifest.json",
+      "sha256": "6fb9e83dba72e4fcbc76548c515a555b46f9c415a280409224e6028067d1059c",
+      "bytes": 1850
+    },
+    "pool": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/candidate_pool.jsonl",
+      "sha256": "6fa3e114f47c51977d940ca01b4e0d6510a03a390fe1f1495fe5d0820bf41262",
+      "bytes": 17377597
+    },
+    "reward_manifest": {
+      "path": "/data/WSH/post-train/experiments/stage2/reward_manifest.json",
+      "sha256": "cc72be1c2348d20f58bf978d047b9b4a2f200d8c70c39f0d0d98506528bfb905",
+      "bytes": 7541
+    },
+    "sampling": {
+      "n": 4,
+      "temperature": 0.6,
+      "top_p": 1.0,
+      "top_k": -1,
+      "min_p": 0.0,
+      "max_tokens": 1024,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "repetition_penalty": 1.0
+    },
+    "engine": {
+      "dtype": "bfloat16",
+      "tensor_parallel_size": 1,
+      "max_model_len": 4096,
+      "max_num_seqs": 16,
+      "gpu_memory_utilization": 0.65,
+      "enable_lora": true,
+      "max_lora_rank": 32,
+      "enable_sleep_mode": true,
+      "enforce_eager": true,
+      "seed": 42,
+      "enable_prefix_caching": false,
+      "generation_config": "vllm"
+    },
+    "execution_hashes": {
+      "src/medical_posttrain/reward/parser.py": "c3dfb9b4f0ff71334f7b2f19d5e265d7341c5d93baec2b00d9f40212329c8bdc",
+      "src/medical_posttrain/reward/hybrid.py": "b4de882de1d2455f5af46addd854a5aac48308603b5113fcd44842bdc837a09d",
+      "src/medical_posttrain/reward/semantic.py": "f9704e0655ef1f74f3635cf1b51facb4bba6b4266bfd5db42e354d854e4d33a7",
+      "src/medical_posttrain/data/exam.py": "081121a5b54aff164030a162de573e9fcf1a02f64fab639b23d4b8bed65e9996",
+      "src/medical_posttrain/rollout/profile.py": "8b50a372b0b2cdf475ef9d4a901d5fe3cc8b281614b0649afef6141eab1aeaa4",
+      "src/medical_posttrain/rollout/statistics.py": "f8aa2c2dc7a0bb2639b5a2b9aee1cd7b84798addb253856848caed40e3a90917"
+    },
+    "seed": 42,
+    "stage": 4,
+    "groups_per_window": 8,
+    "mini_prompts": 4,
+    "ppo_epochs": 1,
+    "sampling_metric": "acc",
+    "max_generation_batches": 32,
+    "request_batch_prompts": 8,
+    "clip_ratio_low": 0.0003,
+    "clip_ratio_high": 0.0004,
+    "grad_clip": 1.0,
+    "learning_rate": 1e-06,
+    "weight_decay": 0.0,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "lr_scheduler": "constant",
+    "warmup_steps": 0,
+    "entropy_coefficient": 0.0,
+    "kl_reward": false,
+    "kl_loss": false,
+    "reference_worker": false,
+    "critic": false,
+    "parity_limits": {
+      "token_mean_abs": 0.03,
+      "token_p99_abs": 0.25,
+      "sequence_mean_abs_max": 0.02
+    },
+    "mode": "auxiliary_ablation",
+    "target_training_groups": 512,
+    "stream_domain": "stage4:formal:pair1",
+    "validation_protocol": {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_validation_protocol.json",
+      "sha256": "fa9f2a4b36659488ee64ee530104b3cc963c4c0c403480f13e5dc7cc7475fc36",
+      "bytes": 34602
+    },
+    "checkpoint_interval_windows": 1,
+    "health_protocol": {
+      "clip_threshold": 0.9,
+      "clip_consecutive_windows": 8,
+      "length_block_windows": 16,
+      "length_consecutive_blocks": 3,
+      "length_cap_fraction": 0.9
+    },
+    "pilot_receipts": {
+      "vanilla": {
+        "path": "/data/WSH/post-train/experiments/stage4/vanilla_pilot_verification.json",
+        "sha256": "3fa6e6d0c7a8b4aa2f944d919b97857563ea22302b3e7baad3291100efa2ee7d",
+        "bytes": 76816
+      },
+      "dynamic": {
+        "path": "/data/WSH/post-train/experiments/stage4/dynamic_pilot_verification.json",
+        "sha256": "4e09b33aece65b2322bdcbb52f8069d145435a2d36941ad6030f3ef84f9648e5",
+        "bytes": 141137
+      }
+    },
+    "sampling_mode": "random3x",
+    "pause_after_windows": 4
+  },
+  "run_config": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/config.json",
+    "sha256": "f6387fbe1ecd69a87d2d55d7c873fe48375b63db77e5ccf5a292565c922716a4",
+    "bytes": 3777
+  },
+  "schedule": {
+    "path": "/data/WSH/post-train/experiments/stage5/aux_random3x_dynamic_schedule_v1.json",
+    "sha256": "b28471844abc022365cbb636b5e3e31a85b79666129563bf36b52ef284ec1cb4",
+    "bytes": 540947
+  },
+  "selected_identities": {
+    "path": "/data/WSH/post-train/experiments/stage5/aux_random3x_selected_identities_v2.json",
+    "sha256": "8714e0b7f40259aaca5fcebf09c53463abd099c215aede481b3ddf445b6cb90d",
+    "bytes": 71118
+  },
+  "selection_seed": 20260914,
+  "selection_rule": "SHA256(f\"{selection_seed}:{zero_based_window_index}:{encounter_index}:{prompt_id}\") ascending; first8; train in hash rank order",
+  "candidate_budget": {
+    "groups": 1360,
+    "windows": 64,
+    "training_groups": 512,
+    "optimizer_steps": 128,
+    "training_trajectories": 2048
+  },
+  "selection_inputs": [
+    "window_index",
+    "encounter_index",
+    "prompt_id",
+    "selection_seed"
+  ],
+  "technical_retry_policy": "Zero automatic retries. Any transport/incomplete group aborts the run and preserves evidence; no refill. Valid wrong, malformed-answer or low-quality completed outputs remain candidates.",
+  "generation": "Fresh responses on same Dynamic first64 prompt IDs/order/counts/seeds. Matched generated-group schedule, NOT exact token matched.",
+  "operational_overrides": [
+    "online.select_groups=ScheduleSelector",
+    "online.monitor disabled (aux eval only after training)",
+    "audited restore_boundary",
+    "bounded actor GPU release guard"
+  ],
+  "real_resume": {
+    "pause_training_groups": 32,
+    "pause_windows": 4,
+    "optimizer_steps": 8,
+    "method": "SIGTERM owned worker process group; observe dead; fresh process reload same checkpoint; next commit step10"
+  },
+  "evaluation_manifest": {
+    "path": "/data/WSH/post-train/experiments/stage5/ablation_eval_512_v1.json",
+    "sha256": "1a58c598ce9623c443eafd9ce5f1c6b451beecc99fd0c4b2b06c941ddca6d0c3",
+    "bytes": 35538
+  },
+  "evaluation_policies": {
+    "sft": {
+      "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s1_formal_20260908T152119_60040b/checkpoints/final/adapter",
+      "adapter_sha256": "1601e97891e51940bd4b575d8811a77d8278cbeb296c044b7004e41da6d9ea64"
+    },
+    "vanilla": {
+      "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0063/checkpoint/adapter",
+      "adapter_sha256": "8e101f3830b28c34d0a4b9c78fe33a0fd7867f7f99417054a5350a1d6f812a7f"
+    },
+    "dynamic": {
+      "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0063/checkpoint/adapter",
+      "adapter_sha256": "95fa149916139a1656a759e06e85aca1f08cbfcb4058b3e55b7881536e6a2972"
+    }
+  },
+  "random3x_evaluation_endpoint": "This run final512 only; no selection",
+  "evaluation_order": [
+    "sft",
+    "vanilla",
+    "random3x",
+    "dynamic"
+  ],
+  "evaluation_decoding": {
+    "n": 1,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": -1,
+    "max_tokens": 1024,
+    "seed": 20260914
+  },
+  "bootstrap_seed": 20260914,
+  "bootstrap_resamples": 10000,
+  "hypotheses": {
+    "selection_effect": "Dynamic512 exceeds Random3x512 on fresh matched auxiliary validation",
+    "exposure_effect": "Random3x512 exceeds Vanilla512"
+  },
+  "interpretation_rule": "Exploratory single-seed paired CI. No equivalence claim from nonsignificance. Mechanism SUPPORTED only if Dynamic-Random3x CI strictly positive; other patterns retained as PARTIALLY_SUPPORTED/NOT_SUPPORTED/INCONCLUSIVE with uncertainty.",
+  "project_state_snapshot": {
+    "schema_version": 1,
+    "phase": "EXECUTION",
+    "contract_sha256": "8ba60bd2e724fbbb74e26f4ef677eb6c6d51eaafcba6eb3bcb0b2eb588a51f24",
+    "stage_verifier_implemented": true,
+    "stages": {
+      "1": {
+        "status": "DONE",
+        "run_ids": [
+          "s1_data_20260908T144854_bac3a7",
+          "s1_smoke_20260908T145244_1af07b",
+          "s1_pilot_20260908T150104_71a69a",
+          "s1_formal_20260908T152119_60040b",
+          "s1_evaluation_20260908T175526_8cfbc0",
+          "s1_memory_20260908T151118_dfaed6",
+          "s1_data_audit_20260908T145755_3aabaa",
+          "s1_source_reasoning_20260908T160619_58be7b",
+          "s1_data_20260908T144417_418b80"
+        ],
+        "progress": {
+          "train_examples": 20000,
+          "coverage_fraction": 1.0
+        },
+        "verification_receipt": {
+          "path": "experiments/stage1/verification-final.json",
+          "sha256": "50e3d0cc543f2707e8ec758b6ae3f66d07a952c65f690355fae7453ad14e107e",
+          "verifier_commit": "1b06f9124b7b3d11d353fde12070c7ec56754c81",
+          "contract_sha256": "8ba60bd2e724fbbb74e26f4ef677eb6c6d51eaafcba6eb3bcb0b2eb588a51f24",
+          "result": "PASS"
+        },
+        "stage_report": "docs/stage_reports/01_medical_sft.md",
+        "interview_story": "docs/stage_reports/01_medical_sft.md"
+      },
+      "2": {
+        "status": "DONE",
+        "run_ids": [
+          "s2_data_20260909T024052_870aba",
+          "s2_semantic_20260909T024252_815f01",
+          "s2_semantic_20260909T024652_cb6286",
+          "s2_smoke_20260909T024936_746dbe",
+          "s2_formal_20260909T025736_f607d9"
+        ],
+        "progress": {
+          "candidate_pool": 15000,
+          "profiling_unique_prompts": 1000,
+          "completed_responses": 4000
+        },
+        "verification_receipt": {
+          "path": "experiments/stage2/verification-final.json",
+          "sha256": "833bd57694a922355eebabae07558d0fa43060867e269d4c9e926bf353fa148d",
+          "verifier_commit": "75d235f194daa27a712b120b666ddb13f8a9683f",
+          "contract_sha256": "8ba60bd2e724fbbb74e26f4ef677eb6c6d51eaafcba6eb3bcb0b2eb588a51f24",
+          "result": "PASS"
+        },
+        "stage_report": "docs/stage_reports/02_reward_rollout.md",
+        "interview_story": "docs/stage_reports/02_reward_rollout.md"
+      },
+      "3": {
+        "status": "DONE",
+        "run_ids": [
+          "s3_smoke_20260909T052408_5114dc",
+          "s3_smoke_20260909T051456_a53a8c",
+          "s3_smoke_20260909T052138_e6717b",
+          "s3_formal_20260909T053101_d99393"
+        ],
+        "progress": {
+          "accepted_integration_mixed_groups": 256
+        },
+        "verification_receipt": {
+          "path": "experiments/stage3/verification-final.json",
+          "sha256": "33d8b8fd6720e7f9f433b7f16994eecfd7aff0b7be9955b7a9f04673c6058203",
+          "verifier_commit": "a538dc42fef88f0fab5605a8334daf203fc362aa",
+          "contract_sha256": "8ba60bd2e724fbbb74e26f4ef677eb6c6d51eaafcba6eb3bcb0b2eb588a51f24",
+          "result": "PASS"
+        },
+        "stage_report": "docs/stage_reports/03_dynamic_sampling.md",
+        "interview_story": "docs/stage_reports/03_dynamic_sampling.md"
+      },
+      "4": {
+        "status": "FULL_PASS",
+        "run_ids": [
+          "s4_optimization_diagnostic_20260909T065945_66b040",
+          "s4_optimization_diagnostic_20260909T070249_a3a605",
+          "s4_smoke_dynamic_20260909T071807_adad34",
+          "s4_smoke_vanilla_20260909T070935_4a09cb",
+          "s4_smoke_vanilla_20260909T071222_ef95d2",
+          "s4_pilot_vanilla_20260909T075203_95a6e9",
+          "s4_pilot_dynamic_20260909T075204_3e449e",
+          "s4_recovery_a_20260909T153057_987d5a",
+          "s4_recovery_b_20260909T153059_e39b9b",
+          "s4_recovery_c_20260909T153059_f621ea",
+          "s4_formal_vanilla_20260909T155928_24aec5",
+          "s4_formal_dynamic_20260909T155929_18b61a"
+        ],
+        "progress": {
+          "vanilla_training_groups": 5000,
+          "dynamic_accepted_mixed_groups": 5000
+        },
+        "verification_receipt": null,
+        "stage_report": null,
+        "interview_story": null
+      },
+      "5": {
+        "status": "NOT_STARTED",
+        "run_ids": [],
+        "progress": {
+          "checkpoints_evaluated": 0,
+          "cmexam_questions_per_checkpoint": 0,
+          "cmb_questions_per_checkpoint": 0
+        },
+        "verification_receipt": null,
+        "stage_report": null,
+        "interview_story": null
+      },
+      "6": {
+        "status": "NOT_STARTED",
+        "run_ids": [],
+        "progress": {
+          "consistency_prompts": 0,
+          "real_requests_total": 0,
+          "concurrency_conditions": []
+        },
+        "verification_receipt": null,
+        "stage_report": null,
+        "interview_story": null
+      }
+    },
+    "stage0": {
+      "status": "VERIFIED",
+      "stage1_readiness": "READY_FOR_SMOKE",
+      "report": "docs/stage_reports/00_runtime_compatibility.md",
+      "verification_receipt": "experiments/stage0/verification-final.json"
+    }
+  },
+  "project_state": {
+    "path": "/data/WSH/post-train/project_state.json",
+    "sha256": "d25e358ab0d1bf7d9b375aca43f6db77b2a3a45c969b6593cf3cc36f94362349",
+    "bytes": 4800
+  },
+  "forbidden": [
+    "selection1024 inference",
+    "primary final tests",
+    "paid API",
+    "Stage6",
+    "primary retraining",
+    "formal source/config mutation"
+  ],
+  "runtime_sources": {
+    "random3x_runtime.py": {
+      "path": "/data/WSH/post-train/scripts/random3x_runtime.py",
+      "sha256": "6937803ec8ab89f96aa75c409961c8114f7aacf6370c638c3d55c1afaf06bdb7",
+      "bytes": 9900
+    },
+    "verify_random3x.py": {
+      "path": "/data/WSH/post-train/scripts/verify_random3x.py",
+      "sha256": "3145299465330048cb4ee80b2e9bf7e7c7ebcdcfd6a10bedf1889a23fd6cf76d",
+      "bytes": 7402
+    },
+    "evaluate_random3x.py": {
+      "path": "/data/WSH/post-train/scripts/evaluate_random3x.py",
+      "sha256": "168c277bd4248315f5795aba50938f457676349cd78ead275516f58e237b700c",
+      "bytes": 6887
+    },
+    "finish_random3x.py": {
+      "path": "/data/WSH/post-train/scripts/finish_random3x.py",
+      "sha256": "2bc47c66fcd9ab9892a0621cb779f980cb41d7d1c17312be03c2c91b69a283e1",
+      "bytes": 10970
+    },
+    "freeze_random3x.py": {
+      "path": "/data/WSH/post-train/scripts/freeze_random3x.py",
+      "sha256": "3c8b609f92042e3e651ebcb1a37b1161fbdf9f21bcf2446699a1f01a492865f0",
+      "bytes": 9690
+    },
+    "analyze_signal_density.py": {
+      "path": "/data/WSH/post-train/scripts/analyze_signal_density.py",
+      "sha256": "4b8a93c88ebad096e9d8e661ce8e405328de85fab62213107c0c314e27b71715",
+      "bytes": 9380
+    },
+    "analyze_frontier.py": {
+      "path": "/data/WSH/post-train/scripts/analyze_frontier.py",
+      "sha256": "c337e4713ca4ecb265268e8ac146c4170950ba6759cd6d279f4cf8138dd8eee9",
+      "bytes": 9893
+    }
+  },
+  "resources": {
+    "gpu": "Single48GB",
+    "checkpoint_payload_estimate_bytes": 90184036416,
+    "expected_training_hours": "approximately4-6h plus verification and2048greedy eval responses; no budget reduction"
+  },
+  "final_handoff": "experiments/handoffs/stage4_causal_ablation_to_chatgpt_v1.json",
+  "narrative_author": "ChatGPT/user"
+}

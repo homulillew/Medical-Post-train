@@ -1,0 +1,2370 @@
+[
+  {
+    "window_index": 0,
+    "selected": [
+      {
+        "encounter_index": 1,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47500"
+      },
+      {
+        "encounter_index": 10,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43608"
+      },
+      {
+        "encounter_index": 5,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47919"
+      },
+      {
+        "encounter_index": 4,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39819"
+      },
+      {
+        "encounter_index": 0,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:35936"
+      },
+      {
+        "encounter_index": 7,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39769"
+      },
+      {
+        "encounter_index": 11,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17449"
+      },
+      {
+        "encounter_index": 14,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7660"
+      }
+    ]
+  },
+  {
+    "window_index": 1,
+    "selected": [
+      {
+        "encounter_index": 22,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4460"
+      },
+      {
+        "encounter_index": 21,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42501"
+      },
+      {
+        "encounter_index": 20,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47273"
+      },
+      {
+        "encounter_index": 25,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27823"
+      },
+      {
+        "encounter_index": 23,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17435"
+      },
+      {
+        "encounter_index": 26,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40839"
+      },
+      {
+        "encounter_index": 27,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15073"
+      },
+      {
+        "encounter_index": 24,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9142"
+      }
+    ]
+  },
+  {
+    "window_index": 2,
+    "selected": [
+      {
+        "encounter_index": 40,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48131"
+      },
+      {
+        "encounter_index": 43,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:45835"
+      },
+      {
+        "encounter_index": 34,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43030"
+      },
+      {
+        "encounter_index": 38,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48470"
+      },
+      {
+        "encounter_index": 32,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42068"
+      },
+      {
+        "encounter_index": 35,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:563"
+      },
+      {
+        "encounter_index": 36,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42518"
+      },
+      {
+        "encounter_index": 46,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:1546"
+      }
+    ]
+  },
+  {
+    "window_index": 3,
+    "selected": [
+      {
+        "encounter_index": 58,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31842"
+      },
+      {
+        "encounter_index": 61,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17653"
+      },
+      {
+        "encounter_index": 66,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53875"
+      },
+      {
+        "encounter_index": 67,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43467"
+      },
+      {
+        "encounter_index": 65,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29128"
+      },
+      {
+        "encounter_index": 52,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17021"
+      },
+      {
+        "encounter_index": 57,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19183"
+      },
+      {
+        "encounter_index": 49,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30577"
+      }
+    ]
+  },
+  {
+    "window_index": 4,
+    "selected": [
+      {
+        "encounter_index": 73,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14633"
+      },
+      {
+        "encounter_index": 74,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6217"
+      },
+      {
+        "encounter_index": 75,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:45661"
+      },
+      {
+        "encounter_index": 84,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50738"
+      },
+      {
+        "encounter_index": 87,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15884"
+      },
+      {
+        "encounter_index": 77,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6465"
+      },
+      {
+        "encounter_index": 82,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2395"
+      },
+      {
+        "encounter_index": 79,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52005"
+      }
+    ]
+  },
+  {
+    "window_index": 5,
+    "selected": [
+      {
+        "encounter_index": 91,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3636"
+      },
+      {
+        "encounter_index": 96,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15444"
+      },
+      {
+        "encounter_index": 89,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13668"
+      },
+      {
+        "encounter_index": 90,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48306"
+      },
+      {
+        "encounter_index": 92,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:38165"
+      },
+      {
+        "encounter_index": 99,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39045"
+      },
+      {
+        "encounter_index": 97,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27803"
+      },
+      {
+        "encounter_index": 94,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42469"
+      }
+    ]
+  },
+  {
+    "window_index": 6,
+    "selected": [
+      {
+        "encounter_index": 120,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8445"
+      },
+      {
+        "encounter_index": 106,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33714"
+      },
+      {
+        "encounter_index": 122,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23284"
+      },
+      {
+        "encounter_index": 112,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27807"
+      },
+      {
+        "encounter_index": 107,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19364"
+      },
+      {
+        "encounter_index": 116,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:38419"
+      },
+      {
+        "encounter_index": 118,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48760"
+      },
+      {
+        "encounter_index": 124,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31727"
+      }
+    ]
+  },
+  {
+    "window_index": 7,
+    "selected": [
+      {
+        "encounter_index": 142,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48440"
+      },
+      {
+        "encounter_index": 133,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29159"
+      },
+      {
+        "encounter_index": 140,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39666"
+      },
+      {
+        "encounter_index": 139,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3477"
+      },
+      {
+        "encounter_index": 135,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:721"
+      },
+      {
+        "encounter_index": 143,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:54347"
+      },
+      {
+        "encounter_index": 132,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31488"
+      },
+      {
+        "encounter_index": 137,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16391"
+      }
+    ]
+  },
+  {
+    "window_index": 8,
+    "selected": [
+      {
+        "encounter_index": 158,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52704"
+      },
+      {
+        "encounter_index": 149,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47018"
+      },
+      {
+        "encounter_index": 157,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2540"
+      },
+      {
+        "encounter_index": 147,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40771"
+      },
+      {
+        "encounter_index": 155,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52207"
+      },
+      {
+        "encounter_index": 154,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:25287"
+      },
+      {
+        "encounter_index": 156,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52796"
+      },
+      {
+        "encounter_index": 146,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6410"
+      }
+    ]
+  },
+  {
+    "window_index": 9,
+    "selected": [
+      {
+        "encounter_index": 168,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49126"
+      },
+      {
+        "encounter_index": 160,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19372"
+      },
+      {
+        "encounter_index": 174,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49599"
+      },
+      {
+        "encounter_index": 162,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23187"
+      },
+      {
+        "encounter_index": 179,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:44160"
+      },
+      {
+        "encounter_index": 181,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19237"
+      },
+      {
+        "encounter_index": 177,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49624"
+      },
+      {
+        "encounter_index": 167,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41707"
+      }
+    ]
+  },
+  {
+    "window_index": 10,
+    "selected": [
+      {
+        "encounter_index": 194,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10368"
+      },
+      {
+        "encounter_index": 184,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10991"
+      },
+      {
+        "encounter_index": 191,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48042"
+      },
+      {
+        "encounter_index": 195,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7311"
+      },
+      {
+        "encounter_index": 199,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7460"
+      },
+      {
+        "encounter_index": 197,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23416"
+      },
+      {
+        "encounter_index": 189,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27930"
+      },
+      {
+        "encounter_index": 192,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:1036"
+      }
+    ]
+  },
+  {
+    "window_index": 11,
+    "selected": [
+      {
+        "encounter_index": 200,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49483"
+      },
+      {
+        "encounter_index": 214,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37379"
+      },
+      {
+        "encounter_index": 207,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39514"
+      },
+      {
+        "encounter_index": 203,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:44834"
+      },
+      {
+        "encounter_index": 205,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34763"
+      },
+      {
+        "encounter_index": 206,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3253"
+      },
+      {
+        "encounter_index": 211,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18361"
+      },
+      {
+        "encounter_index": 209,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21656"
+      }
+    ]
+  },
+  {
+    "window_index": 12,
+    "selected": [
+      {
+        "encounter_index": 233,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3392"
+      },
+      {
+        "encounter_index": 239,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43366"
+      },
+      {
+        "encounter_index": 227,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15505"
+      },
+      {
+        "encounter_index": 228,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30254"
+      },
+      {
+        "encounter_index": 218,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32580"
+      },
+      {
+        "encounter_index": 216,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32155"
+      },
+      {
+        "encounter_index": 234,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29250"
+      },
+      {
+        "encounter_index": 217,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48162"
+      }
+    ]
+  },
+  {
+    "window_index": 13,
+    "selected": [
+      {
+        "encounter_index": 240,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41407"
+      },
+      {
+        "encounter_index": 245,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11817"
+      },
+      {
+        "encounter_index": 250,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21549"
+      },
+      {
+        "encounter_index": 243,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16590"
+      },
+      {
+        "encounter_index": 255,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47306"
+      },
+      {
+        "encounter_index": 248,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40298"
+      },
+      {
+        "encounter_index": 254,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19970"
+      },
+      {
+        "encounter_index": 247,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:238"
+      }
+    ]
+  },
+  {
+    "window_index": 14,
+    "selected": [
+      {
+        "encounter_index": 267,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17971"
+      },
+      {
+        "encounter_index": 269,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10989"
+      },
+      {
+        "encounter_index": 262,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13397"
+      },
+      {
+        "encounter_index": 260,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26055"
+      },
+      {
+        "encounter_index": 265,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:1438"
+      },
+      {
+        "encounter_index": 261,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52882"
+      },
+      {
+        "encounter_index": 266,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37986"
+      },
+      {
+        "encounter_index": 256,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:24895"
+      }
+    ]
+  },
+  {
+    "window_index": 15,
+    "selected": [
+      {
+        "encounter_index": 279,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18060"
+      },
+      {
+        "encounter_index": 281,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10196"
+      },
+      {
+        "encounter_index": 284,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50786"
+      },
+      {
+        "encounter_index": 280,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:5363"
+      },
+      {
+        "encounter_index": 282,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2926"
+      },
+      {
+        "encounter_index": 275,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:46421"
+      },
+      {
+        "encounter_index": 272,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28844"
+      },
+      {
+        "encounter_index": 277,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52070"
+      }
+    ]
+  },
+  {
+    "window_index": 16,
+    "selected": [
+      {
+        "encounter_index": 288,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30448"
+      },
+      {
+        "encounter_index": 296,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36132"
+      },
+      {
+        "encounter_index": 298,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9196"
+      },
+      {
+        "encounter_index": 294,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37895"
+      },
+      {
+        "encounter_index": 303,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19195"
+      },
+      {
+        "encounter_index": 300,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16692"
+      },
+      {
+        "encounter_index": 295,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49420"
+      },
+      {
+        "encounter_index": 289,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34879"
+      }
+    ]
+  },
+  {
+    "window_index": 17,
+    "selected": [
+      {
+        "encounter_index": 307,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29863"
+      },
+      {
+        "encounter_index": 304,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39090"
+      },
+      {
+        "encounter_index": 317,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22920"
+      },
+      {
+        "encounter_index": 311,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36278"
+      },
+      {
+        "encounter_index": 309,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7505"
+      },
+      {
+        "encounter_index": 308,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20861"
+      },
+      {
+        "encounter_index": 315,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49378"
+      },
+      {
+        "encounter_index": 318,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39858"
+      }
+    ]
+  },
+  {
+    "window_index": 18,
+    "selected": [
+      {
+        "encounter_index": 342,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21720"
+      },
+      {
+        "encounter_index": 332,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:35964"
+      },
+      {
+        "encounter_index": 321,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8635"
+      },
+      {
+        "encounter_index": 322,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40235"
+      },
+      {
+        "encounter_index": 335,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51983"
+      },
+      {
+        "encounter_index": 329,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29873"
+      },
+      {
+        "encounter_index": 334,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:25229"
+      },
+      {
+        "encounter_index": 333,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49977"
+      }
+    ]
+  },
+  {
+    "window_index": 19,
+    "selected": [
+      {
+        "encounter_index": 353,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15872"
+      },
+      {
+        "encounter_index": 354,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47642"
+      },
+      {
+        "encounter_index": 358,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:44781"
+      },
+      {
+        "encounter_index": 352,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34510"
+      },
+      {
+        "encounter_index": 356,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41666"
+      },
+      {
+        "encounter_index": 348,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53139"
+      },
+      {
+        "encounter_index": 346,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17780"
+      },
+      {
+        "encounter_index": 355,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18465"
+      }
+    ]
+  },
+  {
+    "window_index": 20,
+    "selected": [
+      {
+        "encounter_index": 361,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53632"
+      },
+      {
+        "encounter_index": 364,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12073"
+      },
+      {
+        "encounter_index": 376,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28708"
+      },
+      {
+        "encounter_index": 372,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37604"
+      },
+      {
+        "encounter_index": 362,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14252"
+      },
+      {
+        "encounter_index": 363,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8061"
+      },
+      {
+        "encounter_index": 378,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50460"
+      },
+      {
+        "encounter_index": 382,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:24879"
+      }
+    ]
+  },
+  {
+    "window_index": 21,
+    "selected": [
+      {
+        "encounter_index": 407,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52104"
+      },
+      {
+        "encounter_index": 401,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17643"
+      },
+      {
+        "encounter_index": 403,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:45540"
+      },
+      {
+        "encounter_index": 398,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:215"
+      },
+      {
+        "encounter_index": 393,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9085"
+      },
+      {
+        "encounter_index": 405,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42350"
+      },
+      {
+        "encounter_index": 384,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4775"
+      },
+      {
+        "encounter_index": 385,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26288"
+      }
+    ]
+  },
+  {
+    "window_index": 22,
+    "selected": [
+      {
+        "encounter_index": 418,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21416"
+      },
+      {
+        "encounter_index": 417,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6429"
+      },
+      {
+        "encounter_index": 421,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20248"
+      },
+      {
+        "encounter_index": 416,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50038"
+      },
+      {
+        "encounter_index": 430,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17716"
+      },
+      {
+        "encounter_index": 409,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7616"
+      },
+      {
+        "encounter_index": 419,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6660"
+      },
+      {
+        "encounter_index": 428,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39415"
+      }
+    ]
+  },
+  {
+    "window_index": 23,
+    "selected": [
+      {
+        "encounter_index": 439,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27783"
+      },
+      {
+        "encounter_index": 444,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23402"
+      },
+      {
+        "encounter_index": 445,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32358"
+      },
+      {
+        "encounter_index": 442,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:24218"
+      },
+      {
+        "encounter_index": 436,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:54219"
+      },
+      {
+        "encounter_index": 432,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40275"
+      },
+      {
+        "encounter_index": 440,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50675"
+      },
+      {
+        "encounter_index": 438,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:44665"
+      }
+    ]
+  },
+  {
+    "window_index": 24,
+    "selected": [
+      {
+        "encounter_index": 459,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11674"
+      },
+      {
+        "encounter_index": 469,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11054"
+      },
+      {
+        "encounter_index": 460,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2305"
+      },
+      {
+        "encounter_index": 449,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49124"
+      },
+      {
+        "encounter_index": 451,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51175"
+      },
+      {
+        "encounter_index": 466,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26320"
+      },
+      {
+        "encounter_index": 457,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34081"
+      },
+      {
+        "encounter_index": 450,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23668"
+      }
+    ]
+  },
+  {
+    "window_index": 25,
+    "selected": [
+      {
+        "encounter_index": 475,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40067"
+      },
+      {
+        "encounter_index": 491,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7362"
+      },
+      {
+        "encounter_index": 492,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26641"
+      },
+      {
+        "encounter_index": 480,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10217"
+      },
+      {
+        "encounter_index": 484,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11011"
+      },
+      {
+        "encounter_index": 483,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9220"
+      },
+      {
+        "encounter_index": 482,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:46801"
+      },
+      {
+        "encounter_index": 493,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:24811"
+      }
+    ]
+  },
+  {
+    "window_index": 26,
+    "selected": [
+      {
+        "encounter_index": 505,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50018"
+      },
+      {
+        "encounter_index": 508,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52820"
+      },
+      {
+        "encounter_index": 511,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33940"
+      },
+      {
+        "encounter_index": 507,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23941"
+      },
+      {
+        "encounter_index": 496,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9352"
+      },
+      {
+        "encounter_index": 502,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33904"
+      },
+      {
+        "encounter_index": 499,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42568"
+      },
+      {
+        "encounter_index": 503,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22349"
+      }
+    ]
+  },
+  {
+    "window_index": 27,
+    "selected": [
+      {
+        "encounter_index": 522,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11640"
+      },
+      {
+        "encounter_index": 520,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26696"
+      },
+      {
+        "encounter_index": 525,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:44635"
+      },
+      {
+        "encounter_index": 527,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:46088"
+      },
+      {
+        "encounter_index": 515,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51070"
+      },
+      {
+        "encounter_index": 523,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17437"
+      },
+      {
+        "encounter_index": 524,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34267"
+      },
+      {
+        "encounter_index": 521,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16558"
+      }
+    ]
+  },
+  {
+    "window_index": 28,
+    "selected": [
+      {
+        "encounter_index": 551,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52184"
+      },
+      {
+        "encounter_index": 529,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18099"
+      },
+      {
+        "encounter_index": 532,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6096"
+      },
+      {
+        "encounter_index": 540,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:44869"
+      },
+      {
+        "encounter_index": 544,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51822"
+      },
+      {
+        "encounter_index": 548,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23517"
+      },
+      {
+        "encounter_index": 549,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32049"
+      },
+      {
+        "encounter_index": 546,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20252"
+      }
+    ]
+  },
+  {
+    "window_index": 29,
+    "selected": [
+      {
+        "encounter_index": 569,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:46691"
+      },
+      {
+        "encounter_index": 553,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:1689"
+      },
+      {
+        "encounter_index": 559,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30959"
+      },
+      {
+        "encounter_index": 561,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19429"
+      },
+      {
+        "encounter_index": 575,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:1070"
+      },
+      {
+        "encounter_index": 563,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39172"
+      },
+      {
+        "encounter_index": 557,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10287"
+      },
+      {
+        "encounter_index": 567,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47051"
+      }
+    ]
+  },
+  {
+    "window_index": 30,
+    "selected": [
+      {
+        "encounter_index": 590,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19138"
+      },
+      {
+        "encounter_index": 578,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20834"
+      },
+      {
+        "encounter_index": 577,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22844"
+      },
+      {
+        "encounter_index": 586,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27628"
+      },
+      {
+        "encounter_index": 583,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50399"
+      },
+      {
+        "encounter_index": 587,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4741"
+      },
+      {
+        "encounter_index": 584,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:24765"
+      },
+      {
+        "encounter_index": 580,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6760"
+      }
+    ]
+  },
+  {
+    "window_index": 31,
+    "selected": [
+      {
+        "encounter_index": 601,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33874"
+      },
+      {
+        "encounter_index": 612,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28495"
+      },
+      {
+        "encounter_index": 603,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20430"
+      },
+      {
+        "encounter_index": 593,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49333"
+      },
+      {
+        "encounter_index": 592,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:35000"
+      },
+      {
+        "encounter_index": 600,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6065"
+      },
+      {
+        "encounter_index": 609,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16575"
+      },
+      {
+        "encounter_index": 606,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33928"
+      }
+    ]
+  },
+  {
+    "window_index": 32,
+    "selected": [
+      {
+        "encounter_index": 625,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42323"
+      },
+      {
+        "encounter_index": 616,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10891"
+      },
+      {
+        "encounter_index": 630,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18529"
+      },
+      {
+        "encounter_index": 626,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18066"
+      },
+      {
+        "encounter_index": 622,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41544"
+      },
+      {
+        "encounter_index": 620,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13634"
+      },
+      {
+        "encounter_index": 623,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12560"
+      },
+      {
+        "encounter_index": 631,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12710"
+      }
+    ]
+  },
+  {
+    "window_index": 33,
+    "selected": [
+      {
+        "encounter_index": 647,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50970"
+      },
+      {
+        "encounter_index": 635,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49358"
+      },
+      {
+        "encounter_index": 637,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:54143"
+      },
+      {
+        "encounter_index": 633,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41964"
+      },
+      {
+        "encounter_index": 641,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:1640"
+      },
+      {
+        "encounter_index": 634,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2734"
+      },
+      {
+        "encounter_index": 646,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42295"
+      },
+      {
+        "encounter_index": 639,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33584"
+      }
+    ]
+  },
+  {
+    "window_index": 34,
+    "selected": [
+      {
+        "encounter_index": 651,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27714"
+      },
+      {
+        "encounter_index": 659,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34294"
+      },
+      {
+        "encounter_index": 663,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49433"
+      },
+      {
+        "encounter_index": 656,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14343"
+      },
+      {
+        "encounter_index": 655,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49269"
+      },
+      {
+        "encounter_index": 661,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40032"
+      },
+      {
+        "encounter_index": 658,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37538"
+      },
+      {
+        "encounter_index": 660,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47295"
+      }
+    ]
+  },
+  {
+    "window_index": 35,
+    "selected": [
+      {
+        "encounter_index": 675,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7653"
+      },
+      {
+        "encounter_index": 671,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13543"
+      },
+      {
+        "encounter_index": 669,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36722"
+      },
+      {
+        "encounter_index": 665,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21731"
+      },
+      {
+        "encounter_index": 664,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6621"
+      },
+      {
+        "encounter_index": 679,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2397"
+      },
+      {
+        "encounter_index": 670,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50909"
+      },
+      {
+        "encounter_index": 674,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10181"
+      }
+    ]
+  },
+  {
+    "window_index": 36,
+    "selected": [
+      {
+        "encounter_index": 683,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29471"
+      },
+      {
+        "encounter_index": 685,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28904"
+      },
+      {
+        "encounter_index": 695,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36577"
+      },
+      {
+        "encounter_index": 693,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:35435"
+      },
+      {
+        "encounter_index": 686,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17538"
+      },
+      {
+        "encounter_index": 691,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32994"
+      },
+      {
+        "encounter_index": 687,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53730"
+      },
+      {
+        "encounter_index": 681,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:1014"
+      }
+    ]
+  },
+  {
+    "window_index": 37,
+    "selected": [
+      {
+        "encounter_index": 715,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49879"
+      },
+      {
+        "encounter_index": 703,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27025"
+      },
+      {
+        "encounter_index": 708,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8533"
+      },
+      {
+        "encounter_index": 707,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53596"
+      },
+      {
+        "encounter_index": 712,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28667"
+      },
+      {
+        "encounter_index": 702,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9061"
+      },
+      {
+        "encounter_index": 701,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49032"
+      },
+      {
+        "encounter_index": 704,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14983"
+      }
+    ]
+  },
+  {
+    "window_index": 38,
+    "selected": [
+      {
+        "encounter_index": 737,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14466"
+      },
+      {
+        "encounter_index": 738,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:1866"
+      },
+      {
+        "encounter_index": 729,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:38925"
+      },
+      {
+        "encounter_index": 732,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8374"
+      },
+      {
+        "encounter_index": 742,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47265"
+      },
+      {
+        "encounter_index": 722,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27637"
+      },
+      {
+        "encounter_index": 728,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:1779"
+      },
+      {
+        "encounter_index": 731,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18544"
+      }
+    ]
+  },
+  {
+    "window_index": 39,
+    "selected": [
+      {
+        "encounter_index": 756,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31539"
+      },
+      {
+        "encounter_index": 758,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41311"
+      },
+      {
+        "encounter_index": 753,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27376"
+      },
+      {
+        "encounter_index": 750,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36960"
+      },
+      {
+        "encounter_index": 751,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16269"
+      },
+      {
+        "encounter_index": 746,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10090"
+      },
+      {
+        "encounter_index": 745,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28388"
+      },
+      {
+        "encounter_index": 759,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51896"
+      }
+    ]
+  },
+  {
+    "window_index": 40,
+    "selected": [
+      {
+        "encounter_index": 769,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41774"
+      },
+      {
+        "encounter_index": 761,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3344"
+      },
+      {
+        "encounter_index": 779,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8114"
+      },
+      {
+        "encounter_index": 775,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33859"
+      },
+      {
+        "encounter_index": 774,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:24589"
+      },
+      {
+        "encounter_index": 780,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31639"
+      },
+      {
+        "encounter_index": 776,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33073"
+      },
+      {
+        "encounter_index": 770,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52558"
+      }
+    ]
+  },
+  {
+    "window_index": 41,
+    "selected": [
+      {
+        "encounter_index": 791,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50577"
+      },
+      {
+        "encounter_index": 792,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13624"
+      },
+      {
+        "encounter_index": 786,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:360"
+      },
+      {
+        "encounter_index": 789,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42646"
+      },
+      {
+        "encounter_index": 797,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21804"
+      },
+      {
+        "encounter_index": 788,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21113"
+      },
+      {
+        "encounter_index": 785,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:44918"
+      },
+      {
+        "encounter_index": 798,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41174"
+      }
+    ]
+  },
+  {
+    "window_index": 42,
+    "selected": [
+      {
+        "encounter_index": 836,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:35089"
+      },
+      {
+        "encounter_index": 831,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:295"
+      },
+      {
+        "encounter_index": 823,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:44820"
+      },
+      {
+        "encounter_index": 815,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19969"
+      },
+      {
+        "encounter_index": 824,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17506"
+      },
+      {
+        "encounter_index": 801,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49046"
+      },
+      {
+        "encounter_index": 818,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21667"
+      },
+      {
+        "encounter_index": 817,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27652"
+      }
+    ]
+  },
+  {
+    "window_index": 43,
+    "selected": [
+      {
+        "encounter_index": 860,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:375"
+      },
+      {
+        "encounter_index": 842,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37926"
+      },
+      {
+        "encounter_index": 840,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29198"
+      },
+      {
+        "encounter_index": 862,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51605"
+      },
+      {
+        "encounter_index": 869,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19253"
+      },
+      {
+        "encounter_index": 847,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53817"
+      },
+      {
+        "encounter_index": 855,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26156"
+      },
+      {
+        "encounter_index": 866,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:45375"
+      }
+    ]
+  },
+  {
+    "window_index": 44,
+    "selected": [
+      {
+        "encounter_index": 878,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30893"
+      },
+      {
+        "encounter_index": 889,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16626"
+      },
+      {
+        "encounter_index": 890,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:38"
+      },
+      {
+        "encounter_index": 883,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52723"
+      },
+      {
+        "encounter_index": 881,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9537"
+      },
+      {
+        "encounter_index": 873,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30986"
+      },
+      {
+        "encounter_index": 875,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:35294"
+      },
+      {
+        "encounter_index": 874,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31765"
+      }
+    ]
+  },
+  {
+    "window_index": 45,
+    "selected": [
+      {
+        "encounter_index": 918,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:1605"
+      },
+      {
+        "encounter_index": 905,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22999"
+      },
+      {
+        "encounter_index": 901,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28761"
+      },
+      {
+        "encounter_index": 909,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:46111"
+      },
+      {
+        "encounter_index": 904,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11113"
+      },
+      {
+        "encounter_index": 908,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39296"
+      },
+      {
+        "encounter_index": 919,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:1032"
+      },
+      {
+        "encounter_index": 913,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3075"
+      }
+    ]
+  },
+  {
+    "window_index": 46,
+    "selected": [
+      {
+        "encounter_index": 933,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29788"
+      },
+      {
+        "encounter_index": 923,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9258"
+      },
+      {
+        "encounter_index": 925,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40251"
+      },
+      {
+        "encounter_index": 942,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34899"
+      },
+      {
+        "encounter_index": 920,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27521"
+      },
+      {
+        "encounter_index": 931,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36445"
+      },
+      {
+        "encounter_index": 934,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19157"
+      },
+      {
+        "encounter_index": 938,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29817"
+      }
+    ]
+  },
+  {
+    "window_index": 47,
+    "selected": [
+      {
+        "encounter_index": 946,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6898"
+      },
+      {
+        "encounter_index": 962,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53062"
+      },
+      {
+        "encounter_index": 964,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7829"
+      },
+      {
+        "encounter_index": 956,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49241"
+      },
+      {
+        "encounter_index": 967,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9533"
+      },
+      {
+        "encounter_index": 952,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3348"
+      },
+      {
+        "encounter_index": 965,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:24955"
+      },
+      {
+        "encounter_index": 963,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52948"
+      }
+    ]
+  },
+  {
+    "window_index": 48,
+    "selected": [
+      {
+        "encounter_index": 968,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:38999"
+      },
+      {
+        "encounter_index": 996,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36620"
+      },
+      {
+        "encounter_index": 971,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:35957"
+      },
+      {
+        "encounter_index": 997,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40025"
+      },
+      {
+        "encounter_index": 978,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34118"
+      },
+      {
+        "encounter_index": 974,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:758"
+      },
+      {
+        "encounter_index": 983,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20374"
+      },
+      {
+        "encounter_index": 970,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10678"
+      }
+    ]
+  },
+  {
+    "window_index": 49,
+    "selected": [
+      {
+        "encounter_index": 1009,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47102"
+      },
+      {
+        "encounter_index": 1008,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10103"
+      },
+      {
+        "encounter_index": 1000,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:45548"
+      },
+      {
+        "encounter_index": 1015,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42184"
+      },
+      {
+        "encounter_index": 1002,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19697"
+      },
+      {
+        "encounter_index": 1004,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9719"
+      },
+      {
+        "encounter_index": 1003,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21336"
+      },
+      {
+        "encounter_index": 1001,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8662"
+      }
+    ]
+  },
+  {
+    "window_index": 50,
+    "selected": [
+      {
+        "encounter_index": 1023,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:5222"
+      },
+      {
+        "encounter_index": 1018,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40785"
+      },
+      {
+        "encounter_index": 1030,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8784"
+      },
+      {
+        "encounter_index": 1027,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:44637"
+      },
+      {
+        "encounter_index": 1032,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17655"
+      },
+      {
+        "encounter_index": 1024,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:5871"
+      },
+      {
+        "encounter_index": 1025,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11747"
+      },
+      {
+        "encounter_index": 1026,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:1463"
+      }
+    ]
+  },
+  {
+    "window_index": 51,
+    "selected": [
+      {
+        "encounter_index": 1053,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19696"
+      },
+      {
+        "encounter_index": 1049,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15532"
+      },
+      {
+        "encounter_index": 1051,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34731"
+      },
+      {
+        "encounter_index": 1055,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7"
+      },
+      {
+        "encounter_index": 1042,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52998"
+      },
+      {
+        "encounter_index": 1047,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52920"
+      },
+      {
+        "encounter_index": 1057,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23816"
+      },
+      {
+        "encounter_index": 1061,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33995"
+      }
+    ]
+  },
+  {
+    "window_index": 52,
+    "selected": [
+      {
+        "encounter_index": 1064,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47831"
+      },
+      {
+        "encounter_index": 1072,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:25667"
+      },
+      {
+        "encounter_index": 1070,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32668"
+      },
+      {
+        "encounter_index": 1065,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:24277"
+      },
+      {
+        "encounter_index": 1079,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:45439"
+      },
+      {
+        "encounter_index": 1076,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:904"
+      },
+      {
+        "encounter_index": 1078,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34806"
+      },
+      {
+        "encounter_index": 1073,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51461"
+      }
+    ]
+  },
+  {
+    "window_index": 53,
+    "selected": [
+      {
+        "encounter_index": 1080,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15581"
+      },
+      {
+        "encounter_index": 1085,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21217"
+      },
+      {
+        "encounter_index": 1095,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2444"
+      },
+      {
+        "encounter_index": 1081,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:54492"
+      },
+      {
+        "encounter_index": 1094,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15307"
+      },
+      {
+        "encounter_index": 1084,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13367"
+      },
+      {
+        "encounter_index": 1083,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8487"
+      },
+      {
+        "encounter_index": 1082,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19854"
+      }
+    ]
+  },
+  {
+    "window_index": 54,
+    "selected": [
+      {
+        "encounter_index": 1112,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30548"
+      },
+      {
+        "encounter_index": 1113,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53819"
+      },
+      {
+        "encounter_index": 1121,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40794"
+      },
+      {
+        "encounter_index": 1102,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9068"
+      },
+      {
+        "encounter_index": 1097,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19840"
+      },
+      {
+        "encounter_index": 1117,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6488"
+      },
+      {
+        "encounter_index": 1124,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12839"
+      },
+      {
+        "encounter_index": 1107,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9979"
+      }
+    ]
+  },
+  {
+    "window_index": 55,
+    "selected": [
+      {
+        "encounter_index": 1134,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50013"
+      },
+      {
+        "encounter_index": 1139,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8781"
+      },
+      {
+        "encounter_index": 1147,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47629"
+      },
+      {
+        "encounter_index": 1129,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43622"
+      },
+      {
+        "encounter_index": 1143,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13312"
+      },
+      {
+        "encounter_index": 1156,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37110"
+      },
+      {
+        "encounter_index": 1137,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18449"
+      },
+      {
+        "encounter_index": 1136,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4125"
+      }
+    ]
+  },
+  {
+    "window_index": 56,
+    "selected": [
+      {
+        "encounter_index": 1160,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31233"
+      },
+      {
+        "encounter_index": 1165,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13009"
+      },
+      {
+        "encounter_index": 1169,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:54457"
+      },
+      {
+        "encounter_index": 1170,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36930"
+      },
+      {
+        "encounter_index": 1166,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40464"
+      },
+      {
+        "encounter_index": 1174,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12048"
+      },
+      {
+        "encounter_index": 1173,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:25975"
+      },
+      {
+        "encounter_index": 1175,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20053"
+      }
+    ]
+  },
+  {
+    "window_index": 57,
+    "selected": [
+      {
+        "encounter_index": 1197,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27276"
+      },
+      {
+        "encounter_index": 1185,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33613"
+      },
+      {
+        "encounter_index": 1190,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10002"
+      },
+      {
+        "encounter_index": 1182,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10458"
+      },
+      {
+        "encounter_index": 1183,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:35500"
+      },
+      {
+        "encounter_index": 1181,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32274"
+      },
+      {
+        "encounter_index": 1184,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:555"
+      },
+      {
+        "encounter_index": 1179,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12998"
+      }
+    ]
+  },
+  {
+    "window_index": 58,
+    "selected": [
+      {
+        "encounter_index": 1202,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39249"
+      },
+      {
+        "encounter_index": 1207,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19458"
+      },
+      {
+        "encounter_index": 1208,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23902"
+      },
+      {
+        "encounter_index": 1212,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20122"
+      },
+      {
+        "encounter_index": 1201,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21010"
+      },
+      {
+        "encounter_index": 1216,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14225"
+      },
+      {
+        "encounter_index": 1223,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15328"
+      },
+      {
+        "encounter_index": 1219,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14138"
+      }
+    ]
+  },
+  {
+    "window_index": 59,
+    "selected": [
+      {
+        "encounter_index": 1252,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12058"
+      },
+      {
+        "encounter_index": 1232,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:35999"
+      },
+      {
+        "encounter_index": 1242,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6391"
+      },
+      {
+        "encounter_index": 1230,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4059"
+      },
+      {
+        "encounter_index": 1236,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16402"
+      },
+      {
+        "encounter_index": 1226,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29614"
+      },
+      {
+        "encounter_index": 1238,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41197"
+      },
+      {
+        "encounter_index": 1244,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28449"
+      }
+    ]
+  },
+  {
+    "window_index": 60,
+    "selected": [
+      {
+        "encounter_index": 1271,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27249"
+      },
+      {
+        "encounter_index": 1272,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32638"
+      },
+      {
+        "encounter_index": 1267,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17603"
+      },
+      {
+        "encounter_index": 1263,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15864"
+      },
+      {
+        "encounter_index": 1258,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36397"
+      },
+      {
+        "encounter_index": 1266,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49537"
+      },
+      {
+        "encounter_index": 1260,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3851"
+      },
+      {
+        "encounter_index": 1277,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:46532"
+      }
+    ]
+  },
+  {
+    "window_index": 61,
+    "selected": [
+      {
+        "encounter_index": 1294,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:5593"
+      },
+      {
+        "encounter_index": 1281,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:5653"
+      },
+      {
+        "encounter_index": 1293,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:5212"
+      },
+      {
+        "encounter_index": 1282,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27746"
+      },
+      {
+        "encounter_index": 1297,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9297"
+      },
+      {
+        "encounter_index": 1302,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37120"
+      },
+      {
+        "encounter_index": 1292,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13409"
+      },
+      {
+        "encounter_index": 1287,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43042"
+      }
+    ]
+  },
+  {
+    "window_index": 62,
+    "selected": [
+      {
+        "encounter_index": 1327,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32698"
+      },
+      {
+        "encounter_index": 1320,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29966"
+      },
+      {
+        "encounter_index": 1315,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9909"
+      },
+      {
+        "encounter_index": 1309,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6656"
+      },
+      {
+        "encounter_index": 1324,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53623"
+      },
+      {
+        "encounter_index": 1334,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:46583"
+      },
+      {
+        "encounter_index": 1326,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33953"
+      },
+      {
+        "encounter_index": 1313,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:44477"
+      }
+    ]
+  },
+  {
+    "window_index": 63,
+    "selected": [
+      {
+        "encounter_index": 1353,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16425"
+      },
+      {
+        "encounter_index": 1347,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48230"
+      },
+      {
+        "encounter_index": 1344,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23436"
+      },
+      {
+        "encounter_index": 1337,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47689"
+      },
+      {
+        "encounter_index": 1349,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:38078"
+      },
+      {
+        "encounter_index": 1354,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22211"
+      },
+      {
+        "encounter_index": 1359,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:25882"
+      },
+      {
+        "encounter_index": 1358,
+        "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:25445"
+      }
+    ]
+  }
+]
