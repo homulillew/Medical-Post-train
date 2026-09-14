@@ -1,0 +1,112 @@
+{
+  "status": "FINAL_DELIVERABLES_PENDING_FULL_VERIFICATION",
+  "READY_FOR_STAGE5": "YES",
+  "stage_report": {
+    "path": "/data/WSH/post-train/docs/stage_reports/04_gspo.md",
+    "sha256": "07f374552c21cc53159373b5c15feb1016f3f8c0807222a2732ffae64b2803b2",
+    "bytes": 25034
+  },
+  "interview_story": {
+    "path": "/data/WSH/post-train/docs/stage_reports/04_gspo_interview_story.md",
+    "sha256": "a919b2df508cc3bc08851fdbd71084ef327cba69ad03fcb3d8068f0f673ed413",
+    "bytes": 11231
+  },
+  "cases": {
+    "path": "/data/WSH/post-train/experiments/stage4/formal_manual_cases_draft_v1.json",
+    "sha256": "b85515a8b75a584f48656fedfec725dedcca254b9baa55b36b732749565de036",
+    "bytes": 5203
+  },
+  "resume_evidence": [
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/vanilla_formal_resume_verified_002.json",
+      "sha256": "cb7ee55cddfd45ef82f03855b48feef8609352c25345186afa02518f34bfb475",
+      "bytes": 1184
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/vanilla_formal_fresh_guard_verified_002.json",
+      "sha256": "de13ca006f1783d59fb393ff113c7e0330087de9f033e3abe85d90b243988951",
+      "bytes": 952
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/recovery_fault_injections.json",
+      "sha256": "b112f409cad9830ea89d6da79431ba1563482d4d4a0d1a15337338de2c86abb9",
+      "bytes": 29084
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/aux_random3x_resume_v1.json",
+      "sha256": "0917b1796141407142094be562ee308d3d761c2bb71151a375076731a6e765e3",
+      "bytes": 1283
+    }
+  ],
+  "plots": [
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/manifest.json",
+      "sha256": "ee6a72c59ee4ea03687e151a161ae9d5cf19d05f77cfee040391cedebcdb9428",
+      "bytes": 7700
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/postformal_data_v1/manifest.json",
+      "sha256": "8df4b98a5769004cb948f38c81272e8396dab1a2b3a04d5527f22623357cc5c2",
+      "bytes": 1945
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/signal_density_plots_v1/manifest.json",
+      "sha256": "3a8a8633b50aa768f9a22cd0855bbd74e1aabb5e712aa0cd32fad7ee049ce1e2",
+      "bytes": 761
+    }
+  ],
+  "checkpoint_index": {
+    "path": "/data/WSH/post-train/experiments/stage4/formal_checkpoint_index.json",
+    "sha256": "5aed298dd548c51b19b9b5778ff41b1e2965791c110b517f054d236e1da2f581",
+    "bytes": 45255
+  },
+  "pilot_review": {
+    "path": "/data/WSH/post-train/experiments/stage4/pilot_review.json",
+    "sha256": "b800a99037c56eec59676108878b81fcccaceb79a8a598204de96e850f2b50bc",
+    "bytes": 1257
+  },
+  "contract_schema": {
+    "path": "/data/WSH/post-train/experiments/stage4/stage4_deliverables_schema_v1.json",
+    "sha256": "2ffea72d93e451aca5ece8d7e874b728ce00138af344c269f8747aca830d60ee",
+    "bytes": 5285
+  },
+  "human_review_count": 0,
+  "readiness_semantics": "Manifest completeness assertion; Stage5 launch still requires independent FULL PASS and Stage4 DONE.",
+  "human_review_status": "OWNER_WAIVED",
+  "clinical_validation": false,
+  "manual_review_waiver": {
+    "path": "/data/WSH/post-train/experiments/stage4/manual_review_waiver_v1.json",
+    "sha256": "3ee13668426d65258b34af5748929d9d12ca9bf2873ed4dd7555c7f0b4d8f7fa",
+    "bytes": 4823
+  },
+  "manual_review_packet": {
+    "path": "/data/WSH/post-train/experiments/stage4/manual_review_packet_v1.json",
+    "sha256": "039fcc23f95b578103b550ea1f847d8be996ec22c6b227a708fd781a0f503a5d",
+    "bytes": 268348
+  },
+  "verifier_change": {
+    "path": "/data/WSH/post-train/experiments/stage4/manual_review_waiver_verifier_change_v1.json",
+    "sha256": "6a5a0e2c7c561b0b47e0ab9b4113f7c04dea4d699152d689980b157f34460312",
+    "bytes": 1285
+  },
+  "frontier": {
+    "path": "/data/WSH/post-train/experiments/stage4/frontier_diagnostic_v1/verification.json",
+    "sha256": "89fd76aba8a0b9ffcc0800401fa47b2c1efb10d141ed9b7cef1133117644b2f2",
+    "bytes": 190098
+  },
+  "random3x": {
+    "path": "/data/WSH/post-train/experiments/stage5/aux_random3x_verification_v1.json",
+    "sha256": "94b82651443a6f3f466fc09a0958aa58227d9f481f41eb973cc0f256fe496615",
+    "bytes": 350221
+  },
+  "signal_density": {
+    "path": "/data/WSH/post-train/experiments/stage4/signal_density_verification_v1.json",
+    "sha256": "dc0beca69e745a997fd607f064d6821d83b872ad6a3eb15d7205f23d63e32a3b",
+    "bytes": 2280492
+  },
+  "grpo_vs_gspo": {
+    "path": "/data/WSH/post-train/experiments/stage4/loss_objective_ablation_verification_v1.json",
+    "sha256": "864bfd3af6d7545026b2f674cabdc1c3f17f81c3242d451064181ec03945f9cf",
+    "bytes": 1934
+  }
+}

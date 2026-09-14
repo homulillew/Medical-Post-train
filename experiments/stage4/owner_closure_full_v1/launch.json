@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-09-14T16:37:03.030637+00:00",
+  "pid": 4067396,
+  "command": [
+    "/data/WSH/post-train/.venv-train/bin/python",
+    "scripts/verify_stage.py",
+    "--stage",
+    "4",
+    "--output",
+    "experiments/stage4/verification-final.json"
+  ],
+  "scope": "FULL",
+  "gpu_visible": false,
+  "prelaunch_tests": "11 PASS",
+  "test_environment_note": "pytest is available in base Python; training venv has no pytest. Full verifier uses training venv."
+}

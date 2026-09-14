@@ -366,37 +366,6 @@ def validation_run(path,cfg):
     return summaries
 
 
-def verify_manual_review(manifest):
-    """Accept actual reviews or the explicitly scoped owner waiver; never invent reviews."""
-    reviewed = read(manifest['cases']['path'])
-    if len(reviewed['manual_reviews']) < 2:
-        waiver_ref = manifest['manual_review_waiver']
-        assert record(waiver_ref['path']) == waiver_ref
-        waiver = read(waiver_ref['path'])
-        assert waiver['decision'] == 'OWNER_WAIVED'
-        assert waiver['affected_gate'] == 'stage4.manual_response_review_count_ge_2'
-        assert waiver['waiver_scope'] == 'STAGE4_DOCUMENTATION_MANUAL_REVIEW_ONLY'
-        assert waiver['human_reviews_completed'] == len(reviewed['manual_reviews']) == 0
-        assert waiver['manual_case_packet_retained'] is True
-        assert waiver['scientific_evidence_unchanged'] is True
-        assert waiver['clinical_validation'] is False and waiver['is_human_review'] is False
-        assert manifest['human_review_status'] == 'OWNER_WAIVED'
-        assert manifest['clinical_validation'] is False
-        assert waiver['manual_cases'] == manifest['cases']
-        for key in ('owner_instruction', 'prior_verifier', 'manual_cases', 'manual_case_packet', 'start_audit'):
-            reference = waiver[key]
-            assert record(reference['path']) == reference
-        instruction = Path(waiver['owner_instruction']['path']).read_text()
-        assert 'Stage4 不再要求人工 response review 作为 blocking gate' in instruction
-        assert waiver['timestamp'] and len(waiver['current_head']) == 40
-        for reference in waiver['scientific_refs']:
-            assert record(reference['path']) == reference
-    for case in reviewed['manual_reviews']:
-        assert case['read_in_full'] and case['observation']
-        for reference in case['sources']:
-            assert record(reference['path']) == reference
-
-
 def verify():
     import traceback
     errors,gates,counts=[],{},{}
@@ -492,7 +461,12 @@ def verify():
                 assert record(ref['path'])==ref
         report=Path(manifest['stage_report']['path']).read_text()
         assert all(pair['runs'][v]['run_id'] in report for v in ('vanilla','dynamic'))
-        verify_manual_review(manifest)
+        reviewed=read(manifest['cases']['path'])
+        assert len(reviewed['manual_reviews'])>=2
+        for case in reviewed['manual_reviews']:
+            assert case['read_in_full'] and case['observation']
+            for ref in case['sources']:
+                assert record(ref['path'])==ref
         index=read(manifest['checkpoint_index']['path'])
         for v in ('vanilla','dynamic'):
             result=analyze(Path(pair['runs'][v]['path']))

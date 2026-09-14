@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-09-14T16:35:47.892203+00:00",
+  "old_verifier": {
+    "path": "/data/WSH/post-train/experiments/stage4/closure_source_snapshots/verify_stage4_before_owner_waiver.py",
+    "sha256": "1485b522185436548ffb903ecd042c2e338f9db82298abc23ae1c9c0f953e4ab",
+    "bytes": 27308
+  },
+  "old_verifier_hash": "1485b522185436548ffb903ecd042c2e338f9db82298abc23ae1c9c0f953e4ab",
+  "new_verifier": {
+    "path": "/data/WSH/post-train/scripts/verify_stage4.py",
+    "sha256": "9d454f713524fed85380ae869ad39d6d15058f34c4284bffb46ab9a836c1c0b9",
+    "bytes": 28893
+  },
+  "new_verifier_hash": "9d454f713524fed85380ae869ad39d6d15058f34c4284bffb46ab9a836c1c0b9",
+  "exact_diff": {
+    "path": "/data/WSH/post-train/experiments/stage4/closure_source_snapshots/manual_review_verifier.patch",
+    "sha256": "8a4db4610dfd67d9bbb88504b762ef4cb6489d863f9867628589f5c1eaebaeeb",
+    "bytes": 2923
+  },
+  "rationale": "Only the documentation manual-review gate accepts an authenticated owner waiver as an alternative. All scientific gate functions and full-run loops remain unchanged.",
+  "waiver": {
+    "path": "/data/WSH/post-train/experiments/stage4/manual_review_waiver_v1.json",
+    "sha256": "3ee13668426d65258b34af5748929d9d12ca9bf2873ed4dd7555c7f0b4d8f7fa",
+    "bytes": 4823
+  }
+}

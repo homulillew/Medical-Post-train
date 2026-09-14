@@ -1,0 +1,986 @@
+继续接管仓库：
+
+https://github.com/homulillew/Medical-Post-train
+
+当前目标：
+
+# Stage 4 Closure → Stage 5 Final Evaluation
+
+当前 primary training / auxiliary experiments 均已完成：
+
+* Medical SFT
+* Vanilla GSPO 5000
+* Dynamic GSPO 5000
+* Dynamic Sampling analysis
+* Frontier diagnostic
+* Random-3× control
+* GRPO vs GSPO 2×2 auxiliary
+* Stage5 preflight
+
+本轮：
+
+1. 透明 waive Stage4 manual-review gate；
+2. 完成 Stage4 full verifier；
+3. Stage4 → DONE；
+4. READY_FOR_STAGE5 → YES；
+5. 正式消费 selection1024；
+6. 冻结 selected checkpoints；
+7. 一次性运行 CMExam / CMB final evaluation；
+8. 生成 CMB-Clin / retention / safety 本地项目模型回答；
+9. 完成所有本地统计和 Stage5 machine evidence；
+10. 不运行 Stage6。
+
+---
+
+# 0. 开始前读取真实状态
+
+从 remote `main` 开始。
+
+当前预期：
+
+* latest HEAD 含完整 GRPO-vs-GSPO auxiliary evidence
+* Stage1–3 DONE
+* Stage4 FULL_PASS
+* Stage5 NOT_STARTED
+* Stage6 NOT_STARTED
+* selection1024 generations = 0
+* project-model final-test generations = 0
+* Stage5 preflight = PASS
+* GRPO auxiliary = PASS
+* `READY_FOR_STAGE5 = NO`
+
+重新检查实际状态。
+
+如果发现：
+
+* selection1024 已被消费；
+* final test 已经产生项目模型结果；
+* scientific artifact hash变化；
+* Stage4 primary evidence被修改；
+
+立即停止并报告。
+
+---
+
+# 1. 不再要求人工 manual review
+
+项目 owner 已明确决定：
+
+> Stage4 不再要求人工 response review 作为 blocking gate。
+
+禁止伪造：
+
+* `human_reviewed=true`
+* `read_in_full=true`
+* reviewer identity
+* clinical review
+
+正确做法是创建：
+
+`experiments/stage4/manual_review_waiver_v1.json`
+
+内容至少：
+
+```text
+decision = OWNER_WAIVED
+reason = non-scientific documentation gate waived to unblock final evaluation
+human_reviews_completed = 0
+manual_case_packet_retained = true
+scientific_evidence_unchanged = true
+```
+
+记录：
+
+* timestamp
+* current HEAD
+* prior verifier requirement
+* waiver scope
+* affected gate
+* explicitly NOT a clinical/human review
+
+---
+
+# 2. 修改 Stage4 verifier 时必须透明
+
+允许修改：
+
+`scripts/verify_stage4.py`
+
+仅将：
+
+> mandatory human review count >= 2
+
+改成：
+
+> either human reviews satisfy contract OR valid OWNER_WAIVED artifact exists
+
+不能放松：
+
+* formal budget
+* raw verifier
+* reward replay
+* optimizer lineage
+* checkpoint lineage
+* vLLM sync
+* resume
+* report
+* interview story
+* plots
+* checkpoint index
+* formal pair matching
+
+保存：
+
+* old verifier hash
+* new verifier hash
+* exact diff rationale
+
+创建：
+
+`experiments/stage4/manual_review_waiver_verifier_change_v1.json`
+
+---
+
+# 3. Stage4 final deliverables
+
+将现有：
+
+`deliverables_draft_v1.json`
+
+升级为正式：
+
+`experiments/stage4/deliverables.json`
+
+引用：
+
+* `docs/stage_reports/04_gspo.md`
+* `docs/stage_reports/04_gspo_interview_story.md`
+* resume evidence
+* plots
+* checkpoint index
+* pilot review
+* Frontier
+* Random3x
+* signal-density
+* GRPO-vs-GSPO auxiliary
+* manual review packet
+* OWNER_WAIVED receipt
+
+明确：
+
+```text
+human_review_status = OWNER_WAIVED
+clinical_validation = false
+```
+
+---
+
+# 4. 运行 full Stage4 verifier
+
+执行完整：
+
+```bash
+python scripts/verify_stage.py --stage 4
+```
+
+必须是真正 FULL scope。
+
+只有全部其他 scientific gates PASS 后：
+
+* write final verification receipt
+* Stage4 → DONE
+* `READY_FOR_STAGE5 = YES`
+
+如果任何 scientific gate失败：
+
+不要进入 Stage5。
+
+---
+
+# 5. Stage4 最终状态
+
+成功后更新：
+
+`project_state.json`
+
+Stage4：
+
+```text
+status = DONE
+verification_receipt = final PASS
+stage_report = docs/stage_reports/04_gspo.md
+interview_story = docs/stage_reports/04_gspo_interview_story.md
+```
+
+Stage5仍：
+
+```text
+NOT_STARTED
+```
+
+直到正式 selection execution 启动。
+
+Commit Stage4 closure，再开始 Stage5。
+
+建议 commit：
+
+`chore: close stage4 with owner-waived manual review`
+
+---
+
+# 6. Stage5 执行前重新验证 preflight
+
+读取并验证：
+
+* `stage5_preflight_verification_v1.json`
+* checkpoint-selection protocol
+* 20 checkpoint candidate index
+* selection execution plan
+* CMExam protocol
+* CMB primary
+* CMB medical-only secondary
+* open-QA protocol
+
+当前预期：
+
+* 20 GSPO checkpoints
+* selection1024 = 1024 prompts/checkpoint
+* total selection generations = 20,480
+* CMExam official = 6811
+* scorable = 6809
+* clean secondary = 6732
+* CMB primary = 2000
+* CMB medical-only = 1929
+* excluded `考研政治` = 71
+* open-QA unique items = 408
+
+如果 hash不匹配，停止。
+
+---
+
+# 7. Stage5 primary models只包含
+
+Stage5 primary checkpoint selection：
+
+* Vanilla GSPO
+* Dynamic GSPO
+
+SFT 固定 Stage1 final。
+
+GRPO auxiliary：
+
+**不参与 Stage5 checkpoint selection。**
+
+Random3x：
+
+**不参与 Stage5 primary。**
+
+它们只是 Stage4 auxiliary evidence。
+
+---
+
+# 8. 正式开始 Stage5
+
+Stage4 DONE + READY_FOR_STAGE5=YES 后：
+
+更新 Stage5：
+
+```text
+NOT_STARTED
+→
+SELECTION_RUNNING
+```
+
+---
+
+# 9. Phase A — selection1024
+
+严格按 frozen execution plan运行：
+
+Vanilla checkpoints：
+
+```text
+512
+1024
+1536
+2048
+2560
+3072
+3584
+4096
+4608
+5000
+```
+
+Dynamic同样。
+
+总计：
+
+```text
+20 × 1024 = 20,480 generations
+```
+
+---
+
+# 10. Selection decoding
+
+必须冻结：
+
+* n=1
+* temperature=0
+* top_p=1
+* top_k=-1
+* max_tokens=1024
+* same chat template
+* same parser
+* batch-invariant vLLM runtime
+
+valid wrong response：
+
+不能重采。
+
+parse failure：
+
+不能因为结果不好重采。
+
+只允许明确transport/runtime technical retry。
+
+---
+
+# 11. Selection每个checkpoint保存
+
+至少：
+
+```text
+checkpoint_id
+adapter hash
+
+n
+correct
+accuracy
+
+strict_format
+unparseable
+truncation
+
+mean/P50/P95/P99 output tokens
+
+raw responses
+per-item parsed result
+```
+
+完整保留20个checkpoint结果。
+
+---
+
+# 12. Checkpoint selection rule
+
+严格按已冻结规则：
+
+1. highest correct count / accuracy
+2. lower unparseable
+3. lower truncation
+4. earlier training groups
+5. lexical checkpoint ID
+
+必须20个candidate全部完成后才能select。
+
+不能提前停止。
+
+---
+
+# 13. 冻结 selected checkpoints
+
+生成：
+
+`experiments/stage5/selected_checkpoints_v1.json`
+
+包含：
+
+### SFT
+
+fixed Stage1 adapter
+
+### Vanilla
+
+selected checkpoint：
+
+* checkpoint ID
+* groups
+* adapter hash
+* selection accuracy
+* ranking trace
+
+### Dynamic
+
+同样。
+
+保存 selection manifest hash。
+
+状态：
+
+```text
+checkpoint_selection_status = FROZEN_SELECTED
+```
+
+完成后 selection set永不再用于调参。
+
+---
+
+# 14. Scientific endpoints也冻结
+
+无论selection选了哪个checkpoint，都保留：
+
+* Vanilla5000
+* Dynamic5000
+
+作为：
+
+`SCIENTIFIC_EQUAL_UPDATE_ENDPOINTS`
+
+因此 Stage5未来有两个视角：
+
+### Primary selected models
+
+产品/最佳validation选择
+
+### Equal-update scientific endpoints
+
+5000 vs 5000受控比较
+
+两者不要混。
+
+---
+
+# 15. Phase B — CMExam final test
+
+只有 selection结果冻结之后才能运行。
+
+Primary scorable denominator：
+
+```text
+6809
+```
+
+项目模型：
+
+1. SFT
+2. selected Vanilla
+3. selected Dynamic
+
+另外 scientific endpoints：
+
+4. Vanilla5000
+5. Dynamic5000
+
+如果 selected 与5000相同，不重复生成，允许复用相同checkpoint output，但必须hash证明同一模型。
+
+---
+
+# 16. CMExam generation protocol
+
+统一：
+
+* temperature=0
+* n=1
+* top_p=1
+* top_k=-1
+* max_tokens=1024
+* same parser
+* same prompt format
+* batch-invariant runtime
+
+不要使用 reward/BGE/judge 判断考试答案。
+
+只使用：
+
+> parsed canonical answer vs official GT
+
+---
+
+# 17. CMExam headline metrics
+
+每模型报告：
+
+```text
+correct / 6809
+accuracy
+
+strict format
+unparseable
+truncation
+
+mean / P95 response tokens
+```
+
+主要 paired comparisons：
+
+### Vanilla selected vs SFT
+
+### Dynamic selected vs SFT
+
+### Dynamic selected vs Vanilla selected
+
+以及 scientific：
+
+### Dynamic5000 vs Vanilla5000
+
+---
+
+# 18. CMExam statistics
+
+每个 pair：
+
+* W→C
+* C→W
+* exact McNemar
+* paired bootstrap 95% CI
+
+Bootstrap：
+
+```text
+seed = 20260914
+resamples = 10000
+```
+
+报告 pp delta。
+
+---
+
+# 19. CMExam slices
+
+按预注册：
+
+### difficulty
+
+* easy = 1–2
+* medium = 3
+* hard = 4–5
+
+以及 frozen subject/category breakdown。
+
+不要根据结果重新分bucket。
+
+特别关注：
+
+> Dynamic 是否在 medium/hard 或某些医学类别有集中收益。
+
+但这些是 secondary slices。
+
+---
+
+# 20. Phase C — CMB primary2000
+
+Primary benchmark保持冻结：
+
+```text
+N = 2000
+```
+
+不修改题目。
+
+同样评估：
+
+* SFT
+* selected Vanilla
+* selected Dynamic
+* Vanilla5000
+* Dynamic5000
+
+---
+
+# 21. CMB medical-only secondary
+
+同时报告：
+
+```text
+N = 1929
+```
+
+当前排除：
+
+```text
+考研政治 = 71
+```
+
+不能用模型表现改变这个subset。
+
+Primary和medical-only必须分别报告。
+
+---
+
+# 22. CMB statistics
+
+同CMExam：
+
+* accuracy
+* pp delta
+* McNemar
+* paired bootstrap
+* W→C / C→W
+* category breakdown
+
+最重要问题：
+
+> CMExam RL gains 是否迁移到独立 CMB 分布？
+
+---
+
+# 23. Stage5 primary headline table
+
+最终必须生成类似：
+
+| Model            | CMExam 6809 | CMB 2000 | CMB-medical 1929 |
+| ---------------- | ----------: | -------: | ---------------: |
+| SFT              |             |          |                  |
+| Vanilla-selected |             |          |                  |
+| Dynamic-selected |             |          |                  |
+
+并给：
+
+```text
+Dynamic − SFT
+Dynamic − Vanilla
+```
+
+pp delta。
+
+---
+
+# 24. Equal-update endpoint table
+
+单独：
+
+| Endpoint    | CMExam | CMB |
+| ----------- | -----: | --: |
+| Vanilla5000 |        |     |
+| Dynamic5000 |        |     |
+
+不要和selected table混为同一因果结论。
+
+---
+
+# 25. Phase D — Open medical QA local generation
+
+完成考试benchmark后，再生成：
+
+* CMB-Clin 208
+* retention200
+
+共408 unique items。
+
+项目模型：
+
+* SFT
+* selected Vanilla
+* selected Dynamic
+
+总：
+
+```text
+1224 generations
+```
+
+---
+
+# 26. Open QA输出
+
+保存：
+
+* raw output
+* visible answer
+* hidden think separately
+* token counts
+* parse/format metadata
+* model hash
+
+未来judge只允许看：
+
+> visible answer
+
+不要给judge隐藏CoT。
+
+---
+
+# 27. Blind pairwise bundle
+
+构建：
+
+### Dynamic vs Vanilla
+
+### Dynamic vs SFT
+
+### Vanilla vs SFT
+
+随机A/B顺序。
+
+保存：
+
+* pair ID
+* order seed
+* anonymized answer A/B
+* ground/reference context
+* rubric
+
+本轮如果没有明确付费 API授权：
+
+**不要调用外部judge。**
+
+只生成完整blind bundle。
+
+---
+
+# 28. Safety111
+
+同时运行本地三个模型：
+
+* SFT
+* selected Vanilla
+* selected Dynamic
+
+保存所有response。
+
+自动标注只能作为 machine triage。
+
+不得声称：
+
+> clinically validated safety
+
+如果无人工审核：
+
+结果只能称：
+
+> automated / case-based safety analysis
+
+---
+
+# 29. Stage5不依赖外部judge才能完成 objective benchmark
+
+Stage5允许分两层状态：
+
+### OBJECTIVE_EVAL_PASS
+
+要求：
+
+* selection
+* CMExam
+* CMB
+* paired stats
+
+### FULL_STAGE5
+
+如果原contract强制要求 open-QA judge/human audit，而当前没有预算/人工：
+
+不能伪造。
+
+明确保持：
+
+```text
+OBJECTIVE_EVAL_PASS
+OPEN_QA_JUDGE_PENDING
+```
+
+或者按照现有state machine最准确表达。
+
+不要为了 DONE 假造 blind judge结果。
+
+---
+
+# 30. Stage5 verifier
+
+重新从raw outputs计算：
+
+* selected checkpoint ranking
+* CMExam accuracy
+* CMB accuracy
+* all pairwise deltas
+* test denominator
+* no duplicate IDs
+* no retries of valid wrong
+* adapter hashes
+* test output lineage
+
+必须确认：
+
+> test没有参与selection。
+
+---
+
+# 31. Test只允许一次正式开启
+
+对于每个checkpoint/test：
+
+如果已有complete正式output：
+
+不要重复生成。
+
+如果中断：
+
+必须resume已有run。
+
+不能因为结果不好重新跑另一seed。
+
+temperature=0也必须保持固定。
+
+---
+
+# 32. Bad cases
+
+自动保存：
+
+1. SFT wrong → both RL correct
+2. SFT wrong → Dynamic only correct
+3. Vanilla correct → Dynamic wrong
+4. Dynamic correct → Vanilla wrong
+5. both RL regress from SFT
+6. CMExam/CMB cross-dataset divergence
+7. difficult-category gain
+8. parser/format regression
+9. suspicious reasoning-final contradiction
+
+不要只保存Dynamic正例。
+
+---
+
+# 33. Stage5 final artifacts
+
+至少生成：
+
+`experiments/stage5/selection_results_v1.json`
+
+`experiments/stage5/selected_checkpoints_v1.json`
+
+`experiments/stage5/cmexam_final_results_v1.json`
+
+`experiments/stage5/cmb_final_results_v1.json`
+
+`experiments/stage5/open_qa_local_generations_v1.json`
+
+`experiments/stage5/open_qa_blind_bundle_v1.json`
+
+`experiments/stage5/safety_local_results_v1.json`
+
+`experiments/stage5/stage5_objective_verification_v1.json`
+
+`experiments/handoffs/stage5_results_to_chatgpt_v1.json`
+
+---
+
+# 34. Stage5 handoff必须包含
+
+* selected checkpoint IDs/hashes
+* selection1024 complete ranking
+* CMExam6809:
+
+  * SFT
+  * Vanilla
+  * Dynamic
+  * pp deltas
+  * CI
+  * McNemar
+* CMB2000 same
+* CMB1929 same
+* equal-update5000 comparison
+* difficulty/category slices
+* W→C/C→W
+* open-QA generation status
+* safety status
+* unsupported claims
+* final-test integrity receipt
+
+---
+
+# 35. 禁止事项
+
+Stage5期间不得：
+
+* 看test后重新选checkpoint
+* 改selection rule
+* 重训SFT/GSPO
+* 再调reward
+* 改parser以提高test score
+* 重采valid wrong test responses
+* 根据CMExam结果决定是否报告CMB
+* 删除regression
+* 将open-QA automated result称临床验证
+* 启动Stage6
+
+---
+
+# 36. Commit顺序
+
+建议：
+
+1. `chore: close stage4 and unlock stage5 evaluation`
+2. `eval: complete validation checkpoint selection`
+3. `eval: complete held-out medical benchmarks`
+4. `eval: retain open medical QA generations`
+5. `handoff: retain stage5 evaluation evidence`
+
+不要force push。
+
+---
+
+# 37. 成功停止条件
+
+至少满足：
+
+### Stage4
+
+* owner manual-review waiver retained
+* full verifier PASS
+* Stage4 DONE
+* READY_FOR_STAGE5=YES
+
+### Selection
+
+* 20/20 checkpoint evaluations complete
+* selected Vanilla frozen
+* selected Dynamic frozen
+
+### Final objective
+
+* CMExam6809 complete
+* CMB2000 complete
+* CMB-medical1929 complete
+* paired stats complete
+* scientific endpoint5000 comparison complete
+
+### Open QA
+
+* 1224 local generations complete
+* blind bundle complete
+* safety outputs complete
+
+### Integrity
+
+* no selection leakage
+* no test-based retraining
+* no valid-response rerun
+* no paid API unless separately authorized
+* Stage6 remains NOT_STARTED
+
+---
+
+# 38. 最终回报格式
+
+最终只报告真实数字：
+
+1. final commit SHA
+2. Stage4 DONE / verifier
+3. Vanilla selected checkpoint
+4. Dynamic selected checkpoint
+5. selection1024:
+
+   * best score
+   * second-best
+   * selected training groups
+6. CMExam6809:
+
+   * SFT
+   * Vanilla
+   * Dynamic
+   * Dynamic−SFT
+   * Dynamic−Vanilla
+   * CI / McNemar
+     7

@@ -418,10 +418,3 @@ Dynamic-GRPO 实际生成 1336 组，amplification=2.6094，rollout tokens=16027
 四个固定长度区间的 ratio、clipping、absolute surrogate、accuracy 和样本分布见 [raw analysis](../../experiments/stage4/loss_objective_ablation_analysis_v1.json)。Per-length parameter-gradient proxy 为 `NOT_IDENTIFIABLE`；on-policy 长度关联不能解释为长度的因果效应。所有反向结果与无显著差异的比较均保留。
 
 两条 GRPO 均完成真实 32→40 groups / 8→10 steps fresh-process resume 与完整原生 raw verifier。五模型统一评估通过。案例仅为机器候选，未伪造人工审阅。Stage4 仍 `FULL_PASS`，Stage5 仍 `NOT_STARTED`，`READY_FOR_STAGE5=NO`；selection1024 与 final tests 未使用，未执行 full Stage4 verifier。证据入口：[handoff](../../experiments/handoffs/loss_objective_ablation_to_chatgpt_v1.json)。
-
-
-## Owner-authorized Stage 4 closure — 2026-09-15
-
-The owner waived the Stage 4 documentation requirement for two human response reviews. The retained case packet has zero completed human reviews; this decision is neither human review nor clinical validation. All training budgets, raw evidence, reward and optimizer replay, checkpoint lineage, vLLM synchronization, resume and reporting requirements remain mandatory.
-
-The waiver and exact verifier diff are recorded in `experiments/stage4/manual_review_waiver_v1.json` and `manual_review_waiver_verifier_change_v1.json`. Historical draft readiness statements above describe their creation time. Authoritative closure requires a FULL PASS receipt in `experiments/stage4/verification-final.json` and Stage 4 DONE in `project_state.json`; until that receipt exists, Stage 5 remains blocked. Stage 5 judge/human audit requirements are not waived.
