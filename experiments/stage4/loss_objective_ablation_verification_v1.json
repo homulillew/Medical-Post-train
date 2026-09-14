@@ -1,0 +1,51 @@
+{
+  "result": "PASS",
+  "scope": "AUXILIARY_LOSS_OBJECTIVE_ONLY",
+  "timestamp": "2026-09-14T11:36:57.345706+00:00",
+  "checks": [
+    "six fixed-batch native optimization diagnostics",
+    "diagnostic-only hyperparameter selection",
+    "protocol committed before auxiliary launch",
+    "isolated512 validation",
+    "both512groups64windows128steps",
+    "two physical resumes",
+    "two full raw native verifiers",
+    "five greedy endpoints",
+    "paired10000seed20260914",
+    "four fixed length bins and gradient proxy limitation",
+    "real Dynamic refill counts",
+    "machine-only cases",
+    "unchanged Stage4 FULL_PASS and Stage5 NOT_STARTED"
+  ],
+  "analysis": {
+    "path": "/data/WSH/post-train/experiments/stage4/loss_objective_ablation_analysis_v1.json",
+    "sha256": "99ebd094eeebac46157e49531bb860807d33f240a6a9aaa629329bb7eb3a4a73",
+    "bytes": 10273780
+  },
+  "cases": {
+    "path": "/data/WSH/post-train/experiments/stage4/loss_objective_case_candidates_v1.json",
+    "sha256": "c2654abd688af3f271f0615708811d6e9a1352651be1bf84851fcb571e0f1a55",
+    "bytes": 563332
+  },
+  "training_verifiers": {
+    "vanilla": {
+      "path": "/data/WSH/post-train/experiments/stage4/grpo_vanilla512_verification_v1.json",
+      "sha256": "2d7908e1fe74dba0a5197c5500e2cbcc8eab03f5e1379a29e742846bf0d5d8bb",
+      "bytes": 215835
+    },
+    "dynamic": {
+      "path": "/data/WSH/post-train/experiments/stage4/grpo_dynamic512_verification_v1.json",
+      "sha256": "e3d16789dc0709d4ec208b199db3fd69abaf41a9b1ef66a2943c964c1147a15d",
+      "bytes": 351818
+    }
+  },
+  "evaluation_verifier": {
+    "path": "/data/WSH/post-train/experiments/stage4/loss_objective_eval_verification_v1.json",
+    "sha256": "c63b95920d82e2265eb0c5294614f56ee69528b43eeb8f80763b58d84ec22ac2",
+    "bytes": 45655
+  },
+  "selection1024_untouched": true,
+  "final_tests_untouched": true,
+  "READY_FOR_STAGE5": "NO",
+  "full_stage4_verifier_run": false
+}

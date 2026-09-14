@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-09-14T11:36:57.506944+00:00",
+  "reason": "Authorized independent objective ablation completed; previous no-ablation scope now supplemented, formal conclusions preserved.",
+  "documents": [
+    {
+      "path": "/data/WSH/post-train/docs/stage_reports/04_gspo.md",
+      "sha256": "40577f4eee308cab171e04d8af84bb456cd40f8fa39e5c1009e0e162e48a0fde",
+      "bytes": 24136
+    },
+    {
+      "path": "/data/WSH/post-train/docs/stage_reports/04_gspo_interview_story.md",
+      "sha256": "71e6dacd23eb453e3486215798819b65bff45eb690b1133e5a9929b4e907fce5",
+      "bytes": 10333
+    }
+  ],
+  "old_deliverables_draft": {
+    "path": "/data/WSH/post-train/experiments/stage4/deliverables_draft_v1.json",
+    "sha256": "6fa3d6e663fef0fde647969caff25936dd124ceb716280a7fbff81fa706602a9",
+    "bytes": 3098
+  },
+  "old_draft_references_now_historical": true,
+  "manual_reviews_confirmed": false,
+  "READY_FOR_STAGE5": "NO"
+}

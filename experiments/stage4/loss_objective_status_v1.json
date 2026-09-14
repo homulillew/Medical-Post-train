@@ -1,8 +1,6 @@
 {
-  "status": "TRAINING",
-  "arm": "vanilla",
-  "pid": 3824220,
-  "training_groups": 40,
-  "generated_groups": 40,
-  "timestamp": "2026-09-14T05:11:40.674949+00:00"
+  "status": "AUXILIARY_VERIFIED_AND_ANALYZED",
+  "timestamp": "2026-09-14T11:36:57.570519+00:00",
+  "scientific_interpretation": "NO_CLEAR_OBJECTIVE_DIFFERENCE",
+  "READY_FOR_STAGE5": "NO"
 }

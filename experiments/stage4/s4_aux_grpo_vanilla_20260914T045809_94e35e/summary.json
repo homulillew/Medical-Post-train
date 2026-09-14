@@ -1,4 +1,6 @@
 {
+  "status": "FULL_PASS",
+  "run_id": "s4_aux_grpo_vanilla_20260914T045809_94e35e",
   "state": {
     "policy_version": "385e25e59691bc0782a4eab04859870e275309397daa915ae786a0954b604ac7",
     "cursor": 512,
@@ -1037,69 +1039,6 @@
       "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33940": 1
     }
   },
-  "last_window": {
-    "generated_groups": 8,
-    "valid_generated_groups": 8,
-    "generated_trajectories": 32,
-    "selected_groups": 8,
-    "group_counts": {
-      "all_wrong": 4,
-      "mixed": 4
-    },
-    "correct_count_histogram": {
-      "0": 4,
-      "3": 1,
-      "2": 2,
-      "1": 1
-    },
-    "mixed_subtypes": {
-      "mixed_parsed_wrong": 4
-    },
-    "output_tokens": 8150,
-    "output_tokens_by_disposition": {
-      "selected": 8150
-    },
-    "prompt_tokens": 1037,
-    "logical_trajectory_prompt_tokens": 4148,
-    "sampling_amplification": 1.0,
-    "reward": {
-      "mean": 0.2804177262820304,
-      "std": 0.399121720895708,
-      "min": 0.05,
-      "max": 0.9824341237545015,
-      "p05": 0.05,
-      "p50": 0.05,
-      "p95": 0.9798736007511617,
-      "p99": 0.9816468600928785
-    },
-    "acc": 0.25,
-    "semantic": 0.6979902815073729,
-    "semantic_contribution": 0.030417726282030343,
-    "strict_format": 1.0,
-    "unparseable": 0.0,
-    "think_closure": 1.0,
-    "answer_closure": 1.0,
-    "truncation": 0.0,
-    "response_length": {
-      "mean": 254.6875,
-      "std": 56.73426957095685,
-      "min": 152.0,
-      "max": 393.0,
-      "p05": 162.9,
-      "p50": 249.0,
-      "p95": 342.09999999999997,
-      "p99": 383.70000000000005
-    },
-    "sleep_seconds": 0.8460081601515412,
-    "wake_seconds": 1.1194265251979232,
-    "actor_process_seconds": 58.94068816117942,
-    "sleeping_memory_bytes": 1726939136,
-    "sync_seconds": 1.8675268017686903,
-    "nvml_peak_bytes": 35004547072,
-    "allocated_peak_bytes": 2632574976,
-    "reserved_peak_bytes": 2977955840,
-    "remaining_at_peak_bytes": 13301252096,
-    "total_bytes": 48305799168
-  },
-  "timestamp": "2026-09-14T06:57:10.649783+00:00"
+  "mode": "auxiliary_loss_objective",
+  "sampling_mode": "vanilla"
 }

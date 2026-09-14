@@ -124,3 +124,31 @@ Random3x 的配对 CI 又跨过 0，所以报告保持 **INCONCLUSIVE**，没有
 
 下一步是用户完整审阅 `S4-MR-02`、`S4-MR-03` 并确认或编辑 observation。
 人工确认之前不生成最终人工 review artifact，不运行 full Stage4 verifier，也不执行 selection1024。
+
+
+## GRPO vs GSPO Auxiliary Objective Ablation
+
+独立单 seed、512-group auxiliary validation 对照已完成。原有 5000-group GSPO formal pair 及其结论保持冻结。本节补充此前缺少的 token-level objective 对照；不是 primary formal GRPO 实验。
+
+GRPO 使用 verl `compute_policy_loss_vanilla`，原生 token ratio 与 dual-clip=3，和 GSPO 同用 native GRPO group-relative advantage、`seq-mean-token-mean` 聚合。六组原始固定批次诊断后按预注册规则选择 LR=1e-06、symmetric clip=0.2，没有使用新 validation 调参。原生 clamp、dual-clip 和 clip 尺度均属于 objective-package 差异，不能把全部差异归因于 ratio geometry。
+
+| Model | Correct/N | Accuracy |
+|---|---:|---:|
+| sft | 313/512 | 61.1328% |
+| vanilla_grpo | 321/512 | 62.6953% |
+| vanilla_gspo | 322/512 | 62.8906% |
+| dynamic_grpo | 328/512 | 64.0625% |
+| dynamic_gspo | 326/512 | 63.6719% |
+
+- `vanilla_gspo_minus_grpo`: +0.1953 pp，95% CI [-2.9297, +3.3203] pp；gain/regress=34/33，exact McNemar p=1。
+- `dynamic_gspo_minus_grpo`: -0.3906 pp，95% CI [-3.9062, +3.1250] pp；gain/regress=40/42，exact McNemar p=0.912157。
+- `dynamic_minus_vanilla_grpo`: +1.3672 pp，95% CI [-1.9531, +4.6875] pp；gain/regress=42/35，exact McNemar p=0.494382。
+- `dynamic_minus_vanilla_gspo`: +0.7812 pp，95% CI [-2.3438, +3.9062] pp；gain/regress=36/32，exact McNemar p=0.716301。
+
+描述性 interaction=-0.5859 pp，95% paired bootstrap CI=[-5.078125, 3.90625] pp。预注册判定为 `NO_CLEAR_OBJECTIVE_DIFFERENCE`；Dynamic 跨 objective 的结果为 `POSITIVE_POINT_ESTIMATE_BOTH_OBJECTIVES`。这是单 seed exploratory validation，非 final test，CI 跨零不代表等效。
+
+Dynamic-GRPO 实际生成 1336 组，amplification=2.6094，rollout tokens=1602795；Dynamic-GSPO 对应 1360 组、2.6562、1633072 tokens。生成量未人为匹配。
+
+四个固定长度区间的 ratio、clipping、absolute surrogate、accuracy 和样本分布见 [raw analysis](../../experiments/stage4/loss_objective_ablation_analysis_v1.json)。Per-length parameter-gradient proxy 为 `NOT_IDENTIFIABLE`；on-policy 长度关联不能解释为长度的因果效应。所有反向结果与无显著差异的比较均保留。
+
+两条 GRPO 均完成真实 32→40 groups / 8→10 steps fresh-process resume 与完整原生 raw verifier。五模型统一评估通过。案例仅为机器候选，未伪造人工审阅。Stage4 仍 `FULL_PASS`，Stage5 仍 `NOT_STARTED`，`READY_FOR_STAGE5=NO`；selection1024 与 final tests 未使用，未执行 full Stage4 verifier。证据入口：[handoff](../../experiments/handoffs/loss_objective_ablation_to_chatgpt_v1.json)。
