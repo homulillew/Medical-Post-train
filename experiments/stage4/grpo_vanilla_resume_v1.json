@@ -1,0 +1,26 @@
+{
+  "result": "PASS",
+  "timestamp": "2026-09-14T05:10:25.485193+00:00",
+  "old_pid": 3820257,
+  "new_pid": 3824220,
+  "restored_groups": 32,
+  "restored_optimizer_steps": 8,
+  "next_committed_optimizer_steps": 10,
+  "optimizer_replayed": false,
+  "controller_rng_scheduler_optimizer_continuous": true,
+  "pause": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_grpo_vanilla_20260914T045809_94e35e/pause_ready.json",
+    "sha256": "9b74a55950278021c8540816b41df252b334db8817799a95728953c11ce143e2",
+    "bytes": 7604
+  },
+  "restart": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_grpo_vanilla_20260914T045809_94e35e/attempt_002/resume_start.json",
+    "sha256": "87850a422f2f0e237566186792c0dda11669bdeab4ff9923a711d29eca353ff0",
+    "bytes": 7604
+  },
+  "native_resume": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_grpo_vanilla_20260914T045809_94e35e/windows/0004/actor/resume_receipt.json",
+    "sha256": "bc89127ceb6ddfd6c407d54321658ba8f49f40e6829e5bdb5d76cb555ec74ed9",
+    "bytes": 6484
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "status": "TRAINING",
+  "arm": "vanilla",
+  "pid": 3824220,
+  "training_groups": 40,
+  "generated_groups": 40,
+  "timestamp": "2026-09-14T05:11:40.674949+00:00"
+}

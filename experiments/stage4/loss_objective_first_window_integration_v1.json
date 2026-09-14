@@ -1,0 +1,112 @@
+{
+  "result": "PASS",
+  "timestamp": "2026-09-14T05:02:24.931226+00:00",
+  "scope": "FIRST8_GROUPS_ONLINE_INTEGRATION_ONLY",
+  "run_id": "s4_aux_grpo_vanilla_20260914T045809_94e35e",
+  "state": {
+    "policy_version": "eb13c841f076f49e1a06c15a407a813947e075c8e5e04755f32db59f9ce52741",
+    "cursor": 8,
+    "policy_windows": 1,
+    "optimizer_steps": 2,
+    "training_groups": 8,
+    "generated_groups": 8,
+    "output_tokens": 6902,
+    "prompt_tokens": 1015
+  },
+  "frozen_protocol": {
+    "path": "/data/WSH/post-train/experiments/stage4/grpo_objective_protocol_v1.json",
+    "sha256": "35621ce960b7655cfd17bba7249f628ea612d38e51ee3e4990a929a5e3e0835d",
+    "bytes": 17897
+  },
+  "selection_replay": "Vanilla exact frozen first64 schedule; Dynamic native correctness-only mixed/refill deterministic stream",
+  "scientific_gates": [
+    "raw token decode",
+    "parser/correctness",
+    "semantic vectors/hybrid reward",
+    "old logprobs frozen before optimizer",
+    "native GRPO advantages/native vanilla token loss",
+    "optimizer/scheduler/checkpoint lineage",
+    "vLLM policy synchronization"
+  ],
+  "sources": [
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_grpo_vanilla_20260914T045809_94e35e/windows/0000/batches/000/raw.json",
+      "sha256": "5fc18cad6e3c1845a8167319a793b5976faa96ea8c55ec351be2b58e46e73040",
+      "bytes": 523559
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_grpo_vanilla_20260914T045809_94e35e/windows/0000/batches/000/reservation.json",
+      "sha256": "bdcd71cb018498d49c8c4f048c0b55a174d38eb42a5af0fd91640b9f454d7c03",
+      "bytes": 15535
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_grpo_vanilla_20260914T045809_94e35e/windows/0000/batches/000/scored.json",
+      "sha256": "0294c406220f7f179a690cee7ffce6c11599d770eb074ffa5206430f96081895",
+      "bytes": 318329
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_grpo_vanilla_20260914T045809_94e35e/windows/0000/batches/000/semantic_vectors.npy",
+      "sha256": "b0a30513af103f11042df5b0e155768cfef41e87f424833af9086b616c0dbc94",
+      "bytes": 159872
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_grpo_vanilla_20260914T045809_94e35e/windows/0000/batches/000/semantic_encoding.json",
+      "sha256": "d9cba012c29183750a2856c94ac2d68443a6d70948081e80138480990398c4d6",
+      "bytes": 44645
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_grpo_vanilla_20260914T045809_94e35e/windows/0000/selection.json",
+      "sha256": "ed2adf67eef14c1d9e942de6a57d0f03ce793db058175fcd84fb4a9145ec2a2c",
+      "bytes": 558368
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_grpo_vanilla_20260914T045809_94e35e/windows/0000/rollout_metrics.json",
+      "sha256": "01882ead0dc37b386bcca68248cfeef78ca91f72faf15c84967db23d6b6d9336",
+      "bytes": 1226
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_grpo_vanilla_20260914T045809_94e35e/windows/0000/update/old_frozen.json",
+      "sha256": "f5dee7664f51760229413d6aef9b42b333e737982cccbc92c6816f7625396c30",
+      "bytes": 3163
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_grpo_vanilla_20260914T045809_94e35e/windows/0000/update/update.json",
+      "sha256": "a0d0c32da3e6a0155135b921185989e485add4516cecdacb06dcccc114999862",
+      "bytes": 2841
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_grpo_vanilla_20260914T045809_94e35e/windows/0000/actor_result.json",
+      "sha256": "d5e4e3d88e46a3075dac0646e2a2bfc2b95a1db55f115766bf77b01189f25b0c",
+      "bytes": 3536
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_grpo_vanilla_20260914T045809_94e35e/windows/0000/checkpoint/COMMITTED.json",
+      "sha256": "c4d14744ddcea30a4e97ab279f51f9e4d77a83f43cedd5c73f1190ef6fc3bf33",
+      "bytes": 2979
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_grpo_vanilla_20260914T045809_94e35e/windows/0000/sync/receipt.json",
+      "sha256": "d9509d9a098db1f5f4eded374d073340b215f14fe799997e132a9d7f85f19f87",
+      "bytes": 1006
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_grpo_vanilla_20260914T045809_94e35e/windows/0000/commit.json",
+      "sha256": "7e22ec66d95f4e013139340af4f9d4ccec8502bc8d81e99d7d5b69c05d9edbaa",
+      "bytes": 5535
+    }
+  ],
+  "verifier": {
+    "path": "/data/WSH/post-train/scripts/verify_loss_objective.py",
+    "sha256": "1046dbda583dd6e10803061ddbeb593bade95fb0736878127a90d91bb4dc4d35",
+    "bytes": 7846
+  },
+  "native_gate_source": {
+    "path": "/data/WSH/post-train/scripts/verify_stage4.py",
+    "sha256": "1485b522185436548ffb903ecd042c2e338f9db82298abc23ae1c9c0f953e4ab",
+    "bytes": 27308
+  },
+  "project_state_unchanged": true,
+  "selection1024_untouched": true,
+  "final_tests_untouched": true,
+  "resume_test_complete": false
+}
