@@ -95,3 +95,36 @@ def test_paired_statistics_and_interaction():
     # Per-prompt interaction averaging must equal the contrast of accuracies.
     vg=np.array([0,1,1,0]);dg=np.array([1,1,1,0]);vr=np.array([0,0,1,0]);dr=np.array([1,0,1,1])
     assert np.mean(dg-vg-dr+vr)==(dg.mean()-vg.mean())-(dr.mean()-vr.mean())
+
+def test_budget_preregistration_and_stage_guards():
+    import json,subprocess,hashlib
+    from medical_posttrain.rl.common import record
+    read=lambda p:json.loads(Path(p).read_text())
+    path=ROOT/'experiments/stage4/grpo_objective_protocol_v1.json';p=read(path)
+    assert p['budget']==dict(training_groups=512,accepted_mixed_dynamic=512,windows=64,optimizer_steps=128,G=4,training_trajectories=2048)
+    for arm,r in p['runs'].items():
+        c=read(r['config']['path']);assert c['target_training_groups']==512 and c['groups_per_window']==8 and c['mini_prompts']==4 and c['ppo_epochs']==1
+        assert c['learning_rate']==p['selected']['learning_rate'] and c['clip_ratio_low']==c['clip_ratio_high']==p['selected']['clip']
+        assert c['initialization']==p['config']['initialization']
+        assert c['sampling_mode']==arm and c['pause_after_windows']==4
+    commit=subprocess.check_output(['git','log','-1','--format=%H','--',str(path.relative_to(ROOT))],cwd=ROOT,text=True).strip()
+    blob=subprocess.check_output(['git','show',commit+':'+str(path.relative_to(ROOT))],cwd=ROOT)
+    assert hashlib.sha256(blob).hexdigest()==record(path)['sha256']
+    launch=read(ROOT/'experiments/stage4/loss_objective_launch_v1.json')
+    assert launch['timestamp']>p['timestamp']
+    subprocess.run(['git','merge-base','--is-ancestor',commit,launch['commit']],cwd=ROOT,check=True)
+    assert record(p['project_state']['path'])==p['project_state']
+    assert record(p['selection_protocol']['path'])==p['selection_protocol']
+    state=read(ROOT/'project_state.json');assert state['stages']['4']['status']=='FULL_PASS' and state['stages']['5']['status']=='NOT_STARTED'
+    assert p['evaluation_decoding']==dict(n=1,temperature=0.,top_p=1.,top_k=-1,max_tokens=1024,seed=20260914)
+
+
+def test_actor_wrapper_only_changes_objective_and_observability():
+    import ast
+    old=ast.parse((ROOT/'src/medical_posttrain/rl/actor.py').read_text());new=ast.parse((ROOT/'scripts/loss_objective_actor.py').read_text())
+    a=next(n for n in old.body if isinstance(n,ast.ClassDef));b=next(n for n in new.body if isinstance(n,ast.ClassDef))
+    methods=lambda c:{n.name:n for n in c.body if isinstance(n,ast.FunctionDef)}
+    aa,bb=methods(a),methods(b)
+    for name in ['logprobs','digest','close']:assert ast.dump(aa[name])==ast.dump(bb[name])
+    assert 'compute_policy_loss_gspo' not in (ROOT/'scripts/loss_objective_actor.py').read_text()
+    assert (ROOT/'scripts/loss_objective_actor.py').read_text().count('compute_policy_loss_vanilla(')==1

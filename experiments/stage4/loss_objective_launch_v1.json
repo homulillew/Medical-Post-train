@@ -1,0 +1,15 @@
+{
+  "pid": 3820247,
+  "timestamp": "2026-09-14T04:58:48.610557+00:00",
+  "command": [
+    "/data/WSH/post-train/.venv-train/bin/python",
+    "scripts/loss_objective_runtime.py",
+    "supervise"
+  ],
+  "protocol": {
+    "path": "/data/WSH/post-train/experiments/stage4/grpo_objective_protocol_v1.json",
+    "sha256": "35621ce960b7655cfd17bba7249f628ea612d38e51ee3e4990a929a5e3e0835d",
+    "bytes": 17897
+  },
+  "commit": "fe347e6c99e1d4d081b192c975ac66768659bcef"
+}

@@ -1,0 +1,22 @@
+{
+  "result": "PASS",
+  "timestamp": "2026-09-14T04:59:59.138693+00:00",
+  "tests": [
+    "test_length_boundaries",
+    "test_selection_fixed_order",
+    "test_native_token_objective_is_not_sequence_alias",
+    "test_frozen_grid_and_diagnostic_integration",
+    "test_isolation_and_schedule",
+    "test_correctness_only_eligibility",
+    "test_paired_statistics_and_interaction",
+    "test_budget_preregistration_and_stage_guards",
+    "test_actor_wrapper_only_changes_objective_and_observability"
+  ],
+  "source": {
+    "path": "/data/WSH/post-train/tests/test_loss_objective.py",
+    "sha256": "6d165d65b949a159c3a98fdd5d52cf149def1fc33a6ad6e7068e6f8e235b3503",
+    "bytes": 8077
+  },
+  "real_integration": "six frozen8x4 GPU updates with native loss replay; fresh online resume still pending",
+  "scope": "PRETRAINING_AND_DIAGNOSTIC_CHECKS_ONLY"
+}
