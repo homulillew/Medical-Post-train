@@ -1,0 +1,128 @@
+{
+  "status": "PREREGISTERED_BEFORE_DIAGNOSTIC",
+  "timestamp": "2026-09-14T04:48:54.825725+00:00",
+  "run_id": "s4_grpo_optimization_diagnostic_20260914T044854_95132e",
+  "artifact_path": "/data/WSH/medical-post-train-artifacts/runs/s4_grpo_optimization_diagnostic_20260914T044854_95132e",
+  "grid": [
+    {
+      "learning_rate": 1e-06,
+      "clip": 0.1
+    },
+    {
+      "learning_rate": 1e-06,
+      "clip": 0.2
+    },
+    {
+      "learning_rate": 3e-06,
+      "clip": 0.1
+    },
+    {
+      "learning_rate": 3e-06,
+      "clip": 0.2
+    },
+    {
+      "learning_rate": 1e-05,
+      "clip": 0.1
+    },
+    {
+      "learning_rate": 1e-05,
+      "clip": 0.2
+    }
+  ],
+  "health_gates": {
+    "max_normalized_drift": 0.02,
+    "max_objective_clip": 0.9,
+    "min_p01": 0.1,
+    "max_p99": 10.0,
+    "min_ratio": 0.0001,
+    "max_ratio": 10000.0,
+    "min_active_clip": 0.001
+  },
+  "selection_rule": "Reject failed/nonfinite/zero-gradient/inactive/explosive/saturated/pathological candidates. Prefer active objective clipping>=0.001 among healthy. Tail and drift within fixed gates define controlled/close. Select smallest LR then conventional native clip0.2 when healthy at that LR. If none active select smallest healthy LR and record inactive-clipping limitation; no post-hoc search.",
+  "original_batch": {
+    "path": "/data/WSH/medical-post-train-artifacts/runs/s4_optimization_diagnostic_20260909T065945_66b040/trajectories/scored.json",
+    "sha256": "d5d35aaff446b246a13cbe70afc78be8a49654f7a1402ae337b24e9dcff68d8c",
+    "bytes": 335767
+  },
+  "new_rollouts": 0,
+  "fresh_sft_and_optimizer_each_condition": true,
+  "freeze_old_across_conditions": true,
+  "native_audit": {
+    "path": "/data/WSH/post-train/experiments/stage4/loss_objective_native_audit_v1.json",
+    "sha256": "696f76a9b897d8ae9c038cdead11c33c0f6f7ad81a4678738aa52e629c9e39eb",
+    "bytes": 3253
+  },
+  "length_bins": [
+    "<192",
+    "[192,256)",
+    "[256,384)",
+    ">=384"
+  ],
+  "interpretation_rules": {
+    "GSPO_OBJECTIVE_ADVANTAGE_SUPPORTED": "Both objective-effect paired95%CIs strictly positive.",
+    "GRPO_ADVANTAGE": "Both objective-effect paired95%CIs strictly negative.",
+    "GSPO_STABILITY_ONLY": "Both objective-effect CIs include0 and both GSPO arms have fewer windows violating the common drift/nonfinite/inactive/ratio-tail gates than their GRPO arms. Different clip scales prevent direct clip-fraction ranking as stability proof.",
+    "NO_CLEAR_OBJECTIVE_DIFFERENCE": "Both objective-effect CIs include0 and stability-only rule not met; not equivalence.",
+    "INCONCLUSIVE": "Incomplete evidence or discordant/mixed objective-effect CI conclusions."
+  },
+  "interaction": "(D_GSPO-V_GSPO)-(D_GRPO-V_GRPO), paired descriptive single-seed; bootstrap10000 seed20260914",
+  "plan": [
+    "native audit and six frozen-batch diagnostic conditions",
+    "freeze selected config and new disjoint validation512",
+    "commit protocol before two freshSFT 512/64/128 runs",
+    "real32group interruption/resume and raw native replay",
+    "five greedy endpoints on new validation only",
+    "paired, length, sampling-cost analysis and machine case candidates",
+    "append independent auxiliary docs section and pushmain"
+  ],
+  "resources": {
+    "gpu": "RTX5880 Ada46GiB usable; sequential rollout/actor",
+    "estimated_checkpoint_bytes": 180368072832,
+    "free_disk_bytes": 1493219995648,
+    "training_estimate_hours": "5-8 plus diagnostic/evaluation/verification; Dynamic refill count unknown"
+  },
+  "risks": [
+    "new native objective can fail diagnostics; retain and block rather than tune on validation",
+    "native dual clipping is part of package difference",
+    "single seed cannot establish universal objective superiority",
+    "no final Stage4 verifier or stage transition"
+  ],
+  "protected_state": {
+    "path": "/data/WSH/post-train/project_state.json",
+    "sha256": "d25e358ab0d1bf7d9b375aca43f6db77b2a3a45c969b6593cf3cc36f94362349",
+    "bytes": 4800
+  },
+  "selection_protocol": {
+    "path": "/data/WSH/post-train/experiments/stage5/checkpoint_selection_protocol_v1.json",
+    "sha256": "43413a28ab3d6a4a3b03f788f2145bd8efa475a62cbe1bf22dc4f0a0fa48944a",
+    "bytes": 173901
+  },
+  "source_head": "bc591c503baaecd82b4a862cf121d58c4131f131",
+  "diagnostic_sources": {
+    "loss_objective_actor.py": {
+      "path": "/data/WSH/post-train/scripts/loss_objective_actor.py",
+      "sha256": "0f6b0e05a9fa175a59d25a2bed8298091131ad8c8ab37bbedf4e7cd920947e0b",
+      "bytes": 18416
+    },
+    "loss_objective_metrics.py": {
+      "path": "/data/WSH/post-train/scripts/loss_objective_metrics.py",
+      "sha256": "72c63db908ff9b2ea3ffc00bfa3d911f115c2642b89c5b5b1c5875a00b08e135",
+      "bytes": 4983
+    },
+    "loss_objective_replay.py": {
+      "path": "/data/WSH/post-train/scripts/loss_objective_replay.py",
+      "sha256": "b2ca13d6b11683ab1bcd2d16e6895a198415712911e342aab2dd539f65387f5d",
+      "bytes": 3980
+    },
+    "loss_objective_diagnostic.py": {
+      "path": "/data/WSH/post-train/scripts/loss_objective_diagnostic.py",
+      "sha256": "555d7cdcc941c44a70fd8a9775ee52b643e12688cafde622d30a85fa667d064a",
+      "bytes": 3877
+    },
+    "freeze_loss_objective_diagnostic.py": {
+      "path": "/data/WSH/post-train/scripts/freeze_loss_objective_diagnostic.py",
+      "sha256": "14a5d2d0a9ef513971ab3f0912c1697d19185e8c82d15cfb01ce19b8a42e2253",
+      "bytes": 7201
+    }
+  }
+}

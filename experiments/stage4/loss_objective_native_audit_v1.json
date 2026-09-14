@@ -1,0 +1,89 @@
+{
+  "timestamp": "2026-09-14T04:48:54.177949+00:00",
+  "verl_version": "0.9.0",
+  "native_source": {
+    "path": "/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/verl/trainer/ppo/core_algos.py",
+    "sha256": "0ec87b90cba24fa0aa959adff573efb2cc49434d705621cf546be231e56a8932",
+    "bytes": 104526
+  },
+  "functions": {
+    "get_policy_loss_fn": {
+      "first_line": 70,
+      "last_line": 85
+    },
+    "compute_grpo_outcome_advantage": {
+      "first_line": 268,
+      "last_line": 331
+    },
+    "agg_loss": {
+      "first_line": 1140,
+      "last_line": 1206
+    },
+    "compute_policy_loss_vanilla": {
+      "first_line": 1286,
+      "last_line": 1376
+    },
+    "compute_policy_loss_gspo": {
+      "first_line": 1546,
+      "last_line": 1618
+    }
+  },
+  "actor_config": {
+    "path": "/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/verl/workers/config/actor.py",
+    "sha256": "c2ac6718a6cd5b89e321348409f2323719c348b74b6e6989a1373e6b1a94fcac",
+    "bytes": 19445
+  },
+  "actor_loss_dispatch": {
+    "path": "/data/WSH/post-train/.venv-train/lib/python3.12/site-packages/verl/workers/utils/losses.py",
+    "sha256": "c6dfeb10900054e96b432633b975f3e3a535d3358a4ad13eeda9f730c5942d4a",
+    "bytes": 8280
+  },
+  "installation": {
+    "url": "file:///data/WSH/medical-post-train-artifacts/wheels/verl-0.9.0-py3-none-any.whl",
+    "archive_info": {}
+  },
+  "wheel": {
+    "path": "/data/WSH/medical-post-train-artifacts/wheels/verl-0.9.0-py3-none-any.whl",
+    "sha256": "149c8cedb2ab9fb75e3f65df506bb3b931211137ca6a934ec4cbea5ebd2d44f8",
+    "bytes": 1616124
+  },
+  "upstream_git_commit": null,
+  "commit_limitation": "Installed wheel exposes version and source hashes; no upstream Git commit in installation metadata.",
+  "grpo_policy_function": "verl.trainer.ppo.core_algos.compute_policy_loss_vanilla",
+  "registry_key": "vanilla",
+  "not_gspo_alias": true,
+  "advantage_function": "verl.trainer.ppo.core_algos.compute_grpo_outcome_advantage",
+  "G": 4,
+  "epsilon": 1e-06,
+  "norm_adv_by_std_in_grpo": true,
+  "token_objective": "d=clamp(logp-old,-20,20); r=exp(d); L=max(-A*r,-A*clip(r,1-eps_low,1+eps_high)); negative A uses min(L,-A*3)",
+  "sequence_objective": "r_seq=exp(clamp_max(mean_masked(logp-old),10)); gradient-preserving detached sequence ratio; clipped surrogate",
+  "aggregation": "seq-mean-token-mean",
+  "supported_aggregation": [
+    "token-mean",
+    "token-sum",
+    "seq-mean-token-sum",
+    "seq-mean-token-sum-norm",
+    "seq-mean-token-mean"
+  ],
+  "knobs": {
+    "clip_ratio": 0.2,
+    "clip_ratio_low": "grid",
+    "clip_ratio_high": "grid",
+    "clip_ratio_c": 3.0,
+    "loss_agg_mode": "seq-mean-token-mean",
+    "global_batch_info": {}
+  },
+  "objective_package_differences": [
+    "token vs sequence ratio/clipping",
+    "different clipping scale selected without validation",
+    "native token log-ratio clamp [-20,20] vs GSPO sequence clamp max10",
+    "native vanilla dual clipping at3 for negative advantage; retained and measured"
+  ],
+  "entropy_coefficient": 0,
+  "kl_loss": false,
+  "kl_reward": false,
+  "critic": false,
+  "reference_worker": false,
+  "metrics_caveat": "native pg_clipfrac_lower is dual clipping, not ordinary lower-bound exceedance; record these separately"
+}
