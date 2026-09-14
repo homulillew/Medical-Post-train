@@ -34,3 +34,64 @@ def test_native_token_objective_is_not_sequence_alias():
         src=(ROOT/path).read_text()
         assert 'compute_grpo_outcome_advantage(rewards,mask,np.repeat(np.arange(8),4),' in src
         assert src.index("immutable(directory/'old_frozen.json'")<src.index('for start in range(0,32')
+
+def test_frozen_grid_and_diagnostic_integration():
+    import json
+    read=lambda p:json.loads(Path(p).read_text())
+    pre=read(ROOT/'experiments/stage4/grpo_diagnostic_preregistration_v1.json')
+    d=read(ROOT/'experiments/stage4/grpo_optimization_diagnostic_v1.json')
+    assert pre['timestamp']<d['timestamp'] and len(d['conditions'])==6
+    assert [(c['learning_rate'],c['clip']) for c in d['conditions']]==[(x['learning_rate'],x['clip']) for x in pre['grid']]
+    for c in d['conditions']:
+        if c.get('native_replay')!='PASS':continue
+        assert read(Path(c['directory'])/'checkpoint/COMMITTED.json')['optimizer_step']==2
+        assert c['metrics']['minibatches'][0]['ratio']['min']==c['metrics']['minibatches'][0]['ratio']['max']==1
+
+def test_isolation_and_schedule():
+    import json
+    from medical_posttrain.rl.common import record,encounter
+    from medical_posttrain.sampling.dynamic import Stream
+    from medical_posttrain.evidence.stage2 import jsonlines
+    read=lambda p:json.loads(Path(p).read_text())
+    manifest=read(ROOT/'experiments/stage4/loss_objective_eval_manifest_v1.json')
+    assert manifest['count']==512 and len(set(manifest['cluster_ids']))==512
+    assert not any(manifest['overlap_counts'].values())
+    assert not manifest['test_content_read'] and not manifest['selection_content_read']
+    assert record(manifest['dataset']['path'])==manifest['dataset']
+    schedule=read(ROOT/'experiments/stage4/loss_objective_vanilla_schedule_v1.json')
+    cfg=read(ROOT/'configs/stages/s4_formal_shared.json')
+    stream=Stream([r['prompt_id'] for r in jsonlines(cfg['pool']['path'])],cfg['seed'],cfg['stream_domain'])
+    assert len(schedule['windows'])==64
+    for i,w in enumerate(schedule['windows']):
+        assert len(w['encounters'])==8
+        for j,e in enumerate(w['encounters']):
+            expected=encounter(stream,i*8+j,'unused','unused')
+            assert all(e[k]==expected[k] for k in e)
+
+def test_correctness_only_eligibility():
+    import json,copy
+    from medical_posttrain.rl.controller import select_groups
+    p=json.loads((ROOT/'experiments/stage4/grpo_diagnostic_preregistration_v1.json').read_text())
+    gs=json.loads(Path(p['original_batch']['path']).read_text())['groups']
+    gs=copy.deepcopy(gs);policy=gs[0]['responses'][0]['policy_version']
+    for count in range(5):
+        g=copy.deepcopy(gs[0])
+        for i,r in enumerate(g['responses']):r['acc']=int(i<count)
+        a,ds=select_groups([g],policy,'dynamic')
+        expected=0<count<4
+        assert bool(a)==expected
+        for r in g['responses']:
+            for key in ['semantic','format','total_reward']:r[key]=1000
+        b,es=select_groups([g],policy,'dynamic')
+        assert ds==es and bool(b)==expected
+
+def test_paired_statistics_and_interaction():
+    from evaluate_loss_objective import paired
+    a=[dict(prompt_id=str(i),acc=v) for i,v in enumerate([0,0,1,1])]
+    b=[dict(prompt_id=str(i),acc=v) for i,v in enumerate([1,1,0,1])]
+    x=paired(a,b);assert x==paired(a,b)
+    assert x['wrong_to_correct']==2 and x['correct_to_wrong']==1
+    assert x['bootstrap']['delta']==.25 and x['exact_mcnemar']==1
+    # Per-prompt interaction averaging must equal the contrast of accuracies.
+    vg=np.array([0,1,1,0]);dg=np.array([1,1,1,0]);vr=np.array([0,0,1,0]);dr=np.array([1,0,1,1])
+    assert np.mean(dg-vg-dr+vr)==(dg.mean()-vg.mean())-(dr.mean()-vr.mean())

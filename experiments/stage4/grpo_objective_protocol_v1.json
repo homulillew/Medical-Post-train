@@ -1,0 +1,452 @@
+{
+  "status": "FROZEN_BEFORE_AUXILIARY_TRAINING",
+  "timestamp": "2026-09-14T04:58:11.361045+00:00",
+  "run_class": "AUXILIARY_LOSS_OBJECTIVE_ABLATION",
+  "runs": {
+    "vanilla": {
+      "run_id": "s4_aux_grpo_vanilla_20260914T045809_94e35e",
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_grpo_vanilla_20260914T045809_94e35e",
+      "config": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_grpo_vanilla_20260914T045809_94e35e/config.json",
+        "sha256": "38645fc7dc41fa15593a74abc31ed8c5cd2532ae1aede55abaed7543a5fa5881",
+        "bytes": 3822
+      }
+    },
+    "dynamic": {
+      "run_id": "s4_aux_grpo_dynamic_20260914T045810_71997f",
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_grpo_dynamic_20260914T045810_71997f",
+      "config": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_grpo_dynamic_20260914T045810_71997f/config.json",
+        "sha256": "a525418f7f02df1481033772b29b7a0be1167ec64cc9d0731843fa8c2da0aa4a",
+        "bytes": 3822
+      }
+    }
+  },
+  "config": {
+    "model": "/data/WSH/medical-post-train-artifacts/models/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218",
+    "initialization": {
+      "path": "/data/WSH/post-train/experiments/stage1/initialization_manifest.json",
+      "sha256": "6fb9e83dba72e4fcbc76548c515a555b46f9c415a280409224e6028067d1059c",
+      "bytes": 1850
+    },
+    "pool": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s2_data_20260909T024052_870aba/candidate_pool.jsonl",
+      "sha256": "6fa3e114f47c51977d940ca01b4e0d6510a03a390fe1f1495fe5d0820bf41262",
+      "bytes": 17377597
+    },
+    "reward_manifest": {
+      "path": "/data/WSH/post-train/experiments/stage2/reward_manifest.json",
+      "sha256": "cc72be1c2348d20f58bf978d047b9b4a2f200d8c70c39f0d0d98506528bfb905",
+      "bytes": 7541
+    },
+    "sampling": {
+      "n": 4,
+      "temperature": 0.6,
+      "top_p": 1.0,
+      "top_k": -1,
+      "min_p": 0.0,
+      "max_tokens": 1024,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "repetition_penalty": 1.0
+    },
+    "engine": {
+      "dtype": "bfloat16",
+      "tensor_parallel_size": 1,
+      "max_model_len": 4096,
+      "max_num_seqs": 16,
+      "gpu_memory_utilization": 0.65,
+      "enable_lora": true,
+      "max_lora_rank": 32,
+      "enable_sleep_mode": true,
+      "enforce_eager": true,
+      "seed": 42,
+      "enable_prefix_caching": false,
+      "generation_config": "vllm"
+    },
+    "execution_hashes": {
+      "src/medical_posttrain/reward/parser.py": "c3dfb9b4f0ff71334f7b2f19d5e265d7341c5d93baec2b00d9f40212329c8bdc",
+      "src/medical_posttrain/reward/hybrid.py": "b4de882de1d2455f5af46addd854a5aac48308603b5113fcd44842bdc837a09d",
+      "src/medical_posttrain/reward/semantic.py": "f9704e0655ef1f74f3635cf1b51facb4bba6b4266bfd5db42e354d854e4d33a7",
+      "src/medical_posttrain/data/exam.py": "081121a5b54aff164030a162de573e9fcf1a02f64fab639b23d4b8bed65e9996",
+      "src/medical_posttrain/rollout/profile.py": "8b50a372b0b2cdf475ef9d4a901d5fe3cc8b281614b0649afef6141eab1aeaa4",
+      "src/medical_posttrain/rollout/statistics.py": "f8aa2c2dc7a0bb2639b5a2b9aee1cd7b84798addb253856848caed40e3a90917"
+    },
+    "seed": 42,
+    "stage": 4,
+    "groups_per_window": 8,
+    "mini_prompts": 4,
+    "ppo_epochs": 1,
+    "sampling_metric": "acc",
+    "max_generation_batches": 32,
+    "request_batch_prompts": 8,
+    "clip_ratio_low": 0.2,
+    "clip_ratio_high": 0.2,
+    "grad_clip": 1.0,
+    "learning_rate": 1e-06,
+    "weight_decay": 0.0,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "lr_scheduler": "constant",
+    "warmup_steps": 0,
+    "entropy_coefficient": 0.0,
+    "kl_reward": false,
+    "kl_loss": false,
+    "reference_worker": false,
+    "critic": false,
+    "parity_limits": {
+      "token_mean_abs": 0.03,
+      "token_p99_abs": 0.25,
+      "sequence_mean_abs_max": 0.02
+    },
+    "mode": "auxiliary_loss_objective",
+    "target_training_groups": 512,
+    "stream_domain": "stage4:formal:pair1",
+    "validation_protocol": {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_validation_protocol.json",
+      "sha256": "fa9f2a4b36659488ee64ee530104b3cc963c4c0c403480f13e5dc7cc7475fc36",
+      "bytes": 34602
+    },
+    "checkpoint_interval_windows": 1,
+    "health_protocol": {
+      "clip_threshold": 0.9,
+      "clip_consecutive_windows": 8,
+      "length_block_windows": 16,
+      "length_consecutive_blocks": 3,
+      "length_cap_fraction": 0.9
+    },
+    "pilot_receipts": {
+      "vanilla": {
+        "path": "/data/WSH/post-train/experiments/stage4/vanilla_pilot_verification.json",
+        "sha256": "3fa6e6d0c7a8b4aa2f944d919b97857563ea22302b3e7baad3291100efa2ee7d",
+        "bytes": 76816
+      },
+      "dynamic": {
+        "path": "/data/WSH/post-train/experiments/stage4/dynamic_pilot_verification.json",
+        "sha256": "4e09b33aece65b2322bdcbb52f8069d145435a2d36941ad6030f3ef84f9648e5",
+        "bytes": 141137
+      }
+    },
+    "policy_objective": "native_token_vanilla",
+    "pause_after_windows": 4
+  },
+  "selected": {
+    "learning_rate": 1e-06,
+    "clip": 0.2
+  },
+  "selection_basis": "optimization diagnostic only",
+  "diagnostic": {
+    "path": "/data/WSH/post-train/experiments/stage4/grpo_optimization_diagnostic_v1.json",
+    "sha256": "a20472c34924ca9f5d6c73cadba62c7e2dff0a36daef9df1d780176312fa3fbe",
+    "bytes": 93667
+  },
+  "preregistration": {
+    "path": "/data/WSH/post-train/experiments/stage4/grpo_diagnostic_preregistration_v1.json",
+    "sha256": "75f5545a8b1459b47f5ab9c5592b9321a65eba0cd29f5972f410ee2e27aeceec",
+    "bytes": 5408
+  },
+  "native_audit": {
+    "path": "/data/WSH/post-train/experiments/stage4/loss_objective_native_audit_v1.json",
+    "sha256": "696f76a9b897d8ae9c038cdead11c33c0f6f7ad81a4678738aa52e629c9e39eb",
+    "bytes": 3253
+  },
+  "formal_pair": {
+    "path": "/data/WSH/post-train/experiments/stage4/formal_pair.json",
+    "sha256": "95e2022605ff54ee5c264887e3d7a4421d4087d224b7dda8d85fe788cccd86b8",
+    "bytes": 15286
+  },
+  "budget": {
+    "training_groups": 512,
+    "accepted_mixed_dynamic": 512,
+    "windows": 64,
+    "optimizer_steps": 128,
+    "G": 4,
+    "training_trajectories": 2048
+  },
+  "sampling": "Original unmodified correctness-only controller. Vanilla exact512 first64 prompt IDs/order/encounter seeds freshgeneration; Dynamic same stream rule but real refill count unconstrained.",
+  "schedule": {
+    "path": "/data/WSH/post-train/experiments/stage4/loss_objective_vanilla_schedule_v1.json",
+    "sha256": "b29275c44738a250f7d905f3adaac25c71efff2834b473736b947202a2af9912",
+    "bytes": 146924
+  },
+  "evaluation_manifest": {
+    "path": "/data/WSH/post-train/experiments/stage4/loss_objective_eval_manifest_v1.json",
+    "sha256": "267bb6292950d9009c133c10312855ec93ddc17ae6786b15b5b04f765e891a9d",
+    "bytes": 76800
+  },
+  "evaluation_artifact_path": "/data/WSH/medical-post-train-artifacts/runs/s4_grpo_optimization_diagnostic_20260914T044854_95132e",
+  "evaluation_policies": {
+    "sft": {
+      "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s1_formal_20260908T152119_60040b/checkpoints/final/adapter",
+      "adapter_sha256": "1601e97891e51940bd4b575d8811a77d8278cbeb296c044b7004e41da6d9ea64"
+    },
+    "vanilla_gspo": {
+      "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0063/checkpoint/adapter",
+      "adapter_sha256": "8e101f3830b28c34d0a4b9c78fe33a0fd7867f7f99417054a5350a1d6f812a7f"
+    },
+    "dynamic_gspo": {
+      "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0063/checkpoint/adapter",
+      "adapter_sha256": "95fa149916139a1656a759e06e85aca1f08cbfcb4058b3e55b7881536e6a2972"
+    }
+  },
+  "evaluation_order": [
+    "sft",
+    "vanilla_grpo",
+    "vanilla_gspo",
+    "dynamic_grpo",
+    "dynamic_gspo"
+  ],
+  "evaluation_decoding": {
+    "n": 1,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": -1,
+    "max_tokens": 1024,
+    "seed": 20260914
+  },
+  "evaluation_rule": "one completed response per prompt; fail closed on transport errors; no valid-wrong retry; final512 only",
+  "bootstrap_seed": 20260914,
+  "bootstrap_resamples": 10000,
+  "length_bins": [
+    "<192",
+    "[192,256)",
+    "[256,384)",
+    ">=384"
+  ],
+  "interpretation_rules": {
+    "GSPO_OBJECTIVE_ADVANTAGE_SUPPORTED": "Both objective-effect paired95%CIs strictly positive.",
+    "GRPO_ADVANTAGE": "Both objective-effect paired95%CIs strictly negative.",
+    "GSPO_STABILITY_ONLY": "Both objective-effect CIs include0 and both GSPO arms have fewer windows violating the common drift/nonfinite/inactive/ratio-tail gates than their GRPO arms. Different clip scales prevent direct clip-fraction ranking as stability proof.",
+    "NO_CLEAR_OBJECTIVE_DIFFERENCE": "Both objective-effect CIs include0 and stability-only rule not met; not equivalence.",
+    "INCONCLUSIVE": "Incomplete evidence or discordant/mixed objective-effect CI conclusions."
+  },
+  "real_resume": {
+    "arms": [
+      "vanilla",
+      "dynamic"
+    ],
+    "pause_groups": 32,
+    "steps": 8,
+    "next_groups": 40,
+    "next_steps": 10,
+    "optimizer_replay": 0
+  },
+  "project_state_snapshot": {
+    "schema_version": 1,
+    "phase": "EXECUTION",
+    "contract_sha256": "8ba60bd2e724fbbb74e26f4ef677eb6c6d51eaafcba6eb3bcb0b2eb588a51f24",
+    "stage_verifier_implemented": true,
+    "stages": {
+      "1": {
+        "status": "DONE",
+        "run_ids": [
+          "s1_data_20260908T144854_bac3a7",
+          "s1_smoke_20260908T145244_1af07b",
+          "s1_pilot_20260908T150104_71a69a",
+          "s1_formal_20260908T152119_60040b",
+          "s1_evaluation_20260908T175526_8cfbc0",
+          "s1_memory_20260908T151118_dfaed6",
+          "s1_data_audit_20260908T145755_3aabaa",
+          "s1_source_reasoning_20260908T160619_58be7b",
+          "s1_data_20260908T144417_418b80"
+        ],
+        "progress": {
+          "train_examples": 20000,
+          "coverage_fraction": 1.0
+        },
+        "verification_receipt": {
+          "path": "experiments/stage1/verification-final.json",
+          "sha256": "50e3d0cc543f2707e8ec758b6ae3f66d07a952c65f690355fae7453ad14e107e",
+          "verifier_commit": "1b06f9124b7b3d11d353fde12070c7ec56754c81",
+          "contract_sha256": "8ba60bd2e724fbbb74e26f4ef677eb6c6d51eaafcba6eb3bcb0b2eb588a51f24",
+          "result": "PASS"
+        },
+        "stage_report": "docs/stage_reports/01_medical_sft.md",
+        "interview_story": "docs/stage_reports/01_medical_sft.md"
+      },
+      "2": {
+        "status": "DONE",
+        "run_ids": [
+          "s2_data_20260909T024052_870aba",
+          "s2_semantic_20260909T024252_815f01",
+          "s2_semantic_20260909T024652_cb6286",
+          "s2_smoke_20260909T024936_746dbe",
+          "s2_formal_20260909T025736_f607d9"
+        ],
+        "progress": {
+          "candidate_pool": 15000,
+          "profiling_unique_prompts": 1000,
+          "completed_responses": 4000
+        },
+        "verification_receipt": {
+          "path": "experiments/stage2/verification-final.json",
+          "sha256": "833bd57694a922355eebabae07558d0fa43060867e269d4c9e926bf353fa148d",
+          "verifier_commit": "75d235f194daa27a712b120b666ddb13f8a9683f",
+          "contract_sha256": "8ba60bd2e724fbbb74e26f4ef677eb6c6d51eaafcba6eb3bcb0b2eb588a51f24",
+          "result": "PASS"
+        },
+        "stage_report": "docs/stage_reports/02_reward_rollout.md",
+        "interview_story": "docs/stage_reports/02_reward_rollout.md"
+      },
+      "3": {
+        "status": "DONE",
+        "run_ids": [
+          "s3_smoke_20260909T052408_5114dc",
+          "s3_smoke_20260909T051456_a53a8c",
+          "s3_smoke_20260909T052138_e6717b",
+          "s3_formal_20260909T053101_d99393"
+        ],
+        "progress": {
+          "accepted_integration_mixed_groups": 256
+        },
+        "verification_receipt": {
+          "path": "experiments/stage3/verification-final.json",
+          "sha256": "33d8b8fd6720e7f9f433b7f16994eecfd7aff0b7be9955b7a9f04673c6058203",
+          "verifier_commit": "a538dc42fef88f0fab5605a8334daf203fc362aa",
+          "contract_sha256": "8ba60bd2e724fbbb74e26f4ef677eb6c6d51eaafcba6eb3bcb0b2eb588a51f24",
+          "result": "PASS"
+        },
+        "stage_report": "docs/stage_reports/03_dynamic_sampling.md",
+        "interview_story": "docs/stage_reports/03_dynamic_sampling.md"
+      },
+      "4": {
+        "status": "FULL_PASS",
+        "run_ids": [
+          "s4_optimization_diagnostic_20260909T065945_66b040",
+          "s4_optimization_diagnostic_20260909T070249_a3a605",
+          "s4_smoke_dynamic_20260909T071807_adad34",
+          "s4_smoke_vanilla_20260909T070935_4a09cb",
+          "s4_smoke_vanilla_20260909T071222_ef95d2",
+          "s4_pilot_vanilla_20260909T075203_95a6e9",
+          "s4_pilot_dynamic_20260909T075204_3e449e",
+          "s4_recovery_a_20260909T153057_987d5a",
+          "s4_recovery_b_20260909T153059_e39b9b",
+          "s4_recovery_c_20260909T153059_f621ea",
+          "s4_formal_vanilla_20260909T155928_24aec5",
+          "s4_formal_dynamic_20260909T155929_18b61a"
+        ],
+        "progress": {
+          "vanilla_training_groups": 5000,
+          "dynamic_accepted_mixed_groups": 5000
+        },
+        "verification_receipt": null,
+        "stage_report": null,
+        "interview_story": null
+      },
+      "5": {
+        "status": "NOT_STARTED",
+        "run_ids": [],
+        "progress": {
+          "checkpoints_evaluated": 0,
+          "cmexam_questions_per_checkpoint": 0,
+          "cmb_questions_per_checkpoint": 0
+        },
+        "verification_receipt": null,
+        "stage_report": null,
+        "interview_story": null
+      },
+      "6": {
+        "status": "NOT_STARTED",
+        "run_ids": [],
+        "progress": {
+          "consistency_prompts": 0,
+          "real_requests_total": 0,
+          "concurrency_conditions": []
+        },
+        "verification_receipt": null,
+        "stage_report": null,
+        "interview_story": null
+      }
+    },
+    "stage0": {
+      "status": "VERIFIED",
+      "stage1_readiness": "READY_FOR_SMOKE",
+      "report": "docs/stage_reports/00_runtime_compatibility.md",
+      "verification_receipt": "experiments/stage0/verification-final.json"
+    }
+  },
+  "project_state": {
+    "path": "/data/WSH/post-train/project_state.json",
+    "sha256": "d25e358ab0d1bf7d9b375aca43f6db77b2a3a45c969b6593cf3cc36f94362349",
+    "bytes": 4800
+  },
+  "selection_protocol": {
+    "path": "/data/WSH/post-train/experiments/stage5/checkpoint_selection_protocol_v1.json",
+    "sha256": "43413a28ab3d6a4a3b03f788f2145bd8efa475a62cbe1bf22dc4f0a0fa48944a",
+    "bytes": 173901
+  },
+  "no_selection_inference": true,
+  "no_final_tests": true,
+  "no_paid_api": true,
+  "no_stage6": true,
+  "no_primary_gspo_retraining": true,
+  "runtime_sources": {
+    "loss_objective_actor.py": {
+      "path": "/data/WSH/post-train/scripts/loss_objective_actor.py",
+      "sha256": "0f6b0e05a9fa175a59d25a2bed8298091131ad8c8ab37bbedf4e7cd920947e0b",
+      "bytes": 18416
+    },
+    "loss_objective_metrics.py": {
+      "path": "/data/WSH/post-train/scripts/loss_objective_metrics.py",
+      "sha256": "72c63db908ff9b2ea3ffc00bfa3d911f115c2642b89c5b5b1c5875a00b08e135",
+      "bytes": 4983
+    },
+    "loss_objective_replay.py": {
+      "path": "/data/WSH/post-train/scripts/loss_objective_replay.py",
+      "sha256": "b2ca13d6b11683ab1bcd2d16e6895a198415712911e342aab2dd539f65387f5d",
+      "bytes": 3980
+    },
+    "loss_objective_runtime.py": {
+      "path": "/data/WSH/post-train/scripts/loss_objective_runtime.py",
+      "sha256": "2d709a9345110247aae46cfe7c83dc8e84ea749772175467cd550a54e1c014cd",
+      "bytes": 7918
+    },
+    "verify_loss_objective.py": {
+      "path": "/data/WSH/post-train/scripts/verify_loss_objective.py",
+      "sha256": "1046dbda583dd6e10803061ddbeb593bade95fb0736878127a90d91bb4dc4d35",
+      "bytes": 7846
+    },
+    "evaluate_loss_objective.py": {
+      "path": "/data/WSH/post-train/scripts/evaluate_loss_objective.py",
+      "sha256": "a754f64ebfb780ef75b7491cae7973470124a9481ab5791872da6a5b1113d9a3",
+      "bytes": 7539
+    },
+    "analyze_loss_objective.py": {
+      "path": "/data/WSH/post-train/scripts/analyze_loss_objective.py",
+      "sha256": "d3a437c8be429d8ca5515cf9d9f073aafcf2f75afc3bb9a733eaa3254b6401f4",
+      "bytes": 18926
+    },
+    "freeze_loss_objective_protocol.py": {
+      "path": "/data/WSH/post-train/scripts/freeze_loss_objective_protocol.py",
+      "sha256": "48729e94fcb19725a1381f2d998337a0a188de885e789e19dd52f59347a20366",
+      "bytes": 4973
+    },
+    "freeze_loss_objective_eval.py": {
+      "path": "/data/WSH/post-train/scripts/freeze_loss_objective_eval.py",
+      "sha256": "9d068e9f08e4750329aee0ebc5d14afbdcae56e9fcc1bea01892e64fb9671dce",
+      "bytes": 5803
+    },
+    "stage4_resume_boundary.py": {
+      "path": "/data/WSH/post-train/scripts/stage4_resume_boundary.py",
+      "sha256": "ee8fd523b01b33e31db0e7dde52618ad12135c1ab3bfb0a3ca51307095f6372b",
+      "bytes": 4056
+    },
+    "stage4_gpu_release_guard.py": {
+      "path": "/data/WSH/post-train/scripts/stage4_gpu_release_guard.py",
+      "sha256": "1a7dcdba6222096e0daee61d53e3bab3b2ceb79c44ed6be59114245080b44f26",
+      "bytes": 2204
+    }
+  },
+  "failure_policy": "Preserve all failures; no hyperparameter changes from validation; exact budgets or FAILED/BLOCKED; Stage4 FULL_PASS retained",
+  "runtime_overrides": [
+    "auxiliary actor direct native vanilla function and matched aggregation",
+    "child actor/native reload routed to same auxiliary actor",
+    "bounded GPU release guard",
+    "boundary-only resume inspection plus full final raw replay",
+    "online monitor disabled"
+  ],
+  "length_gradient_proxy": "NOT_IDENTIFIABLE without retained per-trajectory gradients; absolute surrogate is not gradient quality"
+}

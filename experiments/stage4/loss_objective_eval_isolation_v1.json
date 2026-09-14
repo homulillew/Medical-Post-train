@@ -1,0 +1,26 @@
+{
+  "result": "PASS",
+  "timestamp": "2026-09-14T04:52:52.621346+00:00",
+  "count": 512,
+  "unique_clusters": 512,
+  "overlap_counts": {
+    "monitor512": 0,
+    "selection1024": 0,
+    "frontier1000": 0,
+    "random3x_eval512": 0,
+    "rl_pool": 0,
+    "sft_train_validation": 0,
+    "sealed_tests": 0
+  },
+  "manifest": {
+    "path": "/data/WSH/post-train/experiments/stage4/loss_objective_eval_manifest_v1.json",
+    "sha256": "267bb6292950d9009c133c10312855ec93ddc17ae6786b15b5b04f765e891a9d",
+    "bytes": 76800
+  },
+  "verifier": {
+    "path": "/data/WSH/post-train/scripts/freeze_loss_objective_eval.py",
+    "sha256": "9d068e9f08e4750329aee0ebc5d14afbdcae56e9fcc1bea01892e64fb9671dce",
+    "bytes": 5803
+  },
+  "sealed_test_content_read": false
+}

@@ -1,0 +1,4233 @@
+{
+  "timestamp": "2026-09-14T04:52:54.100251+00:00",
+  "windows": [
+    {
+      "window_index": 0,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:35936",
+          "encounter_index": 0,
+          "candidate_epoch": 0,
+          "candidate_cursor": 0,
+          "request_seed": 110974
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47500",
+          "encounter_index": 1,
+          "candidate_epoch": 0,
+          "candidate_cursor": 1,
+          "request_seed": 2095771798
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:35366",
+          "encounter_index": 2,
+          "candidate_epoch": 0,
+          "candidate_cursor": 2,
+          "request_seed": 1387422413
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30665",
+          "encounter_index": 3,
+          "candidate_epoch": 0,
+          "candidate_cursor": 3,
+          "request_seed": 3939028412
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39819",
+          "encounter_index": 4,
+          "candidate_epoch": 0,
+          "candidate_cursor": 4,
+          "request_seed": 3899404292
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47919",
+          "encounter_index": 5,
+          "candidate_epoch": 0,
+          "candidate_cursor": 5,
+          "request_seed": 762424739
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:24587",
+          "encounter_index": 6,
+          "candidate_epoch": 0,
+          "candidate_cursor": 6,
+          "request_seed": 4187181264
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39769",
+          "encounter_index": 7,
+          "candidate_epoch": 0,
+          "candidate_cursor": 7,
+          "request_seed": 3104386179
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0000/commit.json",
+        "sha256": "ef469049b6ec78513f0e28043418317cf34004dc27ac0c69ed68190922fd0941",
+        "bytes": 5520
+      }
+    },
+    {
+      "window_index": 1,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28792",
+          "encounter_index": 8,
+          "candidate_epoch": 0,
+          "candidate_cursor": 8,
+          "request_seed": 281499946
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40522",
+          "encounter_index": 9,
+          "candidate_epoch": 0,
+          "candidate_cursor": 9,
+          "request_seed": 784715285
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43608",
+          "encounter_index": 10,
+          "candidate_epoch": 0,
+          "candidate_cursor": 10,
+          "request_seed": 2118539324
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17449",
+          "encounter_index": 11,
+          "candidate_epoch": 0,
+          "candidate_cursor": 11,
+          "request_seed": 2602810607
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13463",
+          "encounter_index": 12,
+          "candidate_epoch": 0,
+          "candidate_cursor": 12,
+          "request_seed": 764324873
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6937",
+          "encounter_index": 13,
+          "candidate_epoch": 0,
+          "candidate_cursor": 13,
+          "request_seed": 4106704505
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7660",
+          "encounter_index": 14,
+          "candidate_epoch": 0,
+          "candidate_cursor": 14,
+          "request_seed": 2413573117
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48300",
+          "encounter_index": 15,
+          "candidate_epoch": 0,
+          "candidate_cursor": 15,
+          "request_seed": 464739990
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0001/commit.json",
+        "sha256": "ca8cfe974ae00488b6d333b63b99f46aab4c9d5ddf3f369071dce6c4f5f24dfd",
+        "bytes": 7784
+      }
+    },
+    {
+      "window_index": 2,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34487",
+          "encounter_index": 16,
+          "candidate_epoch": 0,
+          "candidate_cursor": 16,
+          "request_seed": 175225470
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21419",
+          "encounter_index": 17,
+          "candidate_epoch": 0,
+          "candidate_cursor": 17,
+          "request_seed": 2448343251
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13918",
+          "encounter_index": 18,
+          "candidate_epoch": 0,
+          "candidate_cursor": 18,
+          "request_seed": 2517586437
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3720",
+          "encounter_index": 19,
+          "candidate_epoch": 0,
+          "candidate_cursor": 19,
+          "request_seed": 2963477873
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47273",
+          "encounter_index": 20,
+          "candidate_epoch": 0,
+          "candidate_cursor": 20,
+          "request_seed": 344076232
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42501",
+          "encounter_index": 21,
+          "candidate_epoch": 0,
+          "candidate_cursor": 21,
+          "request_seed": 3681785356
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4460",
+          "encounter_index": 22,
+          "candidate_epoch": 0,
+          "candidate_cursor": 22,
+          "request_seed": 2243229319
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17435",
+          "encounter_index": 23,
+          "candidate_epoch": 0,
+          "candidate_cursor": 23,
+          "request_seed": 3500717629
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0002/commit.json",
+        "sha256": "3054f06cd216e2498968fd628c4af434643dc00d6e43971c87ee977501f16edd",
+        "bytes": 10079
+      }
+    },
+    {
+      "window_index": 3,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9142",
+          "encounter_index": 24,
+          "candidate_epoch": 0,
+          "candidate_cursor": 24,
+          "request_seed": 3422955372
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27823",
+          "encounter_index": 25,
+          "candidate_epoch": 0,
+          "candidate_cursor": 25,
+          "request_seed": 3621718947
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40839",
+          "encounter_index": 26,
+          "candidate_epoch": 0,
+          "candidate_cursor": 26,
+          "request_seed": 1224519941
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15073",
+          "encounter_index": 27,
+          "candidate_epoch": 0,
+          "candidate_cursor": 27,
+          "request_seed": 3188758167
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:1519",
+          "encounter_index": 28,
+          "candidate_epoch": 0,
+          "candidate_cursor": 28,
+          "request_seed": 4145278873
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:38871",
+          "encounter_index": 29,
+          "candidate_epoch": 0,
+          "candidate_cursor": 29,
+          "request_seed": 3404934427
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:276",
+          "encounter_index": 30,
+          "candidate_epoch": 0,
+          "candidate_cursor": 30,
+          "request_seed": 2990836673
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33909",
+          "encounter_index": 31,
+          "candidate_epoch": 0,
+          "candidate_cursor": 31,
+          "request_seed": 1104466148
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0003/commit.json",
+        "sha256": "2772707deaa655224f9932de0100afc123ad8d41f6849dff37b521eacc1e0592",
+        "bytes": 12448
+      }
+    },
+    {
+      "window_index": 4,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42068",
+          "encounter_index": 32,
+          "candidate_epoch": 0,
+          "candidate_cursor": 32,
+          "request_seed": 559151697
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37437",
+          "encounter_index": 33,
+          "candidate_epoch": 0,
+          "candidate_cursor": 33,
+          "request_seed": 547705464
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43030",
+          "encounter_index": 34,
+          "candidate_epoch": 0,
+          "candidate_cursor": 34,
+          "request_seed": 2244520354
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:563",
+          "encounter_index": 35,
+          "candidate_epoch": 0,
+          "candidate_cursor": 35,
+          "request_seed": 958637150
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42518",
+          "encounter_index": 36,
+          "candidate_epoch": 0,
+          "candidate_cursor": 36,
+          "request_seed": 2403968580
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47653",
+          "encounter_index": 37,
+          "candidate_epoch": 0,
+          "candidate_cursor": 37,
+          "request_seed": 404301053
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48470",
+          "encounter_index": 38,
+          "candidate_epoch": 0,
+          "candidate_cursor": 38,
+          "request_seed": 3735019847
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2432",
+          "encounter_index": 39,
+          "candidate_epoch": 0,
+          "candidate_cursor": 39,
+          "request_seed": 3816765648
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0004/commit.json",
+        "sha256": "f3aa2be495755aeb5975af6ef801253f23401c4dee8f5dcd1f7f6e07dc547d3f",
+        "bytes": 14670
+      }
+    },
+    {
+      "window_index": 5,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48131",
+          "encounter_index": 40,
+          "candidate_epoch": 0,
+          "candidate_cursor": 40,
+          "request_seed": 3776235008
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37384",
+          "encounter_index": 41,
+          "candidate_epoch": 0,
+          "candidate_cursor": 41,
+          "request_seed": 726726477
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26928",
+          "encounter_index": 42,
+          "candidate_epoch": 0,
+          "candidate_cursor": 42,
+          "request_seed": 3436856313
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:45835",
+          "encounter_index": 43,
+          "candidate_epoch": 0,
+          "candidate_cursor": 43,
+          "request_seed": 3690382360
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13958",
+          "encounter_index": 44,
+          "candidate_epoch": 0,
+          "candidate_cursor": 44,
+          "request_seed": 914982393
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41663",
+          "encounter_index": 45,
+          "candidate_epoch": 0,
+          "candidate_cursor": 45,
+          "request_seed": 3408219868
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:1546",
+          "encounter_index": 46,
+          "candidate_epoch": 0,
+          "candidate_cursor": 46,
+          "request_seed": 2688124044
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7718",
+          "encounter_index": 47,
+          "candidate_epoch": 0,
+          "candidate_cursor": 47,
+          "request_seed": 1598198003
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0005/commit.json",
+        "sha256": "83f35a8afcfc4a5a751d6ce175011215582fee300c7906f168689ff9085e28d6",
+        "bytes": 17037
+      }
+    },
+    {
+      "window_index": 6,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16922",
+          "encounter_index": 48,
+          "candidate_epoch": 0,
+          "candidate_cursor": 48,
+          "request_seed": 2918082293
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30577",
+          "encounter_index": 49,
+          "candidate_epoch": 0,
+          "candidate_cursor": 49,
+          "request_seed": 433832188
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:1165",
+          "encounter_index": 50,
+          "candidate_epoch": 0,
+          "candidate_cursor": 50,
+          "request_seed": 2340579971
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26788",
+          "encounter_index": 51,
+          "candidate_epoch": 0,
+          "candidate_cursor": 51,
+          "request_seed": 3559591231
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17021",
+          "encounter_index": 52,
+          "candidate_epoch": 0,
+          "candidate_cursor": 52,
+          "request_seed": 1545770504
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13160",
+          "encounter_index": 53,
+          "candidate_epoch": 0,
+          "candidate_cursor": 53,
+          "request_seed": 3261568822
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27875",
+          "encounter_index": 54,
+          "candidate_epoch": 0,
+          "candidate_cursor": 54,
+          "request_seed": 3939944189
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26350",
+          "encounter_index": 55,
+          "candidate_epoch": 0,
+          "candidate_cursor": 55,
+          "request_seed": 3595143577
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0006/commit.json",
+        "sha256": "69103719656f535b80f7c429eca94f9308bc282d4c7e99931e8b345a7c2c824e",
+        "bytes": 19308
+      }
+    },
+    {
+      "window_index": 7,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26915",
+          "encounter_index": 56,
+          "candidate_epoch": 0,
+          "candidate_cursor": 56,
+          "request_seed": 2370083475
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19183",
+          "encounter_index": 57,
+          "candidate_epoch": 0,
+          "candidate_cursor": 57,
+          "request_seed": 2989292859
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31842",
+          "encounter_index": 58,
+          "candidate_epoch": 0,
+          "candidate_cursor": 58,
+          "request_seed": 3395350587
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40399",
+          "encounter_index": 59,
+          "candidate_epoch": 0,
+          "candidate_cursor": 59,
+          "request_seed": 4036418548
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33426",
+          "encounter_index": 60,
+          "candidate_epoch": 0,
+          "candidate_cursor": 60,
+          "request_seed": 4146266249
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17653",
+          "encounter_index": 61,
+          "candidate_epoch": 0,
+          "candidate_cursor": 61,
+          "request_seed": 2772793338
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30024",
+          "encounter_index": 62,
+          "candidate_epoch": 0,
+          "candidate_cursor": 62,
+          "request_seed": 1196308338
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22516",
+          "encounter_index": 63,
+          "candidate_epoch": 0,
+          "candidate_cursor": 63,
+          "request_seed": 1526480318
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0007/commit.json",
+        "sha256": "1920894d532cdadec32e66111cf7ca406b2413505fb113815ee2c57ccb3385e9",
+        "bytes": 21585
+      }
+    },
+    {
+      "window_index": 8,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10054",
+          "encounter_index": 64,
+          "candidate_epoch": 0,
+          "candidate_cursor": 64,
+          "request_seed": 1448715085
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29128",
+          "encounter_index": 65,
+          "candidate_epoch": 0,
+          "candidate_cursor": 65,
+          "request_seed": 1923031299
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53875",
+          "encounter_index": 66,
+          "candidate_epoch": 0,
+          "candidate_cursor": 66,
+          "request_seed": 1224820542
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43467",
+          "encounter_index": 67,
+          "candidate_epoch": 0,
+          "candidate_cursor": 67,
+          "request_seed": 1883154153
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49641",
+          "encounter_index": 68,
+          "candidate_epoch": 0,
+          "candidate_cursor": 68,
+          "request_seed": 489932021
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43114",
+          "encounter_index": 69,
+          "candidate_epoch": 0,
+          "candidate_cursor": 69,
+          "request_seed": 2687107282
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41449",
+          "encounter_index": 70,
+          "candidate_epoch": 0,
+          "candidate_cursor": 70,
+          "request_seed": 2778685454
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52917",
+          "encounter_index": 71,
+          "candidate_epoch": 0,
+          "candidate_cursor": 71,
+          "request_seed": 705213586
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0008/commit.json",
+        "sha256": "054bb2ffbc01553ed45defec75d5f138610c466df5e37b0ee557ff37257be074",
+        "bytes": 23951
+      }
+    },
+    {
+      "window_index": 9,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23564",
+          "encounter_index": 72,
+          "candidate_epoch": 0,
+          "candidate_cursor": 72,
+          "request_seed": 275938547
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14633",
+          "encounter_index": 73,
+          "candidate_epoch": 0,
+          "candidate_cursor": 73,
+          "request_seed": 597426089
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6217",
+          "encounter_index": 74,
+          "candidate_epoch": 0,
+          "candidate_cursor": 74,
+          "request_seed": 3605142500
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:45661",
+          "encounter_index": 75,
+          "candidate_epoch": 0,
+          "candidate_cursor": 75,
+          "request_seed": 832838681
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14535",
+          "encounter_index": 76,
+          "candidate_epoch": 0,
+          "candidate_cursor": 76,
+          "request_seed": 507578060
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6465",
+          "encounter_index": 77,
+          "candidate_epoch": 0,
+          "candidate_cursor": 77,
+          "request_seed": 3537828504
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:24836",
+          "encounter_index": 78,
+          "candidate_epoch": 0,
+          "candidate_cursor": 78,
+          "request_seed": 54626390
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52005",
+          "encounter_index": 79,
+          "candidate_epoch": 0,
+          "candidate_cursor": 79,
+          "request_seed": 4078946367
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0009/commit.json",
+        "sha256": "3e92ef368a98d177507b01f28b2e30be377516ee46cb820de7bb8ce48c6e7a82",
+        "bytes": 26152
+      }
+    },
+    {
+      "window_index": 10,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49217",
+          "encounter_index": 80,
+          "candidate_epoch": 0,
+          "candidate_cursor": 80,
+          "request_seed": 2712482258
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3639",
+          "encounter_index": 81,
+          "candidate_epoch": 0,
+          "candidate_cursor": 81,
+          "request_seed": 2499336904
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2395",
+          "encounter_index": 82,
+          "candidate_epoch": 0,
+          "candidate_cursor": 82,
+          "request_seed": 2808641200
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:44429",
+          "encounter_index": 83,
+          "candidate_epoch": 0,
+          "candidate_cursor": 83,
+          "request_seed": 1896048486
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50738",
+          "encounter_index": 84,
+          "candidate_epoch": 0,
+          "candidate_cursor": 84,
+          "request_seed": 3384731376
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47803",
+          "encounter_index": 85,
+          "candidate_epoch": 0,
+          "candidate_cursor": 85,
+          "request_seed": 2246781774
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47110",
+          "encounter_index": 86,
+          "candidate_epoch": 0,
+          "candidate_cursor": 86,
+          "request_seed": 609589219
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15884",
+          "encounter_index": 87,
+          "candidate_epoch": 0,
+          "candidate_cursor": 87,
+          "request_seed": 993765203
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0010/commit.json",
+        "sha256": "e36e67384428a4ae2d874f853f4cc02f7a0e37d330687376de09288883ddc46c",
+        "bytes": 28491
+      }
+    },
+    {
+      "window_index": 11,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47514",
+          "encounter_index": 88,
+          "candidate_epoch": 0,
+          "candidate_cursor": 88,
+          "request_seed": 2408739043
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13668",
+          "encounter_index": 89,
+          "candidate_epoch": 0,
+          "candidate_cursor": 89,
+          "request_seed": 2044724268
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48306",
+          "encounter_index": 90,
+          "candidate_epoch": 0,
+          "candidate_cursor": 90,
+          "request_seed": 2234612551
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3636",
+          "encounter_index": 91,
+          "candidate_epoch": 0,
+          "candidate_cursor": 91,
+          "request_seed": 2202479813
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:38165",
+          "encounter_index": 92,
+          "candidate_epoch": 0,
+          "candidate_cursor": 92,
+          "request_seed": 2472705539
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16750",
+          "encounter_index": 93,
+          "candidate_epoch": 0,
+          "candidate_cursor": 93,
+          "request_seed": 2966429619
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42469",
+          "encounter_index": 94,
+          "candidate_epoch": 0,
+          "candidate_cursor": 94,
+          "request_seed": 1519435439
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18888",
+          "encounter_index": 95,
+          "candidate_epoch": 0,
+          "candidate_cursor": 95,
+          "request_seed": 1110937211
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0011/commit.json",
+        "sha256": "4922e49e035598b5e7f0fceae91ab7ee458db8e64398389c493789076e3ba2d8",
+        "bytes": 30738
+      }
+    },
+    {
+      "window_index": 12,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15444",
+          "encounter_index": 96,
+          "candidate_epoch": 0,
+          "candidate_cursor": 96,
+          "request_seed": 1293469178
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27803",
+          "encounter_index": 97,
+          "candidate_epoch": 0,
+          "candidate_cursor": 97,
+          "request_seed": 122087483
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34029",
+          "encounter_index": 98,
+          "candidate_epoch": 0,
+          "candidate_cursor": 98,
+          "request_seed": 32441501
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39045",
+          "encounter_index": 99,
+          "candidate_epoch": 0,
+          "candidate_cursor": 99,
+          "request_seed": 65891033
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28193",
+          "encounter_index": 100,
+          "candidate_epoch": 0,
+          "candidate_cursor": 100,
+          "request_seed": 4116250908
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34741",
+          "encounter_index": 101,
+          "candidate_epoch": 0,
+          "candidate_cursor": 101,
+          "request_seed": 3017007040
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6723",
+          "encounter_index": 102,
+          "candidate_epoch": 0,
+          "candidate_cursor": 102,
+          "request_seed": 3930302493
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11373",
+          "encounter_index": 103,
+          "candidate_epoch": 0,
+          "candidate_cursor": 103,
+          "request_seed": 43485534
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0012/commit.json",
+        "sha256": "a135640c5b72731a51a1f8da9713e8c8996a2c200afd0cc355e2a18b63d42d12",
+        "bytes": 33088
+      }
+    },
+    {
+      "window_index": 13,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41158",
+          "encounter_index": 104,
+          "candidate_epoch": 0,
+          "candidate_cursor": 104,
+          "request_seed": 4137582956
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19946",
+          "encounter_index": 105,
+          "candidate_epoch": 0,
+          "candidate_cursor": 105,
+          "request_seed": 85282504
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33714",
+          "encounter_index": 106,
+          "candidate_epoch": 0,
+          "candidate_cursor": 106,
+          "request_seed": 3344397136
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19364",
+          "encounter_index": 107,
+          "candidate_epoch": 0,
+          "candidate_cursor": 107,
+          "request_seed": 180801556
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51664",
+          "encounter_index": 108,
+          "candidate_epoch": 0,
+          "candidate_cursor": 108,
+          "request_seed": 282867202
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30037",
+          "encounter_index": 109,
+          "candidate_epoch": 0,
+          "candidate_cursor": 109,
+          "request_seed": 735499888
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:46881",
+          "encounter_index": 110,
+          "candidate_epoch": 0,
+          "candidate_cursor": 110,
+          "request_seed": 292023736
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3711",
+          "encounter_index": 111,
+          "candidate_epoch": 0,
+          "candidate_cursor": 111,
+          "request_seed": 1620995954
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0013/commit.json",
+        "sha256": "1af99c51d7e091231079aa3677f4cb79871b3605645a88e2e68cad3d227fdd1f",
+        "bytes": 35374
+      }
+    },
+    {
+      "window_index": 14,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27807",
+          "encounter_index": 112,
+          "candidate_epoch": 0,
+          "candidate_cursor": 112,
+          "request_seed": 2381888218
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:5473",
+          "encounter_index": 113,
+          "candidate_epoch": 0,
+          "candidate_cursor": 113,
+          "request_seed": 1752244352
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6976",
+          "encounter_index": 114,
+          "candidate_epoch": 0,
+          "candidate_cursor": 114,
+          "request_seed": 1149393812
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:5721",
+          "encounter_index": 115,
+          "candidate_epoch": 0,
+          "candidate_cursor": 115,
+          "request_seed": 471309078
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:38419",
+          "encounter_index": 116,
+          "candidate_epoch": 0,
+          "candidate_cursor": 116,
+          "request_seed": 3616390501
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7528",
+          "encounter_index": 117,
+          "candidate_epoch": 0,
+          "candidate_cursor": 117,
+          "request_seed": 736056214
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48760",
+          "encounter_index": 118,
+          "candidate_epoch": 0,
+          "candidate_cursor": 118,
+          "request_seed": 3648263203
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:686",
+          "encounter_index": 119,
+          "candidate_epoch": 0,
+          "candidate_cursor": 119,
+          "request_seed": 1998945243
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0014/commit.json",
+        "sha256": "0bd7345fff34a675d45f7539dc633cb1fdfab717e2562ba5724a8ba235782b86",
+        "bytes": 37714
+      }
+    },
+    {
+      "window_index": 15,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8445",
+          "encounter_index": 120,
+          "candidate_epoch": 0,
+          "candidate_cursor": 120,
+          "request_seed": 1266059830
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26726",
+          "encounter_index": 121,
+          "candidate_epoch": 0,
+          "candidate_cursor": 121,
+          "request_seed": 1298724500
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23284",
+          "encounter_index": 122,
+          "candidate_epoch": 0,
+          "candidate_cursor": 122,
+          "request_seed": 2768450145
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10855",
+          "encounter_index": 123,
+          "candidate_epoch": 0,
+          "candidate_cursor": 123,
+          "request_seed": 1068306572
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31727",
+          "encounter_index": 124,
+          "candidate_epoch": 0,
+          "candidate_cursor": 124,
+          "request_seed": 1717750093
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51602",
+          "encounter_index": 125,
+          "candidate_epoch": 0,
+          "candidate_cursor": 125,
+          "request_seed": 1593255969
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16330",
+          "encounter_index": 126,
+          "candidate_epoch": 0,
+          "candidate_cursor": 126,
+          "request_seed": 2173505939
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27496",
+          "encounter_index": 127,
+          "candidate_epoch": 0,
+          "candidate_cursor": 127,
+          "request_seed": 2537911245
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0015/commit.json",
+        "sha256": "a0678a531db7a9ae14166430a1a751c3203b48d1081cc375577badf2509c3331",
+        "bytes": 39955
+      }
+    },
+    {
+      "window_index": 16,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33811",
+          "encounter_index": 128,
+          "candidate_epoch": 0,
+          "candidate_cursor": 128,
+          "request_seed": 2304881445
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40492",
+          "encounter_index": 129,
+          "candidate_epoch": 0,
+          "candidate_cursor": 129,
+          "request_seed": 2695161545
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:35334",
+          "encounter_index": 130,
+          "candidate_epoch": 0,
+          "candidate_cursor": 130,
+          "request_seed": 2204213824
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21743",
+          "encounter_index": 131,
+          "candidate_epoch": 0,
+          "candidate_cursor": 131,
+          "request_seed": 1485254588
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31488",
+          "encounter_index": 132,
+          "candidate_epoch": 0,
+          "candidate_cursor": 132,
+          "request_seed": 386782115
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29159",
+          "encounter_index": 133,
+          "candidate_epoch": 0,
+          "candidate_cursor": 133,
+          "request_seed": 6318154
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20623",
+          "encounter_index": 134,
+          "candidate_epoch": 0,
+          "candidate_cursor": 134,
+          "request_seed": 3365649593
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:721",
+          "encounter_index": 135,
+          "candidate_epoch": 0,
+          "candidate_cursor": 135,
+          "request_seed": 2241864163
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0016/commit.json",
+        "sha256": "3a0eb26a3862d040e84253ed8c62dab8b387bdbd8372432ee0f9275f711caa19",
+        "bytes": 42229
+      }
+    },
+    {
+      "window_index": 17,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52826",
+          "encounter_index": 136,
+          "candidate_epoch": 0,
+          "candidate_cursor": 136,
+          "request_seed": 1850659406
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16391",
+          "encounter_index": 137,
+          "candidate_epoch": 0,
+          "candidate_cursor": 137,
+          "request_seed": 3239294653
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26754",
+          "encounter_index": 138,
+          "candidate_epoch": 0,
+          "candidate_cursor": 138,
+          "request_seed": 1263019665
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3477",
+          "encounter_index": 139,
+          "candidate_epoch": 0,
+          "candidate_cursor": 139,
+          "request_seed": 621895751
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39666",
+          "encounter_index": 140,
+          "candidate_epoch": 0,
+          "candidate_cursor": 140,
+          "request_seed": 881778136
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8469",
+          "encounter_index": 141,
+          "candidate_epoch": 0,
+          "candidate_cursor": 141,
+          "request_seed": 2656455764
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48440",
+          "encounter_index": 142,
+          "candidate_epoch": 0,
+          "candidate_cursor": 142,
+          "request_seed": 1200085494
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:54347",
+          "encounter_index": 143,
+          "candidate_epoch": 0,
+          "candidate_cursor": 143,
+          "request_seed": 3113400904
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0017/commit.json",
+        "sha256": "75de6d90d328431663c35a0bcf4591272aa1f9a00f5a4a7371543dc1e250159d",
+        "bytes": 44464
+      }
+    },
+    {
+      "window_index": 18,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:45293",
+          "encounter_index": 144,
+          "candidate_epoch": 0,
+          "candidate_cursor": 144,
+          "request_seed": 2139076259
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29630",
+          "encounter_index": 145,
+          "candidate_epoch": 0,
+          "candidate_cursor": 145,
+          "request_seed": 3726405962
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6410",
+          "encounter_index": 146,
+          "candidate_epoch": 0,
+          "candidate_cursor": 146,
+          "request_seed": 1600631244
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40771",
+          "encounter_index": 147,
+          "candidate_epoch": 0,
+          "candidate_cursor": 147,
+          "request_seed": 687658361
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:44623",
+          "encounter_index": 148,
+          "candidate_epoch": 0,
+          "candidate_cursor": 148,
+          "request_seed": 1526282014
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47018",
+          "encounter_index": 149,
+          "candidate_epoch": 0,
+          "candidate_cursor": 149,
+          "request_seed": 3413492097
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21752",
+          "encounter_index": 150,
+          "candidate_epoch": 0,
+          "candidate_cursor": 150,
+          "request_seed": 807413120
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10877",
+          "encounter_index": 151,
+          "candidate_epoch": 0,
+          "candidate_cursor": 151,
+          "request_seed": 748044502
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0018/commit.json",
+        "sha256": "8500cbc6132eb5e0162a7861f690debe8798f9a38f1aa1f8264ac17e34bfefe2",
+        "bytes": 46840
+      }
+    },
+    {
+      "window_index": 19,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40409",
+          "encounter_index": 152,
+          "candidate_epoch": 0,
+          "candidate_cursor": 152,
+          "request_seed": 2878659406
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14420",
+          "encounter_index": 153,
+          "candidate_epoch": 0,
+          "candidate_cursor": 153,
+          "request_seed": 4097086191
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:25287",
+          "encounter_index": 154,
+          "candidate_epoch": 0,
+          "candidate_cursor": 154,
+          "request_seed": 3087065197
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52207",
+          "encounter_index": 155,
+          "candidate_epoch": 0,
+          "candidate_cursor": 155,
+          "request_seed": 3121321917
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52796",
+          "encounter_index": 156,
+          "candidate_epoch": 0,
+          "candidate_cursor": 156,
+          "request_seed": 2849576930
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2540",
+          "encounter_index": 157,
+          "candidate_epoch": 0,
+          "candidate_cursor": 157,
+          "request_seed": 258084796
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52704",
+          "encounter_index": 158,
+          "candidate_epoch": 0,
+          "candidate_cursor": 158,
+          "request_seed": 1761777449
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14719",
+          "encounter_index": 159,
+          "candidate_epoch": 0,
+          "candidate_cursor": 159,
+          "request_seed": 2017042897
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0019/commit.json",
+        "sha256": "a53ffe38de7433c1f3158976dd0b9cd67fba0bb86d7ea025d888a6af8a745da7",
+        "bytes": 49149
+      }
+    },
+    {
+      "window_index": 20,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19372",
+          "encounter_index": 160,
+          "candidate_epoch": 0,
+          "candidate_cursor": 160,
+          "request_seed": 1862540302
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14227",
+          "encounter_index": 161,
+          "candidate_epoch": 0,
+          "candidate_cursor": 161,
+          "request_seed": 359319165
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23187",
+          "encounter_index": 162,
+          "candidate_epoch": 0,
+          "candidate_cursor": 162,
+          "request_seed": 57389179
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48885",
+          "encounter_index": 163,
+          "candidate_epoch": 0,
+          "candidate_cursor": 163,
+          "request_seed": 1111688010
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18074",
+          "encounter_index": 164,
+          "candidate_epoch": 0,
+          "candidate_cursor": 164,
+          "request_seed": 313594750
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:46695",
+          "encounter_index": 165,
+          "candidate_epoch": 0,
+          "candidate_cursor": 165,
+          "request_seed": 3022665384
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32337",
+          "encounter_index": 166,
+          "candidate_epoch": 0,
+          "candidate_cursor": 166,
+          "request_seed": 3168425924
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41707",
+          "encounter_index": 167,
+          "candidate_epoch": 0,
+          "candidate_cursor": 167,
+          "request_seed": 2602641366
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0020/commit.json",
+        "sha256": "8563bcb9fe834de017c250e72b9a689d8ed390956996e70db337b1366764e9d2",
+        "bytes": 51426
+      }
+    },
+    {
+      "window_index": 21,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49126",
+          "encounter_index": 168,
+          "candidate_epoch": 0,
+          "candidate_cursor": 168,
+          "request_seed": 1300417611
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8772",
+          "encounter_index": 169,
+          "candidate_epoch": 0,
+          "candidate_cursor": 169,
+          "request_seed": 3134900834
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11163",
+          "encounter_index": 170,
+          "candidate_epoch": 0,
+          "candidate_cursor": 170,
+          "request_seed": 3736787508
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52206",
+          "encounter_index": 171,
+          "candidate_epoch": 0,
+          "candidate_cursor": 171,
+          "request_seed": 3944129940
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:38025",
+          "encounter_index": 172,
+          "candidate_epoch": 0,
+          "candidate_cursor": 172,
+          "request_seed": 3301006026
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36768",
+          "encounter_index": 173,
+          "candidate_epoch": 0,
+          "candidate_cursor": 173,
+          "request_seed": 2939590736
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49599",
+          "encounter_index": 174,
+          "candidate_epoch": 0,
+          "candidate_cursor": 174,
+          "request_seed": 1872563810
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7996",
+          "encounter_index": 175,
+          "candidate_epoch": 0,
+          "candidate_cursor": 175,
+          "request_seed": 567439367
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0021/commit.json",
+        "sha256": "018cbb9263624fcec8be5e6a95b9448b3b762b761e03b32360a27f4ba7783e5d",
+        "bytes": 53775
+      }
+    },
+    {
+      "window_index": 22,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26833",
+          "encounter_index": 176,
+          "candidate_epoch": 0,
+          "candidate_cursor": 176,
+          "request_seed": 1117827102
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49624",
+          "encounter_index": 177,
+          "candidate_epoch": 0,
+          "candidate_cursor": 177,
+          "request_seed": 2517328658
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49741",
+          "encounter_index": 178,
+          "candidate_epoch": 0,
+          "candidate_cursor": 178,
+          "request_seed": 1606807630
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:44160",
+          "encounter_index": 179,
+          "candidate_epoch": 0,
+          "candidate_cursor": 179,
+          "request_seed": 886812120
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39388",
+          "encounter_index": 180,
+          "candidate_epoch": 0,
+          "candidate_cursor": 180,
+          "request_seed": 2845133165
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19237",
+          "encounter_index": 181,
+          "candidate_epoch": 0,
+          "candidate_cursor": 181,
+          "request_seed": 1828464232
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43642",
+          "encounter_index": 182,
+          "candidate_epoch": 0,
+          "candidate_cursor": 182,
+          "request_seed": 3634047299
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7176",
+          "encounter_index": 183,
+          "candidate_epoch": 0,
+          "candidate_cursor": 183,
+          "request_seed": 468191461
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0022/commit.json",
+        "sha256": "832bf1d06e510b7610b2d449508a09ec2c7adb746868597577e835e678429d6c",
+        "bytes": 56047
+      }
+    },
+    {
+      "window_index": 23,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10991",
+          "encounter_index": 184,
+          "candidate_epoch": 0,
+          "candidate_cursor": 184,
+          "request_seed": 2488118758
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41785",
+          "encounter_index": 185,
+          "candidate_epoch": 0,
+          "candidate_cursor": 185,
+          "request_seed": 3638965520
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53932",
+          "encounter_index": 186,
+          "candidate_epoch": 0,
+          "candidate_cursor": 186,
+          "request_seed": 3477746739
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41939",
+          "encounter_index": 187,
+          "candidate_epoch": 0,
+          "candidate_cursor": 187,
+          "request_seed": 4027986200
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:24374",
+          "encounter_index": 188,
+          "candidate_epoch": 0,
+          "candidate_cursor": 188,
+          "request_seed": 2683360744
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27930",
+          "encounter_index": 189,
+          "candidate_epoch": 0,
+          "candidate_cursor": 189,
+          "request_seed": 4130870946
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48304",
+          "encounter_index": 190,
+          "candidate_epoch": 0,
+          "candidate_cursor": 190,
+          "request_seed": 1425161333
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48042",
+          "encounter_index": 191,
+          "candidate_epoch": 0,
+          "candidate_cursor": 191,
+          "request_seed": 405181211
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0023/commit.json",
+        "sha256": "6b0eb500daf4ac903e76c96e958904d56e1ba132f715f5aad8cf8061463f2de8",
+        "bytes": 58351
+      }
+    },
+    {
+      "window_index": 24,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:1036",
+          "encounter_index": 192,
+          "candidate_epoch": 0,
+          "candidate_cursor": 192,
+          "request_seed": 3330433066
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16821",
+          "encounter_index": 193,
+          "candidate_epoch": 0,
+          "candidate_cursor": 193,
+          "request_seed": 1422447228
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10368",
+          "encounter_index": 194,
+          "candidate_epoch": 0,
+          "candidate_cursor": 194,
+          "request_seed": 2007978550
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7311",
+          "encounter_index": 195,
+          "candidate_epoch": 0,
+          "candidate_cursor": 195,
+          "request_seed": 2562150028
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31399",
+          "encounter_index": 196,
+          "candidate_epoch": 0,
+          "candidate_cursor": 196,
+          "request_seed": 1547564637
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23416",
+          "encounter_index": 197,
+          "candidate_epoch": 0,
+          "candidate_cursor": 197,
+          "request_seed": 1703805477
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39568",
+          "encounter_index": 198,
+          "candidate_epoch": 0,
+          "candidate_cursor": 198,
+          "request_seed": 724556078
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7460",
+          "encounter_index": 199,
+          "candidate_epoch": 0,
+          "candidate_cursor": 199,
+          "request_seed": 268805675
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0024/commit.json",
+        "sha256": "23684379f5993080ce22bff46d5e643e96585249d5fd8e070bd8bb286709652a",
+        "bytes": 60648
+      }
+    },
+    {
+      "window_index": 25,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49483",
+          "encounter_index": 200,
+          "candidate_epoch": 0,
+          "candidate_cursor": 200,
+          "request_seed": 1418281696
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39786",
+          "encounter_index": 201,
+          "candidate_epoch": 0,
+          "candidate_cursor": 201,
+          "request_seed": 1193447822
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32335",
+          "encounter_index": 202,
+          "candidate_epoch": 0,
+          "candidate_cursor": 202,
+          "request_seed": 3637527224
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:44834",
+          "encounter_index": 203,
+          "candidate_epoch": 0,
+          "candidate_cursor": 203,
+          "request_seed": 1482603344
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22838",
+          "encounter_index": 204,
+          "candidate_epoch": 0,
+          "candidate_cursor": 204,
+          "request_seed": 298955742
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34763",
+          "encounter_index": 205,
+          "candidate_epoch": 0,
+          "candidate_cursor": 205,
+          "request_seed": 3367278394
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3253",
+          "encounter_index": 206,
+          "candidate_epoch": 0,
+          "candidate_cursor": 206,
+          "request_seed": 3779050605
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39514",
+          "encounter_index": 207,
+          "candidate_epoch": 0,
+          "candidate_cursor": 207,
+          "request_seed": 384900972
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0025/commit.json",
+        "sha256": "58630560bfcd6cbcd9c6671f6773a900908be1fd4ac430e6eb29698159b4de4f",
+        "bytes": 62997
+      }
+    },
+    {
+      "window_index": 26,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6853",
+          "encounter_index": 208,
+          "candidate_epoch": 0,
+          "candidate_cursor": 208,
+          "request_seed": 2848803788
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21656",
+          "encounter_index": 209,
+          "candidate_epoch": 0,
+          "candidate_cursor": 209,
+          "request_seed": 2251065727
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48432",
+          "encounter_index": 210,
+          "candidate_epoch": 0,
+          "candidate_cursor": 210,
+          "request_seed": 1457078289
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18361",
+          "encounter_index": 211,
+          "candidate_epoch": 0,
+          "candidate_cursor": 211,
+          "request_seed": 1577166008
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33070",
+          "encounter_index": 212,
+          "candidate_epoch": 0,
+          "candidate_cursor": 212,
+          "request_seed": 2647419322
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33842",
+          "encounter_index": 213,
+          "candidate_epoch": 0,
+          "candidate_cursor": 213,
+          "request_seed": 1794655159
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37379",
+          "encounter_index": 214,
+          "candidate_epoch": 0,
+          "candidate_cursor": 214,
+          "request_seed": 1486006409
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6914",
+          "encounter_index": 215,
+          "candidate_epoch": 0,
+          "candidate_cursor": 215,
+          "request_seed": 2484614457
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0026/commit.json",
+        "sha256": "f9097580044c02b92504da6fee89946b9067451c64db2271b4aacc47b6287e2e",
+        "bytes": 65193
+      }
+    },
+    {
+      "window_index": 27,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32155",
+          "encounter_index": 216,
+          "candidate_epoch": 0,
+          "candidate_cursor": 216,
+          "request_seed": 3318356195
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48162",
+          "encounter_index": 217,
+          "candidate_epoch": 0,
+          "candidate_cursor": 217,
+          "request_seed": 2545733219
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32580",
+          "encounter_index": 218,
+          "candidate_epoch": 0,
+          "candidate_cursor": 218,
+          "request_seed": 1544307445
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14792",
+          "encounter_index": 219,
+          "candidate_epoch": 0,
+          "candidate_cursor": 219,
+          "request_seed": 1740957085
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:5499",
+          "encounter_index": 220,
+          "candidate_epoch": 0,
+          "candidate_cursor": 220,
+          "request_seed": 1497324800
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18741",
+          "encounter_index": 221,
+          "candidate_epoch": 0,
+          "candidate_cursor": 221,
+          "request_seed": 3058466538
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23088",
+          "encounter_index": 222,
+          "candidate_epoch": 0,
+          "candidate_cursor": 222,
+          "request_seed": 620725714
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12623",
+          "encounter_index": 223,
+          "candidate_epoch": 0,
+          "candidate_cursor": 223,
+          "request_seed": 741139546
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0027/commit.json",
+        "sha256": "3962b79c04134fe3b5a559325bb00ca71dbf27a9b5318e6ce3ca2ea51ae955d2",
+        "bytes": 67525
+      }
+    },
+    {
+      "window_index": 28,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26760",
+          "encounter_index": 224,
+          "candidate_epoch": 0,
+          "candidate_cursor": 224,
+          "request_seed": 773647131
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13019",
+          "encounter_index": 225,
+          "candidate_epoch": 0,
+          "candidate_cursor": 225,
+          "request_seed": 1017296711
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40102",
+          "encounter_index": 226,
+          "candidate_epoch": 0,
+          "candidate_cursor": 226,
+          "request_seed": 4055974676
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15505",
+          "encounter_index": 227,
+          "candidate_epoch": 0,
+          "candidate_cursor": 227,
+          "request_seed": 1368198240
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30254",
+          "encounter_index": 228,
+          "candidate_epoch": 0,
+          "candidate_cursor": 228,
+          "request_seed": 2137886902
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43687",
+          "encounter_index": 229,
+          "candidate_epoch": 0,
+          "candidate_cursor": 229,
+          "request_seed": 619969212
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33058",
+          "encounter_index": 230,
+          "candidate_epoch": 0,
+          "candidate_cursor": 230,
+          "request_seed": 3886768422
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4727",
+          "encounter_index": 231,
+          "candidate_epoch": 0,
+          "candidate_cursor": 231,
+          "request_seed": 647541470
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0028/commit.json",
+        "sha256": "f387fbd09b9908ebe338a997d1a2a4cd23baa7d2a80e6b17c7924759b34aefc0",
+        "bytes": 69808
+      }
+    },
+    {
+      "window_index": 29,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47304",
+          "encounter_index": 232,
+          "candidate_epoch": 0,
+          "candidate_cursor": 232,
+          "request_seed": 1248919893
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3392",
+          "encounter_index": 233,
+          "candidate_epoch": 0,
+          "candidate_cursor": 233,
+          "request_seed": 492910141
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29250",
+          "encounter_index": 234,
+          "candidate_epoch": 0,
+          "candidate_cursor": 234,
+          "request_seed": 3051183209
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2756",
+          "encounter_index": 235,
+          "candidate_epoch": 0,
+          "candidate_cursor": 235,
+          "request_seed": 2283251624
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48317",
+          "encounter_index": 236,
+          "candidate_epoch": 0,
+          "candidate_cursor": 236,
+          "request_seed": 2817814859
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6957",
+          "encounter_index": 237,
+          "candidate_epoch": 0,
+          "candidate_cursor": 237,
+          "request_seed": 3835739145
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12349",
+          "encounter_index": 238,
+          "candidate_epoch": 0,
+          "candidate_cursor": 238,
+          "request_seed": 2486493117
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43366",
+          "encounter_index": 239,
+          "candidate_epoch": 0,
+          "candidate_cursor": 239,
+          "request_seed": 3774359386
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0029/commit.json",
+        "sha256": "22ab7ce6bb91bbac076641346b1ac1852853d115a464e6c69135b234c296b25a",
+        "bytes": 72113
+      }
+    },
+    {
+      "window_index": 30,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41407",
+          "encounter_index": 240,
+          "candidate_epoch": 0,
+          "candidate_cursor": 240,
+          "request_seed": 400830111
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52292",
+          "encounter_index": 241,
+          "candidate_epoch": 0,
+          "candidate_cursor": 241,
+          "request_seed": 862286387
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:24641",
+          "encounter_index": 242,
+          "candidate_epoch": 0,
+          "candidate_cursor": 242,
+          "request_seed": 2513400233
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16590",
+          "encounter_index": 243,
+          "candidate_epoch": 0,
+          "candidate_cursor": 243,
+          "request_seed": 965079813
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13927",
+          "encounter_index": 244,
+          "candidate_epoch": 0,
+          "candidate_cursor": 244,
+          "request_seed": 4076529370
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11817",
+          "encounter_index": 245,
+          "candidate_epoch": 0,
+          "candidate_cursor": 245,
+          "request_seed": 1622415641
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3607",
+          "encounter_index": 246,
+          "candidate_epoch": 0,
+          "candidate_cursor": 246,
+          "request_seed": 2072945072
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:238",
+          "encounter_index": 247,
+          "candidate_epoch": 0,
+          "candidate_cursor": 247,
+          "request_seed": 2259881741
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0030/commit.json",
+        "sha256": "bd60a6356c9f95c42689fc87397696d6213cb534bc60d08a3cb22e34cb6c8479",
+        "bytes": 74424
+      }
+    },
+    {
+      "window_index": 31,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40298",
+          "encounter_index": 248,
+          "candidate_epoch": 0,
+          "candidate_cursor": 248,
+          "request_seed": 2265514492
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50053",
+          "encounter_index": 249,
+          "candidate_epoch": 0,
+          "candidate_cursor": 249,
+          "request_seed": 3244745329
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21549",
+          "encounter_index": 250,
+          "candidate_epoch": 0,
+          "candidate_cursor": 250,
+          "request_seed": 3236559808
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14451",
+          "encounter_index": 251,
+          "candidate_epoch": 0,
+          "candidate_cursor": 251,
+          "request_seed": 490626053
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:35743",
+          "encounter_index": 252,
+          "candidate_epoch": 0,
+          "candidate_cursor": 252,
+          "request_seed": 2674898053
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11775",
+          "encounter_index": 253,
+          "candidate_epoch": 0,
+          "candidate_cursor": 253,
+          "request_seed": 2625017608
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19970",
+          "encounter_index": 254,
+          "candidate_epoch": 0,
+          "candidate_cursor": 254,
+          "request_seed": 2232672741
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47306",
+          "encounter_index": 255,
+          "candidate_epoch": 0,
+          "candidate_cursor": 255,
+          "request_seed": 4149415116
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0031/commit.json",
+        "sha256": "d9b2542bc97d054ae19a2223c8ac36be73de60e74535c32e2bb9101545bdc5a9",
+        "bytes": 76739
+      }
+    },
+    {
+      "window_index": 32,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:24895",
+          "encounter_index": 256,
+          "candidate_epoch": 0,
+          "candidate_cursor": 256,
+          "request_seed": 3177113379
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10001",
+          "encounter_index": 257,
+          "candidate_epoch": 0,
+          "candidate_cursor": 257,
+          "request_seed": 3640001900
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12013",
+          "encounter_index": 258,
+          "candidate_epoch": 0,
+          "candidate_cursor": 258,
+          "request_seed": 2527812820
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33009",
+          "encounter_index": 259,
+          "candidate_epoch": 0,
+          "candidate_cursor": 259,
+          "request_seed": 1491517444
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26055",
+          "encounter_index": 260,
+          "candidate_epoch": 0,
+          "candidate_cursor": 260,
+          "request_seed": 4002720478
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52882",
+          "encounter_index": 261,
+          "candidate_epoch": 0,
+          "candidate_cursor": 261,
+          "request_seed": 373945846
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13397",
+          "encounter_index": 262,
+          "candidate_epoch": 0,
+          "candidate_cursor": 262,
+          "request_seed": 2826165024
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18368",
+          "encounter_index": 263,
+          "candidate_epoch": 0,
+          "candidate_cursor": 263,
+          "request_seed": 1268448541
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0032/commit.json",
+        "sha256": "7b03d8eb7decdbc1d58bce05c3fbc85aceb28872dcca372030df2a5cc9d1eb4b",
+        "bytes": 79010
+      }
+    },
+    {
+      "window_index": 33,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13449",
+          "encounter_index": 264,
+          "candidate_epoch": 0,
+          "candidate_cursor": 264,
+          "request_seed": 922880422
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:1438",
+          "encounter_index": 265,
+          "candidate_epoch": 0,
+          "candidate_cursor": 265,
+          "request_seed": 2199183177
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37986",
+          "encounter_index": 266,
+          "candidate_epoch": 0,
+          "candidate_cursor": 266,
+          "request_seed": 1770111885
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17971",
+          "encounter_index": 267,
+          "candidate_epoch": 0,
+          "candidate_cursor": 267,
+          "request_seed": 3179327564
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33159",
+          "encounter_index": 268,
+          "candidate_epoch": 0,
+          "candidate_cursor": 268,
+          "request_seed": 2194687111
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10989",
+          "encounter_index": 269,
+          "candidate_epoch": 0,
+          "candidate_cursor": 269,
+          "request_seed": 2393789087
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40671",
+          "encounter_index": 270,
+          "candidate_epoch": 0,
+          "candidate_cursor": 270,
+          "request_seed": 2857876125
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33961",
+          "encounter_index": 271,
+          "candidate_epoch": 0,
+          "candidate_cursor": 271,
+          "request_seed": 2541583202
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0033/commit.json",
+        "sha256": "826801ff3b2ada837e83dcd5735b53f798c662988e2643142e248e8dbc9ce5b5",
+        "bytes": 81330
+      }
+    },
+    {
+      "window_index": 34,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28844",
+          "encounter_index": 272,
+          "candidate_epoch": 0,
+          "candidate_cursor": 272,
+          "request_seed": 159246522
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29965",
+          "encounter_index": 273,
+          "candidate_epoch": 0,
+          "candidate_cursor": 273,
+          "request_seed": 3580208927
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42000",
+          "encounter_index": 274,
+          "candidate_epoch": 0,
+          "candidate_cursor": 274,
+          "request_seed": 1784834097
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:46421",
+          "encounter_index": 275,
+          "candidate_epoch": 0,
+          "candidate_cursor": 275,
+          "request_seed": 4140171628
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13639",
+          "encounter_index": 276,
+          "candidate_epoch": 0,
+          "candidate_cursor": 276,
+          "request_seed": 503652740
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52070",
+          "encounter_index": 277,
+          "candidate_epoch": 0,
+          "candidate_cursor": 277,
+          "request_seed": 1959880558
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51442",
+          "encounter_index": 278,
+          "candidate_epoch": 0,
+          "candidate_cursor": 278,
+          "request_seed": 3505380014
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18060",
+          "encounter_index": 279,
+          "candidate_epoch": 0,
+          "candidate_cursor": 279,
+          "request_seed": 166538265
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0034/commit.json",
+        "sha256": "df4ea62a4c11e7ded93bbddda6be301d65b52b9b82a37edefb6566895ff37c08",
+        "bytes": 83634
+      }
+    },
+    {
+      "window_index": 35,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:5363",
+          "encounter_index": 280,
+          "candidate_epoch": 0,
+          "candidate_cursor": 280,
+          "request_seed": 2448311220
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10196",
+          "encounter_index": 281,
+          "candidate_epoch": 0,
+          "candidate_cursor": 281,
+          "request_seed": 4026837073
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2926",
+          "encounter_index": 282,
+          "candidate_epoch": 0,
+          "candidate_cursor": 282,
+          "request_seed": 1135596752
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13611",
+          "encounter_index": 283,
+          "candidate_epoch": 0,
+          "candidate_cursor": 283,
+          "request_seed": 2447901276
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50786",
+          "encounter_index": 284,
+          "candidate_epoch": 0,
+          "candidate_cursor": 284,
+          "request_seed": 2948629603
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50111",
+          "encounter_index": 285,
+          "candidate_epoch": 0,
+          "candidate_cursor": 285,
+          "request_seed": 2945910588
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17675",
+          "encounter_index": 286,
+          "candidate_epoch": 0,
+          "candidate_cursor": 286,
+          "request_seed": 2631778231
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9081",
+          "encounter_index": 287,
+          "candidate_epoch": 0,
+          "candidate_cursor": 287,
+          "request_seed": 2715017960
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0035/commit.json",
+        "sha256": "418cb0970bfe186d17a31edb171f78a4b773629b9d07402501c7116cbcb930ef",
+        "bytes": 85917
+      }
+    },
+    {
+      "window_index": 36,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30448",
+          "encounter_index": 288,
+          "candidate_epoch": 0,
+          "candidate_cursor": 288,
+          "request_seed": 2212417460
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34879",
+          "encounter_index": 289,
+          "candidate_epoch": 0,
+          "candidate_cursor": 289,
+          "request_seed": 972306963
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31023",
+          "encounter_index": 290,
+          "candidate_epoch": 0,
+          "candidate_cursor": 290,
+          "request_seed": 1874191047
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2947",
+          "encounter_index": 291,
+          "candidate_epoch": 0,
+          "candidate_cursor": 291,
+          "request_seed": 533101703
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51995",
+          "encounter_index": 292,
+          "candidate_epoch": 0,
+          "candidate_cursor": 292,
+          "request_seed": 2004660794
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36487",
+          "encounter_index": 293,
+          "candidate_epoch": 0,
+          "candidate_cursor": 293,
+          "request_seed": 3177309605
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37895",
+          "encounter_index": 294,
+          "candidate_epoch": 0,
+          "candidate_cursor": 294,
+          "request_seed": 3464761118
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49420",
+          "encounter_index": 295,
+          "candidate_epoch": 0,
+          "candidate_cursor": 295,
+          "request_seed": 3828303175
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0036/commit.json",
+        "sha256": "9b794f52df71d07fd955677fa70ee36f3c2a7a549443d4862428f373642cc062",
+        "bytes": 88132
+      }
+    },
+    {
+      "window_index": 37,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36132",
+          "encounter_index": 296,
+          "candidate_epoch": 0,
+          "candidate_cursor": 296,
+          "request_seed": 719644629
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6231",
+          "encounter_index": 297,
+          "candidate_epoch": 0,
+          "candidate_cursor": 297,
+          "request_seed": 560957574
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9196",
+          "encounter_index": 298,
+          "candidate_epoch": 0,
+          "candidate_cursor": 298,
+          "request_seed": 1888970940
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4162",
+          "encounter_index": 299,
+          "candidate_epoch": 0,
+          "candidate_cursor": 299,
+          "request_seed": 759876851
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16692",
+          "encounter_index": 300,
+          "candidate_epoch": 0,
+          "candidate_cursor": 300,
+          "request_seed": 3239443912
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4995",
+          "encounter_index": 301,
+          "candidate_epoch": 0,
+          "candidate_cursor": 301,
+          "request_seed": 3028164171
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27026",
+          "encounter_index": 302,
+          "candidate_epoch": 0,
+          "candidate_cursor": 302,
+          "request_seed": 2848717148
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19195",
+          "encounter_index": 303,
+          "candidate_epoch": 0,
+          "candidate_cursor": 303,
+          "request_seed": 3764999228
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0037/commit.json",
+        "sha256": "44a52c7d8bdea9452a185aa00d39851fbe5177634e57f1a500cf61092c0c82b2",
+        "bytes": 90457
+      }
+    },
+    {
+      "window_index": 38,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39090",
+          "encounter_index": 304,
+          "candidate_epoch": 0,
+          "candidate_cursor": 304,
+          "request_seed": 3872008839
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13302",
+          "encounter_index": 305,
+          "candidate_epoch": 0,
+          "candidate_cursor": 305,
+          "request_seed": 918933833
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28023",
+          "encounter_index": 306,
+          "candidate_epoch": 0,
+          "candidate_cursor": 306,
+          "request_seed": 902208761
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29863",
+          "encounter_index": 307,
+          "candidate_epoch": 0,
+          "candidate_cursor": 307,
+          "request_seed": 1117260408
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20861",
+          "encounter_index": 308,
+          "candidate_epoch": 0,
+          "candidate_cursor": 308,
+          "request_seed": 17445634
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7505",
+          "encounter_index": 309,
+          "candidate_epoch": 0,
+          "candidate_cursor": 309,
+          "request_seed": 2609610930
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12656",
+          "encounter_index": 310,
+          "candidate_epoch": 0,
+          "candidate_cursor": 310,
+          "request_seed": 1926223830
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36278",
+          "encounter_index": 311,
+          "candidate_epoch": 0,
+          "candidate_cursor": 311,
+          "request_seed": 489980246
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0038/commit.json",
+        "sha256": "0a2f5fe54afda0a80668fc48f8f5604527024f7a8654d84fd968fb4a4b7c9d8d",
+        "bytes": 92800
+      }
+    },
+    {
+      "window_index": 39,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51544",
+          "encounter_index": 312,
+          "candidate_epoch": 0,
+          "candidate_cursor": 312,
+          "request_seed": 1253368284
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:35224",
+          "encounter_index": 313,
+          "candidate_epoch": 0,
+          "candidate_cursor": 313,
+          "request_seed": 3207240657
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13728",
+          "encounter_index": 314,
+          "candidate_epoch": 0,
+          "candidate_cursor": 314,
+          "request_seed": 2759484170
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49378",
+          "encounter_index": 315,
+          "candidate_epoch": 0,
+          "candidate_cursor": 315,
+          "request_seed": 1082245569
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11734",
+          "encounter_index": 316,
+          "candidate_epoch": 0,
+          "candidate_cursor": 316,
+          "request_seed": 2070171156
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22920",
+          "encounter_index": 317,
+          "candidate_epoch": 0,
+          "candidate_cursor": 317,
+          "request_seed": 355606630
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39858",
+          "encounter_index": 318,
+          "candidate_epoch": 0,
+          "candidate_cursor": 318,
+          "request_seed": 2718391140
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49425",
+          "encounter_index": 319,
+          "candidate_epoch": 0,
+          "candidate_cursor": 319,
+          "request_seed": 1320825574
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0039/commit.json",
+        "sha256": "961cb4a630fa94304daf44bed53813de4f6050626f5d4fba147edd580dac61df",
+        "bytes": 95144
+      }
+    },
+    {
+      "window_index": 40,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17011",
+          "encounter_index": 320,
+          "candidate_epoch": 0,
+          "candidate_cursor": 320,
+          "request_seed": 895169752
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8635",
+          "encounter_index": 321,
+          "candidate_epoch": 0,
+          "candidate_cursor": 321,
+          "request_seed": 2671127194
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40235",
+          "encounter_index": 322,
+          "candidate_epoch": 0,
+          "candidate_cursor": 322,
+          "request_seed": 1232696639
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28890",
+          "encounter_index": 323,
+          "candidate_epoch": 0,
+          "candidate_cursor": 323,
+          "request_seed": 4008849442
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:45855",
+          "encounter_index": 324,
+          "candidate_epoch": 0,
+          "candidate_cursor": 324,
+          "request_seed": 1346532765
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:25045",
+          "encounter_index": 325,
+          "candidate_epoch": 0,
+          "candidate_cursor": 325,
+          "request_seed": 1522174110
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2695",
+          "encounter_index": 326,
+          "candidate_epoch": 0,
+          "candidate_cursor": 326,
+          "request_seed": 3094583502
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2476",
+          "encounter_index": 327,
+          "candidate_epoch": 0,
+          "candidate_cursor": 327,
+          "request_seed": 748805237
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0040/commit.json",
+        "sha256": "b8ffd852ea34d2bccd5a1495254e90c6a966ef7684e0466ea0a480fd223d2e25",
+        "bytes": 97403
+      }
+    },
+    {
+      "window_index": 41,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11897",
+          "encounter_index": 328,
+          "candidate_epoch": 0,
+          "candidate_cursor": 328,
+          "request_seed": 2659492707
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29873",
+          "encounter_index": 329,
+          "candidate_epoch": 0,
+          "candidate_cursor": 329,
+          "request_seed": 3203318488
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42640",
+          "encounter_index": 330,
+          "candidate_epoch": 0,
+          "candidate_cursor": 330,
+          "request_seed": 470332925
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42641",
+          "encounter_index": 331,
+          "candidate_epoch": 0,
+          "candidate_cursor": 331,
+          "request_seed": 2484086411
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:35964",
+          "encounter_index": 332,
+          "candidate_epoch": 0,
+          "candidate_cursor": 332,
+          "request_seed": 1714993237
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49977",
+          "encounter_index": 333,
+          "candidate_epoch": 0,
+          "candidate_cursor": 333,
+          "request_seed": 2523812546
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:25229",
+          "encounter_index": 334,
+          "candidate_epoch": 0,
+          "candidate_cursor": 334,
+          "request_seed": 4204098950
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51983",
+          "encounter_index": 335,
+          "candidate_epoch": 0,
+          "candidate_cursor": 335,
+          "request_seed": 1837504536
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0041/commit.json",
+        "sha256": "5df5ffc45c309cc9f9b3b3a9645c4ec2553cc5f52fda528b02d5e429f5ab14d2",
+        "bytes": 99684
+      }
+    },
+    {
+      "window_index": 42,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4732",
+          "encounter_index": 336,
+          "candidate_epoch": 0,
+          "candidate_cursor": 336,
+          "request_seed": 3849646752
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:1338",
+          "encounter_index": 337,
+          "candidate_epoch": 0,
+          "candidate_cursor": 337,
+          "request_seed": 47294252
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48281",
+          "encounter_index": 338,
+          "candidate_epoch": 0,
+          "candidate_cursor": 338,
+          "request_seed": 3225045841
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28690",
+          "encounter_index": 339,
+          "candidate_epoch": 0,
+          "candidate_cursor": 339,
+          "request_seed": 2750521646
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20130",
+          "encounter_index": 340,
+          "candidate_epoch": 0,
+          "candidate_cursor": 340,
+          "request_seed": 2185413117
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48821",
+          "encounter_index": 341,
+          "candidate_epoch": 0,
+          "candidate_cursor": 341,
+          "request_seed": 1426843443
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21720",
+          "encounter_index": 342,
+          "candidate_epoch": 0,
+          "candidate_cursor": 342,
+          "request_seed": 1772839598
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13725",
+          "encounter_index": 343,
+          "candidate_epoch": 0,
+          "candidate_cursor": 343,
+          "request_seed": 1447969524
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0042/commit.json",
+        "sha256": "4c98bb6624c4fc72eed729649512d7fb3293d4319d69f15970f72060d4b0ba71",
+        "bytes": 102050
+      }
+    },
+    {
+      "window_index": 43,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41029",
+          "encounter_index": 344,
+          "candidate_epoch": 0,
+          "candidate_cursor": 344,
+          "request_seed": 199459742
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48677",
+          "encounter_index": 345,
+          "candidate_epoch": 0,
+          "candidate_cursor": 345,
+          "request_seed": 3866066201
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17780",
+          "encounter_index": 346,
+          "candidate_epoch": 0,
+          "candidate_cursor": 346,
+          "request_seed": 476333105
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23883",
+          "encounter_index": 347,
+          "candidate_epoch": 0,
+          "candidate_cursor": 347,
+          "request_seed": 2430448150
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53139",
+          "encounter_index": 348,
+          "candidate_epoch": 0,
+          "candidate_cursor": 348,
+          "request_seed": 560028143
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4358",
+          "encounter_index": 349,
+          "candidate_epoch": 0,
+          "candidate_cursor": 349,
+          "request_seed": 818990501
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:44409",
+          "encounter_index": 350,
+          "candidate_epoch": 0,
+          "candidate_cursor": 350,
+          "request_seed": 3277311951
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50294",
+          "encounter_index": 351,
+          "candidate_epoch": 0,
+          "candidate_cursor": 351,
+          "request_seed": 3867046407
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0043/commit.json",
+        "sha256": "c8787caff4634d8dae7d42d07833000afca5c93e8511b11f52767f23ed73c8ae",
+        "bytes": 104317
+      }
+    },
+    {
+      "window_index": 44,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34510",
+          "encounter_index": 352,
+          "candidate_epoch": 0,
+          "candidate_cursor": 352,
+          "request_seed": 3735212365
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15872",
+          "encounter_index": 353,
+          "candidate_epoch": 0,
+          "candidate_cursor": 353,
+          "request_seed": 949764095
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47642",
+          "encounter_index": 354,
+          "candidate_epoch": 0,
+          "candidate_cursor": 354,
+          "request_seed": 579997873
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18465",
+          "encounter_index": 355,
+          "candidate_epoch": 0,
+          "candidate_cursor": 355,
+          "request_seed": 1740707034
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41666",
+          "encounter_index": 356,
+          "candidate_epoch": 0,
+          "candidate_cursor": 356,
+          "request_seed": 1337978714
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4248",
+          "encounter_index": 357,
+          "candidate_epoch": 0,
+          "candidate_cursor": 357,
+          "request_seed": 333007387
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:44781",
+          "encounter_index": 358,
+          "candidate_epoch": 0,
+          "candidate_cursor": 358,
+          "request_seed": 2860527130
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:43070",
+          "encounter_index": 359,
+          "candidate_epoch": 0,
+          "candidate_cursor": 359,
+          "request_seed": 3616633540
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0044/commit.json",
+        "sha256": "45b0b269e2b534324f2a2787e2d22ff5d184957789c8ed1d175d938bcc178ef3",
+        "bytes": 106605
+      }
+    },
+    {
+      "window_index": 45,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50089",
+          "encounter_index": 360,
+          "candidate_epoch": 0,
+          "candidate_cursor": 360,
+          "request_seed": 4281666280
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53632",
+          "encounter_index": 361,
+          "candidate_epoch": 0,
+          "candidate_cursor": 361,
+          "request_seed": 116028887
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14252",
+          "encounter_index": 362,
+          "candidate_epoch": 0,
+          "candidate_cursor": 362,
+          "request_seed": 148325941
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8061",
+          "encounter_index": 363,
+          "candidate_epoch": 0,
+          "candidate_cursor": 363,
+          "request_seed": 3184446247
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12073",
+          "encounter_index": 364,
+          "candidate_epoch": 0,
+          "candidate_cursor": 364,
+          "request_seed": 752115453
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9261",
+          "encounter_index": 365,
+          "candidate_epoch": 0,
+          "candidate_cursor": 365,
+          "request_seed": 3593784221
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49184",
+          "encounter_index": 366,
+          "candidate_epoch": 0,
+          "candidate_cursor": 366,
+          "request_seed": 3093551538
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42650",
+          "encounter_index": 367,
+          "candidate_epoch": 0,
+          "candidate_cursor": 367,
+          "request_seed": 1515314113
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0045/commit.json",
+        "sha256": "16c18fcc8cc74314946900f87486bdac1e348e7bcf8e295f74f918ee4c7f6f37",
+        "bytes": 108941
+      }
+    },
+    {
+      "window_index": 46,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2589",
+          "encounter_index": 368,
+          "candidate_epoch": 0,
+          "candidate_cursor": 368,
+          "request_seed": 3157929107
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:265",
+          "encounter_index": 369,
+          "candidate_epoch": 0,
+          "candidate_cursor": 369,
+          "request_seed": 854551080
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19666",
+          "encounter_index": 370,
+          "candidate_epoch": 0,
+          "candidate_cursor": 370,
+          "request_seed": 2675796577
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:29644",
+          "encounter_index": 371,
+          "candidate_epoch": 0,
+          "candidate_cursor": 371,
+          "request_seed": 27983226
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37604",
+          "encounter_index": 372,
+          "candidate_epoch": 0,
+          "candidate_cursor": 372,
+          "request_seed": 3488964144
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16196",
+          "encounter_index": 373,
+          "candidate_epoch": 0,
+          "candidate_cursor": 373,
+          "request_seed": 3941730463
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48428",
+          "encounter_index": 374,
+          "candidate_epoch": 0,
+          "candidate_cursor": 374,
+          "request_seed": 3691816780
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23388",
+          "encounter_index": 375,
+          "candidate_epoch": 0,
+          "candidate_cursor": 375,
+          "request_seed": 2170981511
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0046/commit.json",
+        "sha256": "6e7553c0eb94628abe47285365dcfbc3da51d2a50d210fa139780e2d49ff8992",
+        "bytes": 111206
+      }
+    },
+    {
+      "window_index": 47,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28708",
+          "encounter_index": 376,
+          "candidate_epoch": 0,
+          "candidate_cursor": 376,
+          "request_seed": 916526715
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37304",
+          "encounter_index": 377,
+          "candidate_epoch": 0,
+          "candidate_cursor": 377,
+          "request_seed": 1505284821
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50460",
+          "encounter_index": 378,
+          "candidate_epoch": 0,
+          "candidate_cursor": 378,
+          "request_seed": 278056178
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:5124",
+          "encounter_index": 379,
+          "candidate_epoch": 0,
+          "candidate_cursor": 379,
+          "request_seed": 3238021999
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:16919",
+          "encounter_index": 380,
+          "candidate_epoch": 0,
+          "candidate_cursor": 380,
+          "request_seed": 1783718975
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33853",
+          "encounter_index": 381,
+          "candidate_epoch": 0,
+          "candidate_cursor": 381,
+          "request_seed": 1822410143
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:24879",
+          "encounter_index": 382,
+          "candidate_epoch": 0,
+          "candidate_cursor": 382,
+          "request_seed": 2110994667
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7365",
+          "encounter_index": 383,
+          "candidate_epoch": 0,
+          "candidate_cursor": 383,
+          "request_seed": 2067650466
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0047/commit.json",
+        "sha256": "fcf489a55347f3aa9a4bf44f17885253f4291e8b1faafc33d303f00fea46c35f",
+        "bytes": 113495
+      }
+    },
+    {
+      "window_index": 48,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4775",
+          "encounter_index": 384,
+          "candidate_epoch": 0,
+          "candidate_cursor": 384,
+          "request_seed": 1094741016
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26288",
+          "encounter_index": 385,
+          "candidate_epoch": 0,
+          "candidate_cursor": 385,
+          "request_seed": 56042120
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:48246",
+          "encounter_index": 386,
+          "candidate_epoch": 0,
+          "candidate_cursor": 386,
+          "request_seed": 1137455955
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36973",
+          "encounter_index": 387,
+          "candidate_epoch": 0,
+          "candidate_cursor": 387,
+          "request_seed": 2491973189
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22649",
+          "encounter_index": 388,
+          "candidate_epoch": 0,
+          "candidate_cursor": 388,
+          "request_seed": 3103223219
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:5247",
+          "encounter_index": 389,
+          "candidate_epoch": 0,
+          "candidate_cursor": 389,
+          "request_seed": 1397702430
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18005",
+          "encounter_index": 390,
+          "candidate_epoch": 0,
+          "candidate_cursor": 390,
+          "request_seed": 3756851084
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4165",
+          "encounter_index": 391,
+          "candidate_epoch": 0,
+          "candidate_cursor": 391,
+          "request_seed": 380908965
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0048/commit.json",
+        "sha256": "92f3ee867f04176f2dcccf9f80af240e6b9b48dcc1c040656afd7b6b16b0958d",
+        "bytes": 115800
+      }
+    },
+    {
+      "window_index": 49,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42070",
+          "encounter_index": 392,
+          "candidate_epoch": 0,
+          "candidate_cursor": 392,
+          "request_seed": 4014439858
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9085",
+          "encounter_index": 393,
+          "candidate_epoch": 0,
+          "candidate_cursor": 393,
+          "request_seed": 3408468089
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4258",
+          "encounter_index": 394,
+          "candidate_epoch": 0,
+          "candidate_cursor": 394,
+          "request_seed": 4100828877
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12453",
+          "encounter_index": 395,
+          "candidate_epoch": 0,
+          "candidate_cursor": 395,
+          "request_seed": 3411179120
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:46351",
+          "encounter_index": 396,
+          "candidate_epoch": 0,
+          "candidate_cursor": 396,
+          "request_seed": 1894449188
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32840",
+          "encounter_index": 397,
+          "candidate_epoch": 0,
+          "candidate_cursor": 397,
+          "request_seed": 2943991157
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:215",
+          "encounter_index": 398,
+          "candidate_epoch": 0,
+          "candidate_cursor": 398,
+          "request_seed": 1339000221
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6539",
+          "encounter_index": 399,
+          "candidate_epoch": 0,
+          "candidate_cursor": 399,
+          "request_seed": 421556881
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0049/commit.json",
+        "sha256": "b2273f592d7059bdf3050b6e349b04265425387dbb0fc33df1732a0d4a4fb497",
+        "bytes": 118065
+      }
+    },
+    {
+      "window_index": 50,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12644",
+          "encounter_index": 400,
+          "candidate_epoch": 0,
+          "candidate_cursor": 400,
+          "request_seed": 2142716456
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17643",
+          "encounter_index": 401,
+          "candidate_epoch": 0,
+          "candidate_cursor": 401,
+          "request_seed": 1102133520
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14615",
+          "encounter_index": 402,
+          "candidate_epoch": 0,
+          "candidate_cursor": 402,
+          "request_seed": 1973932292
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:45540",
+          "encounter_index": 403,
+          "candidate_epoch": 0,
+          "candidate_cursor": 403,
+          "request_seed": 587502239
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27839",
+          "encounter_index": 404,
+          "candidate_epoch": 0,
+          "candidate_cursor": 404,
+          "request_seed": 3581078233
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42350",
+          "encounter_index": 405,
+          "candidate_epoch": 0,
+          "candidate_cursor": 405,
+          "request_seed": 2058524598
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53207",
+          "encounter_index": 406,
+          "candidate_epoch": 0,
+          "candidate_cursor": 406,
+          "request_seed": 2359036101
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52104",
+          "encounter_index": 407,
+          "candidate_epoch": 0,
+          "candidate_cursor": 407,
+          "request_seed": 289120275
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0050/commit.json",
+        "sha256": "485c1a711834a4d730bc0f26d61c9ad2b62342ba34a87bddfad464196fd3a722",
+        "bytes": 120380
+      }
+    },
+    {
+      "window_index": 51,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:31508",
+          "encounter_index": 408,
+          "candidate_epoch": 0,
+          "candidate_cursor": 408,
+          "request_seed": 2549211747
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7616",
+          "encounter_index": 409,
+          "candidate_epoch": 0,
+          "candidate_cursor": 409,
+          "request_seed": 1891295377
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9791",
+          "encounter_index": 410,
+          "candidate_epoch": 0,
+          "candidate_cursor": 410,
+          "request_seed": 356201252
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:35797",
+          "encounter_index": 411,
+          "candidate_epoch": 0,
+          "candidate_cursor": 411,
+          "request_seed": 1959939718
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2648",
+          "encounter_index": 412,
+          "candidate_epoch": 0,
+          "candidate_cursor": 412,
+          "request_seed": 3640750106
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7430",
+          "encounter_index": 413,
+          "candidate_epoch": 0,
+          "candidate_cursor": 413,
+          "request_seed": 3305042159
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40325",
+          "encounter_index": 414,
+          "candidate_epoch": 0,
+          "candidate_cursor": 414,
+          "request_seed": 2601463320
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:4260",
+          "encounter_index": 415,
+          "candidate_epoch": 0,
+          "candidate_cursor": 415,
+          "request_seed": 4207736155
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0051/commit.json",
+        "sha256": "0eadcd0c67404297134d76ab2eeabfff47c4fc711974797fb03ccc8e1a2a6977",
+        "bytes": 122629
+      }
+    },
+    {
+      "window_index": 52,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50038",
+          "encounter_index": 416,
+          "candidate_epoch": 0,
+          "candidate_cursor": 416,
+          "request_seed": 2362467284
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6429",
+          "encounter_index": 417,
+          "candidate_epoch": 0,
+          "candidate_cursor": 417,
+          "request_seed": 3029079773
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21416",
+          "encounter_index": 418,
+          "candidate_epoch": 0,
+          "candidate_cursor": 418,
+          "request_seed": 2395528064
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6660",
+          "encounter_index": 419,
+          "candidate_epoch": 0,
+          "candidate_cursor": 419,
+          "request_seed": 2868992078
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50020",
+          "encounter_index": 420,
+          "candidate_epoch": 0,
+          "candidate_cursor": 420,
+          "request_seed": 1723426094
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20248",
+          "encounter_index": 421,
+          "candidate_epoch": 0,
+          "candidate_cursor": 421,
+          "request_seed": 446695145
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12983",
+          "encounter_index": 422,
+          "candidate_epoch": 0,
+          "candidate_cursor": 422,
+          "request_seed": 3652313067
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20288",
+          "encounter_index": 423,
+          "candidate_epoch": 0,
+          "candidate_cursor": 423,
+          "request_seed": 1073125363
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0052/commit.json",
+        "sha256": "f5ffd1646d00b6668ad041125d5aabeba5da8a696721a11b2156566cb00bcccc",
+        "bytes": 124967
+      }
+    },
+    {
+      "window_index": 53,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47438",
+          "encounter_index": 424,
+          "candidate_epoch": 0,
+          "candidate_cursor": 424,
+          "request_seed": 4168487459
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53682",
+          "encounter_index": 425,
+          "candidate_epoch": 0,
+          "candidate_cursor": 425,
+          "request_seed": 2671206961
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17814",
+          "encounter_index": 426,
+          "candidate_epoch": 0,
+          "candidate_cursor": 426,
+          "request_seed": 2569526155
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10340",
+          "encounter_index": 427,
+          "candidate_epoch": 0,
+          "candidate_cursor": 427,
+          "request_seed": 3565662986
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39415",
+          "encounter_index": 428,
+          "candidate_epoch": 0,
+          "candidate_cursor": 428,
+          "request_seed": 2722193870
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:20325",
+          "encounter_index": 429,
+          "candidate_epoch": 0,
+          "candidate_cursor": 429,
+          "request_seed": 2319114880
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17716",
+          "encounter_index": 430,
+          "candidate_epoch": 0,
+          "candidate_cursor": 430,
+          "request_seed": 3775392434
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:18708",
+          "encounter_index": 431,
+          "candidate_epoch": 0,
+          "candidate_cursor": 431,
+          "request_seed": 1529571630
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0053/commit.json",
+        "sha256": "0411f84c22ddb215641890f4633820f4bd5bdfce33be012e87074ee02ddbcb3d",
+        "bytes": 127241
+      }
+    },
+    {
+      "window_index": 54,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40275",
+          "encounter_index": 432,
+          "candidate_epoch": 0,
+          "candidate_cursor": 432,
+          "request_seed": 3623844144
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:21045",
+          "encounter_index": 433,
+          "candidate_epoch": 0,
+          "candidate_cursor": 433,
+          "request_seed": 1013693921
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39408",
+          "encounter_index": 434,
+          "candidate_epoch": 0,
+          "candidate_cursor": 434,
+          "request_seed": 3081433228
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:125",
+          "encounter_index": 435,
+          "candidate_epoch": 0,
+          "candidate_cursor": 435,
+          "request_seed": 3088135218
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:54219",
+          "encounter_index": 436,
+          "candidate_epoch": 0,
+          "candidate_cursor": 436,
+          "request_seed": 555096638
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47191",
+          "encounter_index": 437,
+          "candidate_epoch": 0,
+          "candidate_cursor": 437,
+          "request_seed": 3043637104
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:44665",
+          "encounter_index": 438,
+          "candidate_epoch": 0,
+          "candidate_cursor": 438,
+          "request_seed": 1208382308
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:27783",
+          "encounter_index": 439,
+          "candidate_epoch": 0,
+          "candidate_cursor": 439,
+          "request_seed": 707711959
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0054/commit.json",
+        "sha256": "4958515c190e89447165274a873802e664c1bde23f95067e3061d275b59ee151",
+        "bytes": 129577
+      }
+    },
+    {
+      "window_index": 55,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50675",
+          "encounter_index": 440,
+          "candidate_epoch": 0,
+          "candidate_cursor": 440,
+          "request_seed": 1421842582
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49838",
+          "encounter_index": 441,
+          "candidate_epoch": 0,
+          "candidate_cursor": 441,
+          "request_seed": 2840447652
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:24218",
+          "encounter_index": 442,
+          "candidate_epoch": 0,
+          "candidate_cursor": 442,
+          "request_seed": 1496738667
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2322",
+          "encounter_index": 443,
+          "candidate_epoch": 0,
+          "candidate_cursor": 443,
+          "request_seed": 1445201958
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23402",
+          "encounter_index": 444,
+          "candidate_epoch": 0,
+          "candidate_cursor": 444,
+          "request_seed": 4113676750
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:32358",
+          "encounter_index": 445,
+          "candidate_epoch": 0,
+          "candidate_cursor": 445,
+          "request_seed": 1109660733
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:25206",
+          "encounter_index": 446,
+          "candidate_epoch": 0,
+          "candidate_cursor": 446,
+          "request_seed": 3997419561
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39882",
+          "encounter_index": 447,
+          "candidate_epoch": 0,
+          "candidate_cursor": 447,
+          "request_seed": 2986372585
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0055/commit.json",
+        "sha256": "13d6e788e8840815a02c1c77c98701011ea32fe50fd8c358fb0c6dd2593768ea",
+        "bytes": 131834
+      }
+    },
+    {
+      "window_index": 56,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34807",
+          "encounter_index": 448,
+          "candidate_epoch": 0,
+          "candidate_cursor": 448,
+          "request_seed": 1710858231
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49124",
+          "encounter_index": 449,
+          "candidate_epoch": 0,
+          "candidate_cursor": 449,
+          "request_seed": 606478690
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23668",
+          "encounter_index": 450,
+          "candidate_epoch": 0,
+          "candidate_cursor": 450,
+          "request_seed": 263049029
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:51175",
+          "encounter_index": 451,
+          "candidate_epoch": 0,
+          "candidate_cursor": 451,
+          "request_seed": 1475988021
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2907",
+          "encounter_index": 452,
+          "candidate_epoch": 0,
+          "candidate_cursor": 452,
+          "request_seed": 3548117475
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26428",
+          "encounter_index": 453,
+          "candidate_epoch": 0,
+          "candidate_cursor": 453,
+          "request_seed": 2525906605
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:14592",
+          "encounter_index": 454,
+          "candidate_epoch": 0,
+          "candidate_cursor": 454,
+          "request_seed": 1313004912
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:15552",
+          "encounter_index": 455,
+          "candidate_epoch": 0,
+          "candidate_cursor": 455,
+          "request_seed": 2431880036
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0056/commit.json",
+        "sha256": "50344aafe8daa1c4f1e3c02e33d3cde6d59340fce59d442af29035131ba0e4d6",
+        "bytes": 134211
+      }
+    },
+    {
+      "window_index": 57,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:5147",
+          "encounter_index": 456,
+          "candidate_epoch": 0,
+          "candidate_cursor": 456,
+          "request_seed": 942864965
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:34081",
+          "encounter_index": 457,
+          "candidate_epoch": 0,
+          "candidate_cursor": 457,
+          "request_seed": 1225604599
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:28407",
+          "encounter_index": 458,
+          "candidate_epoch": 0,
+          "candidate_cursor": 458,
+          "request_seed": 781735180
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11674",
+          "encounter_index": 459,
+          "candidate_epoch": 0,
+          "candidate_cursor": 459,
+          "request_seed": 646255157
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2305",
+          "encounter_index": 460,
+          "candidate_epoch": 0,
+          "candidate_cursor": 460,
+          "request_seed": 2088118531
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:53758",
+          "encounter_index": 461,
+          "candidate_epoch": 0,
+          "candidate_cursor": 461,
+          "request_seed": 2511042279
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33180",
+          "encounter_index": 462,
+          "candidate_epoch": 0,
+          "candidate_cursor": 462,
+          "request_seed": 709898443
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:6829",
+          "encounter_index": 463,
+          "candidate_epoch": 0,
+          "candidate_cursor": 463,
+          "request_seed": 1279496256
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0057/commit.json",
+        "sha256": "8d923cd623b11ccf7cf1a1424ce3b27a488b70c2d5a42e6dba1d9faebaa4a3d2",
+        "bytes": 136455
+      }
+    },
+    {
+      "window_index": 58,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8625",
+          "encounter_index": 464,
+          "candidate_epoch": 0,
+          "candidate_cursor": 464,
+          "request_seed": 4005689097
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:39785",
+          "encounter_index": 465,
+          "candidate_epoch": 0,
+          "candidate_cursor": 465,
+          "request_seed": 563382083
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26320",
+          "encounter_index": 466,
+          "candidate_epoch": 0,
+          "candidate_cursor": 466,
+          "request_seed": 70970420
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10841",
+          "encounter_index": 467,
+          "candidate_epoch": 0,
+          "candidate_cursor": 467,
+          "request_seed": 1708477965
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:41015",
+          "encounter_index": 468,
+          "candidate_epoch": 0,
+          "candidate_cursor": 468,
+          "request_seed": 609652956
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11054",
+          "encounter_index": 469,
+          "candidate_epoch": 0,
+          "candidate_cursor": 469,
+          "request_seed": 3403026512
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50761",
+          "encounter_index": 470,
+          "candidate_epoch": 0,
+          "candidate_cursor": 470,
+          "request_seed": 3555185896
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49699",
+          "encounter_index": 471,
+          "candidate_epoch": 0,
+          "candidate_cursor": 471,
+          "request_seed": 1110549245
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0058/commit.json",
+        "sha256": "421052d26d5cec3a3d69909a6497827ddb6da97e33d801c13d4fbd12a9cb4283",
+        "bytes": 138724
+      }
+    },
+    {
+      "window_index": 59,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17289",
+          "encounter_index": 472,
+          "candidate_epoch": 0,
+          "candidate_cursor": 472,
+          "request_seed": 2978916853
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:38575",
+          "encounter_index": 473,
+          "candidate_epoch": 0,
+          "candidate_cursor": 473,
+          "request_seed": 1560170512
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:12316",
+          "encounter_index": 474,
+          "candidate_epoch": 0,
+          "candidate_cursor": 474,
+          "request_seed": 582891745
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:40067",
+          "encounter_index": 475,
+          "candidate_epoch": 0,
+          "candidate_cursor": 475,
+          "request_seed": 797323334
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:49989",
+          "encounter_index": 476,
+          "candidate_epoch": 0,
+          "candidate_cursor": 476,
+          "request_seed": 4048934110
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:37530",
+          "encounter_index": 477,
+          "candidate_epoch": 0,
+          "candidate_cursor": 477,
+          "request_seed": 29752957
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:45763",
+          "encounter_index": 478,
+          "candidate_epoch": 0,
+          "candidate_cursor": 478,
+          "request_seed": 1559258726
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:3331",
+          "encounter_index": 479,
+          "candidate_epoch": 0,
+          "candidate_cursor": 479,
+          "request_seed": 156407511
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0059/commit.json",
+        "sha256": "931458cffb95a59c67a376ac7d2bb62ce80a3273c2523d096a83923a87148fce",
+        "bytes": 141078
+      }
+    },
+    {
+      "window_index": 60,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:10217",
+          "encounter_index": 480,
+          "candidate_epoch": 0,
+          "candidate_cursor": 480,
+          "request_seed": 3928634049
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30081",
+          "encounter_index": 481,
+          "candidate_epoch": 0,
+          "candidate_cursor": 481,
+          "request_seed": 407726739
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:46801",
+          "encounter_index": 482,
+          "candidate_epoch": 0,
+          "candidate_cursor": 482,
+          "request_seed": 3926167733
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9220",
+          "encounter_index": 483,
+          "candidate_epoch": 0,
+          "candidate_cursor": 483,
+          "request_seed": 3612575870
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:11011",
+          "encounter_index": 484,
+          "candidate_epoch": 0,
+          "candidate_cursor": 484,
+          "request_seed": 4005256048
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22107",
+          "encounter_index": 485,
+          "candidate_epoch": 0,
+          "candidate_cursor": 485,
+          "request_seed": 2149055691
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52795",
+          "encounter_index": 486,
+          "candidate_epoch": 0,
+          "candidate_cursor": 486,
+          "request_seed": 3088443705
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:44989",
+          "encounter_index": 487,
+          "candidate_epoch": 0,
+          "candidate_cursor": 487,
+          "request_seed": 2530593106
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0060/commit.json",
+        "sha256": "8d6b9cf5348becf0f16b506cda49eb75c0bbb195371ae97ba53d9e4e77e04a51",
+        "bytes": 143331
+      }
+    },
+    {
+      "window_index": 61,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:8839",
+          "encounter_index": 488,
+          "candidate_epoch": 0,
+          "candidate_cursor": 488,
+          "request_seed": 1107753578
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9362",
+          "encounter_index": 489,
+          "candidate_epoch": 0,
+          "candidate_cursor": 489,
+          "request_seed": 86292825
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:17279",
+          "encounter_index": 490,
+          "candidate_epoch": 0,
+          "candidate_cursor": 490,
+          "request_seed": 3174221265
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:7362",
+          "encounter_index": 491,
+          "candidate_epoch": 0,
+          "candidate_cursor": 491,
+          "request_seed": 2275825374
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:26641",
+          "encounter_index": 492,
+          "candidate_epoch": 0,
+          "candidate_cursor": 492,
+          "request_seed": 2334347787
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:24811",
+          "encounter_index": 493,
+          "candidate_epoch": 0,
+          "candidate_cursor": 493,
+          "request_seed": 1781936940
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:13343",
+          "encounter_index": 494,
+          "candidate_epoch": 0,
+          "candidate_cursor": 494,
+          "request_seed": 3342660679
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:30470",
+          "encounter_index": 495,
+          "candidate_epoch": 0,
+          "candidate_cursor": 495,
+          "request_seed": 2923958440
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0061/commit.json",
+        "sha256": "351ff727ef1bb5eb428b20bcf4a09962b3c1b10cd1100e8e407d082d2fa62a98",
+        "bytes": 145642
+      }
+    },
+    {
+      "window_index": 62,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:9352",
+          "encounter_index": 496,
+          "candidate_epoch": 0,
+          "candidate_cursor": 496,
+          "request_seed": 3746538666
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22555",
+          "encounter_index": 497,
+          "candidate_epoch": 0,
+          "candidate_cursor": 497,
+          "request_seed": 302755335
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:1154",
+          "encounter_index": 498,
+          "candidate_epoch": 0,
+          "candidate_cursor": 498,
+          "request_seed": 2611736520
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:42568",
+          "encounter_index": 499,
+          "candidate_epoch": 0,
+          "candidate_cursor": 499,
+          "request_seed": 700747140
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33172",
+          "encounter_index": 500,
+          "candidate_epoch": 0,
+          "candidate_cursor": 500,
+          "request_seed": 3336049447
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:47182",
+          "encounter_index": 501,
+          "candidate_epoch": 0,
+          "candidate_cursor": 501,
+          "request_seed": 3572779890
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33904",
+          "encounter_index": 502,
+          "candidate_epoch": 0,
+          "candidate_cursor": 502,
+          "request_seed": 1558155536
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:22349",
+          "encounter_index": 503,
+          "candidate_epoch": 0,
+          "candidate_cursor": 503,
+          "request_seed": 2666508709
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0062/commit.json",
+        "sha256": "0bf5c110b807607a61dd1cde59c6e886ddf830499aedd8312e59dff43ff53dfe",
+        "bytes": 147920
+      }
+    },
+    {
+      "window_index": 63,
+      "encounters": [
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52406",
+          "encounter_index": 504,
+          "candidate_epoch": 0,
+          "candidate_cursor": 504,
+          "request_seed": 2831139194
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:50018",
+          "encounter_index": 505,
+          "candidate_epoch": 0,
+          "candidate_cursor": 505,
+          "request_seed": 594059044
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:36076",
+          "encounter_index": 506,
+          "candidate_epoch": 0,
+          "candidate_cursor": 506,
+          "request_seed": 4271971148
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:23941",
+          "encounter_index": 507,
+          "candidate_epoch": 0,
+          "candidate_cursor": 507,
+          "request_seed": 3251417060
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:52820",
+          "encounter_index": 508,
+          "candidate_epoch": 0,
+          "candidate_cursor": 508,
+          "request_seed": 2996253480
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:19028",
+          "encounter_index": 509,
+          "candidate_epoch": 0,
+          "candidate_cursor": 509,
+          "request_seed": 1306796761
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:2356",
+          "encounter_index": 510,
+          "candidate_epoch": 0,
+          "candidate_cursor": 510,
+          "request_seed": 1781097063
+        },
+        {
+          "prompt_id": "cmexam_train:fadb22c89beb1b7115dc36460ba792eb96b7b972:33940",
+          "encounter_index": 511,
+          "candidate_epoch": 0,
+          "candidate_cursor": 511,
+          "request_seed": 2438108190
+        }
+      ],
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0063/commit.json",
+        "sha256": "6008e7d566034615f6d056071eebbf24337a10db060ac05a3af22f624826c984",
+        "bytes": 150211
+      }
+    }
+  ],
+  "groups": 512,
+  "stream_domain": "stage4:formal:pair1",
+  "seed": 42,
+  "fresh_responses_required": true
+}
