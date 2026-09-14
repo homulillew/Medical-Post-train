@@ -1,0 +1,104 @@
+{
+  "status": "WAITING_FOR_USER_CONFIRMATION",
+  "manual_reviews": [],
+  "proposed_reviews": [
+    {
+      "case_id": "S4-MR-02",
+      "prompt_id": "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:1168",
+      "category": "sft_wrong_vanilla_wrong_dynamic_correct",
+      "sources": [
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_015.json",
+          "sha256": "8063a6a4b634557785ae0924ecc406699cee0d94ce3df5c24a606e30e0e79454",
+          "bytes": 108989
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_015.json",
+          "sha256": "07b568df315edb562f30064ec76c8ea9a3e04548f2132b90f0549e956158684a",
+          "bytes": 115328
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_015.json",
+          "sha256": "37e914660358acf61c84edf98a07e5ddc119655152b4db8d854ed67b1725a81f",
+          "bytes": 114600
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_015.json",
+          "sha256": "9a998fa2b7a960f05b92d1b42d8a2c822b3c2bc0e1667b1c241685488ad3ab6e",
+          "bytes": 112864
+        }
+      ],
+      "case_packet": {
+        "path": "/data/WSH/post-train/experiments/stage4/manual_review_packet_v1.json",
+        "sha256": "039fcc23f95b578103b550ea1f847d8be996ec22c6b227a708fd781a0f503a5d",
+        "bytes": 268348
+      },
+      "suggested_observation": "Dynamic correctly identifies pemphigus by using the intercellular epithelial fish-net fluorescence pattern and distinguishing it from subepithelial deposition seen in mucous membrane pemphigoid. SFT produces an over-broad multi-answer response, while Vanilla and Random-3× choose incorrect alternatives. This case is a substantive medical-discrimination correction rather than a parser-only improvement.",
+      "observation_author": "ChatGPT text supplied in owner instruction; not a completed human review",
+      "read_in_full": false,
+      "user_confirmed": false,
+      "human_reviewed": false,
+      "reviewer": null,
+      "confirmed_at": null,
+      "answer_sets": {
+        "sft": "ACE",
+        "vanilla": "E",
+        "dynamic": "A",
+        "random3x": "C"
+      }
+    },
+    {
+      "case_id": "S4-MR-03",
+      "prompt_id": "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:111",
+      "category": "vanilla_correct_dynamic_wrong",
+      "sources": [
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/sft/batch_015.json",
+          "sha256": "8063a6a4b634557785ae0924ecc406699cee0d94ce3df5c24a606e30e0e79454",
+          "bytes": 108989
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/vanilla/batch_015.json",
+          "sha256": "07b568df315edb562f30064ec76c8ea9a3e04548f2132b90f0549e956158684a",
+          "bytes": 115328
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/dynamic/batch_015.json",
+          "sha256": "37e914660358acf61c84edf98a07e5ddc119655152b4db8d854ed67b1725a81f",
+          "bytes": 114600
+        },
+        {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/ablation_eval/random3x/batch_015.json",
+          "sha256": "9a998fa2b7a960f05b92d1b42d8a2c822b3c2bc0e1667b1c241685488ad3ab6e",
+          "bytes": 112864
+        }
+      ],
+      "case_packet": {
+        "path": "/data/WSH/post-train/experiments/stage4/manual_review_packet_v1.json",
+        "sha256": "039fcc23f95b578103b550ea1f847d8be996ec22c6b227a708fd781a0f503a5d",
+        "bytes": 268348
+      },
+      "suggested_observation": "Dynamic regresses on the syndrome-treatment mapping for food-stagnation fullness. SFT and Vanilla correctly select Baohe Wan, while Dynamic and Random-3× incorrectly choose Yueju Wan plus Zhizhu Wan. This negative case demonstrates that correctness-aware sampling does not eliminate item-level regressions and supports paired gain/regression reporting.",
+      "observation_author": "ChatGPT text supplied in owner instruction; not a completed human review",
+      "read_in_full": false,
+      "user_confirmed": false,
+      "human_reviewed": false,
+      "reviewer": null,
+      "confirmed_at": null,
+      "answer_sets": {
+        "sft": "B",
+        "vanilla": "B",
+        "dynamic": "C",
+        "random3x": "C"
+      }
+    }
+  ],
+  "human_review_count": 0,
+  "READY_FOR_STAGE5": "NO",
+  "instruction_source": {
+    "path": "/home/ubuntu/.codex/attachments/8bb027d0-142f-4690-b4e4-946fdf307a6b/pasted-text.txt",
+    "sha256": "33a1fe2ac31f72513782e35dafa2738050ca9dece8039e8350db2d5c811cd082",
+    "bytes": 17721
+  },
+  "confirmation_required": "User reads all four full responses for each case and explicitly confirms or edits the observation. Draft creation does not constitute confirmation."
+}

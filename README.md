@@ -46,25 +46,28 @@ nonzero-advantage density is75.7% versus100%. Of Vanilla all-correct groups,
 84.65% still have nonzero advantages. This is signal composition, not a claim
 about per-group gradient quality. [Verification](experiments/stage4/signal_density_verification_v1.json).
 
-The complete [Random-3x v2 auxiliary protocol](experiments/stage5/aux_random3x_protocol_v2.json)
-is frozen and the separate run is in progress:1360 scheduled generated groups,
-512 training groups,64 windows,128 optimizer steps. Hash-only selection was fixed
-before generation. A real process termination/resume is required after32 groups.
-The new [512-item auxiliary validation set](experiments/stage5/ablation_eval_512_v1.json)
-is disjoint from monitor512, selection1024, Frontier1000, RL/SFT pools and sealed
-test clusters. It will compare SFT, existing Vanilla512/Dynamic512 and Random3x512.
-Auxiliary training/evaluation is not Stage5 primary evaluation; Stage5 remains
-NOT_STARTED and no paid APIs are authorized. Completion requires real raw verifier,
-resume and auxiliary evaluation receipts, not merely a launched process.
+The [Random-3x auxiliary run](experiments/stage5/aux_random3x_protocol_v2.json)
+completed 1360 generated groups, 512 training groups, 64 windows and 128 optimizer
+steps. Its [full raw verifier](experiments/stage5/aux_random3x_verification_v1.json)
+and [real process resume](experiments/stage5/aux_random3x_resume_v1.json) passed.
+Hash-only selection was fixed before generation. The isolated
+[512-item auxiliary validation](experiments/stage5/aux_random3x_eval_analysis_v1.json)
+scored Vanilla512 63.87%, Random3x512 62.50% and Dynamic512 64.65%.
+Dynamic minus Random3x was +2.1484375 points, with a 95% interval crossing zero;
+the selection-effect conclusion remains **INCONCLUSIVE**.
+Stage4 remains **FULL_PASS**, pending human review and final acceptance.
+Stage5 remains **NOT_STARTED**; selection1024 and final project-model tests are untouched.
 
-[Stage4 acceptance readiness](experiments/stage4/stage4_acceptance_readiness_v1.json)
-records missing narrative/manual-review deliverables. Final narrative authorship
-belongs to ChatGPT/user; no manual reviews have been fabricated.
+The owner-supplied [Stage4 report](docs/stage_reports/04_gspo.md) and
+[interview story](docs/stage_reports/04_gspo_interview_story.md) are now wired.
+The [review draft](experiments/stage4/formal_manual_cases_draft_v1.json) has zero
+confirmed manual reviews; the [deliverables draft](experiments/stage4/deliverables_draft_v1.json)
+keeps READY_FOR_STAGE5=NO. Full Stage4 acceptance has not been rerun.
 
 A GPU-release assertion stopped training at3216 groups on September10 17:56;
 the overnight failure and stale project status are retained. The saved next
 checkpoint was adopted without optimizer replay, and a fresh window passed.
-The persistent queue remains active. See the
+Both formal runs subsequently completed; the training queue is no longer active. See the
 [incident, recovery and progress analysis](docs/implementation/STAGE4_GPU_RELEASE_RECOVERY.md).
 Operational wrappers restore the audited boundary and wait at most60 seconds for
 real actor GPU release, preserving the original4GiB threshold. The full acceptance

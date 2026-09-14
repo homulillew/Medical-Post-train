@@ -1,0 +1,13 @@
+test_all_new_document_links_resolve (test_stage4_documentation.DocumentationTests.test_all_new_document_links_resolve) ... ok
+test_configuration_claims (test_stage4_documentation.DocumentationTests.test_configuration_claims) ... ok
+test_consistency_and_all_protected_evidence (test_stage4_documentation.DocumentationTests.test_consistency_and_all_protected_evidence) ... ok
+test_drafts_have_no_confirmation (test_stage4_documentation.DocumentationTests.test_drafts_have_no_confirmation) ... ok
+test_gate_and_no_selection_or_final_test_results (test_stage4_documentation.DocumentationTests.test_gate_and_no_selection_or_final_test_results) ... ok
+test_interview_structure_and_grpo_gspo_distinction (test_stage4_documentation.DocumentationTests.test_interview_structure_and_grpo_gspo_distinction) ... ok
+test_readme_change_is_limited_to_status (test_stage4_documentation.DocumentationTests.test_readme_change_is_limited_to_status) ... ok
+test_unsupported_claims_remain_separate (test_stage4_documentation.DocumentationTests.test_unsupported_claims_remain_separate) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 19.470s
+
+OK

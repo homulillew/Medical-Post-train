@@ -1,0 +1,76 @@
+{
+  "result": "PASS",
+  "scope": "DOCUMENTATION_DRAFT_CONSISTENCY_ONLY",
+  "numeric_claims_checked": 51,
+  "protected_sources_unchanged": 1236,
+  "human_review_count": 0,
+  "full_verifier_run": false,
+  "READY_FOR_STAGE5": "NO",
+  "timestamp": "2026-09-14T03:21:44.052825+00:00",
+  "status": "WAITING_FOR_USER_CONFIRMATION",
+  "stage4_state": "FULL_PASS",
+  "stage5_state": "NOT_STARTED",
+  "tests": {
+    "count": 8,
+    "passed": 8,
+    "failed": 0,
+    "log": {
+      "path": "/data/WSH/post-train/experiments/stage4/documentation_tests_v1.log",
+      "sha256": "9301227eab3e685d569930862a6452ad7782220bf9987df0cfbdbf0d8301fb07",
+      "bytes": 1169
+    },
+    "command": ".venv-train/bin/python -m unittest discover -s tests -p test_stage4_documentation.py -v"
+  },
+  "artifacts": [
+    {
+      "path": "/data/WSH/post-train/docs/stage_reports/04_gspo.md",
+      "sha256": "def92afb3bd9bf37d5aeaac10f6e22690d23c12412014d96c123a9a430b25d8c",
+      "bytes": 21443
+    },
+    {
+      "path": "/data/WSH/post-train/docs/stage_reports/04_gspo_interview_story.md",
+      "sha256": "fa214e56c93fe09237614330ac35a0f821b0b2b4c9b5a5b35721df64ef8ecd74",
+      "bytes": 7640
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_manual_cases_draft_v1.json",
+      "sha256": "b85515a8b75a584f48656fedfec725dedcca254b9baa55b36b732749565de036",
+      "bytes": 5203
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/deliverables_draft_v1.json",
+      "sha256": "6fa3d6e663fef0fde647969caff25936dd124ceb716280a7fbff81fa706602a9",
+      "bytes": 3098
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/documentation_input_audit_v1.json",
+      "sha256": "b8a02a4962b640a7e923f3dcb801136b391166aabd86db08aa71558d9bac9987",
+      "bytes": 280468
+    },
+    {
+      "path": "/data/WSH/post-train/README.md",
+      "sha256": "560e5496bae4166cbf02a532327edeaabf10ca18634a064357b56c95fdb1bd3d",
+      "bytes": 16027
+    },
+    {
+      "path": "/data/WSH/post-train/scripts/check_stage4_documentation.py",
+      "sha256": "c635cd872fc6fd37eac55e6d9ee521dfa476ee841f5e20533027caf56c69e6f1",
+      "bytes": 11330
+    },
+    {
+      "path": "/data/WSH/post-train/tests/test_stage4_documentation.py",
+      "sha256": "b4c18873d5ba91bf123201f5ecc922b988aa219ea2415e6f00cc4d88f195a310",
+      "bytes": 6668
+    }
+  ],
+  "selection1024_untouched": true,
+  "final_tests_untouched": true,
+  "new_model_inference_calls": 0,
+  "new_training_runs": 0,
+  "paid_API_new_calls": 0,
+  "proposed_review_case_ids": [
+    "S4-MR-02",
+    "S4-MR-03"
+  ],
+  "next_action": "User reads S4-MR-02 and S4-MR-03 in full and explicitly confirms or edits proposed observations. Only genuine confirmation authorizes final cases and full Stage4 verification."
+}
