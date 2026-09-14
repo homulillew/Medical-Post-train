@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="15" time="3.184" timestamp="2026-09-15T00:54:53.693937" hostname="ubuntu-MU72-SU0-00"><testcase classname="tests.test_stage5_execution" name="test_all_exam_jobs_precede_open_and_identical_endpoints_reused[selected_groups0]" time="0.001" /><testcase classname="tests.test_stage5_execution" name="test_all_exam_jobs_precede_open_and_identical_endpoints_reused[selected_groups1]" time="0.001" /><testcase classname="tests.test_stage5_execution" name="test_all_exam_jobs_precede_open_and_identical_endpoints_reused[selected_groups2]" time="0.001" /><testcase classname="tests.test_stage5_execution" name="test_real_token_decode_and_parser_replay" time="0.003" /><testcase classname="tests.test_stage5_execution" name="test_replay_rejects_tampering[adapter]" time="0.001" /><testcase classname="tests.test_stage5_execution" name="test_replay_rejects_tampering[raw_text]" time="0.001" /><testcase classname="tests.test_stage5_execution" name="test_replay_rejects_tampering[prompt_tokens]" time="0.001" /><testcase classname="tests.test_stage5_execution" name="test_replay_rejects_tampering[output_count]" time="0.001" /><testcase classname="tests.test_stage5_execution" name="test_replay_rejects_tampering[result]" time="0.001" /><testcase classname="tests.test_stage5_execution" name="test_replay_rejects_tampering[request]" time="0.001" /><testcase classname="tests.test_stage5_execution" name="test_replay_rejects_tampering[duplicate_attempt]" time="0.001" /><testcase classname="tests.test_stage5_execution" name="test_replay_rejects_tampering[wrong_retry]" time="0.001" /><testcase classname="tests.test_stage5_execution" name="test_private_think_never_in_visible_view_and_triage_is_not_safety_verdict" time="0.001" /><testcase classname="tests.test_stage5_execution" name="test_immutable_analysis_can_resume_but_not_replace" time="0.003" /><testcase classname="tests.test_stage5_execution" name="test_known_missing_option_is_preserved_without_changing_parser" time="0.002"><failure message="ValueError: illegal_or_empty_options">def test_known_missing_option_is_preserved_without_changing_parser():
+        from stage5_selection_source import GAP_ID,GAP_OPTIONS,source_options
+        from medical_posttrain.data.exam import options_schema,canonical_answer
+        row={'Options':GAP_OPTIONS,'Answer':'A'}
+        with pytest.raises(ValueError):options_schema(GAP_OPTIONS)
+        options=source_options(GAP_ID,row)
+        assert list(options)==['A','B','D','E'] and '\n'.join(k+' '+v for k,v in options.items())==GAP_OPTIONS
+        assert canonical_answer('A',''.join(options))=='A'
+&gt;       assert canonical_answer('C',''.join(options)) is None
+
+tests/test_stage5_execution.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+value = 'C', legal_options = 'ABDE'
+
+    def canonical_answer(value, legal_options="ABCDE"):
+        value = unicodedata.normalize("NFKC", value).strip().upper()
+        letters = re.sub(r"[\s,，、;；]+", "", value)
+        if not letters or any(c not in legal_options for c in letters):
+&gt;           raise ValueError("illegal_or_empty_options")
+E           ValueError: illegal_or_empty_options
+
+src/medical_posttrain/reward/parser.py:25: ValueError</failure></testcase></testsuite></testsuites>

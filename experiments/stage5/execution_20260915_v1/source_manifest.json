@@ -1,0 +1,83 @@
+{
+  "run_id": "stage5_project_v1",
+  "run_class": "EVALUATION",
+  "timestamp": "2026-09-14T16:58:04.624425+00:00",
+  "preparation_head": "aa4792a3a69518aaae5dc811a3254c87f005508e",
+  "sources": [
+    {
+      "path": "/data/WSH/post-train/scripts/execute_stage5_closure.py",
+      "sha256": "ef9d2f77b5b48a521d18ad5f7c6a9d618338a5226fbe334b63c59e315d64738c",
+      "bytes": 17584
+    },
+    {
+      "path": "/data/WSH/post-train/scripts/stage5_objective_evidence.py",
+      "sha256": "2ac9f918ce1708ad8cdde9311b72f2c7d336747a05238ce44ef7281cc9c9be6b",
+      "bytes": 19970
+    },
+    {
+      "path": "/data/WSH/post-train/scripts/stage5_selection_source.py",
+      "sha256": "cada8bbad59f79f95b9dbbbda6b7e08ae7d3072fa2ea07c9839827c1484f6448",
+      "bytes": 1462
+    },
+    {
+      "path": "/data/WSH/post-train/tests/test_stage5_execution.py",
+      "sha256": "9d04bf2f88c4e1628381db8a12c2dd7fff11b6fbc1d67da965034a07dc41adb4",
+      "bytes": 6163
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/execution_20260915_v1/selection_context_precheck.json",
+      "sha256": "4c4f03ccee534ca2dfe6f3f46c690b63a35ae21ca021d9f689e2234ae84cec8f",
+      "bytes": 107
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/execution_20260915_v1/selection_source_schema_audit_v1.json",
+      "sha256": "5f1c5ab2f318c0854b622d44681bc032a44713f086ca378cd42fb22546b1cda8",
+      "bytes": 1912
+    }
+  ],
+  "tests": {
+    "path": "/data/WSH/post-train/experiments/stage5/execution_20260915_v1/execution_tests_final_v2.xml",
+    "sha256": "940f3cf1ec0d3f01c35be8811657b2f6ce621f0f016b885d4df7b5624a508a98",
+    "bytes": 2357
+  },
+  "joint_tests": {
+    "path": "/data/WSH/post-train/experiments/stage5/execution_20260915_v1/tests_attempt_001.xml",
+    "sha256": "f4dc208970d7ca14cbc27d81f5bbfc6f3690453bba1b241a35780611f4710265",
+    "bytes": 6282
+  },
+  "test_results": {
+    "joint_passed": 52,
+    "latest_execution_passed": 17,
+    "source_adapter_test_initial_failure": "Test expected None for an illegal option; existing canonical_answer correctly raises ValueError. Corrected only the test and retained failed XML."
+  },
+  "failed_test_evidence": {
+    "path": "/data/WSH/post-train/experiments/stage5/execution_20260915_v1/execution_tests_source_adapter.xml",
+    "sha256": "7cb8a7d73584990adbb8def2d6c650ae63e4f30dd4b8ea75f2b1005bc11ff72e",
+    "bytes": 3388
+  },
+  "context_precheck": {
+    "path": "/data/WSH/post-train/experiments/stage5/execution_20260915_v1/context_precheck.json",
+    "sha256": "d22b7372710c00e58f21b44333e74a4de88d200e41968f63ba9e4e380bd3308c",
+    "bytes": 1834
+  },
+  "frozen_preflight_seal": {
+    "path": "/data/WSH/post-train/experiments/stage5/preflight_seal_v1.json",
+    "sha256": "01ace902662c00f5ef2ecc4d80b790d2f2e5f83e41bb88ee2044986d67571c1d",
+    "bytes": 7323
+  },
+  "protocol": {
+    "path": "/data/WSH/post-train/experiments/stage5/checkpoint_selection_protocol_v1.json",
+    "sha256": "43413a28ab3d6a4a3b03f788f2145bd8efa475a62cbe1bf22dc4f0a0fa48944a",
+    "bytes": 173901
+  },
+  "execution_addendum": "Native worker, source IDs, prompt template, scoring parser and ranking stay frozen. New scheduler enforces exam-before-open ordering. A documented source adapter preserves the missing-C labels on selection source6027.",
+  "planned": {
+    "selection": 20480,
+    "exam_min": 26427,
+    "exam_max": 44045,
+    "open": 1224,
+    "safety_reused": 333,
+    "paid_api_calls": 0,
+    "stage6": "NOT_STARTED"
+  }
+}

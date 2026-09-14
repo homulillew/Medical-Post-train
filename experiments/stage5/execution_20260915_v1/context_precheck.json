@@ -1,0 +1,55 @@
+{
+  "result": "PASS",
+  "source_only": true,
+  "generations": 0,
+  "results": {
+    "cmexam_test_scorable": {
+      "n": 6809,
+      "max_prompt_tokens": 523,
+      "max_output_tokens": 1024,
+      "max_context": 4096,
+      "overflow_ids": [],
+      "requests": {
+        "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/requests/cmexam_test_scorable.jsonl",
+        "sha256": "0194a312d3114e869e6c886cc5e0d1f736caf35f5e87ae4933f531431dab3707",
+        "bytes": 4170869
+      }
+    },
+    "cmb_exam_clean_2000": {
+      "n": 2000,
+      "max_prompt_tokens": 420,
+      "max_output_tokens": 1024,
+      "max_context": 4096,
+      "overflow_ids": [],
+      "requests": {
+        "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/requests/cmb_exam_clean_2000.jsonl",
+        "sha256": "58a260cce2fc0e5ac6d7f80eb4aba98ccdcacb1da9364175a225212e1af7af20",
+        "bytes": 1195184
+      }
+    },
+    "cmb_clin": {
+      "n": 208,
+      "max_prompt_tokens": 1403,
+      "max_output_tokens": 2048,
+      "max_context": 8192,
+      "overflow_ids": [],
+      "requests": {
+        "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/requests/cmb_clin.jsonl",
+        "sha256": "072f34ec6e75d9251cd0d71b280d0c635b559e83313c7a6e55cc20859dabf217",
+        "bytes": 409280
+      }
+    },
+    "open_qa_retention_200": {
+      "n": 200,
+      "max_prompt_tokens": 293,
+      "max_output_tokens": 2048,
+      "max_context": 8192,
+      "overflow_ids": [],
+      "requests": {
+        "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/requests/open_qa_retention_200.jsonl",
+        "sha256": "b41a776bb2be7eea3191e271ac0fb869222dbfa5e9a17311718e9bbf7242771c",
+        "bytes": 132014
+      }
+    }
+  }
+}

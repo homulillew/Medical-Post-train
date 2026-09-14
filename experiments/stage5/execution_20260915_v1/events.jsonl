@@ -1,0 +1,2 @@
+{"event": "publication", "timestamp": "2026-09-14T20:32:47.971177+00:00", "head": "759ccb7abd30d5f906086cc2bb08ea628590e1c1", "result": "PASS", "detail": "To https://github.com/homulillew/Medical-Post-train.git\n   aa4792a..759ccb7  main -> main\n"}
+{"event": "stage4_done", "timestamp": "2026-09-14T20:32:48.020449+00:00", "commit": "759ccb7abd30d5f906086cc2bb08ea628590e1c1", "full_verifier": "PASS", "human_reviews_completed": 0}

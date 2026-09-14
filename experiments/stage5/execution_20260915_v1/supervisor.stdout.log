@@ -1,0 +1,20 @@
+[main 759ccb7] chore: close stage4 with owner-waived manual review
+ 20 files changed, 75068 insertions(+), 10 deletions(-)
+ create mode 100644 docs/implementation/STAGE4_CLOSURE_STAGE5_EXECUTION.md
+ create mode 100644 experiments/stage4/closure_source_snapshots/04_gspo.md
+ create mode 100644 experiments/stage4/closure_source_snapshots/04_gspo_interview_story.md
+ create mode 100644 experiments/stage4/closure_source_snapshots/manual_review_verifier.patch
+ create mode 100644 experiments/stage4/closure_source_snapshots/owner_instruction.txt
+ create mode 100644 experiments/stage4/closure_source_snapshots/verify_stage4_before_owner_waiver.py
+ create mode 100644 experiments/stage4/deliverables.json
+ create mode 100644 experiments/stage4/manual_review_waiver_v1.json
+ create mode 100644 experiments/stage4/manual_review_waiver_verifier_change_v1.json
+ create mode 100644 experiments/stage4/owner_closure_full_v1/launch.json
+ create mode 100644 experiments/stage4/owner_closure_full_v1/stderr.log
+ create mode 100644 experiments/stage4/owner_closure_full_v1/stdout.log
+ create mode 100644 experiments/stage4/owner_closure_start_audit_v1.json
+ create mode 100644 experiments/stage4/owner_waiver_tests_v1.xml
+ create mode 100644 experiments/stage4/verification-final.json
+ create mode 100644 tests/test_stage4_owner_waiver.py
+{"event": "publication", "timestamp": "2026-09-14T20:32:47.971177+00:00", "head": "759ccb7abd30d5f906086cc2bb08ea628590e1c1", "result": "PASS", "detail": "To https://github.com/homulillew/Medical-Post-train.git\n   aa4792a..759ccb7  main -> main\n"}
+{"event": "stage4_done", "timestamp": "2026-09-14T20:32:48.020449+00:00", "commit": "759ccb7abd30d5f906086cc2bb08ea628590e1c1", "full_verifier": "PASS", "human_reviews_completed": 0}

@@ -1,0 +1,39 @@
+{
+  "result": "SOURCE_COMPATIBILITY_FIXED_BEFORE_GENERATION",
+  "observed_failure": "ValueError(noncontiguous_options) during CPU-only source/context precheck",
+  "prompt_id": "cmexam_val:fadb22c89beb1b7115dc36460ba792eb96b7b972:6027",
+  "source_options": "A 抑制二氢叶酸合成酶\nB 改变细菌细胞膜通透性\nD 抑制二氢叶酸还原酶\nE 抑制细菌DNA螺旋酶",
+  "official_answer": "A",
+  "source": {
+    "source": "cmexam_val",
+    "revision": "fadb22c89beb1b7115dc36460ba792eb96b7b972",
+    "url": "https://raw.githubusercontent.com/williamliujl/CMExam/fadb22c89beb1b7115dc36460ba792eb96b7b972/data/val.csv",
+    "path": "/data/WSH/medical-post-train-artifacts/data/stage1/raw/cmexam_val.csv",
+    "sha256": "58cc9776b2f17fdc3a235ceec9ae153ee3f617703293dda661c6decbffb1f190",
+    "bytes": 5126392
+  },
+  "protocol": {
+    "path": "/data/WSH/post-train/experiments/stage5/checkpoint_selection_protocol_v1.json",
+    "sha256": "43413a28ab3d6a4a3b03f788f2145bd8efa475a62cbe1bf22dc4f0a0fa48944a",
+    "bytes": 173901
+  },
+  "original_reader": {
+    "path": "/data/WSH/post-train/src/medical_posttrain/data/exam.py",
+    "sha256": "081121a5b54aff164030a162de573e9fcf1a02f64fab639b23d4b8bed65e9996",
+    "bytes": 7007
+  },
+  "compatibility_adapter": {
+    "path": "/data/WSH/post-train/scripts/stage5_selection_source.py",
+    "sha256": "cada8bbad59f79f95b9dbbbda6b7e08ae7d3072fa2ea07c9839827c1484f6448",
+    "bytes": 1462
+  },
+  "selection_ids_changed": false,
+  "options_changed": false,
+  "labels_renumbered": false,
+  "answers_changed": false,
+  "denominator": 1024,
+  "parser_changed": false,
+  "selection_rule_changed": false,
+  "project_generations": 0,
+  "rationale": "Preserve the exact non-contiguous labels of one frozen source question rather than dropping, filling or renumbering its options. Official answer A is present. The sealed training-only source reader stays unchanged."
+}

@@ -1,0 +1,13 @@
+{
+  "pid": 4073163,
+  "command": [
+    "/data/WSH/post-train/.venv-train/bin/python",
+    "/data/WSH/post-train/scripts/execute_stage5_closure.py"
+  ],
+  "timestamp": "2026-09-14T16:58:04.928252+00:00",
+  "source_manifest": {
+    "path": "/data/WSH/post-train/experiments/stage5/execution_20260915_v1/source_manifest.json",
+    "sha256": "bab58038b56ace104d0d19c63ef3db4cd0641056258e9d9483b4b136a43c970a",
+    "bytes": 3476
+  }
+}
