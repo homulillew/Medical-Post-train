@@ -1,0 +1,98 @@
+{
+  "status": "SCHEMA_ONLY_NOT_DELIVERABLES",
+  "verifier": {
+    "path": "/data/WSH/post-train/scripts/verify_stage4.py",
+    "sha256": "1485b522185436548ffb903ecd042c2e338f9db82298abc23ae1c9c0f953e4ab",
+    "bytes": 27308
+  },
+  "source_lines": [
+    452,
+    477
+  ],
+  "exact_code": "def deliverables():\n        from analyze_stage4 import analyze\n        manifest=read(INDEX/'deliverables.json')\n        assert manifest['READY_FOR_STAGE5']=='YES'\n        required=('stage_report','interview_story','cases','resume_evidence','plots','checkpoint_index','pilot_review')\n        for key in required:\n            refs=manifest[key] if isinstance(manifest[key],list) else [manifest[key]]\n            assert refs\n            for ref in refs:\n                assert record(ref['path'])==ref\n        report=Path(manifest['stage_report']['path']).read_text()\n        assert all(pair['runs'][v]['run_id'] in report for v in ('vanilla','dynamic'))\n        reviewed=read(manifest['cases']['path'])\n        assert len(reviewed['manual_reviews'])>=2\n        for case in reviewed['manual_reviews']:\n            assert case['read_in_full'] and case['observation']\n            for ref in case['sources']:\n                assert record(ref['path'])==ref\n        index=read(manifest['checkpoint_index']['path'])\n        for v in ('vanilla','dynamic'):\n            result=analyze(Path(pair['runs'][v]['path']))\n            assert len(result['windows'])==625 and result['formal_completed']\n            assert index[v]['final']['policy_windows']==625\n            for item in index[v]['validation_checkpoints']:\n                assert record(item['adapter']['path'])==item['adapter']\n        return manifest",
+  "required_path": "/data/WSH/post-train/experiments/stage4/deliverables.json",
+  "required_keys": [
+    "READY_FOR_STAGE5",
+    "stage_report",
+    "interview_story",
+    "cases",
+    "resume_evidence",
+    "plots",
+    "checkpoint_index",
+    "pilot_review"
+  ],
+  "reference_format": {
+    "path": "existing file path; absolute paths match repository record()",
+    "sha256": "64 lowercase hex SHA256 of complete bytes",
+    "bytes": "integer byte length"
+  },
+  "reference_validation": "record(ref.path) == ref; extra reference keys fail equality. Nonempty list or single reference permitted in initial loop.",
+  "effective_types": {
+    "stage_report": "single ref (subsequently indexed directly)",
+    "cases": "single JSON ref",
+    "checkpoint_index": "single JSON ref",
+    "interview_story": "single ref or nonempty ref list",
+    "resume_evidence": "single ref or nonempty ref list",
+    "plots": "single ref or nonempty ref list",
+    "pilot_review": "single ref or nonempty ref list"
+  },
+  "manual_review_structure": {
+    "manual_reviews": [
+      {
+        "read_in_full": "truthy; genuine full-response reading required by owner",
+        "observation": "truthy; actual reviewer observation, not machine-authored completion",
+        "sources": "list of exact record() references, each checked"
+      }
+    ]
+  },
+  "minimum_manual_reviews": 2,
+  "machine_check_limits": [
+    "Current code does not require a nonempty sources list or reviewer identity/date; owner requires genuine attributable review, so include these.",
+    "Current code hash-checks interview_story, plots, resume_evidence and pilot_review here; it does not semantically assess their narrative content. Contract requirements still apply."
+  ],
+  "report_constraints": {
+    "fixed_report_path": false,
+    "must_contain": "Both formal run IDs as substrings",
+    "suggested_path": "/data/WSH/post-train/docs/stage_reports/04_gspo.md"
+  },
+  "checkpoint_index_constraints": {
+    "variants": [
+      "vanilla",
+      "dynamic"
+    ],
+    "final.policy_windows": 625,
+    "validation_checkpoints": "Each item.adapter exact reference verified",
+    "additional_computation": "analyze(run) must return 625 windows and formal_completed true for both runs"
+  },
+  "existing_reference_candidates": {
+    "plots": {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_plots/manifest.json",
+      "sha256": "ee6a72c59ee4ea03687e151a161ae9d5cf19d05f77cfee040391cedebcdb9428",
+      "bytes": 7700
+    },
+    "checkpoint_index": {
+      "path": "/data/WSH/post-train/experiments/stage4/formal_checkpoint_index.json",
+      "sha256": "5aed298dd548c51b19b9b5778ff41b1e2965791c110b517f054d236e1da2f581",
+      "bytes": 45255
+    },
+    "pilot_review": {
+      "path": "/data/WSH/post-train/experiments/stage4/pilot_review.json",
+      "sha256": "b800a99037c56eec59676108878b81fcccaceb79a8a598204de96e850f2b50bc",
+      "bytes": 1257
+    },
+    "resume_evidence": {
+      "path": "/data/WSH/post-train/experiments/stage4/vanilla_formal_resume_verified_002.json",
+      "sha256": "cb7ee55cddfd45ef82f03855b48feef8609352c25345186afa02518f34bfb475",
+      "bytes": 1184
+    }
+  },
+  "readiness_semantics": "Manifest READY_FOR_STAGE5 must equal YES; full verifier emits YES only with no failed gates. Pack/schema preparation is not a full PASS.",
+  "consistent_with_existing_readiness": true,
+  "full_verifier_rerun": false,
+  "blockers": [
+    "Final stage report",
+    "Final interview story",
+    "At least two genuine full-response manual reviews",
+    "Completed deliverables.json"
+  ]
+}

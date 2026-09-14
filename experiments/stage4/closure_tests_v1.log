@@ -1,0 +1,17 @@
+test_all_previous_artifacts_unchanged (test_stage4_closure.ClosureTests.test_all_previous_artifacts_unchanged) ... ok
+test_all_ranking_tiebreaks (test_stage4_closure.ClosureTests.test_all_ranking_tiebreaks) ... ok
+test_bidirectional_categories_and_complete_frontier (test_stage4_closure.ClosureTests.test_bidirectional_categories_and_complete_frontier) ... ok
+test_exact_candidates_and_real_adapter_hashes (test_stage4_closure.ClosureTests.test_exact_candidates_and_real_adapter_hashes) ... ok
+test_exact_schema_and_no_fabricated_deliverables (test_stage4_closure.ClosureTests.test_exact_schema_and_no_fabricated_deliverables) ... ok
+test_freeze_never_overwrites (test_stage4_closure.ClosureTests.test_freeze_never_overwrites) ... ok
+test_gate_blocks_current_real_stage (test_stage4_closure.ClosureTests.test_gate_blocks_current_real_stage) ... ok
+test_no_selection_or_test_cases (test_stage4_closure.ClosureTests.test_no_selection_or_test_cases) ... ok
+test_packet_exact_raw_responses_and_parser (test_stage4_closure.ClosureTests.test_packet_exact_raw_responses_and_parser) ... ok
+test_recovery_facts_and_handoff (test_stage4_closure.ClosureTests.test_recovery_facts_and_handoff) ... ok
+test_selected_native_advantages_and_source_refs (test_stage4_closure.ClosureTests.test_selected_native_advantages_and_source_refs) ... ok
+test_selection_partition_unchanged (test_stage4_closure.ClosureTests.test_selection_partition_unchanged) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 6.485s
+
+OK

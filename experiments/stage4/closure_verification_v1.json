@@ -1,0 +1,94 @@
+{
+  "result": "PASS",
+  "scope": "OFFLINE_CLOSURE_PACK_AND_SELECTION_PROTOCOL_ONLY",
+  "timestamp": "2026-09-14T02:51:27.413262+00:00",
+  "closure_state": "WAITING_FOR_HUMAN_NARRATIVE_AND_MANUAL_REVIEW",
+  "full_stage4_verifier_run": false,
+  "full_stage4_verifier_pass": false,
+  "stage4_state": "FULL_PASS",
+  "stage5_state": "NOT_STARTED",
+  "READY_FOR_STAGE5": "NO",
+  "tests": {
+    "passed": 12,
+    "failed": 0,
+    "command": ".venv-train/bin/python -m unittest discover -s tests -p test_stage4_closure.py -v",
+    "log": {
+      "path": "/data/WSH/post-train/experiments/stage4/closure_tests_v1.log",
+      "sha256": "903213d8f36df4802aef447804bbe10adf3c8213ec4610b5297bdd4c9bc31a6a",
+      "bytes": 1537
+    }
+  },
+  "existing_files_unchanged": 1118,
+  "model_cases": 13,
+  "complete_responses_verified": 84,
+  "human_reviews_created": 0,
+  "candidate_counts": {
+    "vanilla": 10,
+    "dynamic": 10
+  },
+  "selection1024_untouched": true,
+  "final_tests_untouched": true,
+  "new_training_runs": 0,
+  "new_model_inference_calls": 0,
+  "paid_API_new_calls": 0,
+  "README_changed": false,
+  "recovery_cursor_continuity": {
+    "before": 3216,
+    "after_adoption": 3224,
+    "after_next_fresh": 3232,
+    "optimizer_replay": false
+  },
+  "artifacts": [
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/closure_start_audit_v1.json",
+      "sha256": "3782c0a34875d08004ba30a4ef9c70b3bee6f83ffada85c1e2702e001a75ac0f",
+      "bytes": 252683
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/manual_review_packet_v1.json",
+      "sha256": "039fcc23f95b578103b550ea1f847d8be996ec22c6b227a708fd781a0f503a5d",
+      "bytes": 268348
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/manual_review_packet_v1.md",
+      "sha256": "31e7f8c41a279edc1413dec77f338cdd4fa9c54b8057ef3d9fa883d3843466d3",
+      "bytes": 178398
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/recovery_interview_case_v1.json",
+      "sha256": "0a964551e0cec1dab17db023a8d34a59f5f27c9b31d0c2e360e0e03d0643d912",
+      "bytes": 8776
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/stage4_deliverables_schema_v1.json",
+      "sha256": "2ffea72d93e451aca5ece8d7e874b728ce00138af344c269f8747aca830d60ee",
+      "bytes": 5285
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/handoffs/stage4_final_docs_to_chatgpt_v1.json",
+      "sha256": "b2fe9d721adb3a76d4e56122600663845c495c76097cc7118fb5a3e1b904b1b0",
+      "bytes": 349488
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/checkpoint_selection_protocol_v1.json",
+      "sha256": "43413a28ab3d6a4a3b03f788f2145bd8efa475a62cbe1bf22dc4f0a0fa48944a",
+      "bytes": 173901
+    },
+    {
+      "path": "/data/WSH/post-train/scripts/build_stage4_closure.py",
+      "sha256": "af0c837c0afdb051f56a15b7d67792c0009f9f200b3a9e0fa05ab7c2f1cfe3a1",
+      "bytes": 34925
+    },
+    {
+      "path": "/data/WSH/post-train/scripts/checkpoint_selection.py",
+      "sha256": "770ac39265e351cc35d14a817307b0ff99de314c20e1ceb117bbcdba675f3e4e",
+      "bytes": 4519
+    },
+    {
+      "path": "/data/WSH/post-train/tests/test_stage4_closure.py",
+      "sha256": "2346c219058e7ab93e99adc24c1d768665f1303e4ddd22dfdeda5f34e4636b07",
+      "bytes": 11093
+    }
+  ],
+  "interpretation": "PASS verifies offline packaging, hash integrity and gate/ranking tests. It is not a Stage4 full acceptance or a human review receipt."
+}

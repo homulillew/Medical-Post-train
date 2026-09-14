@@ -1,0 +1,194 @@
+{
+  "case_id": "S4-SYS-01",
+  "human_reviewed": false,
+  "category": "GPU_release_checkpoint_adoption",
+  "run_id": "s4_formal_vanilla_20260909T155928_24aec5",
+  "failure_window": "0402",
+  "failure": {
+    "error": "AssertionError('Actor failed to release GPU')",
+    "traceback": "Traceback (most recent call last):\n  File \"/data/WSH/post-train/scripts/run_stage4.py\", line 106, in worker\n    run(out,logdir)\n  File \"/data/WSH/post-train/src/medical_posttrain/rl/online.py\", line 259, in run\n    assert memory.nv.nvmlDeviceGetMemoryInfo(memory.handle).used<4*1024**3, 'Actor failed to release GPU'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Actor failed to release GPU\n",
+    "timestamp": "2026-09-10T09:56:14.535206+00:00"
+  },
+  "failure_boundary": "Actor exited successfully after optimizer/checkpoint completion; GPU-release assertion preceded controller synchronization/commit.",
+  "optimizer_work_completed": true,
+  "optimizer_steps_completed": [
+    805,
+    806
+  ],
+  "checkpoint_complete": true,
+  "controller_commit_complete_at_failure": false,
+  "before": {
+    "policy_version": "75f38a7e653f3c5cf91a83b67ce2fbaec2e907dd947997c241487912aac06a20",
+    "cursor": 3216,
+    "policy_windows": 402,
+    "optimizer_steps": 804,
+    "training_groups": 3216,
+    "generated_groups": 3216,
+    "output_tokens": 3442702,
+    "prompt_tokens": 431510
+  },
+  "after_adoption": {
+    "policy_version": "0e5940187ef0af5bb6b8aa2aef532529307c767c5c72d95c61602fa89da32868",
+    "cursor": 3224,
+    "policy_windows": 403,
+    "optimizer_steps": 806,
+    "training_groups": 3224,
+    "generated_groups": 3224,
+    "output_tokens": 3451077,
+    "prompt_tokens": 432518
+  },
+  "replay_risk": "Repeating optimizer steps 805/806 would duplicate already durable updates and violate the original update budget/lineage.",
+  "adoption_basis": "Complete checkpoint marker and native optimizer/scheduler/RNG identities; reload added zero steps; sync then controller commit.",
+  "root_cause_limit": "Consistent with delayed GPU teardown after clean actor exit; exact original NVML value was not logged.",
+  "adoption": {
+    "result": "PASS",
+    "timestamp": "2026-09-11T02:29:38.068398+00:00",
+    "run_id": "s4_formal_vanilla_20260909T155928_24aec5",
+    "worker_pid": 2811475,
+    "queue_pid": 2811546,
+    "adopted_window": "0402",
+    "committed_training_groups": 3224,
+    "optimizer_steps": 806,
+    "optimizer_steps_reexecuted": 0,
+    "original_rollout_selection_update_checkpoint_unchanged": true,
+    "commit": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0402/commit.json",
+      "sha256": "5f99f4810d0f408c5913d0f37d6eded902b016026a0a30f9e7bc05dd975b2443",
+      "bytes": 929133
+    },
+    "reload": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0402/recovered_actor/result.json",
+      "sha256": "b600a1f5f32a54d6bbe937053df9c2c56360e489da11cbfdfc77c3970dcf7743",
+      "bytes": 1324
+    },
+    "guard_receipts": [
+      {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0402/gpu_release_observations/1789093768121387048.json",
+        "sha256": "328b01d640332b43d867c0e03af2b39a7020e60e3fd5da3e8b918d742b851345",
+        "bytes": 377
+      }
+    ]
+  },
+  "next_fresh_window": {
+    "result": "PASS",
+    "timestamp": "2026-09-11T02:31:48.149450+00:00",
+    "window": "0403",
+    "training_groups": 3232,
+    "optimizer_steps": 808,
+    "commit": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0403/commit.json",
+      "sha256": "c4d017ff66df3dcae06a678bfec5f053a0dcbfb8a18a17caf22b7a3c3be593b0",
+      "bytes": 931426
+    },
+    "resume": {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0403/actor/resume_receipt.json",
+      "sha256": "343eed9a4b2f80bae3a1c7df3e6d91971f260dc2029e7a110e25592864495093",
+      "bytes": 464846
+    },
+    "guards": [
+      {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0403/gpu_release_observations/1789093900906953337.json",
+        "sha256": "0452cbfdbe76fdd4a546e53d4702f15d3c2dea93284d2a35f77ef4b22f53c545",
+        "bytes": 378
+      }
+    ]
+  },
+  "sources": [
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/vanilla_formal_incident_002.json",
+      "sha256": "1ff0e0b6fabd527554627160aeeba969cf4aeaed9cbbb87bd706c275bfd91796",
+      "bytes": 6123
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/vanilla_formal_recovery_002.json",
+      "sha256": "abc0ece7e15472475452ab2e9c4593b565cdc9b9242d84d1ce0f334d6818e840",
+      "bytes": 944
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/vanilla_formal_resume_verified_002.json",
+      "sha256": "cb7ee55cddfd45ef82f03855b48feef8609352c25345186afa02518f34bfb475",
+      "bytes": 1184
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/vanilla_formal_fresh_guard_verified_002.json",
+      "sha256": "de13ca006f1783d59fb393ff113c7e0330087de9f033e3abe85d90b243988951",
+      "bytes": 952
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/recovery_fault_injections.json",
+      "sha256": "b112f409cad9830ea89d6da79431ba1563482d4d4a0d1a15337338de2c86abb9",
+      "bytes": 29084
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage4/fault_a_replay_numerics.json",
+      "sha256": "9e3b9d722b913115c50ba3f4dec62d93809ccfab5bb90b6735ea8f4de6ab3ae1",
+      "bytes": 2208
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/attempt_002/failure.json",
+      "sha256": "78f9cb5c344e37638711d8dc7135a38deaf79fd031995cb1efc70b760c4bf7f0",
+      "bytes": 580
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0402/checkpoint/COMMITTED.json",
+      "sha256": "42f7f8b7c9350a9bb29b33602712e21b3169e9478d4d923f2a30d29d8dcae637",
+      "bytes": 2988
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0402/update/update.json",
+      "sha256": "237479ac341ba5c42db3fea1cea6ee77b1d13dac8a5d66fdd19584586059f7b4",
+      "bytes": 2634
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0402/actor_exit.json",
+      "sha256": "157f803d4711eddc993ed62bab90274e702188175518a4bb34d5555b88c4e39f",
+      "bytes": 105
+    },
+    {
+      "path": "/data/WSH/post-train/docs/implementation/STAGE4_GPU_RELEASE_RECOVERY.md",
+      "sha256": "154902d188be7324c8c1567a60334a5cc847ceb804166ca4686bcaa8c1322f34",
+      "bytes": 6511
+    }
+  ],
+  "independent_second_case": {
+    "case_id": "S4-SYS-02",
+    "category": "Random3x_real_fresh_process_resume",
+    "receipt": {
+      "path": "/data/WSH/post-train/experiments/stage5/aux_random3x_resume_v1.json",
+      "sha256": "0917b1796141407142094be562ee308d3d761c2bb71151a375076731a6e765e3",
+      "bytes": 1283
+    },
+    "facts": {
+      "result": "PASS",
+      "timestamp": "2026-09-13T15:04:55.824206+00:00",
+      "old_pid": 3644926,
+      "new_pid": 3649651,
+      "restored_groups": 32,
+      "restored_optimizer_steps": 8,
+      "next_committed_optimizer_steps": 10,
+      "optimizer_replayed": false,
+      "controller_rng_scheduler_optimizer_continuous": true,
+      "pause": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/pause_ready.json",
+        "sha256": "5587df0631a548659e7a0e1310b6329bc1b94f2de5f801c3a6d4dce03e9c4fc1",
+        "bytes": 10444
+      },
+      "restart": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/attempt_002/resume_start.json",
+        "sha256": "cc1fb187585e706940de247393f0b10b595a605bc4096e75f54e80e98ef815f0",
+        "bytes": 10444
+      },
+      "native_resume": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/windows/0004/actor/resume_receipt.json",
+        "sha256": "b77ffe632ea654fe5ae2157452304d149340e580442392dde673890505d27804",
+        "bytes": 9345
+      },
+      "frozen_selection_schedule": {
+        "path": "/data/WSH/post-train/experiments/stage5/aux_random3x_dynamic_schedule_v1.json",
+        "sha256": "b28471844abc022365cbb636b5e3e31a85b79666129563bf36b52ef284ec1cb4",
+        "bytes": 540947
+      }
+    }
+  },
+  "limit": "Successful recovery does not establish bitwise GPU backward replay or eliminate all possible future failures."
+}
