@@ -1,0 +1,27 @@
+{
+  "result": "PASS",
+  "tests": 27,
+  "failed": 0,
+  "synthetic_only": true,
+  "gpu_model_loads": 0,
+  "paid_api_calls": 0,
+  "junit": {
+    "path": "/data/WSH/post-train/experiments/stage5/preflight_tests_final.xml",
+    "sha256": "8632e4ac6e33d248295b0ef813bd7d9c4c0cff67569974ce3d9a8fedd81098e7",
+    "bytes": 3176
+  },
+  "source": {
+    "path": "/data/WSH/post-train/tests/test_stage5_preflight.py",
+    "sha256": "8b094713072d4d6694822bb8e77194bbb4a9428969d7d78021420b6ced360cc7",
+    "bytes": 13463
+  },
+  "failed_attempts": [
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/preflight_tests_attempt_001.xml",
+      "sha256": "7af5212b1490140a5d30c116dec8f8603bfd3b41f2041a619bee04ad87b8d6d0",
+      "bytes": 5175
+    }
+  ],
+  "initial_failure_resolution": "Source-hash tamper already refused execution but raised ValueError; standardized rejection to PermissionError and reran complete CPU suite.",
+  "runtime_import_guard": "Subprocess MetaPathFinder rejects torch/vllm/transformers/peft/requests/httpx imports during dry-run"
+}

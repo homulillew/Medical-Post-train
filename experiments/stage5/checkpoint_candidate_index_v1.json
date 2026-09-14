@@ -1,0 +1,531 @@
+{
+  "status": "FROZEN_INPUTS_ONLY",
+  "selection_protocol": {
+    "path": "/data/WSH/post-train/experiments/stage5/checkpoint_selection_protocol_v1.json",
+    "sha256": "43413a28ab3d6a4a3b03f788f2145bd8efa475a62cbe1bf22dc4f0a0fa48944a",
+    "bytes": 173901
+  },
+  "candidate_count": 20,
+  "candidates": [
+    {
+      "checkpoint_id": "vanilla:0512",
+      "run_id": "s4_formal_vanilla_20260909T155928_24aec5",
+      "training_groups": 512,
+      "policy_windows": 64,
+      "optimizer_steps": 128,
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0063/checkpoint/adapter/adapter_model.safetensors",
+        "sha256": "8e101f3830b28c34d0a4b9c78fe33a0fd7867f7f99417054a5350a1d6f812a7f",
+        "bytes": 349243752
+      },
+      "index_source": {
+        "path": "/data/WSH/post-train/experiments/stage4/formal_checkpoint_index.json",
+        "sha256": "5aed298dd548c51b19b9b5778ff41b1e2965791c110b517f054d236e1da2f581",
+        "bytes": 45255
+      },
+      "variant": "vanilla",
+      "checkpoint_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0063/checkpoint",
+      "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0063/checkpoint/adapter",
+      "policy_window_index": 63,
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0063/commit.json",
+        "sha256": "6008e7d566034615f6d056071eebbf24337a10db060ac05a3af22f624826c984",
+        "bytes": 150211
+      }
+    },
+    {
+      "checkpoint_id": "vanilla:1024",
+      "run_id": "s4_formal_vanilla_20260909T155928_24aec5",
+      "training_groups": 1024,
+      "policy_windows": 128,
+      "optimizer_steps": 256,
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0127/checkpoint/adapter/adapter_model.safetensors",
+        "sha256": "9843267e3cdfa9e9c58a346afdc02ac18be02890ae9636a373efd8b8ddd0adec",
+        "bytes": 349243752
+      },
+      "index_source": {
+        "path": "/data/WSH/post-train/experiments/stage4/formal_checkpoint_index.json",
+        "sha256": "5aed298dd548c51b19b9b5778ff41b1e2965791c110b517f054d236e1da2f581",
+        "bytes": 45255
+      },
+      "variant": "vanilla",
+      "checkpoint_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0127/checkpoint",
+      "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0127/checkpoint/adapter",
+      "policy_window_index": 127,
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0127/commit.json",
+        "sha256": "20bfa68d8acbd3cf46a605ac8ea50241285ed8a4ebe28c7a080b688585648129",
+        "bytes": 297296
+      }
+    },
+    {
+      "checkpoint_id": "vanilla:1536",
+      "run_id": "s4_formal_vanilla_20260909T155928_24aec5",
+      "training_groups": 1536,
+      "policy_windows": 192,
+      "optimizer_steps": 384,
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0191/checkpoint/adapter/adapter_model.safetensors",
+        "sha256": "1db95f3955273672a7af4e0c15c715d21d9be0ab2310601ee044dde4e3a23182",
+        "bytes": 349243752
+      },
+      "index_source": {
+        "path": "/data/WSH/post-train/experiments/stage4/formal_checkpoint_index.json",
+        "sha256": "5aed298dd548c51b19b9b5778ff41b1e2965791c110b517f054d236e1da2f581",
+        "bytes": 45255
+      },
+      "variant": "vanilla",
+      "checkpoint_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0191/checkpoint",
+      "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0191/checkpoint/adapter",
+      "policy_window_index": 191,
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0191/commit.json",
+        "sha256": "377818197fee64ac0e4371bd95dbcc8836e4918af7cb57a1cbae08d8ee6115a3",
+        "bytes": 444275
+      }
+    },
+    {
+      "checkpoint_id": "vanilla:2048",
+      "run_id": "s4_formal_vanilla_20260909T155928_24aec5",
+      "training_groups": 2048,
+      "policy_windows": 256,
+      "optimizer_steps": 512,
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0255/checkpoint/adapter/adapter_model.safetensors",
+        "sha256": "1264f0cd888c8e70a554f2fbcdb3a683e075bad8afbe3c8ee34b007a4048f6ba",
+        "bytes": 349243752
+      },
+      "index_source": {
+        "path": "/data/WSH/post-train/experiments/stage4/formal_checkpoint_index.json",
+        "sha256": "5aed298dd548c51b19b9b5778ff41b1e2965791c110b517f054d236e1da2f581",
+        "bytes": 45255
+      },
+      "variant": "vanilla",
+      "checkpoint_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0255/checkpoint",
+      "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0255/checkpoint/adapter",
+      "policy_window_index": 255,
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0255/commit.json",
+        "sha256": "c0fed3eec547f64b6b6813727d284886debda74999c9262c9bd29ff7a508c236",
+        "bytes": 591367
+      }
+    },
+    {
+      "checkpoint_id": "vanilla:2560",
+      "run_id": "s4_formal_vanilla_20260909T155928_24aec5",
+      "training_groups": 2560,
+      "policy_windows": 320,
+      "optimizer_steps": 640,
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0319/checkpoint/adapter/adapter_model.safetensors",
+        "sha256": "ccfa68a4b3cac9e147c1c02e04248094959a3191f0bbbb91b92416c1da4185db",
+        "bytes": 349243752
+      },
+      "index_source": {
+        "path": "/data/WSH/post-train/experiments/stage4/formal_checkpoint_index.json",
+        "sha256": "5aed298dd548c51b19b9b5778ff41b1e2965791c110b517f054d236e1da2f581",
+        "bytes": 45255
+      },
+      "variant": "vanilla",
+      "checkpoint_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0319/checkpoint",
+      "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0319/checkpoint/adapter",
+      "policy_window_index": 319,
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0319/commit.json",
+        "sha256": "177cb2ee22b97d24b0bad1b59232e7c98eccdd3f613b7ec315338a95f8dfe44c",
+        "bytes": 738392
+      }
+    },
+    {
+      "checkpoint_id": "vanilla:3072",
+      "run_id": "s4_formal_vanilla_20260909T155928_24aec5",
+      "training_groups": 3072,
+      "policy_windows": 384,
+      "optimizer_steps": 768,
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0383/checkpoint/adapter/adapter_model.safetensors",
+        "sha256": "43e228eb4343c6b9461a3f6d3ca63681d384fab5087f5b7ba46b8e428c895957",
+        "bytes": 349243752
+      },
+      "index_source": {
+        "path": "/data/WSH/post-train/experiments/stage4/formal_checkpoint_index.json",
+        "sha256": "5aed298dd548c51b19b9b5778ff41b1e2965791c110b517f054d236e1da2f581",
+        "bytes": 45255
+      },
+      "variant": "vanilla",
+      "checkpoint_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0383/checkpoint",
+      "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0383/checkpoint/adapter",
+      "policy_window_index": 383,
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0383/commit.json",
+        "sha256": "99b34dbbdff366cad9463d413d067ea88803195a8e93ba20c4b5a47dce870544",
+        "bytes": 885452
+      }
+    },
+    {
+      "checkpoint_id": "vanilla:3584",
+      "run_id": "s4_formal_vanilla_20260909T155928_24aec5",
+      "training_groups": 3584,
+      "policy_windows": 448,
+      "optimizer_steps": 896,
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0447/checkpoint/adapter/adapter_model.safetensors",
+        "sha256": "7befb12f1840ead89d7c60f2d96bf687820948540d982f6607559c7f1114da9c",
+        "bytes": 349243752
+      },
+      "index_source": {
+        "path": "/data/WSH/post-train/experiments/stage4/formal_checkpoint_index.json",
+        "sha256": "5aed298dd548c51b19b9b5778ff41b1e2965791c110b517f054d236e1da2f581",
+        "bytes": 45255
+      },
+      "variant": "vanilla",
+      "checkpoint_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0447/checkpoint",
+      "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0447/checkpoint/adapter",
+      "policy_window_index": 447,
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0447/commit.json",
+        "sha256": "8db261563730e3603cc27b8f85e3681401e5f8589f48a941c9fb43dd60ee88cb",
+        "bytes": 1032431
+      }
+    },
+    {
+      "checkpoint_id": "vanilla:4096",
+      "run_id": "s4_formal_vanilla_20260909T155928_24aec5",
+      "training_groups": 4096,
+      "policy_windows": 512,
+      "optimizer_steps": 1024,
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0511/checkpoint/adapter/adapter_model.safetensors",
+        "sha256": "f77be6c791f51b3194f7e08c6d939323a004a78b5d4bd3b57b9ed32d2b09a19e",
+        "bytes": 349243752
+      },
+      "index_source": {
+        "path": "/data/WSH/post-train/experiments/stage4/formal_checkpoint_index.json",
+        "sha256": "5aed298dd548c51b19b9b5778ff41b1e2965791c110b517f054d236e1da2f581",
+        "bytes": 45255
+      },
+      "variant": "vanilla",
+      "checkpoint_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0511/checkpoint",
+      "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0511/checkpoint/adapter",
+      "policy_window_index": 511,
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0511/commit.json",
+        "sha256": "5e839dfa8a808b0fbdf02257421717b14448fa787d9c39d5e24b80164f974b9f",
+        "bytes": 1179498
+      }
+    },
+    {
+      "checkpoint_id": "vanilla:4608",
+      "run_id": "s4_formal_vanilla_20260909T155928_24aec5",
+      "training_groups": 4608,
+      "policy_windows": 576,
+      "optimizer_steps": 1152,
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0575/checkpoint/adapter/adapter_model.safetensors",
+        "sha256": "bfca86d9fd6f00e33bc0952da4063aec4afaf493f909932aa36c511305344f4e",
+        "bytes": 349243752
+      },
+      "index_source": {
+        "path": "/data/WSH/post-train/experiments/stage4/formal_checkpoint_index.json",
+        "sha256": "5aed298dd548c51b19b9b5778ff41b1e2965791c110b517f054d236e1da2f581",
+        "bytes": 45255
+      },
+      "variant": "vanilla",
+      "checkpoint_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0575/checkpoint",
+      "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0575/checkpoint/adapter",
+      "policy_window_index": 575,
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0575/commit.json",
+        "sha256": "f807b493a93226dd0ca901153974f18d8c4a7493a62129b38496ab74ad3b973c",
+        "bytes": 1326471
+      }
+    },
+    {
+      "checkpoint_id": "vanilla:5000",
+      "run_id": "s4_formal_vanilla_20260909T155928_24aec5",
+      "training_groups": 5000,
+      "policy_windows": 625,
+      "optimizer_steps": 1250,
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0624/checkpoint/adapter/adapter_model.safetensors",
+        "sha256": "6d3ea0f40d1e3657b1feae5fd2f37cb68835fdbaf6d670ebf4193f7eebbe4eea",
+        "bytes": 349243752
+      },
+      "index_source": {
+        "path": "/data/WSH/post-train/experiments/stage4/formal_checkpoint_index.json",
+        "sha256": "5aed298dd548c51b19b9b5778ff41b1e2965791c110b517f054d236e1da2f581",
+        "bytes": 45255
+      },
+      "variant": "vanilla",
+      "checkpoint_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0624/checkpoint",
+      "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0624/checkpoint/adapter",
+      "policy_window_index": 624,
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0624/commit.json",
+        "sha256": "176b4369c049dbab4d9ce9e2c4bb424f07a0a23014986a4f4b54c07e900abf7c",
+        "bytes": 1439140
+      }
+    },
+    {
+      "checkpoint_id": "dynamic:0512",
+      "run_id": "s4_formal_dynamic_20260909T155929_18b61a",
+      "training_groups": 512,
+      "policy_windows": 64,
+      "optimizer_steps": 128,
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0063/checkpoint/adapter/adapter_model.safetensors",
+        "sha256": "95fa149916139a1656a759e06e85aca1f08cbfcb4058b3e55b7881536e6a2972",
+        "bytes": 349243752
+      },
+      "index_source": {
+        "path": "/data/WSH/post-train/experiments/stage4/formal_checkpoint_index.json",
+        "sha256": "5aed298dd548c51b19b9b5778ff41b1e2965791c110b517f054d236e1da2f581",
+        "bytes": 45255
+      },
+      "variant": "dynamic",
+      "checkpoint_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0063/checkpoint",
+      "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0063/checkpoint/adapter",
+      "policy_window_index": 63,
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0063/commit.json",
+        "sha256": "b73229a17bc52cf45a3cd4047bd51f02211fbaf0b81e9168417cc9e01927bf48",
+        "bytes": 271017
+      }
+    },
+    {
+      "checkpoint_id": "dynamic:1024",
+      "run_id": "s4_formal_dynamic_20260909T155929_18b61a",
+      "training_groups": 1024,
+      "policy_windows": 128,
+      "optimizer_steps": 256,
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0127/checkpoint/adapter/adapter_model.safetensors",
+        "sha256": "3c5e36d11fdc277f5586d6481220a41796b93ab6af79b47e9cdfc5a00c20fa49",
+        "bytes": 349243752
+      },
+      "index_source": {
+        "path": "/data/WSH/post-train/experiments/stage4/formal_checkpoint_index.json",
+        "sha256": "5aed298dd548c51b19b9b5778ff41b1e2965791c110b517f054d236e1da2f581",
+        "bytes": 45255
+      },
+      "variant": "dynamic",
+      "checkpoint_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0127/checkpoint",
+      "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0127/checkpoint/adapter",
+      "policy_window_index": 127,
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0127/commit.json",
+        "sha256": "7fba00e6428033f2029ed8bc060f3cb3cabaccfacac3c2bf7f0191fd8836532b",
+        "bytes": 557597
+      }
+    },
+    {
+      "checkpoint_id": "dynamic:1536",
+      "run_id": "s4_formal_dynamic_20260909T155929_18b61a",
+      "training_groups": 1536,
+      "policy_windows": 192,
+      "optimizer_steps": 384,
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0191/checkpoint/adapter/adapter_model.safetensors",
+        "sha256": "3b4cc78a536cca8f73e35000484cdca0b1ff1abf15549e25d94ecfa880810136",
+        "bytes": 349243752
+      },
+      "index_source": {
+        "path": "/data/WSH/post-train/experiments/stage4/formal_checkpoint_index.json",
+        "sha256": "5aed298dd548c51b19b9b5778ff41b1e2965791c110b517f054d236e1da2f581",
+        "bytes": 45255
+      },
+      "variant": "dynamic",
+      "checkpoint_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0191/checkpoint",
+      "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0191/checkpoint/adapter",
+      "policy_window_index": 191,
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0191/commit.json",
+        "sha256": "a3cc527839d045da6311b621e6b143d2b496156bc3f95a2e63236a769601d73d",
+        "bytes": 844230
+      }
+    },
+    {
+      "checkpoint_id": "dynamic:2048",
+      "run_id": "s4_formal_dynamic_20260909T155929_18b61a",
+      "training_groups": 2048,
+      "policy_windows": 256,
+      "optimizer_steps": 512,
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0255/checkpoint/adapter/adapter_model.safetensors",
+        "sha256": "35bc9393b754a7df6aecb17527c192eeb7bef4fee8d5130526abda0451510bee",
+        "bytes": 349243752
+      },
+      "index_source": {
+        "path": "/data/WSH/post-train/experiments/stage4/formal_checkpoint_index.json",
+        "sha256": "5aed298dd548c51b19b9b5778ff41b1e2965791c110b517f054d236e1da2f581",
+        "bytes": 45255
+      },
+      "variant": "dynamic",
+      "checkpoint_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0255/checkpoint",
+      "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0255/checkpoint/adapter",
+      "policy_window_index": 255,
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0255/commit.json",
+        "sha256": "56771d6a69115183c86a3180f042a39f51a2a4df34a2d3ff4b2f67a8a5d96711",
+        "bytes": 1137777
+      }
+    },
+    {
+      "checkpoint_id": "dynamic:2560",
+      "run_id": "s4_formal_dynamic_20260909T155929_18b61a",
+      "training_groups": 2560,
+      "policy_windows": 320,
+      "optimizer_steps": 640,
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0319/checkpoint/adapter/adapter_model.safetensors",
+        "sha256": "0068db215c583c4a93e9df921109d0b41e16437dd2d4af6fe1e3e69f369439f8",
+        "bytes": 349243752
+      },
+      "index_source": {
+        "path": "/data/WSH/post-train/experiments/stage4/formal_checkpoint_index.json",
+        "sha256": "5aed298dd548c51b19b9b5778ff41b1e2965791c110b517f054d236e1da2f581",
+        "bytes": 45255
+      },
+      "variant": "dynamic",
+      "checkpoint_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0319/checkpoint",
+      "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0319/checkpoint/adapter",
+      "policy_window_index": 319,
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0319/commit.json",
+        "sha256": "a1a5fa4a3d687cb471f4d134391923f576c2e0efbe009d181223cf2b6fd05707",
+        "bytes": 1438123
+      }
+    },
+    {
+      "checkpoint_id": "dynamic:3072",
+      "run_id": "s4_formal_dynamic_20260909T155929_18b61a",
+      "training_groups": 3072,
+      "policy_windows": 384,
+      "optimizer_steps": 768,
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0383/checkpoint/adapter/adapter_model.safetensors",
+        "sha256": "fd279d422d7308979fbae433adc49dfe6300be3b61d74f9b755b5da339a9cb75",
+        "bytes": 349243752
+      },
+      "index_source": {
+        "path": "/data/WSH/post-train/experiments/stage4/formal_checkpoint_index.json",
+        "sha256": "5aed298dd548c51b19b9b5778ff41b1e2965791c110b517f054d236e1da2f581",
+        "bytes": 45255
+      },
+      "variant": "dynamic",
+      "checkpoint_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0383/checkpoint",
+      "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0383/checkpoint/adapter",
+      "policy_window_index": 383,
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0383/commit.json",
+        "sha256": "14ab92d9099536950ec3b588e0f281f6a7e91a27e994eb2eb653efa219050986",
+        "bytes": 1725848
+      }
+    },
+    {
+      "checkpoint_id": "dynamic:3584",
+      "run_id": "s4_formal_dynamic_20260909T155929_18b61a",
+      "training_groups": 3584,
+      "policy_windows": 448,
+      "optimizer_steps": 896,
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0447/checkpoint/adapter/adapter_model.safetensors",
+        "sha256": "2b2ea4b4e86b8666a7d408eb5b6e59ded14130ed616103c9d9d3cd1fcb7c8112",
+        "bytes": 349243752
+      },
+      "index_source": {
+        "path": "/data/WSH/post-train/experiments/stage4/formal_checkpoint_index.json",
+        "sha256": "5aed298dd548c51b19b9b5778ff41b1e2965791c110b517f054d236e1da2f581",
+        "bytes": 45255
+      },
+      "variant": "dynamic",
+      "checkpoint_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0447/checkpoint",
+      "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0447/checkpoint/adapter",
+      "policy_window_index": 447,
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0447/commit.json",
+        "sha256": "9cc2051217a24d3a38cf2e9b4aa00597a60b3ebf1edce333fb5b76254f30baf8",
+        "bytes": 2027325
+      }
+    },
+    {
+      "checkpoint_id": "dynamic:4096",
+      "run_id": "s4_formal_dynamic_20260909T155929_18b61a",
+      "training_groups": 4096,
+      "policy_windows": 512,
+      "optimizer_steps": 1024,
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0511/checkpoint/adapter/adapter_model.safetensors",
+        "sha256": "6dbfd4a4218d5a57997552af6fe0d0c754a9f142559654955a25d49a5b37f90a",
+        "bytes": 349243752
+      },
+      "index_source": {
+        "path": "/data/WSH/post-train/experiments/stage4/formal_checkpoint_index.json",
+        "sha256": "5aed298dd548c51b19b9b5778ff41b1e2965791c110b517f054d236e1da2f581",
+        "bytes": 45255
+      },
+      "variant": "dynamic",
+      "checkpoint_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0511/checkpoint",
+      "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0511/checkpoint/adapter",
+      "policy_window_index": 511,
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0511/commit.json",
+        "sha256": "9cf3a107ea8381855ec152dd4a32e0a14973e26f3a4f2fdebc3486782789950a",
+        "bytes": 2324813
+      }
+    },
+    {
+      "checkpoint_id": "dynamic:4608",
+      "run_id": "s4_formal_dynamic_20260909T155929_18b61a",
+      "training_groups": 4608,
+      "policy_windows": 576,
+      "optimizer_steps": 1152,
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0575/checkpoint/adapter/adapter_model.safetensors",
+        "sha256": "af06ffda19eb4b2d0e1da91a7e3d10979b32e7e98e182d9b9f912cacf08169df",
+        "bytes": 349243752
+      },
+      "index_source": {
+        "path": "/data/WSH/post-train/experiments/stage4/formal_checkpoint_index.json",
+        "sha256": "5aed298dd548c51b19b9b5778ff41b1e2965791c110b517f054d236e1da2f581",
+        "bytes": 45255
+      },
+      "variant": "dynamic",
+      "checkpoint_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0575/checkpoint",
+      "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0575/checkpoint/adapter",
+      "policy_window_index": 575,
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0575/commit.json",
+        "sha256": "287a02d6c016948ec9506a8b554969d858ea99af98d8310e059bc9b033273bd9",
+        "bytes": 2628504
+      }
+    },
+    {
+      "checkpoint_id": "dynamic:5000",
+      "run_id": "s4_formal_dynamic_20260909T155929_18b61a",
+      "training_groups": 5000,
+      "policy_windows": 625,
+      "optimizer_steps": 1250,
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0624/checkpoint/adapter/adapter_model.safetensors",
+        "sha256": "6b7b95025da5a4dbb65594b5128f92cc24812f1a2422bc4384804984d9ba6dad",
+        "bytes": 349243752
+      },
+      "index_source": {
+        "path": "/data/WSH/post-train/experiments/stage4/formal_checkpoint_index.json",
+        "sha256": "5aed298dd548c51b19b9b5778ff41b1e2965791c110b517f054d236e1da2f581",
+        "bytes": 45255
+      },
+      "variant": "dynamic",
+      "checkpoint_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0624/checkpoint",
+      "adapter_path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0624/checkpoint/adapter",
+      "policy_window_index": 624,
+      "source_commit": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0624/commit.json",
+        "sha256": "3227828b26b14cc4d5c354420dc731bc3e804e1b017bbccd5a226edc064871c2",
+        "bytes": 2855469
+      }
+    }
+  ]
+}

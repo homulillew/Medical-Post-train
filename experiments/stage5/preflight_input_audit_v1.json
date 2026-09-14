@@ -1,0 +1,190 @@
+{
+  "result": "PASS",
+  "scope": "CPU_SOURCE_METADATA_AUDIT_ONLY",
+  "protected_refs": [
+    {
+      "path": "/data/WSH/post-train/project_state.json",
+      "sha256": "d25e358ab0d1bf7d9b375aca43f6db77b2a3a45c969b6593cf3cc36f94362349",
+      "bytes": 4800
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/checkpoint_selection_protocol_v1.json",
+      "sha256": "43413a28ab3d6a4a3b03f788f2145bd8efa475a62cbe1bf22dc4f0a0fa48944a",
+      "bytes": 173901
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/manifests/cmexam_test_full.json",
+      "sha256": "e0f4eee53eb64162c10c484c4319a23a18e293b7becd25cda87e760eef5540b7",
+      "bytes": 442423
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/sets/cmexam_test_full.jsonl",
+      "sha256": "6711ea1fcd6dab5ead3d34a47d981ff304345718c6b472296d71f1e48b332886",
+      "bytes": 14437632
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/requests/cmexam_test_full.jsonl",
+      "sha256": "0194a312d3114e869e6c886cc5e0d1f736caf35f5e87ae4933f531431dab3707",
+      "bytes": 4170869
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/manifests/cmexam_test_scorable.json",
+      "sha256": "493a05e9f5521794debfe30189c8c95d44f149a62d82139e6bf817608eb4c8e8",
+      "bytes": 442305
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/sets/cmexam_test_scorable.jsonl",
+      "sha256": "f8557e30a1f3fcc75f5dbec3229e7cef478e99d003a26d0689c34214b36de888",
+      "bytes": 14433966
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/requests/cmexam_test_scorable.jsonl",
+      "sha256": "0194a312d3114e869e6c886cc5e0d1f736caf35f5e87ae4933f531431dab3707",
+      "bytes": 4170869
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/manifests/cmexam_test_clean.json",
+      "sha256": "1e923924e27075b50683cc781806c828f7ef49ed5ffb15f2b4d0e64617f44646",
+      "bytes": 437298
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/sets/cmexam_test_clean.jsonl",
+      "sha256": "7e52198c13b3433a6ddc8f3304d5e2b90f7fa31b96d80646d4a595a4cf59182b",
+      "bytes": 14243666
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/requests/cmexam_test_clean.jsonl",
+      "sha256": "1b0254039136ea7ca1790aa46be7e34d587f66b88edc2f52c2ce3ac91559305d",
+      "bytes": 4116450
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/manifests/cmb_exam_clean_2000.json",
+      "sha256": "d67cbccab7acb4bfc210e6973c5c671836ca98468cb001024fa365d7073e39d7",
+      "bytes": 124842
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/sets/cmb_exam_clean_2000.jsonl",
+      "sha256": "8ecf21b5a324f866191ed9cd8f5cc6ee4c55ab8db8f233ff417e1a5709187821",
+      "bytes": 3542423
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/requests/cmb_exam_clean_2000.jsonl",
+      "sha256": "58a260cce2fc0e5ac6d7f80eb4aba98ccdcacb1da9364175a225212e1af7af20",
+      "bytes": 1195184
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/manifests/cmb_clin.json",
+      "sha256": "9a3a5d00523b00fda6e6002cb06f7ea7e5b2b07e881beb681fd00eaf91b544cd",
+      "bytes": 13863
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/sets/cmb_clin.jsonl",
+      "sha256": "897cfebaabcde3068d59838cccd8ea6aa7bdbfe18275d5860d0860fc47c8b2c9",
+      "bytes": 625426
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/requests/cmb_clin.jsonl",
+      "sha256": "072f34ec6e75d9251cd0d71b280d0c635b559e83313c7a6e55cc20859dabf217",
+      "bytes": 409280
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/manifests/open_qa_retention_200.json",
+      "sha256": "a1e980bd4b503d1f62f4e2803086355e3e64cbb2c6c09a853c875702df87901d",
+      "bytes": 13404
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/sets/open_qa_retention_200.jsonl",
+      "sha256": "93fbe9a3fbdd2c6bb1f995a5aa1466cfc453ed0abe1dbe354b7dae07251bf4fa",
+      "bytes": 450210
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/requests/open_qa_retention_200.jsonl",
+      "sha256": "b41a776bb2be7eea3191e271ac0fb869222dbfa5e9a17311718e9bbf7242771c",
+      "bytes": 132014
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/manifests/safety_slice.json",
+      "sha256": "e22b893cf90708cf170a7cc8ee8edac65adf046f35ad1373365e854d8bf5feb6",
+      "bytes": 7784
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/sets/safety_slice.jsonl",
+      "sha256": "ce7ff8b70405478541c4e0de096afb79f704492c0cf1569620ace0541c82bbf4",
+      "bytes": 350772
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/data/stage5/s5_data_20260910T064143_v4/requests/safety_slice.jsonl",
+      "sha256": "dd93d8e7a885bd4f7ff03ac2d266bc19ae5f285b3066006f6ffb1cf00df1053b",
+      "bytes": 186349
+    }
+  ],
+  "candidate_count": 20,
+  "cmexam_counts": [
+    6811,
+    6809,
+    6732
+  ],
+  "cmb_primary": 2000,
+  "cmb_medical_only": 1929,
+  "clinical_cases": 74,
+  "clinical_questions": 208,
+  "current_project_generations": {
+    "external_records_excluded": [
+      {
+        "manifest": {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/manifest.json",
+          "sha256": "1d683c5842487dd3893a430c3648c69465f9dcc000b6dbd1efd470e352d3dafc",
+          "bytes": 2649
+        },
+        "config": {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/config.json",
+          "sha256": "30eb3846406cf99b4e2009770f741739a1990b6cdcf0bc933f39d17204deb1bb",
+          "bytes": 2453
+        },
+        "model": "deepseek-flash",
+        "reason": "Verified historical external provider, not a local project checkpoint"
+      },
+      {
+        "manifest": {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/manifest.json",
+          "sha256": "ed8908d747c0c9b8a9f40728e28cdada9d50557e67603cc40a1837600eb42a35",
+          "bytes": 2254
+        },
+        "config": {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/config.json",
+          "sha256": "015578f7548eb6a98dcd19a01d47e73e6b9fe2919d7c28f6c9ab83dfc2a9000e",
+          "bytes": 1725
+        },
+        "model": "deepseek-v4-pro",
+        "reason": "Verified historical external provider, not a local project checkpoint"
+      }
+    ],
+    "project_run_manifests": [],
+    "project_response_files": [],
+    "legacy_project_files": [],
+    "selection_result_files": [],
+    "selection1024_generations": 0,
+    "cmexam_cmb_project_final_generations": 0,
+    "evidence_scope": "Repository declared project-model run namespaces and project_state; historical external API baselines are separate and excluded"
+  },
+  "selection_content_read": false,
+  "test_source_metadata_read": true,
+  "test_responses_generated": 0,
+  "grpo_isolation": "No GRPO auxiliary arm enters Stage5 candidate index; loss_objective_eval512 is not selection1024; auxiliary results cannot enter ranking or final-test preparation. No change to GRPO protocol or worker.",
+  "plan": [
+    "source and candidate hash audit",
+    "deterministic ranking and response schemas",
+    "fail-closed selection/final/GPU gates",
+    "lazy future backend with durable attempts",
+    "blind/rubric/safety CPU builders",
+    "synthetic integration and verifier",
+    "seal preflight only; keep Stage5 NOT_STARTED"
+  ],
+  "risks": [
+    "Future model runtime unexecuted by design",
+    "Open-QA human/judge identities not yet assigned; final verification blocks missing evidence",
+    "Clinical questions clustered by case",
+    "No test scores used to alter selection"
+  ],
+  "resources": "CPU metadata/hash/statistics only; no GPU model loads or paid API"
+}

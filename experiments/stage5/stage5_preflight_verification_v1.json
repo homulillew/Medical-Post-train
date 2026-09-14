@@ -1,0 +1,77 @@
+{
+  "result": "STAGE5_PREFLIGHT_PASS",
+  "scope": "PREFLIGHT_ONLY_NOT_STAGE5_EXECUTION",
+  "tests": {
+    "path": "/data/WSH/post-train/experiments/stage5/preflight_test_results_v1.json",
+    "sha256": "a9a22cbaadfe68456e28ae8a55d285eefd1232cc0a41da7d13e0676a3902c108",
+    "bytes": 1050
+  },
+  "candidate_count": 20,
+  "selection_rule_hash": "b62d6aeab74c76930bb7e424c7b079e21733651688165bfd1f35968424110eba",
+  "cmexam": [
+    6811,
+    6809,
+    6732
+  ],
+  "cmb_primary": 2000,
+  "cmb_medical_only": 1929,
+  "open_qa_counts": {
+    "clinical_cases": 74,
+    "clinical_questions": 208,
+    "retention": 200,
+    "risk": 111,
+    "unique_generation_items": 408,
+    "expected_generations": 1224
+  },
+  "stage4_gate_closed": true,
+  "selection1024_generations": 0,
+  "project_final_generations": 0,
+  "gpu_model_loads_by_stage5": 0,
+  "paid_api_calls": 0,
+  "project_state_unchanged": true,
+  "stage5_status": "NOT_STARTED",
+  "stage6_status": "NOT_STARTED",
+  "usage": {
+    "external_records_excluded": [
+      {
+        "manifest": {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/manifest.json",
+          "sha256": "1d683c5842487dd3893a430c3648c69465f9dcc000b6dbd1efd470e352d3dafc",
+          "bytes": 2649
+        },
+        "config": {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/config.json",
+          "sha256": "30eb3846406cf99b4e2009770f741739a1990b6cdcf0bc933f39d17204deb1bb",
+          "bytes": 2453
+        },
+        "model": "deepseek-flash",
+        "reason": "Verified historical external provider, not a local project checkpoint"
+      },
+      {
+        "manifest": {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/manifest.json",
+          "sha256": "ed8908d747c0c9b8a9f40728e28cdada9d50557e67603cc40a1837600eb42a35",
+          "bytes": 2254
+        },
+        "config": {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/config.json",
+          "sha256": "015578f7548eb6a98dcd19a01d47e73e6b9fe2919d7c28f6c9ab83dfc2a9000e",
+          "bytes": 1725
+        },
+        "model": "deepseek-v4-pro",
+        "reason": "Verified historical external provider, not a local project checkpoint"
+      }
+    ],
+    "project_run_manifests": [],
+    "project_response_files": [],
+    "legacy_project_files": [],
+    "selection_result_files": [],
+    "selection1024_generations": 0,
+    "cmexam_cmb_project_final_generations": 0,
+    "evidence_scope": "Repository declared project-model run namespaces and project_state; historical external API baselines are separate and excluded"
+  },
+  "limitations": [
+    "GPU generation paths intentionally NOT_RUN; synthetic backend exercises durable execution",
+    "Human/judge identities unassigned; real audit mandatory later"
+  ]
+}

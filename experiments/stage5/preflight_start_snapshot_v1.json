@@ -1,0 +1,234 @@
+{
+  "timestamp": "2026-09-14T06:12:17.024543+00:00",
+  "head": "4b7d09091c4e2a54ffbc2fdcda844d0df22b4e00",
+  "project_state": {
+    "path": "/data/WSH/post-train/project_state.json",
+    "sha256": "d25e358ab0d1bf7d9b375aca43f6db77b2a3a45c969b6593cf3cc36f94362349",
+    "bytes": 4800
+  },
+  "state": {
+    "schema_version": 1,
+    "phase": "EXECUTION",
+    "contract_sha256": "8ba60bd2e724fbbb74e26f4ef677eb6c6d51eaafcba6eb3bcb0b2eb588a51f24",
+    "stage_verifier_implemented": true,
+    "stages": {
+      "1": {
+        "status": "DONE",
+        "run_ids": [
+          "s1_data_20260908T144854_bac3a7",
+          "s1_smoke_20260908T145244_1af07b",
+          "s1_pilot_20260908T150104_71a69a",
+          "s1_formal_20260908T152119_60040b",
+          "s1_evaluation_20260908T175526_8cfbc0",
+          "s1_memory_20260908T151118_dfaed6",
+          "s1_data_audit_20260908T145755_3aabaa",
+          "s1_source_reasoning_20260908T160619_58be7b",
+          "s1_data_20260908T144417_418b80"
+        ],
+        "progress": {
+          "train_examples": 20000,
+          "coverage_fraction": 1.0
+        },
+        "verification_receipt": {
+          "path": "experiments/stage1/verification-final.json",
+          "sha256": "50e3d0cc543f2707e8ec758b6ae3f66d07a952c65f690355fae7453ad14e107e",
+          "verifier_commit": "1b06f9124b7b3d11d353fde12070c7ec56754c81",
+          "contract_sha256": "8ba60bd2e724fbbb74e26f4ef677eb6c6d51eaafcba6eb3bcb0b2eb588a51f24",
+          "result": "PASS"
+        },
+        "stage_report": "docs/stage_reports/01_medical_sft.md",
+        "interview_story": "docs/stage_reports/01_medical_sft.md"
+      },
+      "2": {
+        "status": "DONE",
+        "run_ids": [
+          "s2_data_20260909T024052_870aba",
+          "s2_semantic_20260909T024252_815f01",
+          "s2_semantic_20260909T024652_cb6286",
+          "s2_smoke_20260909T024936_746dbe",
+          "s2_formal_20260909T025736_f607d9"
+        ],
+        "progress": {
+          "candidate_pool": 15000,
+          "profiling_unique_prompts": 1000,
+          "completed_responses": 4000
+        },
+        "verification_receipt": {
+          "path": "experiments/stage2/verification-final.json",
+          "sha256": "833bd57694a922355eebabae07558d0fa43060867e269d4c9e926bf353fa148d",
+          "verifier_commit": "75d235f194daa27a712b120b666ddb13f8a9683f",
+          "contract_sha256": "8ba60bd2e724fbbb74e26f4ef677eb6c6d51eaafcba6eb3bcb0b2eb588a51f24",
+          "result": "PASS"
+        },
+        "stage_report": "docs/stage_reports/02_reward_rollout.md",
+        "interview_story": "docs/stage_reports/02_reward_rollout.md"
+      },
+      "3": {
+        "status": "DONE",
+        "run_ids": [
+          "s3_smoke_20260909T052408_5114dc",
+          "s3_smoke_20260909T051456_a53a8c",
+          "s3_smoke_20260909T052138_e6717b",
+          "s3_formal_20260909T053101_d99393"
+        ],
+        "progress": {
+          "accepted_integration_mixed_groups": 256
+        },
+        "verification_receipt": {
+          "path": "experiments/stage3/verification-final.json",
+          "sha256": "33d8b8fd6720e7f9f433b7f16994eecfd7aff0b7be9955b7a9f04673c6058203",
+          "verifier_commit": "a538dc42fef88f0fab5605a8334daf203fc362aa",
+          "contract_sha256": "8ba60bd2e724fbbb74e26f4ef677eb6c6d51eaafcba6eb3bcb0b2eb588a51f24",
+          "result": "PASS"
+        },
+        "stage_report": "docs/stage_reports/03_dynamic_sampling.md",
+        "interview_story": "docs/stage_reports/03_dynamic_sampling.md"
+      },
+      "4": {
+        "status": "FULL_PASS",
+        "run_ids": [
+          "s4_optimization_diagnostic_20260909T065945_66b040",
+          "s4_optimization_diagnostic_20260909T070249_a3a605",
+          "s4_smoke_dynamic_20260909T071807_adad34",
+          "s4_smoke_vanilla_20260909T070935_4a09cb",
+          "s4_smoke_vanilla_20260909T071222_ef95d2",
+          "s4_pilot_vanilla_20260909T075203_95a6e9",
+          "s4_pilot_dynamic_20260909T075204_3e449e",
+          "s4_recovery_a_20260909T153057_987d5a",
+          "s4_recovery_b_20260909T153059_e39b9b",
+          "s4_recovery_c_20260909T153059_f621ea",
+          "s4_formal_vanilla_20260909T155928_24aec5",
+          "s4_formal_dynamic_20260909T155929_18b61a"
+        ],
+        "progress": {
+          "vanilla_training_groups": 5000,
+          "dynamic_accepted_mixed_groups": 5000
+        },
+        "verification_receipt": null,
+        "stage_report": null,
+        "interview_story": null
+      },
+      "5": {
+        "status": "NOT_STARTED",
+        "run_ids": [],
+        "progress": {
+          "checkpoints_evaluated": 0,
+          "cmexam_questions_per_checkpoint": 0,
+          "cmb_questions_per_checkpoint": 0
+        },
+        "verification_receipt": null,
+        "stage_report": null,
+        "interview_story": null
+      },
+      "6": {
+        "status": "NOT_STARTED",
+        "run_ids": [],
+        "progress": {
+          "consistency_prompts": 0,
+          "real_requests_total": 0,
+          "concurrency_conditions": []
+        },
+        "verification_receipt": null,
+        "stage_report": null,
+        "interview_story": null
+      }
+    },
+    "stage0": {
+      "status": "VERIFIED",
+      "stage1_readiness": "READY_FOR_SMOKE",
+      "report": "docs/stage_reports/00_runtime_compatibility.md",
+      "verification_receipt": "experiments/stage0/verification-final.json"
+    }
+  },
+  "auxiliary_snapshot": {
+    "status": "TRAINING",
+    "arm": "vanilla",
+    "pid": 3824220,
+    "training_groups": 312,
+    "generated_groups": 312,
+    "timestamp": "2026-09-14T06:12:10.026325+00:00"
+  },
+  "gpu": {
+    "cuda_processes": [
+      "3824501, VLLM::EngineCore, 542",
+      "3824220, /data/WSH/post-train/.venv-train/bin/python, 422",
+      "3854250, /data/WSH/post-train/.venv-train/bin/python, 20456"
+    ],
+    "training_workers": [
+      {
+        "pid": 3820247,
+        "argv": [
+          "/data/WSH/post-train/.venv-train/bin/python",
+          "scripts/loss_objective_runtime.py",
+          "supervise"
+        ]
+      },
+      {
+        "pid": 3824220,
+        "argv": [
+          "/data/WSH/post-train/.venv-train/bin/python",
+          "/data/WSH/post-train/scripts/loss_objective_runtime.py",
+          "worker",
+          "--run",
+          "/data/WSH/medical-post-train-artifacts/runs/s4_aux_grpo_vanilla_20260914T045809_94e35e",
+          "--attempt",
+          "/data/WSH/medical-post-train-artifacts/runs/s4_aux_grpo_vanilla_20260914T045809_94e35e/attempt_002"
+        ]
+      },
+      {
+        "pid": 3854250,
+        "argv": [
+          "/data/WSH/post-train/.venv-train/bin/python",
+          "/data/WSH/post-train/scripts/loss_objective_runtime.py",
+          "actor-window",
+          "--run",
+          "/data/WSH/medical-post-train-artifacts/runs/s4_aux_grpo_vanilla_20260914T045809_94e35e",
+          "--directory",
+          "/data/WSH/medical-post-train-artifacts/runs/s4_aux_grpo_vanilla_20260914T045809_94e35e/windows/0039"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "external_records_excluded": [
+      {
+        "manifest": {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/manifest.json",
+          "sha256": "1d683c5842487dd3893a430c3648c69465f9dcc000b6dbd1efd470e352d3dafc",
+          "bytes": 2649
+        },
+        "config": {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/config.json",
+          "sha256": "30eb3846406cf99b4e2009770f741739a1990b6cdcf0bc933f39d17204deb1bb",
+          "bytes": 2453
+        },
+        "model": "deepseek-flash",
+        "reason": "Verified historical external provider, not a local project checkpoint"
+      },
+      {
+        "manifest": {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/manifest.json",
+          "sha256": "ed8908d747c0c9b8a9f40728e28cdada9d50557e67603cc40a1837600eb42a35",
+          "bytes": 2254
+        },
+        "config": {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/config.json",
+          "sha256": "015578f7548eb6a98dcd19a01d47e73e6b9fe2919d7c28f6c9ab83dfc2a9000e",
+          "bytes": 1725
+        },
+        "model": "deepseek-v4-pro",
+        "reason": "Verified historical external provider, not a local project checkpoint"
+      }
+    ],
+    "project_run_manifests": [],
+    "project_response_files": [],
+    "legacy_project_files": [],
+    "selection_result_files": [],
+    "selection1024_generations": 0,
+    "cmexam_cmb_project_final_generations": 0,
+    "evidence_scope": "Repository declared project-model run namespaces and project_state; historical external API baselines are separate and excluded"
+  },
+  "task": "STAGE5_CPU_PREFLIGHT",
+  "gpu_model_loads_by_this_task": 0,
+  "paid_api_calls_by_this_task": 0
+}

@@ -82,6 +82,7 @@ result does not establish a compute-efficiency advantage or a held-out test gain
 Final-budget checkpoints are reported without selecting an earlier validation peak.
 Readiness for Stage 5 remains **NO**.
 Stage 5–6 remain **NOT_STARTED**.
+Stage5 evaluation harness preflight prepared; selection/final test remain sealed.
 Stage5 evaluation datasets are **prepared and frozen**: CMExam official6811
 (6809 scorable), CMB2000, clinical74 cases/208 questions, retention200, and a
 111-question source-risk slice. The DeepSeek Flash external reference probe

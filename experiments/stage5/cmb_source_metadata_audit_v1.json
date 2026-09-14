@@ -1,0 +1,104 @@
+{
+  "source": {
+    "path": "/data/WSH/post-train/experiments/stage5/source_anomalies.json",
+    "sha256": "a0b4d08ab995bbc1c3954ced914b4abd4c4065deafe3047e23607b0c2a9b1ad3",
+    "bytes": 2746
+  },
+  "source_metadata_anomaly_count": 11,
+  "source_anomalies": [
+    {
+      "id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:2922",
+      "reason": "question_type_version_mismatch",
+      "question_type": "C型选择题",
+      "gold_metadata_type": "单项选择题"
+    },
+    {
+      "id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:2940",
+      "reason": "question_type_version_mismatch",
+      "question_type": "C型选择题",
+      "gold_metadata_type": "单项选择题"
+    },
+    {
+      "id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:2962",
+      "reason": "question_type_version_mismatch",
+      "question_type": "C型选择题",
+      "gold_metadata_type": "单项选择题"
+    },
+    {
+      "id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:2977",
+      "reason": "question_type_version_mismatch",
+      "question_type": "C型选择题",
+      "gold_metadata_type": "单项选择题"
+    },
+    {
+      "id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:2980",
+      "reason": "question_type_version_mismatch",
+      "question_type": "C型选择题",
+      "gold_metadata_type": "单项选择题"
+    },
+    {
+      "id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:3060",
+      "reason": "question_type_version_mismatch",
+      "question_type": "C型选择题",
+      "gold_metadata_type": "单项选择题"
+    },
+    {
+      "id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:3064",
+      "reason": "question_type_version_mismatch",
+      "question_type": "C型选择题",
+      "gold_metadata_type": "单项选择题"
+    },
+    {
+      "id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:3150",
+      "reason": "question_type_version_mismatch",
+      "question_type": "C型选择题",
+      "gold_metadata_type": "单项选择题"
+    },
+    {
+      "id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:3154",
+      "reason": "question_type_version_mismatch",
+      "question_type": "C型选择题",
+      "gold_metadata_type": "单项选择题"
+    },
+    {
+      "id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:3165",
+      "reason": "question_type_version_mismatch",
+      "question_type": "C型选择题",
+      "gold_metadata_type": "单项选择题"
+    },
+    {
+      "id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:3183",
+      "reason": "question_type_version_mismatch",
+      "question_type": "C型选择题",
+      "gold_metadata_type": "单项选择题"
+    }
+  ],
+  "primary_intersection": [
+    {
+      "id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:2940",
+      "reason": "question_type_version_mismatch",
+      "question_type": "C型选择题",
+      "gold_metadata_type": "单项选择题"
+    },
+    {
+      "id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:2980",
+      "reason": "question_type_version_mismatch",
+      "question_type": "C型选择题",
+      "gold_metadata_type": "单项选择题"
+    },
+    {
+      "id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:3154",
+      "reason": "question_type_version_mismatch",
+      "question_type": "C型选择题",
+      "gold_metadata_type": "单项选择题"
+    },
+    {
+      "id": "cmb_test:935fbc09edf1303d89872b21265ff597f426ac0d:3183",
+      "reason": "question_type_version_mismatch",
+      "question_type": "C型选择题",
+      "gold_metadata_type": "单项选择题"
+    }
+  ],
+  "invalid_primary_answer_schema_count": 0,
+  "disposition": "Retain primary2000 unchanged. Four included items have historical source question_type vs gold metadata type disagreement; gold-joined canonical answer remains scorable. Metadata-version disagreement is not relabeled as an invalid answer."
+}

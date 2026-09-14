@@ -1,0 +1,87 @@
+{
+  "type": "object",
+  "required": [
+    "checkpoint_id",
+    "run_id",
+    "prompt_id",
+    "raw_output",
+    "finish_reason",
+    "parsed_answer",
+    "ground_truth",
+    "correct",
+    "strict_format",
+    "parse_method",
+    "ambiguous",
+    "unparseable",
+    "truncated",
+    "prompt_tokens",
+    "output_tokens"
+  ],
+  "properties": {
+    "correct": {
+      "type": "boolean"
+    },
+    "strict_format": {
+      "type": "boolean"
+    },
+    "ambiguous": {
+      "type": "boolean"
+    },
+    "unparseable": {
+      "type": "boolean"
+    },
+    "truncated": {
+      "type": "boolean"
+    },
+    "checkpoint_id": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "prompt_id": {
+      "type": "string"
+    },
+    "raw_output": {
+      "type": "string"
+    },
+    "ground_truth": {
+      "type": "string"
+    },
+    "parse_method": {
+      "type": "string"
+    },
+    "finish_reason": {
+      "enum": [
+        "stop",
+        "length"
+      ]
+    },
+    "parsed_answer": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "prompt_tokens": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "output_tokens": {
+      "type": "integer",
+      "minimum": 0
+    }
+  },
+  "summary_fields": [
+    "n",
+    "correct_count",
+    "accuracy",
+    "strict_format_rate",
+    "unparseable_rate",
+    "truncation_rate",
+    "mean_output_tokens",
+    "P50_output_tokens",
+    "P95_output_tokens",
+    "P99_output_tokens"
+  ]
+}

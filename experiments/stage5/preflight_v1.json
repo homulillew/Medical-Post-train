@@ -1,0 +1,22 @@
+{
+  "status": "PREPARED_AWAITING_PREFLIGHT_VERIFIER",
+  "scope": "CPU_ONLY",
+  "timestamp": "2026-09-14T06:29:39.967228+00:00",
+  "seal": {
+    "path": "/data/WSH/post-train/experiments/stage5/preflight_seal_v1.json",
+    "sha256": "01ace902662c00f5ef2ecc4d80b790d2f2e5f83e41bb88ee2044986d67571c1d",
+    "bytes": 7323
+  },
+  "tests": {
+    "path": "/data/WSH/post-train/experiments/stage5/preflight_test_results_v1.json",
+    "sha256": "a9a22cbaadfe68456e28ae8a55d285eefd1232cc0a41da7d13e0676a3902c108",
+    "bytes": 1050
+  },
+  "result_artifacts": "All NOT_RUN/empty until real future execution and audits",
+  "Stage5": "NOT_STARTED",
+  "Stage6": "NOT_STARTED",
+  "gpu_model_loads": 0,
+  "paid_api_calls": 0,
+  "grpo_auxiliary": "Read-only observation; existing worker and frozen protocol untouched",
+  "next_action": "Allow running GRPO auxiliary to finish. After Stage4 human review/full verifier reaches DONE and READY_FOR_STAGE5=YES, run selection1024 with exclusive GPU ownership. No final CMExam/CMB tests before selection is frozen."
+}

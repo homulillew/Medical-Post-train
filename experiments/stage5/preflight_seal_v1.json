@@ -1,0 +1,184 @@
+{
+  "status": "FROZEN_CPU_PREFLIGHT_INPUTS_AND_HARNESS",
+  "timestamp": "2026-09-14T06:29:39.967228+00:00",
+  "artifacts": [
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/checkpoint_candidate_index_v1.json",
+      "sha256": "2b7e8f903b816bba29c91baa4be8bf89831a0ea149fe4d3fc5ca8fa036aa0c13",
+      "bytes": 27281
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/selection_execution_plan_v1.json",
+      "sha256": "bcd4afba8148e8a775122433e5dc4dca613a17c9aa750578b8e97dcc4208d581",
+      "bytes": 67397
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/selection_response_schema_v1.json",
+      "sha256": "3aae94c79f23642e30db5277e31cadd467b9f8627bfde46f58004d6b6a095f5c",
+      "bytes": 1472
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/cmexam_final_eval_protocol_v1.json",
+      "sha256": "8a7e61de7f9059585d864fb5e32563e81b2f73aba470a07250c264012dec7e8d",
+      "bytes": 3761
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/cmexam_slice_manifest_v1.json",
+      "sha256": "7b4d5183acadeca36345b82071109ef3c26650ee4ca6b494379e9df7f42f458e",
+      "bytes": 2788672
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/cmexam_source_metadata_audit_v1.json",
+      "sha256": "8c4aef031766f5a6e97f982f3a9e0dde33a0bc0b93402a64b3f3493040310268",
+      "bytes": 991
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/cmb_primary_audit_v1.json",
+      "sha256": "978eb38b7dcab72ce761a3cba4719f32db6e7fdf5d721ce034934e9c5a6edca5",
+      "bytes": 130483
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/cmb_medical_only_manifest_v1.json",
+      "sha256": "f1779d7a8e402edd7c1f560b220076cd4bf48046e25c6c16888b3cdc82d99612",
+      "bytes": 125392
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/cmb_source_metadata_audit_v1.json",
+      "sha256": "64c7808eacc3234e445c824d7a0ba2390d1a9a06e3b19ec31492b1cd5e5e5e96",
+      "bytes": 3886
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/open_qa_eval_protocol_v1.json",
+      "sha256": "3c7aa77b3c2823bdf9e12520633e568eac91048a5bc7f7486ef06e65a1be5b9b",
+      "bytes": 17376
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/open_qa_blind_schedule_v1.json",
+      "sha256": "4a51b04cc122ab9d64a909a640aecb4e347e96763cefb26f5629ef0d2f52deac",
+      "bytes": 338472
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/open_qa_judgment_schema_v1.json",
+      "sha256": "26aac8008e10054b3dd1dd22faf74bf95b9f2f5eac70d77fca6ebc1673d01ff3",
+      "bytes": 686
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/final_results_schema_v1.json",
+      "sha256": "fe7ee18301356722284f5128592a8247b7981da1e4c30f82503bf0e9cd1496cd",
+      "bytes": 692
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/final_execution_plan_v1.json",
+      "sha256": "961e0bdcd8218407c338e43802c09be2238b96718ae76572c42d99261e078c45",
+      "bytes": 1387
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/preflight_start_snapshot_v1.json",
+      "sha256": "16482661fcecc45cd830f03495d730cf7ce65871fcbf88e751774a6673dc1d78",
+      "bytes": 8821
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/preflight_input_audit_v1.json",
+      "sha256": "27c4b23d9ce28f41be70d67bc9a9d559f2b686215b064a1606c363e7b3a15782",
+      "bytes": 8320
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/preflight_test_results_v1.json",
+      "sha256": "a9a22cbaadfe68456e28ae8a55d285eefd1232cc0a41da7d13e0676a3902c108",
+      "bytes": 1050
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/checkpoint_selection_protocol_v1.json",
+      "sha256": "43413a28ab3d6a4a3b03f788f2145bd8efa475a62cbe1bf22dc4f0a0fa48944a",
+      "bytes": 173901
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/evaluation_protocol.json",
+      "sha256": "f6ecc0974d8d94c19a04ca8ccc4019333173845ddac9fd52d7facaeb9aba6f6d",
+      "bytes": 2929
+    }
+  ],
+  "sources": [
+    {
+      "path": "/data/WSH/post-train/scripts/prepare_stage5_preflight.py",
+      "sha256": "c21394f60420c457e8dd7898d85e4bfdf5babc580760c18e055ee88086ca7b71",
+      "bytes": 15782
+    },
+    {
+      "path": "/data/WSH/post-train/scripts/select_stage5_checkpoint.py",
+      "sha256": "193c72502a94f3a683b9ad70debaea898638f608cb7e625a3b5df573d5d57659",
+      "bytes": 1394
+    },
+    {
+      "path": "/data/WSH/post-train/scripts/run_stage5_eval.py",
+      "sha256": "279d16e50dfcc0504ed5cd1587109d80e65d7d48170729ecca6727c128b7e688",
+      "bytes": 7629
+    },
+    {
+      "path": "/data/WSH/post-train/scripts/stage5_model_worker.py",
+      "sha256": "39395c70015e846ee8c99e93031df4aaef5c83807ccceac8ce0866beccf6405e",
+      "bytes": 3283
+    },
+    {
+      "path": "/data/WSH/post-train/scripts/analyze_stage5_eval.py",
+      "sha256": "8bbcb65ae9528f3e97c56e29ae54a45f4b3f2687528a6d8eca102bccc77809e5",
+      "bytes": 4840
+    },
+    {
+      "path": "/data/WSH/post-train/scripts/verify_stage5.py",
+      "sha256": "a93b47b822053eba9c2722258b4228cfa6bd2f5296deb6c5c06d7cdfb46d7030",
+      "bytes": 8634
+    },
+    {
+      "path": "/data/WSH/post-train/scripts/seal_stage5_preflight.py",
+      "sha256": "cfbf06c2d0dfe0058c804889486a0bfe45148b743f63985deaca65a5922e3a85",
+      "bytes": 5463
+    },
+    {
+      "path": "/data/WSH/post-train/scripts/checkpoint_selection.py",
+      "sha256": "770ac39265e351cc35d14a817307b0ff99de314c20e1ceb117bbcdba675f3e4e",
+      "bytes": 4519
+    },
+    {
+      "path": "/data/WSH/post-train/src/medical_posttrain/evaluation/blind.py",
+      "sha256": "7809ff26fd366e6fcc7cda7a831a0587f5f6c07021726a23eaa0f3409f7e0310",
+      "bytes": 7639
+    },
+    {
+      "path": "/data/WSH/post-train/src/medical_posttrain/evaluation/__init__.py",
+      "sha256": "b10598cf530d13a31d10e587eba2ef56dcac5a04e35db53a5808bad66be584bd",
+      "bytes": 79
+    },
+    {
+      "path": "/data/WSH/post-train/src/medical_posttrain/evaluation/core.py",
+      "sha256": "f6ad6e8bec78dafc4d97cd6879f5efb81efd4ec6424c185aabd0ab3c31d0ef41",
+      "bytes": 5102
+    },
+    {
+      "path": "/data/WSH/post-train/src/medical_posttrain/evaluation/executor.py",
+      "sha256": "5d89289345471ab4d9f5e63136800c72b63bc035ca303e9b716c3768c3eb3532",
+      "bytes": 3311
+    },
+    {
+      "path": "/data/WSH/post-train/src/medical_posttrain/evaluation/gates.py",
+      "sha256": "88840020799a887aad553f9804864752d6a4f3095657815644a66ae881b98294",
+      "bytes": 8349
+    },
+    {
+      "path": "/data/WSH/post-train/tests/test_stage5_preflight.py",
+      "sha256": "8b094713072d4d6694822bb8e77194bbb4a9428969d7d78021420b6ced360cc7",
+      "bytes": 13463
+    },
+    {
+      "path": "/data/WSH/post-train/src/medical_posttrain/reward/parser.py",
+      "sha256": "c3dfb9b4f0ff71334f7b2f19d5e265d7341c5d93baec2b00d9f40212329c8bdc",
+      "bytes": 3991
+    },
+    {
+      "path": "/data/WSH/post-train/src/medical_posttrain/data/exam.py",
+      "sha256": "081121a5b54aff164030a162de573e9fcf1a02f64fab639b23d4b8bed65e9996",
+      "bytes": 7007
+    }
+  ],
+  "project_state_reference_is_start_snapshot_only": "Stage4 must later advance to DONE; its mutable project_state hash is protected during preflight only, not a permanent future launch requirement."
+}

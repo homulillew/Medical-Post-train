@@ -1,0 +1,36 @@
+{
+  "official_source_n": 6811,
+  "official_raw_difficulty_distribution": {
+    "3": 1500,
+    "1": 2385,
+    "4": 654,
+    "2": 2141,
+    "5": 131
+  },
+  "scorable_distribution": {
+    "1": 2385,
+    "2": 2140,
+    "3": 1500,
+    "4": 654,
+    "5": 130
+  },
+  "source": {
+    "path": "/data/WSH/post-train/experiments/stage5/manifests/cmexam_test_full.json",
+    "sha256": "e0f4eee53eb64162c10c484c4319a23a18e293b7becd25cda87e760eef5540b7",
+    "bytes": 442423
+  },
+  "malformed_source_items": [
+    {
+      "id": "cmexam_test:fadb22c89beb1b7115dc36460ba792eb96b7b972:2866",
+      "reason": "noncontiguous_options",
+      "raw_options": "B 多潘立酮\nC 盐酸昂司丹琼\nD 四氧氯普胺\nE 盐酸格拉司琼",
+      "raw_answer": "A"
+    },
+    {
+      "id": "cmexam_test:fadb22c89beb1b7115dc36460ba792eb96b7b972:5331",
+      "reason": "noncontiguous_options",
+      "raw_options": "B 保泰松\nC 卡马西平\nD 苯妥英钠\nE 阿苯达唑",
+      "raw_answer": "BCE"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "result": "STAGE5_PREFLIGHT_PASS",
+  "timestamp": "2026-09-14T06:31:21.544844+00:00",
+  "verification": {
+    "path": "/data/WSH/post-train/experiments/stage5/stage5_preflight_verification_v1.json",
+    "sha256": "84819ac8b2942abbc14bf418adec83553ca71d72041da0456225d23ade1de499",
+    "bytes": 2898
+  },
+  "preflight": {
+    "path": "/data/WSH/post-train/experiments/stage5/preflight_v1.json",
+    "sha256": "572d89710d81e3cfbd309597782c906827c3feb983cc1a450ced4b47c152b27b",
+    "bytes": 1044
+  },
+  "Stage4": "FULL_PASS",
+  "Stage5": "NOT_STARTED",
+  "Stage6": "NOT_STARTED",
+  "grpo_auxiliary_read_only_snapshot": {
+    "status": "TRAINING",
+    "arm": "vanilla",
+    "pid": 3824220,
+    "training_groups": 392,
+    "generated_groups": 392,
+    "timestamp": "2026-09-14T06:31:09.328419+00:00"
+  },
+  "gpu": {
+    "cuda_processes": [
+      "3824501, VLLM::EngineCore, 542",
+      "3824220, /data/WSH/post-train/.venv-train/bin/python, 422",
+      "3860911, /data/WSH/post-train/.venv-train/bin/python, 20456"
+    ],
+    "training_workers": [
+      {
+        "pid": 3820247,
+        "argv": [
+          "/data/WSH/post-train/.venv-train/bin/python",
+          "scripts/loss_objective_runtime.py",
+          "supervise"
+        ]
+      },
+      {
+        "pid": 3824220,
+        "argv": [
+          "/data/WSH/post-train/.venv-train/bin/python",
+          "/data/WSH/post-train/scripts/loss_objective_runtime.py",
+          "worker",
+          "--run",
+          "/data/WSH/medical-post-train-artifacts/runs/s4_aux_grpo_vanilla_20260914T045809_94e35e",
+          "--attempt",
+          "/data/WSH/medical-post-train-artifacts/runs/s4_aux_grpo_vanilla_20260914T045809_94e35e/attempt_002"
+        ]
+      },
+      {
+        "pid": 3860911,
+        "argv": [
+          "/data/WSH/post-train/.venv-train/bin/python",
+          "/data/WSH/post-train/scripts/loss_objective_runtime.py",
+          "actor-window",
+          "--run",
+          "/data/WSH/medical-post-train-artifacts/runs/s4_aux_grpo_vanilla_20260914T045809_94e35e",
+          "--directory",
+          "/data/WSH/medical-post-train-artifacts/runs/s4_aux_grpo_vanilla_20260914T045809_94e35e/windows/0049"
+        ]
+      }
+    ]
+  },
+  "grpo_frozen_runtime_sources_unchanged": true,
+  "selection_protocol_unchanged": true,
+  "existing_dataset_hashes_unchanged": true,
+  "usage": {
+    "external_records_excluded": [
+      {
+        "manifest": {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/manifest.json",
+          "sha256": "1d683c5842487dd3893a430c3648c69465f9dcc000b6dbd1efd470e352d3dafc",
+          "bytes": 2649
+        },
+        "config": {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_external_deepseek_flash_20260910T065617/config.json",
+          "sha256": "30eb3846406cf99b4e2009770f741739a1990b6cdcf0bc933f39d17204deb1bb",
+          "bytes": 2453
+        },
+        "model": "deepseek-flash",
+        "reason": "Verified historical external provider, not a local project checkpoint"
+      },
+      {
+        "manifest": {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/manifest.json",
+          "sha256": "ed8908d747c0c9b8a9f40728e28cdada9d50557e67603cc40a1837600eb42a35",
+          "bytes": 2254
+        },
+        "config": {
+          "path": "/data/WSH/medical-post-train-artifacts/runs/s5_judge_v4pro_20260910T073746/config.json",
+          "sha256": "015578f7548eb6a98dcd19a01d47e73e6b9fe2919d7c28f6c9ab83dfc2a9000e",
+          "bytes": 1725
+        },
+        "model": "deepseek-v4-pro",
+        "reason": "Verified historical external provider, not a local project checkpoint"
+      }
+    ],
+    "project_run_manifests": [],
+    "project_response_files": [],
+    "legacy_project_files": [],
+    "selection_result_files": [],
+    "selection1024_generations": 0,
+    "cmexam_cmb_project_final_generations": 0,
+    "evidence_scope": "Repository declared project-model run namespaces and project_state; historical external API baselines are separate and excluded"
+  },
+  "stage5_gpu_model_loads": 0,
+  "paid_api_calls": 0,
+  "model_generation_paths_tested": "NOT_RUN; CPU synthetic integration and rejection gates only"
+}

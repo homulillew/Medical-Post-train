@@ -1,0 +1,44 @@
+{
+  "status": "NOT_RUN",
+  "selection_prerequisite": "FROZEN_SELECTED with hashed result lock; Stage4 DONE/full PASS/READY YES",
+  "sections": [
+    "Primary Selected Models",
+    "Scientific Equal-Update Endpoints"
+  ],
+  "models": [
+    "sft",
+    "selected_vanilla",
+    "selected_dynamic",
+    "vanilla:5000",
+    "dynamic:5000"
+  ],
+  "source_datasets": [
+    "cmexam_test_scorable6809",
+    "cmb_exam_clean_2000",
+    "cmb_clin208",
+    "retention200"
+  ],
+  "secondary_reuse": [
+    "cmexam_clean6732",
+    "cmb_medical_only1929",
+    "safety111"
+  ],
+  "secondary_extra_generations": 0,
+  "exam_unique_checkpoint_range": [
+    3,
+    5
+  ],
+  "exam_expected_generation_range": [
+    26427,
+    44045
+  ],
+  "open_expected_generations": 1224,
+  "duplicate_selected_5000_policy": "Reuse identical raw output when checkpoint matches; always separate scientific vs selected reporting sections",
+  "commands": {
+    "selection": ".venv-train/bin/python scripts/run_stage5_eval.py --selection-only",
+    "final": ".venv-train/bin/python scripts/run_stage5_eval.py --final-only",
+    "explicit_resume": "add --resume; add --technical-retry only for an unresolved technical failure; zero automatic retries"
+  },
+  "generation_status": "NOT_RUN",
+  "runtime_validation": "CPU synthetic integration only; GPU runtime must meet frozen versions and context checks before future inference"
+}

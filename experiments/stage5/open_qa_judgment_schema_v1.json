@@ -1,0 +1,30 @@
+{
+  "status": "NOT_RUN",
+  "required": [
+    "pair_id",
+    "preference",
+    "scores",
+    "judge_id",
+    "judge_version",
+    "judge_is_candidate",
+    "raw_judgment",
+    "rubric_protocol_sha256"
+  ],
+  "rubric_protocol": {
+    "path": "/data/WSH/post-train/experiments/stage5/open_qa_eval_protocol_v1.json",
+    "sha256": "3c7aa77b3c2823bdf9e12520633e568eac91048a5bc7f7486ef06e65a1be5b9b",
+    "bytes": 17376
+  },
+  "preference": [
+    "A win",
+    "tie",
+    "B win"
+  ],
+  "score_range": [
+    0,
+    4
+  ],
+  "judge_is_candidate": false,
+  "raw_judgment": "Immutable path/SHA256/bytes reference to original judge output; no API invocation in this task",
+  "human_reviews": []
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="20" time="59.368" timestamp="2026-09-14T14:21:31.594213+08:00" hostname="ubuntu-MU72-SU0-00"><testcase classname="tests.test_stage5_preflight" name="test_stage4_gate[FULL_PASS]" time="0.019" /><testcase classname="tests.test_stage5_preflight" name="test_stage4_gate[no_receipt]" time="0.008" /><testcase classname="tests.test_stage5_preflight" name="test_stage4_gate[wrong_hash]" time="0.006" /><testcase classname="tests.test_stage5_preflight" name="test_stage4_gate[not_ready]" time="0.006" /><testcase classname="tests.test_stage5_preflight" name="test_stage4_gate[valid]" time="0.005" /><testcase classname="tests.test_stage5_preflight" name="test_gpu_guard[snapshot0]" time="0.000" /><testcase classname="tests.test_stage5_preflight" name="test_gpu_guard[snapshot1]" time="0.000" /><testcase classname="tests.test_stage5_preflight" name="test_gpu_guard[snapshot2]" time="0.000" /><testcase classname="tests.test_stage5_preflight" name="test_ranking_all_tiebreaks" time="0.001" /><testcase classname="tests.test_stage5_preflight" name="test_synthetic100_integration" time="0.255" /><testcase classname="tests.test_stage5_preflight" name="test_technical_retry_requires_explicit_resume" time="0.003" /><testcase classname="tests.test_stage5_preflight" name="test_visible_blind_position_human_safety" time="0.003" /><testcase classname="tests.test_stage5_preflight" name="test_final_gate[selection_missing]" time="0.007" /><testcase classname="tests.test_stage5_preflight" name="test_final_gate[selection_not_frozen]" time="0.008" /><testcase classname="tests.test_stage5_preflight" name="test_final_gate[selection_hash]" time="0.007" /><testcase classname="tests.test_stage5_preflight" name="test_final_gate[protocol_hash]" time="0.007" /><testcase classname="tests.test_stage5_preflight" name="test_final_gate[source_hash]" time="0.007"><failure message="ValueError: Artifact hash/size mismatch: /tmp/pytest-of-ubuntu/pytest-614/test_final_gate_source_hash_0/dummy.json">tmp_path = PosixPath('/tmp/pytest-of-ubuntu/pytest-614/test_final_gate_source_hash_0')
+mutation = 'source_hash'
+
+    @pytest.mark.parametrize('mutation',['selection_missing','selection_not_frozen','selection_hash','protocol_hash','source_hash','checkpoint_id','valid'])
+    def test_final_gate(tmp_path,mutation):
+        root=final_fixture(tmp_path);idx=root/'experiments/stage5'
+        if mutation=='selection_missing':(idx/'selection_result_lock_v1.json').unlink()
+        elif mutation=='selection_not_frozen':
+            file=idx/'selection_result_manifest_v1.json';d=read(file);d['status']='RUNNING';r=put(file,d);lock=read(idx/'selection_result_lock_v1.json');lock['selection_result']=r;put(idx/'selection_result_lock_v1.json',lock)
+        elif mutation=='selection_hash':(idx/'selection_result_manifest_v1.json').write_text('{}')
+        elif mutation=='protocol_hash':(idx/'cmexam_final_eval_protocol_v1.json').write_text('{}')
+        elif mutation=='source_hash':(root/'dummy.json').write_text('changed')
+        if mutation=='valid':assert final_gate('sft',root)['status']=='FROZEN_SELECTED'
+        else:
+&gt;           with pytest.raises(PermissionError):final_gate('grpo:512' if mutation=='checkpoint_id' else 'sft',root)
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_stage5_preflight.py:135: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/medical_posttrain/evaluation/gates.py:46: in final_gate
+    root=Path(root);selection_gate(root);base=root/'experiments/stage5'
+                    ^^^^^^^^^^^^^^^^^^^^
+src/medical_posttrain/evaluation/gates.py:42: in selection_gate
+    for r in [p['dataset']['partition'],p['dataset']['source_metadata'],p['parser'],p['prompt']['messages_source'],p['prompt']['chat_template']]:check_ref(r)
+                                                                                                                                                 ^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+r = {'bytes': 2, 'path': '/tmp/pytest-of-ubuntu/pytest-614/test_final_gate_source_hash_0/dummy.json', 'sha256': '44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a'}
+
+    def check_ref(r):
+        a=ref(r['path'])
+&gt;       if any(a[k]!=r[k] for k in a):raise ValueError('Artifact hash/size mismatch: '+r['path'])
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Artifact hash/size mismatch: /tmp/pytest-of-ubuntu/pytest-614/test_final_gate_source_hash_0/dummy.json
+
+src/medical_posttrain/evaluation/core.py:18: ValueError</failure></testcase><testcase classname="tests.test_stage5_preflight" name="test_final_gate[checkpoint_id]" time="0.010" /><testcase classname="tests.test_stage5_preflight" name="test_final_gate[valid]" time="0.009" /><testcase classname="tests.test_stage5_preflight" name="test_cpu_dry_run_import_guard" time="58.710" /></testsuite></testsuites>

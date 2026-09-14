@@ -1,0 +1,97 @@
+{
+  "status": "FROZEN_NOT_RUN",
+  "official_source_n": 6811,
+  "scorable_n": 6809,
+  "clean_secondary_n": 6732,
+  "headline": "CMExam scorable6809; clean6732 is a secondary decontaminated subset, never full test",
+  "manifests": {
+    "cmexam_test_full": {
+      "path": "/data/WSH/post-train/experiments/stage5/manifests/cmexam_test_full.json",
+      "sha256": "e0f4eee53eb64162c10c484c4319a23a18e293b7becd25cda87e760eef5540b7",
+      "bytes": 442423
+    },
+    "cmexam_test_scorable": {
+      "path": "/data/WSH/post-train/experiments/stage5/manifests/cmexam_test_scorable.json",
+      "sha256": "493a05e9f5521794debfe30189c8c95d44f149a62d82139e6bf817608eb4c8e8",
+      "bytes": 442305
+    },
+    "cmexam_test_clean": {
+      "path": "/data/WSH/post-train/experiments/stage5/manifests/cmexam_test_clean.json",
+      "sha256": "1e923924e27075b50683cc781806c828f7ef49ed5ffb15f2b4d0e64617f44646",
+      "bytes": 437298
+    }
+  },
+  "malformed_source_evidence": [
+    {
+      "id": "cmexam_test:fadb22c89beb1b7115dc36460ba792eb96b7b972:2866",
+      "schema_error": "noncontiguous_options",
+      "raw_options": "B 多潘立酮\nC 盐酸昂司丹琼\nD 四氧氯普胺\nE 盐酸格拉司琼",
+      "answer": "A",
+      "source_file": {
+        "bytes": 5857392,
+        "path": "/data/WSH/medical-post-train-artifacts/data/stage1/raw/cmexam_test.csv",
+        "revision": "fadb22c89beb1b7115dc36460ba792eb96b7b972",
+        "sha256": "e998f69b3f8108bf08bcb8cc9a2a6ed276afeabde6ba3caa3015789b1f6fd407",
+        "source": "cmexam_test",
+        "url": "https://raw.githubusercontent.com/williamliujl/CMExam/fadb22c89beb1b7115dc36460ba792eb96b7b972/data/test_with_annotations.csv"
+      },
+      "source_record_sha256": "5e4fb8df67767802c469afc3768b20a763f1c745698e39c4c6adffc3cd4f788b"
+    },
+    {
+      "id": "cmexam_test:fadb22c89beb1b7115dc36460ba792eb96b7b972:5331",
+      "schema_error": "noncontiguous_options",
+      "raw_options": "B 保泰松\nC 卡马西平\nD 苯妥英钠\nE 阿苯达唑",
+      "answer": "BCE",
+      "source_file": {
+        "bytes": 5857392,
+        "path": "/data/WSH/medical-post-train-artifacts/data/stage1/raw/cmexam_test.csv",
+        "revision": "fadb22c89beb1b7115dc36460ba792eb96b7b972",
+        "sha256": "e998f69b3f8108bf08bcb8cc9a2a6ed276afeabde6ba3caa3015789b1f6fd407",
+        "source": "cmexam_test",
+        "url": "https://raw.githubusercontent.com/williamliujl/CMExam/fadb22c89beb1b7115dc36460ba792eb96b7b972/data/test_with_annotations.csv"
+      },
+      "source_record_sha256": "192d19c08a4c742ce7d20e168a7e0f210e9dde213da6558b997b5d058a504eb2"
+    }
+  ],
+  "anomaly_source": {
+    "path": "/data/WSH/post-train/experiments/stage5/source_anomalies.json",
+    "sha256": "a0b4d08ab995bbc1c3954ced914b4abd4c4065deafe3047e23607b0c2a9b1ad3",
+    "bytes": 2746
+  },
+  "decoding": {
+    "n": 1,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": -1,
+    "max_tokens": 1024,
+    "seed": 42
+  },
+  "request_template": {
+    "path": "/data/WSH/post-train/experiments/stage5/evaluation_protocol.json",
+    "sha256": "f6ecc0974d8d94c19a04ca8ccc4019333173845ddac9fd52d7facaeb9aba6f6d",
+    "bytes": 2929
+  },
+  "reporting_sections": {
+    "Primary Selected Models": [
+      "sft",
+      "selected_vanilla",
+      "selected_dynamic"
+    ],
+    "Scientific Equal-Update Endpoints": [
+      "vanilla:5000",
+      "dynamic:5000"
+    ]
+  },
+  "unique_checkpoint_reuse": "If selected equals5000, reuse exact retained predictions but report in separate sections; no second generation.",
+  "comparisons": [
+    "vanilla_minus_sft",
+    "dynamic_minus_sft",
+    "dynamic_minus_vanilla"
+  ],
+  "bootstrap": {
+    "seed": 20260914,
+    "resamples": 10000,
+    "unit": "paired prompt"
+  },
+  "no_test_before_frozen_selection": true
+}
