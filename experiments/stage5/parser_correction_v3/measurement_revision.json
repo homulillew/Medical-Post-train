@@ -1,0 +1,32 @@
+{
+  "active_final_exam_parser": "stage5-exam-parser-v3",
+  "supersedes": [
+    "v1",
+    "v2"
+  ],
+  "scope": "FINAL_EXAMS_ONLY",
+  "selection_changed": false,
+  "training_changed": false,
+  "new_generations": 0,
+  "decision": {
+    "path": "/data/WSH/post-train/docs/decisions/STAGE5_PARSER_CORRECTION_V3.md",
+    "sha256": "12889a365ad6b8d111e2df1e4500d696d7e111deb768cbdbc9546a270a613696",
+    "bytes": 3429
+  },
+  "source_manifest": {
+    "path": "/data/WSH/post-train/experiments/stage5/parser_correction_v3/source_manifest.json",
+    "sha256": "62e001e7aede8fc67a0c567387dada86c0fa77df84362677355eb61923a304ff",
+    "bytes": 2609
+  },
+  "cmexam": {
+    "path": "/data/WSH/post-train/experiments/stage5/parser_correction_v3/cmexam_final_results_v3.json",
+    "sha256": "186b848efa79979b327b058799005bd60115bde73adc8f3784e8ad3baad132f4",
+    "bytes": 1253232
+  },
+  "report": {
+    "path": "/data/WSH/post-train/docs/stage_reports/05_exam_rescoring_v3.md",
+    "sha256": "d6627c5b44c5c0be0ecdc7b5f663ad6eee64a357641b75f9375b34a067388906",
+    "bytes": 2982
+  },
+  "full_stage5_complete": false
+}

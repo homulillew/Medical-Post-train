@@ -1,0 +1,68 @@
+{
+  "run_id": "stage5_parser_correction_v3_20260916",
+  "run_class": "EVALUATION",
+  "timestamp": "2026-09-15T17:52:13.058539+00:00",
+  "sources": [
+    {
+      "path": "/data/WSH/post-train/src/medical_posttrain/evaluation/exam_parser_v3.py",
+      "sha256": "aa280e2952602894d8497e11f6c5c145ae9b335ce6cefd16d1c4c77e9e552f95",
+      "bytes": 6329
+    },
+    {
+      "path": "/data/WSH/post-train/scripts/rescore_stage5_exams_v3.py",
+      "sha256": "1f717434906a506902b5ef8c6f2e796ba12156c85cfbb0cf5e3f10b0eb6d1433",
+      "bytes": 9051
+    },
+    {
+      "path": "/data/WSH/post-train/tests/test_stage5_parser_v3.py",
+      "sha256": "6d158247788a7cadee65241ed3c50920a7c9fa213e85ad6e8e7e7b44e77868dd",
+      "bytes": 3294
+    },
+    {
+      "path": "/data/WSH/post-train/docs/decisions/STAGE5_PARSER_CORRECTION_V3.md",
+      "sha256": "12889a365ad6b8d111e2df1e4500d696d7e111deb768cbdbc9546a270a613696",
+      "bytes": 3429
+    },
+    {
+      "path": "/data/WSH/post-train/src/medical_posttrain/reward/parser.py",
+      "sha256": "c3dfb9b4f0ff71334f7b2f19d5e265d7341c5d93baec2b00d9f40212329c8bdc",
+      "bytes": 3991
+    },
+    {
+      "path": "/data/WSH/post-train/src/medical_posttrain/evaluation/exam_parser_v2.py",
+      "sha256": "63d9b2f1f2e32d18b8e4303754d0b872a7ee275bfcbaef8f75e0d379e369f736",
+      "bytes": 1832
+    },
+    {
+      "path": "/data/WSH/post-train/src/medical_posttrain/evaluation/core.py",
+      "sha256": "f6ad6e8bec78dafc4d97cd6879f5efb81efd4ec6424c185aabd0ab3c31d0ef41",
+      "bytes": 5102
+    },
+    {
+      "path": "/data/WSH/post-train/scripts/stage5_objective_evidence.py",
+      "sha256": "2ac9f918ce1708ad8cdde9311b72f2c7d336747a05238ce44ef7281cc9c9be6b",
+      "bytes": 19970
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/selection_result_manifest_v1.json",
+      "sha256": "2c9c1304f935f9e481d4481f09747def2b9c09dc572a605b87d53c2dad8605f4",
+      "bytes": 18207
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/preflight_seal_v1.json",
+      "sha256": "01ace902662c00f5ef2ecc4d80b790d2f2e5f83e41bb88ee2044986d67571c1d",
+      "bytes": 7323
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/parser_correction_v3/tests_final.xml",
+      "sha256": "43dba84bea8ec6d62d03f5db977383480e8fa56a2172c86bb30cb34e135f2aca",
+      "bytes": 16808
+    }
+  ],
+  "command": "PYTHONPATH=src:scripts python scripts/rescore_stage5_exams_v3.py --watch",
+  "python": "3.12.7",
+  "head": "aaa75be6321ae4179674ef72c56ab725ca8bd5c3",
+  "new_generations": 0,
+  "owner_authorization": "重新评估",
+  "pre_aggregate_v3_freeze": true
+}
