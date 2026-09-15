@@ -1,0 +1,40 @@
+{
+  "source": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/cases/all_exam_candidates.json",
+    "sha256": "6c73ce9f42a41594d7fe583732bb06a1a857343de3e5d33a09205f658e07a0e6",
+    "bytes": 9330608
+  },
+  "counts": {
+    "cmexam_test_scorable": {
+      "sft_wrong_both_rl_correct": 144,
+      "sft_wrong_dynamic_only_correct": 140,
+      "vanilla_correct_dynamic_wrong": 521,
+      "dynamic_correct_vanilla_wrong": 147,
+      "both_rl_regress_from_sft": 10,
+      "parser_format_regression": 0,
+      "suspicious_reasoning_final_contradiction": 0,
+      "difficult_category_gain": 23
+    },
+    "cmb_exam_clean_2000": {
+      "sft_wrong_both_rl_correct": 32,
+      "sft_wrong_dynamic_only_correct": 43,
+      "vanilla_correct_dynamic_wrong": 151,
+      "dynamic_correct_vanilla_wrong": 46,
+      "both_rl_regress_from_sft": 1,
+      "parser_format_regression": 0,
+      "suspicious_reasoning_final_contradiction": 0,
+      "difficult_category_gain": 0
+    }
+  },
+  "cross_dataset_divergence": {
+    "cmexam_test_scorable": {
+      "dynamic_minus_vanilla_pp": -5.4927302100161555
+    },
+    "cmb_exam_clean_2000": {
+      "dynamic_minus_vanilla_pp": -5.25
+    }
+  },
+  "cross_dataset_note": "Aggregate difference across independent datasets; items are not paired between CMExam and CMB.",
+  "manual_reviews": [],
+  "reasoning_contradictions": "Lexical candidates require review; not established clinical contradictions"
+}

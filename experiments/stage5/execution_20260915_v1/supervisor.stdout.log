@@ -201,3 +201,33 @@
 {"event": "process_completed", "timestamp": "2026-09-15T20:13:18.054025+00:00", "phase": "open_qa_retention_200_sft", "process_record": "/data/WSH/post-train/experiments/stage5/execution_20260915_v1/processes/open_qa_retention_200_sft_1789502927364859619"}
 {"event": "process_completed", "timestamp": "2026-09-15T20:18:04.920304+00:00", "phase": "open_qa_retention_200_vanilla_4608", "process_record": "/data/WSH/post-train/experiments/stage5/execution_20260915_v1/processes/open_qa_retention_200_vanilla_4608_1789503199169974033"}
 {"event": "process_completed", "timestamp": "2026-09-15T20:24:37.047208+00:00", "phase": "open_qa_retention_200_dynamic_5000", "process_record": "/data/WSH/post-train/experiments/stage5/execution_20260915_v1/processes/open_qa_retention_200_dynamic_5000_1789503486033881686"}
+[main 5f6f44c] eval: retain open medical QA generations
+ 30 files changed, 719 insertions(+), 4 deletions(-)
+ create mode 100644 experiments/stage5/execution_20260915_v1/processes/cmb_clin_dynamic_5000_1789502474914232676/exit.json
+ create mode 100644 experiments/stage5/execution_20260915_v1/processes/cmb_clin_dynamic_5000_1789502474914232676/launch.json
+ create mode 100644 experiments/stage5/execution_20260915_v1/processes/cmb_clin_dynamic_5000_1789502474914232676/stderr.log
+ create mode 100644 experiments/stage5/execution_20260915_v1/processes/cmb_clin_dynamic_5000_1789502474914232676/stdout.log
+ create mode 100644 experiments/stage5/execution_20260915_v1/processes/cmb_clin_sft_1789501585182319056/exit.json
+ create mode 100644 experiments/stage5/execution_20260915_v1/processes/cmb_clin_sft_1789501585182319056/launch.json
+ create mode 100644 experiments/stage5/execution_20260915_v1/processes/cmb_clin_sft_1789501585182319056/stderr.log
+ create mode 100644 experiments/stage5/execution_20260915_v1/processes/cmb_clin_sft_1789501585182319056/stdout.log
+ create mode 100644 experiments/stage5/execution_20260915_v1/processes/cmb_clin_vanilla_4608_1789502022425025440/exit.json
+ create mode 100644 experiments/stage5/execution_20260915_v1/processes/cmb_clin_vanilla_4608_1789502022425025440/launch.json
+ create mode 100644 experiments/stage5/execution_20260915_v1/processes/cmb_clin_vanilla_4608_1789502022425025440/stderr.log
+ create mode 100644 experiments/stage5/execution_20260915_v1/processes/cmb_clin_vanilla_4608_1789502022425025440/stdout.log
+ create mode 100644 experiments/stage5/execution_20260915_v1/processes/open_qa_retention_200_dynamic_5000_1789503486033881686/exit.json
+ create mode 100644 experiments/stage5/execution_20260915_v1/processes/open_qa_retention_200_dynamic_5000_1789503486033881686/launch.json
+ create mode 100644 experiments/stage5/execution_20260915_v1/processes/open_qa_retention_200_dynamic_5000_1789503486033881686/stderr.log
+ create mode 100644 experiments/stage5/execution_20260915_v1/processes/open_qa_retention_200_dynamic_5000_1789503486033881686/stdout.log
+ create mode 100644 experiments/stage5/execution_20260915_v1/processes/open_qa_retention_200_sft_1789502927364859619/exit.json
+ create mode 100644 experiments/stage5/execution_20260915_v1/processes/open_qa_retention_200_sft_1789502927364859619/launch.json
+ create mode 100644 experiments/stage5/execution_20260915_v1/processes/open_qa_retention_200_sft_1789502927364859619/stderr.log
+ create mode 100644 experiments/stage5/execution_20260915_v1/processes/open_qa_retention_200_sft_1789502927364859619/stdout.log
+ create mode 100644 experiments/stage5/execution_20260915_v1/processes/open_qa_retention_200_vanilla_4608_1789503199169974033/exit.json
+ create mode 100644 experiments/stage5/execution_20260915_v1/processes/open_qa_retention_200_vanilla_4608_1789503199169974033/launch.json
+ create mode 100644 experiments/stage5/execution_20260915_v1/processes/open_qa_retention_200_vanilla_4608_1789503199169974033/stderr.log
+ create mode 100644 experiments/stage5/execution_20260915_v1/processes/open_qa_retention_200_vanilla_4608_1789503199169974033/stdout.log
+ create mode 100644 experiments/stage5/open_qa_blind_bundle_v1.json
+ create mode 100644 experiments/stage5/open_qa_local_generations_v1.json
+ create mode 100644 experiments/stage5/safety_local_results_v1.json
+{"event": "publication", "timestamp": "2026-09-15T20:24:45.999123+00:00", "head": "5f6f44cc1f5f9626846a0a8216c6c6096c728f91", "result": "PASS", "detail": "To https://github.com/homulillew/Medical-Post-train.git\n   8d89091..5f6f44c  main -> main\n"}

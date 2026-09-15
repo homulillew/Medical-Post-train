@@ -117,12 +117,18 @@
         "selection_generations": 20480
       },
       "verification_receipt": null,
-      "stage_report": null,
+      "stage_report": "docs/stage_reports/05_objective_evaluation.md",
       "interview_story": null,
-      "execution_status": "RUNNING",
+      "execution_status": "LOCAL_TASK_COMPLETE",
       "checkpoint_selection_status": "FROZEN_SELECTED",
       "objective_evaluation_status": "OBJECTIVE_EVAL_PASS",
-      "open_qa_status": "LOCAL_GENERATION_RUNNING"
+      "open_qa_status": "OPEN_QA_JUDGE_PENDING",
+      "local_generation_status": "COMPLETE",
+      "objective_verification_receipt": {
+        "path": "/data/WSH/post-train/experiments/stage5/stage5_objective_verification_v1.json",
+        "sha256": "1502d77e99f67afbe1dca8de898d1108bd1cdb770c1d8807e14941514bdef0b2",
+        "bytes": 7278
+      }
     },
     "6": {
       "status": "NOT_STARTED",
