@@ -1,0 +1,179 @@
+{
+  "result": "PASS",
+  "status": "OBJECTIVE_EVAL_PASS",
+  "scope": "STAGE5_OBJECTIVE_ONLY",
+  "selection": {
+    "path": "/data/WSH/post-train/experiments/stage5/selection_results_v1.json",
+    "sha256": "fb9285145e606300dd2db88399474bc4f738cbd594d9751c224ff4df5befca20",
+    "bytes": 27708
+  },
+  "cmexam": {
+    "path": "/data/WSH/post-train/experiments/stage5/cmexam_final_results_v1.json",
+    "sha256": "f157069dc5f04d141e3bc7cd3123f4f4819e42bc987bb29c57c386e6b28e8af1",
+    "bytes": 699889
+  },
+  "cmb": {
+    "path": "/data/WSH/post-train/experiments/stage5/cmb_final_results_v1.json",
+    "sha256": "470fd8fb8772c467ec6ceba6251ff816fcb906aa8b52ada8cb45229b94ab76ea",
+    "bytes": 244970
+  },
+  "receipts": [
+    {
+      "result": "PASS",
+      "n": 6809,
+      "checkpoint_id": "dynamic:5000",
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0624/checkpoint/adapter/adapter_model.safetensors",
+        "sha256": "6b7b95025da5a4dbb65594b5128f92cc24812f1a2422bc4384804984d9ba6dad",
+        "bytes": 349243752
+      },
+      "complete": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/final/dynamic_5000/cmexam_test_scorable/complete.json",
+        "sha256": "fc5b437e1d3b4759ce8bf7379d574482098dfe010628f82d4e34f4279b88c164",
+        "bytes": 2355354
+      },
+      "technical_retries": 0,
+      "raw_token_decode": true,
+      "request_lineage": true,
+      "no_valid_response_rerun": true
+    },
+    {
+      "result": "PASS",
+      "n": 6809,
+      "checkpoint_id": "sft",
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s1_formal_20260908T152119_60040b/checkpoints/final/adapter/adapter_model.safetensors",
+        "sha256": "1601e97891e51940bd4b575d8811a77d8278cbeb296c044b7004e41da6d9ea64",
+        "bytes": 349243752
+      },
+      "complete": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/final/sft/cmexam_test_scorable/complete.json",
+        "sha256": "f29e9be5e35a148da10cb2185ccb7698b9f24bdd508e06ee644dd07f22827b8f",
+        "bytes": 2294096
+      },
+      "technical_retries": 0,
+      "raw_token_decode": true,
+      "request_lineage": true,
+      "no_valid_response_rerun": true
+    },
+    {
+      "result": "PASS",
+      "n": 6809,
+      "checkpoint_id": "vanilla:4608",
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0575/checkpoint/adapter/adapter_model.safetensors",
+        "sha256": "bfca86d9fd6f00e33bc0952da4063aec4afaf493f909932aa36c511305344f4e",
+        "bytes": 349243752
+      },
+      "complete": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/final/vanilla_4608/cmexam_test_scorable/complete.json",
+        "sha256": "a4589e33f234b4a79150d1eaaaf6dd6d1f3d36d77d3313d822dc561483a65920",
+        "bytes": 2355338
+      },
+      "technical_retries": 0,
+      "raw_token_decode": true,
+      "request_lineage": true,
+      "no_valid_response_rerun": true
+    },
+    {
+      "result": "PASS",
+      "n": 6809,
+      "checkpoint_id": "vanilla:5000",
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0624/checkpoint/adapter/adapter_model.safetensors",
+        "sha256": "6d3ea0f40d1e3657b1feae5fd2f37cb68835fdbaf6d670ebf4193f7eebbe4eea",
+        "bytes": 349243752
+      },
+      "complete": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/final/vanilla_5000/cmexam_test_scorable/complete.json",
+        "sha256": "92e59469eee438fddf68976ac81e629a94392e4e7860ad67cd652f1a848a0891",
+        "bytes": 2355310
+      },
+      "technical_retries": 0,
+      "raw_token_decode": true,
+      "request_lineage": true,
+      "no_valid_response_rerun": true
+    },
+    {
+      "result": "PASS",
+      "n": 2000,
+      "checkpoint_id": "dynamic:5000",
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0624/checkpoint/adapter/adapter_model.safetensors",
+        "sha256": "6b7b95025da5a4dbb65594b5128f92cc24812f1a2422bc4384804984d9ba6dad",
+        "bytes": 349243752
+      },
+      "complete": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/final/dynamic_5000/cmb_exam_clean_2000/complete.json",
+        "sha256": "4b15206d4fb169a9cb4bb9db7346008c279b24d2cb4f5343a2317a8cd197f33f",
+        "bytes": 684545
+      },
+      "technical_retries": 0,
+      "raw_token_decode": true,
+      "request_lineage": true,
+      "no_valid_response_rerun": true
+    },
+    {
+      "result": "PASS",
+      "n": 2000,
+      "checkpoint_id": "sft",
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s1_formal_20260908T152119_60040b/checkpoints/final/adapter/adapter_model.safetensors",
+        "sha256": "1601e97891e51940bd4b575d8811a77d8278cbeb296c044b7004e41da6d9ea64",
+        "bytes": 349243752
+      },
+      "complete": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/final/sft/cmb_exam_clean_2000/complete.json",
+        "sha256": "9b284ef885d136e3ac9c1d8f0e898bac80f1e52e671b5af01f9fcd28af92fb75",
+        "bytes": 666538
+      },
+      "technical_retries": 0,
+      "raw_token_decode": true,
+      "request_lineage": true,
+      "no_valid_response_rerun": true
+    },
+    {
+      "result": "PASS",
+      "n": 2000,
+      "checkpoint_id": "vanilla:4608",
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0575/checkpoint/adapter/adapter_model.safetensors",
+        "sha256": "bfca86d9fd6f00e33bc0952da4063aec4afaf493f909932aa36c511305344f4e",
+        "bytes": 349243752
+      },
+      "complete": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/final/vanilla_4608/cmb_exam_clean_2000/complete.json",
+        "sha256": "56969b3f270e8b6449538d9239028b4e8a9ee52b4a9dddcd82ad4deb59b75e7a",
+        "bytes": 684544
+      },
+      "technical_retries": 0,
+      "raw_token_decode": true,
+      "request_lineage": true,
+      "no_valid_response_rerun": true
+    },
+    {
+      "result": "PASS",
+      "n": 2000,
+      "checkpoint_id": "vanilla:5000",
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0624/checkpoint/adapter/adapter_model.safetensors",
+        "sha256": "6d3ea0f40d1e3657b1feae5fd2f37cb68835fdbaf6d670ebf4193f7eebbe4eea",
+        "bytes": 349243752
+      },
+      "complete": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/final/vanilla_5000/cmb_exam_clean_2000/complete.json",
+        "sha256": "5c697c697ded8aa3a61659b9cffa4593e0c725ef92fefb08237d5e33453cca23",
+        "bytes": 684521
+      },
+      "technical_retries": 0,
+      "raw_token_decode": true,
+      "request_lineage": true,
+      "no_valid_response_rerun": true
+    }
+  ],
+  "no_test_based_selection": true,
+  "selection_frozen_before_test": true,
+  "open_qa_judge": "PENDING",
+  "stage6": "NOT_STARTED",
+  "clinical_validation": false
+}

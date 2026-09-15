@@ -120,7 +120,9 @@
       "stage_report": null,
       "interview_story": null,
       "execution_status": "RUNNING",
-      "checkpoint_selection_status": "FROZEN_SELECTED"
+      "checkpoint_selection_status": "FROZEN_SELECTED",
+      "objective_evaluation_status": "OBJECTIVE_EVAL_PASS",
+      "open_qa_status": "LOCAL_GENERATION_RUNNING"
     },
     "6": {
       "status": "NOT_STARTED",

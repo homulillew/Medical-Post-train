@@ -1,7 +1,7 @@
 {
   "status": "RUNNING",
-  "phase": "selection_dynamic_5000",
-  "pid": 25635,
-  "completed_responses": 1008,
-  "timestamp": "2026-09-15T04:53:56.591007+00:00"
+  "phase": "cmb_exam_clean_2000_vanilla_5000",
+  "pid": 224445,
+  "completed_responses": 2000,
+  "timestamp": "2026-09-15T19:44:41.113522+00:00"
 }
