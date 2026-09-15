@@ -1,0 +1,56 @@
+{
+  "run_id": "stage5_parser_correction_v2_20260915",
+  "run_class": "EVALUATION",
+  "sources": [
+    {
+      "path": "/data/WSH/post-train/src/medical_posttrain/evaluation/exam_parser_v2.py",
+      "sha256": "63d9b2f1f2e32d18b8e4303754d0b872a7ee275bfcbaef8f75e0d379e369f736",
+      "bytes": 1832
+    },
+    {
+      "path": "/data/WSH/post-train/scripts/rescore_stage5_exams_v2.py",
+      "sha256": "a72956ab2ac16b9917c1c6f0b8243bd662e2222c50ed453e0a817a66090546c0",
+      "bytes": 8418
+    },
+    {
+      "path": "/data/WSH/post-train/tests/test_stage5_parser_v2.py",
+      "sha256": "88d9ae708040e00c99c0bd4de8994a6fe2f3c64ce651ebe45a095b2dcfbe0173",
+      "bytes": 4660
+    },
+    {
+      "path": "/data/WSH/post-train/docs/decisions/STAGE5_PARSER_CORRECTION_V2.md",
+      "sha256": "4708eaa1fe15e34cb81b3ea77eaa2ccd937061575a3efec7b6276354954ede27",
+      "bytes": 3198
+    },
+    {
+      "path": "/data/WSH/post-train/src/medical_posttrain/reward/parser.py",
+      "sha256": "c3dfb9b4f0ff71334f7b2f19d5e265d7341c5d93baec2b00d9f40212329c8bdc",
+      "bytes": 3991
+    },
+    {
+      "path": "/data/WSH/post-train/src/medical_posttrain/evaluation/core.py",
+      "sha256": "f6ad6e8bec78dafc4d97cd6879f5efb81efd4ec6424c185aabd0ab3c31d0ef41",
+      "bytes": 5102
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/selection_result_manifest_v1.json",
+      "sha256": "2c9c1304f935f9e481d4481f09747def2b9c09dc572a605b87d53c2dad8605f4",
+      "bytes": 18207
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/preflight_seal_v1.json",
+      "sha256": "01ace902662c00f5ef2ecc4d80b790d2f2e5f83e41bb88ee2044986d67571c1d",
+      "bytes": 7323
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/parser_correction_v2/tests.xml",
+      "sha256": "f89b6e666f22b7c29a6b8ce7e1295b01299e1cd779ad1e2974b040123affe553",
+      "bytes": 4924
+    }
+  ],
+  "command": "PYTHONPATH=src:scripts python scripts/rescore_stage5_exams_v2.py --watch",
+  "python": "3.12.7",
+  "head": "7eb345028d041761ad8ddb12b38a3e0230a7f2eb",
+  "new_generations": 0,
+  "owner_authorization": "先修改一下解析格式的bug"
+}

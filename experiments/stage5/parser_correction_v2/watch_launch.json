@@ -1,0 +1,10 @@
+{
+  "pid": 84570,
+  "command": [
+    "/home/ubuntu/anaconda3/bin/python",
+    "/data/WSH/post-train/scripts/rescore_stage5_exams_v2.py",
+    "--watch"
+  ],
+  "timestamp": "2026-09-15T08:35:10.095289+00:00",
+  "gpu_visible": false
+}

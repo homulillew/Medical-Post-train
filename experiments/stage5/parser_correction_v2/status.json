@@ -1,0 +1,16 @@
+{
+  "status": "WAITING_FOR_GENERATIONS",
+  "timestamp": "2026-09-15T08:35:40.344563+00:00",
+  "completed_jobs": 1,
+  "expected_jobs": 8,
+  "results": [
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/rescored_v2/sft/cmexam_test_scorable/summary.json",
+      "sha256": "4274ac4409eb2b1b2917b4617a574fbe8ab687a2992f3fbbaec08de2084f79b0",
+      "bytes": 2630
+    }
+  ],
+  "parser_version": "stage5-exam-parser-v2",
+  "new_generations": 0,
+  "full_stage5_complete": false
+}
