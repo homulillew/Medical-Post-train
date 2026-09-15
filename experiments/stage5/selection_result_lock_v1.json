@@ -1,0 +1,24 @@
+{
+  "selection_result": {
+    "path": "/data/WSH/post-train/experiments/stage5/selection_result_manifest_v1.json",
+    "sha256": "2c9c1304f935f9e481d4481f09747def2b9c09dc572a605b87d53c2dad8605f4",
+    "bytes": 18207
+  },
+  "final_protocols": [
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/cmexam_final_eval_protocol_v1.json",
+      "sha256": "8a7e61de7f9059585d864fb5e32563e81b2f73aba470a07250c264012dec7e8d",
+      "bytes": 3761
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/cmb_primary_audit_v1.json",
+      "sha256": "978eb38b7dcab72ce761a3cba4719f32db6e7fdf5d721ce034934e9c5a6edca5",
+      "bytes": 130483
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/open_qa_eval_protocol_v1.json",
+      "sha256": "3c7aa77b3c2823bdf9e12520633e568eac91048a5bc7f7486ef06e65a1be5b9b",
+      "bytes": 17376
+    }
+  ]
+}

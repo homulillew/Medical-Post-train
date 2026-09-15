@@ -108,16 +108,19 @@
       "READY_FOR_STAGE5": "YES"
     },
     "5": {
-      "status": "NOT_STARTED",
-      "run_ids": [],
+      "status": "FULL_RUNNING",
+      "run_ids": [
+        "stage5_project_v1"
+      ],
       "progress": {
-        "checkpoints_evaluated": 0,
-        "cmexam_questions_per_checkpoint": 0,
-        "cmb_questions_per_checkpoint": 0
+        "checkpoints_evaluated": 20,
+        "selection_generations": 20480
       },
       "verification_receipt": null,
       "stage_report": null,
-      "interview_story": null
+      "interview_story": null,
+      "execution_status": "RUNNING",
+      "checkpoint_selection_status": "FROZEN_SELECTED"
     },
     "6": {
       "status": "NOT_STARTED",

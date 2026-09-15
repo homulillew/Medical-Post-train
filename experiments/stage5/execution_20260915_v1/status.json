@@ -1,5 +1,7 @@
 {
-  "status": "STAGE4_FULL_VERIFYING",
-  "timestamp": "2026-09-14T20:32:19.562958+00:00",
-  "pid": 4067396
+  "status": "RUNNING",
+  "phase": "selection_dynamic_5000",
+  "pid": 25635,
+  "completed_responses": 1008,
+  "timestamp": "2026-09-15T04:53:56.591007+00:00"
 }

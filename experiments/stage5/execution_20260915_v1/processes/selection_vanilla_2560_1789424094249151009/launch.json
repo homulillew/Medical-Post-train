@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/data/WSH/post-train/.venv-train/bin/python",
+    "/data/WSH/post-train/scripts/stage5_model_worker.py",
+    "--spec",
+    "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/selection/vanilla_2560/selection/execution_spec_1789424094248605003.json"
+  ],
+  "pid": 4130651,
+  "timestamp": "2026-09-14T22:14:54.250566+00:00",
+  "head": "ac922b90343b9f2f800452f5df6db727a7bed2a5"
+}

@@ -1,0 +1,666 @@
+{
+  "status": "FROZEN_SELECTED",
+  "selected_checkpoints": {
+    "vanilla": {
+      "checkpoint_id": "vanilla:4608",
+      "run_id": "s4_formal_vanilla_20260909T155928_24aec5",
+      "training_groups": 4608,
+      "policy_windows": 576,
+      "optimizer_steps": 1152,
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0575/checkpoint/adapter/adapter_model.safetensors",
+        "sha256": "bfca86d9fd6f00e33bc0952da4063aec4afaf493f909932aa36c511305344f4e",
+        "bytes": 349243752
+      },
+      "index_source": {
+        "path": "/data/WSH/post-train/experiments/stage4/formal_checkpoint_index.json",
+        "sha256": "5aed298dd548c51b19b9b5778ff41b1e2965791c110b517f054d236e1da2f581",
+        "bytes": 45255
+      }
+    },
+    "dynamic": {
+      "checkpoint_id": "dynamic:5000",
+      "run_id": "s4_formal_dynamic_20260909T155929_18b61a",
+      "training_groups": 5000,
+      "policy_windows": 625,
+      "optimizer_steps": 1250,
+      "adapter": {
+        "path": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0624/checkpoint/adapter/adapter_model.safetensors",
+        "sha256": "6b7b95025da5a4dbb65594b5128f92cc24812f1a2422bc4384804984d9ba6dad",
+        "bytes": 349243752
+      },
+      "index_source": {
+        "path": "/data/WSH/post-train/experiments/stage4/formal_checkpoint_index.json",
+        "sha256": "5aed298dd548c51b19b9b5778ff41b1e2965791c110b517f054d236e1da2f581",
+        "bytes": 45255
+      }
+    }
+  },
+  "rankings": {
+    "vanilla": {
+      "selected_checkpoint": "vanilla:4608",
+      "full_ranking": [
+        {
+          "checkpoint_id": "vanilla:4608",
+          "training_groups": 4608,
+          "n": 1024,
+          "correct": 690,
+          "unparseable": 13,
+          "truncated": 4
+        },
+        {
+          "checkpoint_id": "vanilla:5000",
+          "training_groups": 5000,
+          "n": 1024,
+          "correct": 688,
+          "unparseable": 10,
+          "truncated": 0
+        },
+        {
+          "checkpoint_id": "vanilla:4096",
+          "training_groups": 4096,
+          "n": 1024,
+          "correct": 687,
+          "unparseable": 7,
+          "truncated": 2
+        },
+        {
+          "checkpoint_id": "vanilla:3584",
+          "training_groups": 3584,
+          "n": 1024,
+          "correct": 673,
+          "unparseable": 7,
+          "truncated": 4
+        },
+        {
+          "checkpoint_id": "vanilla:3072",
+          "training_groups": 3072,
+          "n": 1024,
+          "correct": 670,
+          "unparseable": 9,
+          "truncated": 4
+        },
+        {
+          "checkpoint_id": "vanilla:2560",
+          "training_groups": 2560,
+          "n": 1024,
+          "correct": 670,
+          "unparseable": 10,
+          "truncated": 5
+        },
+        {
+          "checkpoint_id": "vanilla:2048",
+          "training_groups": 2048,
+          "n": 1024,
+          "correct": 666,
+          "unparseable": 8,
+          "truncated": 2
+        },
+        {
+          "checkpoint_id": "vanilla:1536",
+          "training_groups": 1536,
+          "n": 1024,
+          "correct": 665,
+          "unparseable": 8,
+          "truncated": 7
+        },
+        {
+          "checkpoint_id": "vanilla:1024",
+          "training_groups": 1024,
+          "n": 1024,
+          "correct": 651,
+          "unparseable": 8,
+          "truncated": 6
+        },
+        {
+          "checkpoint_id": "vanilla:0512",
+          "training_groups": 512,
+          "n": 1024,
+          "correct": 616,
+          "unparseable": 7,
+          "truncated": 3
+        }
+      ],
+      "tie_break_trace": [
+        {
+          "winner": "vanilla:4608",
+          "other": "vanilla:5000",
+          "deciding_key": "accuracy",
+          "winner_key": [
+            -690,
+            13,
+            4,
+            4608,
+            "vanilla:4608"
+          ],
+          "other_key": [
+            -688,
+            10,
+            0,
+            5000,
+            "vanilla:5000"
+          ]
+        },
+        {
+          "winner": "vanilla:4608",
+          "other": "vanilla:4096",
+          "deciding_key": "accuracy",
+          "winner_key": [
+            -690,
+            13,
+            4,
+            4608,
+            "vanilla:4608"
+          ],
+          "other_key": [
+            -687,
+            7,
+            2,
+            4096,
+            "vanilla:4096"
+          ]
+        },
+        {
+          "winner": "vanilla:4608",
+          "other": "vanilla:3584",
+          "deciding_key": "accuracy",
+          "winner_key": [
+            -690,
+            13,
+            4,
+            4608,
+            "vanilla:4608"
+          ],
+          "other_key": [
+            -673,
+            7,
+            4,
+            3584,
+            "vanilla:3584"
+          ]
+        },
+        {
+          "winner": "vanilla:4608",
+          "other": "vanilla:3072",
+          "deciding_key": "accuracy",
+          "winner_key": [
+            -690,
+            13,
+            4,
+            4608,
+            "vanilla:4608"
+          ],
+          "other_key": [
+            -670,
+            9,
+            4,
+            3072,
+            "vanilla:3072"
+          ]
+        },
+        {
+          "winner": "vanilla:4608",
+          "other": "vanilla:2560",
+          "deciding_key": "accuracy",
+          "winner_key": [
+            -690,
+            13,
+            4,
+            4608,
+            "vanilla:4608"
+          ],
+          "other_key": [
+            -670,
+            10,
+            5,
+            2560,
+            "vanilla:2560"
+          ]
+        },
+        {
+          "winner": "vanilla:4608",
+          "other": "vanilla:2048",
+          "deciding_key": "accuracy",
+          "winner_key": [
+            -690,
+            13,
+            4,
+            4608,
+            "vanilla:4608"
+          ],
+          "other_key": [
+            -666,
+            8,
+            2,
+            2048,
+            "vanilla:2048"
+          ]
+        },
+        {
+          "winner": "vanilla:4608",
+          "other": "vanilla:1536",
+          "deciding_key": "accuracy",
+          "winner_key": [
+            -690,
+            13,
+            4,
+            4608,
+            "vanilla:4608"
+          ],
+          "other_key": [
+            -665,
+            8,
+            7,
+            1536,
+            "vanilla:1536"
+          ]
+        },
+        {
+          "winner": "vanilla:4608",
+          "other": "vanilla:1024",
+          "deciding_key": "accuracy",
+          "winner_key": [
+            -690,
+            13,
+            4,
+            4608,
+            "vanilla:4608"
+          ],
+          "other_key": [
+            -651,
+            8,
+            6,
+            1024,
+            "vanilla:1024"
+          ]
+        },
+        {
+          "winner": "vanilla:4608",
+          "other": "vanilla:0512",
+          "deciding_key": "accuracy",
+          "winner_key": [
+            -690,
+            13,
+            4,
+            4608,
+            "vanilla:4608"
+          ],
+          "other_key": [
+            -616,
+            7,
+            3,
+            512,
+            "vanilla:0512"
+          ]
+        }
+      ]
+    },
+    "dynamic": {
+      "selected_checkpoint": "dynamic:5000",
+      "full_ranking": [
+        {
+          "checkpoint_id": "dynamic:5000",
+          "training_groups": 5000,
+          "n": 1024,
+          "correct": 735,
+          "unparseable": 7,
+          "truncated": 3
+        },
+        {
+          "checkpoint_id": "dynamic:4608",
+          "training_groups": 4608,
+          "n": 1024,
+          "correct": 716,
+          "unparseable": 9,
+          "truncated": 5
+        },
+        {
+          "checkpoint_id": "dynamic:3584",
+          "training_groups": 3584,
+          "n": 1024,
+          "correct": 709,
+          "unparseable": 9,
+          "truncated": 4
+        },
+        {
+          "checkpoint_id": "dynamic:3072",
+          "training_groups": 3072,
+          "n": 1024,
+          "correct": 707,
+          "unparseable": 7,
+          "truncated": 5
+        },
+        {
+          "checkpoint_id": "dynamic:4096",
+          "training_groups": 4096,
+          "n": 1024,
+          "correct": 707,
+          "unparseable": 10,
+          "truncated": 3
+        },
+        {
+          "checkpoint_id": "dynamic:2560",
+          "training_groups": 2560,
+          "n": 1024,
+          "correct": 696,
+          "unparseable": 7,
+          "truncated": 4
+        },
+        {
+          "checkpoint_id": "dynamic:2048",
+          "training_groups": 2048,
+          "n": 1024,
+          "correct": 690,
+          "unparseable": 9,
+          "truncated": 6
+        },
+        {
+          "checkpoint_id": "dynamic:1536",
+          "training_groups": 1536,
+          "n": 1024,
+          "correct": 681,
+          "unparseable": 6,
+          "truncated": 4
+        },
+        {
+          "checkpoint_id": "dynamic:1024",
+          "training_groups": 1024,
+          "n": 1024,
+          "correct": 667,
+          "unparseable": 8,
+          "truncated": 7
+        },
+        {
+          "checkpoint_id": "dynamic:0512",
+          "training_groups": 512,
+          "n": 1024,
+          "correct": 654,
+          "unparseable": 6,
+          "truncated": 6
+        }
+      ],
+      "tie_break_trace": [
+        {
+          "winner": "dynamic:5000",
+          "other": "dynamic:4608",
+          "deciding_key": "accuracy",
+          "winner_key": [
+            -735,
+            7,
+            3,
+            5000,
+            "dynamic:5000"
+          ],
+          "other_key": [
+            -716,
+            9,
+            5,
+            4608,
+            "dynamic:4608"
+          ]
+        },
+        {
+          "winner": "dynamic:5000",
+          "other": "dynamic:3584",
+          "deciding_key": "accuracy",
+          "winner_key": [
+            -735,
+            7,
+            3,
+            5000,
+            "dynamic:5000"
+          ],
+          "other_key": [
+            -709,
+            9,
+            4,
+            3584,
+            "dynamic:3584"
+          ]
+        },
+        {
+          "winner": "dynamic:5000",
+          "other": "dynamic:3072",
+          "deciding_key": "accuracy",
+          "winner_key": [
+            -735,
+            7,
+            3,
+            5000,
+            "dynamic:5000"
+          ],
+          "other_key": [
+            -707,
+            7,
+            5,
+            3072,
+            "dynamic:3072"
+          ]
+        },
+        {
+          "winner": "dynamic:5000",
+          "other": "dynamic:4096",
+          "deciding_key": "accuracy",
+          "winner_key": [
+            -735,
+            7,
+            3,
+            5000,
+            "dynamic:5000"
+          ],
+          "other_key": [
+            -707,
+            10,
+            3,
+            4096,
+            "dynamic:4096"
+          ]
+        },
+        {
+          "winner": "dynamic:5000",
+          "other": "dynamic:2560",
+          "deciding_key": "accuracy",
+          "winner_key": [
+            -735,
+            7,
+            3,
+            5000,
+            "dynamic:5000"
+          ],
+          "other_key": [
+            -696,
+            7,
+            4,
+            2560,
+            "dynamic:2560"
+          ]
+        },
+        {
+          "winner": "dynamic:5000",
+          "other": "dynamic:2048",
+          "deciding_key": "accuracy",
+          "winner_key": [
+            -735,
+            7,
+            3,
+            5000,
+            "dynamic:5000"
+          ],
+          "other_key": [
+            -690,
+            9,
+            6,
+            2048,
+            "dynamic:2048"
+          ]
+        },
+        {
+          "winner": "dynamic:5000",
+          "other": "dynamic:1536",
+          "deciding_key": "accuracy",
+          "winner_key": [
+            -735,
+            7,
+            3,
+            5000,
+            "dynamic:5000"
+          ],
+          "other_key": [
+            -681,
+            6,
+            4,
+            1536,
+            "dynamic:1536"
+          ]
+        },
+        {
+          "winner": "dynamic:5000",
+          "other": "dynamic:1024",
+          "deciding_key": "accuracy",
+          "winner_key": [
+            -735,
+            7,
+            3,
+            5000,
+            "dynamic:5000"
+          ],
+          "other_key": [
+            -667,
+            8,
+            7,
+            1024,
+            "dynamic:1024"
+          ]
+        },
+        {
+          "winner": "dynamic:5000",
+          "other": "dynamic:0512",
+          "deciding_key": "accuracy",
+          "winner_key": [
+            -735,
+            7,
+            3,
+            5000,
+            "dynamic:5000"
+          ],
+          "other_key": [
+            -654,
+            6,
+            6,
+            512,
+            "dynamic:0512"
+          ]
+        }
+      ]
+    }
+  },
+  "summary_sources": [
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/selection/vanilla_0512/selection/complete.json",
+      "sha256": "260602991de6d3955c4cb246c7ccbc16faacff271ee6352552af4610cbb23201",
+      "bytes": 346504
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/selection/vanilla_1024/selection/complete.json",
+      "sha256": "51ab644d014483d92d36eaaed01353db8ac8bccb37dbc81363c8d9cd3546f6cd",
+      "bytes": 346489
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/selection/vanilla_1536/selection/complete.json",
+      "sha256": "99c085809a89dcf978db0c70377345620fa385cad6b89aa041696d220164c60a",
+      "bytes": 346502
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/selection/vanilla_2048/selection/complete.json",
+      "sha256": "bf161e39ce71d7078239b4a9e82ea3bfb7a6504bdd9fdbd63490b8a64aeef8f4",
+      "bytes": 346494
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/selection/vanilla_2560/selection/complete.json",
+      "sha256": "c65dc9ba42343b70a789094ac683e103103c7526f25a02c910a1ca95580d0269",
+      "bytes": 346508
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/selection/vanilla_3072/selection/complete.json",
+      "sha256": "7aa5d8ec3d17962716255e75f6150e1bdfd6148df3e7d5a052e672cb2602ba95",
+      "bytes": 346510
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/selection/vanilla_3584/selection/complete.json",
+      "sha256": "913ca685781de16ce37e361890c66bb60100163566ac8282596cda4dfb0b402b",
+      "bytes": 346496
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/selection/vanilla_4096/selection/complete.json",
+      "sha256": "aea320fabe534427717abf330603bcde3bc2711ca8a8fe1635179e503b989011",
+      "bytes": 346510
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/selection/vanilla_4608/selection/complete.json",
+      "sha256": "f095d41866214f1198149845ae09dbb8875d127f6ce5c83032659fa39b04a322",
+      "bytes": 346507
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/selection/vanilla_5000/selection/complete.json",
+      "sha256": "5e2a7355b5be27de90fc7a5240b0f83a56fb7d9b912f04010b6ce2c5a88da850",
+      "bytes": 346475
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/selection/dynamic_0512/selection/complete.json",
+      "sha256": "12e0cade411266cb43c291160e1066a5b4139e35a86f9bcdca1a63c453fd9675",
+      "bytes": 346491
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/selection/dynamic_1024/selection/complete.json",
+      "sha256": "bd47ca21243ddbb5cd5470f13e7cf594e72ba534076bf59aa33ea47931922b04",
+      "bytes": 346492
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/selection/dynamic_1536/selection/complete.json",
+      "sha256": "1f2dd9067caabd8ceaec6dcc197fba75594a369071d4777001bf2e1811a2b6c0",
+      "bytes": 346497
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/selection/dynamic_2048/selection/complete.json",
+      "sha256": "dbb236ca20e4d6babce6b4a1aae55d6f5880925c3b4e6d0c99d641e41dc36f22",
+      "bytes": 346502
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/selection/dynamic_2560/selection/complete.json",
+      "sha256": "34d14728e89cdb383a5a69f518972aa4bcda5b3bbccc0a3340a02b4f4d8c6f17",
+      "bytes": 346491
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/selection/dynamic_3072/selection/complete.json",
+      "sha256": "8c33f7dc7c20a49a993d3f3cf474ab1615f8c6a9e140811d5535111dcfcbf9f0",
+      "bytes": 346509
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/selection/dynamic_3584/selection/complete.json",
+      "sha256": "71ad0ea07cd1555c2f62dbe20a0b2f916bb2497ff2263900b769a1aa99ab429d",
+      "bytes": 346491
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/selection/dynamic_4096/selection/complete.json",
+      "sha256": "16ae216531fd585165a14733c30b607432d2e3b84b07fb560079cc0dff75f210",
+      "bytes": 346500
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/selection/dynamic_4608/selection/complete.json",
+      "sha256": "f2f7de62a3a4b8882116b84de7afe3a976ebb9daabcd56c32800235756b3cb7f",
+      "bytes": 346500
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/selection/dynamic_5000/selection/complete.json",
+      "sha256": "d72d4dcfbe641bd98d91eb8a59ef8a66ffd366d606bf8868b67a2b9a849871fc",
+      "bytes": 346503
+    }
+  ],
+  "protocol": {
+    "path": "/data/WSH/post-train/experiments/stage5/checkpoint_selection_protocol_v1.json",
+    "sha256": "43413a28ab3d6a4a3b03f788f2145bd8efa475a62cbe1bf22dc4f0a0fa48944a",
+    "bytes": 173901
+  },
+  "selection_only": true,
+  "test_used": false
+}
