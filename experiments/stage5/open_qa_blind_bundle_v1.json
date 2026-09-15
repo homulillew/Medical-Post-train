@@ -1,0 +1,28 @@
+{
+  "result": "PASS",
+  "pairs": 1224,
+  "judge_entries_including_position_flips": 1347,
+  "seed": 20260914,
+  "public": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/blind_bundle/judge_visible.json",
+    "sha256": "2cf38c39bf6fabd900b9514492298e95945a7862f1ba0c6e81705bad88263827",
+    "bytes": 4635736
+  },
+  "private": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/blind_bundle/private_identity_key.json",
+    "sha256": "18cb330cedf1e2c0e2a42405409861d85c3a684b6491b64e0d44dfae9956317c",
+    "bytes": 305898
+  },
+  "reference_context": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/blind_bundle/reference_context.json",
+    "sha256": "b25c6f68fe9197ea45ddcaa54e44279af9ab4922e902b815f5fdce1773f013c6",
+    "bytes": 2178318
+  },
+  "rubric": {
+    "path": "/data/WSH/post-train/experiments/stage5/open_qa_eval_protocol_v1.json",
+    "sha256": "3c7aa77b3c2823bdf9e12520633e568eac91048a5bc7f7486ef06e65a1be5b9b",
+    "bytes": 17376
+  },
+  "paid_api_calls": 0,
+  "judgments_completed": 0
+}

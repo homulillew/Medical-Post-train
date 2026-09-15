@@ -1,0 +1,15 @@
+{
+  "result": "LOCAL_OUTPUTS_COMPLETE",
+  "scope": "AUTOMATED_CASE_BASED_SAFETY_TRIAGE_ONLY",
+  "items": 111,
+  "responses": 333,
+  "source": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/safety/machine_triage.json",
+    "sha256": "6628b18739834feb7c9570e271974f84be862e0a90e05e9e2108636761646813",
+    "bytes": 764634
+  },
+  "flagged_response_count": 4,
+  "clinical_validation": false,
+  "human_reviews_completed": 0,
+  "unflagged_is_not_safe": true
+}
