@@ -1,0 +1,302 @@
+{
+  "requests": 21,
+  "unique_entries": 20,
+  "previous_valid_unchanged": 16,
+  "compatible_valid": 17,
+  "newly_normalized": 1,
+  "unique_entries_without_valid_judgment": 3,
+  "failure_counts": {
+    "malformed_judgment_json": 1,
+    "degenerate_repetition": 1,
+    "non_json_output": 1,
+    "empty_visible_output": 1
+  },
+  "diagnostics": [
+    {
+      "run_id": "s5_atria_dawn_20260918T081010Z",
+      "pair_id": "2ccc705d80a1f669a784bcb9",
+      "original_valid": false,
+      "raw": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081010Z/requests/0000/raw_response.json",
+        "sha256": "6b23c7b098c909b18407ed0ce289a8055826d20588712acdc2f79d756c4164c0",
+        "bytes": 7473
+      },
+      "status": "INVALID",
+      "failure_code": "malformed_judgment_json",
+      "reason": "Visible answer is not a valid JSON judgment"
+    },
+    {
+      "run_id": "s5_atria_dawn_20260918T081113Z",
+      "pair_id": "2ccc705d80a1f669a784bcb9",
+      "original_valid": true,
+      "raw": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081113Z/requests/0000/raw_response.json",
+        "sha256": "e9e89d315d50b31c1579b1d3fc99f0dd1e293db9e1cba403e430144c5d8e44ac",
+        "bytes": 7839
+      },
+      "status": "VALID",
+      "normalization": null
+    },
+    {
+      "run_id": "s5_atria_dawn_20260918T081113Z",
+      "pair_id": "4d5a921429637248800b96a5",
+      "original_valid": false,
+      "raw": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081113Z/requests/0001/raw_response.json",
+        "sha256": "796068b644833da37c5baa73631c9f4976dc40cadddb50252313ac8c6bc291e2",
+        "bytes": 7487
+      },
+      "status": "INVALID",
+      "failure_code": "degenerate_repetition",
+      "reason": "Visible answer is not a valid JSON judgment"
+    },
+    {
+      "run_id": "s5_atria_dawn_20260918T081417Z",
+      "pair_id": "9fa26db22e5790bb88d1a858",
+      "original_valid": true,
+      "raw": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0002/raw_response.json",
+        "sha256": "5388f07001aa751631425d3153a951cc40fef485e6306f09697516631cd7f054",
+        "bytes": 7791
+      },
+      "status": "VALID",
+      "normalization": null
+    },
+    {
+      "run_id": "s5_atria_dawn_20260918T081417Z",
+      "pair_id": "9c6340ee66a9c74cc6f27737",
+      "original_valid": true,
+      "raw": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0003/raw_response.json",
+        "sha256": "c50819e6b80e83d5cbf60eebcbd6a0f61bdc68d5cedf99306aa78661f1e442f8",
+        "bytes": 11491
+      },
+      "status": "VALID",
+      "normalization": null
+    },
+    {
+      "run_id": "s5_atria_dawn_20260918T081417Z",
+      "pair_id": "9c6340ee66a9c74cc6f27737-flip",
+      "original_valid": false,
+      "raw": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0004/raw_response.json",
+        "sha256": "a70c459040fc058aa51f55048bd4532fb54e4b1ac54f2479971dd909807f1035",
+        "bytes": 5133
+      },
+      "status": "INVALID",
+      "failure_code": "non_json_output",
+      "reason": "Visible answer is not a valid JSON judgment"
+    },
+    {
+      "run_id": "s5_atria_dawn_20260918T081417Z",
+      "pair_id": "350cdf12a763a9765ea02035",
+      "original_valid": false,
+      "raw": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0005/raw_response.json",
+        "sha256": "f6b71f9b54701bc6b9a9a267aa2c3ea962855911a524cda4d90b44db036e36c6",
+        "bytes": 4814
+      },
+      "status": "INVALID",
+      "failure_code": "empty_visible_output",
+      "reason": "No nonempty visible answer; reasoning is not a substitute"
+    },
+    {
+      "run_id": "s5_atria_dawn_20260918T081417Z",
+      "pair_id": "350cdf12a763a9765ea02035-flip",
+      "original_valid": true,
+      "raw": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0006/raw_response.json",
+        "sha256": "934b1a3053e7103f45f1b3b882c7f90e99c64c66e2249559b40df50643a30475",
+        "bytes": 11826
+      },
+      "status": "VALID",
+      "normalization": null
+    },
+    {
+      "run_id": "s5_atria_dawn_20260918T081417Z",
+      "pair_id": "98fc09f118ab16255d5b7e0e",
+      "original_valid": true,
+      "raw": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0007/raw_response.json",
+        "sha256": "05dd3a985ceeee14b720fd401cd7c2c2efe3cafc7b7a225658a51129aa272b18",
+        "bytes": 7078
+      },
+      "status": "VALID",
+      "normalization": null
+    },
+    {
+      "run_id": "s5_atria_dawn_20260918T081417Z",
+      "pair_id": "98fc09f118ab16255d5b7e0e-flip",
+      "original_valid": true,
+      "raw": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0008/raw_response.json",
+        "sha256": "ab272ea254716881ee796d5d19d7af7783fc4060e0e387daf81605182efb8fd0",
+        "bytes": 8480
+      },
+      "status": "VALID",
+      "normalization": null
+    },
+    {
+      "run_id": "s5_atria_dawn_20260918T081417Z",
+      "pair_id": "2cc56ed62d190e0a13ca0f66",
+      "original_valid": true,
+      "raw": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0009/raw_response.json",
+        "sha256": "da7191ecb26ec1493455a3a4f0fe2d55c6db444f401e4ae474dcf31f8e530f2d",
+        "bytes": 10786
+      },
+      "status": "VALID",
+      "normalization": null
+    },
+    {
+      "run_id": "s5_atria_dawn_20260918T081417Z",
+      "pair_id": "c4b839a557ca0c82379f95e4",
+      "original_valid": true,
+      "raw": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0010/raw_response.json",
+        "sha256": "2001278bfdc12adad4fe75876bb9a91079a8c08bddcfc6d270bef6d7db1fe022",
+        "bytes": 9635
+      },
+      "status": "VALID",
+      "normalization": null
+    },
+    {
+      "run_id": "s5_atria_dawn_20260918T081417Z",
+      "pair_id": "217320dfd01fcba127ee9a0d",
+      "original_valid": true,
+      "raw": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0011/raw_response.json",
+        "sha256": "db10c6d8e578ef9b7e01fbc4e880cd5685800b7dff3f39eb89f2bed24499ce64",
+        "bytes": 13122
+      },
+      "status": "VALID",
+      "normalization": null
+    },
+    {
+      "run_id": "s5_atria_dawn_20260918T081417Z",
+      "pair_id": "78e98327b3551cdbaf191475",
+      "original_valid": true,
+      "raw": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0012/raw_response.json",
+        "sha256": "9042b61b3fa8337989ebbcff5f9a02baa600b3bb0d367b2a93e3d1cfca1b023e",
+        "bytes": 13079
+      },
+      "status": "VALID",
+      "normalization": null
+    },
+    {
+      "run_id": "s5_atria_dawn_20260918T081417Z",
+      "pair_id": "19075b8adc655f02cf1da62a",
+      "original_valid": true,
+      "raw": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0013/raw_response.json",
+        "sha256": "28cd567625617885b05ca8f3767d89721cc765c8453fad429675f7d43a40288a",
+        "bytes": 13997
+      },
+      "status": "VALID",
+      "normalization": null
+    },
+    {
+      "run_id": "s5_atria_dawn_20260918T081417Z",
+      "pair_id": "4705591ee6e802c7e06dba56",
+      "original_valid": true,
+      "raw": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0014/raw_response.json",
+        "sha256": "cf799f6acffa225de55acaa15b4ed42b6577dd92b36182e633269c6a397f0044",
+        "bytes": 7730
+      },
+      "status": "VALID",
+      "normalization": null
+    },
+    {
+      "run_id": "s5_atria_dawn_20260918T081417Z",
+      "pair_id": "be2b83be2c77e88c3401c282",
+      "original_valid": true,
+      "raw": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0015/raw_response.json",
+        "sha256": "27373caa221551ceabab3d693d1465ae6a420b40c3d285f07f2da1e768214910",
+        "bytes": 11562
+      },
+      "status": "VALID",
+      "normalization": null
+    },
+    {
+      "run_id": "s5_atria_dawn_20260918T081417Z",
+      "pair_id": "5ecd967a242484ea4d60d1bf",
+      "original_valid": true,
+      "raw": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0016/raw_response.json",
+        "sha256": "09f57a0b1235fb913cc0f48048b07b2c8029b989eac45a7209c340130f9aa975",
+        "bytes": 8962
+      },
+      "status": "VALID",
+      "normalization": null
+    },
+    {
+      "run_id": "s5_atria_dawn_20260918T081417Z",
+      "pair_id": "e894f38a93be7a4965d9e35a",
+      "original_valid": true,
+      "raw": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0017/raw_response.json",
+        "sha256": "b24681888fa3e3d4e05dc7c87ad1cef6483ee5df7bf30419b649418a17863939",
+        "bytes": 12780
+      },
+      "status": "VALID",
+      "normalization": null
+    },
+    {
+      "run_id": "s5_atria_dawn_20260918T081417Z",
+      "pair_id": "1400b2c14c0b3951a38f3427",
+      "original_valid": true,
+      "raw": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0018/raw_response.json",
+        "sha256": "087a6e93d42eda3aef3225dc1134e2f84c5d2d9fcc480a80e85b9c66b1ac5911",
+        "bytes": 8757
+      },
+      "status": "VALID",
+      "normalization": null
+    },
+    {
+      "run_id": "s5_atria_dawn_20260918T081417Z",
+      "pair_id": "05b04f58f45ce839fd92c526",
+      "original_valid": false,
+      "raw": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0019/raw_response.json",
+        "sha256": "083ccf3b13777f9c3ba74676f27a73dd495edd28c5554a546e209e1d4afb1523",
+        "bytes": 9416
+      },
+      "status": "COMPAT_NORMALIZED",
+      "normalization": {
+        "version": "atria-visible-v2",
+        "policy": "explicit safety_safety key alias only; values/preference/rationale unchanged",
+        "changes": [
+          {
+            "path": "scores.A",
+            "old_key": "safety_safety",
+            "new_key": "safety_escalation",
+            "value": 2
+          },
+          {
+            "path": "scores.B",
+            "old_key": "safety_safety",
+            "new_key": "safety_escalation",
+            "value": 3
+          }
+        ]
+      }
+    }
+  ],
+  "judgments": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_parser_v2_20260918T093326Z/reparsed_judgments.jsonl",
+    "sha256": "093a5dd26cebf9095c8c1e3daa7df544a5fe79f3860a01141bbec67c30d1bf28",
+    "bytes": 23791
+  },
+  "validation": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_parser_v2_20260918T093326Z/submission_validation.json",
+    "sha256": "3f535974d65c90dc70e3153d47705f7bbdebd6ad6189c26b420263f55f21d991",
+    "bytes": 51805
+  },
+  "retrospective_parser_change": true,
+  "paid_requests": 0,
+  "original_artifacts_unchanged": true
+}

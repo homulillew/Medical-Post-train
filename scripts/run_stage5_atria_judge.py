@@ -5,6 +5,7 @@ Credentials stay in memory. Never regenerate candidate answers or silently retry
 received judgments. Default execution ceiling is a 20-entry integration pilot.
 """
 import argparse
+import base64
 from collections import Counter
 from datetime import datetime, timezone
 import fcntl
@@ -23,7 +24,9 @@ import urllib.error
 ROOT=Path(__file__).resolve().parents[1]
 sys.path[:0]=[str(ROOT/'src'),str(ROOT/'scripts')]
 from medical_posttrain.evaluation.core import read,rows,ref,check_ref,freeze
-from medical_posttrain.evaluation.blind import validate_judgment, DIMENSIONS
+from medical_posttrain.evaluation.blind import DIMENSIONS
+from medical_posttrain.evaluation import atria
+from medical_posttrain.evaluation.atria import extract, normalize, decode_response, JudgeResponseError
 from medical_posttrain.rl.common import durable
 
 ENDPOINT='https://api.atria-asi.ai/v1/responses'
@@ -57,38 +60,23 @@ def instructions(rubric):
 冻结量表：\n'''+json.dumps(rubric,ensure_ascii=False)
 
 
-def extract(response):
-    assert response.get('status')=='completed', 'Incomplete API response'
-    assert response.get('model')==MODEL, 'Unexpected returned model'
-    pieces=[]
-    for item in response.get('output',[]):
-        assert item.get('type') in ['message','reasoning'], 'Unexpected tool/action output'
-        if item.get('type')=='message':
-            assert item.get('role')=='assistant'
-            for part in item.get('content',[]):
-                assert part.get('type')=='output_text', 'Refusal or nontext output'
-                pieces.append(part['text'])
-    assert pieces, 'No visible judge answer'
-    return json.loads(''.join(pieces))
+def build_request(protocol, item):
+    # Explicit message boundaries; content remains the same frozen prompt/data.
+    return dict(model=protocol['model'], input=[
+        dict(role='system', content=[dict(type='input_text', text=protocol['prompt'])]),
+        dict(role='user', content=[dict(type='input_text', text=json.dumps(item,ensure_ascii=False))]),
+    ], **protocol['parameters'])
 
 
-def normalize(value,item,raw_reference):
-    j=dict(value,pair_id=item['pair_id'],judge_id=MODEL,judge_version=MODEL,
-           judge_is_candidate=False,raw_judgment=raw_reference)
-    flags=value['critical_safety_flags']
-    assert isinstance(flags,list)
-    for f in flags:
-        assert f['side'] in ['A','B']
-        assert f['type'] in ['dangerous_instruction','urgent_escalation_failure','unsupported_high_risk_definitive_advice']
-        assert isinstance(f['response_quote'],str) and f['response_quote'] and f['response_quote'] in item[f['side']]
-        assert isinstance(f['rationale'],str) and f['rationale'].strip()
-    for side in ['A','B']:
-        assert value['scores'][side]['safety_escalation']!=0 or any(f['side']==side for f in flags)
-    j['critical_safety_evidence']=flags
-    j['critical_safety_flags']=[f"{f['side']}: {f['type']}: {f['rationale']}" for f in flags]
-    assert isinstance(j['rationale'],str) and j['rationale'].strip()
-    validate_judgment(j)
-    return j
+def capture_response(body, status, seconds, headers, key):
+    # Preserve bytes before strict decoding, including an undecodable response.
+    redacted=body.replace(key.encode('utf-8'),b'[REDACTED]')
+    result=dict(http_status=status,seconds=seconds,body_base64=base64.b64encode(redacted).decode('ascii'),
+                credential_redacted=redacted!=body,
+                headers={k:headers[k] for k in ['Content-Type','X-Request-ID'] if k in headers})
+    try:result['body']=redacted.decode('utf-8')
+    except UnicodeDecodeError:result['body']=None
+    return result
 
 
 def prepare(start_index=0):
@@ -103,7 +91,8 @@ def prepare(start_index=0):
         parameters=dict(max_output_tokens=4096,tools=[],tool_choice='none'),
         start_index=start_index,
         transport_note='Native json_object mode produced malformed JSON in s5_atria_dawn_20260918T081010Z. Default text at temperature=0 then produced repetitive /0 text in s5_atria_dawn_20260918T081113Z. This run omits temperature as in the owner example. Retain both earlier runs and valid judgment; do not pool protocols as a formal comparison.',
-        response_policy='One received judgment per pair. No silent retries or repair of invalid judgments.',
+        response_policy='No silent retries. Only explicit safety_safety key alias normalization; retain parser provenance.',
+        request_format='explicit_system_user_messages_v2',parser_source=ref(atria.__file__),parser_version=atria.PARSER_VERSION,
         auth='ATRIA_API_KEY in environment or literal assignment in local bashrc; never persisted',
         identity='Independent provider/model name declared by API; underlying training provenance is not independently known.',
         version_limitation='Preview alias may change; retain returned model, timestamps, request IDs and raw responses.',
@@ -117,6 +106,7 @@ def prepare(start_index=0):
         clinical_validation=False,human_reviews_completed=0)
     freeze(out/'protocol.json',protocol)
     (out/'runner_source.py').write_bytes(Path(__file__).read_bytes())
+    (out/'parser_source.py').write_bytes(Path(atria.__file__).read_bytes())
     idx=ROOT/'experiments/stage5/atria_judge'/run_id;idx.mkdir(parents=True)
     freeze(idx/'run.json',dict(run_id=run_id,protocol=ref(out/'protocol.json'),artifact_root=str(out)))
     print(out,flush=True)
@@ -125,7 +115,7 @@ def prepare(start_index=0):
 
 def execute(out,limit):
     assert 1<=limit<=1347
-    p=read(out/'protocol.json');check_ref(p['source']);check_ref(p['packet']);check_ref(p['rubric'])
+    p=read(out/'protocol.json');check_ref(p['source']);check_ref(p['packet']);check_ref(p['rubric']);check_ref(p['parser_source'])
     assert limit<=p['authorized_request_ceiling'], 'Requested limit exceeds authorized API budget'
     data=rows(p['packet']['path']);assert len(data)==p['planned_entries']==1347
     idx=ROOT/'experiments/stage5/atria_judge'/p['run_id']
@@ -141,36 +131,38 @@ def execute(out,limit):
                 if (dest/'judgment.json').exists():continue
                 assert not dest.exists(), 'Existing incomplete request: examine raw/error; no automatic paid retry'
                 dest.mkdir(parents=True)
-                body=dict(model=p['model'],instructions=p['prompt'],input=json.dumps(item,ensure_ascii=False),**p['parameters'])
+                body=build_request(p,item)
                 freeze(dest/'request.json',dict(pair_id=item['pair_id'],endpoint=p['endpoint'],body=body,timestamp=datetime.now(timezone.utc).isoformat()))
-                durable(idx/'status.json',dict(status='RUNNING',current_index=i,ceiling=limit,completed=i))
-                req=urllib.request.Request(p['endpoint'],data=json.dumps(body).encode(),headers={'Authorization':'Bearer '+key,'Content-Type':'application/json'},method='POST')
+                durable(idx/'status.json',dict(status='RUNNING',current_index=i,ceiling=limit,completed=len(list((out/'requests').glob('*/judgment.json')))))
+                req=urllib.request.Request(p['endpoint'],data=json.dumps(body,ensure_ascii=False).encode('utf-8'),headers={'Authorization':'Bearer '+key,'Content-Type':'application/json'},method='POST')
                 start=time.time()
                 try:
                     with urllib.request.urlopen(req,timeout=180) as response:
-                        status=response.status;raw=response.read().decode()
+                        status=response.status;raw=response.read();headers=response.headers
                 except urllib.error.HTTPError as exc:
-                    status=exc.code;raw=exc.read().decode()
-                freeze(dest/'raw_response.json',dict(http_status=status,seconds=time.time()-start,body=raw.replace(key,'[REDACTED]')))
+                    status=exc.code;raw=exc.read();headers=exc.headers
+                freeze(dest/'raw_response.json',capture_response(raw,status,time.time()-start,headers,key))
                 assert status==200,f'HTTP {status}; inspect retained response'
-                parsed=json.loads(raw)
+                parsed={}
                 try:
+                    parsed=decode_response(raw)
                     judgment=normalize(extract(parsed),item,ref(dest/'raw_response.json'))
                 except (AssertionError,ValueError,KeyError,TypeError) as exc:
                     freeze(dest/'invalid.json',dict(pair_id=item['pair_id'],error_type=type(exc).__name__,
-                           reason=str(exc).replace(key,'[REDACTED]'),raw_response=ref(dest/'raw_response.json')))
+                           reason=str(exc).replace(key,'[REDACTED]'),failure_code=getattr(exc,'code','invalid_judgment'),raw_response=ref(dest/'raw_response.json')))
                     consecutive_invalid+=1
                     print(json.dumps(dict(index=i,status='INVALID_OUTPUT',usage=parsed.get('usage'))),flush=True)
                     assert consecutive_invalid<3, 'Three consecutive invalid outputs: stop paid requests'
                     continue
                 consecutive_invalid=0
                 freeze(dest/'judgment.json',judgment)
-                print(json.dumps(dict(completed=i+1,ceiling=limit,pair_id=item['pair_id'],usage=parsed.get('usage'))),flush=True)
+                print(json.dumps(dict(processed_index=i,completed=len(list((out/'requests').glob('*/judgment.json'))),ceiling=limit,pair_id=item['pair_id'],usage=parsed.get('usage'))),flush=True)
             completed=sorted((out/'requests').glob('*/judgment.json'))
             usage=Counter();results=[]
             for path in completed:results.append(read(path))
             for path in sorted((out/'requests').glob('*/raw_response.json')):
-                raw=json.loads(read(path)['body'])
+                try:raw=json.loads(read(path)['body'])
+                except (ValueError,TypeError):continue
                 usage.update({k:v for k,v in raw.get('usage',{}).items() if type(v) is int})
             output=out/f'judgments_{len(results):04d}.jsonl'
             if not output.exists():

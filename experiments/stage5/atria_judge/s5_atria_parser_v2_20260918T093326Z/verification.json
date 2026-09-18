@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "previous_valid_unchanged": 16,
+  "compatible_valid": 17,
+  "live_requests": 3,
+  "live_valid": 3,
+  "live_schema_normalizations": 0,
+  "original_artifact_hashes_unchanged": true,
+  "base64_round_trip": true,
+  "automated_tests_passed": 25,
+  "full_stage5_complete": false,
+  "replay": {
+    "path": "/data/WSH/post-train/experiments/stage5/atria_judge/s5_atria_parser_v2_20260918T093326Z/replay.json",
+    "sha256": "5d8fd1e4c20db7cd2af7bcb584cf0289c1e281651a2565d9872470c4015025d7",
+    "bytes": 12076
+  },
+  "live_summary": {
+    "path": "/data/WSH/post-train/experiments/stage5/atria_judge/s5_atria_parser_v2_20260918T093326Z/summary.json",
+    "sha256": "50ce02bd611d579e5f303f40a6dfc28e137d5cf69b9d6d4095141d4ce7d80df0",
+    "bytes": 4590
+  }
+}

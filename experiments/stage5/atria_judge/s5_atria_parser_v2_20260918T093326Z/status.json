@@ -1,0 +1,127 @@
+{
+  "run_id": "s5_atria_parser_v2_20260918T093326Z",
+  "status": "DIAGNOSTIC_COMPLETE",
+  "end_time": "2026-09-18T09:35:46.869007+00:00",
+  "replay": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_parser_v2_20260918T093326Z/replay.json",
+    "sha256": "5d8fd1e4c20db7cd2af7bcb584cf0289c1e281651a2565d9872470c4015025d7",
+    "bytes": 12076
+  },
+  "live_requested": true,
+  "live_requests": 3,
+  "live_valid": 3,
+  "live_results": [
+    {
+      "pair_id": "4d5a921429637248800b96a5",
+      "index": 1,
+      "request": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_parser_v2_20260918T093326Z/live/0001/request.json",
+        "sha256": "af4d55bef05bb0bfed770303499e034512f8bd7d03c23cc7d1ee71a77cdb5fe2",
+        "bytes": 8050
+      },
+      "included_in_evaluation": false,
+      "http_status": 200,
+      "raw": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_parser_v2_20260918T093326Z/live/0001/raw_response.json",
+        "sha256": "ce445529a828bbe3ebf252ac69a4401c3d12c3ba4d3cd31aadeaafd6b914caab",
+        "bytes": 7316
+      },
+      "usage": {
+        "input_tokens": 1836,
+        "input_tokens_details": {
+          "cached_tokens": 1836,
+          "input_tokens_per_turn": [],
+          "cached_tokens_per_turn": []
+        },
+        "output_tokens": 363,
+        "output_tokens_details": {
+          "reasoning_tokens": 157,
+          "tool_output_tokens": 0,
+          "output_tokens_per_turn": [],
+          "tool_output_tokens_per_turn": []
+        },
+        "total_tokens": 2199
+      },
+      "status": "VALID",
+      "normalization": null
+    },
+    {
+      "pair_id": "9c6340ee66a9c74cc6f27737-flip",
+      "index": 4,
+      "request": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_parser_v2_20260918T093326Z/live/0004/request.json",
+        "sha256": "eb4cd912a18a29ee7c2c17394d08bf501b83afd794f65816d6e3f5f1ddd8b613",
+        "bytes": 8311
+      },
+      "included_in_evaluation": false,
+      "http_status": 200,
+      "raw": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_parser_v2_20260918T093326Z/live/0004/raw_response.json",
+        "sha256": "d636b9eefb1d6dfdc00b4a82ede5d011f9e3e8adfbbfb0a502d786c084eb6568",
+        "bytes": 11540
+      },
+      "usage": {
+        "input_tokens": 1842,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "input_tokens_per_turn": [],
+          "cached_tokens_per_turn": []
+        },
+        "output_tokens": 802,
+        "output_tokens_details": {
+          "reasoning_tokens": 0,
+          "tool_output_tokens": 0,
+          "output_tokens_per_turn": [],
+          "tool_output_tokens_per_turn": []
+        },
+        "total_tokens": 2644
+      },
+      "status": "VALID",
+      "normalization": null
+    },
+    {
+      "pair_id": "350cdf12a763a9765ea02035",
+      "index": 5,
+      "request": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_parser_v2_20260918T093326Z/live/0005/request.json",
+        "sha256": "bf50a8f90f76b6c80375a0ce0a34d82f67306d0c44eed0fd4c454ef1b39c640a",
+        "bytes": 8190
+      },
+      "included_in_evaluation": false,
+      "http_status": 200,
+      "raw": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_parser_v2_20260918T093326Z/live/0005/raw_response.json",
+        "sha256": "f2e0e94a8807712792982b8ca58bc3d559c192a7112512346b7201c31edf4835",
+        "bytes": 9618
+      },
+      "usage": {
+        "input_tokens": 1810,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "input_tokens_per_turn": [],
+          "cached_tokens_per_turn": []
+        },
+        "output_tokens": 568,
+        "output_tokens_details": {
+          "reasoning_tokens": 0,
+          "tool_output_tokens": 0,
+          "output_tokens_per_turn": [],
+          "tool_output_tokens_per_turn": []
+        },
+        "total_tokens": 2378
+      },
+      "status": "VALID",
+      "normalization": null
+    }
+  ],
+  "live_usage": {
+    "input_tokens": 5488,
+    "output_tokens": 1733,
+    "total_tokens": 7221
+  },
+  "currency_cost": null,
+  "scientific_conclusion": "Client parser and diagnostic checks validated; upstream root cause remains unconfirmed.",
+  "no_automatic_retry": true,
+  "full_stage5_complete": false,
+  "human_reviews_completed": 0
+}

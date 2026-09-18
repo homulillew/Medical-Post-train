@@ -39,6 +39,7 @@ no valid response was regenerated. Treat v1/v2 score reports as historical.
 - [Interview narrative](docs/stage_reports/05_interview_story_v3.md)
 - [Open-QA review package manifest](experiments/stage5/closure_v3_20260918/review_packet.json)
 - [Atria API pilot: results and failures](docs/stage_reports/05_atria_api_pilot_20260918.md)
+- [Atria parser repair and 3-request validation](docs/stage_reports/05_atria_parser_repair_20260918.md)
 - [Project state and remaining gates](project_state.json)
 
 The anonymous review package contains 1347 judge entries including position flips.
@@ -48,6 +49,11 @@ stored separately: the owner-authorized pilot tested 20 entries, with 16 valid
 scores and 4 unscored entries. API requests have stopped. Its only fully observed
 position-flip pair disagreed; this small pilot cannot establish model rankings.
 Human reviews remain zero. Safety flags are review candidates, not clinical judgments.
+
+The subsequent parser repair preserves those 16 judgments and separately recovers
+one field-name mismatch (17/20 compatibility coverage). Three owner-authorized
+diagnostic calls passed with explicit message roles; they are excluded from the
+evaluation totals and do not establish permanent upstream reliability.
 
 ## Reproduction and storage
 
