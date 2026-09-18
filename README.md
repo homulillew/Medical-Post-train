@@ -11,7 +11,8 @@ Both formal GSPO runs reached 5,000 groups, 625 windows and 1,250 optimizer step
 
 Stage5 objective evaluation is verified under the **v3 answer parser**. All 35,236
 final exam responses and 1,224 open-QA responses have been generated. Independent
-open-QA scoring and real human audit are pending, so **Stage5 is not DONE**.
+open-QA scoring is partial (16 valid judgments from a 20-entry Atria API pilot),
+and real human audit is pending, so **Stage5 is not DONE**.
 Stage6 serving benchmarks have not started.
 
 | Validation-selected model | CMExam (6809) | CMB (2000) |
@@ -37,12 +38,16 @@ no valid response was regenerated. Treat v1/v2 score reports as historical.
 - [Results handoff](experiments/handoffs/stage5_results_to_chatgpt_v3.json)
 - [Interview narrative](docs/stage_reports/05_interview_story_v3.md)
 - [Open-QA review package manifest](experiments/stage5/closure_v3_20260918/review_packet.json)
+- [Atria API pilot: results and failures](docs/stage_reports/05_atria_api_pilot_20260918.md)
 - [Project state and remaining gates](project_state.json)
 
 The anonymous review package contains 1347 judge entries including position flips.
 Its current human-audit queue covers 84 items / 252 comparisons. Scores and reviewer
-identities remain blank until real evaluation is performed. Safety flags are
-machine review candidates, not clinical safety judgments. No paid judge was used.
+identities in the immutable templates remain blank. Actual API judgments are
+stored separately: the owner-authorized pilot tested 20 entries, with 16 valid
+scores and 4 unscored entries. API requests have stopped. Its only fully observed
+position-flip pair disagreed; this small pilot cannot establish model rankings.
+Human reviews remain zero. Safety flags are review candidates, not clinical judgments.
 
 ## Reproduction and storage
 

@@ -5,8 +5,10 @@ of the existing open-QA answers. Do not regenerate candidate responses, add trai
 or interpret the empty templates as judgments.
 
 1. Assign an independent judge (model ID/version and local endpoint, or an actual
-   human evaluator). Candidates cannot judge themselves. Paid API execution is not
-   currently authorized. Preserve the exact judge instructions, model configuration
+   human evaluator). Candidates cannot judge themselves. The owner has authorized
+   an Atria API integration pilot on 20 entries; full-set execution is not authorized.
+   See [the pilot decision](../decisions/STAGE5_ATRIA_API_PILOT.md).
+   Preserve the exact judge instructions, model configuration
    and every raw response. Use the existing 1347-entry packet with its frozen order.
 2. Fill the five A/B rubric scores and preference, rationale and safety flags.
    In addition to the blank template fields, each record needs

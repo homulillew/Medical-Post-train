@@ -110,14 +110,20 @@
     "5": {
       "status": "FULL_RUNNING",
       "run_ids": [
-        "stage5_project_v1"
+        "stage5_project_v1",
+        "s5_atria_dawn_20260918T081010Z",
+        "s5_atria_dawn_20260918T081113Z",
+        "s5_atria_dawn_20260918T081417Z"
       ],
       "progress": {
         "checkpoints_evaluated": 20,
         "selection_generations": 20480,
         "exam_generations": 35236,
         "open_qa_generations": 1224,
-        "exam_jobs_verified": 8
+        "exam_jobs_verified": 8,
+        "open_qa_valid_judgments": 16,
+        "open_qa_judge_entries_tested": 20,
+        "open_qa_human_reviews": 0
       },
       "verification_receipt": null,
       "stage_report": "docs/stage_reports/05_objective_evaluation_v3.md",
@@ -125,7 +131,7 @@
       "execution_status": "LOCAL_TASK_COMPLETE",
       "checkpoint_selection_status": "FROZEN_SELECTED",
       "objective_evaluation_status": "OBJECTIVE_EVAL_PASS",
-      "open_qa_status": "OPEN_QA_JUDGE_PENDING",
+      "open_qa_status": "OPEN_QA_JUDGE_PARTIAL_API_PILOT",
       "local_generation_status": "COMPLETE",
       "objective_verification_receipt": {
         "path": "/data/WSH/post-train/experiments/stage5/closure_v3_20260918/objective_verification_v3.json",
@@ -138,7 +144,8 @@
         "Independent open-QA judging",
         "Real human audit and safety adjudication",
         "Full Stage5 acceptance"
-      ]
+      ],
+      "open_qa_pilot": "experiments/stage5/atria_judge/pilot_20260918_summary/accounting.json"
     },
     "6": {
       "status": "NOT_STARTED",

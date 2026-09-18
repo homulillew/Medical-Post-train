@@ -1,0 +1,26 @@
+{
+  "status": "PILOT_WITH_INVALID_OUTPUTS",
+  "completed": 15,
+  "planned": 1347,
+  "usage": {
+    "input_tokens": 34234,
+    "output_tokens": 18575,
+    "total_tokens": 52809
+  },
+  "currency_cost": null,
+  "invalid_outputs": 3,
+  "attempted": 18,
+  "judgments": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/judgments_0015.jsonl",
+    "sha256": "5ec9dafa3ba851011fe186cbfda1bb32e64ab2d4864150967d98d9bddb745777",
+    "bytes": 20701
+  },
+  "protocol": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/protocol.json",
+    "sha256": "b61939fc6cb407fb596382bf9aa359f2ad67529fbd36faa018333afb3d0fa086",
+    "bytes": 5333
+  },
+  "human_reviews_completed": 0,
+  "clinical_validation": false,
+  "full_stage5_complete": false
+}

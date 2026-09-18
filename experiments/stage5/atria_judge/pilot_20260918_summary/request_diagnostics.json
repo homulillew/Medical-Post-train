@@ -1,0 +1,695 @@
+[
+  {
+    "run_id": "s5_atria_dawn_20260918T081010Z",
+    "pair_id": "2ccc705d80a1f669a784bcb9",
+    "http_status": 200,
+    "response_status": "completed",
+    "valid": false,
+    "seconds": 34.56039261817932,
+    "response_id": "resp_97aca606b664b0de",
+    "request_id": "req_c6655b4a-1b4d-48e3-b220-1205c084e537",
+    "usage": {
+      "input_tokens": 1836,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 562,
+      "output_tokens_details": {
+        "reasoning_tokens": 0,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 2398
+    },
+    "visible_characters": 11,
+    "invalid_visible_excerpt": "{\"{\"\"  :\"\"}",
+    "raw": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081010Z/requests/0000/raw_response.json",
+      "sha256": "6b23c7b098c909b18407ed0ce289a8055826d20588712acdc2f79d756c4164c0",
+      "bytes": 7473
+    }
+  },
+  {
+    "run_id": "s5_atria_dawn_20260918T081113Z",
+    "pair_id": "2ccc705d80a1f669a784bcb9",
+    "http_status": 200,
+    "response_status": "completed",
+    "valid": true,
+    "seconds": 16.446757555007935,
+    "response_id": "resp_88f173765ffef425",
+    "request_id": "req_63aeb396-af99-4013-8885-4e947a384565",
+    "usage": {
+      "input_tokens": 1836,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 605,
+      "output_tokens_details": {
+        "reasoning_tokens": 0,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 2441
+    },
+    "visible_characters": 574,
+    "invalid_visible_excerpt": null,
+    "raw": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081113Z/requests/0000/raw_response.json",
+      "sha256": "e9e89d315d50b31c1579b1d3fc99f0dd1e293db9e1cba403e430144c5d8e44ac",
+      "bytes": 7839
+    }
+  },
+  {
+    "run_id": "s5_atria_dawn_20260918T081113Z",
+    "pair_id": "4d5a921429637248800b96a5",
+    "http_status": 200,
+    "response_status": "completed",
+    "valid": false,
+    "seconds": 80.6946918964386,
+    "response_id": "resp_9ca34ceae776db3d",
+    "request_id": "req_7b106e30-b4e4-4ad7-8aa1-c0a5bd60d775",
+    "usage": {
+      "input_tokens": 1836,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 2473,
+      "output_tokens_details": {
+        "reasoning_tokens": 0,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 4309
+    },
+    "visible_characters": 346,
+    "invalid_visible_excerpt": "/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0",
+    "raw": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081113Z/requests/0001/raw_response.json",
+      "sha256": "796068b644833da37c5baa73631c9f4976dc40cadddb50252313ac8c6bc291e2",
+      "bytes": 7487
+    }
+  },
+  {
+    "run_id": "s5_atria_dawn_20260918T081417Z",
+    "pair_id": "9fa26db22e5790bb88d1a858",
+    "http_status": 200,
+    "response_status": "completed",
+    "valid": true,
+    "seconds": 51.24411201477051,
+    "response_id": "resp_89f6cf3407d1377f",
+    "request_id": "req_1c1955ef-e26c-4659-9f88-44ca677c97ac",
+    "usage": {
+      "input_tokens": 1835,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 619,
+      "output_tokens_details": {
+        "reasoning_tokens": 0,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 2454
+    },
+    "visible_characters": 534,
+    "invalid_visible_excerpt": null,
+    "raw": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0002/raw_response.json",
+      "sha256": "5388f07001aa751631425d3153a951cc40fef485e6306f09697516631cd7f054",
+      "bytes": 7791
+    }
+  },
+  {
+    "run_id": "s5_atria_dawn_20260918T081417Z",
+    "pair_id": "9c6340ee66a9c74cc6f27737",
+    "http_status": 200,
+    "response_status": "completed",
+    "valid": true,
+    "seconds": 25.251794815063477,
+    "response_id": "resp_a3d760e8464a8b07",
+    "request_id": "req_76282284-c7b3-4a1d-9670-62e1dc457770",
+    "usage": {
+      "input_tokens": 1840,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 1411,
+      "output_tokens_details": {
+        "reasoning_tokens": 0,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 3251
+    },
+    "visible_characters": 729,
+    "invalid_visible_excerpt": null,
+    "raw": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0003/raw_response.json",
+      "sha256": "c50819e6b80e83d5cbf60eebcbd6a0f61bdc68d5cedf99306aa78661f1e442f8",
+      "bytes": 11491
+    }
+  },
+  {
+    "run_id": "s5_atria_dawn_20260918T081417Z",
+    "pair_id": "9c6340ee66a9c74cc6f27737-flip",
+    "http_status": 200,
+    "response_status": "completed",
+    "valid": false,
+    "seconds": 15.44499397277832,
+    "response_id": "resp_b5efb2ffcb6f8557",
+    "request_id": "req_033bfdb9-15a8-40dc-a0a1-e71c849e4baa",
+    "usage": {
+      "input_tokens": 1842,
+      "input_tokens_details": {
+        "cached_tokens": 640,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 34,
+      "output_tokens_details": {
+        "reasoning_tokens": 0,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 1876
+    },
+    "visible_characters": 84,
+    "invalid_visible_excerpt": "\n\n=`**: user---\n\n above ( is it let:4.\n answer\n the purpose\n this ed\";\n\n AI message>",
+    "raw": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0004/raw_response.json",
+      "sha256": "a70c459040fc058aa51f55048bd4532fb54e4b1ac54f2479971dd909807f1035",
+      "bytes": 5133
+    }
+  },
+  {
+    "run_id": "s5_atria_dawn_20260918T081417Z",
+    "pair_id": "350cdf12a763a9765ea02035",
+    "http_status": 200,
+    "response_status": "completed",
+    "valid": false,
+    "seconds": 25.80534863471985,
+    "response_id": "resp_ba8dea953753ad9a",
+    "request_id": "req_9b41dd74-e139-47d1-9801-73532d55cc45",
+    "usage": {
+      "input_tokens": 1810,
+      "input_tokens_details": {
+        "cached_tokens": 640,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 5,
+      "output_tokens_details": {
+        "reasoning_tokens": 0,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 1815
+    },
+    "visible_characters": 0,
+    "invalid_visible_excerpt": "",
+    "raw": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0005/raw_response.json",
+      "sha256": "f6b71f9b54701bc6b9a9a267aa2c3ea962855911a524cda4d90b44db036e36c6",
+      "bytes": 4814
+    }
+  },
+  {
+    "run_id": "s5_atria_dawn_20260918T081417Z",
+    "pair_id": "350cdf12a763a9765ea02035-flip",
+    "http_status": 200,
+    "response_status": "completed",
+    "valid": true,
+    "seconds": 28.07058024406433,
+    "response_id": "resp_aad6bbe3c7d1f4c1",
+    "request_id": "req_1858f013-0693-4c8f-8c53-31b70f83a7a4",
+    "usage": {
+      "input_tokens": 1812,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 1444,
+      "output_tokens_details": {
+        "reasoning_tokens": 0,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 3256
+    },
+    "visible_characters": 508,
+    "invalid_visible_excerpt": null,
+    "raw": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0006/raw_response.json",
+      "sha256": "934b1a3053e7103f45f1b3b882c7f90e99c64c66e2249559b40df50643a30475",
+      "bytes": 11826
+    }
+  },
+  {
+    "run_id": "s5_atria_dawn_20260918T081417Z",
+    "pair_id": "98fc09f118ab16255d5b7e0e",
+    "http_status": 200,
+    "response_status": "completed",
+    "valid": true,
+    "seconds": 14.101848363876343,
+    "response_id": "resp_a2f5600b6262d708",
+    "request_id": "req_2ab86b9d-af22-4936-a823-1df785e04e9c",
+    "usage": {
+      "input_tokens": 1832,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 448,
+      "output_tokens_details": {
+        "reasoning_tokens": 0,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 2280
+    },
+    "visible_characters": 523,
+    "invalid_visible_excerpt": null,
+    "raw": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0007/raw_response.json",
+      "sha256": "05dd3a985ceeee14b720fd401cd7c2c2efe3cafc7b7a225658a51129aa272b18",
+      "bytes": 7078
+    }
+  },
+  {
+    "run_id": "s5_atria_dawn_20260918T081417Z",
+    "pair_id": "98fc09f118ab16255d5b7e0e-flip",
+    "http_status": 200,
+    "response_status": "completed",
+    "valid": true,
+    "seconds": 44.269742012023926,
+    "response_id": "resp_99ee94cdbbfce461",
+    "request_id": "req_b0e3b563-b52d-4aa7-a477-74bd4d74db33",
+    "usage": {
+      "input_tokens": 1834,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 756,
+      "output_tokens_details": {
+        "reasoning_tokens": 0,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 2590
+    },
+    "visible_characters": 598,
+    "invalid_visible_excerpt": null,
+    "raw": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0008/raw_response.json",
+      "sha256": "ab272ea254716881ee796d5d19d7af7783fc4060e0e387daf81605182efb8fd0",
+      "bytes": 8480
+    }
+  },
+  {
+    "run_id": "s5_atria_dawn_20260918T081417Z",
+    "pair_id": "2cc56ed62d190e0a13ca0f66",
+    "http_status": 200,
+    "response_status": "completed",
+    "valid": true,
+    "seconds": 75.23014783859253,
+    "response_id": "resp_98a5f6cd1bc1673d",
+    "request_id": "req_a2e15bbf-2be8-43cb-b866-e816a45e7591",
+    "usage": {
+      "input_tokens": 2092,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 1191,
+      "output_tokens_details": {
+        "reasoning_tokens": 0,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 3283
+    },
+    "visible_characters": 538,
+    "invalid_visible_excerpt": null,
+    "raw": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0009/raw_response.json",
+      "sha256": "da7191ecb26ec1493455a3a4f0fe2d55c6db444f401e4ae474dcf31f8e530f2d",
+      "bytes": 10786
+    }
+  },
+  {
+    "run_id": "s5_atria_dawn_20260918T081417Z",
+    "pair_id": "c4b839a557ca0c82379f95e4",
+    "http_status": 200,
+    "response_status": "completed",
+    "valid": true,
+    "seconds": 11.864540576934814,
+    "response_id": "resp_823c8187d55569f2",
+    "request_id": "req_455b76cd-56ae-49d5-b72a-ef1cbd855ae3",
+    "usage": {
+      "input_tokens": 2052,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 969,
+      "output_tokens_details": {
+        "reasoning_tokens": 0,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 3021
+    },
+    "visible_characters": 477,
+    "invalid_visible_excerpt": null,
+    "raw": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0010/raw_response.json",
+      "sha256": "2001278bfdc12adad4fe75876bb9a91079a8c08bddcfc6d270bef6d7db1fe022",
+      "bytes": 9635
+    }
+  },
+  {
+    "run_id": "s5_atria_dawn_20260918T081417Z",
+    "pair_id": "217320dfd01fcba127ee9a0d",
+    "http_status": 200,
+    "response_status": "completed",
+    "valid": true,
+    "seconds": 23.069109678268433,
+    "response_id": "resp_b61eb1a49d7b5217",
+    "request_id": "req_3c49e65d-3af1-46d7-a493-171b0e782061",
+    "usage": {
+      "input_tokens": 2087,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 1676,
+      "output_tokens_details": {
+        "reasoning_tokens": 0,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 3763
+    },
+    "visible_characters": 481,
+    "invalid_visible_excerpt": null,
+    "raw": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0011/raw_response.json",
+      "sha256": "db10c6d8e578ef9b7e01fbc4e880cd5685800b7dff3f39eb89f2bed24499ce64",
+      "bytes": 13122
+    }
+  },
+  {
+    "run_id": "s5_atria_dawn_20260918T081417Z",
+    "pair_id": "78e98327b3551cdbaf191475",
+    "http_status": 200,
+    "response_status": "completed",
+    "valid": true,
+    "seconds": 29.84203267097473,
+    "response_id": "resp_a0599ae77c1a18d4",
+    "request_id": "req_29880aae-e16c-4754-a9f5-1eb1787ae33b",
+    "usage": {
+      "input_tokens": 1894,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 1774,
+      "output_tokens_details": {
+        "reasoning_tokens": 1556,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 3668
+    },
+    "visible_characters": 528,
+    "invalid_visible_excerpt": null,
+    "raw": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0012/raw_response.json",
+      "sha256": "9042b61b3fa8337989ebbcff5f9a02baa600b3bb0d367b2a93e3d1cfca1b023e",
+      "bytes": 13079
+    }
+  },
+  {
+    "run_id": "s5_atria_dawn_20260918T081417Z",
+    "pair_id": "19075b8adc655f02cf1da62a",
+    "http_status": 200,
+    "response_status": "completed",
+    "valid": true,
+    "seconds": 55.549333572387695,
+    "response_id": "resp_8b04e0d9c2c737c9",
+    "request_id": "req_b7fb439a-4303-4d19-93ce-e8be7d5436c0",
+    "usage": {
+      "input_tokens": 1897,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 1956,
+      "output_tokens_details": {
+        "reasoning_tokens": 0,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 3853
+    },
+    "visible_characters": 539,
+    "invalid_visible_excerpt": null,
+    "raw": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0013/raw_response.json",
+      "sha256": "28cd567625617885b05ca8f3767d89721cc765c8453fad429675f7d43a40288a",
+      "bytes": 13997
+    }
+  },
+  {
+    "run_id": "s5_atria_dawn_20260918T081417Z",
+    "pair_id": "4705591ee6e802c7e06dba56",
+    "http_status": 200,
+    "response_status": "completed",
+    "valid": true,
+    "seconds": 91.96452713012695,
+    "response_id": "resp_8c0f82fc9fbb0aba",
+    "request_id": "req_f1ff4b4b-7320-47c3-a7b4-aa38f66011c3",
+    "usage": {
+      "input_tokens": 1918,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 607,
+      "output_tokens_details": {
+        "reasoning_tokens": 0,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 2525
+    },
+    "visible_characters": 512,
+    "invalid_visible_excerpt": null,
+    "raw": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0014/raw_response.json",
+      "sha256": "cf799f6acffa225de55acaa15b4ed42b6577dd92b36182e633269c6a397f0044",
+      "bytes": 7730
+    }
+  },
+  {
+    "run_id": "s5_atria_dawn_20260918T081417Z",
+    "pair_id": "be2b83be2c77e88c3401c282",
+    "http_status": 200,
+    "response_status": "completed",
+    "valid": true,
+    "seconds": 24.257490396499634,
+    "response_id": "resp_9398e00d450dff07",
+    "request_id": "req_2847fb81-da7a-48f5-a3e4-79f23e7165d9",
+    "usage": {
+      "input_tokens": 1849,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 1408,
+      "output_tokens_details": {
+        "reasoning_tokens": 0,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 3257
+    },
+    "visible_characters": 519,
+    "invalid_visible_excerpt": null,
+    "raw": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0015/raw_response.json",
+      "sha256": "27373caa221551ceabab3d693d1465ae6a420b40c3d285f07f2da1e768214910",
+      "bytes": 11562
+    }
+  },
+  {
+    "run_id": "s5_atria_dawn_20260918T081417Z",
+    "pair_id": "5ecd967a242484ea4d60d1bf",
+    "http_status": 200,
+    "response_status": "completed",
+    "valid": true,
+    "seconds": 27.437867403030396,
+    "response_id": "resp_91599bbe7af18b41",
+    "request_id": "req_af73893b-c845-492b-b27d-b8a6f6aaafb3",
+    "usage": {
+      "input_tokens": 1844,
+      "input_tokens_details": {
+        "cached_tokens": 640,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 862,
+      "output_tokens_details": {
+        "reasoning_tokens": 0,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 2706
+    },
+    "visible_characters": 526,
+    "invalid_visible_excerpt": null,
+    "raw": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0016/raw_response.json",
+      "sha256": "09f57a0b1235fb913cc0f48048b07b2c8029b989eac45a7209c340130f9aa975",
+      "bytes": 8962
+    }
+  },
+  {
+    "run_id": "s5_atria_dawn_20260918T081417Z",
+    "pair_id": "e894f38a93be7a4965d9e35a",
+    "http_status": 200,
+    "response_status": "completed",
+    "valid": true,
+    "seconds": 40.04989457130432,
+    "response_id": "resp_933489d6eb1cd23a",
+    "request_id": "req_a4108ad1-a963-4c93-8315-d7dd1849f983",
+    "usage": {
+      "input_tokens": 1818,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 1645,
+      "output_tokens_details": {
+        "reasoning_tokens": 0,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 3463
+    },
+    "visible_characters": 477,
+    "invalid_visible_excerpt": null,
+    "raw": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0017/raw_response.json",
+      "sha256": "b24681888fa3e3d4e05dc7c87ad1cef6483ee5df7bf30419b649418a17863939",
+      "bytes": 12780
+    }
+  },
+  {
+    "run_id": "s5_atria_dawn_20260918T081417Z",
+    "pair_id": "1400b2c14c0b3951a38f3427",
+    "http_status": 200,
+    "response_status": "completed",
+    "valid": true,
+    "seconds": 43.16013240814209,
+    "response_id": "resp_8f3e79acf4d91eed",
+    "request_id": "req_9271ceb3-67eb-47b9-b83c-fed9790e6165",
+    "usage": {
+      "input_tokens": 1968,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 872,
+      "output_tokens_details": {
+        "reasoning_tokens": 0,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 2840
+    },
+    "visible_characters": 515,
+    "invalid_visible_excerpt": null,
+    "raw": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0018/raw_response.json",
+      "sha256": "087a6e93d42eda3aef3225dc1134e2f84c5d2d9fcc480a80e85b9c66b1ac5911",
+      "bytes": 8757
+    }
+  },
+  {
+    "run_id": "s5_atria_dawn_20260918T081417Z",
+    "pair_id": "05b04f58f45ce839fd92c526",
+    "http_status": 200,
+    "response_status": "completed",
+    "valid": false,
+    "seconds": 56.93355131149292,
+    "response_id": "resp_b123220d4622a733",
+    "request_id": "req_9032f276-54ac-450a-9130-ff925ab30ccc",
+    "usage": {
+      "input_tokens": 2010,
+      "input_tokens_details": {
+        "cached_tokens": 640,
+        "input_tokens_per_turn": [],
+        "cached_tokens_per_turn": []
+      },
+      "output_tokens": 898,
+      "output_tokens_details": {
+        "reasoning_tokens": 0,
+        "tool_output_tokens": 0,
+        "output_tokens_per_turn": [],
+        "tool_output_tokens_per_turn": []
+      },
+      "total_tokens": 2908
+    },
+    "visible_characters": 492,
+    "invalid_visible_excerpt": "{\"preference\":\"B win\",\"scores\":{\"A\":{\"factual_correctness\":1,\"relevance_completeness\":1,\"safety_safety\":2,\"uncertainty_calibration\":2,\"clarity_usefulness\":3},\"B\":{\"factual_correctness\":3,\"relevance_completeness\":3,\"safety_safety\":3,\"uncerta",
+    "raw": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/requests/0019/raw_response.json",
+      "sha256": "083ccf3b13777f9c3ba74676f27a73dd495edd28c5554a546e209e1d4afb1523",
+      "bytes": 9416
+    }
+  }
+]

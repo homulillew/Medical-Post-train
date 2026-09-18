@@ -1,0 +1,45 @@
+{
+  "status": "BOUNDED_TEST_COMPLETE_WITH_INVALID_OUTPUTS",
+  "unique_entries": 20,
+  "valid_judgments": 16,
+  "unscored_entries": 4,
+  "judge_requests": 21,
+  "connection_probes": 1,
+  "total_requests": 22,
+  "usage_including_failed_requests_and_probe": {
+    "input_tokens": 39755,
+    "output_tokens": 22429,
+    "total_tokens": 62184
+  },
+  "currency_cost": null,
+  "connection_probe": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/pilot_20260918_summary/connection_probe.json",
+    "sha256": "f9fded6271ccdc841d7e37650b5b30c74cee136c605cdb89e5f96437fb4799ff",
+    "bytes": 2621
+  },
+  "analysis": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/pilot_20260918_summary/pilot_analysis.json",
+    "sha256": "18d6ee9443e76c78b4db54fb816c749a7b84bf46abc7f4f1be160c2c01ff0928",
+    "bytes": 8058
+  },
+  "validation": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/pilot_20260918_summary/pilot_validation.json",
+    "sha256": "7a45edb954264bd574edb9ce6095cc610cb5081915c2659efffe5c867bdb1e4d",
+    "bytes": 51837
+  },
+  "artifacts": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/pilot_20260918_summary/artifacts_manifest.json",
+    "sha256": "bbdbbf6bf57f79ecbc92fb92645176b50ddf58bad6d0c1c7bedf3a96dc56d6d7",
+    "bytes": 21239
+  },
+  "request_diagnostics": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/pilot_20260918_summary/request_diagnostics.json",
+    "sha256": "eccc9d194d3c48514defcfb979a1e37c487046a5037540883b6f3d6994501fad",
+    "bytes": 23843
+  },
+  "all_judge_http_status_200": true,
+  "no_tool_calls_returned": true,
+  "no_more_requests_running": true,
+  "human_reviews_completed": 0,
+  "full_stage5_complete": false
+}

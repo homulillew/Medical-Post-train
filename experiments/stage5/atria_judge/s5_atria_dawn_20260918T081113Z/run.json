@@ -1,0 +1,9 @@
+{
+  "run_id": "s5_atria_dawn_20260918T081113Z",
+  "protocol": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081113Z/protocol.json",
+    "sha256": "18544cbb2ef41e6f7a4cf1e41af77982fcc4b6f22ee6937698667e3ee5398f69",
+    "bytes": 5187
+  },
+  "artifact_root": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081113Z"
+}

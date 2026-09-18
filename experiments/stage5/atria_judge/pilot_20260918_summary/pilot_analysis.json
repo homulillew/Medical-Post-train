@@ -1,0 +1,291 @@
+{
+  "scope": "INTEGRATION_PILOT_ONLY",
+  "judgments": 16,
+  "attempted_unique_entries": 20,
+  "authorized_entries": 20,
+  "api_judge_requests": 21,
+  "invalid_attempts": 5,
+  "untested_entries": [],
+  "entries_without_valid_judgments": [
+    "05b04f58f45ce839fd92c526",
+    "350cdf12a763a9765ea02035",
+    "4d5a921429637248800b96a5",
+    "9c6340ee66a9c74cc6f27737-flip"
+  ],
+  "runs": [
+    {
+      "run_id": "s5_atria_dawn_20260918T081010Z",
+      "requests": 1,
+      "valid_judgments": 0,
+      "usage": {
+        "input_tokens": 1836,
+        "output_tokens": 562,
+        "total_tokens": 2398
+      },
+      "parameters": {
+        "max_output_tokens": 4096,
+        "temperature": 0,
+        "tools": [],
+        "tool_choice": "none",
+        "text": {
+          "format": {
+            "type": "json_object"
+          }
+        }
+      },
+      "protocol": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081010Z/protocol.json",
+        "sha256": "875f79ecd76de2267562987b6d69129c81302f94659c06476d7757602ee4e84b",
+        "bytes": 5065
+      }
+    },
+    {
+      "run_id": "s5_atria_dawn_20260918T081113Z",
+      "requests": 2,
+      "valid_judgments": 1,
+      "usage": {
+        "input_tokens": 3672,
+        "output_tokens": 3078,
+        "total_tokens": 6750
+      },
+      "parameters": {
+        "max_output_tokens": 4096,
+        "temperature": 0,
+        "tools": [],
+        "tool_choice": "none"
+      },
+      "protocol": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081113Z/protocol.json",
+        "sha256": "18544cbb2ef41e6f7a4cf1e41af77982fcc4b6f22ee6937698667e3ee5398f69",
+        "bytes": 5187
+      }
+    },
+    {
+      "run_id": "s5_atria_dawn_20260918T081417Z",
+      "requests": 18,
+      "valid_judgments": 15,
+      "usage": {
+        "input_tokens": 34234,
+        "output_tokens": 18575,
+        "total_tokens": 52809
+      },
+      "parameters": {
+        "max_output_tokens": 4096,
+        "tools": [],
+        "tool_choice": "none"
+      },
+      "protocol": {
+        "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_dawn_20260918T081417Z/protocol.json",
+        "sha256": "b61939fc6cb407fb596382bf9aa359f2ad67529fbd36faa018333afb3d0fa086",
+        "bytes": 5333
+      }
+    }
+  ],
+  "judgment_origins": {
+    "2ccc705d80a1f669a784bcb9": "s5_atria_dawn_20260918T081113Z",
+    "9fa26db22e5790bb88d1a858": "s5_atria_dawn_20260918T081417Z",
+    "9c6340ee66a9c74cc6f27737": "s5_atria_dawn_20260918T081417Z",
+    "350cdf12a763a9765ea02035-flip": "s5_atria_dawn_20260918T081417Z",
+    "98fc09f118ab16255d5b7e0e": "s5_atria_dawn_20260918T081417Z",
+    "98fc09f118ab16255d5b7e0e-flip": "s5_atria_dawn_20260918T081417Z",
+    "2cc56ed62d190e0a13ca0f66": "s5_atria_dawn_20260918T081417Z",
+    "c4b839a557ca0c82379f95e4": "s5_atria_dawn_20260918T081417Z",
+    "217320dfd01fcba127ee9a0d": "s5_atria_dawn_20260918T081417Z",
+    "78e98327b3551cdbaf191475": "s5_atria_dawn_20260918T081417Z",
+    "19075b8adc655f02cf1da62a": "s5_atria_dawn_20260918T081417Z",
+    "4705591ee6e802c7e06dba56": "s5_atria_dawn_20260918T081417Z",
+    "be2b83be2c77e88c3401c282": "s5_atria_dawn_20260918T081417Z",
+    "5ecd967a242484ea4d60d1bf": "s5_atria_dawn_20260918T081417Z",
+    "e894f38a93be7a4965d9e35a": "s5_atria_dawn_20260918T081417Z",
+    "1400b2c14c0b3951a38f3427": "s5_atria_dawn_20260918T081417Z"
+  },
+  "unique_questions_with_valid_judgments": 6,
+  "clinical_cases_with_valid_judgments": 3,
+  "base_comparisons": 14,
+  "position_flip_comparisons": 1,
+  "position_consistency": [
+    {
+      "pair_id": "98fc09f118ab16255d5b7e0e-flip",
+      "consistent": false,
+      "original": "tie",
+      "flipped": "B win"
+    }
+  ],
+  "pair_preferences": {
+    "s5_atria_dawn_20260918T081113Z: selected_dynamic vs selected_vanilla": {
+      "tie": 1
+    },
+    "s5_atria_dawn_20260918T081417Z: selected_vanilla vs sft": {
+      "tie": 4,
+      "selected_vanilla": 1
+    },
+    "s5_atria_dawn_20260918T081417Z: selected_dynamic vs selected_vanilla": {
+      "selected_vanilla": 2,
+      "tie": 2,
+      "selected_dynamic": 1
+    },
+    "s5_atria_dawn_20260918T081417Z: selected_dynamic vs sft": {
+      "tie": 1,
+      "sft": 1,
+      "selected_dynamic": 1
+    }
+  },
+  "model_scores": {
+    "s5_atria_dawn_20260918T081113Z: selected_vanilla": {
+      "factual_correctness": {
+        "n": 1,
+        "sum": 3,
+        "mean": 3.0
+      },
+      "relevance_completeness": {
+        "n": 1,
+        "sum": 2,
+        "mean": 2.0
+      },
+      "safety_escalation": {
+        "n": 1,
+        "sum": 3,
+        "mean": 3.0
+      },
+      "uncertainty_calibration": {
+        "n": 1,
+        "sum": 3,
+        "mean": 3.0
+      },
+      "clarity_usefulness": {
+        "n": 1,
+        "sum": 3,
+        "mean": 3.0
+      }
+    },
+    "s5_atria_dawn_20260918T081113Z: selected_dynamic": {
+      "factual_correctness": {
+        "n": 1,
+        "sum": 3,
+        "mean": 3.0
+      },
+      "relevance_completeness": {
+        "n": 1,
+        "sum": 2,
+        "mean": 2.0
+      },
+      "safety_escalation": {
+        "n": 1,
+        "sum": 3,
+        "mean": 3.0
+      },
+      "uncertainty_calibration": {
+        "n": 1,
+        "sum": 3,
+        "mean": 3.0
+      },
+      "clarity_usefulness": {
+        "n": 1,
+        "sum": 3,
+        "mean": 3.0
+      }
+    },
+    "s5_atria_dawn_20260918T081417Z: selected_vanilla": {
+      "factual_correctness": {
+        "n": 10,
+        "sum": 23,
+        "mean": 2.3
+      },
+      "relevance_completeness": {
+        "n": 10,
+        "sum": 24,
+        "mean": 2.4
+      },
+      "safety_escalation": {
+        "n": 10,
+        "sum": 32,
+        "mean": 3.2
+      },
+      "uncertainty_calibration": {
+        "n": 10,
+        "sum": 30,
+        "mean": 3.0
+      },
+      "clarity_usefulness": {
+        "n": 10,
+        "sum": 31,
+        "mean": 3.1
+      }
+    },
+    "s5_atria_dawn_20260918T081417Z: sft": {
+      "factual_correctness": {
+        "n": 8,
+        "sum": 18,
+        "mean": 2.25
+      },
+      "relevance_completeness": {
+        "n": 8,
+        "sum": 20,
+        "mean": 2.5
+      },
+      "safety_escalation": {
+        "n": 8,
+        "sum": 26,
+        "mean": 3.25
+      },
+      "uncertainty_calibration": {
+        "n": 8,
+        "sum": 24,
+        "mean": 3.0
+      },
+      "clarity_usefulness": {
+        "n": 8,
+        "sum": 24,
+        "mean": 3.0
+      }
+    },
+    "s5_atria_dawn_20260918T081417Z: selected_dynamic": {
+      "factual_correctness": {
+        "n": 8,
+        "sum": 18,
+        "mean": 2.25
+      },
+      "relevance_completeness": {
+        "n": 8,
+        "sum": 18,
+        "mean": 2.25
+      },
+      "safety_escalation": {
+        "n": 8,
+        "sum": 26,
+        "mean": 3.25
+      },
+      "uncertainty_calibration": {
+        "n": 8,
+        "sum": 24,
+        "mean": 3.0
+      },
+      "clarity_usefulness": {
+        "n": 8,
+        "sum": 25,
+        "mean": 3.125
+      }
+    }
+  },
+  "score_unit": "0–4 rubric, repeated answer appearances; nonrepresentative frozen prefix; no inferential statistics",
+  "critical_flagged_pairs": [],
+  "usage": {
+    "input_tokens": 39742,
+    "output_tokens": 22215,
+    "total_tokens": 61957
+  },
+  "currency_cost": null,
+  "validation": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/pilot_20260918_summary/pilot_validation.json",
+    "sha256": "7a45edb954264bd574edb9ce6095cc610cb5081915c2659efffe5c867bdb1e4d",
+    "bytes": 51837
+  },
+  "source_judgments": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/pilot_20260918_summary/judgments.jsonl",
+    "sha256": "ebd39b24c9126a4156d1cd110e9321c487917e0d9d2249e1275f9bdd5a876172",
+    "bytes": 22156
+  },
+  "human_reviews_completed": 0,
+  "full_stage5_complete": false,
+  "safety_note": "API flags are pending real human adjudication, not clinical findings."
+}
