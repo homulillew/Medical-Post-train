@@ -1,0 +1,54 @@
+{
+  "result": "PASS",
+  "scope": "V3_RESULT_ROUTING_AND_REVIEW_PACKET",
+  "objective_verification": {
+    "path": "/data/WSH/post-train/experiments/stage5/closure_v3_20260918/objective_verification_v3.json",
+    "sha256": "4fe3be40b6f0f6666a2bd4748d24696fe10c346c15b730e3e5c447c097ad28ae",
+    "bytes": 14780
+  },
+  "sources": [
+    {
+      "path": "/data/WSH/post-train/scripts/verify_stage5_scoring_v3.py",
+      "sha256": "e2e50d942b381b395a5741636f8b16a0c6d51d8cf45315f5661fd718109d04ee",
+      "bytes": 6734
+    },
+    {
+      "path": "/data/WSH/post-train/scripts/prepare_stage5_review_handoff.py",
+      "sha256": "8648a6ea9568e4c6a895071b697eea5954e51422a57551c363e4c0b8c83d519e",
+      "bytes": 5514
+    },
+    {
+      "path": "/data/WSH/post-train/scripts/finalize_stage5_v3_handoff.py",
+      "sha256": "9e8685492dcc47ea5114d08acbab9e51ee3c556ccb6449af09a9ea7227215ea5",
+      "bytes": 14101
+    },
+    {
+      "path": "/data/WSH/post-train/README.md",
+      "sha256": "429dd17c2b5ba7298872b43588106707cb321461132e3b9adb570508399a5e63",
+      "bytes": 3570
+    },
+    {
+      "path": "/data/WSH/post-train/project_state.json",
+      "sha256": "7f10707f57bd8a95d4013864290ab1cc579f303e8f28233668251fbd2fe92ca8",
+      "bytes": 6167
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/stage5/current_results_v3.json",
+      "sha256": "adfc8efd6e633654d0ddace57539cd4417be3e3be15801b1e12d8fad64b020da",
+      "bytes": 787
+    },
+    {
+      "path": "/data/WSH/post-train/experiments/handoffs/stage5_results_to_chatgpt_v3.json",
+      "sha256": "ad0626c688b92af3429a63ef63a85c9d904dec6495e0c9caa73fa3292567879e",
+      "bytes": 1758436
+    }
+  ],
+  "checks": [
+    "Original frozen seal intact",
+    "V3 report/handoff/state references agree",
+    "All public review package hashes valid",
+    "Public export rejects identity keys and hidden think",
+    "No invented judge or human review; Stage6 NOT_STARTED"
+  ],
+  "full_stage5_complete": false
+}

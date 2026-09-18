@@ -1,0 +1,72 @@
+{
+  "parser_version": "stage5-exam-parser-v2",
+  "status": "COMPLETE",
+  "dataset": "cmexam_test_scorable",
+  "checkpoint_id": "vanilla:4608",
+  "n": 6809,
+  "expected_n": 6809,
+  "original_summary": {
+    "n": 6809,
+    "correct_count": 684,
+    "accuracy": 0.10045527977676605,
+    "strict_format_rate": 0.0,
+    "unparseable_rate": 0.8615068291966514,
+    "truncation_rate": 0.0020561022176531062,
+    "unparseable_count": 5866,
+    "truncation_count": 14,
+    "mean_output_tokens": 277.0679982376267,
+    "P50_output_tokens": 272.0,
+    "P95_output_tokens": 392.0,
+    "P99_output_tokens": 480.0,
+    "prompt_tokens": 890136,
+    "output_tokens": 1886556
+  },
+  "summary": {
+    "n": 6809,
+    "correct_count": 3758,
+    "accuracy": 0.5519165809957409,
+    "strict_format_rate": 0.0,
+    "unparseable_rate": 0.18446174181230723,
+    "truncation_rate": 0.0020561022176531062,
+    "unparseable_count": 1256,
+    "truncation_count": 14,
+    "mean_output_tokens": 277.0679982376267,
+    "P50_output_tokens": 272.0,
+    "P95_output_tokens": 392.0,
+    "P99_output_tokens": 480.0,
+    "prompt_tokens": 890136,
+    "output_tokens": 1886556
+  },
+  "changed_answers": 4610,
+  "original_error_counts": {
+    "illegal_or_empty_options": 5847,
+    "parsed": 943,
+    "truncated_thinking": 14,
+    "ambiguous_final_region": 2,
+    "multiple_final_conclusions": 1,
+    "trailing_or_conflicting_answer": 2
+  },
+  "predictions": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/rescored_v2/vanilla_4608/cmexam_test_scorable/predictions.jsonl",
+    "sha256": "da4e8e7ccf6df68ed22f4ed08217b700988a06f38fb98be182fa7267d4dafaad",
+    "bytes": 11002461
+  },
+  "provenance": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/rescored_v2/vanilla_4608/cmexam_test_scorable/provenance.json",
+    "sha256": "d4161ba7051fdf6bd44d7013da21381a16549bc4d050714a09826ee6d6bc2922",
+    "bytes": 6692135
+  },
+  "generation_spec": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/final/vanilla_4608/cmexam_test_scorable/execution_spec_1789458443892161647.json",
+    "sha256": "04b695a6d54481d75b7d1968363e0d3dbdb519504a6a0695c2968a772d09375a",
+    "bytes": 5352
+  },
+  "original_complete": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/final/vanilla_4608/cmexam_test_scorable/complete.json",
+    "sha256": "a4589e33f234b4a79150d1eaaaf6dd6d1f3d36d77d3313d822dc561483a65920",
+    "bytes": 2355338
+  },
+  "new_generations": 0,
+  "selection_changed": false,
+  "integrity_scope": "receipt/raw hashes, adapter identity, v1 score replay; full token replay remains in original objective verifier"
+}

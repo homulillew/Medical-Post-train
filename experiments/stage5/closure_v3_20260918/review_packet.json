@@ -1,0 +1,159 @@
+{
+  "status": "READY_FOR_INDEPENDENT_JUDGE_AND_REAL_HUMAN_REVIEW",
+  "unique_items": 408,
+  "judge_entries": 1347,
+  "base_human_items": 82,
+  "machine_flagged_items": 3,
+  "current_human_items": 84,
+  "human_pairs": 252,
+  "future_critical_flags_must_be_added": true,
+  "judgments_completed": 0,
+  "human_reviews_completed": 0,
+  "public_files": {
+    "judge_packet.jsonl": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/review_handoff_20260918/judge_packet.jsonl",
+      "sha256": "805ca16b8d260d28722b3c9dc51d792f931279cbb5c96a120b8a93b615671216",
+      "bytes": 5596114
+    },
+    "human_audit_packet.jsonl": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/review_handoff_20260918/human_audit_packet.jsonl",
+      "sha256": "b9b0c7a20323a0b3366a501f794e9e7d613d0e895c7ae2c2215b5855c99e5a24",
+      "bytes": 1112907
+    },
+    "judgments_blank.jsonl": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/review_handoff_20260918/judgments_blank.jsonl",
+      "sha256": "47008ae43887d56929a758bce202c353bbe061c0694884f015d09254b53e1c6b",
+      "bytes": 640440
+    },
+    "human_reviews_blank.jsonl": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/review_handoff_20260918/human_reviews_blank.jsonl",
+      "sha256": "65e5cbc49357240fde5ed0dfbcd6fbd1f4f1406506ba4e7c41decf706f1eaeb1",
+      "bytes": 43596
+    },
+    "rubric.json": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/review_handoff_20260918/rubric.json",
+      "sha256": "bde623a24bad7a91814febf6892ef0691aac2fa92bded96e8c3757b38f4f172a",
+      "bytes": 1494
+    },
+    "README.md": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/review_handoff_20260918/README.md",
+      "sha256": "ef944ffb1207bd8334a27116bd16fbe18634f9fa2e6d342060057337552efcf2",
+      "bytes": 1460
+    }
+  },
+  "archive": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/review_handoff_20260918/stage5_blind_review_packet.zip",
+    "sha256": "507d5405fbba2bca67e3c201d270f0306c39ed84ca02ac497a1e2ec7c4ab6390",
+    "bytes": 675756
+  },
+  "sources": {
+    "public": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/blind_bundle/judge_visible.json",
+      "sha256": "2cf38c39bf6fabd900b9514492298e95945a7862f1ba0c6e81705bad88263827",
+      "bytes": 4635736
+    },
+    "private": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/blind_bundle/private_identity_key.json",
+      "sha256": "18cb330cedf1e2c0e2a42405409861d85c3a684b6491b64e0d44dfae9956317c",
+      "bytes": 305898
+    },
+    "reference_context": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/blind_bundle/reference_context.json",
+      "sha256": "b25c6f68fe9197ea45ddcaa54e44279af9ab4922e902b815f5fdce1773f013c6",
+      "bytes": 2178318
+    },
+    "rubric": {
+      "path": "/data/WSH/post-train/experiments/stage5/open_qa_eval_protocol_v1.json",
+      "sha256": "3c7aa77b3c2823bdf9e12520633e568eac91048a5bc7f7486ef06e65a1be5b9b",
+      "bytes": 17376
+    }
+  },
+  "private_required_prompt_ids": [
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:10:q2",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:12:q0",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:14:q0",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:17:q0",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:17:q2",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:1:q1",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:1:q2",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:20:q1",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:22:q0",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:23:q1",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:23:q3",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:24:q1",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:25:q0",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:26:q2",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:29:q0",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:31:q0",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:32:q0",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:33:q0",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:34:q0",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:38:q2",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:39:q2",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:3:q0",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:40:q0",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:44:q0",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:46:q1",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:47:q0",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:48:q2",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:49:q1",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:50:q1",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:52:q2",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:53:q0",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:57:q0",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:57:q1",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:58:q1",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:59:q1",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:59:q2",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:61:q2",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:63:q0",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:63:q2",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:65:q0",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:72:q1",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:73:q1",
+    "cmb_clin:6c8ece46097dae736c6805dd3b831e1a38c08971:9:q2",
+    "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:107901",
+    "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:130486",
+    "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:133052",
+    "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:136863",
+    "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:136895",
+    "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:14351",
+    "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:1617",
+    "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:24188",
+    "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:27946",
+    "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:31525",
+    "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:35975",
+    "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:36721",
+    "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:46447",
+    "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:48909",
+    "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:58093",
+    "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:66175",
+    "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:68630",
+    "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:7159",
+    "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:73242",
+    "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:93075",
+    "huatuo:4077ffaeb123e49b8b8a0283f42957a5570a52ce:95307",
+    "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:1073",
+    "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:11392",
+    "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:12136",
+    "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:14224",
+    "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:14275",
+    "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:1501",
+    "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:16554",
+    "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:17209",
+    "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:18735",
+    "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:1904",
+    "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:3421",
+    "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:5490",
+    "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:6272",
+    "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:6890",
+    "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:7366",
+    "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:8071",
+    "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:8348",
+    "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:9084",
+    "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:9243",
+    "medical_o1:fc2c9e8a37b38f38da6d449564a8c350b244aef4:950"
+  ],
+  "paid_api_calls": 0,
+  "clinical_validation": false
+}

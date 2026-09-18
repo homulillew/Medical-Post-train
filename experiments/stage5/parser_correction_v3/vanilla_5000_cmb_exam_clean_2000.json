@@ -1,0 +1,96 @@
+{
+  "parser_version": "stage5-exam-parser-v3",
+  "status": "COMPLETE",
+  "dataset": "cmb_exam_clean_2000",
+  "checkpoint_id": "vanilla:5000",
+  "n": 2000,
+  "expected_n": 2000,
+  "original_summary": {
+    "n": 2000,
+    "correct_count": 300,
+    "accuracy": 0.15,
+    "strict_format_rate": 0.0,
+    "unparseable_rate": 0.781,
+    "truncation_rate": 0.0015,
+    "unparseable_count": 1562,
+    "truncation_count": 3,
+    "mean_output_tokens": 270.9715,
+    "P50_output_tokens": 267.0,
+    "P95_output_tokens": 387.0,
+    "P99_output_tokens": 466.02,
+    "prompt_tokens": 251705,
+    "output_tokens": 541943
+  },
+  "summary": {
+    "n": 2000,
+    "correct_count": 1146,
+    "accuracy": 0.573,
+    "strict_format_rate": 0.0,
+    "unparseable_rate": 0.0635,
+    "truncation_rate": 0.0015,
+    "unparseable_count": 127,
+    "truncation_count": 3,
+    "mean_output_tokens": 270.9715,
+    "P50_output_tokens": 267.0,
+    "P95_output_tokens": 387.0,
+    "P99_output_tokens": 466.02,
+    "prompt_tokens": 251705,
+    "output_tokens": 541943
+  },
+  "v2_summary": {
+    "n": 2000,
+    "correct_count": 1025,
+    "accuracy": 0.5125,
+    "strict_format_rate": 0.0,
+    "unparseable_rate": 0.19,
+    "truncation_rate": 0.0015,
+    "unparseable_count": 380,
+    "truncation_count": 3,
+    "mean_output_tokens": 270.9715,
+    "P50_output_tokens": 267.0,
+    "P95_output_tokens": 387.0,
+    "P99_output_tokens": 466.02,
+    "prompt_tokens": 251705,
+    "output_tokens": 541943
+  },
+  "new_error_counts": {
+    "parsed": 1873,
+    "missing_explicit_option": 22,
+    "no_explicit_final_answer": 99,
+    "no_positive_conclusion": 2,
+    "truncated_thinking": 3,
+    "illegal_or_empty_options": 1
+  },
+  "previously_parsed_answers_changed": 0,
+  "changed_answers": 1435,
+  "original_error_counts": {
+    "illegal_or_empty_options": 1557,
+    "parsed": 438,
+    "truncated_thinking": 3,
+    "trailing_or_conflicting_answer": 1,
+    "ambiguous_final_region": 1
+  },
+  "predictions": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/rescored_v3/vanilla_5000/cmb_exam_clean_2000/predictions.jsonl",
+    "sha256": "0f59212457de920400e138ab8a00547e00f00a0052f45f18212f3aaee0304c9e",
+    "bytes": 3236074
+  },
+  "provenance": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/rescored_v3/vanilla_5000/cmb_exam_clean_2000/provenance.json",
+    "sha256": "f97e8f77b51ed6da77c829ff516f5d5b71bfabd6005714c4ac5895cdd71ef4b5",
+    "bytes": 1954012
+  },
+  "generation_spec": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/final/vanilla_5000/cmb_exam_clean_2000/execution_spec_1789498603076875957.json",
+    "sha256": "b0426446fb3775c1a21d0fd93d26f350ea562a216765361fbc6a9fe8f47ab068",
+    "bytes": 5347
+  },
+  "original_complete": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/final/vanilla_5000/cmb_exam_clean_2000/complete.json",
+    "sha256": "5c697c697ded8aa3a61659b9cffa4593e0c725ef92fefb08237d5e33453cca23",
+    "bytes": 684521
+  },
+  "new_generations": 0,
+  "selection_changed": false,
+  "integrity_scope": "receipt/raw hashes, adapter identity, v1 score replay; full token replay remains in original objective verifier"
+}

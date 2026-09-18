@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-09-18T05:33:55.368316+00:00",
+  "deleted_files": 1768,
+  "released_allocated_bytes": 713896296448,
+  "protected_full_checkpoints": 77,
+  "data_available_bytes": 1427717312512,
+  "all_targeted_adapters_retained": true,
+  "limitation": "Pruned native training checkpoints cannot pass historical full-file checks or resume directly. Recorded hashes and raw experiment evidence retained. Protected checkpoints retain all native state."
+}

@@ -114,21 +114,31 @@
       ],
       "progress": {
         "checkpoints_evaluated": 20,
-        "selection_generations": 20480
+        "selection_generations": 20480,
+        "exam_generations": 35236,
+        "open_qa_generations": 1224,
+        "exam_jobs_verified": 8
       },
       "verification_receipt": null,
-      "stage_report": "docs/stage_reports/05_objective_evaluation.md",
-      "interview_story": null,
+      "stage_report": "docs/stage_reports/05_objective_evaluation_v3.md",
+      "interview_story": "docs/stage_reports/05_interview_story_v3.md",
       "execution_status": "LOCAL_TASK_COMPLETE",
       "checkpoint_selection_status": "FROZEN_SELECTED",
       "objective_evaluation_status": "OBJECTIVE_EVAL_PASS",
       "open_qa_status": "OPEN_QA_JUDGE_PENDING",
       "local_generation_status": "COMPLETE",
       "objective_verification_receipt": {
-        "path": "/data/WSH/post-train/experiments/stage5/stage5_objective_verification_v1.json",
-        "sha256": "1502d77e99f67afbe1dca8de898d1108bd1cdb770c1d8807e14941514bdef0b2",
-        "bytes": 7278
-      }
+        "path": "/data/WSH/post-train/experiments/stage5/closure_v3_20260918/objective_verification_v3.json",
+        "sha256": "4fe3be40b6f0f6666a2bd4748d24696fe10c346c15b730e3e5c447c097ad28ae",
+        "bytes": 14780
+      },
+      "objective_parser_version": "v3",
+      "handoff": "experiments/handoffs/stage5_results_to_chatgpt_v3.json",
+      "pending_requirements": [
+        "Independent open-QA judging",
+        "Real human audit and safety adjudication",
+        "Full Stage5 acceptance"
+      ]
     },
     "6": {
       "status": "NOT_STARTED",

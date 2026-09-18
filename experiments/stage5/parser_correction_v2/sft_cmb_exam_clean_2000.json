@@ -1,0 +1,69 @@
+{
+  "parser_version": "stage5-exam-parser-v2",
+  "status": "COMPLETE",
+  "dataset": "cmb_exam_clean_2000",
+  "checkpoint_id": "sft",
+  "n": 2000,
+  "expected_n": 2000,
+  "original_summary": {
+    "n": 2000,
+    "correct_count": 10,
+    "accuracy": 0.005,
+    "strict_format_rate": 0.0,
+    "unparseable_rate": 0.993,
+    "truncation_rate": 0.002,
+    "unparseable_count": 1986,
+    "truncation_count": 4,
+    "mean_output_tokens": 275.6445,
+    "P50_output_tokens": 268.0,
+    "P95_output_tokens": 387.04999999999995,
+    "P99_output_tokens": 480.03,
+    "prompt_tokens": 251705,
+    "output_tokens": 551289
+  },
+  "summary": {
+    "n": 2000,
+    "correct_count": 1000,
+    "accuracy": 0.5,
+    "strict_format_rate": 0.0,
+    "unparseable_rate": 0.1565,
+    "truncation_rate": 0.002,
+    "unparseable_count": 313,
+    "truncation_count": 4,
+    "mean_output_tokens": 275.6445,
+    "P50_output_tokens": 268.0,
+    "P95_output_tokens": 387.04999999999995,
+    "P99_output_tokens": 480.03,
+    "prompt_tokens": 251705,
+    "output_tokens": 551289
+  },
+  "changed_answers": 1673,
+  "original_error_counts": {
+    "illegal_or_empty_options": 1982,
+    "parsed": 14,
+    "truncated_thinking": 4
+  },
+  "predictions": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/rescored_v2/sft/cmb_exam_clean_2000/predictions.jsonl",
+    "sha256": "0ea586d6506ab64ce08a65b6da2adbf4f28cc4a75c1c24717a7ed654824b20ff",
+    "bytes": 3207892
+  },
+  "provenance": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/rescored_v2/sft/cmb_exam_clean_2000/provenance.json",
+    "sha256": "d7d7494b0c9654a42ee89a50d3180af4decdf5f98c9de03c0da6561bffbc0cc7",
+    "bytes": 1900027
+  },
+  "generation_spec": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/final/sft/cmb_exam_clean_2000/execution_spec_1789489119151261856.json",
+    "sha256": "aff775064e441f2287006011f1892beebb4334e785d7d94b067d470cb0199d28",
+    "bytes": 5315
+  },
+  "original_complete": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/final/sft/cmb_exam_clean_2000/complete.json",
+    "sha256": "9b284ef885d136e3ac9c1d8f0e898bac80f1e52e671b5af01f9fcd28af92fb75",
+    "bytes": 666538
+  },
+  "new_generations": 0,
+  "selection_changed": false,
+  "integrity_scope": "receipt/raw hashes, adapter identity, v1 score replay; full token replay remains in original objective verifier"
+}

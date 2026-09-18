@@ -1,0 +1,27 @@
+[
+  {
+    "checkpoint": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_vanilla_20260909T155928_24aec5/windows/0001/checkpoint",
+    "tensors": 504,
+    "all_equal": true
+  },
+  {
+    "checkpoint": "/data/WSH/medical-post-train-artifacts/runs/s4_formal_dynamic_20260909T155929_18b61a/windows/0001/checkpoint",
+    "tensors": 504,
+    "all_equal": true
+  },
+  {
+    "checkpoint": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_grpo_dynamic_20260914T045810_71997f/windows/0001/checkpoint",
+    "tensors": 504,
+    "all_equal": true
+  },
+  {
+    "checkpoint": "/data/WSH/medical-post-train-artifacts/runs/s4_aux_random3x_20260913T144225_cb7dc9/windows/0001/checkpoint",
+    "tensors": 504,
+    "all_equal": true
+  },
+  {
+    "checkpoint": "/data/WSH/medical-post-train-artifacts/runs/s4_pilot_vanilla_20260909T075203_95a6e9/windows/0001/checkpoint",
+    "tensors": 504,
+    "all_equal": true
+  }
+]

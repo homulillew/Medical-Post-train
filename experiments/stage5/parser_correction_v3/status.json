@@ -1,7 +1,7 @@
 {
-  "status": "WAITING_FOR_GENERATIONS",
-  "timestamp": "2026-09-15T17:54:04.178554+00:00",
-  "completed_jobs": 5,
+  "status": "EXAM_RESCORING_COMPLETE",
+  "timestamp": "2026-09-15T19:45:09.825149+00:00",
+  "completed_jobs": 8,
   "expected_jobs": 8,
   "results": [
     {
@@ -25,9 +25,24 @@
       "bytes": 3480
     },
     {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/rescored_v3/dynamic_5000/cmb_exam_clean_2000/summary.json",
+      "sha256": "cc32e81b8df45c1f23175613e6ef20b1ed29fad8c0678c6f08525dfec2c7b108",
+      "bytes": 3270
+    },
+    {
       "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/rescored_v3/sft/cmb_exam_clean_2000/summary.json",
       "sha256": "bbd42c63e60a8bb1a1188eea1fecb607da5c899482f72ed81e0274e94e9dd22e",
       "bytes": 3112
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/rescored_v3/vanilla_4608/cmb_exam_clean_2000/summary.json",
+      "sha256": "d49cfbcdc2f5c39760c67ecf1e6f9cdf2cf3d64aac9022277c58570e54017f1a",
+      "bytes": 3199
+    },
+    {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/rescored_v3/vanilla_5000/cmb_exam_clean_2000/summary.json",
+      "sha256": "d392ef321f3bac0f9d0996c4b384292eec9cd43cdfacb86534b6df2941615c2b",
+      "bytes": 3234
     }
   ],
   "parser_version": "stage5-exam-parser-v3",

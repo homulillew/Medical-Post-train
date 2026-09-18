@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-09-18T02:44:48.070752+00:00",
+  "deleted_files": 1218,
+  "released_allocated_bytes": 851285729280,
+  "preserved_primary_adapters": 1250,
+  "protected_full_checkpoints": 32,
+  "data_available_bytes": 851284856832,
+  "limitation": "Pruned intermediate optimizer states cannot be directly reloaded; original manifests and verification receipts retained as historical evidence. All adapters and protected full checkpoints retained.",
+  "unrelated_projects_touched": false,
+  "raw_evaluation_deleted": false
+}

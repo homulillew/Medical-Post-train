@@ -1,0 +1,118 @@
+{
+  "scope": "CMEXAM_PRIMARY_INTERIM_ANALYSIS_V2",
+  "full_stage5_complete": false,
+  "sources": {
+    "sft": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/rescored_v2/sft/cmexam_test_scorable/predictions.jsonl",
+      "sha256": "6b03b8017d35dd0e1943bb68a183966037a927ca8e317e1e008905778586ebc3",
+      "bytes": 10912491
+    },
+    "vanilla": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/rescored_v2/vanilla_4608/cmexam_test_scorable/predictions.jsonl",
+      "sha256": "da4e8e7ccf6df68ed22f4ed08217b700988a06f38fb98be182fa7267d4dafaad",
+      "bytes": 11002461
+    },
+    "dynamic": {
+      "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/rescored_v2/dynamic_5000/cmexam_test_scorable/predictions.jsonl",
+      "sha256": "4de733612a1102fbb0fa17dc597f31e76d62b7cf0117d7c3f802048eb7b42494",
+      "bytes": 11112045
+    }
+  },
+  "paired": {
+    "vanilla_minus_sft": {
+      "n": 6809,
+      "delta_pp": -0.6755764429431634,
+      "wrong_to_correct": 785,
+      "correct_to_wrong": 831,
+      "exact_mcnemar": 0.26295613817263636,
+      "ci95_pp": [
+        -1.8358055514759875,
+        0.49933911000146863
+      ],
+      "seed": 20260914,
+      "resamples": 10000,
+      "unit": "paired prompt",
+      "multiple_comparisons": "exploratory unadjusted",
+      "parseability_transitions": {
+        "parsed -> parsed": 4986,
+        "parsed -> unparseable": 777,
+        "unparseable -> parsed": 567,
+        "unparseable -> unparseable": 479
+      }
+    },
+    "dynamic_minus_sft": {
+      "n": 6809,
+      "delta_pp": -3.3778822147158176,
+      "wrong_to_correct": 722,
+      "correct_to_wrong": 952,
+      "exact_mcnemar": 2.076078652634595e-08,
+      "ci95_pp": [
+        -4.552797767660449,
+        -2.202966661771185
+      ],
+      "seed": 20260914,
+      "resamples": 10000,
+      "unit": "paired prompt",
+      "multiple_comparisons": "exploratory unadjusted",
+      "parseability_transitions": {
+        "parsed -> parsed": 4691,
+        "unparseable -> parsed": 524,
+        "parsed -> unparseable": 1072,
+        "unparseable -> unparseable": 522
+      }
+    },
+    "dynamic_minus_vanilla": {
+      "n": 6809,
+      "delta_pp": -2.7023057717726537,
+      "wrong_to_correct": 738,
+      "correct_to_wrong": 922,
+      "exact_mcnemar": 6.927602594913173e-06,
+      "ci95_pp": [
+        -3.8919077691290935,
+        -1.5417095021295397
+      ],
+      "seed": 20260914,
+      "resamples": 10000,
+      "unit": "paired prompt",
+      "multiple_comparisons": "exploratory unadjusted",
+      "parseability_transitions": {
+        "parsed -> parsed": 4579,
+        "unparseable -> parsed": 636,
+        "unparseable -> unparseable": 620,
+        "parsed -> unparseable": 974
+      }
+    }
+  },
+  "parser_errors": {
+    "sft": {
+      "parsed": 5763,
+      "conflicting_final_region": 127,
+      "multiple_final_conclusions": 419,
+      "truncated_thinking": 27,
+      "no_final_answer": 246,
+      "ambiguous_final_region": 221,
+      "illegal_or_empty_options": 4,
+      "trailing_or_conflicting_answer": 2
+    },
+    "vanilla": {
+      "parsed": 5553,
+      "no_final_answer": 341,
+      "multiple_final_conclusions": 411,
+      "truncated_thinking": 14,
+      "ambiguous_final_region": 291,
+      "conflicting_final_region": 192,
+      "illegal_or_empty_options": 5,
+      "trailing_or_conflicting_answer": 2
+    },
+    "dynamic": {
+      "parsed": 5215,
+      "multiple_final_conclusions": 604,
+      "no_final_answer": 387,
+      "conflicting_final_region": 212,
+      "ambiguous_final_region": 350,
+      "truncated_thinking": 33,
+      "trailing_or_conflicting_answer": 2,
+      "illegal_or_empty_options": 6
+    }
+  }
+}

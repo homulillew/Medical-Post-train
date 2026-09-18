@@ -1,0 +1,21 @@
+{
+  "active_exam_parser": "v3",
+  "report": {
+    "path": "/data/WSH/post-train/docs/stage_reports/05_objective_evaluation_v3.md",
+    "sha256": "0dfb381e9076e2cfa7525c177fbf4fee415c4cad6cb5d8605d03cb941d293228",
+    "bytes": 6341
+  },
+  "handoff": {
+    "path": "/data/WSH/post-train/experiments/handoffs/stage5_results_to_chatgpt_v3.json",
+    "sha256": "ad0626c688b92af3429a63ef63a85c9d904dec6495e0c9caa73fa3292567879e",
+    "bytes": 1758436
+  },
+  "objective_verification": {
+    "path": "/data/WSH/post-train/experiments/stage5/closure_v3_20260918/objective_verification_v3.json",
+    "sha256": "4fe3be40b6f0f6666a2bd4748d24696fe10c346c15b730e3e5c447c097ad28ae",
+    "bytes": 14780
+  },
+  "open_qa_status": "OPEN_QA_JUDGE_PENDING",
+  "stage5_done": false,
+  "stage6_ready": false
+}
