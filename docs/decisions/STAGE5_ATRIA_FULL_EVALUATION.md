@@ -1,7 +1,8 @@
 # Full Atria blind evaluation — 2026-09-18
 
 - Stage: 5
-- Status: AUTHORIZED / EXECUTION PENDING
+- Status: AUTHORIZED / EXECUTION RUNNING
+- Run: `s5_atria_full_20260918T095056Z`
 - Contract change: NO
 
 The owner requested the complete evaluation in the background after the

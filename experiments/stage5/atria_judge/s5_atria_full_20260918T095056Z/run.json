@@ -1,0 +1,9 @@
+{
+  "run_id": "s5_atria_full_20260918T095056Z",
+  "protocol": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_full_20260918T095056Z/protocol.json",
+    "sha256": "1abf254fe6276d55f73319264fca221c89b6377b91840ff34f1a2005e42babf7",
+    "bytes": 6024
+  },
+  "artifact_root": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_full_20260918T095056Z"
+}

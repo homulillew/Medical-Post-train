@@ -1,0 +1,26 @@
+{
+  "run_id": "s5_atria_full_20260918T095056Z",
+  "pid": 1095436,
+  "command": [
+    "/home/ubuntu/anaconda3/bin/python",
+    "-u",
+    "/data/WSH/post-train/scripts/run_stage5_atria_judge.py",
+    "--full",
+    "--run",
+    "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_full_20260918T095056Z"
+  ],
+  "cwd": "/data/WSH/post-train",
+  "started_at": "2026-09-18T09:51:18.214307+00:00",
+  "detached": true,
+  "stdin": "DEVNULL",
+  "stdout": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_full_20260918T095056Z/stdout.log",
+  "stderr": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_full_20260918T095056Z/stderr.log",
+  "protocol": {
+    "path": "/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge/s5_atria_full_20260918T095056Z/protocol.json",
+    "sha256": "1abf254fe6276d55f73319264fca221c89b6377b91840ff34f1a2005e42babf7",
+    "bytes": 6024
+  },
+  "planned_entries": 1347,
+  "concurrency": 1,
+  "status": "LAUNCHED_NOT_COMPLETE"
+}

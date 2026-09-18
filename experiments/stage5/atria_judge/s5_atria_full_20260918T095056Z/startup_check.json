@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-09-18T09:52:26.239150+00:00",
+  "status_snapshot": {
+    "status": "RUNNING",
+    "ceiling": 1347,
+    "usage": {
+      "input_tokens": 3672,
+      "output_tokens": 1295,
+      "total_tokens": 4967
+    },
+    "updated_at": "2026-09-18T09:51:52.612299+00:00",
+    "pid": 1095436,
+    "completed": 2,
+    "invalid_outputs": 0,
+    "attempted": 3,
+    "current_index": 2
+  },
+  "process": "1095436       1 1095436 Ssl        01:08",
+  "protocol_verified": true,
+  "tests_passed": 28,
+  "launch_only_not_completion": true,
+  "live_status_path": "experiments/stage5/atria_judge/s5_atria_full_20260918T095056Z/status.json"
+}

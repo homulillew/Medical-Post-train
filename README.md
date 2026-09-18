@@ -11,8 +11,8 @@ Both formal GSPO runs reached 5,000 groups, 625 windows and 1,250 optimizer step
 
 Stage5 objective evaluation is verified under the **v3 answer parser**. All 35,236
 final exam responses and 1,224 open-QA responses have been generated. Independent
-open-QA scoring is partial (16 valid judgments from a 20-entry Atria API pilot),
-and real human audit is pending, so **Stage5 is not DONE**.
+open-QA judging is now running as a separate **full 1347-entry Atria evaluation**
+in the background. Real human audit is pending, so **Stage5 is not DONE**.
 Stage6 serving benchmarks have not started.
 
 | Validation-selected model | CMExam (6809) | CMB (2000) |
@@ -40,13 +40,14 @@ no valid response was regenerated. Treat v1/v2 score reports as historical.
 - [Open-QA review package manifest](experiments/stage5/closure_v3_20260918/review_packet.json)
 - [Atria API pilot: results and failures](docs/stage_reports/05_atria_api_pilot_20260918.md)
 - [Atria parser repair and 3-request validation](docs/stage_reports/05_atria_parser_repair_20260918.md)
+- [Full Atria run and logs](experiments/stage5/atria_judge/s5_atria_full_20260918T095056Z/launch.json)
 - [Project state and remaining gates](project_state.json)
 
 The anonymous review package contains 1347 judge entries including position flips.
 Its current human-audit queue covers 84 items / 252 comparisons. Scores and reviewer
 identities in the immutable templates remain blank. Actual API judgments are
 stored separately: the owner-authorized pilot tested 20 entries, with 16 valid
-scores and 4 unscored entries. API requests have stopped. Its only fully observed
+scores and 4 unscored entries. That pilot has stopped. Its only fully observed
 position-flip pair disagreed; this small pilot cannot establish model rankings.
 Human reviews remain zero. Safety flags are review candidates, not clinical judgments.
 
@@ -54,6 +55,12 @@ The subsequent parser repair preserves those 16 judgments and separately recover
 one field-name mismatch (17/20 compatibility coverage). Three owner-authorized
 diagnostic calls passed with explicit message roles; they are excluded from the
 evaluation totals and do not establish permanent upstream reliability.
+
+The owner subsequently authorized the full evaluation. Run
+`s5_atria_full_20260918T095056Z` starts from the full frozen schedule with one
+uniform configuration. Progress is in its local `status.json`; the Git launch
+record is a snapshot, not a live completion claim. Prior pilot/diagnostic scores
+remain separate. Invalid outputs are recorded without automatic resampling.
 
 ## Reproduction and storage
 
