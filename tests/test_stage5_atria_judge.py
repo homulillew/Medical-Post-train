@@ -106,3 +106,41 @@ def test_explicit_message_boundaries_and_tools_disabled():
     assert [x['role'] for x in body['input']]==['system','user']
     assert json.loads(body['input'][1]['content'][0]['text'])==item
     assert 'instructions' not in body
+
+
+def test_resume_replays_saved_response_without_network(tmp_path):
+    from run_stage5_atria_judge import restore_result, capture_response
+    from medical_posttrain.evaluation.core import freeze
+    item=dict(pair_id='fixture',A='A',B='B');dest=tmp_path/'saved';dest.mkdir()
+    freeze(dest/'request.json',dict(pair_id='fixture'))
+    raw=json.dumps(response([message(json.dumps(judgment()))])).encode()
+    freeze(dest/'raw_response.json',capture_response(raw,200,1,{},'fake-secret'))
+    assert restore_result(dest,item)=='VALID'
+    assert restore_result(dest,item)=='VALID'
+    assert (dest/'judgment.json').exists()
+
+
+def test_resume_skips_invalid_but_blocks_uncertain_request(tmp_path):
+    from run_stage5_atria_judge import restore_result, capture_response
+    from medical_posttrain.evaluation.core import freeze
+    item=dict(pair_id='fixture',A='A',B='B');dest=tmp_path/'saved';dest.mkdir()
+    freeze(dest/'request.json',dict(pair_id='fixture'))
+    with pytest.raises(RuntimeError,match='Uncertain'):restore_result(dest,item)
+    raw=json.dumps(response([message('/0'*100)])).encode()
+    freeze(dest/'raw_response.json',capture_response(raw,200,1,{},'fake-secret'))
+    assert restore_result(dest,item)=='INVALID'
+    assert restore_result(dest,item)=='INVALID'
+
+
+def test_progress_counts_valid_invalid_and_all_usage(tmp_path):
+    from run_stage5_atria_judge import publish_progress, capture_response
+    from medical_posttrain.evaluation.core import freeze,read
+    for i,kind in enumerate(['judgment.json','invalid.json']):
+        dest=tmp_path/'out'/'requests'/str(i)
+        freeze(dest/'request.json',{})
+        freeze(dest/kind,{})
+        freeze(dest/'raw_response.json',capture_response(json.dumps(dict(usage=dict(input_tokens=3,output_tokens=2,total_tokens=5))).encode(),200,1,{},'fake-secret'))
+    publish_progress(tmp_path/'out',tmp_path/'index',1347,current_index=4)
+    s=read(tmp_path/'index'/'status.json')
+    assert s['completed']==1 and s['invalid_outputs']==1 and s['attempted']==2
+    assert s['usage']['total_tokens']==10

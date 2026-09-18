@@ -79,11 +79,11 @@ def capture_response(body, status, seconds, headers, key):
     return result
 
 
-def prepare(start_index=0):
+def prepare(start_index=0, full=False):
     source=read(ROOT/'experiments/stage5/closure_v3_20260918/review_packet.json')
     packet=source['public_files']['judge_packet.jsonl'];check_ref(packet)
     rubric=source['public_files']['rubric.json'];check_ref(rubric)
-    run_id='s5_atria_dawn_'+datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+    run_id=('s5_atria_full_' if full else 's5_atria_dawn_')+datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
     out=Path('/data/WSH/medical-post-train-artifacts/evaluation/stage5_project_v1/atria_judge')/run_id
     out.mkdir(parents=True)
     protocol=dict(run_id=run_id,run_class='EVALUATION',model=MODEL,endpoint=ENDPOINT,
@@ -97,7 +97,10 @@ def prepare(start_index=0):
         identity='Independent provider/model name declared by API; underlying training provenance is not independently known.',
         version_limitation='Preview alias may change; retain returned model, timestamps, request IDs and raw responses.',
         pricing='UNKNOWN; record real token usage, do not fabricate currency cost',
-        source=ref(__file__),stage=5,authorized_request_ceiling=20,
+        source=ref(__file__),stage=5,authorized_request_ceiling=1347 if full else 20,
+        full_evaluation=full,authorization='Owner requested complete evaluation in background' if full else '20-entry pilot',
+        max_consecutive_invalid=10 if full else 3,concurrency=1,
+        full_policy='Uniform fresh evaluation, one received output per entry; pilot/diagnostic judgments excluded. Invalid outputs retained; no resampling. Pause on transport/HTTP errors or 10 consecutive invalid outputs.',
         created_at=datetime.now(timezone.utc).isoformat(),
         git_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
         git_dirty=bool(subprocess.check_output(['git','status','--porcelain'],cwd=ROOT,text=True).strip()),
@@ -111,6 +114,74 @@ def prepare(start_index=0):
     freeze(idx/'run.json',dict(run_id=run_id,protocol=ref(out/'protocol.json'),artifact_root=str(out)))
     print(out,flush=True)
     return out
+
+
+def restore_result(dest,item):
+    """Resume from saved evidence; never submit an uncertain request again."""
+    if not dest.exists():return None
+    if (dest/'judgment.json').exists():
+        j=read(dest/'judgment.json')
+        assert j['pair_id']==item['pair_id']
+        check_ref(j['raw_judgment'])
+        return 'VALID'
+    if (dest/'invalid.json').exists():
+        error=read(dest/'invalid.json');assert error['pair_id']==item['pair_id']
+        check_ref(error['raw_response'])
+        return 'INVALID'
+    if not (dest/'raw_response.json').exists():
+        raise RuntimeError('Uncertain in-flight request without saved response; inspect before any paid retry')
+    request=read(dest/'request.json');assert request['pair_id']==item['pair_id']
+    wrapper=read(dest/'raw_response.json')
+    if wrapper['http_status']!=200:raise RuntimeError('Saved HTTP error requires explicit recovery decision')
+    raw=base64.b64decode(wrapper['body_base64']) if 'body_base64' in wrapper else wrapper['body'].encode('utf-8')
+    try:
+        j=normalize(extract(decode_response(raw)),item,ref(dest/'raw_response.json'))
+        freeze(dest/'judgment.json',j)
+        return 'VALID'
+    except JudgeResponseError as exc:
+        freeze(dest/'invalid.json',dict(pair_id=item['pair_id'],error_type=type(exc).__name__,
+               reason=str(exc),failure_code=exc.code,raw_response=ref(dest/'raw_response.json')))
+        return 'INVALID'
+
+
+def publish_progress(out,idx,limit,**extra):
+    counts=dict(completed=len(list((out/'requests').glob('*/judgment.json'))),
+                invalid_outputs=len(list((out/'requests').glob('*/invalid.json'))),
+                attempted=len(list((out/'requests').glob('*/request.json'))))
+    usage=Counter()
+    for path in (out/'requests').glob('*/raw_response.json'):
+        try:value=json.loads(read(path)['body'])
+        except (ValueError,TypeError):continue
+        usage.update({k:v for k,v in value.get('usage',{}).items() if type(v) is int})
+    durable(idx/'status.json',dict(status='RUNNING',ceiling=limit,usage=dict(usage),
+            updated_at=datetime.now(timezone.utc).isoformat(),pid=os.getpid(),**counts,**extra))
+
+
+def finalize_reviews(out,results):
+    """Export coverage and a real-human queue; no stage-completion shortcut."""
+    from validate_stage5_review_submission import validate_submission
+    from medical_posttrain.evaluation.blind import position_consistency,aggregate_blind
+    manifest=read(ROOT/'experiments/stage5/closure_v3_20260918/review_packet.json')
+    check_ref(manifest['public_files']['judge_packet.jsonl'])
+    public=rows(manifest['public_files']['judge_packet.jsonl']['path'])
+    protocol=read(ROOT/'experiments/stage5/open_qa_eval_protocol_v1.json');check_ref(protocol['schedule'])
+    schedule=read(protocol['schedule']['path'])
+    receipt=validate_submission(results,[],public,schedule,manifest['private_required_prompt_ids'])
+    assert not receipt['errors'], 'Final judgment validation failed'
+    destination=out/f'analysis_{time.time_ns()}'
+    freeze(destination/'coverage.json',receipt)
+    needed=set(receipt['missing_human_pairs'])
+    with (destination/'human_audit_packet.jsonl').open('x') as f:
+        for row in public:
+            if row['pair_id'] in needed:f.write(json.dumps(row,ensure_ascii=False)+'\n')
+    if not receipt['missing_judgments']:
+        items=[]
+        for name in ['cmb_clin','open_qa_retention_200']:
+            check_ref(protocol['manifests'][name]);m=read(protocol['manifests'][name]['path']);check_ref(m['data'])
+            items.extend(rows(m['data']['path']))
+        freeze(destination/'statistics.json',dict(position_consistency=position_consistency(results,schedule),
+               comparisons=aggregate_blind(results,schedule,items),human_reviews_completed=0,full_stage5_complete=False))
+    return ref(destination/'coverage.json')
 
 
 def execute(out,limit):
@@ -128,12 +199,15 @@ def execute(out,limit):
             for i,item in enumerate(data[:limit]):
                 if i<p.get('start_index',0):continue
                 dest=out/'requests'/f'{i:04d}'
-                if (dest/'judgment.json').exists():continue
-                assert not dest.exists(), 'Existing incomplete request: examine raw/error; no automatic paid retry'
+                restored=restore_result(dest,item)
+                if restored:
+                    consecutive_invalid=consecutive_invalid+1 if restored=='INVALID' else 0
+                    assert consecutive_invalid<p.get('max_consecutive_invalid',3), 'Consecutive invalid output guard'
+                    continue
                 dest.mkdir(parents=True)
                 body=build_request(p,item)
                 freeze(dest/'request.json',dict(pair_id=item['pair_id'],endpoint=p['endpoint'],body=body,timestamp=datetime.now(timezone.utc).isoformat()))
-                durable(idx/'status.json',dict(status='RUNNING',current_index=i,ceiling=limit,completed=len(list((out/'requests').glob('*/judgment.json')))))
+                publish_progress(out,idx,limit,current_index=i)
                 req=urllib.request.Request(p['endpoint'],data=json.dumps(body,ensure_ascii=False).encode('utf-8'),headers={'Authorization':'Bearer '+key,'Content-Type':'application/json'},method='POST')
                 start=time.time()
                 try:
@@ -152,10 +226,12 @@ def execute(out,limit):
                            reason=str(exc).replace(key,'[REDACTED]'),failure_code=getattr(exc,'code','invalid_judgment'),raw_response=ref(dest/'raw_response.json')))
                     consecutive_invalid+=1
                     print(json.dumps(dict(index=i,status='INVALID_OUTPUT',usage=parsed.get('usage'))),flush=True)
-                    assert consecutive_invalid<3, 'Three consecutive invalid outputs: stop paid requests'
+                    publish_progress(out,idx,limit,current_index=i)
+                    assert consecutive_invalid<p.get('max_consecutive_invalid',3), 'Consecutive invalid output guard: stop paid requests'
                     continue
                 consecutive_invalid=0
                 freeze(dest/'judgment.json',judgment)
+                publish_progress(out,idx,limit,current_index=i)
                 print(json.dumps(dict(processed_index=i,completed=len(list((out/'requests').glob('*/judgment.json'))),ceiling=limit,pair_id=item['pair_id'],usage=parsed.get('usage'))),flush=True)
             completed=sorted((out/'requests').glob('*/judgment.json'))
             usage=Counter();results=[]
@@ -169,7 +245,7 @@ def execute(out,limit):
                 with output.open('x') as f:
                     for r in results:f.write(json.dumps(r,ensure_ascii=False)+'\n')
             invalid=len(list((out/'requests').glob('*/invalid.json')))
-            summary=dict(status='PILOT_WITH_INVALID_OUTPUTS' if invalid else 'JUDGMENTS_COMPLETE' if len(results)==1347 else 'PILOT_COMPLETE',
+            summary=dict(status=('EVALUATION_WITH_MISSING_JUDGMENTS' if p.get('full_evaluation') else 'PILOT_WITH_INVALID_OUTPUTS') if invalid else 'JUDGMENTS_COMPLETE' if len(results)==1347 else 'PILOT_COMPLETE',
                 completed=len(results),planned=1347,usage=dict(usage),currency_cost=None,
                 invalid_outputs=invalid,attempted=len(list((out/'requests').glob('*/request.json'))),
                 judgments=ref(output),protocol=ref(out/'protocol.json'),human_reviews_completed=0,
@@ -177,6 +253,10 @@ def execute(out,limit):
             summary_path=out/f'summary_{len(results):04d}.json'
             if summary_path.exists():assert read(summary_path)==summary
             else:freeze(summary_path,summary)
+            if p.get('full_evaluation'):
+                summary['coverage']=finalize_reviews(out,results)
+                summary['ended_at']=datetime.now(timezone.utc).isoformat()
+                freeze(out/f'completion_{time.time_ns()}.json',summary)
             durable(idx/'status.json',summary)
         except BaseException as exc:
             # Never print request headers, local secret values or exception objects
@@ -191,10 +271,14 @@ def execute(out,limit):
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--run',type=Path);ap.add_argument('--limit',type=int,default=20)
+    ap.add_argument('--full',action='store_true',help='Owner-authorized full 1347-entry evaluation')
     ap.add_argument('--start-index',type=int,default=0)
     ap.add_argument('--prepare-only',action='store_true');args=ap.parse_args()
+    if args.full:
+        assert args.start_index==0, 'Full evaluation must cover the entire frozen schedule'
+        args.limit=1347
     assert 0<=args.start_index<args.limit
-    out=args.run or prepare(args.start_index)
+    out=args.run or prepare(args.start_index,full=args.full)
     if not args.prepare_only:sys.exit(0 if execute(out,args.limit) else 1)
 
 
